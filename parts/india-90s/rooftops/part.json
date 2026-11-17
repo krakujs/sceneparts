@@ -1,0 +1,42 @@
+{
+  "id": "india-90s/rooftops",
+  "type": "background",
+  "style": "india-90s",
+  "name": "Mohalla rooftops",
+  "summary": "Crowded flat rooftops with water tanks and railings, the classic Indian neighbourhood skyline.",
+  "tags": [
+    "90s",
+    "india",
+    "mohalla",
+    "neighbourhood",
+    "nostalgia",
+    "rooftops",
+    "skyline",
+    "terrace",
+    "water tank"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1120
+    },
+    {
+      "name": "tint",
+      "type": "number",
+      "default": 0,
+      "note": "0..1 darkness"
+    }
+  ],
+  "example": {
+    "floorY": 1120
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,95 @@
+{
+  "id": "storybook/icon",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Storybook icon",
+  "summary": "Flat storybook icon (clock, coin, lamp, rat, phone, ship\u2026) centred on x, y; good for explainer beats.",
+  "tags": [
+    "storybook",
+    "vintage",
+    "flat",
+    "history",
+    "icon",
+    "symbol",
+    "pictogram",
+    "explainer"
+  ],
+  "params": [
+    {
+      "name": "name",
+      "type": "enum",
+      "values": [
+        "clock",
+        "coin",
+        "ring",
+        "bed",
+        "factory",
+        "moon",
+        "peas",
+        "bread",
+        "lamp",
+        "question",
+        "police",
+        "slate",
+        "sensor",
+        "star",
+        "rocket",
+        "ice",
+        "fridge",
+        "crown",
+        "ship",
+        "pin",
+        "pinspotter",
+        "rat",
+        "petrat",
+        "coffin",
+        "headset",
+        "dial",
+        "switchboard",
+        "bucket",
+        "leech",
+        "toilet",
+        "phone"
+      ],
+      "default": "clock"
+    },
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900
+    },
+    {
+      "name": "size",
+      "type": "number",
+      "default": 420
+    },
+    {
+      "name": "r",
+      "type": "number",
+      "default": 0,
+      "note": "rotation"
+    },
+    {
+      "name": "bob",
+      "type": "boolean",
+      "default": false
+    }
+  ],
+  "example": {
+    "name": "clock",
+    "size": 500
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "layer": "mid",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

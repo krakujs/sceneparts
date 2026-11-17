@@ -1,0 +1,27 @@
+{
+  "id": "india-90s/stadium",
+  "type": "background",
+  "style": "india-90s",
+  "name": "Cricket stadium",
+  "summary": "Big floodlit cricket stadium crowd, for the dream or the big match.",
+  "tags": [
+    "90s",
+    "cricket",
+    "crowd",
+    "floodlights",
+    "india",
+    "match",
+    "nostalgia",
+    "stadium"
+  ],
+  "params": [],
+  "example": {},
+  "uses": [
+    "india-90s/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

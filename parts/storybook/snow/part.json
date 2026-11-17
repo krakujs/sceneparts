@@ -1,0 +1,45 @@
+{
+  "id": "storybook/snow",
+  "type": "effect",
+  "style": "storybook",
+  "name": "Snow or ash",
+  "summary": "Falling flakes: snow by default, grey ash with color and slower speed.",
+  "tags": [
+    "storybook",
+    "flat",
+    "snow",
+    "winter",
+    "ash",
+    "volcano",
+    "weather",
+    "flakes"
+  ],
+  "params": [
+    {
+      "name": "n",
+      "type": "number",
+      "default": 80
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFFFFF"
+    },
+    {
+      "name": "speed",
+      "type": "number",
+      "default": 4
+    }
+  ],
+  "example": {
+    "n": 80
+  },
+  "uses": [
+    "storybook/world-sky"
+  ],
+  "layer": "fg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

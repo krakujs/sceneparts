@@ -77,7 +77,7 @@ export function staticCheck(id, entry, avail, index = []) {
   if (/your-github-handle/.test(m.author ?? "")) errors.push('author must be your GitHub handle (sceneparts new … --author <handle>)');
   if (/<rect x=\{-150\} y=\{-600\} width=\{300\} height=\{600\} rx=\{40\} fill="#cccccc"/.test(src)) errors.push("index.tsx is still the scaffold placeholder – draw the part");
   for (const p of m.params ?? []) if (p.type === "enum" && !p.values) errors.push(`param ${p.name}: type enum needs "values"`);
-  if (m.type !== "style" && m.type !== "template" && m.example && Object.keys(m.example).length === 0) warnings.push("example is empty – show the part's most typical use");
+  if (m.type !== "style" && m.type !== "template" && (m.params ?? []).length && m.example && Object.keys(m.example).length === 0) warnings.push("example is empty – show the part's most typical use");
   return { errors, warnings, flags: [...flags] };
 }
 const jaccard = (a, b) => { const A = new Set(a), B = new Set(b); const i = [...A].filter((x) => B.has(x)).length; return i / Math.max(1, new Set([...A, ...B]).size); };

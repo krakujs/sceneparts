@@ -1,0 +1,40 @@
+{
+  "id": "india-90s/sofa-backs",
+  "type": "scenery",
+  "style": "india-90s",
+  "name": "Sofa backs",
+  "summary": "Backs of a family sofa in the foreground, as if watching TV from behind.",
+  "tags": [
+    "90s",
+    "couch",
+    "family",
+    "foreground",
+    "india",
+    "nostalgia",
+    "sofa",
+    "watching tv"
+  ],
+  "params": [
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500
+    },
+    {
+      "name": "lean",
+      "type": "number",
+      "default": 0
+    }
+  ],
+  "example": {
+    "y": 1500
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "layer": "fg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,83 @@
+{
+  "id": "storybook/street",
+  "type": "background",
+  "style": "storybook",
+  "name": "Terraced street",
+  "summary": "Endless row of terraced brick houses with gas lamps and cobbles; scroll it, light the windows, dim for night.",
+  "tags": [
+    "storybook",
+    "vintage",
+    "flat",
+    "history",
+    "street",
+    "town",
+    "houses",
+    "victorian",
+    "london",
+    "night",
+    "city"
+  ],
+  "params": [
+    {
+      "name": "scroll",
+      "type": "number",
+      "default": 0,
+      "note": "camera x along the street; [0, 600] pans"
+    },
+    {
+      "name": "speed",
+      "type": "number",
+      "default": 0,
+      "note": "extra px per frame"
+    },
+    {
+      "name": "lit",
+      "type": "enum",
+      "values": [
+        "none",
+        "all",
+        "behind",
+        "random"
+      ],
+      "default": "none"
+    },
+    {
+      "name": "litX",
+      "type": "number",
+      "default": 0,
+      "note": "for lit: behind"
+    },
+    {
+      "name": "tint",
+      "type": "number",
+      "default": 0.35,
+      "note": "0..1 night darkness"
+    },
+    {
+      "name": "lamps",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "name": "lampsLit",
+      "type": "boolean",
+      "default": true
+    }
+  ],
+  "example": {
+    "scroll": [
+      0,
+      300
+    ],
+    "lit": "random",
+    "tint": 0.3
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "storybook/style",
+  "type": "style",
+  "style": "storybook",
+  "name": "Vintage storybook",
+  "summary": "Flat vintage storybook look: thick ink outline, warm paper, dusky skies, slab headlines in cream and mustard.",
+  "tags": [
+    "storybook",
+    "vintage",
+    "flat",
+    "history",
+    "illustration",
+    "cartoon",
+    "editorial"
+  ],
+  "params": [],
+  "example": {},
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

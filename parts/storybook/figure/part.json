@@ -1,0 +1,123 @@
+{
+  "id": "storybook/figure",
+  "type": "character",
+  "style": "storybook",
+  "name": "Storybook person",
+  "summary": "Flat vintage worker or townsperson with hats, held tools and simple actions (walk, wave, write, saw).",
+  "tags": [
+    "storybook",
+    "vintage",
+    "flat",
+    "history",
+    "person",
+    "worker",
+    "character",
+    "victorian",
+    "townsperson",
+    "human"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1.6,
+      "note": "scale; ~430 px tall at 1"
+    },
+    {
+      "name": "hat",
+      "type": "enum",
+      "values": [
+        "cap",
+        "bonnet",
+        "top",
+        "bowler",
+        "none"
+      ],
+      "default": "cap"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#2E7D7A"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#E8B990"
+    },
+    {
+      "name": "scarf",
+      "type": "colour",
+      "default": "#F2B544"
+    },
+    {
+      "name": "skirt",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "prop",
+      "type": "enum",
+      "values": [
+        "none",
+        "pole",
+        "peashooter",
+        "lantern",
+        "lamplighter",
+        "pick",
+        "pencil",
+        "saw"
+      ],
+      "default": "none"
+    },
+    {
+      "name": "action",
+      "type": "enum",
+      "values": [
+        "idle",
+        "walk",
+        "tap",
+        "shoot",
+        "wave",
+        "write",
+        "saw"
+      ],
+      "default": "idle"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1.8,
+    "hat": "top",
+    "action": "wave"
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

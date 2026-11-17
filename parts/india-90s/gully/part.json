@@ -1,0 +1,36 @@
+{
+  "id": "india-90s/gully",
+  "type": "background",
+  "style": "india-90s",
+  "name": "Gully lane",
+  "summary": "Narrow Indian street lane in frontal perspective with houses on both sides: gully cricket ground.",
+  "tags": [
+    "90s",
+    "alley",
+    "cricket",
+    "gully",
+    "india",
+    "lane",
+    "neighbourhood",
+    "nostalgia",
+    "street"
+  ],
+  "params": [
+    {
+      "name": "tint",
+      "type": "number",
+      "default": 0
+    }
+  ],
+  "example": {
+    "tint": 0
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

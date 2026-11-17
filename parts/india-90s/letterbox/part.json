@@ -1,0 +1,44 @@
+{
+  "id": "india-90s/letterbox",
+  "type": "scenery",
+  "style": "india-90s",
+  "name": "Pillar letterbox",
+  "summary": "Red pillar post box (generic, no emblem).",
+  "tags": [
+    "90s",
+    "india",
+    "letterbox",
+    "mail",
+    "nostalgia",
+    "post box",
+    "post office"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600
+    },
+    {
+      "name": "scale",
+      "type": "number",
+      "default": 1
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
