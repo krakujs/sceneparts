@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v4
+        continue-on-error: true
         with:
           name: pr-previews
           run-id: ${{ github.event.workflow_run.id }}
@@ -21,13 +22,14 @@ jobs:
       - name: Label and comment
         env: { GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}", REPO: "${{ github.repository }}", RUN: "${{ github.event.workflow_run.html_url }}" }
         run: |
+          [ -f pr-number.txt ] || exit 0
           pr=$(tr -cd '0-9' < pr-number.txt); [ -n "$pr" ] || exit 0
-          changed=$(tr -cd 'a-z0-9/\n-' < changed.txt)
+          changed=$( [ -f changed.txt ] && tr -cd 'a-z0-9/\n-' < changed.txt )
           labels="needs-review"
+          [ "${{ github.event.workflow_run.conclusion }}" = "failure" ] && labels="$labels,checks-failing"
           for id in $changed; do
             f=$(jq -r --arg id "$id" '.[$id].flags // [] | .[]' check-report.json)
             for l in $f; do case "$l" in needs-ip-check|possible-duplicate) labels="$labels,$l";; esac; done
-            e=$(jq -r --arg id "$id" '.[$id].errors // [] | length' check-report.json); [ "$e" != "0" ] && labels="$labels,checks-failing"
           done
           gh label create needs-review --repo "$REPO" --color FBCA04 2>/dev/null || true
           gh label create needs-ip-check --repo "$REPO" --color D93F0B 2>/dev/null || true
