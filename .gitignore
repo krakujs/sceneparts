@@ -6,3 +6,4 @@ site/
 packages/cli/.cache/
 *.tsbuildinfo
 .env
+index/

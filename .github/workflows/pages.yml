@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: npm ci --include=dev && npm run build
-      - run: node packages/cli/src/cli.mjs gallery --out site && cp index/parts.jsonl site/parts.jsonl
+      - run: node packages/cli/src/cli.mjs index && node packages/cli/src/cli.mjs gallery --out site && cp index/parts.jsonl site/parts.jsonl
       - uses: actions/upload-pages-artifact@v3
         with: { path: site }
   deploy:

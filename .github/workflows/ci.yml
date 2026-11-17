@@ -24,8 +24,6 @@ jobs:
           if [ -n "$missing" ]; then echo "Commits without 'Signed-off-by' (use git commit -s): $missing"; exit 1; fi
       - name: Check parts
         run: node packages/cli/src/cli.mjs check --all --json check-report.json
-      - name: Index is up to date
-        run: node packages/cli/src/cli.mjs index --verify
       - name: Demo story
         run: node packages/cli/src/cli.mjs validate examples/anubis-demo/story.json && node packages/cli/src/cli.mjs preview examples/anubis-demo/story.json --out demo-preview.png
       - name: Previews of changed parts

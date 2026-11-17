@@ -139,6 +139,7 @@ switch (cmd) {
         console.log(`✓ ${out}`);
       } else {
         const out = flags.out ?? path.join(pd, "preview.png");
+        fs.mkdirSync(path.dirname(path.resolve(out)), { recursive: true });
         fs.writeFileSync(out, toPng(contactSheet(story, reg, { per: Number(flags.per ?? 3) })));
         console.log(`✓ ${out} (${((Date.now() - t0) / 1000).toFixed(1)} s) – look at every shot before rendering`);
       }
