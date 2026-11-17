@@ -1,0 +1,26 @@
+{
+  "id": "core/speech-bubble",
+  "type": "text",
+  "style": "core",
+  "name": "Speech bubble",
+  "summary": "Comic speech, thought or shout bubble with a tail pointing at the speaker; wraps text and pops in.",
+  "tags": ["dialogue", "talk", "speech", "thought", "shout", "comic", "conversation", "quote"],
+  "params": [
+    { "name": "text", "type": "string", "default": "Hello!", "note": "a short line; wraps to width" },
+    { "name": "kind", "type": "enum", "values": ["speech", "thought", "shout"], "default": "speech" },
+    { "name": "x", "type": "number", "default": 540, "note": "bubble centre" },
+    { "name": "y", "type": "number", "default": 500 },
+    { "name": "tailX", "type": "number", "default": 420, "note": "point the tail at the speaker's mouth" },
+    { "name": "tailY", "type": "number", "default": 760 },
+    { "name": "width", "type": "number", "default": 640, "note": "max bubble width in px" },
+    { "name": "size", "type": "number", "default": 54, "note": "font size" },
+    { "name": "fill", "type": "colour", "default": "#ffffff" },
+    { "name": "color", "type": "colour", "note": "text colour, default style ink" }
+  ],
+  "example": { "text": "Why is my heart on a scale?", "x": 560, "y": 640, "tailX": 380, "tailY": 900 },
+  "layer": "screen",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
