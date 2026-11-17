@@ -14,7 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v4
-        with: { name: pr-previews, run-id: ${{ github.event.workflow_run.id }}, github-token: ${{ secrets.GITHUB_TOKEN }} }
+        with:
+          name: pr-previews
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Label and comment
         env: { GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}", REPO: "${{ github.repository }}", RUN: "${{ github.event.workflow_run.html_url }}" }
         run: |
