@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/shrimp",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Shrimp",
+  "summary": "Flat vector pink-orange curled shrimp with segmented body, long antennae and paddling legs; swims.",
+  "tags": ["shrimp", "prawn", "sea", "ocean", "marine", "swimming", "crustacean"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1000, "note": "body centre (swimming, not on the ground)" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 200 px across at s = 1" },
+    { "name": "pose", "type": "enum", "default": "swim", "values": ["swim", "idle"], "note": "swim = tail flick, paddling legs and body bob; idle = slow bob with antenna sway" },
+    { "name": "color", "type": "string", "default": "#F7906A", "note": "body colour (hex)" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "face left" },
+    { "name": "vx", "type": "number", "default": 0, "note": "px per frame drift" }
+  ],
+  "example": { "x": 540, "y": 1000, "pose": "swim" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "flat-vector/toad",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Toad",
+  "summary": "Flat vector chunky brown-olive toad with warty bumps; sits and hops slowly, for garden and pond scenes.",
+  "tags": [
+    "toad",
+    "amphibian",
+    "warty",
+    "brown",
+    "hop",
+    "pond",
+    "animal"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "ground under the body"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "sit",
+      "values": [
+        "sit",
+        "hop"
+      ],
+      "note": "sit = sitting, breathing; hop = slow jump arc from f"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#7A7A3E",
+      "note": "main colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "sit"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/crab",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Crab",
+  "summary": "Flat vector red-orange crab with a wide shell, two snapping claws and eyes on stalks; walks sideways or snaps.",
+  "tags": ["crab", "sea", "beach", "shellfish", "marine", "claws", "creature"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre (ground)" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 340 px wide at s = 1" },
+    { "name": "pose", "type": "enum", "default": "idle", "values": ["idle", "walk", "snap"], "note": "idle = slow breathing bob; walk = legs step and body bobs; snap = both claws open and snap shut from p.f" },
+    { "name": "color", "type": "string", "default": "#F0703A", "note": "shell colour (hex)" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror left-right" },
+    { "name": "vx", "type": "number", "default": 0, "note": "px per frame drift" }
+  ],
+  "example": { "x": 540, "y": 1560, "pose": "walk" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "flat-vector/jellyfish",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Jellyfish",
+  "summary": "Flat vector translucent pink jellyfish with a pulsing bell and swaying tentacles; y is body centre.",
+  "tags": [
+    "jellyfish",
+    "jelly",
+    "sea",
+    "ocean",
+    "translucent",
+    "marine",
+    "pink"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "body centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1000,
+      "note": "body centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; sizes below are px at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "swim",
+      "values": [
+        "swim",
+        "idle"
+      ],
+      "note": "swim = gentle motion from p.f; idle = slow hover"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E58BD0",
+      "note": "bell colour"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1000,
+    "pose": "swim"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/lobster",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Lobster",
+  "summary": "Flat vector red lobster in side view with a segmented tail fan, two big claws and long antennae.",
+  "tags": ["lobster", "sea", "seafood", "marine", "claws", "crustacean", "red"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre (ground)" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 420 px long at s = 1" },
+    { "name": "pose", "type": "enum", "default": "idle", "values": ["idle", "walk", "snap"], "note": "idle = slow tail and antenna sway; walk = legs step and tail flicks; snap = claws open and snap from p.f" },
+    { "name": "color", "type": "string", "default": "#C8322B", "note": "shell colour (hex)" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "face left" },
+    { "name": "vx", "type": "number", "default": 0, "note": "px per frame drift" }
+  ],
+  "example": { "x": 540, "y": 1560, "pose": "walk" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

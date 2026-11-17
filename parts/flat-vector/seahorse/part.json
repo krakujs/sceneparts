@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/seahorse",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Seahorse",
+  "summary": "Flat vector upright yellow-orange seahorse with a curled tail and fluttering dorsal fin; bobs in the water.",
+  "tags": ["seahorse", "sea", "ocean", "fish", "marine", "underwater", "yellow"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1000, "note": "body centre (not on the ground)" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 260 px tall at s = 1" },
+    { "name": "pose", "type": "enum", "default": "idle", "values": ["idle", "swim"], "note": "idle = gentle bob and slow fin flutter; swim = stronger bob, faster fin and small sway" },
+    { "name": "color", "type": "string", "default": "#FFAA3B", "note": "body colour (hex)" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "face left" },
+    { "name": "vx", "type": "number", "default": 0, "note": "px per frame drift" }
+  ],
+  "example": { "x": 540, "y": 1000, "pose": "idle" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

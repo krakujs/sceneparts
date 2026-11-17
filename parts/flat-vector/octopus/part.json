@@ -1,0 +1,76 @@
+{
+  "id": "flat-vector/octopus",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Octopus",
+  "summary": "Flat vector orange-red octopus with eight curling arms, pale suckers and friendly eyes; y is body centre.",
+  "tags": [
+    "octopus",
+    "sea",
+    "ocean",
+    "tentacles",
+    "marine",
+    "friendly",
+    "cephalopod"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "body centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1000,
+      "note": "body centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; sizes below are px at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "swim",
+      "values": [
+        "swim",
+        "idle"
+      ],
+      "note": "swim = gentle motion from p.f; idle = slow hover"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF6B3D",
+      "note": "body colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1000,
+    "pose": "swim"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/slug",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Slug",
+  "summary": "Flat vector soft yellow-olive garden slug with a mantle bump and eye stalks; slowly stretches as it crawls.",
+  "tags": ["slug", "garden", "slow", "mollusc", "soft", "creature", "crawl"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre (ground)" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 220 px long at s = 1" },
+    { "name": "pose", "type": "enum", "default": "idle", "values": ["idle", "crawl"], "note": "idle = slow eye-stalk sway; crawl = body stretches in a slow wave and eye stalks swing" },
+    { "name": "color", "type": "string", "default": "#C7B83E", "note": "body colour (hex)" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "face left" },
+    { "name": "vx", "type": "number", "default": 0, "note": "px per frame drift (use a small value, e.g. 0.5, for a slow crawl)" }
+  ],
+  "example": { "x": 540, "y": 1560, "pose": "crawl", "vx": 0.5 },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

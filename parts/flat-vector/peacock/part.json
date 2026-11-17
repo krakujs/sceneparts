@@ -1,0 +1,95 @@
+{
+  "id": "flat-vector/peacock",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Peacock",
+  "summary": "Flat vector royal blue peacock with a crown crest and a big green eye-spotted tail fan; for display scenes.",
+  "tags": [
+    "peacock",
+    "peafowl",
+    "fan tail",
+    "blue bird",
+    "display bird",
+    "bird"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet on the ground (perch line / water line for perch and swim)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; sizes below are px at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "hop",
+        "peck",
+        "perch",
+        "fly",
+        "glide",
+        "swim",
+        "idle"
+      ],
+      "note": "perch = sitting, legs tucked; fly = wings flap, lifted by alt; swim = floating, no legs; idle = breathing + head turn"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#2A5CB8",
+      "note": "body and head colour"
+    },
+    {
+      "name": "wingspan",
+      "type": "number",
+      "default": 200,
+      "note": "wing span px (fly and glide)"
+    },
+    {
+      "name": "alt",
+      "type": "number",
+      "default": 160,
+      "note": "fly height px above y"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame drift"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "stand"
+  },
+  "uses": [
+    "flat-vector/bird",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/sea-urchin",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Sea urchin",
+  "summary": "Flat vector dark purple sea urchin with many radiating spines that sway gently; sits on the ground.",
+  "tags": ["sea urchin", "urchin", "sea", "spiky", "marine", "purple", "ocean"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre (ground)" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 200 px tall at s = 1" },
+    { "name": "pose", "type": "enum", "default": "sway", "values": ["sway", "idle"], "note": "sway = spines sway gently from p.f; idle = spines barely move" },
+    { "name": "color", "type": "string", "default": "#5A3A8A", "note": "body colour (hex); spines and shading are derived from it" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror left-right" },
+    { "name": "vx", "type": "number", "default": 0, "note": "px per frame drift" }
+  ],
+  "example": { "x": 540, "y": 1560, "pose": "sway" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

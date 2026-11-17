@@ -1,0 +1,109 @@
+{
+  "id": "flat-vector/swordfish",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Swordfish",
+  "summary": "Flat vector swordfish with a long sword bill, sail-like dorsal and crescent tail; y is body centre.",
+  "tags": [
+    "swordfish",
+    "fish",
+    "sea",
+    "ocean",
+    "bill",
+    "marine",
+    "big fish"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "body centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1000,
+      "note": "body centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; sizes below are px at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "swim",
+      "values": [
+        "swim",
+        "idle",
+        "dart",
+        "puffed"
+      ],
+      "note": "swim = body wave and tail beat from p.f; idle = slow hover, fins flutter; dart = fast beat; puffed = inflated pufferfish, no wave"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#5B66A0",
+      "note": "body colour"
+    },
+    {
+      "name": "patternColor",
+      "type": "colour",
+      "default": "#B07A3C",
+      "note": "colour of stripes, spots, speckles and scales"
+    },
+    {
+      "name": "bandColor",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "fill of vertical bands"
+    },
+    {
+      "name": "bandEdge",
+      "type": "colour",
+      "default": "#1F2433",
+      "note": "dark edge on each side of a band"
+    },
+    {
+      "name": "spikes",
+      "type": "boolean",
+      "default": false,
+      "note": "spines around the body (pufferfish)"
+    },
+    {
+      "name": "bubbles",
+      "type": "boolean",
+      "default": false,
+      "note": "bubbles rising from the mouth, from p.f"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1000,
+    "pose": "swim"
+  },
+  "uses": [
+    "flat-vector/fish",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

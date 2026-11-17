@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/clam",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Clam",
+  "summary": "Flat vector pale ridged clam with a pink inside that opens, closes or chatters on the ground.",
+  "tags": ["clam", "shell", "seafood", "sea", "mollusc", "beach", "bivalve"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre (ground)" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 200 px wide at s = 1" },
+    { "name": "pose", "type": "enum", "default": "open", "values": ["open", "closed", "chatter"], "note": "open = opens and closes slowly from p.f; closed = shut; chatter = quick small snapping open and shut" },
+    { "name": "color", "type": "string", "default": "#D9C3A5", "note": "shell colour (hex)" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "face left" },
+    { "name": "vx", "type": "number", "default": 0, "note": "px per frame drift" }
+  ],
+  "example": { "x": 540, "y": 1560, "pose": "open" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

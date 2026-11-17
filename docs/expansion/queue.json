@@ -465,7 +465,7 @@
     "title": "Birds, sea life, reptiles and bugs",
     "style": "flat-vector",
     "type": "character",
-    "status": "todo",
+    "status": "done",
     "generator": null,
     "brief": "Generators: parts/flat-vector/bird (perch/fly/flap), parts/flat-vector/fish (swim cycle), parts/flat-vector/bug; then presets. Reptiles may get their own small generator.",
     "names": [
@@ -572,7 +572,10 @@
       "worm",
       "firefly"
     ],
-    "count": 102
+    "count": 102,
+    "built": 106,
+    "date": "2026-11-17",
+    "notes": "New generators flat-vector/bird (10 beaks, crests, combs, fan/train tails, stand/walk/hop/peck/perch/fly/glide/swim/idle), flat-vector/fish (shapes, hammer/bill/whisker heads, puffed), flat-vector/bug (side/top view, butterfly/moth/clear/shell wings, glow, jumper legs) and flat-vector/reptile (lizard/croc/snake/coil/turtle bodies). 40 bird, 10 fish, 15 bug, 14 reptile presets; 23 standalone sea creatures, amphibians and crawlers. All 102 names built."
   },
   {
     "id": "05-flat-vector-food",

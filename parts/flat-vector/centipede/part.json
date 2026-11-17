@@ -1,0 +1,69 @@
+{
+  "id": "flat-vector/centipede",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Centipede",
+  "summary": "Centipede: long brown-orange segmented body with many legs that ripple in a wave; crawls along the ground.",
+  "tags": [
+    "centipede",
+    "segmented",
+    "many-legged",
+    "crawling",
+    "brown",
+    "garden"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet / bottom centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 380 px long at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#D9803F",
+      "note": "body colour"
+    },
+    {
+      "name": "legColor",
+      "type": "colour",
+      "default": "#5E3B26",
+      "note": "leg colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

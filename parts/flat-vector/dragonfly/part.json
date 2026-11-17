@@ -1,0 +1,94 @@
+{
+  "id": "flat-vector/dragonfly",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Dragonfly",
+  "summary": "Dragonfly: long thin turquoise body, four long clear wings and big eyes; hovers over ponds and gardens.",
+  "tags": [
+    "dragonfly",
+    "insect",
+    "pond",
+    "flying",
+    "turquoise",
+    "summer"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet / bottom centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; sizes below are px at s = 1 (bee ~220 px long)"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "hover",
+      "values": [
+        "stand",
+        "crawl",
+        "fly",
+        "hover",
+        "idle"
+      ],
+      "note": "crawl = legs alternate from f; fly = wings beat fast, body lifted alt; hover = fly in place with a small bob"
+    },
+    {
+      "name": "view",
+      "type": "enum",
+      "default": "side",
+      "values": [
+        "side",
+        "top"
+      ],
+      "note": "top = seen from above, lying on the ground (butterflies, ladybugs, spiders)"
+    },
+    {
+      "name": "alt",
+      "type": "number",
+      "default": 140,
+      "note": "px the body is lifted when flying (hover uses 30%)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#27B8B0",
+      "note": "main colour (abdomen)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "hover"
+  },
+  "uses": [
+    "flat-vector/bug",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

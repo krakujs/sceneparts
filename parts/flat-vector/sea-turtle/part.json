@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/sea-turtle",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Sea turtle",
+  "summary": "Flat vector green-brown sea turtle with broad flippers and a flat shell; paddles with a gentle bob, for ocean scenes.",
+  "tags": [
+    "sea turtle",
+    "turtle",
+    "ocean",
+    "sea",
+    "swim",
+    "flippers",
+    "reptile",
+    "animal"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "ground under the body"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "walk",
+      "values": [
+        "stand",
+        "walk",
+        "slither",
+        "idle",
+        "raised"
+      ],
+      "note": "swim = paddling flippers, gentle bob"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#7E9A4A",
+      "note": "main colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "walk"
+  },
+  "uses": [
+    "flat-vector/reptile",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

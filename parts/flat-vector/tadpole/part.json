@@ -1,0 +1,64 @@
+{
+  "id": "flat-vector/tadpole",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Tadpole",
+  "summary": "Flat vector dark round tadpole with a wiggling tail; swims in pond scenes.",
+  "tags": [
+    "tadpole",
+    "pond",
+    "swim",
+    "amphibian",
+    "baby",
+    "wiggle",
+    "animal"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1000,
+      "note": "body centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#2F3B30",
+      "note": "main colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1000
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
