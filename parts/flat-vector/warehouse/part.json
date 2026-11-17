@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/warehouse",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Warehouse",
+  "summary": "Big corrugated warehouse with a row of loading dock doors and lamps; for logistics, port and industrial scenes.",
+  "tags": ["warehouse", "loading dock", "storage", "logistics", "depot", "corrugated", "industrial"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the base stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 1000 px wide and 530 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#DDE2EA", "note": "wall colour"},
+    {"name": "color2", "type": "colour", "default": "#2A50AE", "note": "roof colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "lights"], "note": "lights = dock lamps blink on one after another"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

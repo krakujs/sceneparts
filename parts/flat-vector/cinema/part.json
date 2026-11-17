@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/cinema",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Cinema",
+  "summary": "Cinema facade with a marquee of lights, blank posters and a film-reel icon; anim lights chases the marquee.",
+  "tags": [
+    "cinema",
+    "movies",
+    "film",
+    "marquee",
+    "poster",
+    "reel",
+    "theatre",
+    "building"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the base stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 860 px wide and 860 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#EEE8F6",
+      "note": "main wall / body colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "roof and accent colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "lights"
+      ],
+      "note": "anim lights = marquee lights chase along the sign"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "lights"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

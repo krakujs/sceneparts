@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/water-tower",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Water Tower",
+  "summary": "Elevated round water tank on steel legs with a ladder and railing; for town skylines and rural scenes.",
+  "tags": ["water tower", "water tank", "tank", "steel tower", "town", "skyline", "ladder"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the base stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 420 px wide and 1060 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "tank colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "steel legs and roof colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "lights"], "note": "lights = the warning lamp on top blinks"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the ladder then sits on the right)"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

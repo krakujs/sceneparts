@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/bell-tower",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Bell tower",
+  "summary": "Stone bell tower with a visible bronze bell in an open belfry; anim lights swings the bell like a pendulum.",
+  "tags": ["bell tower", "belfry", "bell", "tower", "church bell", "chime", "village"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1600, "note": "floor line: the plinth stands on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "about 590 px wide and 1120 px tall at s = 1" },
+    { "name": "color", "type": "colour", "default": "#DDE2EA", "note": "stone colour" },
+    { "name": "color2", "type": "colour", "default": "#B53A2E", "note": "roof colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "lights", "pop"], "note": "lights = the bell swings on its beam (the bell is the natural motion); pop = scales in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1600, "s": 1, "anim": "lights" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

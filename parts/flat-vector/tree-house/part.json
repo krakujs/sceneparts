@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/tree-house",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Tree House",
+  "summary": "Wooden tree house with a platform, railing and rope ladder in a big tree. For childhood and treetop scenes.",
+  "tags": [
+    "tree house",
+    "treehouse",
+    "tree",
+    "wood",
+    "rope ladder",
+    "kids",
+    "platform"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the base stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 920 px wide and 1160 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "Wood colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#B53A2E",
+      "note": "Roof colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "lights"
+      ],
+      "note": "pop = scales in; lights = the house windows glow one after another"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "lights"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

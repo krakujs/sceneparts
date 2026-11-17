@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/parking-garage",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Parking Garage",
+  "summary": "Multi-storey car park with open decks, railings, parked cars, a ramp and a P sign; anim lights switches deck lamps on.",
+  "tags": [
+    "parking garage",
+    "car park",
+    "parking",
+    "multi-storey",
+    "garage",
+    "parking lot",
+    "city"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the car park stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 900 px wide and 1200 px tall at s = 1 (P sign reaches higher)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#D5DBE5",
+      "note": "concrete colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "P sign colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "lights"
+      ],
+      "note": "pop = scales in; lights = deck lamps switch on floor by floor"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 0.9,
+    "anim": "lights"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

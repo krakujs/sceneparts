@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/gate",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Wrought-Iron Gate",
+  "summary": "Wrought-iron double gate between two brick pillars, with a lantern on each pillar. For estate entrances and driveways.",
+  "tags": [
+    "gate",
+    "iron gate",
+    "wrought iron",
+    "gateway",
+    "entrance",
+    "brick pillars",
+    "driveway"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the base stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 840 px wide and 720 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#B53A2E",
+      "note": "Brick colour of the pillars"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#3A4157",
+      "note": "Iron colour of the gate"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "lights"
+      ],
+      "note": "pop = scales in; lights = the two pillar lanterns glow in turn"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "lights"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

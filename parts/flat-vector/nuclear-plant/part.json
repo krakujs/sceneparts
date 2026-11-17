@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/nuclear-plant",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Nuclear Plant",
+  "summary": "Two hyperbolic cooling towers with steam plumes and a reactor dome in front; generic power-station scenery.",
+  "tags": ["nuclear plant", "nuclear power", "cooling tower", "reactor", "power station", "steam", "energy"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the base stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 960 px wide and 1100 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#DDE2EA", "note": "tower and building colour"},
+    {"name": "color2", "type": "colour", "default": "#3D6FE0", "note": "accent band colour on the towers"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "lights"], "note": "lights = steam plumes drift up from both cooling towers"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

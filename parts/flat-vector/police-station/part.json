@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/police-station",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Police station",
+  "summary": "Civic police station with a blue lamp over the door and a blank badge sign; anim lights glows windows and the lamp.",
+  "tags": [
+    "police",
+    "police-station",
+    "station",
+    "law",
+    "civic",
+    "building",
+    "town",
+    "lamp"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the base stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 800 px wide and 850 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E4E9F2",
+      "note": "main wall / body colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#2A50AE",
+      "note": "roof and accent colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "lights"
+      ],
+      "note": "anim lights = windows and the blue lamp glow in turn"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "lights"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/mosque",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Mosque",
+  "summary": "Generic mosque with a central dome, two minarets and an arched entrance; anim lights glows the minaret windows.",
+  "tags": [
+    "mosque",
+    "minaret",
+    "dome",
+    "islam",
+    "religion",
+    "arch",
+    "building",
+    "architecture"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the base stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 880 px wide and 1220 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F4F1EA",
+      "note": "main wall / body colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "roof and accent colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "lights"
+      ],
+      "note": "anim lights = the minaret windows glow in turn"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "lights"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

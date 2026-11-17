@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/gas-station",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Gas Station",
+  "summary": "Fuel station with a canopy on two posts, two pumps and a small shop; anim lights runs the canopy lights in turn.",
+  "tags": ["gas station", "petrol station", "fuel", "filling station", "pump", "road", "forecourt"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the forecourt stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 960 px wide and 700 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "canopy colour"},
+    {"name": "color2", "type": "colour", "default": "#E9D3A9", "note": "shop wall colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "pop = scales in; lights = canopy strip lights run along in turn"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

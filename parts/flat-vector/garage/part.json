@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/garage",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Garage",
+  "summary": "Detached garage with a roll-up door, side door and a pitched roof. For driveway and suburban street scenes.",
+  "tags": ["garage", "car garage", "roll-up door", "detached garage", "driveway", "suburban", "building"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the garage stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 720 px wide and 560 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#F4F1EA", "note": "wall colour"},
+    {"name": "color2", "type": "colour", "default": "#3D6FE0", "note": "roll-up door and roof colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "lights = the roll-up door slides up and back down"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the side door then sits on the left)"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

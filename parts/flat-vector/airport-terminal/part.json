@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/airport-terminal",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Airport Terminal",
+  "summary": "Modern airport terminal with a glass front, curved glass roof and a control tower stub; for travel and city scenes.",
+  "tags": ["airport", "terminal", "airport terminal", "control tower", "glass roof", "travel", "flight"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the building stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 1000 px wide and 820 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "building body colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "roof colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "lights"], "note": "lights = tower beacon blinks and terminal lamps glow in turn"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the tower then sits on the left)"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

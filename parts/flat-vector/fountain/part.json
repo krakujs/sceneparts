@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/fountain",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Fountain",
+  "summary": "Tiered stone fountain with a wide basin, a middle bowl and water jets; anim lights pulses the jets in turn.",
+  "tags": ["fountain", "water", "stone", "plaza", "park", "garden", "jets"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the fountain stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 760 px wide and 680 px tall at s = 1 (jets rise a little higher)"},
+    {"name": "color", "type": "colour", "default": "#D5DBE5", "note": "stone colour"},
+    {"name": "color2", "type": "colour", "default": "#8EC5E8", "note": "water colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "pop = scales in; lights = water jets pulse up and down in turn"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

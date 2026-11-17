@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/pier",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Pier",
+  "summary": "Wooden pier on piles running out over the water, with lamp posts and a bench. For seaside and lake scenes.",
+  "tags": [
+    "pier",
+    "jetty",
+    "wooden pier",
+    "sea",
+    "water",
+    "boardwalk",
+    "lake",
+    "piles"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the base stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 1000 px wide and 590 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "Wood colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#8EC5E8",
+      "note": "Water colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "lights"
+      ],
+      "note": "pop = scales in; lights = the lamps on the posts glow in turn"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "lights"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/barn",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Barn",
+  "summary": "Red farm barn with a gambrel roof, white X doors and a hay loft. For farm and countryside scenes.",
+  "tags": ["barn", "farm", "red barn", "gambrel roof", "farmland", "countryside", "hay"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the barn stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 820 px wide and 780 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "barn wall colour"},
+    {"name": "color2", "type": "colour", "default": "#FFFFFF", "note": "door X, trim and roof colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "lights = a lamp glows in the loft window"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

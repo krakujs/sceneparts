@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/street-food-cart",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Street food cart",
+  "summary": "Wheeled street-food cart with striped canopy, griddle and steaming pots; for market, city and food scenes.",
+  "tags": ["food cart", "street food", "food stall", "market", "griddle", "vendor", "city"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1600, "note": "floor line: the wheels stand on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "about 700 px wide and 850 px tall at s = 1 (about a person's height at s = 1.1)" },
+    { "name": "color", "type": "colour", "default": "#FF8A3D", "note": "cabinet and canopy stripe colour" },
+    { "name": "color2", "type": "colour", "default": "#FFFFFF", "note": "canopy stripe colour 2" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "lights", "pop"], "note": "lights = steam rises from the pots and griddle one puff after another; pop = scales in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1600, "s": 1, "anim": "lights" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

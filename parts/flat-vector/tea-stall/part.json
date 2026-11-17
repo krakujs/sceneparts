@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/tea-stall",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Tea stall",
+  "summary": "Small roadside chai stall with a kettle on the stove, glasses and a bench; for street and travel scenes.",
+  "tags": [
+    "tea stall",
+    "chai",
+    "tea shop",
+    "roadside",
+    "kettle",
+    "street",
+    "cafe"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the stall stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 760 px wide and 800 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E9D3A9",
+      "note": "wall colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "roof colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "lights",
+        "pop"
+      ],
+      "note": "lights = stove flames flicker and steam rises from the kettle; pop = scales in"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the bench then sits on the left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "lights"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

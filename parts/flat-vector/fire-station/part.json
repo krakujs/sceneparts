@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/fire-station",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Fire station",
+  "summary": "Fire station with two red roll-up bay doors and a tall hose tower; anim lights glows the tower windows.",
+  "tags": [
+    "fire",
+    "fire-station",
+    "firefighter",
+    "engine",
+    "rescue",
+    "building",
+    "hose-tower",
+    "town"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the base stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 960 px wide and 1190 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F4EFE8",
+      "note": "main wall / body colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "roof and accent colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "lights"
+      ],
+      "note": "anim lights = the hose-tower windows glow in turn"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "lights"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

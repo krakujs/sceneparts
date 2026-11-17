@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/igloo",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Igloo",
+  "summary": "Snow-block dome with a tunnel entrance, sitting on a snow patch. For polar and winter scenes.",
+  "tags": ["igloo", "snow house", "snow", "winter", "arctic", "polar", "dome"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the snow patch sits on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 600 px wide and 400 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "snow block colour"},
+    {"name": "color2", "type": "colour", "default": "#CFE6F5", "note": "shadow and block-line colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "lights = a warm lamp glows inside the entrance"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

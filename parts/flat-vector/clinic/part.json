@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/clinic",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Clinic",
+  "summary": "Small single-storey clinic with a striped awning and a green cross sign; anim lights glows its windows.",
+  "tags": [
+    "clinic",
+    "doctor",
+    "medical",
+    "health",
+    "small",
+    "surgery",
+    "building",
+    "town"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the base stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 780 px wide and 800 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F7F3EC",
+      "note": "main wall / body colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "roof and accent colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "lights"
+      ],
+      "note": "anim lights = the two windows glow in turn"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "lights"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

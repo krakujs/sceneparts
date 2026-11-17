@@ -13,3 +13,4 @@
 | 07-flat-vector-tech (rest: the 7 rebuilt parts – computer-mouse, earbuds, charging-cable, podcast-mic, satellite-dish, cpu-chip, ring-light) | 7 | 1011 | 2026-11-17 |
 | 08-flat-vector-tools (93 standalone props: hand and power tools, garden and farm tools, construction and safety gear, workshop, materials and storage, fire and light, sewing, heavy machines, mechanics; 4 rebuilt next run) | 93 | 1104 | 2026-11-17 |
 | 09-flat-vector-vehicles + 08 rest (car reference sets the vehicle convention; 93 vehicles, boats, aircraft and transport props incl. car; 08: hand-drill, fishing-net, vise rebuilt; glider, go-kart, space-shuttle and combine-harvester rebuild next run) | 96 | 1200 | 2026-11-17 |
+| 10-flat-vector-buildings + 08/09 rest (96 generic buildings, places and street furniture; 08: combine-harvester; 09: glider, go-kart, space-shuttle; 8 buildings rebuild next run) | 100 | 1300 | 2026-11-17 |

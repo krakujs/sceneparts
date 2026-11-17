@@ -1,0 +1,85 @@
+{
+  "id": "flat-vector/glider",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Glider",
+  "summary": "Engine-less sailplane with very long thin wings, bubble canopy and T-tail, seen from the side; anim fly floats it.",
+  "tags": [
+    "glider",
+    "sailplane",
+    "gliding",
+    "aircraft",
+    "wings",
+    "soaring",
+    "plane"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x at frame 0"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the main wheel stands on y (raise it for a glider in the sky)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 960 px wide and 420 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "fuselage colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "wing and tail colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "fly",
+        "bob",
+        "pop"
+      ],
+      "note": "fly = floats up and down and tilts gently; bob = a gentle lift; pop = scales in"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "horizontal speed in px per frame (negative = left; set flip too)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror so the glider faces left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "fly"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

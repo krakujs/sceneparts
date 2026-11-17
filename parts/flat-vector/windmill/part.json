@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/windmill",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Windmill",
+  "summary": "Traditional tower windmill with four lattice sails; anim lights turns the sails. For farm and countryside scenes.",
+  "tags": ["windmill", "mill", "tower mill", "sails", "farm", "countryside", "wind"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the tower stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 620 px wide and 1300 px tall at s = 1 (sail tips included)"},
+    {"name": "color", "type": "colour", "default": "#F4F1EA", "note": "tower wall colour"},
+    {"name": "color2", "type": "colour", "default": "#8A5A3C", "note": "sail and cap colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "lights = the four sails turn slowly round the hub"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

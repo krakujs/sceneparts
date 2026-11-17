@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/clock-tower",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Clock tower",
+  "summary": "Tall stone clock tower with a spire and a clock face whose hands turn with the frames; for town and time scenes.",
+  "tags": ["clock tower", "clock", "tower", "town square", "time", "spire", "landmark"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1600, "note": "floor line: the plinth stands on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "about 460 px wide and 1340 px tall at s = 1" },
+    { "name": "color", "type": "colour", "default": "#E9D3A9", "note": "stone colour" },
+    { "name": "color2", "type": "colour", "default": "#253058", "note": "spire colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "lights", "pop"], "note": "lights = the two windows light up one after another; pop = scales in. The hands always turn with the frames" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1600, "s": 1, "anim": "none" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

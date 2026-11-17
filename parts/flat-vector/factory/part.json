@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/factory",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Factory",
+  "summary": "Factory hall with a sawtooth roof and two smokestacks; anim lights drifts smoke puffs up from the stacks.",
+  "tags": ["factory", "industry", "plant", "smokestack", "smoke", "sawtooth roof", "workshop"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the base stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 980 px wide and 760 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#DDE2EA", "note": "wall colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "roof and stack colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "lights"], "note": "lights = smoke drifts up from both stacks and fades; the window in the middle glows"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

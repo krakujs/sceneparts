@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/shed",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Garden Shed",
+  "summary": "Small wooden garden shed with a door and window and a pitched roof. For garden and backyard scenes.",
+  "tags": ["shed", "garden shed", "wooden shed", "garden", "backyard", "outbuilding", "tool shed"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the shed stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 440 px wide and 460 px tall at s = 1 (about 1.5 people high at s = 1)"},
+    {"name": "color", "type": "colour", "default": "#C9A063", "note": "wood colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "roof colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "lights = the window glows as if a lamp were on inside"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

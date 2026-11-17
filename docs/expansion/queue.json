@@ -972,7 +972,7 @@
     "title": "Tools, work and industry",
     "style": "flat-vector",
     "type": "prop",
-    "status": "partial",
+    "status": "done",
     "generator": null,
     "brief": "Hand tools, power tools and industrial objects.",
     "names": [
@@ -1079,19 +1079,16 @@
       "horseshoe"
     ],
     "count": 101,
-    "built": 96,
+    "built": 97,
     "date": "2026-11-17",
-    "remaining": [
-      "harvester"
-    ],
-    "notes": "ladder and toolbox already existed (06); key covered by flat-vector/keys; iron tool covered by flat-vector/iron. Slugs: saw->hand-saw, level->spirit-level, hose->garden-hose, barrier->road-barrier, gloves->work-gloves, goggles->safety-goggles, file tool->metal-file, crane->construction-crane, generator->power-generator, torch flame->flaming-torch, bucket of water->water-bucket, sand bag->sand-bag, cog wheel->gear-pair (interlocking gears), measuring tape->sewing-tape-measure (tailor's tape). Deleted in review, rebuild next run: hand drill (unreadable crank drill), fishing net (looked like a racket), vise (two slabs, unrecognisable), harvester (did not read as a combine). Run 2026-11-17 (with 09): rebuilt hand-drill, fishing-net, vise. combine-harvester failed review twice more (read as a tractor with a fan / tall box with a pinwheel) – orchestrator should draw it directly next time."
+    "notes": "ladder and toolbox already existed (06); key covered by flat-vector/keys; iron tool covered by flat-vector/iron. Slugs: saw->hand-saw, level->spirit-level, hose->garden-hose, barrier->road-barrier, gloves->work-gloves, goggles->safety-goggles, file tool->metal-file, crane->construction-crane, generator->power-generator, torch flame->flaming-torch, bucket of water->water-bucket, sand bag->sand-bag, cog wheel->gear-pair (interlocking gears), measuring tape->sewing-tape-measure (tailor's tape). Deleted in review, rebuild next run: hand drill (unreadable crank drill), fishing net (looked like a racket), vise (two slabs, unrecognisable), harvester (did not read as a combine). Run 2026-11-17 (with 09): rebuilt hand-drill, fishing-net, vise. combine-harvester failed review twice more (read as a tractor with a fan / tall box with a pinwheel) – orchestrator should draw it directly next time. Run 2026-11-17 (with 10): combine-harvester drawn directly by the orchestrator (header with reel, feeder, cab, grain tank, unloading pipe)."
   },
   {
     "id": "09-flat-vector-vehicles",
     "title": "Vehicles and transport",
     "style": "flat-vector",
     "type": "scenery",
-    "status": "partial",
+    "status": "done",
     "generator": null,
     "brief": "Side-view vehicles with optional wheel spin and vx; generic designs, no logos.",
     "names": [
@@ -1196,21 +1193,16 @@
       "jetpack"
     ],
     "count": 99,
-    "built": 93,
+    "built": 96,
     "date": "2026-11-17",
-    "remaining": [
-      "glider",
-      "go-kart",
-      "space shuttle"
-    ],
-    "notes": "Vehicle convention set by flat-vector/car (reference): side view facing right, wheels on y, params x,y,s,color,color2,anim(none/drive/bob/pop),vx,flip; boats sit on a waterline at y; aircraft anim fly. Skipped: 'tractor vehicle' (flat-vector/tractor exists), 'ev charger' (flat-vector/electric-car-charger), 'kick scooter' (flat-vector/electric-scooter). Slugs: scooter->motor-scooter, jet->private-jet, tank->army-tank, train station sign->station-sign. Deleted in review, rebuild next run: glider (wing and body unreadable after a redraw), go-kart (thin lines, floating steering wheel after a redraw), space shuttle (read as a plain white jet). Redrawn after review: airplane, private-jet, auto-rickshaw, tugboat, harbour-crane (was a tower crane duplicate)."
+    "notes": "Vehicle convention set by flat-vector/car (reference): side view facing right, wheels on y, params x,y,s,color,color2,anim(none/drive/bob/pop),vx,flip; boats sit on a waterline at y; aircraft anim fly. Skipped: 'tractor vehicle' (flat-vector/tractor exists), 'ev charger' (flat-vector/electric-car-charger), 'kick scooter' (flat-vector/electric-scooter). Slugs: scooter->motor-scooter, jet->private-jet, tank->army-tank, train station sign->station-sign. Deleted in review, rebuild next run: glider (wing and body unreadable after a redraw), go-kart (thin lines, floating steering wheel after a redraw), space shuttle (read as a plain white jet). Redrawn after review: airplane, private-jet, auto-rickshaw, tugboat, harbour-crane (was a tower crane duplicate). Run 2026-11-17 (with 10): rebuilt glider (orchestrator redrew it: diagonal long wings, T-tail), go-kart (orchestrator redrew it), space-shuttle (vertical launch stack with orange tank and boosters)."
   },
   {
     "id": "10-flat-vector-buildings",
     "title": "Buildings and places",
     "style": "flat-vector",
     "type": "scenery",
-    "status": "todo",
+    "status": "partial",
     "generator": null,
     "brief": "Generic buildings and landmarks types (not copies of real named landmarks).",
     "names": [
@@ -1323,7 +1315,20 @@
       "clock tower",
       "bell tower"
     ],
-    "count": 108
+    "count": 108,
+    "built": 96,
+    "date": "2026-11-17",
+    "remaining": [
+      "hospital",
+      "stadium",
+      "swimming pool",
+      "playground",
+      "oil rig",
+      "dam",
+      "temple",
+      "diner"
+    ],
+    "notes": "Building convention: front elevation standing on y (default 1600), params x,y,s,color,color2,anim(none/pop/lights),flip; ≤1000 px wide, ≤1450 px tall; no words (only 'H'/'P' where named), no red-cross emblem, generic not real landmarks. Skipped as covered: 'lighthouse building' (flat-vector/lighthouse), 'bus shelter' (flat-vector/bus-stop), 'radio tower' (flat-vector/antenna-tower), 'bridge arch' (flat-vector/bridge is an arched bridge). Slugs: tower->watchtower, park bench area->park-corner, monument obelisk->obelisk, colosseum-style arena->ancient-arena, billboard blank->billboard. Deleted in review, rebuild next run: hospital (garbled sign and ambulance bay), stadium (read as a top-down oval with a door), swimming pool (floating diving board, weak), playground (floating bars, sparse), oil rig (read as scaffolding), dam (read as a building next to water), temple (read as a tiered cake, no shikhara), diner (read as a train carriage). Fixed in review: nuclear-plant cooling towers given a real waist."
   },
   {
     "id": "11-flat-vector-nature",
