@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/ring-light",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Ring Light",
+  "summary": "Big glowing ring light on a tripod with a phone holder in the middle; for video, selfie and content-creation scenes.",
+  "tags": ["ring light", "selfie light", "lamp", "vlog", "video light", "content creator", "tripod"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the tripod stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: at s = 1 about 500 px wide and 920 px tall; use about 0.5 for a desk or room scene"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "ring colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "tripod and clamp colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pulse"], "note": "pulse = the glow breathes"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 0.6, "anim": "pulse"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

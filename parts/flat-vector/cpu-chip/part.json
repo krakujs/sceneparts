@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/cpu-chip",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "CPU Chip",
+  "summary": "Square processor chip seen from above with a metal lid and pins on all sides; for tech and computing scenes.",
+  "tags": ["cpu", "processor", "chip", "microchip", "computer chip", "silicon", "tech"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "base point: the chip is drawn above y (about 330 px up)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 380 px across (hero size); use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#253058", "note": "package colour"},
+    {"name": "color2", "type": "colour", "default": "#DDE2EA", "note": "metal lid colour"},
+    {"name": "accent", "type": "colour", "default": "#E0A21F", "note": "pin colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pulse"], "note": "pulse = a soft glow behind the chip"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "pulse"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

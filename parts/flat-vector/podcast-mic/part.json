@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/podcast-mic",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Podcast Microphone",
+  "summary": "Large broadcast microphone with a round foam head, shock-mount ring and desk boom arm; for podcast and recording scenes.",
+  "tags": ["microphone", "mic", "podcast", "broadcast", "boom arm", "recording", "studio"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "desk line: the weighted base stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: at s = 1 about 480 px wide and 800 px tall; use about 0.4–0.5 for a desk scene"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "mic head colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "arm, stand and shock-mount colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pulse", "pop"], "note": "pulse = the on-air light blinks softly"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the boom then reaches left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 0.5, "anim": "pulse"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
