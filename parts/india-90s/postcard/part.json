@@ -1,0 +1,83 @@
+{
+  "id": "india-90s/postcard",
+  "type": "prop",
+  "style": "india-90s",
+  "name": "Postcard",
+  "summary": "Generic yellow postcard being written (writ 0..1), with stamp text, title and ink blot.",
+  "tags": [
+    "90s",
+    "india",
+    "letter",
+    "mail",
+    "nostalgia",
+    "pen pal",
+    "post",
+    "postcard",
+    "writing"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900
+    },
+    {
+      "name": "w",
+      "type": "number",
+      "default": 700
+    },
+    {
+      "name": "rot",
+      "type": "number",
+      "default": 0
+    },
+    {
+      "name": "writ",
+      "type": "number",
+      "default": 1,
+      "note": "0..1 text written"
+    },
+    {
+      "name": "stamp",
+      "type": "string"
+    },
+    {
+      "name": "color",
+      "type": "colour"
+    },
+    {
+      "name": "title",
+      "type": "string"
+    },
+    {
+      "name": "blot",
+      "type": "number",
+      "default": 0
+    },
+    {
+      "name": "seed",
+      "type": "string",
+      "default": "pc"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "writ": [
+      0,
+      1
+    ]
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

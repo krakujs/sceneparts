@@ -1,0 +1,57 @@
+{
+  "id": "india-90s/phone",
+  "type": "prop",
+  "style": "india-90s",
+  "name": "Mobile phone with signal bars",
+  "summary": "Modern phone showing signal bars and a label (\"Searching\u2026\"), for then-vs-now contrasts.",
+  "tags": [
+    "90s",
+    "india",
+    "mobile",
+    "modern",
+    "network",
+    "nostalgia",
+    "phone",
+    "signal"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900
+    },
+    {
+      "name": "w",
+      "type": "number",
+      "default": 300
+    },
+    {
+      "name": "bars",
+      "type": "number",
+      "default": 2,
+      "note": "0..4"
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "default": "Searching\u2026"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "bars": 1
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

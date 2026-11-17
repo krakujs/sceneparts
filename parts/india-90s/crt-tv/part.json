@@ -1,0 +1,66 @@
+{
+  "id": "india-90s/crt-tv",
+  "type": "prop",
+  "style": "india-90s",
+  "name": "CRT television",
+  "summary": "Chunky 90s CRT TV on legs; screen shows snow, a clear picture, a cricket field, colour bars or off.",
+  "tags": [
+    "90s",
+    "crt",
+    "doordarshan",
+    "india",
+    "nostalgia",
+    "retro",
+    "screen",
+    "static",
+    "television",
+    "tv"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1100
+    },
+    {
+      "name": "w",
+      "type": "number",
+      "default": 560
+    },
+    {
+      "name": "screen",
+      "type": "enum",
+      "values": [
+        "snow",
+        "clear",
+        "khed",
+        "bars",
+        "off"
+      ],
+      "default": "snow",
+      "note": "khed = cricket field"
+    },
+    {
+      "name": "seed",
+      "type": "string",
+      "default": "tv"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1000,
+    "screen": "snow"
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

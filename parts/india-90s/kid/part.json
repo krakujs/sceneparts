@@ -1,0 +1,120 @@
+{
+  "id": "india-90s/kid",
+  "type": "character",
+  "style": "india-90s",
+  "name": "90s kid",
+  "summary": "Original Indian kid in a striped tee and shorts: poses (wave, cheer, bat, bowl, run\u2026), mouths, hair styles.",
+  "tags": [
+    "90s",
+    "boy",
+    "character",
+    "child",
+    "cricket",
+    "india",
+    "kid",
+    "nostalgia",
+    "school"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "feet"
+    },
+    {
+      "name": "scale",
+      "type": "number",
+      "default": 1
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "values": [
+        "idle",
+        "up",
+        "grip",
+        "wave",
+        "point",
+        "cheer",
+        "bat",
+        "catch",
+        "bowl",
+        "run"
+      ],
+      "default": "idle"
+    },
+    {
+      "name": "mouth",
+      "type": "enum",
+      "values": [
+        "smile",
+        "open",
+        "o",
+        "grr"
+      ],
+      "default": "smile"
+    },
+    {
+      "name": "facing",
+      "type": "number",
+      "default": 1,
+      "note": "1 right, -1 left"
+    },
+    {
+      "name": "look",
+      "type": "number",
+      "default": 0
+    },
+    {
+      "name": "tee",
+      "type": "object",
+      "note": "[stripeA, stripeB] colours"
+    },
+    {
+      "name": "shorts",
+      "type": "colour"
+    },
+    {
+      "name": "hair",
+      "type": "enum",
+      "values": [
+        "side",
+        "spiky",
+        "bowl"
+      ],
+      "default": "side"
+    },
+    {
+      "name": "prop",
+      "type": "string",
+      "note": "\"bat\""
+    },
+    {
+      "name": "swing",
+      "type": "number",
+      "default": 0
+    },
+    {
+      "name": "skin",
+      "type": "colour"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "pose": "cheer"
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

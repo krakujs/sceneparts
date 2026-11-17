@@ -1,0 +1,35 @@
+{
+  "id": "storybook/liner",
+  "type": "scenery",
+  "style": "storybook",
+  "name": "Ocean liner",
+  "summary": "Four-funnel ocean liner (early 1900s) that can tilt as it sinks.",
+  "tags": [
+    "storybook",
+    "flat",
+    "ship",
+    "ocean liner",
+    "sinking",
+    "1912",
+    "steamship",
+    "sea"
+  ],
+  "params": [
+    {
+      "name": "tilt",
+      "type": "number",
+      "default": 0,
+      "note": "degrees; [0, 12] to list"
+    }
+  ],
+  "example": {
+    "tilt": 4
+  },
+  "uses": [
+    "storybook/world-set"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

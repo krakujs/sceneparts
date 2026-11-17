@@ -45,14 +45,33 @@ A story:
     { "at": 20.6, "loop": "in" } ] }
 ```
 
-## What's in the library
+## What's in the repository
+
+| Folder | What it holds | How you use it |
+| --- | --- | --- |
+| [`parts/`](parts) | **Parts**: small, strict, reusable drawings (characters, props, scenery, backgrounds, effects, text, templates), grouped by art style | `story.json` items, found with `sceneparts search` |
+| [`scenes/`](scenes) | **Scene packs**: complete Remotion scenes from real channels, shared as-is | copy into a Remotion project; find with `sceneparts scenes` |
+| [`packages/`](packages) | The engine (`core`), the `sceneparts` CLI and the Remotion renderer | npm / clone |
+| [`skills/`](skills) + [`.claude-plugin/`](.claude-plugin) | The Claude plugin | install once, then just ask Claude |
+| [`examples/`](examples) | Example stories | `sceneparts preview examples/anubis-demo/story.json` |
+
+Styles today:
+
+| Style | Look | Highlights |
+| --- | --- | --- |
+| `core` | style-free | title, text, speech bubble, meter, burst, tag, sweat, drop-in opener template |
+| `egypt-tomb` | Egyptian tomb painting | 18 ready-made gods and people, scales of judgement, animals, pyramids, Nile |
+| `storybook` | vintage flat storybook | townsperson figure, 31 icons, terraced street, skies, 20 world sets (ships, trench, volcano, space…), 34 world props, plague doctor, looming god silhouettes |
+| `india-90s` | warm 90s Indian nostalgia | kid, parents, CRT TV, roof antenna, rooftops, gully lane, stadium, postcard, letterbox |
+
+Each part is two files:
 
 ```
 parts/<style>/<name>/part.json   what it is, its params, an example (the only file you read to use it)
 parts/<style>/<name>/index.tsx   the drawing: pure React + SVG, deterministic, ≤ 40 KB
 ```
 
-Styles today: `core` (style-free basics) and `egypt-tomb` (Egyptian tomb painting, 60 parts incl. 18 ready-made gods and people). More styles come from contributors – see [CONTRIBUTING.md](CONTRIBUTING.md).
+New styles and parts come from contributors – see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Packages
 

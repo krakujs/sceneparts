@@ -1,0 +1,86 @@
+{
+  "id": "storybook/god-silhouette",
+  "type": "background",
+  "style": "storybook",
+  "name": "Looming god silhouette",
+  "summary": "Giant dark god silhouette (humanoid, lion, winged, serpent, spider, beast) filling the frame; eyes open, rage glows.",
+  "tags": [
+    "storybook",
+    "god",
+    "deity",
+    "monster",
+    "silhouette",
+    "looming",
+    "mythology",
+    "wrath"
+  ],
+  "params": [
+    {
+      "name": "form",
+      "type": "enum",
+      "values": [
+        "humanoid",
+        "lion",
+        "winged",
+        "serpent",
+        "spider",
+        "beast"
+      ],
+      "default": "humanoid"
+    },
+    {
+      "name": "wings",
+      "type": "number",
+      "default": 0,
+      "note": "0, 2 or 4"
+    },
+    {
+      "name": "eyesAt",
+      "type": "number",
+      "default": 0.3,
+      "note": "seconds"
+    },
+    {
+      "name": "fill",
+      "type": "number",
+      "default": 0.85,
+      "note": "share of frame height"
+    },
+    {
+      "name": "breathe",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "name": "rage",
+      "type": "number",
+      "default": 0,
+      "note": "0..1 glow + shake"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#0d0b14"
+    },
+    {
+      "name": "glow",
+      "type": "colour",
+      "default": "#ffb347"
+    },
+    {
+      "name": "sky",
+      "type": "colour",
+      "default": "#5a2a1a"
+    }
+  ],
+  "example": {
+    "form": "lion",
+    "wings": 2,
+    "rage": 0.4
+  },
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

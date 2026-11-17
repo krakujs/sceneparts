@@ -1,0 +1,49 @@
+{
+  "id": "storybook/flames",
+  "type": "effect",
+  "style": "storybook",
+  "name": "Flames",
+  "summary": "Row of flickering flames along the bottom; level 0..1 sets the height of the fire.",
+  "tags": [
+    "storybook",
+    "flat",
+    "fire",
+    "burning",
+    "flames",
+    "disaster",
+    "heat"
+  ],
+  "params": [
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500
+    },
+    {
+      "name": "level",
+      "type": "number",
+      "default": 1
+    },
+    {
+      "name": "x0",
+      "type": "number",
+      "default": -40
+    },
+    {
+      "name": "x1",
+      "type": "number",
+      "default": 1120
+    }
+  ],
+  "example": {
+    "y": 1600,
+    "level": 1
+  },
+  "uses": [
+    "storybook/world-sky"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

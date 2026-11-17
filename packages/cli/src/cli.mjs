@@ -32,6 +32,7 @@ Use parts
   info <id>                       full part.json (params, defaults, example)
   add <id...>                     copy parts (+ what they use) into ./parts, pinned
   styles                          list styles
+  scenes ["<words>"] [--json out.json]   search the scene packs (complete Remotion scenes)
 Make a video
   init <dir> [--style egypt-tomb] new project: story.json, parts/, public/
   validate <story.json>           schema + part + timing checks; exit 1 on errors
@@ -56,6 +57,16 @@ switch (cmd) {
     const hits = search(readIndex(r), args.join(" "), { type: flags.type, style: flags.style, limit: Number(flags.limit ?? 10) });
     if (!hits.length) { console.log("no parts found – try other words, drop --style, or draw it and contribute it (sceneparts new …)"); break; }
     for (const e of hits) console.log(`${e.id.padEnd(30)} ${e.type.padEnd(10)} ${e.summary}\n${" ".repeat(31)}params: ${e.params.join(", ") || "–"}`);
+    break;
+  }
+  case "scenes": {
+    const r = await root();
+    const { sceneCatalog, searchScenes } = await import("./scenes.mjs");
+    const cat = sceneCatalog(r);
+    if (flags.json) { fs.writeFileSync(flags.json, JSON.stringify(cat, null, 2)); console.log(`✓ ${cat.length} scenes -> ${flags.json}`); break; }
+    const hits = searchScenes(cat, args.join(" "), Number(flags.limit ?? (args.length ? 10 : 200)));
+    if (!hits.length) { console.log("no scenes found"); break; }
+    for (const s of hits) console.log(`${s.id.padEnd(44)} ${s.components.join(", ")}\n${" ".repeat(45)}${s.summary.slice(0, 150)}${s.assets.length ? `\n${" ".repeat(45)}needs assets: ${s.assets.join(", ")}` : ""}`);
     break;
   }
   case "styles": {

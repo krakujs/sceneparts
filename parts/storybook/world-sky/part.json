@@ -1,0 +1,52 @@
+{
+  "id": "storybook/world-sky",
+  "type": "background",
+  "style": "storybook",
+  "name": "World sky",
+  "summary": "Full-frame sky for world scenes: night, day, dusk, storm (lightning), snow, ash, space or murk underwater.",
+  "tags": [
+    "storybook",
+    "flat",
+    "sky",
+    "weather",
+    "storm",
+    "space",
+    "underwater",
+    "night",
+    "background"
+  ],
+  "params": [
+    {
+      "name": "sky",
+      "type": "enum",
+      "values": [
+        "night",
+        "day",
+        "dusk",
+        "storm",
+        "snow",
+        "ash",
+        "space",
+        "murk"
+      ],
+      "default": "night"
+    },
+    {
+      "name": "flash",
+      "type": "boolean",
+      "default": true,
+      "note": "storm lightning"
+    }
+  ],
+  "example": {
+    "sky": "dusk"
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

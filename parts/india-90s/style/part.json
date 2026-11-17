@@ -1,0 +1,24 @@
+{
+  "id": "india-90s/style",
+  "type": "style",
+  "style": "india-90s",
+  "name": "India 90s nostalgia",
+  "summary": "Warm 90s Indian childhood look: dusk light, flat shapes, brown ink outline, rooftops, CRT TVs, gully cricket.",
+  "tags": [
+    "90s",
+    "childhood",
+    "desi",
+    "flat",
+    "illustration",
+    "india",
+    "nostalgia",
+    "retro",
+    "warm"
+  ],
+  "params": [],
+  "example": {},
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

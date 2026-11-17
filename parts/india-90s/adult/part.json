@@ -1,0 +1,89 @@
+{
+  "id": "india-90s/adult",
+  "type": "character",
+  "style": "india-90s",
+  "name": "90s parent",
+  "summary": "Indian dad, mum or a grown-up kid in 90s clothes; arm angles, mouth, optional phone.",
+  "tags": [
+    "90s",
+    "adult",
+    "family",
+    "father",
+    "india",
+    "mother",
+    "mummy",
+    "nostalgia",
+    "papa",
+    "parent"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600
+    },
+    {
+      "name": "scale",
+      "type": "number",
+      "default": 1
+    },
+    {
+      "name": "kind",
+      "type": "enum",
+      "values": [
+        "papa",
+        "mummy",
+        "bittu"
+      ],
+      "default": "papa",
+      "note": "bittu = grown-up kid"
+    },
+    {
+      "name": "arm",
+      "type": "number",
+      "default": 20
+    },
+    {
+      "name": "armR",
+      "type": "number",
+      "default": -20
+    },
+    {
+      "name": "mouth",
+      "type": "enum",
+      "values": [
+        "smile",
+        "open",
+        "flat"
+      ],
+      "default": "smile"
+    },
+    {
+      "name": "facing",
+      "type": "number",
+      "default": 1
+    },
+    {
+      "name": "phone",
+      "type": "boolean",
+      "default": false
+    }
+  ],
+  "example": {
+    "kind": "mummy",
+    "x": 540,
+    "y": 1600
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

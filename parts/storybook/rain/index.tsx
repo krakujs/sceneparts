@@ -1,0 +1,8 @@
+import React from "react";
+import type { PartProps } from "@sceneparts/core";
+import { Rain } from "../world-sky/index";
+
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export default function Part(p: PartProps<any>) {
+  return <Rain f={p.f} n={p.n} />;
+}

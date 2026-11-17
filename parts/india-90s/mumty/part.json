@@ -1,0 +1,45 @@
+{
+  "id": "india-90s/mumty",
+  "type": "scenery",
+  "style": "india-90s",
+  "name": "Rooftop stair hut",
+  "summary": "Mumty: the small stair hut on an Indian roof, door can open; things can sit inside.",
+  "tags": [
+    "90s",
+    "door",
+    "india",
+    "nostalgia",
+    "roof",
+    "stairs",
+    "terrace"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1300
+    },
+    {
+      "name": "open",
+      "type": "number",
+      "default": 1,
+      "note": "0..1 door open"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "floorY": 1400
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

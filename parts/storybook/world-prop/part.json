@@ -1,0 +1,133 @@
+{
+  "id": "storybook/world-prop",
+  "type": "prop",
+  "style": "storybook",
+  "name": "World prop",
+  "summary": "Prop library for disaster and history scenes: crowds, sharks, lifeboats, icebergs, signs, flags, animals and more.",
+  "tags": [
+    "storybook",
+    "flat",
+    "props",
+    "crowd",
+    "shark",
+    "lifeboat",
+    "iceberg",
+    "sign",
+    "animals",
+    "history"
+  ],
+  "params": [
+    {
+      "name": "kind",
+      "type": "enum",
+      "values": [
+        "crowd",
+        "person",
+        "doctor",
+        "rat",
+        "flea",
+        "barrel",
+        "biscuit",
+        "iceberg",
+        "tent",
+        "flag",
+        "pump",
+        "mug",
+        "candle",
+        "shark",
+        "fin",
+        "sign",
+        "carved",
+        "lifeboat",
+        "buoy",
+        "thermo",
+        "skulltag",
+        "cross",
+        "bed",
+        "lancet",
+        "cow",
+        "dummy",
+        "raincoatraft",
+        "tape",
+        "bear",
+        "canoe",
+        "fireball",
+        "coin",
+        "bubble",
+        "dog"
+      ],
+      "default": "crowd"
+    },
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1
+    },
+    {
+      "name": "r",
+      "type": "number",
+      "default": 0
+    },
+    {
+      "name": "flip",
+      "type": "boolean"
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "note": "sign, carved, skulltag"
+    },
+    {
+      "name": "color",
+      "type": "colour"
+    },
+    {
+      "name": "n",
+      "type": "number",
+      "note": "crowd size"
+    },
+    {
+      "name": "hat",
+      "type": "string",
+      "note": "person/crowd: tricorn cap helmet bonnet puritan"
+    },
+    {
+      "name": "bob",
+      "type": "boolean"
+    },
+    {
+      "name": "drift",
+      "type": "object",
+      "note": "[dx, dy] over the shot"
+    },
+    {
+      "name": "seed",
+      "type": "string"
+    }
+  ],
+  "example": {
+    "kind": "crowd",
+    "n": 5,
+    "x": 540,
+    "y": 1500,
+    "s": 2
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/plague-doctor"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
