@@ -859,7 +859,7 @@
     "title": "Technology and devices",
     "style": "flat-vector",
     "type": "prop",
-    "status": "todo",
+    "status": "partial",
     "generator": null,
     "brief": "Devices and tech props; screens can show simple generic UI (no real app logos).",
     "names": [
@@ -962,7 +962,19 @@
       "gps device",
       "thermostat"
     ],
-    "count": 98
+    "count": 98,
+    "built": 89,
+    "date": "2026-11-17",
+    "remaining": [
+      "computer mouse",
+      "earbuds",
+      "charging cable",
+      "podcast mic",
+      "satellite dish",
+      "cpu chip",
+      "ring light"
+    ],
+    "notes": "humanoid robot covered by flat-vector/robot-person; bluetooth symbol skipped (trademarked logo); walkman -> portable-cassette-player and polaroid camera -> instant-camera (trademark-free slugs); 'mouse' slug taken by the animal, use computer-mouse"
   },
   {
     "id": "08-flat-vector-tools",

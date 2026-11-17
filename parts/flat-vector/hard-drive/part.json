@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/hard-drive",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Hard Drive",
+  "summary": "External hard drive box with a blank label, status LED and a cable running out to a plug; anim blink flickers the LED.",
+  "tags": ["hard drive", "external drive", "hdd", "storage", "backup", "portable drive", "cable"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom centre: the drive lies on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the drive with cable is about 460 px wide and 150 px tall (hand-held size)"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "drive casing colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "blink"], "note": "blink = the activity LED flickers"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (cable moves to the left)"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "color": "#5D6578", "anim": "blink"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

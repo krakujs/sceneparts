@@ -1,0 +1,82 @@
+{
+  "id": "flat-vector/tablet",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Tablet",
+  "summary": "Large slate tablet on a small stand with generic UI cards; anim tap ripples the screen. For tablet and reading scenes.",
+  "tags": [
+    "tablet",
+    "slate",
+    "ipad style",
+    "touchscreen",
+    "screen",
+    "device",
+    "reading"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom centre: the stand rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the tablet is about 380 px wide and 620 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3A4157",
+      "note": "bezel and stand colour"
+    },
+    {
+      "name": "screen",
+      "type": "colour",
+      "default": "#CFE6F5",
+      "note": "screen background colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "tap"
+      ],
+      "note": "tap = a touch ripple spreads across the screen"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "color": "#3A4157",
+    "screen": "#CFE6F5",
+    "anim": "tap"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

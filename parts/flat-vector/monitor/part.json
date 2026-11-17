@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/monitor",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Monitor",
+  "summary": "Standalone computer monitor on a stand with generic window UI; anim scan sweeps a light bar down the screen.",
+  "tags": ["monitor", "computer screen", "display", "desktop screen", "pc screen", "office", "widescreen"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the stand foot rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the monitor is about 520 px wide and 560 px tall (desk-sized)"},
+    {"name": "color", "type": "colour", "default": "#3A4157", "note": "bezel and stand colour"},
+    {"name": "screen", "type": "colour", "default": "#CFE6F5", "note": "screen background colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "scan"], "note": "scan = a pale light bar slides down the screen"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3A4157", "screen": "#CFE6F5", "anim": "scan"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

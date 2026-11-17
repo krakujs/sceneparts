@@ -1,0 +1,82 @@
+{
+  "id": "flat-vector/desktop-computer",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Desktop Computer",
+  "summary": "Desktop PC group: monitor with generic windows, tower and keyboard on a desk top; anim blink flashes the LED.",
+  "tags": [
+    "desktop computer",
+    "pc",
+    "tower",
+    "monitor",
+    "office computer",
+    "keyboard",
+    "desk"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "desk top: the tower and keyboard stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the group is about 620 px wide and 500 px tall (desk-sized, not hand-held)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3A4157",
+      "note": "case and monitor colour"
+    },
+    {
+      "name": "screen",
+      "type": "colour",
+      "default": "#CFE6F5",
+      "note": "screen background colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "blink"
+      ],
+      "note": "blink = the power LED on the tower flashes"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (tower moves to the left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3A4157",
+    "screen": "#CFE6F5",
+    "anim": "blink"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

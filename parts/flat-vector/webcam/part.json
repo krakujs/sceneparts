@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/webcam",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Webcam",
+  "summary": "Round webcam with a clip, lens and status LED on a small desk stand; for video calls and home office scenes.",
+  "tags": ["webcam", "web camera", "video call", "camera", "streaming", "lens", "home office"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the stand rests on y (set y to a desk or monitor top)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 260 px wide and 420 px tall (hero size)"},
+    {"name": "color", "type": "colour", "default": "#3A4157", "note": "body colour"},
+    {"name": "led", "type": "colour", "default": "#4BB46A", "note": "status LED colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "blink"], "note": "blink = status LED blinks on and off"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3A4157", "led": "#4BB46A", "anim": "blink"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

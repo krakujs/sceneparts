@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/card-reader",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Card Reader",
+  "summary": "Countertop payment terminal with keypad, small screen and a card in the slot; use for shop payment scenes.",
+  "tags": ["card reader", "payment terminal", "card machine", "payment", "keypad", "checkout", "shop"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the terminal stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the terminal is hero size, about 320 px wide and 540 px tall with the card"},
+    {"name": "color", "type": "colour", "default": "#3A4157", "note": "body colour"},
+    {"name": "screen", "type": "colour", "default": "#CFE6F5", "note": "screen colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "process"], "note": "process = progress bar fills, keys light in turn, status LED blinks"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3A4157", "screen": "#CFE6F5", "anim": "process"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

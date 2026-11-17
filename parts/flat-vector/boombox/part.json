@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/boombox",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Boombox",
+  "summary": "Portable stereo with two big speakers, a cassette deck and a carry handle; use for music, parties and street scenes.",
+  "tags": ["boombox", "stereo", "ghetto blaster", "speakers", "music", "portable stereo", "party"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the feet rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the boombox is hero size (about 500 px wide)"},
+    {"name": "color", "type": "colour", "default": "#1FA39A", "note": "body colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "pulse"], "note": "pulse = speaker cones beat with a soft ring"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#1FA39A", "anim": "pulse"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

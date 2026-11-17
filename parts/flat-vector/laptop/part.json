@@ -1,0 +1,82 @@
+{
+  "id": "flat-vector/laptop",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Laptop",
+  "summary": "Open laptop seen from the front with a generic UI on the lid and a keyboard deck; anim type lights keys in turn.",
+  "tags": [
+    "laptop",
+    "notebook",
+    "computer",
+    "open laptop",
+    "keyboard",
+    "work",
+    "typing"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom centre: the base rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the laptop is about 500 px wide and 410 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "lid and base colour"
+    },
+    {
+      "name": "screen",
+      "type": "colour",
+      "default": "#CFE6F5",
+      "note": "screen background colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "type"
+      ],
+      "note": "type = keys light up one after another, as if typing"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "color": "#5D6578",
+    "screen": "#CFE6F5",
+    "anim": "type"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

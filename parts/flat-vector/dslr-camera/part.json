@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/dslr-camera",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "DSLR camera",
+  "summary": "Large DSLR camera in side view with a deep grip, viewfinder hump and big lens barrel; anim shutter presses the button.",
+  "tags": ["dslr", "dslr camera", "camera", "slr", "lens", "photographer", "photo"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x (the grip is at the left of centre)"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom: the bottom of the grip rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the camera is about 560 px wide and 380 px tall"},
+    {"name": "color", "type": "colour", "default": "#3A4157", "note": "body colour (the lens is a darker ink)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "shutter"], "note": "shutter = the shutter button presses and the lens flashes white"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (lens points left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3A4157", "anim": "shutter"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

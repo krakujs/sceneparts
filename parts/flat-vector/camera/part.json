@@ -1,0 +1,75 @@
+{
+  "id": "flat-vector/camera",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Camera",
+  "summary": "Simple compact point-and-shoot camera with lens and flash; anim flash fires the flash. For photo scenes.",
+  "tags": [
+    "camera",
+    "compact camera",
+    "point and shoot",
+    "photo",
+    "photography",
+    "snapshot",
+    "flash"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the base rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 the camera is about 420 px wide and 260 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF5A4F",
+      "note": "body colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "flash"
+      ],
+      "note": "flash = the flash window lights up with a burst of rays now and then"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#FF5A4F",
+    "anim": "flash"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

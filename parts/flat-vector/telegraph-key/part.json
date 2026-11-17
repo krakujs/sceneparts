@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/telegraph-key",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Telegraph key",
+  "summary": "Brass morse telegraph key on a wooden base with wire terminals; use for telegraph, morse code and old radio scenes.",
+  "tags": ["telegraph key", "morse code", "morse", "telegraph", "brass key", "wireless", "old radio"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the wooden base rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the base is about 440 px wide (hero size)"},
+    {"name": "color", "type": "colour", "default": "#E0A21F", "note": "brass colour of the lever and pivot"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "tap"], "note": "tap = the lever is pressed down over and over"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E0A21F", "anim": "tap"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

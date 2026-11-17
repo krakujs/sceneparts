@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/smart-home-hub",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Smart home hub",
+  "summary": "Small home-control display on a stand with generic light, thermostat, lock and fan tiles; use for smart home scenes.",
+  "tags": ["smart home", "home hub", "smart display", "home automation", "control panel", "iot", "smart device"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the base rests on y; set y to a shelf or table top to place it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the hub is hero size (about 380 px wide)"},
+    {"name": "color", "type": "colour", "default": "#3A4157", "note": "bezel colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "pulse"], "note": "pulse = the home-control tiles glow in turn"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3A4157", "anim": "pulse"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

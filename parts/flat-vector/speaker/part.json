@@ -1,0 +1,75 @@
+{
+  "id": "flat-vector/speaker",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Speaker",
+  "summary": "Floor-standing speaker with a woofer and tweeter; anim pulse thumps the woofer. For music scenes.",
+  "tags": [
+    "speaker",
+    "loudspeaker",
+    "floor speaker",
+    "subwoofer",
+    "music",
+    "party",
+    "hi fi"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom centre: the feet rest on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; room-scale: at s = 1 the cabinet is about 380 px wide and 640 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3A4157",
+      "note": "cabinet colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "pulse"
+      ],
+      "note": "pulse = the woofer cone thumps in a steady beat"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 0.9,
+    "color": "#3A4157",
+    "anim": "pulse"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

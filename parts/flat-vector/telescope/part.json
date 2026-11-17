@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/telescope",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Telescope",
+  "summary": "Refractor telescope on a tripod, tube angled up and to the right; for stargazing and observatory scenes.",
+  "tags": ["telescope", "refractor", "stargazing", "astronomy", "tripod", "stars", "observatory"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the tripod feet rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 560 px wide and 600 px tall (room-sized prop)"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "tube colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "track"], "note": "track = the tube slowly pans up and down"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (tube points up and to the left)"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "color": "#FFFFFF", "anim": "track"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

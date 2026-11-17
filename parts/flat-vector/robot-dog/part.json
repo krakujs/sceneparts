@@ -1,0 +1,82 @@
+{
+  "id": "flat-vector/robot-dog",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Robot dog",
+  "summary": "Original boxy robot dog with a sensor head, facing right; anim walk trots it along. For sci-fi scenes.",
+  "tags": [
+    "robot dog",
+    "robot",
+    "robotic dog",
+    "quadruped",
+    "walking robot",
+    "android",
+    "sci fi"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom centre: the feet rest on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 700 px long and 700 px tall at s = 1 (large, room-scale)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1FA39A",
+      "note": "body colour"
+    },
+    {
+      "name": "eye",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "sensor and eye light colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "walk"
+      ],
+      "note": "walk = trot cycle with diagonal legs swinging in pairs"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (faces left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 0.8,
+    "color": "#1FA39A",
+    "eye": "#FFC83D",
+    "anim": "walk"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

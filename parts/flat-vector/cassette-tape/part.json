@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/cassette-tape",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Cassette Tape",
+  "summary": "Audio cassette with two reels and a blank label; the reels turn on request. Use for music, mixtapes or 80s scenes.",
+  "tags": ["cassette tape", "cassette", "audio tape", "mixtape", "tape", "music", "retro"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the shell's bottom edge rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size, about 540 px wide at s = 1; about 0.4 in a hand"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "shell colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "reels"], "note": "reels = both reels turn together"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FF8A3D", "anim": "reels"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

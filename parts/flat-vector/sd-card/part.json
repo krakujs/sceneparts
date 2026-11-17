@@ -1,0 +1,75 @@
+{
+  "id": "flat-vector/sd-card",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "SD Card",
+  "summary": "Upright memory card with a chamfered corner, gold contacts and blank label; anim shine sweeps a glint across it.",
+  "tags": [
+    "sd card",
+    "memory card",
+    "micro sd",
+    "storage",
+    "camera card",
+    "flash memory",
+    "gold contacts"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom centre: the card stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the card is about 300 px wide and 360 px tall (hand-held size)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "card body colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "shine"
+      ],
+      "note": "shine = a white glint sweeps across the card"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (chamfer moves to the left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "color": "#3D6FE0",
+    "anim": "shine"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

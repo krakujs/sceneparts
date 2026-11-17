@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/atm",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "ATM",
+  "summary": "Freestanding room-scale cash machine with screen, keypad, card and cash slots; unbranded, for street and bank scenes.",
+  "tags": ["atm", "cash machine", "cash point", "cash dispenser", "bank", "money", "street"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom centre: the machine stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: at s = 1 about 1000 px tall and 580 px wide; use about 0.5 for a smaller scene"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "cabinet colour"},
+    {"name": "accent", "type": "colour", "default": "#167A73", "note": "trim and enter key colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "screen"], "note": "screen = menu highlight moves down the rows and the card LED blinks"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "color": "#5D6578", "accent": "#167A73", "anim": "screen"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

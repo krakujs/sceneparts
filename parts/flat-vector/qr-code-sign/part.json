@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/qr-code-sign",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "QR Code Sign",
+  "summary": "Small stand-up sign with a decorative QR-style square pattern; use for shop, menu or event signage scenes.",
+  "tags": ["qr code", "qr sign", "stand up sign", "signage", "scan me", "menu", "shop"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the sign's feet rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the sign is hero size, about 340 px wide and 500 px tall"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "board frame colour"},
+    {"name": "code", "type": "colour", "default": "#1F2433", "note": "pattern colour (decorative, not scannable)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "scan"], "note": "scan = a light bar sweeps down over the pattern"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3D6FE0", "code": "#1F2433", "anim": "scan"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

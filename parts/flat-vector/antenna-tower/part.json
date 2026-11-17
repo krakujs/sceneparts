@@ -1,0 +1,75 @@
+{
+  "id": "flat-vector/antenna-tower",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Antenna tower",
+  "summary": "Lattice radio or mobile phone tower with antenna panels and a blinking red top light; room scale for city scenes.",
+  "tags": [
+    "antenna tower",
+    "radio tower",
+    "cell tower",
+    "mast",
+    "lattice tower",
+    "transmitter",
+    "signal"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the foundation"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground: the foundation rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; room scale: at s = 1 the tower is about 1030 px tall and fits the canvas"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "steel colour of the lattice"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "blink"
+      ],
+      "note": "blink = the red top light flashes"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "color": "#5D6578",
+    "anim": "blink"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

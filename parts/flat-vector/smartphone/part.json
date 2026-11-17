@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/smartphone",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Smartphone",
+  "summary": "Modern slab smartphone with thin bezel and a generic app-grid screen; anim glow lights the screen. For phone scenes.",
+  "tags": ["smartphone", "phone", "mobile", "cell phone", "touchscreen", "app", "screen"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom centre: the phone stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the phone is about 300 px wide and 620 px tall (hand-held size)"},
+    {"name": "color", "type": "colour", "default": "#253058", "note": "body and bezel colour"},
+    {"name": "screen", "type": "colour", "default": "#8EC5E8", "note": "wallpaper colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "glow"], "note": "glow = screen brightens and flickers with a soft halo"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "color": "#253058", "screen": "#8EC5E8", "anim": "glow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

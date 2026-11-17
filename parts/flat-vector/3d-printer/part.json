@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/3d-printer",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "3D Printer",
+  "summary": "Open-frame 3D printer with a moving nozzle over a printed object; use for maker, workshop or prototyping scenes.",
+  "tags": ["3d printer", "3d print", "maker", "prototype", "printing", "workshop", "nozzle"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the base rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; room-scale machine, about 620 px tall at s = 1; about 0.5 next to a person"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "frame colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "print"], "note": "print = nozzle sweeps side to side and the object grows layer by layer"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FF8A3D", "anim": "print"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

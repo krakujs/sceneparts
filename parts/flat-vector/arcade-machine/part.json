@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/arcade-machine",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Arcade Machine",
+  "summary": "Upright arcade cabinet with a screen, joystick and buttons; use for arcade, gaming hall or retro game scenes.",
+  "tags": ["arcade machine", "arcade cabinet", "arcade", "retro games", "video arcade", "cabinet", "joystick"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom centre: the cabinet base rests on y; room scale, about 1000 px tall at s = 1 (keep y near 1600 so it fits)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; room scale, about 1000 px tall at s = 1; use about 0.6 to fit beside a person"},
+    {"name": "color", "type": "colour", "default": "#7B5CD6", "note": "cabinet colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "attract"], "note": "attract = blocks move on the screen and the marquee lights pulse"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "color": "#7B5CD6", "anim": "attract"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/wifi-symbol",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Wifi symbol",
+  "summary": "Generic wireless signal icon: a dot with three arcs that light up in turn; use for connectivity and internet scenes.",
+  "tags": ["wifi", "wireless", "signal", "internet", "connection", "wifi symbol", "network"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the dot; floats, no ground"},
+    {"name": "y", "type": "number", "default": 760, "note": "centre y of the dot; the symbol floats around this point"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the symbol is about 540 px across"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "lit colour of the dot and arcs"},
+    {"name": "off", "type": "colour", "default": "#8EC5E8", "note": "colour of arcs that are not lit"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "signal"], "note": "signal = arcs light up in turn, inner to outer"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 760, "s": 1, "color": "#3D6FE0", "off": "#8EC5E8", "anim": "signal"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

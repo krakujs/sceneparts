@@ -1,0 +1,75 @@
+{
+  "id": "flat-vector/server-rack",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Server Rack",
+  "summary": "Tall room-scale server cabinet with stacked rack units and LEDs; anim blink flashes the lights. For data-centre scenes.",
+  "tags": [
+    "server rack",
+    "server",
+    "data centre",
+    "rack cabinet",
+    "datacenter",
+    "servers",
+    "blinking lights"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom centre: the cabinet stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; room scale: at s = 1 the cabinet is about 1000 px tall and 460 px wide"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "cabinet frame colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "blink"
+      ],
+      "note": "blink = the unit LEDs flash at different rates"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "color": "#5D6578",
+    "anim": "blink"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

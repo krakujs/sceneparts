@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/fax-machine",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Fax Machine",
+  "summary": "Office fax machine with paper feeding from the top and a handset; use for old office, faxing or paperwork scenes.",
+  "tags": ["fax machine", "fax", "office machine", "telefax", "paper", "office", "printer"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the base rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size, about 460 px wide at s = 1; use about 0.5 on a desk next to a person"},
+    {"name": "color", "type": "colour", "default": "#DDE2EA", "note": "body colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "feed"], "note": "feed = a sheet slides out of the top slot and back"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (handset moves to the left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#DDE2EA", "anim": "feed"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

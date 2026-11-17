@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/smartwatch",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Smartwatch",
+  "summary": "Square-faced smartwatch with strap and a generic watch-face ring and hands; anim glow lights the face. For wearables.",
+  "tags": ["smartwatch", "watch", "wearable", "wrist watch", "fitness watch", "square watch", "strap"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom centre: the lower strap rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the watch is about 290 px wide and 700 px tall with straps (hand-held size)"},
+    {"name": "color", "type": "colour", "default": "#3A4157", "note": "case colour"},
+    {"name": "strap", "type": "colour", "default": "#1FA39A", "note": "strap colour"},
+    {"name": "screen", "type": "colour", "default": "#253058", "note": "watch face colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "glow"], "note": "glow = face brightens and the progress ring glows"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (crown moves to the left)"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "color": "#3A4157", "strap": "#1FA39A", "screen": "#253058", "anim": "glow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

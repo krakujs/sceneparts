@@ -9,3 +9,4 @@
 | 04-flat-vector-birds-sea-bugs (bird, fish, bug, reptile generators + 79 presets + 23 standalone sea creatures, amphibians, crawlers) | 106 | 666 | 2026-11-17 |
 | 05-flat-vector-food (fruit, dish, drink prop generators + 51 presets + 67 standalone foods and drinks) | 121 | 787 | 2026-11-17 |
 | 06-flat-vector-home (128 standalone furniture, appliances, fixtures, bathroom, kitchenware, toys and personal items; room-scale vs hero-scale sizes; 'bowl' covered by dish) | 128 | 915 | 2026-11-17 |
+| 07-flat-vector-tech (89 standalone tech props: phones, computers, audio, cameras, retro media, gaming, payment, energy, instruments; 7 rebuilt next run, bluetooth logo skipped) | 89 | 1004 | 2026-11-17 |

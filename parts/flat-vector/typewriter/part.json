@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/typewriter",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Typewriter",
+  "summary": "Manual typewriter with a sheet of paper on the platen and rows of keys; use for writers, office and retro scenes.",
+  "tags": ["typewriter", "manual typewriter", "writing", "paper", "keys", "writer", "retro office"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the feet rest on y; set y to a desk top to place it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the typewriter is about 660 px wide (desk size)"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "body colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "type"], "note": "type = lines of text appear on the paper and a key dips"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E8503F", "anim": "type"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

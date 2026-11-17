@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/satellite",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Satellite",
+  "summary": "Orbiting satellite with a box body, antenna and solar-panel wings that floats in space; use for space and orbit scenes.",
+  "tags": ["satellite", "space", "orbit", "solar panels", "spacecraft", "antenna", "in orbit"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the body; floats, no ground"},
+    {"name": "y", "type": "number", "default": 640, "note": "centre y of the body; the satellite floats around this point (it does not stand on y)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the satellite is about 500 px wide including the wings"},
+    {"name": "color", "type": "colour", "default": "#DDE2EA", "note": "body colour"},
+    {"name": "panel", "type": "colour", "default": "#3D6FE0", "note": "solar panel colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "drift"], "note": "drift = slow float and gentle rotation"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 640, "s": 1, "color": "#DDE2EA", "panel": "#3D6FE0", "anim": "drift"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

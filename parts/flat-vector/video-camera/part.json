@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/video-camera",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Video camera",
+  "summary": "Handheld camcorder with a flip-out screen and red record light; anim rec blinks the REC dot.",
+  "tags": [
+    "video camera",
+    "camcorder",
+    "camera",
+    "filming",
+    "record",
+    "video",
+    "vlog"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the grip rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 the camcorder is about 490 px wide and 360 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3A4157",
+      "note": "body colour"
+    },
+    {
+      "name": "screen",
+      "type": "colour",
+      "default": "#8EC5E8",
+      "note": "flip-out screen colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "rec"
+      ],
+      "note": "rec = the red record dots blink on and off"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (lens points left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3A4157",
+    "anim": "rec"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

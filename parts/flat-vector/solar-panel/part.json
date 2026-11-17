@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/solar-panel",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Solar panel",
+  "summary": "Tilted ground-mounted solar panel on a post with a sun in the corner; use for renewable energy and green power scenes.",
+  "tags": ["solar panel", "solar", "solar power", "renewable energy", "sun", "green energy", "photovoltaic"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the post"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground: the post foot rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the panel is about 760 px wide and 650 px tall (large item, fits the canvas)"},
+    {"name": "color", "type": "colour", "default": "#253058", "note": "cell colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "glint"], "note": "glint = a bright sun glint sweeps across the cells"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 0.8, "color": "#253058", "anim": "glint"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

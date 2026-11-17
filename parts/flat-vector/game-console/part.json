@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/game-console",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Game Console",
+  "summary": "Generic box game console with a controller beside it; use for gaming, living room or playing video games scenes.",
+  "tags": ["game console", "console", "video game", "gaming", "living room", "tv console", "gaming setup"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1580, "note": "bottom centre: the console base rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 700 px wide with the controller at s = 1; about 0.5 on a floor next to a person"},
+    {"name": "color", "type": "colour", "default": "#253058", "note": "console colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "glow"], "note": "glow = the front status light pulses"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (controller moves to the left)"}
+  ],
+  "example": {"x": 540, "y": 1580, "s": 1, "color": "#253058", "anim": "glow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

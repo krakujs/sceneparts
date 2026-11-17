@@ -1,0 +1,82 @@
+{
+  "id": "flat-vector/keyboard",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Keyboard",
+  "summary": "Computer keyboard seen from a slight top angle, rows of keys and a space bar; anim type lights keys in turn.",
+  "tags": [
+    "keyboard",
+    "computer keyboard",
+    "keys",
+    "typing",
+    "desk",
+    "pc",
+    "input"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "desk top: the keyboard lies on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the keyboard is about 600 px wide and 150 px deep"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3A4157",
+      "note": "body colour (keys are light grey)"
+    },
+    {
+      "name": "keycap",
+      "type": "colour",
+      "default": "#DDE2EA",
+      "note": "key colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "type"
+      ],
+      "note": "type = keys light up one after another"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3A4157",
+    "keycap": "#DDE2EA",
+    "anim": "type"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/doorbell-camera",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Doorbell camera",
+  "summary": "Slim wall-mounted video doorbell with a round lens and a glowing button ring; use for front door and visitor scenes.",
+  "tags": ["doorbell camera", "video doorbell", "doorbell", "front door", "visitor", "smart doorbell", "camera"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the doorbell"},
+    {"name": "y", "type": "number", "default": 1260, "note": "wall mount: the bottom of the doorbell sits on y on the wall (not standing on the floor)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the doorbell is hero size (about 480 px tall)"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "body colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "glow"], "note": "glow = the button ring glows softly"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1260, "s": 1, "color": "#5D6578", "anim": "glow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

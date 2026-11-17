@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/electric-car-charger",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "EV charger",
+  "summary": "Electric car charging post with a bolt screen, a cable and a plug; room scale for car park and EV charging scenes.",
+  "tags": ["ev charger", "electric car", "charging station", "car charger", "electric vehicle", "ev", "charging post"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the post"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground: the post rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; room scale: at s = 1 the charger is about 880 px tall and fits the canvas"},
+    {"name": "color", "type": "colour", "default": "#1FA39A", "note": "casing colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "charge"], "note": "charge = the bolt pulses and the status bar fills again and again"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (cable moves to the left)"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "color": "#1FA39A", "anim": "charge"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
