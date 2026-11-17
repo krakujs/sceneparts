@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/coffee-cup",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Coffee cup",
+  "summary": "Flat coffee cup on a saucer with dark coffee, a pale latte heart and steam; for cafe and breakfast scenes.",
+  "tags": [
+    "coffee",
+    "coffee cup",
+    "cafe",
+    "latte",
+    "hot drink",
+    "drink",
+    "breakfast"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "cup colour"
+    },
+    {
+      "name": "steam",
+      "type": "boolean",
+      "default": true,
+      "note": "steam curls rising and fading"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "steam": true
+  },
+  "uses": [
+    "flat-vector/drink",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

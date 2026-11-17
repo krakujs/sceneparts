@@ -7,3 +7,4 @@
 | 02-flat-vector-people-everyday (ages, family, moods, traditional dress, archetypes, eras, groups; person gets `age` + cane) | 139 | 444 | 2026-11-17 |
 | 03-flat-vector-mammals (quadruped + animal-face generators, 97 presets, 17 standalone sea/ape/upright mammals) | 116 | 560 | 2026-11-17 |
 | 04-flat-vector-birds-sea-bugs (bird, fish, bug, reptile generators + 79 presets + 23 standalone sea creatures, amphibians, crawlers) | 106 | 666 | 2026-11-17 |
+| 05-flat-vector-food (fruit, dish, drink prop generators + 51 presets + 67 standalone foods and drinks) | 121 | 787 | 2026-11-17 |

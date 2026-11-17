@@ -1,0 +1,88 @@
+{
+  "id": "flat-vector/yogurt",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Yogurt",
+  "summary": "Small flat pot of white yogurt with the foil lid peeled back and berries on top; for breakfast scenes.",
+  "tags": [
+    "yogurt",
+    "yoghurt",
+    "pot",
+    "berries",
+    "breakfast",
+    "dairy",
+    "food"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F3F6FA",
+      "note": "pot colour"
+    },
+    {
+      "name": "liquid",
+      "type": "colour",
+      "default": "#FFF9EC",
+      "note": "yogurt colour"
+    },
+    {
+      "name": "level",
+      "type": "number",
+      "default": 0.88,
+      "min": 0,
+      "max": 1,
+      "note": "yogurt fill, 0 to 1 of the height"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#F3F6FA"
+  },
+  "uses": [
+    "flat-vector/drink",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

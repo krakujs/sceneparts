@@ -1,0 +1,164 @@
+{
+  "id": "flat-vector/drink",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flat drink",
+  "summary": "Flat drink or container: mug, glass, wine, bottle, can, carton or takeaway cup with liquid, ice, foam and steam.",
+  "tags": [
+    "generator",
+    "drink",
+    "cup",
+    "glass",
+    "bottle",
+    "beverage",
+    "packaging"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the drink is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "vessel",
+      "type": "enum",
+      "default": "mug",
+      "values": [
+        "mug",
+        "cup",
+        "teacup",
+        "glass",
+        "tall",
+        "tumbler",
+        "wine",
+        "stemmed",
+        "bottle",
+        "can",
+        "carton",
+        "jar",
+        "takeaway"
+      ],
+      "note": "cup = on a saucer, tall = juice or smoothie, stemmed = milkshake, tumbler = chai glass, takeaway = paper coffee cup"
+    },
+    {
+      "name": "h",
+      "type": "number",
+      "note": "height px (default by vessel: mug 300, bottle 480)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "note": "vessel colour; glass vessels default to pale #DDEFF8"
+    },
+    {
+      "name": "liquid",
+      "type": "string",
+      "default": "none",
+      "note": "liquid colour, or none"
+    },
+    {
+      "name": "level",
+      "type": "number",
+      "default": 0.75,
+      "min": 0,
+      "max": 1,
+      "note": "liquid fill, 0 to 1 of the height"
+    },
+    {
+      "name": "foam",
+      "type": "string",
+      "default": "none",
+      "note": "foam or cream top colour, or none"
+    },
+    {
+      "name": "straw",
+      "type": "string",
+      "default": "none",
+      "note": "straw colour, or none"
+    },
+    {
+      "name": "ice",
+      "type": "boolean",
+      "default": false,
+      "note": "two or three ice cubes"
+    },
+    {
+      "name": "garnish",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "lemon",
+        "cherry",
+        "mint"
+      ],
+      "note": "on the rim or the foam"
+    },
+    {
+      "name": "steam",
+      "type": "boolean",
+      "default": false,
+      "note": "steam curls rising and fading"
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "default": "none",
+      "note": "plain band or label colour, no text, or none"
+    },
+    {
+      "name": "lid",
+      "type": "string",
+      "default": "none",
+      "note": "cap or lid colour for bottle, jar, can and takeaway, or none"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "slosh"
+      ],
+      "note": "slosh = the liquid surface tilts gently"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "vessel": "mug",
+    "color": "#3D6FE0",
+    "liquid": "#6B3E22",
+    "foam": "none",
+    "steam": true
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

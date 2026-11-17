@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/fried-egg",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flat fried egg",
+  "summary": "Flat sunny-side-up fried egg with wavy white and round yolk, plain or in a frying pan. For breakfast scenes.",
+  "tags": ["food", "egg", "fried egg", "breakfast", "sunny side up", "cooking", "meal"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the egg or pan rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (~420 px wide); use about 0.2 to 0.3 next to a person" },
+    { "name": "variant", "type": "enum", "default": "plain", "values": ["plain", "pan"], "note": "plain = egg on its own, pan = egg in a frying pan" },
+    { "name": "yolkColor", "type": "colour", "default": "#FFB530", "note": "yolk colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down, wobble = slight rock, pop = scale in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "variant": "pan" },
+  "uses": ["flat-vector/style", "flat-vector/dish"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

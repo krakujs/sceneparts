@@ -1,0 +1,31 @@
+{
+  "id": "flat-vector/picnic-basket",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Picnic basket",
+  "summary": "Woven wicker picnic basket with gingham cloth and a baguette sticking out; for picnic and park scenes.",
+  "tags": [
+    "picnic basket",
+    "picnic",
+    "wicker",
+    "basket",
+    "baguette",
+    "gingham",
+    "food"
+  ],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the basket rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the basket is hero size (~430 px wide); use about 0.2–0.3 next to a person"},
+    {"name": "wickerColor", "type": "colour", "default": "#C9975C", "note": "wicker colour"},
+    {"name": "clothColor", "type": "colour", "default": "#E8503F", "note": "gingham check colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "pop"], "note": "bob = gentle up and down, pop = scale in with overshoot"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/fruit-bowl",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Fruit bowl",
+  "summary": "Bowl heaped with round fruit, topped with a banana and grapes; for breakfast, kitchen and healthy snack scenes.",
+  "tags": [
+    "fruit bowl",
+    "fruit",
+    "food",
+    "kitchen",
+    "banana",
+    "grapes",
+    "breakfast"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the bowl rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the bowl is hero size (~440 px wide); use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "fillColor",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "main fruit colour"
+    },
+    {
+      "name": "fillColor2",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "second fruit colour (mixed in the heap)"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "pop"
+      ],
+      "note": "bob = gentle up and down, pop = scale in with overshoot"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1
+  },
+  "uses": [
+    "flat-vector/dish",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

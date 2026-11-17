@@ -1,0 +1,31 @@
+{
+  "id": "flat-vector/sushi",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Sushi",
+  "summary": "Wooden board with salmon and tuna nigiri, two maki rolls and a dab of wasabi; for Japanese restaurant and lunch scenes.",
+  "tags": [
+    "sushi",
+    "nigiri",
+    "maki",
+    "food",
+    "japanese food",
+    "wasabi",
+    "board"
+  ],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the board rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the board is hero size (~460 px wide); use about 0.2–0.3 next to a person"},
+    {"name": "vesselColor", "type": "colour", "default": "#C58A55", "note": "wooden board colour"},
+    {"name": "toppingColor", "type": "colour", "default": "#F28C5B", "note": "salmon topping colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "pop"], "note": "bob = gentle up and down, pop = scale in with overshoot"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1},
+  "uses": ["flat-vector/dish", "flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

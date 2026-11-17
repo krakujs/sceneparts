@@ -1,0 +1,87 @@
+{
+  "id": "flat-vector/sundae",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Sundae",
+  "summary": "Flat tall sundae glass with ice-cream scoops, chocolate sauce, whipped cream, a cherry and a spoon; for dessert scenes.",
+  "tags": [
+    "sundae",
+    "ice cream",
+    "dessert",
+    "ice cream sundae",
+    "cherry",
+    "treat",
+    "food"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "sauce",
+      "type": "colour",
+      "default": "#5B3420",
+      "note": "chocolate sauce colour"
+    },
+    {
+      "name": "cherry",
+      "type": "boolean",
+      "default": true,
+      "note": "cherry on top"
+    },
+    {
+      "name": "spoon",
+      "type": "boolean",
+      "default": true,
+      "note": "long spoon standing in the glass"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "sauce": "#5B3420",
+    "cherry": true,
+    "spoon": true
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

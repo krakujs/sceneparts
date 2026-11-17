@@ -1,0 +1,94 @@
+{
+  "id": "flat-vector/water-glass",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Water glass",
+  "summary": "Clear flat glass of water with a soft highlight and optional ice; for drink and hydration scenes.",
+  "tags": [
+    "water",
+    "water glass",
+    "glass",
+    "drink",
+    "ice",
+    "hydration",
+    "kitchen"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#DDEFF8",
+      "note": "glass colour"
+    },
+    {
+      "name": "liquid",
+      "type": "colour",
+      "default": "#A9DDF2",
+      "note": "water colour"
+    },
+    {
+      "name": "level",
+      "type": "number",
+      "default": 0.82,
+      "min": 0,
+      "max": 1,
+      "note": "water fill, 0 to 1 of the height"
+    },
+    {
+      "name": "ice",
+      "type": "boolean",
+      "default": false,
+      "note": "two or three ice cubes"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "ice": false
+  },
+  "uses": [
+    "flat-vector/drink",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

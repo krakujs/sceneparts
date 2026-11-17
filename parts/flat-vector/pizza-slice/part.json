@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/pizza-slice",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flat pizza slice",
+  "summary": "Flat pizza slice with crust, pepperoni and a melted cheese drip. For takeaway, snack or Italian food scenes.",
+  "tags": ["food", "pizza", "pizza slice", "fast food", "snack", "italian food", "meal"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the slice tip rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (~320 px wide); use about 0.2 to 0.3 next to a person" },
+    { "name": "cheeseColor", "type": "colour", "default": "#FFD25A", "note": "cheese colour" },
+    { "name": "crustColor", "type": "colour", "default": "#E8A552", "note": "crust colour" },
+    { "name": "pepperoni", "type": "boolean", "default": true, "note": "show pepperoni circles" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down, wobble = rock on its tip, pop = scale in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1 },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

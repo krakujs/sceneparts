@@ -1,0 +1,85 @@
+{
+  "id": "flat-vector/fig",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Fig",
+  "summary": "Purple fig with a short stem, optionally cut to show pink flesh and seeds; for Mediterranean and fruit scenes.",
+  "tags": [
+    "fig",
+    "purple fruit",
+    "fruit",
+    "food",
+    "mediterranean"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size (~350 px wide); use about 0.2-0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#6B3F8E",
+      "note": "skin colour"
+    },
+    {
+      "name": "cut",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "half"
+      ],
+      "note": "half = the cut face lies in front"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "bounce",
+        "roll",
+        "pop"
+      ],
+      "note": "bob = gentle up and down, wobble = rock on its base, bounce = drop in, roll = roll in from the left, pop = scale in"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#6B3F8E",
+    "cut": "none"
+  },
+  "uses": [
+    "flat-vector/fruit",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

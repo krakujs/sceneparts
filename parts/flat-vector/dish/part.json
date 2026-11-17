@@ -1,0 +1,150 @@
+{
+  "id": "flat-vector/dish",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flat dish",
+  "summary": "Flat dish or bowl of food: plate, bowl, pan, board or basket with soup, rice, noodles, salad, chips or fruit and steam.",
+  "tags": [
+    "generator",
+    "food",
+    "dish",
+    "bowl",
+    "plate",
+    "meal",
+    "cooking"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the vessel rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the dish is hero size (~420 px wide); use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "vessel",
+      "type": "enum",
+      "default": "bowl",
+      "values": [
+        "plate",
+        "bowl",
+        "deepbowl",
+        "tray",
+        "board",
+        "pan",
+        "basket",
+        "cup"
+      ],
+      "note": "bowl and deepbowl seen from the front, slightly above; pan has a handle; board = cutting board; cup = steel katori"
+    },
+    {
+      "name": "w",
+      "type": "number",
+      "default": 420,
+      "note": "vessel width px"
+    },
+    {
+      "name": "vesselColor",
+      "type": "colour",
+      "note": "default depends on vessel (white, steel, wood, dark pan)"
+    },
+    {
+      "name": "rimColor",
+      "type": "colour",
+      "note": "inside or rim colour; default depends on vessel"
+    },
+    {
+      "name": "fill",
+      "type": "enum",
+      "default": "liquid",
+      "values": [
+        "none",
+        "liquid",
+        "mound",
+        "grains",
+        "strands",
+        "chunks",
+        "leafy",
+        "pieces",
+        "balls"
+      ],
+      "note": "liquid = soup, curry; mound = rice; grains; strands = noodles; chunks; leafy = salad; pieces = chips above rim; balls = piled round items"
+    },
+    {
+      "name": "fillColor",
+      "type": "colour",
+      "default": "#E0A21F",
+      "note": "main food colour"
+    },
+    {
+      "name": "fillColor2",
+      "type": "string",
+      "note": "accent: chunks, pieces, garnish or broth colour (default depends on fill)"
+    },
+    {
+      "name": "garnish",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "herbs",
+        "egg",
+        "chopsticks",
+        "spoon",
+        "fork",
+        "lemon"
+      ],
+      "note": "egg = halved soft egg for ramen; herbs = green sprigs"
+    },
+    {
+      "name": "steam",
+      "type": "boolean",
+      "default": false,
+      "note": "three steam curls rising and fading"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "pop"
+      ],
+      "note": "bob = gentle up and down, pop = scale in with overshoot"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "vessel": "bowl",
+    "fill": "liquid",
+    "fillColor": "#E0A21F",
+    "garnish": "herbs",
+    "steam": true
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

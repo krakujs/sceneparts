@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/bacon",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flat bacon",
+  "summary": "Flat strips of bacon with pink meat and white fat stripes. For breakfast, brunch or diner scenes.",
+  "tags": ["food", "bacon", "breakfast", "meat", "brunch", "pork", "meal"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the strips rest on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (~400 px wide); use about 0.2 to 0.3 next to a person" },
+    { "name": "meatColor", "type": "colour", "default": "#E0655E", "note": "pink meat colour" },
+    { "name": "fatColor", "type": "colour", "default": "#FFF3EC", "note": "fat stripe colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down, wobble = slight rock, pop = scale in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1 },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

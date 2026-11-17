@@ -1,0 +1,86 @@
+{
+  "id": "flat-vector/smoothie",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Smoothie",
+  "summary": "Tall flat glass of thick pink-purple smoothie with a straw and berries on top; for healthy drink scenes.",
+  "tags": [
+    "smoothie",
+    "berries",
+    "fruit drink",
+    "healthy",
+    "drink",
+    "straw",
+    "juice"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#DDEFF8",
+      "note": "glass colour"
+    },
+    {
+      "name": "liquid",
+      "type": "colour",
+      "default": "#C2448A",
+      "note": "smoothie colour"
+    },
+    {
+      "name": "straw",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "straw colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "straw": "#FFC83D"
+  },
+  "uses": [
+    "flat-vector/drink",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

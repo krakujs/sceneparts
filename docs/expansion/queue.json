@@ -582,7 +582,7 @@
     "title": "Food and drink",
     "style": "flat-vector",
     "type": "prop",
-    "status": "todo",
+    "status": "done",
     "generator": null,
     "brief": "Small prop generators where it helps (fruit/round food, plate + dish, cup/glass/bottle, packaged food without brands), then presets. No brand names or logos.",
     "names": [
@@ -705,7 +705,10 @@
       "lunchbox",
       "picnic basket"
     ],
-    "count": 118
+    "count": 118,
+    "built": 121,
+    "date": "2026-11-17",
+    "notes": "New prop generators flat-vector/fruit (8 shapes, textures, stems/calyx/crown, cut halves with pits, roll/bounce/pop), flat-vector/dish (plate/bowl/deepbowl/tray/board/pan/basket/katori with liquid/grains/strands/chunks/leafy/pieces/balls fills, garnish, steam) and flat-vector/drink (mug/cup/teacup/glasses/wine/stemmed/bottle/can/carton/jar/takeaway; liquid, foam, straw, ice, steam, plain labels). 20 fruit, 16 dish and 15 drink presets; 67 standalone foods. Props are hero size at s = 1 (use s 0.2-0.3 beside a person). All 118 names built; no brands, text or logos."
   },
   {
     "id": "06-flat-vector-home",

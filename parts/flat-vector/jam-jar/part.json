@@ -1,0 +1,88 @@
+{
+  "id": "flat-vector/jam-jar",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Jam jar",
+  "summary": "Flat jar of red jam with a red and white gingham cloth cover and a plain label; for pantry and breakfast scenes.",
+  "tags": [
+    "jam",
+    "jam jar",
+    "jar",
+    "preserves",
+    "gingham",
+    "pantry",
+    "food"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "liquid",
+      "type": "colour",
+      "default": "#A3193F",
+      "note": "jam colour"
+    },
+    {
+      "name": "label",
+      "type": "colour",
+      "default": "#F4F1EA",
+      "note": "plain label colour, no text"
+    },
+    {
+      "name": "level",
+      "type": "number",
+      "default": 0.84,
+      "min": 0,
+      "max": 1,
+      "note": "jam fill, 0 to 1 of the height"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "liquid": "#A3193F"
+  },
+  "uses": [
+    "flat-vector/drink",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

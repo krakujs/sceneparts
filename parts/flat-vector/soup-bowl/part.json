@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/soup-bowl",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Soup bowl",
+  "summary": "Deep bowl of orange-red soup with green herbs, a spoon and steam; for kitchen, restaurant and cosy meal scenes.",
+  "tags": [
+    "soup bowl",
+    "soup",
+    "food",
+    "kitchen",
+    "bowl",
+    "steam",
+    "hot meal"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the bowl rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the bowl is hero size (~420 px wide); use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "fillColor",
+      "type": "colour",
+      "default": "#E8643A",
+      "note": "soup colour"
+    },
+    {
+      "name": "steam",
+      "type": "boolean",
+      "default": true,
+      "note": "three steam curls rising and fading"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "pop"
+      ],
+      "note": "bob = gentle up and down, pop = scale in with overshoot"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "steam": true
+  },
+  "uses": [
+    "flat-vector/dish",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,88 @@
+{
+  "id": "flat-vector/chai-glass",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Chai glass",
+  "summary": "Small ribbed Indian cutting-chai glass of milky orange-brown chai with steam; for tea stall and Indian kitchen scenes.",
+  "tags": [
+    "chai",
+    "masala chai",
+    "tea glass",
+    "cutting chai",
+    "indian tea",
+    "drink",
+    "steam"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "liquid",
+      "type": "colour",
+      "default": "#D4924F",
+      "note": "chai colour"
+    },
+    {
+      "name": "level",
+      "type": "number",
+      "default": 0.86,
+      "min": 0,
+      "max": 1,
+      "note": "chai fill, 0 to 1 of the height"
+    },
+    {
+      "name": "steam",
+      "type": "boolean",
+      "default": true,
+      "note": "steam curls rising and fading"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "steam": true
+  },
+  "uses": [
+    "flat-vector/drink",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
