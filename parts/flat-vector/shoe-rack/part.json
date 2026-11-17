@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/shoe-rack",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Shoe Rack",
+  "summary": "Two-tier open wooden shoe rack with pairs of plain shoes on each shelf; for hallway, entrance and home scenes.",
+  "tags": ["shoe rack", "shoe shelf", "shoes", "hallway", "entryway", "storage", "furniture"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the rack stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 matches a flat-vector person at s = 1 (about 620 px tall)"},
+    {"name": "color", "type": "colour", "default": "#E9D3A9", "note": "wood colour"},
+    {"name": "color2", "type": "colour", "default": "#E8503F", "note": "colour of the top pair of shoes"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion only; driven by the frame"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E9D3A9", "color2": "#E8503F"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

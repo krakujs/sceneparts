@@ -1,0 +1,75 @@
+{
+  "id": "flat-vector/candle",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Candle",
+  "summary": "Pillar candle with a flame and a little melted wax; anim flicker makes the flame dance. For cosy and night scenes.",
+  "tags": [
+    "candle",
+    "pillar candle",
+    "flame",
+    "wax",
+    "candlelight",
+    "cosy",
+    "light"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the candle stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size (about 530 px tall); use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F4F1EA",
+      "note": "wax colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "flicker"
+      ],
+      "note": "flicker = flame dances and the glow pulses"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#F4F1EA",
+    "anim": "flicker"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/smoke-alarm",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Smoke Alarm",
+  "summary": "Round ceiling or wall smoke detector with a red LED; anim beep blinks the light and shows sound arcs.",
+  "tags": ["smoke alarm", "smoke detector", "fire alarm", "ceiling", "safety", "beep", "home"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 760, "note": "wall or ceiling item: centred on y (default 760), no ground shadow"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (about 340 px across)"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "casing colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "beep"], "note": "beep = the LED blinks and sound arcs appear"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 760, "s": 1, "color": "#FFFFFF", "anim": "beep"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

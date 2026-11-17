@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/blender",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Blender",
+  "summary": "Kitchen jug blender on a motor base with fruit in the jug; anim blend swirls and shakes the contents.",
+  "tags": ["blender", "smoothie", "jug blender", "kitchen", "fruit", "appliance", "juice"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the blender stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (about 400 px tall); use about 0.2–0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "motor base colour"},
+    {"name": "color2", "type": "colour", "default": "#F27BA6", "note": "fruit colour of the contents (pink = strawberry, orange = mango, green = kale)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "blend"], "note": "blend = contents swirl, fruit pieces orbit and the blade spins"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#5D6578", "color2": "#F27BA6", "anim": "blend"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

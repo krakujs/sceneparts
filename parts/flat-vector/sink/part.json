@@ -1,0 +1,74 @@
+{
+  "id": "flat-vector/sink",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Sink",
+  "summary": "Bathroom basin on a pedestal with a chrome tap that can run; for bathroom and washing scenes.",
+  "tags": [
+    "sink",
+    "basin",
+    "wash basin",
+    "bathroom sink",
+    "tap",
+    "faucet",
+    "bathroom"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 matches a flat-vector person at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "basin colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "water"
+      ],
+      "note": "water = the tap runs: a stream and drops into the basin"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#FFFFFF"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

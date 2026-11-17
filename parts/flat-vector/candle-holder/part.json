@@ -1,0 +1,82 @@
+{
+  "id": "flat-vector/candle-holder",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Candle Holder",
+  "summary": "Three-arm candelabra with three lit candles; anim flicker dances the flames. For dinner tables and cosy scenes.",
+  "tags": [
+    "candle holder",
+    "candelabra",
+    "candelabrum",
+    "candlestick",
+    "candles",
+    "candle light",
+    "table"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the foot rests on y; put it on a table by setting y to the table top"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is about 300 px wide and 520 px tall; use about 0.3–0.4 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E0A21F",
+      "note": "metal colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#F4F1EA",
+      "note": "candle wax colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "flicker"
+      ],
+      "note": "flicker = three flames dance out of step"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#E0A21F",
+    "color2": "#F4F1EA",
+    "anim": "flicker"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

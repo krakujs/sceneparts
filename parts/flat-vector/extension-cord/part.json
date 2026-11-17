@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/extension-cord",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Extension Cord",
+  "summary": "Power strip with four sockets, a switch and a coiled cable ending in a plug; for home and office scenes.",
+  "tags": ["extension cord", "power strip", "extension lead", "power cable", "plug", "socket", "electric"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the strip rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (about 560 px long); use about 0.3–0.4 next to a person"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "strip colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion only; driven by the frame"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (coil moves to the right)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FFC83D"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

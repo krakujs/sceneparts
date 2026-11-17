@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/bunk-bed",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bunk Bed",
+  "summary": "Two-level wooden bunk bed with a side ladder and a blanket on each level. For kids' bedrooms and dorms.",
+  "tags": ["bunk bed", "bed", "kids room", "bedroom", "ladder", "dorm"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the item rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 matches a flat-vector person at s = 1" },
+    { "name": "color", "type": "colour", "default": "#D9A066", "note": "wood colour" },
+    { "name": "color2", "type": "colour", "default": "#F27BA6", "note": "colour of the two blankets" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion only; driven by the frame" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "color": "#D9A066", "color2": "#F27BA6" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

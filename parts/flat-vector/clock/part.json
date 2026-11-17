@@ -1,0 +1,75 @@
+{
+  "id": "flat-vector/clock",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Mantel Clock",
+  "summary": "Mantel or desk clock with a round face on an arched wooden case; anim tick moves the hands. For bedrooms and studies.",
+  "tags": [
+    "clock",
+    "mantel clock",
+    "desk clock",
+    "time",
+    "wooden clock",
+    "hands",
+    "tick"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the plinth stands on y; set y to a shelf or desk top to place it"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size (about 400 px tall); use about 0.3–0.5 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "wood colour of the case"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "tick"
+      ],
+      "note": "tick = second hand jumps once a second and the hands turn"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#8A5A3C",
+    "anim": "tick"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

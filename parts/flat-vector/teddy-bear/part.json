@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/teddy-bear",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Teddy Bear",
+  "summary": "Generic plush teddy bear sitting front-on with a stitched muzzle; for bedtime, nursery and toy scenes.",
+  "tags": ["teddy bear", "teddy", "plush", "soft toy", "stuffed animal", "bear", "toy"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the bear sits on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#E9D3A9", "note": "fur colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion only; driven by the frame"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E9D3A9"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

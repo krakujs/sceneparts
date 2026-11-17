@@ -1,0 +1,74 @@
+{
+  "id": "flat-vector/laundry-basket",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Laundry Basket",
+  "summary": "Woven laundry basket with a T-shirt, towel and sock peeking out; for laundry and chores scenes.",
+  "tags": [
+    "laundry basket",
+    "laundry",
+    "washing basket",
+    "clothes basket",
+    "clothes",
+    "chores",
+    "woven basket"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 matches a flat-vector person at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E9D3A9",
+      "note": "woven basket colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "peek"
+      ],
+      "note": "peek = the clothes lift and drop gently"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#E9D3A9"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

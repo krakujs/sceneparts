@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/mailbox",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Mailbox",
+  "summary": "Generic post-mounted letterbox with a rounded top and a side flag that can raise; for street, garden and mail scenes.",
+  "tags": ["mailbox", "letterbox", "post box", "mail", "post", "flag", "garden"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the post stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the mailbox is room size (about 560 px tall)"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "box colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "flag"], "note": "flag = the flag swings up over the first second and stays up; the others are gentle motions"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (flag on the left when true)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3D6FE0", "anim": "flag"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "flat-vector/calendar",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Calendar",
+  "summary": "Wall or desk calendar page with a ring binding and day numbers 1 to 30, one day circled; for planning scenes.",
+  "tags": [
+    "calendar",
+    "wall calendar",
+    "desk calendar",
+    "date",
+    "schedule",
+    "day",
+    "planner"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the calendar stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size (about 400 px wide); use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "day",
+      "type": "number",
+      "default": 17,
+      "note": "which day to circle, 1 to 30"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "header band colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "circle colour for the chosen day"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "day": 17,
+    "color": "#E8503F",
+    "color2": "#3D6FE0"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,82 @@
+{
+  "id": "flat-vector/doorbell",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Doorbell",
+  "summary": "Wall doorbell plate with a round button; anim ring presses it and sends sound arcs out. For door scenes.",
+  "tags": [
+    "doorbell",
+    "door bell",
+    "bell",
+    "door",
+    "visitor",
+    "wall",
+    "ring"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 760,
+      "note": "wall item: centre of the plate on y (default 760)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the plate is hero size (about 340 px tall)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#DDE2EA",
+      "note": "plate colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "button colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "ring",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "ring"
+      ],
+      "note": "ring = press the button once a second and show sound arcs; the others are gentle motions"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (arcs point left when true)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 760,
+    "s": 1,
+    "color": "#DDE2EA",
+    "color2": "#FFC83D",
+    "anim": "ring"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

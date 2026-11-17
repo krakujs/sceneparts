@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/curtains",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Curtains",
+  "summary": "Pair of drapes on a rail, tied back at the sides with a sway option. Hang beside a window on a wall.",
+  "tags": ["curtains", "drapes", "window", "fabric", "room", "decor"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 760, "note": "wall item: centred on y (default 760), rail at the top; no ground shadow" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the pair is about 960 px wide" },
+    { "name": "color", "type": "colour", "default": "#9ED8D2", "note": "fabric colour" },
+    { "name": "color2", "type": "colour", "default": "#FFC83D", "note": "tie-back colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "sway", "bob", "pop"], "note": "sway = fabric gently moves in a breeze; motion only" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 760, "s": 1, "color": "#9ED8D2", "color2": "#FFC83D" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

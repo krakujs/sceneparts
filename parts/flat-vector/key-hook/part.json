@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/key-hook",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Key Hook",
+  "summary": "Small wall board with hooks and hanging key bunches; for hallway, entrance and home-life scenes.",
+  "tags": ["key hook", "key rack", "keys", "key holder", "hallway", "wall hook", "entryway"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 760, "note": "wall item: centre of the board on y (default 760)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the board is hero size (about 380 px wide)"},
+    {"name": "color", "type": "colour", "default": "#1FA39A", "note": "board colour"},
+    {"name": "color2", "type": "colour", "default": "#FFC83D", "note": "key colour (one bunch is blue)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion only; driven by the frame"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 760, "s": 1, "color": "#1FA39A", "color2": "#FFC83D"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

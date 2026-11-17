@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/crib",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Crib",
+  "summary": "Baby cot with vertical bars, a mattress and a small blanket, seen from the front. For nursery scenes.",
+  "tags": ["crib", "cot", "baby bed", "nursery", "baby", "bedroom"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the item rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 matches a flat-vector person at s = 1" },
+    { "name": "color", "type": "colour", "default": "#F5E6CC", "note": "frame colour" },
+    { "name": "color2", "type": "colour", "default": "#9ED8D2", "note": "blanket colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion only; driven by the frame" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "color": "#F5E6CC", "color2": "#9ED8D2" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

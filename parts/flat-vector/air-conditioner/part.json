@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/air-conditioner",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Wall Air Conditioner",
+  "summary": "Wall-mounted split air conditioner with a louvre and airflow lines; anim blow makes the cool air flow down.",
+  "tags": ["air conditioner", "air con","split unit", "cooling", "wall unit", "summer", "heat"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 760, "note": "wall item: centred on y (default 760), no ground shadow"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 matches real size (about 520 px wide)"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "unit colour"},
+    {"name": "airflow", "type": "boolean", "default": true, "note": "true = airflow lines below the louvre"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "blow"], "note": "blow = the airflow lines travel down"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 760, "s": 1, "color": "#FFFFFF", "airflow": true, "anim": "blow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

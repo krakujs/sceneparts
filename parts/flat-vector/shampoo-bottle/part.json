@@ -1,0 +1,74 @@
+{
+  "id": "flat-vector/shampoo-bottle",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Shampoo Bottle",
+  "summary": "Shampoo bottle with a pump head and a plain white label; no text. For bathroom and hair-care scenes.",
+  "tags": [
+    "shampoo",
+    "shampoo bottle",
+    "pump bottle",
+    "hair care",
+    "bathroom",
+    "toiletries",
+    "bottle"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#7B5CD6",
+      "note": "bottle colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "pump"
+      ],
+      "note": "pump = the pump head presses down and back up"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#7B5CD6"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

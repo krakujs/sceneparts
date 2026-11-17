@@ -715,7 +715,7 @@
     "title": "Home, furniture and household objects",
     "style": "flat-vector",
     "type": "prop",
-    "status": "todo",
+    "status": "done",
     "generator": null,
     "brief": "Furniture and household objects drawn front/side-on, anchored at the base. Generic designs only.",
     "names": [
@@ -849,7 +849,10 @@
       "watch",
       "calendar"
     ],
-    "count": 129
+    "count": 129,
+    "built": 128,
+    "date": "2026-11-17",
+    "notes": "128 standalone flat-vector home props (no generator). Two size classes: room-scale furniture/appliances/fixtures match a flat-vector person at s = 1 (1 m ≈ 560 px); small handheld items are hero size at s = 1 (use s 0.2-0.3 beside a person). Wall items centre on (x, y) (default y 760); ceiling lights hang from (x, y) (default y 0). Item-specific anims (tick, ring, flicker, glow, on, swing, spin, roll, blow, steam, bubbles, water, sway, open...). 'bowl' not built: covered by flat-vector/dish (vessel bowl, fill none). No brands, logos or text (calendar shows day numbers only)."
   },
   {
     "id": "07-flat-vector-tech",

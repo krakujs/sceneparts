@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/desk",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Desk",
+  "summary": "Work desk with a plain top and a drawer pedestal on one side, front view. For home offices and study scenes.",
+  "tags": ["desk", "work desk", "office", "study", "table", "furniture"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the item rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 matches a flat-vector person at s = 1" },
+    { "name": "color", "type": "colour", "default": "#E9D3A9", "note": "desk colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion only; driven by the frame" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "drawer pedestal on the left instead of the right" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "color": "#E9D3A9" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

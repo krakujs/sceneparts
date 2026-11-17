@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/iron",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Clothes Iron",
+  "summary": "Side-view clothes iron with a grey soleplate and optional rising steam; for laundry and ironing scenes.",
+  "tags": ["iron", "clothes iron", "steam iron", "ironing", "laundry", "clothes", "housework"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the sole rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (about 350 px long); use about 0.2–0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "body colour"},
+    {"name": "steam", "type": "boolean", "default": false, "note": "true = white steam puffs rise from the nose"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "press"], "note": "press = the iron nudges forward as if ironing"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (nose points left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3D6FE0", "steam": true, "anim": "press"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

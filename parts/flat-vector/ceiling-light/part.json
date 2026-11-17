@@ -1,0 +1,76 @@
+{
+  "id": "flat-vector/ceiling-light",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Ceiling Light",
+  "summary": "Dome pendant lamp on a cord from the ceiling; anim on for a glow, swing for a gentle sway. For kitchens and rooms.",
+  "tags": [
+    "ceiling light",
+    "pendant light",
+    "pendant lamp",
+    "hanging lamp",
+    "light",
+    "kitchen light",
+    "ceiling"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 0,
+      "note": "ceiling wall item: the cord hangs from the top attachment point (x, y); default y = 0 is the top edge"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the shade is about 340 px wide"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1FA39A",
+      "note": "shade colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "on",
+        "swing"
+      ],
+      "note": "on = light switched on; swing = sways gently from the cord"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 0,
+    "s": 1,
+    "color": "#1FA39A",
+    "anim": "on"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

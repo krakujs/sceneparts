@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/hair-dryer",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Hair Dryer",
+  "summary": "Handheld hair dryer, side view, with airflow lines from the nozzle; for bathroom and grooming scenes.",
+  "tags": ["hair dryer", "hairdryer", "blow dry", "bathroom", "hair", "appliance", "beauty"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the grip rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (about 320 px long); use about 0.2–0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#9B7BE0", "note": "housing colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "blow"], "note": "blow = airflow lines stream out of the nozzle"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (nozzle points right)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#9B7BE0", "anim": "blow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "flat-vector/rolling-pin",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Rolling Pin",
+  "summary": "Wooden rolling pin with a handle at each end, lying horizontally; anim roll moves the grain as if rolling dough.",
+  "tags": [
+    "rolling pin",
+    "baking",
+    "wooden",
+    "dough",
+    "kitchen",
+    "pastry"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E0B77A",
+      "note": "wood colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "roll",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "roll",
+    "color": "#E0B77A"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

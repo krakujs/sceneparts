@@ -1,0 +1,75 @@
+{
+  "id": "flat-vector/cooking-pot",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Cooking Pot",
+  "summary": "Empty stock pot with a domed lid and two side handles; anim steam puffs out of the lid. For kitchen and cooking scenes.",
+  "tags": [
+    "cooking pot",
+    "stock pot",
+    "saucepan",
+    "pot",
+    "kitchen",
+    "cookware",
+    "steam"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#C9D1DC",
+      "note": "pot colour (steel by default)"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "steam",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "steam",
+    "color": "#C9D1DC"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

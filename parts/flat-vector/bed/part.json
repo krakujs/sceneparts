@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/bed",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bed",
+  "summary": "Bed with a headboard, mattress, pillow and blanket, in side view. Variant single or double. For bedrooms.",
+  "tags": ["bed", "bedroom", "mattress", "furniture", "single bed", "double bed"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the item rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 matches a flat-vector person at s = 1" },
+    { "name": "variant", "type": "enum", "default": "single", "values": ["single", "double"], "note": "single = one pillow; double = two pillows, wider" },
+    { "name": "color", "type": "colour", "default": "#8A5A3C", "note": "frame colour" },
+    { "name": "color2", "type": "colour", "default": "#3D6FE0", "note": "blanket colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion only; driven by the frame" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "headboard on the left instead of the right" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "variant": "single", "color": "#8A5A3C", "color2": "#3D6FE0" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

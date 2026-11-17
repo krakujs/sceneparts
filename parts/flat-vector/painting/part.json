@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/painting",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Painting",
+  "summary": "Framed abstract landscape painting with hills and a sun for a wall; use for living rooms, hallways and galleries.",
+  "tags": ["painting", "wall art", "picture", "framed art", "landscape", "artwork", "wall"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 760, "note": "wall item: centred on (x, y); default y = 760 is about eye height on the wall"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the painting is about 500 px wide"},
+    {"name": "color", "type": "colour", "default": "#8A5A3C", "note": "frame colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion only"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 760, "s": 1, "color": "#8A5A3C"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

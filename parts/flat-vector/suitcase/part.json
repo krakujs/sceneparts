@@ -1,0 +1,75 @@
+{
+  "id": "flat-vector/suitcase",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Suitcase",
+  "summary": "Rolling hard-shell suitcase on two wheels with an extended handle; for travel scenes. anim roll rolls it.",
+  "tags": [
+    "suitcase",
+    "luggage",
+    "travel",
+    "trolley case",
+    "rolling case",
+    "airport",
+    "holiday"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the wheels rest on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the suitcase is about 450 px tall without the handle; use about 0.5–0.7 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#7B5CD6",
+      "note": "shell colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "roll",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "roll"
+      ],
+      "note": "roll = wheels turn and the case sways along; the others are gentle motions"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (handle on the left when true)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#7B5CD6",
+    "anim": "roll"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

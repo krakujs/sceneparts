@@ -1,0 +1,76 @@
+{
+  "id": "flat-vector/chandelier",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Chandelier",
+  "summary": "Multi-arm ceiling chandelier with candle bulbs and crystal drops; anim on lights it, swing sways it. For halls.",
+  "tags": [
+    "chandelier",
+    "ceiling light",
+    "candle light",
+    "crystal",
+    "hanging light",
+    "dining room",
+    "ballroom"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 0,
+      "note": "ceiling wall item: the chain hangs from the top attachment point (x, y); default y = 0 is the top edge"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the chandelier is about 680 px wide"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E0A21F",
+      "note": "metal colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "on",
+        "swing"
+      ],
+      "note": "on = candles lit with a warm glow; swing = sways gently from the chain"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 0,
+    "s": 1,
+    "color": "#E0A21F",
+    "anim": "on"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

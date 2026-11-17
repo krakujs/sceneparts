@@ -1,0 +1,82 @@
+{
+  "id": "flat-vector/ball-toy",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Ball Toy",
+  "summary": "Striped beach or play ball with three coloured panels; for play and summer scenes. anim bounce bounces it.",
+  "tags": [
+    "ball",
+    "beach ball",
+    "play ball",
+    "toy ball",
+    "striped ball",
+    "bounce",
+    "summer"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the ball rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "first stripe colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "second stripe colour (third stripe is blue)"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "bounce"
+      ],
+      "note": "bounce = bounces on the ground with a shrinking shadow; the others are gentle motions"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#E8503F",
+    "color2": "#FFC83D",
+    "anim": "none"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
