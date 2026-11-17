@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/fishing-rod",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Fishing rod",
+  "summary": "Fishing rod with cork grip, reel, line and float, lying on the ground; for fishing, lake and camping scenes.",
+  "tags": ["fishing rod", "fishing", "angling", "reel", "float", "lake", "camping"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line under the grip"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 500 px long (hero size); use about 0.25 next to a person"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "rod and reel colour"},
+    {"name": "color2", "type": "colour", "default": "#8A5A3C", "note": "grip colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "float"], "note": "float = the float bobs up and down on the line"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "float"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

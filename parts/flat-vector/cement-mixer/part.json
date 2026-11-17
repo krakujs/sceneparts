@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/cement-mixer",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Cement Mixer",
+  "summary": "Concrete mixer truck with a striped drum that turns; room-scale vehicle for building sites and deliveries.",
+  "tags": [
+    "cement mixer",
+    "concrete mixer",
+    "concrete truck",
+    "mixer truck",
+    "construction",
+    "drum",
+    "building site",
+    "truck"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the wheels stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: about 760 px wide and 680 px tall at s = 1; use about 0.6 for a smaller scene"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "drum and cab colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "chassis and hub colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "spin"
+      ],
+      "note": "spin = the drum stripes turn round the drum"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the cab then faces left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "spin"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

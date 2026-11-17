@@ -10,3 +10,5 @@
 | 05-flat-vector-food (fruit, dish, drink prop generators + 51 presets + 67 standalone foods and drinks) | 121 | 787 | 2026-11-17 |
 | 06-flat-vector-home (128 standalone furniture, appliances, fixtures, bathroom, kitchenware, toys and personal items; room-scale vs hero-scale sizes; 'bowl' covered by dish) | 128 | 915 | 2026-11-17 |
 | 07-flat-vector-tech (89 standalone tech props: phones, computers, audio, cameras, retro media, gaming, payment, energy, instruments; 7 rebuilt next run, bluetooth logo skipped) | 89 | 1004 | 2026-11-17 |
+| 07-flat-vector-tech (rest: the 7 rebuilt parts – computer-mouse, earbuds, charging-cable, podcast-mic, satellite-dish, cpu-chip, ring-light) | 7 | 1011 | 2026-11-17 |
+| 08-flat-vector-tools (93 standalone props: hand and power tools, garden and farm tools, construction and safety gear, workshop, materials and storage, fire and light, sewing, heavy machines, mechanics; 4 rebuilt next run) | 93 | 1104 | 2026-11-17 |

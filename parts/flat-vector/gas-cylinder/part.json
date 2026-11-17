@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/gas-cylinder",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Gas cylinder",
+  "summary": "Tall gas bottle with a domed shoulder, collar and valve top; for kitchens, workshops, camping and industrial scenes.",
+  "tags": ["gas cylinder", "gas bottle", "propane", "tank", "valve", "industrial", "camping"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the cylinder stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 740 px tall; use about 0.3 next to a person (about 0.6 for a large tank)"},
+    {"name": "color", "type": "colour", "default": "#4BB46A", "note": "cylinder colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "collar and valve colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion of the whole cylinder"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

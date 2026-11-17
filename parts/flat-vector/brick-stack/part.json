@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/brick-stack",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Brick stack",
+  "summary": "Stacked pile of red bricks with a couple loose on top; for building sites, yards and construction scenes.",
+  "tags": ["bricks", "brick stack", "red brick", "construction", "building", "masonry", "pile"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the stack stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: at s = 1 about 600 px wide and 380 px tall; use about 0.5 next to a person"},
+    {"name": "color", "type": "colour", "default": "#B53A2E", "note": "brick colour"},
+    {"name": "color2", "type": "colour", "default": "#DDE2EA", "note": "mortar colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion of the whole stack"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

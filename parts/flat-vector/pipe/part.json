@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/pipe",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Industrial Pipe",
+  "summary": "Industrial pipe run with a rounded elbow, bolted flanges and a floor support; for plant-room and factory scenes.",
+  "tags": ["pipe", "pipes", "industrial pipe", "plumbing", "plant room", "factory", "flange"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the support foot stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: at s = 1 about 400 px wide and 680 px tall; use about 0.5 for a plant-room scene"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "pipe colour"},
+    {"name": "color2", "type": "colour", "default": "#3A4157", "note": "flange and support colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle rock, wobble = tilt, pop = pops in"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the elbow then turns up on the left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 0.8, "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/horseshoe",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Horseshoe",
+  "summary": "Iron horseshoe with nail holes, lying on the ground; for stables, farms, blacksmith and good-luck scenes.",
+  "tags": ["horseshoe", "horse shoe", "lucky", "iron", "stable", "farm", "blacksmith"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line under the curve of the shoe"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 400 px wide (hero size); use about 0.2 next to a person"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "iron colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "spin", "pop"], "note": "spin = the shoe turns around its centre; pop = springs up to full size once"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

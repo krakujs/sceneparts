@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/paint-bucket",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Paint bucket",
+  "summary": "Open paint tin with a wire handle, paint on the surface and a drip down the side; colour is set by a param.",
+  "tags": ["paint bucket", "paint tin", "paint can", "paint", "bucket", "decorating", "drip"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the tin stands on the floor at y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (about 420 px tall); use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "paint colour"},
+    {"name": "color2", "type": "colour", "default": "#B9C0CE", "note": "tin colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "drip"], "note": "drip = the drip down the side grows longer and restarts"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FF8A3D", "anim": "drip"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

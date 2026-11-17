@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/chain",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Chain",
+  "summary": "Length of big metal chain in side view with chunky oval links; for locks, gates, docks and strength scenes.",
+  "tags": ["chain", "metal chain", "links", "shackle", "lock", "gate", "heavy"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the chain lies on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 500 px long and hero size; use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#9AA3B5", "note": "link colour"},
+    {"name": "color2", "type": "colour", "default": "#6B7384", "note": "alternate link colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion of the whole chain"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#9AA3B5"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

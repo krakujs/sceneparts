@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/gear",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Gear",
+  "summary": "Single chunky cog wheel with teeth and a centre hole that can spin; for machinery, clockwork and mechanism scenes.",
+  "tags": ["gear", "cog", "cogwheel", "machine", "mechanism", "clockwork", "engineering"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the wheel stands on its rim at y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 380 px across (hero size); use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#1FA39A", "note": "gear colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "spin", "bob", "pop"], "note": "spin = the gear turns about its hub"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

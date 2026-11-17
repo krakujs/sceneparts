@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/needle-and-thread",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Needle and Thread",
+  "summary": "Big sewing needle with a loop of thread through the eye, optional wooden spool; for sewing, tailoring and craft scenes.",
+  "tags": ["needle", "thread", "sewing", "needle and thread", "spool", "stitch", "tailor", "craft"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the needle lies on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "hero scale: about 340 px long at s = 1 (about 420 px with the spool); use about 0.25–0.35 next to a person"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "thread colour"},
+    {"name": "color2", "type": "colour", "default": "#9AA3B5", "note": "steel colour of the needle"},
+    {"name": "spool", "type": "boolean", "default": false, "note": "true = add a wooden spool wound with the thread"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "wiggle"], "note": "wiggle = the loose thread swings round the eye"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the point then faces left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "spool": true, "anim": "wiggle"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

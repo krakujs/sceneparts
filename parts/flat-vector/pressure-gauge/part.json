@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/pressure-gauge",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Pressure Gauge",
+  "summary": "Round pressure gauge with a red danger zone and a moving needle on a pipe stub; for plant and engineering scenes.",
+  "tags": ["pressure gauge", "gauge", "dial", "meter", "pressure", "pipe", "industrial"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the pipe rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 440 px wide and 550 px tall (hero size); use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "dial face colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "dial case colour"},
+    {"name": "value", "type": "number", "default": 0.6, "note": "needle position 0 to 1 (used when anim is none, wobble or pop)"},
+    {"name": "anim", "type": "enum", "default": "sweep", "values": ["sweep", "none", "wobble", "pop", "bob"], "note": "sweep = the needle swings across the dial"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "sweep"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

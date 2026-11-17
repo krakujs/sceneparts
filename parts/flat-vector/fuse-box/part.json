@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/fuse-box",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Fuse Box",
+  "summary": "Wall fuse box with its door open, rows of breaker switches and a warning triangle; for home and electrical scenes.",
+  "tags": ["fuse box", "breaker box", "electrical panel", "circuit breaker", "electric", "power", "warning"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the box stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: at s = 1 about 600 px wide and 820 px tall; use about 0.5 for a hallway or basement scene"},
+    {"name": "color", "type": "colour", "default": "#DDE2EA", "note": "box colour"},
+    {"name": "color2", "type": "colour", "default": "#3D6FE0", "note": "door colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "flicker"], "note": "flicker = the warning triangle blinks"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the door then opens to the right)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 0.6, "anim": "flicker"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

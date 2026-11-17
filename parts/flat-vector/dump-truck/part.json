@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/dump-truck",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Dump Truck",
+  "summary": "Tipper dump truck with an open bed that tips up at the front; room-scale for construction and gravel scenes.",
+  "tags": [
+    "dump truck",
+    "tipper",
+    "tipper truck",
+    "lorry",
+    "construction",
+    "gravel",
+    "delivery",
+    "truck"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the wheels stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: about 820 px wide and 540 px tall at s = 1; use about 0.6 for a smaller scene"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "cab and bed colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "chassis and hub colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "tip"
+      ],
+      "note": "tip = the bed tips up at the front and settles again"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the cab then faces left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 0.9,
+    "anim": "tip"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -859,7 +859,7 @@
     "title": "Technology and devices",
     "style": "flat-vector",
     "type": "prop",
-    "status": "partial",
+    "status": "done",
     "generator": null,
     "brief": "Devices and tech props; screens can show simple generic UI (no real app logos).",
     "names": [
@@ -963,25 +963,16 @@
       "thermostat"
     ],
     "count": 98,
-    "built": 89,
+    "built": 96,
     "date": "2026-11-17",
-    "remaining": [
-      "computer mouse",
-      "earbuds",
-      "charging cable",
-      "podcast mic",
-      "satellite dish",
-      "cpu chip",
-      "ring light"
-    ],
-    "notes": "humanoid robot covered by flat-vector/robot-person; bluetooth symbol skipped (trademarked logo); walkman -> portable-cassette-player and polaroid camera -> instant-camera (trademark-free slugs); 'mouse' slug taken by the animal, use computer-mouse"
+    "notes": "humanoid robot covered by flat-vector/robot-person; bluetooth symbol skipped (trademarked logo); walkman -> portable-cassette-player and polaroid camera -> instant-camera (trademark-free slugs); 'mouse' slug taken by the animal, use computer-mouse; the 7 rebuilt in run 08 (computer-mouse, earbuds, charging-cable, podcast-mic, satellite-dish, cpu-chip, ring-light)"
   },
   {
     "id": "08-flat-vector-tools",
     "title": "Tools, work and industry",
     "style": "flat-vector",
     "type": "prop",
-    "status": "todo",
+    "status": "partial",
     "generator": null,
     "brief": "Hand tools, power tools and industrial objects.",
     "names": [
@@ -1087,7 +1078,16 @@
       "plough",
       "horseshoe"
     ],
-    "count": 101
+    "count": 101,
+    "built": 93,
+    "date": "2026-11-17",
+    "remaining": [
+      "hand drill",
+      "fishing net",
+      "vise",
+      "harvester"
+    ],
+    "notes": "ladder and toolbox already existed (06); key covered by flat-vector/keys; iron tool covered by flat-vector/iron. Slugs: saw->hand-saw, level->spirit-level, hose->garden-hose, barrier->road-barrier, gloves->work-gloves, goggles->safety-goggles, file tool->metal-file, crane->construction-crane, generator->power-generator, torch flame->flaming-torch, bucket of water->water-bucket, sand bag->sand-bag, cog wheel->gear-pair (interlocking gears), measuring tape->sewing-tape-measure (tailor's tape). Deleted in review, rebuild next run: hand drill (unreadable crank drill), fishing net (looked like a racket), vise (two slabs, unrecognisable), harvester (did not read as a combine)."
   },
   {
     "id": "09-flat-vector-vehicles",

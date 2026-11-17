@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/tractor",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Tractor",
+  "summary": "Farm tractor with big rear wheels and a cab, in side view; room-scale vehicle for farm, field and countryside scenes.",
+  "tags": ["tractor", "farm", "farming", "farmer", "field", "agriculture", "countryside", "vehicle"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the wheels stand on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: about 830 px wide and 690 px tall at s = 1; use about 0.5 for a smaller scene"},
+    {"name": "color", "type": "colour", "default": "#4BB46A", "note": "bodywork and cab colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "chassis, rims and stack colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "roll"], "note": "roll = the wheels turn and the tractor rocks as it moves"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the cab then faces left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "roll"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

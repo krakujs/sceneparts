@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/gear-pair",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Interlocking Gears",
+  "summary": "Two meshing cogs of different sizes on a base plate that turn in opposite directions; for machinery and teamwork scenes.",
+  "tags": ["gears", "interlocking gears", "cogs", "mechanism", "machine", "teamwork", "engineering"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the base plate stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 540 px wide and 430 px tall (hero size); use about 0.3–0.4 next to a person"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "big gear colour"},
+    {"name": "color2", "type": "colour", "default": "#FF8A3D", "note": "small gear colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "spin", "bob", "pop"], "note": "spin = the big gear turns one way and the small gear the other, at matching tooth speed"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

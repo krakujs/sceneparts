@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/cable-reel",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Cable Reel",
+  "summary": "Wooden drum cable reel with a coiled orange extension cable and plug; for workshop, site and power-cable scenes.",
+  "tags": ["cable reel", "extension cord", "cable drum", "extension lead", "reel", "power cable", "workshop"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the reel stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: at s = 1 about 600 px across; use about 0.5 next to a person"},
+    {"name": "color", "type": "colour", "default": "#E9D3A9", "note": "drum and flange colour"},
+    {"name": "color2", "type": "colour", "default": "#FF8A3D", "note": "cable colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "spin", "bob", "wobble"], "note": "spin = the reel turns"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the plug then hangs on the left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 0.6, "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

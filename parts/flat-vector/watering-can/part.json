@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/watering-can",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Watering can",
+  "summary": "Metal or plastic watering can with a long spout and rose, standing on its base; for gardens, plants and spring scenes.",
+  "tags": ["watering can", "watering", "garden", "plants", "spout", "rain", "gardening"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line under the base"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 440 px wide (hero size); use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#4BB46A", "note": "can body colour"},
+    {"name": "color2", "type": "colour", "default": "#348A4F", "note": "handle, spout and rose colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pour"], "note": "pour = the can tilts toward the spout and water drops fall from the rose"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the spout then points left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "pour"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

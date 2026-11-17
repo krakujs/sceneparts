@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/construction-crane",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Construction Crane",
+  "summary": "Tall tower crane with a long jib and a swaying hook; room-scale for building-site and skyline scenes.",
+  "tags": [
+    "crane",
+    "tower crane",
+    "construction",
+    "building site",
+    "hook",
+    "construction site",
+    "skyline",
+    "builder"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the footing stands on y; at s = 1 the crane is about 960 px tall, so keep y near 1560 or lower s"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: about 960 px tall and 740 px wide at s = 1; use about 0.6 for a smaller scene"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "jib, cab and hook block colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "mast lattice and cable colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = the hook and cable swing from the trolley"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the jib then points left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

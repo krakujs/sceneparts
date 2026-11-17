@@ -1,0 +1,73 @@
+{
+  "id": "flat-vector/bolt-and-nut",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bolt and nut",
+  "summary": "Hex bolt standing on its head with a hex nut threaded on the shaft; for engineering, hardware and machinery scenes.",
+  "tags": [
+    "bolt",
+    "nut",
+    "bolt and nut",
+    "hex bolt",
+    "hardware",
+    "engineering",
+    "fastener"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the item stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "hero size: about 440 px tall at s = 1; use about 0.25–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#9AA3B5",
+      "note": "bolt colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "turn",
+        "wobble",
+        "pop"
+      ],
+      "note": "turn = the nut winds up and down the thread; wobble = slight rock; pop = pops in"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (faces left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "turn"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

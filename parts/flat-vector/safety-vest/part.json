@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/safety-vest",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Safety vest",
+  "summary": "Hi-vis orange safety vest with reflective bands, shown on a hanger; for roadworks, site and worker scenes.",
+  "tags": ["safety vest", "hi vis", "hi-vis", "high visibility", "vest", "reflective", "roadworks"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the hanging vest's floor shadow sits at y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (about 460 px tall); use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "vest colour"},
+    {"name": "color2", "type": "colour", "default": "#FFFFFF", "note": "reflective band colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "sway", "pop"], "note": "sway = the vest swings like a pendulum from the hook"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

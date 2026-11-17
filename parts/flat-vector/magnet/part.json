@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/magnet",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Horseshoe Magnet",
+  "summary": "Red U-shaped horseshoe magnet with grey pole tips and optional attraction lines; for science and physics scenes.",
+  "tags": ["magnet", "horseshoe magnet", "u magnet", "science", "physics", "attraction", "magnetism"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the tips stand on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 340 px wide and 400 px tall (hero size); use about 0.3–0.4 next to a person"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "magnet body colour"},
+    {"name": "color2", "type": "colour", "default": "#9AA3B5", "note": "pole tip colour"},
+    {"name": "lines", "type": "boolean", "default": false, "note": "true = show attraction lines beside the tips"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pulse", "pop"], "note": "pulse = the attraction lines fade in and out (needs lines true)"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "lines": true, "anim": "pulse"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

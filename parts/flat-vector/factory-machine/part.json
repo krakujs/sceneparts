@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/factory-machine",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Factory Machine",
+  "summary": "Generic industrial press machine with gauges, lights and a beacon; room-scale for factory and workshop scenes.",
+  "tags": [
+    "factory",
+    "machine",
+    "industrial",
+    "press",
+    "gauges",
+    "lights",
+    "workshop",
+    "manufacturing"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the plinth stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: about 660 px wide and 800 px tall at s = 1; use about 0.6 for a smaller scene"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "main body colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "press head colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "press"
+      ],
+      "note": "press = the ram drops and rises, the gauge needle moves and the lights blink"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the panel then faces left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 0.9,
+    "anim": "press"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

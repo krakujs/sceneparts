@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/flaming-torch",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flaming torch",
+  "summary": "Wooden torch with a wrapped rag head and flickering fire on top; for caves, night marches and medieval scenes.",
+  "tags": ["torch", "flaming torch", "fire", "flame", "wooden torch", "medieval", "cave"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the torch butt rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 560 px tall (hero size); use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#8A5A3C", "note": "wood colour"},
+    {"name": "color2", "type": "colour", "default": "#5E3B26", "note": "rag head colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "flicker", "bob", "pop"], "note": "flicker = the fire sways and pulses"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "flicker"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/road-barrier",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Road barrier",
+  "summary": "Red and white striped road barrier on two legs with a warning lamp; for roadworks, road closures and site scenes.",
+  "tags": ["road barrier", "barrier", "roadworks", "road closed", "construction", "striped barrier", "warning"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom centre: the foot bar stands on the floor at y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: at s = 1 about 700 px wide and 660 px tall; use about 0.5 for a smaller scene"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "stripe colour"},
+    {"name": "color2", "type": "colour", "default": "#FFFFFF", "note": "rail base colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "flash"], "note": "flash = the warning lamp blinks"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "flash"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

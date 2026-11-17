@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/safety-goggles",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Safety goggles",
+  "summary": "Clear-lens protective safety goggles with a wide strap; for workshop, lab and eye protection scenes.",
+  "tags": ["safety goggles", "goggles", "eye protection", "safety glasses", "workshop", "lab", "protection"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the frame stands on the floor at y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (about 600 px wide with strap); use about 0.25 next to a person"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "frame colour"},
+    {"name": "color2", "type": "colour", "default": "#3A4157", "note": "strap colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "shine"], "note": "shine = a glint sweeps across the left lens"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "shine"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

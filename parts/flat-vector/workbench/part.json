@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/workbench",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Workbench",
+  "summary": "Wooden workbench with drawers and an optional tool pegboard, room scale; for workshop and garage scenes.",
+  "tags": ["workbench", "work bench", "workshop", "garage", "carpentry", "woodwork", "pegboard"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom centre: the legs stand on the floor at y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: at s = 1 about 920 px wide and 880 px tall; use about 0.5 for a smaller scene"},
+    {"name": "color", "type": "colour", "default": "#B07A4F", "note": "wood colour"},
+    {"name": "color2", "type": "colour", "default": "#E9D3A9", "note": "pegboard colour"},
+    {"name": "pegboard", "type": "boolean", "default": true, "note": "true = show the pegboard with hanging tools behind the bench"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "wobble", "pop", "swing"], "note": "swing = the hanging tools swing on their hooks"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "pegboard": true, "anim": "swing"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
