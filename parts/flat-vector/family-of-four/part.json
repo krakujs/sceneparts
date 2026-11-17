@@ -1,0 +1,54 @@
+{
+  "id": "flat-vector/family-of-four",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Family of four",
+  "summary": "Two adults and two children standing side by side, all waving; for family, home and community explainers.",
+  "tags": [
+    "family",
+    "parents",
+    "children",
+    "kids",
+    "home",
+    "group",
+    "people",
+    "waving"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "overall scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror the whole group"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

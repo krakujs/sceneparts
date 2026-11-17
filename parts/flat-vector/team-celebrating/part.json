@@ -1,0 +1,54 @@
+{
+  "id": "flat-vector/team-celebrating",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Team celebrating",
+  "summary": "Five teammates in matching plain sports kit jumping and cheering, one holding a trophy; for wins and team success.",
+  "tags": [
+    "team",
+    "celebration",
+    "trophy",
+    "winning",
+    "sports",
+    "cheering",
+    "group",
+    "people"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "overall scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror the whole group"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

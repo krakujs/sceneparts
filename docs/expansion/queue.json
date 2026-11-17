@@ -181,7 +181,7 @@
   "title": "Everyday people, ages and roles",
   "style": "flat-vector",
   "type": "character",
-  "status": "todo",
+  "status": "done",
   "generator": null,
   "brief": "Presets of flat-vector/person (generator exists). Cover ages (child, teen, adult, elder via a body/age param if the generator has one, otherwise add an `age` param to the generator first), families, hobbies, moods and archetypes. Respectful, diverse, no stereotypes.",
   "names": [
@@ -326,7 +326,10 @@
    "gym group",
    "classroom of kids"
   ],
-  "count": 140
+  "count": 140,
+  "built": 139,
+  "date": "2026-11-17",
+  "notes": "Added `age` (adult|teen|child|toddler|elder) and prop `cane` to flat-vector/person (v1.1.0, existing presets unchanged). Skipped 'student with backpack' (duplicate of flat-vector/student)."
  },
  {
   "id": "03-flat-vector-mammals",

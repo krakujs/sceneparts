@@ -1,0 +1,91 @@
+{
+  "id": "flat-vector/vampire",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Vampire",
+  "summary": "Flat vector friendly-spooky vampire with high-collar cape and small fangs; for Halloween stories.",
+  "tags": [
+    "vampire",
+    "cape",
+    "fangs",
+    "halloween",
+    "spooky",
+    "dracula",
+    "gothic",
+    "monster"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "age",
+      "type": "enum",
+      "default": "adult",
+      "values": [
+        "adult",
+        "teen",
+        "child",
+        "toddler",
+        "elder"
+      ],
+      "note": "teen/child/toddler: smaller with a bigger head; elder: slight stoop"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "wave",
+        "point",
+        "think",
+        "cheer",
+        "talk",
+        "sit",
+        "hold"
+      ]
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "stand"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

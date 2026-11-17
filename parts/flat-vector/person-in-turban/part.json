@@ -1,0 +1,125 @@
+{
+  "id": "flat-vector/person-in-turban",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Person in turban",
+  "summary": "Flat vector person in a neatly wrapped turban with a beard and long kurta-style shirt; for Sikh and South Asian culture.",
+  "tags": [
+    "turban",
+    "pagri",
+    "dastar",
+    "sikh",
+    "punjabi",
+    "beard",
+    "kurta",
+    "traditional clothing",
+    "person"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "wave",
+        "point",
+        "think",
+        "cheer",
+        "talk",
+        "sit",
+        "hold"
+      ]
+    },
+    {
+      "name": "expression",
+      "type": "enum",
+      "default": "smile",
+      "values": [
+        "smile",
+        "neutral",
+        "open",
+        "surprised",
+        "sad",
+        "angry",
+        "laugh"
+      ]
+    },
+    {
+      "name": "skin",
+      "type": "string",
+      "default": "tan",
+      "note": "light | fair | tan | medium | brown | dark, or a hex colour"
+    },
+    {
+      "name": "accessory",
+      "type": "enum",
+      "default": "beard",
+      "values": [
+        "none",
+        "glasses",
+        "sunglasses",
+        "goggles",
+        "mask",
+        "beard",
+        "moustache",
+        "stubble",
+        "headset",
+        "headphones",
+        "earrings"
+      ]
+    },
+    {
+      "name": "seat",
+      "type": "boolean",
+      "default": true,
+      "note": "draw a bench when pose is sit"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "talk",
+    "skin": "tan",
+    "accessory": "beard"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

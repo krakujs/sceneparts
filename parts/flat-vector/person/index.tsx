@@ -4,6 +4,7 @@ import { C, shade, skinColour, hairColour } from "../style/index";
 
 // Flat vector person generator. Origin = feet (bottom centre), faces right, ~1000 px tall at s = 1.
 // Poses, expressions, skin, hair, outfit, hat, face accessory, body extra and a held prop.
+// `age` scales the figure (teen, child, toddler: smaller, bigger head, shorter legs; elder: slight stoop).
 // Presets import Person and may add their own drawing with `held` (in the front hand), `over` (on the body) and `topper` (on the head).
 
 export type Pose = "stand" | "walk" | "run" | "wave" | "point" | "think" | "cheer" | "talk" | "sit" | "hold";
@@ -15,7 +16,8 @@ export type Shoes = "shoes" | "sneakers" | "boots" | "heels" | "sandals";
 export type Hat = "none" | "cap" | "beanie" | "hardhat" | "chef" | "beret" | "brim" | "fedora" | "peaked" | "helmet" | "headscarf" | "turban" | "mortarboard" | "bandana" | "tophat" | "scrubcap" | "skullcap" | "sailor";
 export type Accessory = "none" | "glasses" | "sunglasses" | "goggles" | "mask" | "beard" | "moustache" | "stubble" | "headset" | "headphones" | "earrings";
 export type Extra = "none" | "tie" | "bowtie" | "apron" | "hivis" | "lanyard" | "stethoscope" | "scarf" | "badge" | "backpack" | "toolbelt" | "sash";
-export type Prop = "none" | "phone" | "tablet" | "laptop" | "clipboard" | "book" | "mug" | "briefcase" | "bag" | "toolbox" | "wrench" | "hammer" | "mic" | "camera" | "box" | "paper" | "pen" | "broom" | "umbrella" | "tray" | "pointer";
+export type Age = "adult" | "teen" | "child" | "toddler" | "elder";
+export type Prop = "none" | "cane" | "phone" | "tablet" | "laptop" | "clipboard" | "book" | "mug" | "briefcase" | "bag" | "toolbox" | "wrench" | "hammer" | "mic" | "camera" | "box" | "paper" | "pen" | "broom" | "umbrella" | "tray" | "pointer";
 
 /** Where the front hand is: x, y in body space and the forearm angle (deg, 0 = down, 90 = forward). */
 export type Hand = { x: number; y: number; a: number; bx: number; by: number };
@@ -26,8 +28,14 @@ export type PersonSpec = {
   pose?: Pose; expression?: Expression; skin?: string; hair?: Hair; hairColor?: string;
   top?: Top; topColor?: string; shirtColor?: string; bottom?: Bottom; bottomColor?: string; shoes?: Shoes; shoesColor?: string;
   hat?: Hat; hatColor?: string; accessory?: Accessory; extra?: Extra; extraColor?: string; prop?: Prop; propColor?: string;
-  seat?: boolean;
+  seat?: boolean; age?: Age;
   held?: (h: Hand) => React.ReactNode; over?: () => React.ReactNode; topper?: () => React.ReactNode;
+};
+
+/** Age presets: overall scale k, head scale (about the chin) and leg length factor. */
+export const AGE: Record<Age, { k: number; head: number; leg: number }> = {
+  adult: { k: 1, head: 1, leg: 1 }, teen: { k: 0.88, head: 1.06, leg: 0.97 }, child: { k: 0.64, head: 1.32, leg: 0.84 },
+  toddler: { k: 0.48, head: 1.5, leg: 0.72 }, elder: { k: 0.97, head: 1, leg: 0.98 },
 };
 
 const TH = 235, SH = 215, UP = 165, FO = 150, HIP = -470, SHY = -775;
@@ -248,16 +256,20 @@ export const Person: React.FC<PersonSpec & { x: number; y: number; s?: number; f
   const skin = skinColour(q.skin), hc = hairColour(q.hairColor);
   const tc = q.topColor || C.blue, bc = top === "jumpsuit" ? tc : q.bottomColor || C.navy, sc = q.shoesColor || C.ink;
   const shirt = q.shirtColor || C.white, hatC = q.hatColor || C.red, xc = q.extraColor || C.red, pc = q.propColor || C.orange;
+  const age: Age = q.age && q.age in AGE ? q.age : "adult";
+  const G = AGE[age];
   const P = poseAt(pose, f);
-  const lv = (l: Limb) => TH * Math.cos(rad(l[0])) + SH * Math.cos(rad(l[0] - l[1]));
+  if (age === "elder" && pose !== "run") { P.lean += 5; P.tilt += 4; P.jump *= 0.5; }
+  const th = TH * G.leg, sh2 = SH * G.leg;
+  const lv = (l: Limb) => th * Math.cos(rad(l[0])) + sh2 * Math.cos(rad(l[0] - l[1]));
   const dy = TH + SH - Math.max(lv(P.bl), lv(P.fl)) - P.jump;
   const sleeve: "none" | "short" | "long" = top === "tank" ? "none" : ["tshirt", "dress", "scrubs"].includes(top) ? "short" : "long";
   const longCoat = top === "coat";
   const tcD = shade(tc, 0.16), skinD = shade(skin, 0.12);
   const leg = (l: Limb, hx: number, back: boolean) => {
     const h: [number, number] = [hx, HIP];
-    const k = pt(h[0], h[1], l[0], TH);
-    const an = pt(k[0], k[1], l[0] - l[1], SH);
+    const k = pt(h[0], h[1], l[0], th);
+    const an = pt(k[0], k[1], l[0] - l[1], sh2);
     const col = back ? shade(bc, 0.14) : bc;
     const sk = back ? skinD : skin;
     const trousers = bottom === "trousers" || bottom === "overalls" || top === "jumpsuit";
@@ -265,7 +277,7 @@ export const Person: React.FC<PersonSpec & { x: number; y: number; s?: number; f
     return (
       <g>
         <Seg p={[h, k, an]} w={62} c={sk} />
-        {trousers ? <Seg p={[h, k, an]} w={74} c={col} /> : shorts ? <Seg p={[h, pt(h[0], h[1], l[0], TH * 0.8)]} w={78} c={col} /> : null}
+        {trousers ? <Seg p={[h, k, an]} w={74} c={col} /> : shorts ? <Seg p={[h, pt(h[0], h[1], l[0], th * 0.8)]} w={78} c={col} /> : null}
         <Shoe x={an[0]} y={an[1]} a={l[0] - l[1]} kind={shoes} col={back ? shade(sc, 0.15) : sc} skin={sk} />
       </g>
     );
@@ -293,14 +305,16 @@ export const Person: React.FC<PersonSpec & { x: number; y: number; s?: number; f
   const up = `rotate(${P.lean} 0 ${HIP})`;
   const torso = "M -76 -780 Q -76 -812 -44 -812 L 52 -812 Q 84 -812 84 -780 L 82 -455 L -76 -455 Z";
   const skirtLen = top === "dress" ? -270 : -300;
+  const headT = `translate(12 -905) rotate(${P.tilt}) translate(0 75) scale(${G.head}) translate(0 -75)`;
+  const sz = s * G.k;
   return (
-    <g transform={`translate(${x} ${y}) scale(${flip ? -s : s} ${s})`}>
+    <g transform={`translate(${x} ${y}) scale(${flip ? -sz : sz} ${sz})`}>
       <ellipse cx={0} cy={4} rx={150 + P.jump * 0.6} ry={18} fill={C.shadow} />
       <g transform={`translate(0 ${dy})`}>
         {pose === "sit" && seat ? <g><rect x={-120} y={HIP + 30} width={300} height={40} rx={14} fill={C.brown} /><rect x={-100} y={HIP + 66} width={24} height={-HIP - 66 - dy} fill={C.brownDark} /><rect x={130} y={HIP + 66} width={24} height={-HIP - 66 - dy} fill={C.brownDark} /></g> : null}
         <g transform={up}>
           {extra === "backpack" ? <rect x={-150} y={-790} width={100} height={260} rx={30} fill={xc} /> : null}
-          {hat !== "headscarf" ? <g transform={`translate(12 -905) rotate(${P.tilt})`}>{hairBack(hair, hc)}</g> : null}
+          {hat !== "headscarf" ? <g transform={headT}>{hairBack(hair, hc)}</g> : null}
           {bA.limb}{bA.hand}
         </g>
         {leg(P.bl, -24, true)}
@@ -325,7 +339,7 @@ export const Person: React.FC<PersonSpec & { x: number; y: number; s?: number; f
           {bottom === "overalls" && top !== "jumpsuit" ? <g><path d="M -50 -690 L 64 -690 L 70 -455 L -60 -455 Z" fill={bc} /><path d="M -50 -690 L -60 -812 M 64 -690 L 70 -812" stroke={bc} strokeWidth={18} /><circle cx={-44} cy={-680} r={8} fill={C.yellow} /><circle cx={58} cy={-680} r={8} fill={C.yellow} /><rect x={-14} y={-660} width={50} height={40} rx={6} fill={shade(bc, 0.15)} /></g> : null}
           {extraEl(extra, xc, top)}
           {q.over ? q.over() : null}
-          <g transform={`translate(12 -905) rotate(${P.tilt})`}>
+          <g transform={headT}>
             <circle cx={-48} cy={4} r={20} fill={skinD} />
             <circle cx={0} cy={0} r={95} fill={skin} />
             <path d="M 96 -6 Q 112 14 98 26" stroke={skinD} strokeWidth={9} fill="none" strokeLinecap="round" />
@@ -336,7 +350,8 @@ export const Person: React.FC<PersonSpec & { x: number; y: number; s?: number; f
             {q.topper ? q.topper() : null}
           </g>
           {fA.limb}
-          {q.held ? q.held(hand) : propEl(prop, hand, pc, both)}
+          {!q.held && prop === "cane" ? <g><path d={`M ${hand.x - 4} ${hand.y + 20} L ${hand.x + 14} ${-dy - 6}`} stroke={pc} strokeWidth={14} strokeLinecap="round" /><path d={`M ${hand.x - 4} ${hand.y + 20} L ${hand.x - 4} ${hand.y - 14} Q ${hand.x - 4} ${hand.y - 50} ${hand.x - 40} ${hand.y - 46} Q ${hand.x - 60} ${hand.y - 40} ${hand.x - 58} ${hand.y - 16}`} stroke={pc} strokeWidth={14} fill="none" strokeLinecap="round" /></g> : null}
+          {q.held ? q.held(hand) : prop === "cane" ? null : propEl(prop, hand, pc, both)}
           {fA.hand}
           {both ? bA.hand : null}
         </g>

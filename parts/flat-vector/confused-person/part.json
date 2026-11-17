@@ -1,0 +1,59 @@
+{
+  "id": "flat-vector/confused-person",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Confused person",
+  "summary": "Flat vector person in a thinking pose with a bobbing question mark above the head; for confusion and doubt moments.",
+  "tags": [
+    "confused",
+    "question",
+    "doubt",
+    "puzzled",
+    "unsure",
+    "thinking",
+    "person"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

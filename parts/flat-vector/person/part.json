@@ -3,7 +3,7 @@
   "type": "character",
   "style": "flat-vector",
   "name": "Flat person",
-  "summary": "Flat vector person generator: 10 poses, 7 expressions, 6 skin tones, hair, outfits, hats, accessories and held props.",
+  "summary": "Flat vector person generator: 5 ages, 10 poses, 7 expressions, skin tones, hair, outfits, hats, accessories, props.",
   "tags": [
     "person",
     "people",
@@ -31,6 +31,19 @@
       "type": "number",
       "default": 1,
       "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "age",
+      "type": "enum",
+      "default": "adult",
+      "values": [
+        "adult",
+        "teen",
+        "child",
+        "toddler",
+        "elder"
+      ],
+      "note": "teen/child/toddler: smaller with a bigger head; elder: slight stoop"
     },
     {
       "name": "pose",
@@ -235,6 +248,7 @@
       "default": "none",
       "values": [
         "none",
+        "cane",
         "phone",
         "tablet",
         "laptop",
@@ -297,5 +311,5 @@
   "author": "krakujs",
   "license": "MIT",
   "origin": "original",
-  "version": "1.0.0"
+  "version": "1.1.0"
 }

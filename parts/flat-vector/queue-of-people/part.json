@@ -1,0 +1,54 @@
+{
+  "id": "flat-vector/queue-of-people",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Queue of people",
+  "summary": "Five people standing in a line with small idle sways, one checking a phone; for waiting, queues and everyday scenes.",
+  "tags": [
+    "queue",
+    "line",
+    "waiting",
+    "crowd",
+    "people",
+    "group",
+    "commute",
+    "everyday"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "overall scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror the whole group"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

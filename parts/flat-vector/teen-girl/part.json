@@ -1,0 +1,251 @@
+{
+  "id": "flat-vector/teen-girl",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Teen girl",
+  "summary": "Flat vector teenage girl in a casual top with headphones and a ponytail; for music, youth and teen explainers.",
+  "tags": [
+    "teen",
+    "teenager",
+    "teenage girl",
+    "girl",
+    "youth",
+    "headphones",
+    "music"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "walk",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "wave",
+        "point",
+        "think",
+        "cheer",
+        "talk",
+        "sit",
+        "hold"
+      ]
+    },
+    {
+      "name": "expression",
+      "type": "enum",
+      "default": "smile",
+      "values": [
+        "smile",
+        "neutral",
+        "open",
+        "surprised",
+        "sad",
+        "angry",
+        "laugh"
+      ]
+    },
+    {
+      "name": "skin",
+      "type": "string",
+      "default": "dark",
+      "note": "light | fair | tan | medium | brown | dark, or a hex colour"
+    },
+    {
+      "name": "hair",
+      "type": "enum",
+      "default": "ponytail",
+      "values": [
+        "short",
+        "buzz",
+        "side",
+        "spiky",
+        "curly",
+        "afro",
+        "long",
+        "ponytail",
+        "bun",
+        "bob",
+        "braid",
+        "none"
+      ]
+    },
+    {
+      "name": "hairColor",
+      "type": "string",
+      "default": "black",
+      "note": "black | brown | auburn | blonde | grey | white | red | blue | pink, or hex"
+    },
+    {
+      "name": "topColor",
+      "type": "colour",
+      "default": "#F27BA6"
+    },
+    {
+      "name": "shirtColor",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "shirt under a blazer or coat"
+    },
+    {
+      "name": "bottom",
+      "type": "enum",
+      "default": "trousers",
+      "values": [
+        "trousers",
+        "shorts",
+        "skirt",
+        "overalls"
+      ]
+    },
+    {
+      "name": "bottomColor",
+      "type": "colour",
+      "default": "#3D6FE0"
+    },
+    {
+      "name": "shoesColor",
+      "type": "colour",
+      "default": "#1F2433"
+    },
+    {
+      "name": "hat",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "cap",
+        "beanie",
+        "hardhat",
+        "chef",
+        "beret",
+        "brim",
+        "fedora",
+        "peaked",
+        "helmet",
+        "headscarf",
+        "turban",
+        "mortarboard",
+        "bandana",
+        "tophat",
+        "scrubcap",
+        "skullcap",
+        "sailor"
+      ]
+    },
+    {
+      "name": "hatColor",
+      "type": "colour",
+      "default": "#7B5CD6",
+      "note": "also colours goggles and headphones"
+    },
+    {
+      "name": "extra",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "tie",
+        "bowtie",
+        "apron",
+        "hivis",
+        "lanyard",
+        "stethoscope",
+        "scarf",
+        "badge",
+        "backpack",
+        "toolbelt",
+        "sash"
+      ]
+    },
+    {
+      "name": "extraColor",
+      "type": "colour",
+      "default": "#E8503F"
+    },
+    {
+      "name": "prop",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "cane",
+        "phone",
+        "tablet",
+        "laptop",
+        "clipboard",
+        "book",
+        "mug",
+        "briefcase",
+        "bag",
+        "toolbox",
+        "wrench",
+        "hammer",
+        "mic",
+        "camera",
+        "box",
+        "paper",
+        "pen",
+        "broom",
+        "umbrella",
+        "tray",
+        "pointer"
+      ]
+    },
+    {
+      "name": "propColor",
+      "type": "colour",
+      "default": "#FF8A3D"
+    },
+    {
+      "name": "seat",
+      "type": "boolean",
+      "default": true,
+      "note": "draw a bench when pose is sit"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "walk",
+    "skin": "dark",
+    "hair": "ponytail"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

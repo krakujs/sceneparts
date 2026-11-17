@@ -1,0 +1,60 @@
+{
+  "id": "flat-vector/person-sneezing",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Person sneezing",
+  "summary": "Flat vector person sneezing on a loop with a tissue and spray lines; for cold, allergy and flu explainers.",
+  "tags": [
+    "sneeze",
+    "sneezing",
+    "cold",
+    "allergy",
+    "tissue",
+    "flu",
+    "achoo",
+    "person"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

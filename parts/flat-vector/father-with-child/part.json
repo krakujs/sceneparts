@@ -1,0 +1,85 @@
+{
+  "id": "flat-vector/father-with-child",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Father with child",
+  "summary": "Flat vector father and young child standing and holding hands; for fatherhood, family and childcare explainers.",
+  "tags": [
+    "father",
+    "dad",
+    "daddy",
+    "child",
+    "family",
+    "parent",
+    "holding hands"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1 for the father"
+    },
+    {
+      "name": "skin",
+      "type": "string",
+      "default": "brown",
+      "note": "father's skin: light | fair | tan | medium | brown | dark, or a hex colour"
+    },
+    {
+      "name": "topColor",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "father's t-shirt colour"
+    },
+    {
+      "name": "childSkin",
+      "type": "string",
+      "default": "tan",
+      "note": "child's skin"
+    },
+    {
+      "name": "childTopColor",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "child's t-shirt colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "skin": "brown",
+    "childSkin": "tan"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

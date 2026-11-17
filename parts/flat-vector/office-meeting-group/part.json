@@ -1,0 +1,20 @@
+{
+  "id": "flat-vector/office-meeting-group",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Office meeting group",
+  "summary": "Four office workers at a side-view meeting table, one presenting a chart; for meetings and business explainers.",
+  "tags": ["meeting", "office", "team", "business", "presentation", "group", "people", "workplace"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1560, "note": "ground line" },
+    { "name": "s", "type": "number", "default": 1, "note": "overall scale" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror the whole group" }
+  ],
+  "example": { "x": 540, "y": 1560 },
+  "uses": ["flat-vector/person", "flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
