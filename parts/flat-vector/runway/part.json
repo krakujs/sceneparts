@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/runway",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Runway",
+  "summary": "Grey runway strip across the full frame with a dashed centre line and blinking edge lights. For airport scenes.",
+  "tags": ["runway", "airport", "tarmac", "airstrip", "aviation", "edge lights", "landing"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 960, "note": "centre line of the strip"},
+    {"name": "s", "type": "number", "default": 1, "note": "1080 px wide and 200 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "tarmac colour"},
+    {"name": "color2", "type": "colour", "default": "#FFC83D", "note": "edge light colour"},
+    {"name": "anim", "type": "enum", "default": "blink", "values": ["none", "blink", "pop"], "note": "blink = the edge lights take turns to blink; none = steady lights"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 960, "s": 1, "anim": "blink"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

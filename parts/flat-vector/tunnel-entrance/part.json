@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/tunnel-entrance",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Tunnel Entrance",
+  "summary": "Concrete tunnel portal in a grassy hillside with a dark mouth and a road in front. For road and travel scenes.",
+  "tags": ["tunnel", "tunnel entrance", "portal", "hill", "road", "mountain", "travel"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line at the foot of the portal"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 1000 px wide and 560 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#4BB46A", "note": "hillside colour"},
+    {"name": "color2", "type": "colour", "default": "#DDE2EA", "note": "portal concrete colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop"], "note": "pop = scales in"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/ship-wheel",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Ship Wheel",
+  "summary": "Wooden ship's helm wheel with eight spoke handles on a post; spins with anim spin; nautical prop.",
+  "tags": [
+    "ship wheel",
+    "helm",
+    "steering wheel",
+    "wheel",
+    "nautical",
+    "captain",
+    "ship",
+    "prop"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the prop stands with its base on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 440 px wide and 520 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "wood colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E0A21F",
+      "note": "brass hub and handles"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "spin",
+        "bob",
+        "pop"
+      ],
+      "note": "spin = the wheel turns slowly on its post"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror the prop"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "spin"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

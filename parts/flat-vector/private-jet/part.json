@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/private-jet",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Private Jet",
+  "summary": "Small business jet in side view facing right, with rear engines and a T-tail; for luxury travel and airport scenes.",
+  "tags": ["private jet", "business jet", "jet", "plane", "airplane", "luxury", "travel", "aircraft"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x at frame 0"},
+    {"name": "y", "type": "number", "default": 1500, "note": "bottom of the craft (its gear) stands on y; it flies in the air above the ground"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale: about 720 px wide and 490 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "fuselage colour"},
+    {"name": "color2", "type": "colour", "default": "#253058", "note": "tail, stripe and tail-fin colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "fly", "bob", "pop"], "note": "fly = gentle hover and the rear engine fan spins"},
+    {"name": "vx", "type": "number", "default": 0, "note": "horizontal speed in px per frame (negative = left; set flip too)"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror so the jet faces left"}
+  ],
+  "example": {"x": 540, "y": 1500, "s": 1, "anim": "fly"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

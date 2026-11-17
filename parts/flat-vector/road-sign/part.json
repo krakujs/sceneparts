@@ -1,0 +1,85 @@
+{
+  "id": "flat-vector/road-sign",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Road Sign",
+  "summary": "Road sign on a pole: stop octagon, give way, no entry, blue arrow or warning diamond. Blank, no words.",
+  "tags": [
+    "road sign",
+    "stop sign",
+    "give way",
+    "traffic sign",
+    "road",
+    "warning sign",
+    "street"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the pole base stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 930 px tall at s = 1"
+    },
+    {
+      "name": "kind",
+      "type": "enum",
+      "default": "stop-octagon",
+      "values": [
+        "stop-octagon",
+        "give-way",
+        "no-entry",
+        "arrow",
+        "warning"
+      ],
+      "note": "the sign face; all are blank, with no words"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "pole colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "pop"
+      ],
+      "note": "bob = gentle lift"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "kind": "stop-octagon"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

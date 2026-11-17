@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/gondola-lift",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Gondola Lift",
+  "summary": "Small round ski-lift gondola pod on a steep diagonal cable beside a pylon. For ski resort and mountain scenes.",
+  "tags": ["gondola", "ski lift", "chairlift", "cable", "pylon", "mountain", "ski resort"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the lower station stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 1020 px wide and 850 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "pod colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "cable, pylon and station colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "sway", "bob", "pop"], "note": "sway = the pod swings gently on its hanger"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the cable then runs down to the right)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

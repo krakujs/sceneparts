@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/lighthouse",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Lighthouse",
+  "summary": "Tall striped lighthouse on rocks with a lamp room; anim beam sweeps its light across the sky.",
+  "tags": [
+    "lighthouse",
+    "beacon",
+    "coast",
+    "sea",
+    "rocks",
+    "light",
+    "tower",
+    "beam"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the base stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 540 px wide and 1010 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "stripe colour 1"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "stripe colour 2"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "beam",
+        "pop"
+      ],
+      "note": "beam = the light sweeps round and shines out over the sea"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror so it faces left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "beam"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

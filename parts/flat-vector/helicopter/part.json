@@ -1,0 +1,86 @@
+{
+  "id": "flat-vector/helicopter",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Helicopter",
+  "summary": "Bubble-cabin helicopter in side view with skids and tail rotor; the main and tail rotors spin in the fly animation.",
+  "tags": [
+    "helicopter",
+    "chopper",
+    "rotor",
+    "aircraft",
+    "flying",
+    "rescue",
+    "sky",
+    "air"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x at frame 0"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500,
+      "note": "bottom of the skids stands on y; it hovers in the air above the ground"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale: about 840 px wide (rotor tip to tip) and 410 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "cabin and tail colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "skids, rotor and mast colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "fly",
+        "bob",
+        "pop"
+      ],
+      "note": "fly = gentle hover; the main and tail rotors spin"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "horizontal speed in px per frame (negative = left; set flip too)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror so the cabin faces left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1500,
+    "s": 1,
+    "anim": "fly"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/cable-car",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Cable Car",
+  "summary": "Cable car cabin on a cable across the frame; slides along it with anim drive. For mountain and resort scenes.",
+  "tags": ["cable car", "cable", "aerial tramway", "gondola", "mountain", "ski resort", "transport"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x at frame 0"},
+    {"name": "y", "type": "number", "default": 1560, "note": "cabin bottom: the cabin hangs from the cable above y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 1040 px wide at s = 1"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "cabin colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "cable, pylons and hanger colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "drive", "bob", "pop"], "note": "drive = the cabin slides along the cable and back"},
+    {"name": "vx", "type": "number", "default": 0, "note": "horizontal speed in px per frame (negative = left; set flip too)"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the part"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "drive"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

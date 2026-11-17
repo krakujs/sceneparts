@@ -1079,22 +1079,19 @@
       "horseshoe"
     ],
     "count": 101,
-    "built": 93,
+    "built": 96,
     "date": "2026-11-17",
     "remaining": [
-      "hand drill",
-      "fishing net",
-      "vise",
       "harvester"
     ],
-    "notes": "ladder and toolbox already existed (06); key covered by flat-vector/keys; iron tool covered by flat-vector/iron. Slugs: saw->hand-saw, level->spirit-level, hose->garden-hose, barrier->road-barrier, gloves->work-gloves, goggles->safety-goggles, file tool->metal-file, crane->construction-crane, generator->power-generator, torch flame->flaming-torch, bucket of water->water-bucket, sand bag->sand-bag, cog wheel->gear-pair (interlocking gears), measuring tape->sewing-tape-measure (tailor's tape). Deleted in review, rebuild next run: hand drill (unreadable crank drill), fishing net (looked like a racket), vise (two slabs, unrecognisable), harvester (did not read as a combine)."
+    "notes": "ladder and toolbox already existed (06); key covered by flat-vector/keys; iron tool covered by flat-vector/iron. Slugs: saw->hand-saw, level->spirit-level, hose->garden-hose, barrier->road-barrier, gloves->work-gloves, goggles->safety-goggles, file tool->metal-file, crane->construction-crane, generator->power-generator, torch flame->flaming-torch, bucket of water->water-bucket, sand bag->sand-bag, cog wheel->gear-pair (interlocking gears), measuring tape->sewing-tape-measure (tailor's tape). Deleted in review, rebuild next run: hand drill (unreadable crank drill), fishing net (looked like a racket), vise (two slabs, unrecognisable), harvester (did not read as a combine). Run 2026-11-17 (with 09): rebuilt hand-drill, fishing-net, vise. combine-harvester failed review twice more (read as a tractor with a fan / tall box with a pinwheel) – orchestrator should draw it directly next time."
   },
   {
     "id": "09-flat-vector-vehicles",
     "title": "Vehicles and transport",
     "style": "flat-vector",
     "type": "scenery",
-    "status": "todo",
+    "status": "partial",
     "generator": null,
     "brief": "Side-view vehicles with optional wheel spin and vx; generic designs, no logos.",
     "names": [
@@ -1198,7 +1195,15 @@
       "parachute",
       "jetpack"
     ],
-    "count": 99
+    "count": 99,
+    "built": 93,
+    "date": "2026-11-17",
+    "remaining": [
+      "glider",
+      "go-kart",
+      "space shuttle"
+    ],
+    "notes": "Vehicle convention set by flat-vector/car (reference): side view facing right, wheels on y, params x,y,s,color,color2,anim(none/drive/bob/pop),vx,flip; boats sit on a waterline at y; aircraft anim fly. Skipped: 'tractor vehicle' (flat-vector/tractor exists), 'ev charger' (flat-vector/electric-car-charger), 'kick scooter' (flat-vector/electric-scooter). Slugs: scooter->motor-scooter, jet->private-jet, tank->army-tank, train station sign->station-sign. Deleted in review, rebuild next run: glider (wing and body unreadable after a redraw), go-kart (thin lines, floating steering wheel after a redraw), space shuttle (read as a plain white jet). Redrawn after review: airplane, private-jet, auto-rickshaw, tugboat, harbour-crane (was a tower crane duplicate)."
   },
   {
     "id": "10-flat-vector-buildings",

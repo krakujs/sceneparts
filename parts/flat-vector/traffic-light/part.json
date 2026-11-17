@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/traffic-light",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Traffic Light",
+  "summary": "Road traffic light pole with red, amber and green lamps; anim cycle changes the lights over time. For street scenes.",
+  "tags": ["traffic light", "traffic signal", "stoplight", "road", "street", "crossing", "junction"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the pole base stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 1100 px tall at s = 1"},
+    {"name": "light", "type": "enum", "default": "green", "values": ["red", "amber", "green"], "note": "which lamp is lit (ignored when anim is cycle)"},
+    {"name": "color", "type": "colour", "default": "#1F2433", "note": "housing colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "pole colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "cycle", "bob", "pop"], "note": "cycle = red, green, amber in turn, repeating"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "light": "green", "anim": "cycle"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

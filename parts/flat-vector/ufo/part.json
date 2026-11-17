@@ -1,0 +1,93 @@
+{
+  "id": "flat-vector/ufo",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "UFO",
+  "summary": "Flying saucer with a glass dome and blinking lights, in front view; optional tractor beam. For sci-fi scenes.",
+  "tags": [
+    "ufo",
+    "flying saucer",
+    "alien",
+    "spaceship",
+    "sci-fi",
+    "space",
+    "tractor beam",
+    "hover"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x at frame 0"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500,
+      "note": "bottom of the saucer stands on y; it hovers in the air"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale: about 940 px wide and 340 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#7B5CD6",
+      "note": "saucer colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#8EC5E8",
+      "note": "dome colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "fly",
+        "bob",
+        "pop"
+      ],
+      "note": "fly = hovers and the lights blink in turn"
+    },
+    {
+      "name": "beam",
+      "type": "boolean",
+      "default": false,
+      "note": "show a glowing tractor beam down from the saucer"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "horizontal speed in px per frame (negative = left)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the saucer is symmetric; mainly for the beam)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1500,
+    "s": 1,
+    "anim": "fly",
+    "beam": false
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

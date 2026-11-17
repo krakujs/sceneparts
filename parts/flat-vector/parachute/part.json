@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/parachute",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Parachute",
+  "summary": "Open striped parachute canopy with lines to a harness bar, no person; sways and drifts down in the fly animation.",
+  "tags": [
+    "parachute",
+    "canopy",
+    "skydiving",
+    "jump",
+    "drop",
+    "sky",
+    "falling",
+    "air"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x at frame 0"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900,
+      "note": "bottom of the harness bar at frame 0"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale: about 700 px wide and 520 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "canopy colour A"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "canopy colour B"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "fly",
+        "pop"
+      ],
+      "note": "fly = sways side to side while drifting down slowly"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (no visible change for a symmetric canopy)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "s": 1,
+    "anim": "fly"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

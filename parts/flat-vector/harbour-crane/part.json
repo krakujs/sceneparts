@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/harbour-crane",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Harbour Crane",
+  "summary": "Ship-to-shore container gantry crane on rails with a long boom over the water; anim drive lowers a container.",
+  "tags": [
+    "harbour crane",
+    "gantry crane",
+    "container crane",
+    "crane",
+    "port",
+    "dock",
+    "shipping",
+    "quay"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the base stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 870 px wide and 1090 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "jib and cab colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "tower and trolley colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "drive",
+        "pop"
+      ],
+      "note": "drive = the trolley runs along the boom and the container is lowered and raised"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror so it faces left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 0.8,
+    "anim": "drive"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

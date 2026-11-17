@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/jetpack",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Jetpack",
+  "summary": "Twin-tank jetpack with straps and flame nozzles, in front view; the flames flicker in the fly animation.",
+  "tags": [
+    "jetpack",
+    "jet pack",
+    "backpack",
+    "rocket pack",
+    "flying",
+    "gadget",
+    "sci-fi",
+    "flight"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500,
+      "note": "bottom of the flame nozzles stands on y; the flames point down from it"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale: about 380 px wide and 480 px tall at s = 1; the flames add about 160 px below"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "tank colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "straps, connector and nozzle colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "fly",
+        "bob",
+        "pop"
+      ],
+      "note": "fly = gentle bob and the flames flicker"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the jetpack is symmetric)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1500,
+    "s": 1,
+    "anim": "fly"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

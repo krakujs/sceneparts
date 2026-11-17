@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/bridge",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Bridge",
+  "summary": "Arched road bridge across the frame with a road deck and railings; stands on y. For river, road and travel scenes.",
+  "tags": ["bridge", "arch bridge", "road bridge", "river", "crossing", "road", "travel"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the piers stand on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "1040 px wide and 440 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#9AA3B5", "note": "concrete colour"},
+    {"name": "color2", "type": "colour", "default": "#FFFFFF", "note": "railing colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop"], "note": "pop = scales in"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

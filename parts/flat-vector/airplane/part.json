@@ -1,0 +1,86 @@
+{
+  "id": "flat-vector/airplane",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Airplane",
+  "summary": "Passenger airliner in side view facing right, with windows, wings, tail fin and two engines; for travel and sky scenes.",
+  "tags": [
+    "airplane",
+    "airliner",
+    "plane",
+    "jet",
+    "flight",
+    "travel",
+    "aircraft",
+    "sky"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x at frame 0"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500,
+      "note": "bottom of the craft (its gear) stands on y; it flies in the air above the ground"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale: about 990 px wide and 580 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "fuselage colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "tail fin and stripe colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "fly",
+        "bob",
+        "pop"
+      ],
+      "note": "fly = gentle hover and the engine fans spin"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "horizontal speed in px per frame (negative = left; set flip too)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror so the airliner faces left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1500,
+    "s": 1,
+    "anim": "fly"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

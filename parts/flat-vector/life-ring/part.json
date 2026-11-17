@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/life-ring",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Life Ring",
+  "summary": "Red-and-white striped life ring buoy with a rope; a safety prop for harbour, beach and rescue scenes.",
+  "tags": [
+    "life ring",
+    "life buoy",
+    "lifebuoy",
+    "ring buoy",
+    "safety",
+    "rescue",
+    "beach",
+    "prop"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the prop stands with its base on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 444 px wide and 460 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "stripe colour 1"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "stripe colour 2"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "bob = gently bobs up and down"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror the prop"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "bob"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

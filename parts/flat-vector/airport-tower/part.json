@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/airport-tower",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Airport Tower",
+  "summary": "Air traffic control tower with a glass cab and a radar dish that spins with anim spin. For airport and travel scenes.",
+  "tags": ["airport tower", "control tower", "air traffic", "airport", "radar", "aviation", "runway"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the tower base stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 1240 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "tower shaft colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "base, cab frame, mast and dish trim colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "spin", "bob", "pop"], "note": "spin = the radar dish turns"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

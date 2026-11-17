@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/parking-meter",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Parking Meter",
+  "summary": "Street parking meter pole with a meter head, small screen and coin slot. For city street and parking scenes.",
+  "tags": ["parking meter", "parking", "meter", "street", "city", "pay", "coin"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the base stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 930 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#1FA39A", "note": "meter head colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "pole and base colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "pop"], "note": "bob = gentle lift"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
