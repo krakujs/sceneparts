@@ -1,0 +1,49 @@
+{
+  "id": "egypt-tomb/wedjat",
+  "type": "scenery",
+  "style": "egypt-tomb",
+  "name": "Wedjat",
+  "summary": "Eye of Horus / Ra, huge in the sky; fire 0..1 makes it blaze.",
+  "tags": [
+    "ancient egypt",
+    "egypt",
+    "eye of horus",
+    "eye of ra",
+    "protection",
+    "sky",
+    "symbol"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 700,
+      "note": "0..1920"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "fire",
+      "type": "number"
+    }
+  ],
+  "example": {
+    "y": 900,
+    "s": 1.3,
+    "fire": 0.5
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

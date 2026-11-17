@@ -1,0 +1,42 @@
+{
+  "id": "egypt-tomb/frieze",
+  "type": "background",
+  "style": "egypt-tomb",
+  "name": "Frieze band",
+  "summary": "Decorative band: sky (stars) or ground (zigzag). Drawn automatically unless a shot sets sky/ground false.",
+  "tags": [
+    "egypt",
+    "ancient egypt",
+    "border",
+    "band",
+    "decoration"
+  ],
+  "params": [
+    {
+      "name": "y",
+      "type": "number",
+      "default": 70
+    },
+    {
+      "name": "kind",
+      "type": "enum",
+      "values": [
+        "sky",
+        "ground"
+      ],
+      "default": "sky"
+    }
+  ],
+  "example": {
+    "kind": "ground",
+    "y": 1000
+  },
+  "uses": [
+    "egypt-tomb/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

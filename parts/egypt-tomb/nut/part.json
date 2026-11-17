@@ -1,0 +1,31 @@
+{
+  "id": "egypt-tomb/nut",
+  "type": "background",
+  "style": "egypt-tomb",
+  "name": "Nut",
+  "summary": "Sky goddess Nut arched over the world; sun 0..1 travels through her.",
+  "tags": [
+    "ancient egypt",
+    "arch",
+    "egypt",
+    "night",
+    "sky goddess",
+    "sunrise",
+    "sunset"
+  ],
+  "params": [
+    {
+      "name": "sun",
+      "type": "number",
+      "default": 0.5
+    }
+  ],
+  "example": {
+    "sun": 0.5
+  },
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

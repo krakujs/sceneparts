@@ -1,0 +1,48 @@
+{
+  "id": "egypt-tomb/reeds",
+  "type": "scenery",
+  "style": "egypt-tomb",
+  "name": "Reeds",
+  "summary": "Papyrus reeds clump.",
+  "tags": [
+    "ancient egypt",
+    "egypt",
+    "marsh",
+    "papyrus",
+    "plants",
+    "river bank"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1520,
+      "note": "feet / base line; ground is 1520"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "n",
+      "type": "number",
+      "default": 5
+    }
+  ],
+  "example": {
+    "x": 540,
+    "s": 1.4
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

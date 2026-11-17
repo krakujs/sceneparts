@@ -1,0 +1,21 @@
+{
+  "id": "egypt-tomb/style",
+  "type": "style",
+  "style": "egypt-tomb",
+  "name": "Egyptian tomb painting",
+  "summary": "Flat pigments, thick black outline, papyrus paper, star band above, zigzag ground band, cartouche titles.",
+  "tags": [
+    "egypt",
+    "ancient egypt",
+    "tomb painting",
+    "flat",
+    "papyrus",
+    "hieroglyphic"
+  ],
+  "params": [],
+  "example": {},
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

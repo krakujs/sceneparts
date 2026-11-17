@@ -1,0 +1,60 @@
+{
+  "id": "core/title",
+  "type": "text",
+  "style": "core",
+  "name": "Title card",
+  "summary": "The style's own headline card (Egypt: cartouche); plain bold text if the style has none.",
+  "tags": [
+    "headline",
+    "hook",
+    "title card"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1735
+    },
+    {
+      "name": "lines",
+      "type": "string[]",
+      "default": [
+        "TITLE"
+      ],
+      "note": "1\u20132 short lines, CAPS"
+    },
+    {
+      "name": "accent",
+      "type": "string",
+      "note": "the line drawn in the accent colour"
+    },
+    {
+      "name": "size",
+      "type": "number",
+      "default": 68
+    },
+    {
+      "name": "pop",
+      "type": "boolean",
+      "default": true
+    }
+  ],
+  "example": {
+    "y": 960,
+    "lines": [
+      "THE HEART",
+      "IS WEIGHED"
+    ],
+    "accent": "THE HEART"
+  },
+  "layer": "screen",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

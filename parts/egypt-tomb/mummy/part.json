@@ -1,0 +1,52 @@
+{
+  "id": "egypt-tomb/mummy",
+  "type": "character",
+  "style": "egypt-tomb",
+  "name": "Mummy",
+  "summary": "Wrapped mummy, optional glowing eyes.",
+  "tags": [
+    "ancient egypt",
+    "burial",
+    "curse",
+    "egypt",
+    "tomb",
+    "undead",
+    "wrapped"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1520,
+      "note": "feet / base line; ground is 1520"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "r",
+      "type": "number"
+    },
+    {
+      "name": "eyes",
+      "type": "boolean"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "eyes": true
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

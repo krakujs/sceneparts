@@ -1,0 +1,17 @@
+{
+  "name": "sceneparts-monorepo",
+  "private": true,
+  "description": "SceneParts: an open library of reusable animated TSX parts that every Claude can search, use and add to.",
+  "license": "MIT",
+  "type": "module",
+  "workspaces": ["packages/core", "packages/remotion", "packages/cli"],
+  "scripts": {
+    "build": "tsc -b packages/core packages/remotion",
+    "typecheck": "tsc -b packages/core packages/remotion && tsc -p parts/tsconfig.json",
+    "index": "node packages/cli/src/cli.mjs index",
+    "check": "node packages/cli/src/cli.mjs check --all",
+    "test": "npm run typecheck && npm run check && npm run index -- --verify && node packages/cli/src/cli.mjs validate examples/anubis-demo/story.json && node packages/cli/src/cli.mjs preview examples/anubis-demo/story.json"
+  },
+  "devDependencies": { "@types/react": "19.2.7", "@types/react-dom": "19.2.3", "typescript": "5.9.3", "react": "19.3.1", "react-dom": "19.3.1" },
+  "engines": { "node": ">=20" }
+}

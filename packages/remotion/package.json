@@ -1,0 +1,16 @@
+{
+  "name": "@sceneparts/remotion",
+  "version": "0.1.0",
+  "description": "Remotion renderer for SceneParts stories. Remotion is a peer dependency with its own licence.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "files": ["dist", "src"],
+  "scripts": { "build": "tsc -b" },
+  "dependencies": { "@sceneparts/core": "0.1.0" },
+  "peerDependencies": { "react": ">=18", "remotion": "^4.0.0" },
+  "devDependencies": { "remotion": "4.0.536", "@remotion/cli": "4.0.536" },
+  "repository": { "type": "git", "url": "https://github.com/krakujs/sceneparts", "directory": "packages/remotion" }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "egypt-tomb/jars",
+  "type": "prop",
+  "style": "egypt-tomb",
+  "name": "Jars",
+  "summary": "Grid of clay jars (rows x cols) for \"thousands of jars\" shots.",
+  "tags": [
+    "ancient egypt",
+    "beer",
+    "crowd",
+    "egypt",
+    "many",
+    "storage",
+    "thousands"
+  ],
+  "params": [
+    {
+      "name": "rows",
+      "type": "number",
+      "default": 3
+    },
+    {
+      "name": "cols",
+      "type": "number",
+      "default": 6
+    },
+    {
+      "name": "x",
+      "type": "number",
+      "default": 110
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1120
+    },
+    {
+      "name": "dx",
+      "type": "number",
+      "default": 172
+    },
+    {
+      "name": "dy",
+      "type": "number",
+      "default": 190
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 0.62
+    },
+    {
+      "name": "red",
+      "type": "boolean"
+    }
+  ],
+  "example": {
+    "rows": 3,
+    "cols": 5,
+    "x": 170,
+    "y": 1100
+  },
+  "uses": [
+    "egypt-tomb/jar"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "egypt-tomb/nilometer",
+  "type": "scenery",
+  "style": "egypt-tomb",
+  "name": "Nilometer",
+  "summary": "Nilometer staircase; level 0..1 = flood height.",
+  "tags": [
+    "ancient egypt",
+    "egypt",
+    "flood",
+    "measure",
+    "river level",
+    "stairs"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1520,
+      "note": "feet / base line; ground is 1520"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "level",
+      "type": "number",
+      "default": 0.5
+    }
+  ],
+  "example": {
+    "x": 540,
+    "level": [
+      0.2,
+      0.8
+    ]
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

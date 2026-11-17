@@ -1,0 +1,61 @@
+{
+  "id": "egypt-tomb/scorpions",
+  "type": "character",
+  "style": "egypt-tomb",
+  "name": "Scorpions",
+  "summary": "A row of scorpions; vx makes them crawl.",
+  "tags": [
+    "ancient egypt",
+    "animals",
+    "egypt",
+    "guards",
+    "isis",
+    "swarm"
+  ],
+  "params": [
+    {
+      "name": "n",
+      "type": "number",
+      "default": 7
+    },
+    {
+      "name": "x",
+      "type": "number",
+      "default": 140
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1520
+    },
+    {
+      "name": "dx",
+      "type": "number",
+      "default": 120
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 0.55
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean"
+    }
+  ],
+  "example": {
+    "n": 6
+  },
+  "uses": [
+    "egypt-tomb/scorpion"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

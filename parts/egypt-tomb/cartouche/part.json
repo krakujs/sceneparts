@@ -1,0 +1,58 @@
+{
+  "id": "egypt-tomb/cartouche",
+  "type": "text",
+  "style": "egypt-tomb",
+  "name": "Cartouche",
+  "summary": "Egyptian title oval; same as core/title in this style.",
+  "tags": [
+    "egypt",
+    "ancient egypt",
+    "title",
+    "headline",
+    "royal name"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1735
+    },
+    {
+      "name": "lines",
+      "type": "string[]",
+      "default": [
+        "TITLE"
+      ]
+    },
+    {
+      "name": "accent",
+      "type": "string"
+    },
+    {
+      "name": "size",
+      "type": "number",
+      "default": 68
+    }
+  ],
+  "example": {
+    "y": 960,
+    "lines": [
+      "SHE DRANK",
+      "THE NILE RED"
+    ],
+    "accent": "SHE DRANK"
+  },
+  "uses": [
+    "egypt-tomb/style"
+  ],
+  "layer": "screen",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

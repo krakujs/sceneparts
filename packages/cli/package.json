@@ -1,0 +1,21 @@
+{
+  "name": "@sceneparts/cli",
+  "version": "0.1.0",
+  "description": "sceneparts: search, add, check and contribute SceneParts parts; validate, preview and render stories.",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "sceneparts": "src/cli.mjs" },
+  "files": ["src", "templates"],
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@sceneparts/core": "0.1.0",
+    "ajv": "^8.17.1",
+    "esbuild": "^0.25.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "peerDependencies": { "@sceneparts/remotion": "0.1.0", "remotion": "^4.0.0", "@remotion/cli": "^4.0.0" },
+  "peerDependenciesMeta": { "@sceneparts/remotion": { "optional": true }, "remotion": { "optional": true }, "@remotion/cli": { "optional": true } },
+  "repository": { "type": "git", "url": "https://github.com/krakujs/sceneparts", "directory": "packages/cli" },
+  "engines": { "node": ">=20" }
+}

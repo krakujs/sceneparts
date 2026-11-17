@@ -1,0 +1,52 @@
+{
+  "id": "core/bang",
+  "type": "effect",
+  "style": "core",
+  "name": "Reaction mark",
+  "summary": "Reaction mark (\"!\", \"?!\") that pops in at `at` (default 0.3 of the shot).",
+  "tags": [
+    "surprise",
+    "shock",
+    "exclamation",
+    "reaction"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 900
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 330
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "default": "!"
+    },
+    {
+      "name": "size",
+      "type": "number",
+      "default": 140
+    },
+    {
+      "name": "c",
+      "type": "colour"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "text": "!",
+    "at": 0
+  },
+  "uses": [
+    "core/text"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

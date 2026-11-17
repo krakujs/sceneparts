@@ -1,0 +1,19 @@
+{
+  "id": "core/sweat",
+  "type": "effect",
+  "style": "core",
+  "name": "Sweat drop",
+  "summary": "A falling sweat drop next to a face: nervous, scared or hot.",
+  "tags": ["nervous", "fear", "anxious", "hot", "reaction"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 700 },
+    { "name": "s", "type": "number", "default": 1.5 },
+    { "name": "c", "type": "colour", "default": "#7ec8ff" }
+  ],
+  "example": { "x": 540, "y": 900, "s": 3 },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

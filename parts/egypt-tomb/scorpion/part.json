@@ -1,0 +1,53 @@
+{
+  "id": "egypt-tomb/scorpion",
+  "type": "character",
+  "style": "egypt-tomb",
+  "name": "Scorpion",
+  "summary": "One scorpion (Isis's seven guards).",
+  "tags": [
+    "ancient egypt",
+    "animal",
+    "desert",
+    "egypt",
+    "poison",
+    "sting"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1520,
+      "note": "feet / base line; ground is 1520"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame, walks/crawls sideways"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "s": 1.5
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "egypt-tomb/bird",
+  "type": "character",
+  "style": "egypt-tomb",
+  "name": "Bird",
+  "summary": "Flying bird; fire = the Benu / phoenix.",
+  "tags": [
+    "ancient egypt",
+    "animal",
+    "benu",
+    "egypt",
+    "flying",
+    "heron",
+    "phoenix"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900,
+      "note": "0..1920"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "fire",
+      "type": "boolean"
+    },
+    {
+      "name": "flip",
+      "type": "boolean"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "s": 1.5,
+    "fire": true
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

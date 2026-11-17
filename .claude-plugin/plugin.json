@@ -1,0 +1,11 @@
+{
+  "name": "sceneparts",
+  "displayName": "SceneParts",
+  "version": "0.1.0",
+  "description": "An open library of animated parts (characters, props, scenery, effects, templates) for making videos from a JSON shot list. Search and reuse parts instead of drawing them, and contribute new ones by pull request.",
+  "author": { "name": "SceneParts contributors", "url": "https://github.com/krakujs/sceneparts" },
+  "homepage": "https://github.com/krakujs/sceneparts",
+  "repository": "https://github.com/krakujs/sceneparts",
+  "license": "MIT",
+  "keywords": ["video", "animation", "svg", "react", "remotion", "shorts", "characters", "assets", "library"]
+}

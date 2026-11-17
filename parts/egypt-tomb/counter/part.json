@@ -1,0 +1,71 @@
+{
+  "id": "egypt-tomb/counter",
+  "type": "text",
+  "style": "egypt-tomb",
+  "name": "Lotus counter",
+  "summary": "Counting-up number with lotus glyphs (Egyptian sign for 1,000): '7,000 jars'.",
+  "tags": [
+    "egypt",
+    "ancient egypt",
+    "number",
+    "count",
+    "statistic",
+    "thousands"
+  ],
+  "params": [
+    {
+      "name": "n",
+      "type": "number",
+      "default": 7,
+      "note": "glyphs"
+    },
+    {
+      "name": "unit",
+      "type": "number",
+      "default": 1000
+    },
+    {
+      "name": "suffix",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "x",
+      "type": "number",
+      "default": 120
+    },
+    {
+      "name": "dx",
+      "type": "number",
+      "default": 140
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 520
+    },
+    {
+      "name": "size",
+      "type": "number",
+      "default": 120
+    },
+    {
+      "name": "lotus",
+      "type": "boolean",
+      "default": true
+    }
+  ],
+  "example": {
+    "n": 5,
+    "unit": 1000,
+    "suffix": " JARS",
+    "y": 700
+  },
+  "uses": [
+    "egypt-tomb/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

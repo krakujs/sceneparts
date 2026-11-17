@@ -1,0 +1,61 @@
+{
+  "id": "egypt-tomb/serpent",
+  "type": "character",
+  "style": "egypt-tomb",
+  "name": "Serpent",
+  "summary": "Giant snake (Apophis) slithering from x0 to x1.",
+  "tags": [
+    "ancient egypt",
+    "animal",
+    "apophis",
+    "chaos",
+    "egypt",
+    "monster",
+    "snake"
+  ],
+  "params": [
+    {
+      "name": "x0",
+      "type": "number",
+      "default": -200
+    },
+    {
+      "name": "x1",
+      "type": "number",
+      "default": 800
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1300
+    },
+    {
+      "name": "amp",
+      "type": "number",
+      "default": 90
+    },
+    {
+      "name": "w",
+      "type": "number",
+      "default": 70
+    },
+    {
+      "name": "open",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "name": "c",
+      "type": "colour"
+    }
+  ],
+  "example": {
+    "x0": 100,
+    "x1": 980,
+    "y": 1100
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

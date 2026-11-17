@@ -1,0 +1,42 @@
+name: ci
+# Runs on pull requests from forks without secrets or write access, so contributed code can't reach anything.
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm ci --include=dev
+      - run: npm run build
+      - run: npm run typecheck
+      - name: Sign-off (DCO)
+        if: github.event_name == 'pull_request'
+        run: |
+          missing=$(git log --format='%H %(trailers:key=Signed-off-by,valueonly)' origin/${{ github.base_ref }}..HEAD | awk 'NF==1{print $1}')
+          if [ -n "$missing" ]; then echo "Commits without 'Signed-off-by' (use git commit -s): $missing"; exit 1; fi
+      - name: Check parts
+        run: node packages/cli/src/cli.mjs check --all --json check-report.json
+      - name: Index is up to date
+        run: node packages/cli/src/cli.mjs index --verify
+      - name: Demo story
+        run: node packages/cli/src/cli.mjs validate examples/anubis-demo/story.json && node packages/cli/src/cli.mjs preview examples/anubis-demo/story.json --out demo-preview.png
+      - name: Previews of changed parts
+        if: github.event_name == 'pull_request'
+        run: |
+          mkdir -p pr-previews
+          ids=$(git diff --name-only origin/${{ github.base_ref }}...HEAD -- parts | awk -F/ 'NF>=4{print $2"/"$3}' | sort -u)
+          for id in $ids; do [ -f "parts/$id/part.json" ] && node packages/cli/src/cli.mjs check "$id" --out pr-previews || true; done
+          echo "$ids" > pr-previews/changed.txt
+          echo "${{ github.event.number }}" > pr-previews/pr-number.txt
+          cp check-report.json pr-previews/
+      - uses: actions/upload-artifact@v4
+        if: always() && github.event_name == 'pull_request'
+        with: { name: pr-previews, path: pr-previews }

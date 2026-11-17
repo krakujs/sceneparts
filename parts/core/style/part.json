@@ -1,0 +1,18 @@
+{
+  "id": "core/style",
+  "type": "style",
+  "style": "core",
+  "name": "Core style",
+  "summary": "Neutral default style: warm paper, dark ink, red accent, no bands. Used when a story names no other style.",
+  "tags": [
+    "default",
+    "neutral",
+    "paper"
+  ],
+  "params": [],
+  "example": {},
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

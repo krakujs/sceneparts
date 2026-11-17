@@ -1,0 +1,44 @@
+{
+  "id": "egypt-tomb/throne",
+  "type": "prop",
+  "style": "egypt-tomb",
+  "name": "Throne",
+  "summary": "Lapis throne with gold feather pattern.",
+  "tags": [
+    "ancient egypt",
+    "chair",
+    "egypt",
+    "king",
+    "power",
+    "royal",
+    "seat"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1520,
+      "note": "feet / base line; ground is 1520"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "s": 0.8
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

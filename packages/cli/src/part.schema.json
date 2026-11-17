@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SceneParts part manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "type", "style", "name", "summary", "tags", "params", "example", "author", "license", "origin", "version"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*/[a-z0-9]+(-[a-z0-9]+)*$", "description": "<style>/<name>, kebab-case" },
+    "type": { "enum": ["style", "character", "prop", "scenery", "background", "effect", "text", "template"] },
+    "style": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 2, "maxLength": 60 },
+    "summary": { "type": "string", "minLength": 10, "maxLength": 120 },
+    "tags": { "type": "array", "minItems": 1, "maxItems": 20, "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9 '\\-]*$", "maxLength": 30 } },
+    "params": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "type"],
+        "properties": {
+          "name": { "type": "string", "pattern": "^[a-zA-Z][a-zA-Z0-9]*$" },
+          "type": { "enum": ["number", "string", "boolean", "colour", "enum", "angles", "string[]", "object", "item", "items"] },
+          "default": {},
+          "values": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+          "min": { "type": "number" },
+          "max": { "type": "number" },
+          "note": { "type": "string", "maxLength": 160 }
+        }
+      }
+    },
+    "example": { "type": "object" },
+    "uses": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "layer": { "enum": ["bg", "mid", "fg", "screen"] },
+    "author": { "type": "string", "pattern": "^[A-Za-z0-9-]+$", "description": "GitHub handle" },
+    "license": { "const": "MIT" },
+    "origin": { "const": "original" },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" }
+  }
+}

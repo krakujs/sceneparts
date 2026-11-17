@@ -1,0 +1,38 @@
+{
+  "id": "core/tag",
+  "type": "text",
+  "style": "core",
+  "name": "Name tag",
+  "summary": "Name label with an arrow pointing down at a character.",
+  "tags": [
+    "label",
+    "name",
+    "pointer",
+    "who"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 430
+    },
+    {
+      "name": "text",
+      "type": "string"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 800,
+    "text": "NAME"
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

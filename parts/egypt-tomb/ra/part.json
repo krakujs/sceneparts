@@ -1,0 +1,203 @@
+{
+  "id": "egypt-tomb/ra",
+  "type": "character",
+  "style": "egypt-tomb",
+  "name": "Ra",
+  "summary": "Falcon-headed sun god with a sun disk; old: true for the aged Ra.",
+  "tags": [
+    "egypt",
+    "ancient egypt",
+    "god",
+    "sun",
+    "falcon",
+    "king of gods"
+  ],
+  "params": [
+    {
+      "name": "crown",
+      "type": "enum",
+      "values": [
+        "none",
+        "atef",
+        "double",
+        "throne",
+        "moon",
+        "feather",
+        "disk",
+        "horns",
+        "nemes",
+        "white"
+      ]
+    },
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1520,
+      "note": "feet / base line; ground is 1520"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean"
+    },
+    {
+      "name": "front",
+      "type": "angles",
+      "default": [
+        20,
+        30
+      ],
+      "note": "front arm: shoulder, elbow. 0 = down, 90 = forward, 180 = up"
+    },
+    {
+      "name": "back",
+      "type": "angles",
+      "default": [
+        10,
+        10
+      ],
+      "note": "back arm, same angles (negative = behind)"
+    },
+    {
+      "name": "hold",
+      "type": "enum",
+      "values": [
+        "ankh",
+        "was",
+        "cane",
+        "jar",
+        "spear",
+        "crook",
+        "flail",
+        "pen",
+        "feather",
+        "cup"
+      ],
+      "note": "in the front hand"
+    },
+    {
+      "name": "holdBack",
+      "type": "enum",
+      "values": [
+        "ankh",
+        "was",
+        "cane",
+        "jar",
+        "spear",
+        "crook",
+        "flail",
+        "pen",
+        "feather",
+        "cup"
+      ]
+    },
+    {
+      "name": "mouth",
+      "type": "enum",
+      "values": [
+        "closed",
+        "open",
+        "roar",
+        "smile",
+        "grin",
+        "sleep"
+      ]
+    },
+    {
+      "name": "laugh",
+      "type": "boolean",
+      "note": "animated laugh"
+    },
+    {
+      "name": "run",
+      "type": "boolean",
+      "note": "running cycle; combine with vx"
+    },
+    {
+      "name": "wave",
+      "type": "boolean"
+    },
+    {
+      "name": "vx",
+      "type": "number"
+    },
+    {
+      "name": "stride",
+      "type": "number",
+      "default": 70
+    },
+    {
+      "name": "tilt",
+      "type": "number",
+      "note": "lean, degrees"
+    },
+    {
+      "name": "shake",
+      "type": "number",
+      "note": "tremble"
+    },
+    {
+      "name": "glow",
+      "type": "number",
+      "note": "0..1 angry aura + glowing eye"
+    },
+    {
+      "name": "female",
+      "type": "boolean"
+    },
+    {
+      "name": "dress",
+      "type": "colour"
+    },
+    {
+      "name": "mummy",
+      "type": "boolean"
+    },
+    {
+      "name": "lie",
+      "type": "boolean",
+      "note": "lying down"
+    },
+    {
+      "name": "old",
+      "type": "boolean",
+      "note": "stooped (ra)"
+    },
+    {
+      "name": "disk",
+      "type": "boolean",
+      "default": true,
+      "note": "sun disk on sekhmet / ra"
+    },
+    {
+      "name": "outfit",
+      "type": "object",
+      "note": "hero only: {top, legs, shoes, hair, skin, hairStyle: short|long|bald|cap, cap}"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "front": [
+      90,
+      95
+    ]
+  },
+  "uses": [
+    "egypt-tomb/figure"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,35 @@
+name: pr-labels
+# Privileged follow-up that never runs PR code: reads the report CI uploaded and labels the PR for the reviewer.
+on:
+  workflow_run:
+    workflows: [ci]
+    types: [completed]
+permissions:
+  pull-requests: write
+  issues: write
+  actions: read
+jobs:
+  label:
+    if: github.event.workflow_run.event == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with: { name: pr-previews, run-id: ${{ github.event.workflow_run.id }}, github-token: ${{ secrets.GITHUB_TOKEN }} }
+      - name: Label and comment
+        env: { GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}", REPO: "${{ github.repository }}", RUN: "${{ github.event.workflow_run.html_url }}" }
+        run: |
+          pr=$(tr -cd '0-9' < pr-number.txt); [ -n "$pr" ] || exit 0
+          changed=$(tr -cd 'a-z0-9/\n-' < changed.txt)
+          labels="needs-review"
+          for id in $changed; do
+            f=$(jq -r --arg id "$id" '.[$id].flags // [] | .[]' check-report.json)
+            for l in $f; do case "$l" in needs-ip-check|possible-duplicate) labels="$labels,$l";; esac; done
+            e=$(jq -r --arg id "$id" '.[$id].errors // [] | length' check-report.json); [ "$e" != "0" ] && labels="$labels,checks-failing"
+          done
+          gh label create needs-review --repo "$REPO" --color FBCA04 2>/dev/null || true
+          gh label create needs-ip-check --repo "$REPO" --color D93F0B 2>/dev/null || true
+          gh label create possible-duplicate --repo "$REPO" --color C5DEF5 2>/dev/null || true
+          gh label create checks-failing --repo "$REPO" --color B60205 2>/dev/null || true
+          gh pr edit "$pr" --repo "$REPO" --add-label "$labels"
+          body="Checks finished for: $(echo $changed | tr '\n' ' ')"$'\n\n'"Labels: \`$labels\`. Preview sheets for each changed part are in the **pr-previews** artifact of [this CI run]($RUN). A maintainer will review by hand."
+          gh pr comment "$pr" --repo "$REPO" --body "$body"

@@ -1,0 +1,8 @@
+{
+  "name": "sceneparts",
+  "description": "SceneParts: an open library of animated TSX parts that every Claude can search, use and add to.",
+  "owner": { "name": "SceneParts contributors" },
+  "plugins": [
+    { "name": "sceneparts", "source": "./", "description": "Search, use and contribute animated parts; make videos from a JSON shot list." }
+  ]
+}

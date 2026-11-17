@@ -1,0 +1,47 @@
+{
+  "id": "egypt-tomb/moon",
+  "type": "scenery",
+  "style": "egypt-tomb",
+  "name": "Moon",
+  "summary": "Moon; bite 0..1 = eclipse / being eaten.",
+  "tags": [
+    "ancient egypt",
+    "eclipse",
+    "egypt",
+    "khonsu",
+    "night",
+    "sky"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 800
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 400
+    },
+    {
+      "name": "r",
+      "type": "number",
+      "default": 110
+    },
+    {
+      "name": "bite",
+      "type": "number"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 800,
+    "r": 200,
+    "bite": 0.3
+  },
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

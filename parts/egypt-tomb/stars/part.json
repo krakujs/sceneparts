@@ -1,0 +1,33 @@
+{
+  "id": "egypt-tomb/stars",
+  "type": "background",
+  "style": "egypt-tomb",
+  "name": "Stars",
+  "summary": "Twinkling night stars (pair with shot night: true).",
+  "tags": [
+    "ancient egypt",
+    "egypt",
+    "night",
+    "sky",
+    "twinkle"
+  ],
+  "params": [
+    {
+      "name": "n",
+      "type": "number",
+      "default": 40
+    },
+    {
+      "name": "seed",
+      "type": "number"
+    }
+  ],
+  "example": {
+    "n": 60
+  },
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

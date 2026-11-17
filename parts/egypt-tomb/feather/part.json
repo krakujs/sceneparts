@@ -1,0 +1,49 @@
+{
+  "id": "egypt-tomb/feather",
+  "type": "prop",
+  "style": "egypt-tomb",
+  "name": "Feather",
+  "summary": "Feather of Ma'at (truth).",
+  "tags": [
+    "ancient egypt",
+    "egypt",
+    "justice",
+    "maat",
+    "plume",
+    "truth"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900,
+      "note": "0..1920"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "r",
+      "type": "number",
+      "note": "rotation"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1100,
+    "s": 1.4
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

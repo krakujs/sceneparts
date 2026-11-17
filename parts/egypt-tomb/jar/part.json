@@ -1,0 +1,54 @@
+{
+  "id": "egypt-tomb/jar",
+  "type": "prop",
+  "style": "egypt-tomb",
+  "name": "Jar",
+  "summary": "Clay beer / wine jar; red = red-dyed beer.",
+  "tags": [
+    "ancient egypt",
+    "beer",
+    "container",
+    "egypt",
+    "pottery",
+    "vessel",
+    "wine"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1520,
+      "note": "feet / base line; ground is 1520"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "red",
+      "type": "boolean"
+    },
+    {
+      "name": "r",
+      "type": "number",
+      "note": "tilt"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "s": 1.4,
+    "red": true
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

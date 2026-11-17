@@ -1,0 +1,59 @@
+{
+  "id": "egypt-tomb/beetle",
+  "type": "character",
+  "style": "egypt-tomb",
+  "name": "Beetle",
+  "summary": "Scarab rolling a dung ball (ball: false to hide).",
+  "tags": [
+    "ancient egypt",
+    "dung",
+    "egypt",
+    "insect",
+    "khepri",
+    "scarab",
+    "sunrise"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1520,
+      "note": "feet / base line; ground is 1520"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame, walks/crawls sideways"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "ball",
+      "type": "boolean",
+      "default": true
+    }
+  ],
+  "example": {
+    "x": 540,
+    "s": 1.6
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

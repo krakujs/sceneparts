@@ -1,0 +1,48 @@
+{
+  "id": "egypt-tomb/heart",
+  "type": "prop",
+  "style": "egypt-tomb",
+  "name": "Heart",
+  "summary": "A heart (the soul, for the weighing).",
+  "tags": [
+    "ancient egypt",
+    "egypt",
+    "judgement",
+    "love",
+    "organ",
+    "soul"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900,
+      "note": "0..1920"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "c",
+      "type": "colour"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "s": 2
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

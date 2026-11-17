@@ -1,0 +1,75 @@
+{
+  "id": "egypt-tomb/scale",
+  "type": "prop",
+  "style": "egypt-tomb",
+  "name": "Scale",
+  "summary": "Scales of judgement; tip tilts the beam; pans can hold heart, heart-heavy or feather.",
+  "tags": [
+    "afterlife",
+    "ancient egypt",
+    "balance",
+    "egypt",
+    "judgement",
+    "justice",
+    "weighing"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1520,
+      "note": "feet / base line; ground is 1520"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "tip",
+      "type": "number",
+      "note": "tilt in degrees, e.g. [0, 18] tips toward the right pan",
+      "default": 0
+    },
+    {
+      "name": "left",
+      "type": "enum",
+      "values": [
+        "heart",
+        "heart-heavy",
+        "feather"
+      ]
+    },
+    {
+      "name": "right",
+      "type": "enum",
+      "values": [
+        "heart",
+        "heart-heavy",
+        "feather"
+      ]
+    }
+  ],
+  "example": {
+    "x": 540,
+    "s": 0.9,
+    "tip": 12,
+    "left": "heart",
+    "right": "feather"
+  },
+  "uses": [
+    "egypt-tomb/heart",
+    "egypt-tomb/feather"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

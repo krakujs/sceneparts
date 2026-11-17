@@ -1,0 +1,40 @@
+{
+  "id": "egypt-tomb/water",
+  "type": "scenery",
+  "style": "egypt-tomb",
+  "name": "Water",
+  "summary": "Nile water band with animated zigzag waves.",
+  "tags": [
+    "ancient egypt",
+    "egypt",
+    "flood",
+    "nile",
+    "river",
+    "sea",
+    "waves"
+  ],
+  "params": [
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1530
+    },
+    {
+      "name": "h",
+      "type": "number",
+      "default": 260
+    },
+    {
+      "name": "color",
+      "type": "colour"
+    }
+  ],
+  "example": {
+    "y": 1300,
+    "h": 400
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

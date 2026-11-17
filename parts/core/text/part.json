@@ -1,0 +1,57 @@
+{
+  "id": "core/text",
+  "type": "text",
+  "style": "core",
+  "name": "Big text",
+  "summary": "Bold word or phrase that fades in at `at`; screen layer so the camera never crops it.",
+  "tags": [
+    "words",
+    "caption",
+    "headline",
+    "label"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 600,
+      "note": "0..1920"
+    },
+    {
+      "name": "text",
+      "type": "string"
+    },
+    {
+      "name": "size",
+      "type": "number",
+      "default": 64
+    },
+    {
+      "name": "c",
+      "type": "colour",
+      "note": "default style accent"
+    },
+    {
+      "name": "rot",
+      "type": "number",
+      "default": 0
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 700,
+    "text": "7,000 JARS",
+    "size": 110
+  },
+  "layer": "screen",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

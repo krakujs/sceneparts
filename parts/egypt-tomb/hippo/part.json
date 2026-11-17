@@ -1,0 +1,56 @@
+{
+  "id": "egypt-tomb/hippo",
+  "type": "character",
+  "style": "egypt-tomb",
+  "name": "Hippo",
+  "summary": "Hippo (very dangerous in the Nile).",
+  "tags": [
+    "ancient egypt",
+    "animal",
+    "danger",
+    "egypt",
+    "hippopotamus",
+    "river"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1520,
+      "note": "feet / base line; ground is 1520"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame, walks/crawls sideways"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "c",
+      "type": "colour"
+    }
+  ],
+  "example": {
+    "x": 540
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

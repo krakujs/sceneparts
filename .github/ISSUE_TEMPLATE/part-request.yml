@@ -1,0 +1,12 @@
+name: Part request
+description: Ask for a character, prop, scene or style the library doesn't have yet.
+title: "Part request: <what>"
+labels: ["part-request"]
+body:
+  - type: input
+    id: what
+    attributes: { label: What should it be?, description: "e.g. a 1920s newspaper boy, flat-vector style" }
+    validations: { required: true }
+  - type: textarea
+    id: use
+    attributes: { label: What is it for?, description: "The scene or video you need it in, and any params (poses, colours) that matter." }

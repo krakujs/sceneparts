@@ -1,0 +1,42 @@
+{
+  "id": "egypt-tomb/zz",
+  "type": "effect",
+  "style": "egypt-tomb",
+  "name": "Zz",
+  "summary": "Floating sleep Zs.",
+  "tags": [
+    "ancient egypt",
+    "egypt",
+    "sleep",
+    "snore",
+    "tired"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 700,
+      "note": "0..1920"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    }
+  ],
+  "example": {
+    "x": 480,
+    "y": 1000
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

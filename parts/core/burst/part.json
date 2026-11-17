@@ -1,0 +1,58 @@
+{
+  "id": "core/burst",
+  "type": "effect",
+  "style": "core",
+  "name": "Ray burst",
+  "summary": "Rotating sun-ray burst behind something important.",
+  "tags": [
+    "rays",
+    "highlight",
+    "reveal",
+    "sunburst"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 800,
+      "note": "0..1920"
+    },
+    {
+      "name": "r",
+      "type": "number",
+      "default": 600
+    },
+    {
+      "name": "n",
+      "type": "number",
+      "default": 18
+    },
+    {
+      "name": "spin",
+      "type": "number",
+      "default": 1,
+      "note": "degrees per frame"
+    },
+    {
+      "name": "c",
+      "type": "colour",
+      "note": "default style accent"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "r": 420
+  },
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

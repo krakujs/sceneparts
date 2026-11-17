@@ -1,0 +1,52 @@
+{
+  "id": "egypt-tomb/houses",
+  "type": "scenery",
+  "style": "egypt-tomb",
+  "name": "Houses",
+  "summary": "A village row of mud-brick houses (background layer).",
+  "tags": [
+    "ancient egypt",
+    "egypt",
+    "street",
+    "town",
+    "village"
+  ],
+  "params": [
+    {
+      "name": "n",
+      "type": "number",
+      "default": 4
+    },
+    {
+      "name": "x",
+      "type": "number",
+      "default": 120
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1180
+    },
+    {
+      "name": "dx",
+      "type": "number",
+      "default": 280
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 0.9
+    }
+  ],
+  "example": {
+    "y": 1500
+  },
+  "uses": [
+    "egypt-tomb/house"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

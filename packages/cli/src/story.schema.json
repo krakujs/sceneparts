@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SceneParts story",
+  "description": "One video: shots (hard cuts) drawn from SceneParts parts. Shot times are seconds; canvas 1080x1920.",
+  "type": "object",
+  "required": ["style", "shots"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "title": { "type": "string" },
+    "style": { "type": "string" },
+    "fps": { "type": "integer", "minimum": 12, "maximum": 60 },
+    "width": { "type": "integer" },
+    "height": { "type": "integer" },
+    "duration": { "type": "number", "exclusiveMinimum": 0 },
+    "loop": { "type": "boolean" },
+    "audio": { "type": "string" },
+    "music": { "type": "object", "required": ["src"], "properties": { "src": { "type": "string" }, "volume": { "type": "number" } }, "additionalProperties": false },
+    "captions": { "type": "array", "items": { "type": "object", "required": ["from", "to", "text"], "properties": { "from": { "type": "number" }, "to": { "type": "number" }, "text": { "type": "string" } }, "additionalProperties": false } },
+    "captionPos": { "enum": ["low", "mid", "high"] },
+    "artifact": { "type": "object", "required": ["src", "label", "at"], "properties": { "src": { "type": "string" }, "label": { "type": "string" }, "credit": { "type": "string" }, "at": { "type": "number" }, "until": { "type": "number" } }, "additionalProperties": false },
+    "boil": { "type": "boolean" },
+    "atmos": { "oneOf": [{ "type": "boolean" }, { "type": "object", "properties": { "dust": { "type": "number" } }, "additionalProperties": false }] },
+    "shots": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/shot" } }
+  },
+  "$defs": {
+    "num": { "oneOf": [{ "type": "number" }, { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 }] },
+    "item": { "type": "object", "required": ["t"], "properties": { "t": { "type": "string" }, "at": { "type": "number", "minimum": 0, "maximum": 1 }, "until": { "type": "number", "minimum": 0, "maximum": 1.01 }, "layer": { "enum": ["bg", "mid", "fg", "screen"] } } },
+    "shot": {
+      "type": "object",
+      "required": ["at"],
+      "additionalProperties": false,
+      "properties": {
+        "at": { "type": "number", "minimum": 0 },
+        "id": { "type": "string" },
+        "cam": { "type": "array", "minItems": 2, "items": { "type": "array", "minItems": 3, "maxItems": 4, "items": { "type": "number" } } },
+        "auto": { "type": "boolean" },
+        "shake": { "type": "number" },
+        "night": { "type": "boolean" },
+        "tint": { "$ref": "#/$defs/num" },
+        "grade": { "enum": ["warm", "night", "red", "gold", "none"] },
+        "rays": { "type": "boolean" },
+        "bg": { "type": "string" },
+        "sky": { "type": ["boolean", "number"] },
+        "ground": { "type": ["boolean", "number"] },
+        "items": { "type": "array", "items": { "$ref": "#/$defs/item" } },
+        "over": { "type": "array", "items": { "$ref": "#/$defs/item" } },
+        "template": { "type": "string" },
+        "params": { "type": "object" },
+        "loop": { "const": "in" }
+      }
+    }
+  }
+}

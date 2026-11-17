@@ -1,0 +1,15 @@
+{
+  "name": "@sceneparts/core",
+  "version": "0.1.0",
+  "description": "SceneParts engine: story JSON -> animated SVG frames (camera, cuts, line boil, seamless loop) from registry parts. Pure React + SVG.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "files": ["dist", "src"],
+  "scripts": { "build": "tsc -b" },
+  "peerDependencies": { "react": ">=18" },
+  "repository": { "type": "git", "url": "https://github.com/krakujs/sceneparts", "directory": "packages/core" },
+  "keywords": ["animation", "svg", "react", "remotion", "video", "shorts", "claude"]
+}

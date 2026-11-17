@@ -1,0 +1,49 @@
+{
+  "id": "egypt-tomb/boat",
+  "type": "prop",
+  "style": "egypt-tomb",
+  "name": "Boat",
+  "summary": "Solar barque, optional sun disk on board.",
+  "tags": [
+    "ancient egypt",
+    "barque",
+    "egypt",
+    "river",
+    "ship",
+    "sun boat",
+    "travel"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1300,
+      "note": "0..1920"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "sun",
+      "type": "boolean",
+      "default": true
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1250
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

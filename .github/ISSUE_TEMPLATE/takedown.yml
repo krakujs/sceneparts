@@ -1,0 +1,19 @@
+name: Takedown request
+description: Report a part that copies your work, a trademark or a real person, or that is harmful.
+title: "Takedown: <part id>"
+labels: ["takedown"]
+body:
+  - type: input
+    id: part
+    attributes: { label: Part id, description: "e.g. flat-vector/firefighter" }
+    validations: { required: true }
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Reason
+      options: ["Copies my artwork or character", "Uses a trademark or logo", "Depicts a real person", "Harmful or inappropriate", "Other"]
+    validations: { required: true }
+  - type: textarea
+    id: details
+    attributes: { label: Details, description: "Links to the original work and anything that helps us check. For private matters, use 'Report a vulnerability' on the Security tab instead." }
+    validations: { required: true }

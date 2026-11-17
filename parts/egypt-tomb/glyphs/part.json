@@ -1,0 +1,46 @@
+{
+  "id": "egypt-tomb/glyphs",
+  "type": "background",
+  "style": "egypt-tomb",
+  "name": "Glyphs",
+  "summary": "Decorative column of pseudo-hieroglyphs (not real text).",
+  "tags": [
+    "ancient egypt",
+    "decoration",
+    "egypt",
+    "hieroglyphs",
+    "wall",
+    "writing"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 1010
+    },
+    {
+      "name": "y0",
+      "type": "number",
+      "default": 240
+    },
+    {
+      "name": "y1",
+      "type": "number",
+      "default": 1400
+    },
+    {
+      "name": "seed",
+      "type": "number"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y0": 400,
+    "y1": 1500
+  },
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "egypt-tomb/senet",
+  "type": "prop",
+  "style": "egypt-tomb",
+  "name": "Senet",
+  "summary": "Senet board game.",
+  "tags": [
+    "afterlife",
+    "ancient egypt",
+    "board game",
+    "egypt",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "0..1080; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1400,
+      "note": "0..1920"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1100,
+    "s": 1.3
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "core/rect",
+  "type": "effect",
+  "style": "core",
+  "name": "Colour block",
+  "summary": "Solid colour rectangle: flash frames, dark overlays, simple panels.",
+  "tags": [
+    "overlay",
+    "shape",
+    "box",
+    "panel"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 0
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 0
+    },
+    {
+      "name": "w",
+      "type": "number",
+      "default": 1080
+    },
+    {
+      "name": "h",
+      "type": "number",
+      "default": 1920
+    },
+    {
+      "name": "rx",
+      "type": "number",
+      "default": 0
+    },
+    {
+      "name": "c",
+      "type": "colour",
+      "note": "default style ink"
+    },
+    {
+      "name": "o",
+      "type": "number",
+      "default": 1,
+      "note": "opacity"
+    }
+  ],
+  "example": {
+    "x": 240,
+    "y": 660,
+    "w": 600,
+    "h": 600,
+    "c": "#1a1410",
+    "o": 0.5,
+    "rx": 40
+  },
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

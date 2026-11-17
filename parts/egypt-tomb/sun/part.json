@@ -1,0 +1,49 @@
+{
+  "id": "egypt-tomb/sun",
+  "type": "scenery",
+  "style": "egypt-tomb",
+  "name": "Sun disk",
+  "summary": "Sun disk with rotating rays (background).",
+  "tags": [
+    "egypt",
+    "ancient egypt",
+    "sun",
+    "ra",
+    "sky",
+    "day",
+    "light"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 400
+    },
+    {
+      "name": "r",
+      "type": "number",
+      "default": 160
+    },
+    {
+      "name": "c",
+      "type": "colour"
+    }
+  ],
+  "example": {
+    "y": 700
+  },
+  "uses": [
+    "egypt-tomb/style",
+    "core/burst"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

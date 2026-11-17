@@ -1,0 +1,108 @@
+{
+  "id": "core/drop-in-opener",
+  "type": "template",
+  "style": "core",
+  "name": "Drop-in opener",
+  "summary": "Recurring hero falls into the scene, gets a name tag, annoys another character, who reacts. Use as a template shot.",
+  "tags": [
+    "intro",
+    "hook",
+    "recurring character",
+    "series opener",
+    "format"
+  ],
+  "params": [
+    {
+      "name": "hero",
+      "type": "item",
+      "default": {
+        "t": "traveller"
+      },
+      "note": "any character part; arms/mouth animate if it supports them"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "note": "name tag text"
+    },
+    {
+      "name": "act",
+      "type": "enum",
+      "values": [
+        "mock",
+        "poke",
+        "steal",
+        "wake",
+        "kick",
+        "lie",
+        "touch",
+        "insult"
+      ],
+      "default": "mock"
+    },
+    {
+      "name": "shout",
+      "type": "string",
+      "note": "default per act; \"\" hides it"
+    },
+    {
+      "name": "other",
+      "type": "item",
+      "note": "the character being annoyed, placed right, facing left"
+    },
+    {
+      "name": "target",
+      "type": "items",
+      "note": "extra items in the scene"
+    },
+    {
+      "name": "headline",
+      "type": "string[]",
+      "note": "2 lines for the title card"
+    },
+    {
+      "name": "accent",
+      "type": "string"
+    },
+    {
+      "name": "heroX",
+      "type": "number",
+      "default": 260
+    },
+    {
+      "name": "hold",
+      "type": "string"
+    },
+    {
+      "name": "night",
+      "type": "boolean"
+    },
+    {
+      "name": "sky",
+      "type": "boolean",
+      "default": true
+    }
+  ],
+  "example": {
+    "hero": {
+      "t": "egypt-tomb/traveller"
+    },
+    "name": "TRAVELLER",
+    "act": "poke",
+    "other": {
+      "t": "egypt-tomb/anubis"
+    },
+    "headline": [
+      "HE POKED",
+      "ANUBIS"
+    ]
+  },
+  "uses": [
+    "core/text",
+    "core/tag"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

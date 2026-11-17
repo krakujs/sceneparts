@@ -1,0 +1,270 @@
+{
+  "$schema": "../../packages/cli/src/story.schema.json",
+  "title": "The Weighing of the Heart (demo)",
+  "style": "egypt-tomb",
+  "fps": 30,
+  "duration": 21,
+  "loop": true,
+  "captionPos": "mid",
+  "shots": [
+    {
+      "at": 0,
+      "template": "drop-in-opener",
+      "params": {
+        "name": "TRAVELLER",
+        "act": "poke",
+        "shout": "POKE",
+        "other": {
+          "t": "anubis",
+          "hold": "was",
+          "front": [
+            60,
+            70
+          ]
+        },
+        "target": [
+          {
+            "t": "scale",
+            "x": 620,
+            "s": 0.55,
+            "tip": 0,
+            "left": "heart",
+            "right": "feather"
+          }
+        ],
+        "headline": [
+          "HE POKED",
+          "ANUBIS"
+        ]
+      }
+    },
+    {
+      "at": 2.6,
+      "cam": [
+        [
+          540,
+          1000,
+          1.0
+        ],
+        [
+          540,
+          900,
+          1.25
+        ]
+      ],
+      "items": [
+        {
+          "t": "glyphs",
+          "x": 70,
+          "seed": 3
+        },
+        {
+          "t": "scale",
+          "x": 540,
+          "s": 1.05,
+          "tip": [
+            0,
+            18
+          ],
+          "left": "heart-heavy",
+          "right": "feather"
+        },
+        {
+          "t": "text",
+          "x": 540,
+          "y": 430,
+          "text": "HEAVIER THAN TRUTH?",
+          "size": 70,
+          "at": 0.3
+        }
+      ]
+    },
+    {
+      "at": 6,
+      "night": true,
+      "shake": 6,
+      "items": [
+        {
+          "t": "stars",
+          "n": 50
+        },
+        {
+          "t": "ammit",
+          "x": [
+            1200,
+            800
+          ],
+          "s": 1.0,
+          "flip": true,
+          "mouth": "roar",
+          "front": [
+            90,
+            100
+          ]
+        },
+        {
+          "t": "traveller",
+          "x": 330,
+          "s": 0.8,
+          "run": true,
+          "flip": true,
+          "vx": -2
+        },
+        {
+          "t": "sweat",
+          "x": 300,
+          "y": 600
+        },
+        {
+          "t": "bang",
+          "x": 500,
+          "y": 420,
+          "text": "?!"
+        }
+      ]
+    },
+    {
+      "at": 9.5,
+      "cam": [
+        [
+          540,
+          960,
+          1.15
+        ],
+        [
+          540,
+          960,
+          1.0
+        ]
+      ],
+      "items": [
+        {
+          "t": "thoth",
+          "x": 760,
+          "flip": true,
+          "hold": "pen",
+          "front": [
+            80,
+            70
+          ],
+          "s": 0.9
+        },
+        {
+          "t": "traveller",
+          "x": 300,
+          "s": 0.82,
+          "mouth": "smile",
+          "front": [
+            150,
+            170
+          ],
+          "hold": "feather"
+        },
+        {
+          "t": "text",
+          "x": 540,
+          "y": 260,
+          "text": "THOTH WRITES IT DOWN",
+          "size": 64,
+          "at": 0.2
+        }
+      ]
+    },
+    {
+      "at": 13,
+      "rays": true,
+      "grade": "gold",
+      "items": [
+        {
+          "t": "burst",
+          "x": 540,
+          "y": 820,
+          "r": 700
+        },
+        {
+          "t": "osiris",
+          "x": 540,
+          "s": 1.1,
+          "hold": "crook",
+          "holdBack": "flail",
+          "front": [
+            70,
+            80
+          ],
+          "glow": 0.6
+        },
+        {
+          "t": "title",
+          "lines": [
+            "OSIRIS",
+            "DECIDES"
+          ],
+          "accent": "OSIRIS",
+          "y": 1735
+        }
+      ]
+    },
+    {
+      "at": 17,
+      "items": [
+        {
+          "t": "pyramids",
+          "y": 1520
+        },
+        {
+          "t": "traveller",
+          "x": [
+            200,
+            620
+          ],
+          "s": 0.82,
+          "run": true
+        },
+        {
+          "t": "text",
+          "x": 540,
+          "y": 520,
+          "text": "IT ALL STARTED WHEN…",
+          "size": 66,
+          "at": 0.25
+        }
+      ]
+    },
+    {
+      "at": 20.6,
+      "loop": "in"
+    }
+  ],
+  "captions": [
+    {
+      "from": 0.3,
+      "to": 2.5,
+      "text": "He poked the god of the dead."
+    },
+    {
+      "from": 2.7,
+      "to": 5.9,
+      "text": "So Anubis weighed his heart."
+    },
+    {
+      "from": 6.1,
+      "to": 9.4,
+      "text": "Too heavy means Ammit eats you."
+    },
+    {
+      "from": 9.6,
+      "to": 12.9,
+      "text": "Thoth records every result."
+    },
+    {
+      "from": 13.1,
+      "to": 16.9,
+      "text": "Then Osiris gives the verdict."
+    },
+    {
+      "from": 17.1,
+      "to": 20.5,
+      "text": "And it all started when…"
+    }
+  ]
+}

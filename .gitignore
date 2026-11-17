@@ -1,0 +1,8 @@
+node_modules/
+dist/
+out/
+site/
+.sceneparts/
+packages/cli/.cache/
+*.tsbuildinfo
+.env
