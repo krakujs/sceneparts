@@ -1,0 +1,72 @@
+{
+  "id": "flat-vector/sea-lion",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Sea Lion",
+  "summary": "Flat vector brown sea lion upright on its front flippers with small ear flaps; sways and breathes.",
+  "tags": [
+    "sea lion",
+    "sea",
+    "upright",
+    "marine",
+    "mammal",
+    "brown",
+    "pinniped"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500,
+      "note": "bottom centre (ground)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 470 px tall at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "rest",
+      "values": [
+        "rest",
+        "idle",
+        "swim"
+      ],
+      "note": "rest = breathing only; idle = head bob; swim = body sway and flipper paddle"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1500,
+    "pose": "rest"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/quadruped"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

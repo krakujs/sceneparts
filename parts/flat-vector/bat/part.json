@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/bat",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Bat",
+  "summary": "Flat vector brown fruit bat with big eyes and leathery scalloped wings that flap or hold still in a glide.",
+  "tags": ["bat", "fruit-bat", "flying", "night", "animal", "wings", "mammal"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 900, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 500 px wingspan at s = 1" },
+    { "name": "pose", "type": "enum", "default": "fly", "values": ["fly", "glide"], "note": "fly = wings flap and body bobs from p.f; glide = wings held out still" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" },
+    { "name": "vx", "type": "number", "default": 0, "note": "px per frame" }
+  ],
+  "example": { "x": 540, "y": 900, "pose": "fly" },
+  "uses": ["flat-vector/style", "flat-vector/quadruped"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

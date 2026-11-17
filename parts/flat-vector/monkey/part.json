@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/monkey",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Monkey",
+  "summary": "Flat vector small brown monkey with a tan face and belly and a long curling tail; sits or walks on all fours.",
+  "tags": ["monkey", "primate", "animal", "jungle", "tail", "mammal", "small"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "seat or paws (bottom centre)" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 350 px tall at s = 1" },
+    { "name": "pose", "type": "enum", "default": "sit", "values": ["sit", "walk"], "note": "sit = seated with the tail swishing from p.f; walk = on all fours, legs cycling from p.f" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "face left" },
+    { "name": "vx", "type": "number", "default": 0, "note": "px per frame" }
+  ],
+  "example": { "x": 540, "y": 1560, "pose": "sit" },
+  "uses": ["flat-vector/style", "flat-vector/quadruped"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

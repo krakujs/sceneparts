@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/sloth",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Sloth",
+  "summary": "Flat vector grey-brown sloth hanging from a branch by long claws, with dark eye patches and a sleepy smile.",
+  "tags": ["sloth", "animal", "jungle", "tree", "mammal", "sleepy", "hanging"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "branch centre x" },
+    { "name": "y", "type": "number", "default": 900, "note": "branch centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 450 px long at s = 1" },
+    { "name": "pose", "type": "enum", "default": "hang", "values": ["hang", "reach"], "note": "hang = sways gently from p.f; reach = stretches one arm further along the branch" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "face left" },
+    { "name": "vx", "type": "number", "default": 0, "note": "px per frame" }
+  ],
+  "example": { "x": 540, "y": 900, "pose": "hang" },
+  "uses": ["flat-vector/style", "flat-vector/quadruped"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

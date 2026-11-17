@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/manatee",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Manatee",
+  "summary": "Flat vector round grey manatee with a paddle tail, flipper and whiskered snout; drifts and paddles.",
+  "tags": [
+    "manatee",
+    "sea cow",
+    "gentle",
+    "sea",
+    "marine",
+    "mammal",
+    "grey"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1100,
+      "note": "centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 540 px long at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "swim",
+      "values": [
+        "swim",
+        "idle"
+      ],
+      "note": "swim = gentle body wave and fluke beat from p.f; idle = slow bob"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1100,
+    "pose": "swim"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/quadruped"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

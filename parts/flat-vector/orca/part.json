@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/orca",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Orca",
+  "summary": "Flat vector orca (killer whale) in black and white with a tall dorsal fin and eye patch; swims.",
+  "tags": [
+    "orca",
+    "killer whale",
+    "ocean",
+    "sea",
+    "black and white",
+    "marine",
+    "mammal"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1100,
+      "note": "centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 710 px long at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "swim",
+      "values": [
+        "swim",
+        "idle"
+      ],
+      "note": "swim = gentle body wave and fluke beat from p.f; idle = slow bob"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1100,
+    "pose": "swim"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/quadruped"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

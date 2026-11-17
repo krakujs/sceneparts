@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/kangaroo",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Kangaroo",
+  "summary": "Flat vector tan-red kangaroo standing tall on big hind feet with a thick tail, long ears and small arms; can hop.",
+  "tags": ["kangaroo", "australia", "marsupial", "animal", "hop", "outback", "mammal"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "feet (bottom centre)" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 700 px tall at s = 1" },
+    { "name": "pose", "type": "enum", "default": "stand", "values": ["stand", "hop"], "note": "stand = upright, ears and tail twitching from p.f; hop = bounds into the air from p.f" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "face left" },
+    { "name": "vx", "type": "number", "default": 0, "note": "px per frame" }
+  ],
+  "example": { "x": 540, "y": 1560, "pose": "stand" },
+  "uses": ["flat-vector/style", "flat-vector/quadruped"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

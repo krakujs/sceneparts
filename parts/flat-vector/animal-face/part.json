@@ -1,0 +1,162 @@
+{
+  "id": "flat-vector/animal-face",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Animal Face",
+  "summary": "Flat vector cute animal head generator: pick ears, fur, markings, expression and horns; blinks on its own.",
+  "tags": [
+    "animal",
+    "face",
+    "cat",
+    "cute",
+    "head",
+    "pet",
+    "reaction",
+    "icon"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 400 px wide at s = 1"
+    },
+    {
+      "name": "ears",
+      "type": "enum",
+      "default": "pointy",
+      "values": [
+        "pointy",
+        "round",
+        "floppy",
+        "long",
+        "tiny",
+        "none"
+      ]
+    },
+    {
+      "name": "earColor",
+      "type": "colour",
+      "default": "#E8893C",
+      "note": "ear colour (inner ear stays pink)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8893C",
+      "note": "fur colour"
+    },
+    {
+      "name": "muzzle",
+      "type": "colour",
+      "default": "#FFF1DC",
+      "note": "muzzle colour, or none"
+    },
+    {
+      "name": "nose",
+      "type": "colour",
+      "default": "#E0697B"
+    },
+    {
+      "name": "markings",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "mask",
+        "patches",
+        "stripes",
+        "blaze"
+      ]
+    },
+    {
+      "name": "markColor",
+      "type": "colour",
+      "default": "#B9621F",
+      "note": "colour of the markings"
+    },
+    {
+      "name": "expression",
+      "type": "enum",
+      "default": "happy",
+      "values": [
+        "happy",
+        "neutral",
+        "surprised",
+        "sad",
+        "sleepy",
+        "angry",
+        "laugh"
+      ]
+    },
+    {
+      "name": "whiskers",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "horns",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "small",
+        "antlers"
+      ]
+    },
+    {
+      "name": "blink",
+      "type": "boolean",
+      "default": true,
+      "note": "blinks every ~2.5 s (75 frames at 30 fps) using p.f"
+    },
+    {
+      "name": "blush",
+      "type": "boolean",
+      "default": false,
+      "note": "pink cheeks"
+    },
+    {
+      "name": "tilt",
+      "type": "number",
+      "default": 0,
+      "note": "head tilt in degrees"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "ears": "pointy",
+    "color": "#E8893C",
+    "earColor": "#E8893C",
+    "muzzle": "#FFF1DC",
+    "nose": "#E0697B",
+    "markings": "stripes",
+    "markColor": "#B9621F",
+    "expression": "happy",
+    "whiskers": true,
+    "horns": "none",
+    "blink": true,
+    "blush": true,
+    "tilt": 0
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

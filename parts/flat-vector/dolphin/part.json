@@ -1,0 +1,70 @@
+{
+  "id": "flat-vector/dolphin",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Dolphin",
+  "summary": "Flat vector grey-blue dolphin with a curved dorsal fin and pale belly; swims with a gentle wave.",
+  "tags": [
+    "dolphin",
+    "sea",
+    "ocean",
+    "mammal",
+    "swimming",
+    "marine",
+    "aquatic"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1100,
+      "note": "centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 580 px long at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "swim",
+      "values": [
+        "swim",
+        "idle"
+      ],
+      "note": "swim = gentle body wave and fluke beat from p.f; idle = slow bob"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1100,
+    "pose": "swim"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
