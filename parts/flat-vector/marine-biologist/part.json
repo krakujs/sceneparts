@@ -1,0 +1,236 @@
+{
+  "id": "flat-vector/marine-biologist",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Marine Biologist",
+  "summary": "Flat vector marine biologist in a dark wetsuit with goggles, holding a starfish; for ocean and reef explainers.",
+  "tags": [
+    "marine biologist",
+    "ocean",
+    "sea",
+    "diving",
+    "wetsuit",
+    "starfish",
+    "reef",
+    "person"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "wave",
+        "point",
+        "think",
+        "cheer",
+        "talk",
+        "sit",
+        "hold"
+      ]
+    },
+    {
+      "name": "expression",
+      "type": "enum",
+      "default": "smile",
+      "values": [
+        "smile",
+        "neutral",
+        "open",
+        "surprised",
+        "sad",
+        "angry",
+        "laugh"
+      ]
+    },
+    {
+      "name": "skin",
+      "type": "string",
+      "default": "light",
+      "note": "light | fair | tan | medium | brown | dark, or a hex colour"
+    },
+    {
+      "name": "hair",
+      "type": "enum",
+      "default": "long",
+      "values": [
+        "short",
+        "buzz",
+        "side",
+        "spiky",
+        "curly",
+        "afro",
+        "long",
+        "ponytail",
+        "bun",
+        "bob",
+        "braid",
+        "none"
+      ]
+    },
+    {
+      "name": "hairColor",
+      "type": "string",
+      "default": "blonde",
+      "note": "black | brown | auburn | blonde | grey | white | red | blue | pink, or hex"
+    },
+    {
+      "name": "shirtColor",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "shirt under a blazer or coat"
+    },
+    {
+      "name": "bottom",
+      "type": "enum",
+      "default": "trousers",
+      "values": [
+        "trousers",
+        "shorts",
+        "skirt",
+        "overalls"
+      ]
+    },
+    {
+      "name": "bottomColor",
+      "type": "colour",
+      "default": "#253058"
+    },
+    {
+      "name": "hat",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "cap",
+        "beanie",
+        "hardhat",
+        "chef",
+        "beret",
+        "brim",
+        "fedora",
+        "peaked",
+        "helmet",
+        "headscarf",
+        "turban",
+        "mortarboard",
+        "bandana",
+        "tophat",
+        "scrubcap",
+        "skullcap",
+        "sailor"
+      ]
+    },
+    {
+      "name": "extra",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "tie",
+        "bowtie",
+        "apron",
+        "hivis",
+        "lanyard",
+        "stethoscope",
+        "scarf",
+        "badge",
+        "backpack",
+        "toolbelt",
+        "sash"
+      ]
+    },
+    {
+      "name": "extraColor",
+      "type": "colour",
+      "default": "#E8503F"
+    },
+    {
+      "name": "prop",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "phone",
+        "tablet",
+        "laptop",
+        "clipboard",
+        "book",
+        "mug",
+        "briefcase",
+        "bag",
+        "toolbox",
+        "wrench",
+        "hammer",
+        "mic",
+        "camera",
+        "box",
+        "paper",
+        "pen",
+        "broom",
+        "umbrella",
+        "tray",
+        "pointer"
+      ]
+    },
+    {
+      "name": "propColor",
+      "type": "colour",
+      "default": "#FF8A3D"
+    },
+    {
+      "name": "seat",
+      "type": "boolean",
+      "default": true,
+      "note": "draw a bench when pose is sit"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "hold",
+    "skin": "light",
+    "hair": "long",
+    "hairColor": "blonde"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

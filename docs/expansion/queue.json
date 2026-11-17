@@ -4,8 +4,8 @@
   "title": "People at work (professions)",
   "style": "flat-vector",
   "type": "character",
-  "status": "todo",
-  "generator": null,
+  "status": "done",
+  "generator": "flat-vector/person",
   "brief": "First batch of the style: create parts/flat-vector/style (palette below) and the generator parts/flat-vector/person (params: pose stand|walk|run|wave|point|think|cheer|talk|sit|hold, expression smile|neutral|open|surprised|sad|angry|laugh, skin 6 tones, hair style + colour, top/bottom/shoes types + colours, hat, accessory, held prop, flip, vx; ~1000 px tall at s 1; facing right). Then one preset part per profession that only fixes outfit, hat, accessory and prop. Generic uniforms only: no real police/army/airline insignia or brand logos.",
   "names": [
    "doctor",
@@ -172,7 +172,9 @@
    "dog walker",
    "horse rider"
   ],
-  "count": 163
+  "count": 163,
+  "built": 165,
+  "date": "2026-11-17"
  },
  {
   "id": "02-flat-vector-people-everyday",
@@ -2142,7 +2144,7 @@
    "streamers",
    "garland",
    "cake candles",
-   "pi\u00f1ata-style donkey",
+   "piñata-style donkey",
    "wedding rings",
    "bouquet",
    "champagne glasses toast",
@@ -2218,7 +2220,7 @@
   "type": "character",
   "status": "todo",
   "generator": null,
-  "brief": "Create parts/pixel-art/style (16-colour palette, crisp square pixels drawn as SVG rects on a 4\u20138 px grid, shapeRendering crispEdges) and a parts/pixel-art/sprite generator (pixel map strings + palette, 2\u20134 frame animation), then people presets as small game-style sprites scaled up.",
+  "brief": "Create parts/pixel-art/style (16-colour palette, crisp square pixels drawn as SVG rects on a 4–8 px grid, shapeRendering crispEdges) and a parts/pixel-art/sprite generator (pixel map strings + palette, 2–4 frame animation), then people presets as small game-style sprites scaled up.",
   "names": [
    "doctor",
    "nurse",

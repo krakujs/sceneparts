@@ -1,0 +1,197 @@
+{
+  "id": "flat-vector/hairdresser",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Hairdresser",
+  "summary": "Flat vector hairdresser in a black apron holding scissors and a comb; for salon and hair styling explainers.",
+  "tags": [
+    "hairdresser",
+    "hair stylist",
+    "salon",
+    "barber shop",
+    "scissors",
+    "comb",
+    "profession"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "hold",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "wave",
+        "point",
+        "think",
+        "cheer",
+        "talk",
+        "sit",
+        "hold"
+      ]
+    },
+    {
+      "name": "expression",
+      "type": "enum",
+      "default": "smile",
+      "values": [
+        "smile",
+        "neutral",
+        "open",
+        "surprised",
+        "sad",
+        "angry",
+        "laugh"
+      ]
+    },
+    {
+      "name": "skin",
+      "type": "string",
+      "default": "medium",
+      "note": "light | fair | tan | medium | brown | dark, or a hex colour"
+    },
+    {
+      "name": "hair",
+      "type": "enum",
+      "default": "long",
+      "values": [
+        "short",
+        "buzz",
+        "side",
+        "spiky",
+        "curly",
+        "afro",
+        "long",
+        "ponytail",
+        "bun",
+        "bob",
+        "braid",
+        "none"
+      ]
+    },
+    {
+      "name": "hairColor",
+      "type": "string",
+      "default": "auburn",
+      "note": "black | brown | auburn | blonde | grey | white | red | blue | pink, or hex"
+    },
+    {
+      "name": "shoes",
+      "type": "enum",
+      "default": "shoes",
+      "values": [
+        "shoes",
+        "sneakers",
+        "boots",
+        "heels",
+        "sandals"
+      ]
+    },
+    {
+      "name": "shoesColor",
+      "type": "colour",
+      "default": "#1F2433"
+    },
+    {
+      "name": "hat",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "cap",
+        "beanie",
+        "hardhat",
+        "chef",
+        "beret",
+        "brim",
+        "fedora",
+        "peaked",
+        "helmet",
+        "headscarf",
+        "turban",
+        "mortarboard",
+        "bandana",
+        "tophat",
+        "scrubcap",
+        "skullcap",
+        "sailor"
+      ]
+    },
+    {
+      "name": "hatColor",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "also colours goggles and headphones"
+    },
+    {
+      "name": "accessory",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "glasses",
+        "sunglasses",
+        "goggles",
+        "mask",
+        "beard",
+        "moustache",
+        "stubble",
+        "headset",
+        "headphones",
+        "earrings"
+      ]
+    },
+    {
+      "name": "seat",
+      "type": "boolean",
+      "default": true,
+      "note": "draw a bench when pose is sit"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "hold",
+    "skin": "medium",
+    "hair": "long",
+    "hairColor": "auburn"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
