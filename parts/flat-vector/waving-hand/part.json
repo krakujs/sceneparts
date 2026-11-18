@@ -1,0 +1,25 @@
+{
+  "id": "flat-vector/waving-hand",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Waving Hand",
+  "summary": "Flat die-cut open palm waving with motion arcs for hello, hi, bye, see you.",
+  "tags": ["wave","waving hand","hello","hi","bye","greeting"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about about 400 px wide at s = 1" },
+    { "name": "skin", "type": "colour", "default": "#FFC83D", "note": "hand colour; a SKIN name from the style (light, fair, tan, medium, brown, dark) or any hex" },
+    { "name": "color", "type": "colour", "default": "#3D6FE0", "note": "sleeve colour" },
+    { "name": "anim", "type": "enum", "default": "wave", "values": ["none","wave","bob"], "note": "idle motion from p.f" },
+    { "name": "popIn", "type": "boolean", "default": true, "note": "springs in over the first 10 frames" }
+  ],
+  "example": {"x":540,"y":960,"anim":"wave"},
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

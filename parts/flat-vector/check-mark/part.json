@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/check-mark",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Check Mark",
+  "summary": "Bold green tick in a round sticker: use for correct, done, approved or yes.",
+  "tags": [
+    "check",
+    "tick",
+    "correct",
+    "done",
+    "yes",
+    "approved",
+    "success"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 440 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "disc colour; a darker edge is added"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "pulse",
+      "values": [
+        "none",
+        "pulse",
+        "bob"
+      ],
+      "note": "pulse = slight breathing, bob = gentle float"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "anim": "pulse"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

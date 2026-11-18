@@ -1,0 +1,96 @@
+{
+  "id": "flat-vector/omg-sticker",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "OMG Sticker",
+  "summary": "Flat die-cut pink OMG cloud sticker for shocking news and big reactions.",
+  "tags": [
+    "omg",
+    "shock",
+    "surprise",
+    "reaction",
+    "gasp",
+    "sticker"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; sticker is about 560 px wide at s = 1"
+    },
+    {
+      "name": "textColor",
+      "type": "colour",
+      "default": "#FFFFFF"
+    },
+    {
+      "name": "textOutline",
+      "type": "colour",
+      "default": "#1F2433",
+      "note": "outline and drop of the letters"
+    },
+    {
+      "name": "size",
+      "type": "number",
+      "default": 0,
+      "note": "font size; 0 or unset = fit to the shape"
+    },
+    {
+      "name": "tilt",
+      "type": "number",
+      "default": -8,
+      "note": "degrees"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "wobble",
+      "values": [
+        "none",
+        "wobble",
+        "pulse",
+        "shake",
+        "bob",
+        "spin"
+      ],
+      "note": "idle motion from p.f"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    },
+    {
+      "name": "border",
+      "type": "boolean",
+      "default": true,
+      "note": "white die-cut sticker edge"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960
+  },
+  "uses": [
+    "flat-vector/text-sticker",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/trophy-sticker",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Trophy Sticker",
+  "summary": "Flat gold cup trophy on a base with a shine sweep, for winner, award and victory moments.",
+  "tags": ["trophy", "winner", "award", "champion", "cup", "prize", "sticker"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 420 px wide at s = 1" },
+    { "name": "color", "type": "colour", "default": "#FFC83D", "note": "trophy colour; one darker shade is added for depth" },
+    { "name": "anim", "type": "enum", "default": "shine", "values": ["none", "shine", "bob"], "note": "idle motion from p.f; shine sweeps a glint across the cup" },
+    { "name": "popIn", "type": "boolean", "default": true, "note": "springs in over the first 10 frames" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror left-right" }
+  ],
+  "example": { "x": 540, "y": 960, "anim": "shine" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

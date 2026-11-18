@@ -1,0 +1,26 @@
+{
+  "id": "flat-vector/muscle-arm",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Muscle Arm",
+  "summary": "Flat die-cut flexed arm with a big bicep, for strong, power, workout, gym stickers. Flip for the other arm.",
+  "tags": ["muscle","strong","power","workout","flex","gym"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about about 460 px wide at s = 1" },
+    { "name": "skin", "type": "colour", "default": "#FFC83D", "note": "hand colour; a SKIN name from the style (light, fair, tan, medium, brown, dark) or any hex" },
+    { "name": "color", "type": "colour", "default": "#1FA39A", "note": "sleeve colour" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirrors the arm to the other side" },
+    { "name": "anim", "type": "enum", "default": "flex", "values": ["none","flex","pulse"], "note": "idle motion from p.f" },
+    { "name": "popIn", "type": "boolean", "default": true, "note": "springs in over the first 10 frames" }
+  ],
+  "example": {"x":540,"y":960,"anim":"flex"},
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/brain-sticker",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Brain Sticker",
+  "summary": "Flat pink cartoon brain with folds and a twinkling spark, for smart, think or idea moments.",
+  "tags": ["brain", "smart", "think", "idea", "genius", "clever", "sticker"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 480 px wide at s = 1" },
+    { "name": "color", "type": "colour", "default": "#F27BA6", "note": "brain colour; one darker shade is added for depth" },
+    { "name": "anim", "type": "enum", "default": "pulse", "values": ["none", "pulse", "spark"], "note": "idle motion from p.f; spark twinkles the spark only" },
+    { "name": "popIn", "type": "boolean", "default": true, "note": "springs in over the first 10 frames" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror left-right" }
+  ],
+  "example": { "x": 540, "y": 960, "anim": "pulse" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

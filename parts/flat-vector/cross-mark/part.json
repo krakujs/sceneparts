@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/cross-mark",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Cross Mark",
+  "summary": "Bold red X in a round sticker: use for wrong, no, cancelled or rejected.",
+  "tags": [
+    "cross",
+    "x mark",
+    "wrong",
+    "no",
+    "cancel",
+    "reject",
+    "error"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 440 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "disc colour; a darker edge is added"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "shake",
+      "values": [
+        "none",
+        "shake",
+        "pulse"
+      ],
+      "note": "shake = a small no-no wobble, pulse = slight breathing"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "anim": "shake"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

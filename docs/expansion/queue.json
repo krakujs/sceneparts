@@ -1797,8 +1797,8 @@
     "title": "Faces, reactions and stickers",
     "style": "flat-vector",
     "type": "effect",
-    "status": "todo",
-    "generator": null,
+    "status": "done",
+    "generator": "flat-vector/reaction-face, flat-vector/text-sticker",
     "brief": "Emoji-like expressive faces (original designs, not platform emoji), reaction stickers, hand gestures.",
     "names": [
       "happy face",
@@ -1905,7 +1905,10 @@
       "crown sticker",
       "rocket sticker"
     ],
-    "count": 103
+    "count": 103,
+    "built": 102,
+    "date": "2026-11-18",
+    "notes": "Foundation (written by the orchestrator): flat-vector/reaction-face (type effect; round flat face with white die-cut sticker edge; eyes x16, mouth x20, brows, tears, extra effects, accessories, anim; exports ReactionFace) and flat-vector/text-sticker (word on a die-cut burst/star/circle/pill/cloud/speech/badge/tag shape, auto-fit text; exports TextSticker, shapePath). 48 face presets + 10 word presets (boom, pow, zap, 100/lol/wow/omg/new/sale/follow-sticker) import them. Batch look: every effect here is a die-cut sticker (white edge, soft shadow, one shade, pop-in from p.f, anim enum), centred on x,y (default 540,960). Hands take a skin param (default #FFC83D, or a SKIN name). thumbs-down reuses thumbs-up turned over. Deleted in review, rebuild next run: fist bump (fists tiny, burst dominated), praying hands (read as two bread rolls), handshake (hands merged into one blob) \u2013 draw them bigger, as two clearly separate hands with visible fingers and different sleeve colours. Fixed in review: anger-mark redrawn as four curved strokes (was a flower-like blob); pointing-hand and muscle-arm scaled up; shh-face finger redesigned so it cannot read as a rude gesture; tags frozen/goofy replaced."
   },
   {
     "id": "16-core-infographics",

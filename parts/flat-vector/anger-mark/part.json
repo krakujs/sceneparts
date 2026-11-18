@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/anger-mark",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Anger Mark",
+  "summary": "Red four-lobed comic anger vein that throbs: use for annoyed, mad or angry.",
+  "tags": [
+    "anger",
+    "angry",
+    "mad",
+    "annoyed",
+    "vein",
+    "rage",
+    "comic"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 360 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "mark colour; a darker edge is added"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "throb",
+      "values": [
+        "none",
+        "throb",
+        "shake"
+      ],
+      "note": "throb = pulsing beat, shake = small tremble"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "anim": "throb"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "flat-vector/pointing-hand",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Pointing Hand",
+  "summary": "Flat die-cut index finger pointing sideways with a nudge, for look here, this way, check this. Flip for the other way.",
+  "tags": ["pointing","point","finger","this way","look here","direction"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about about 420 px wide at s = 1" },
+    { "name": "skin", "type": "colour", "default": "#FFC83D", "note": "hand colour; a SKIN name from the style (light, fair, tan, medium, brown, dark) or any hex" },
+    { "name": "color", "type": "colour", "default": "#3D6FE0", "note": "sleeve colour" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "points left instead of right" },
+    { "name": "anim", "type": "enum", "default": "nudge", "values": ["none","nudge","bob"], "note": "idle motion from p.f" },
+    { "name": "popIn", "type": "boolean", "default": true, "note": "springs in over the first 10 frames" }
+  ],
+  "example": {"x":540,"y":960,"anim":"nudge"},
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

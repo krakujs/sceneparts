@@ -1,0 +1,128 @@
+{
+  "id": "flat-vector/text-sticker",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Text Sticker",
+  "summary": "Flat die-cut word sticker generator (burst, bubble, badge, tag...) that pops in: WOW, LOL, NEW, SALE and more.",
+  "tags": [
+    "sticker",
+    "word",
+    "text",
+    "badge",
+    "comic",
+    "reaction",
+    "label",
+    "callout"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; sticker is about 560 px wide at s = 1"
+    },
+    {
+      "name": "text",
+      "type": "string",
+      "default": "WOW",
+      "note": "the word; short words (1-6 letters) read best"
+    },
+    {
+      "name": "shape",
+      "type": "enum",
+      "default": "burst",
+      "values": [
+        "burst",
+        "circle",
+        "pill",
+        "cloud",
+        "speech",
+        "badge",
+        "tag",
+        "star"
+      ],
+      "note": "sticker outline"
+    },
+    {
+      "name": "fill",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "sticker colour; a darker 3D edge is added"
+    },
+    {
+      "name": "textColor",
+      "type": "colour",
+      "default": "#FFFFFF"
+    },
+    {
+      "name": "textOutline",
+      "type": "colour",
+      "default": "#1F2433",
+      "note": "outline and drop of the letters"
+    },
+    {
+      "name": "size",
+      "type": "number",
+      "default": 0,
+      "note": "font size; 0 or unset = fit to the shape"
+    },
+    {
+      "name": "tilt",
+      "type": "number",
+      "default": -8,
+      "note": "degrees"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "wobble",
+      "values": [
+        "none",
+        "wobble",
+        "pulse",
+        "shake",
+        "bob",
+        "spin"
+      ],
+      "note": "idle motion from p.f"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    },
+    {
+      "name": "border",
+      "type": "boolean",
+      "default": true,
+      "note": "white die-cut sticker edge"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "text": "WOW",
+    "shape": "burst",
+    "fill": "#FFC83D"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

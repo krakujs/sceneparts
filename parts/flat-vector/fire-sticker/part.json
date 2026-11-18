@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/fire-sticker",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Fire Sticker",
+  "summary": "Flickering cartoon flame sticker: use for hot, trending, lit or on-fire moments.",
+  "tags": [
+    "fire",
+    "flame",
+    "hot",
+    "trending",
+    "lit",
+    "burn",
+    "sticker"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 380 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "flame colour; the inner flame is always yellow"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "flicker",
+      "values": [
+        "none",
+        "flicker",
+        "sway"
+      ],
+      "note": "flicker = the flame wavers, sway = leans side to side"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "anim": "flicker"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

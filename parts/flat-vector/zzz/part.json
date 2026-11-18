@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/zzz",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Zzz",
+  "summary": "Three Z letters of growing size drifting up: use for sleep, boredom or snoring.",
+  "tags": [
+    "zzz",
+    "sleep",
+    "sleeping",
+    "bored",
+    "snore",
+    "nap",
+    "tired"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 430 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "letter colour; a darker edge is added"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "none",
+        "drift",
+        "bob"
+      ],
+      "note": "drift = Z letters float upward in turn, bob = gentle float"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "anim": "drift"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

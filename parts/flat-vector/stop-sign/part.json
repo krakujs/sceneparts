@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/stop-sign",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Stop Sign",
+  "summary": "Red octagon with STOP lettering on a sticker, no pole: use for stop, halt or do not proceed.",
+  "tags": [
+    "stop",
+    "halt",
+    "sign",
+    "octagon",
+    "red",
+    "no entry",
+    "sticker"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 490 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "sign colour; a darker edge is added"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "pulse",
+      "values": [
+        "none",
+        "pulse",
+        "shake"
+      ],
+      "note": "pulse = slight breathing, shake = small tremble"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "anim": "pulse"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
