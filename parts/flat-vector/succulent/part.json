@@ -1,0 +1,73 @@
+{
+  "id": "flat-vector/succulent",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Succulent",
+  "summary": "Low rosette of thick fleshy pointed leaves on the ground; use for desert, rock gardens or as a small plant.",
+  "tags": [
+    "succulent",
+    "rosette",
+    "fleshy",
+    "plant",
+    "low plant",
+    "desert",
+    "green"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the rosette rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 320 px wide, use about 0.5 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#7FBF8E",
+      "note": "leaf colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = leaves tilt gently"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "color": "#7FBF8E",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

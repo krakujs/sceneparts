@@ -1,0 +1,15 @@
+{
+  "id": "flat-vector/savanna",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Savanna",
+  "summary": "African savanna vignette with golden grass, a flat-topped acacia and distant hills; use for dry grassland scenes.",
+  "tags": ["savanna","acacia","grassland","africa","golden grass","safari","plains"],
+  "params": [{"name":"x","type":"number","default":540,"note":"centre x"},{"name":"y","type":"number","default":1600,"note":"ground line"},{"name":"s","type":"number","default":1,"note":"about 1000 px wide and 380 px tall at s = 1"},{"name":"color","type":"colour","default":"#E8B84A","note":"grass colour"},{"name":"color2","type":"colour","default":"#5E8A3A","note":"acacia crown colour"},{"name":"anim","type":"enum","default":"none","values":["none","sway"],"note":"sway = grass tufts rock gently"},{"name":"flip","type":"boolean","default":false,"note":"mirror"}],
+  "example": {"x":540,"y":1600,"s":1,"anim":"sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

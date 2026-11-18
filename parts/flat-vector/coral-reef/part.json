@@ -1,0 +1,15 @@
+{
+  "id": "flat-vector/coral-reef",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Coral reef",
+  "summary": "Sandy seabed with branch and brain corals, sea fans and two small fish; use for underwater reef scenes.",
+  "tags": ["coral reef","reef","coral","sea fan","underwater","fish","ocean"],
+  "params": [{"name":"x","type":"number","default":540,"note":"centre x"},{"name":"y","type":"number","default":1600,"note":"seabed line"},{"name":"s","type":"number","default":1,"note":"about 1000 px wide and 400 px tall at s = 1"},{"name":"color","type":"colour","default":"#EBCB8B","note":"sand colour"},{"name":"anim","type":"enum","default":"none","values":["none","sway"],"note":"sway = corals rock and fish swim"},{"name":"flip","type":"boolean","default":false,"note":"mirror"}],
+  "example": {"x":540,"y":1600,"s":1,"anim":"sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

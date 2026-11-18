@@ -1,0 +1,15 @@
+{
+  "id": "flat-vector/seashell",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Seashell",
+  "summary": "Scallop shell and spiral conch side by side on the sand; use as a small beach prop.",
+  "tags": ["seashell","shell","scallop","conch","beach","sea","prop"],
+  "params": [{"name":"x","type":"number","default":540,"note":"centre x"},{"name":"y","type":"number","default":1560,"note":"sand line the shells rest on"},{"name":"s","type":"number","default":1,"note":"about 400 px wide and 240 px tall at s = 1"},{"name":"color","type":"colour","default":"#FF9F7A","note":"scallop colour"},{"name":"color2","type":"colour","default":"#F9A77A","note":"conch colour"},{"name":"flip","type":"boolean","default":false,"note":"mirror"}],
+  "example": {"x":540,"y":1560,"s":1},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

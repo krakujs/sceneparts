@@ -1,0 +1,15 @@
+{
+  "id": "flat-vector/seaweed",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Seaweed",
+  "summary": "A few wavy brown-green seaweed fronds growing from a grey rock; use for rock pools and seabed scenes.",
+  "tags": ["seaweed","kelp fronds","rock","sea","underwater","ocean","algae"],
+  "params": [{"name":"x","type":"number","default":540,"note":"centre x"},{"name":"y","type":"number","default":1600,"note":"ground line under the rock"},{"name":"s","type":"number","default":1,"note":"about 500 px wide and 560 px tall at s = 1"},{"name":"color","type":"colour","default":"#6B7A3A","note":"seaweed colour"},{"name":"color2","type":"colour","default":"#8A93A6","note":"rock colour"},{"name":"anim","type":"enum","default":"none","values":["none","sway"],"note":"sway = fronds rock in the current"},{"name":"flip","type":"boolean","default":false,"note":"mirror"}],
+  "example": {"x":540,"y":1600,"s":1,"anim":"sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

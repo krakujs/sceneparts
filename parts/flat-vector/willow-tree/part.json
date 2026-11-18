@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/willow-tree",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Willow tree",
+  "summary": "Weeping willow with a domed crown and a drooping curtain of hanging leafy strands; for ponds, parks and calm scenes.",
+  "tags": ["willow tree", "weeping willow", "willow", "drooping", "river tree", "park", "tree"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the trunk"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the trunk stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 780 px wide and 920 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#4BB46A", "note": "leaf colour"},
+    {"name": "color2", "type": "colour", "default": "#8A5A3C", "note": "trunk colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "sway"], "note": "sway = the hanging strands swing in the breeze"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

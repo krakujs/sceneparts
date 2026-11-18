@@ -1,0 +1,15 @@
+{
+  "id": "flat-vector/kelp",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Kelp",
+  "summary": "Tall kelp stalks with leaf blades and round floats rising from the seabed; use for kelp forest scenes.",
+  "tags": ["kelp","kelp forest","seaweed","underwater","ocean","stalks","sea"],
+  "params": [{"name":"x","type":"number","default":540,"note":"centre x"},{"name":"y","type":"number","default":1600,"note":"seabed line"},{"name":"s","type":"number","default":1,"note":"about 900 px wide and 1200 px tall at s = 1"},{"name":"color","type":"colour","default":"#5C7A3E","note":"stalk colour"},{"name":"color2","type":"colour","default":"#6E9447","note":"leaf blade colour"},{"name":"anim","type":"enum","default":"none","values":["none","sway"],"note":"sway = stalks bend in the current"},{"name":"flip","type":"boolean","default":false,"note":"mirror"}],
+  "example": {"x":540,"y":1600,"s":0.8,"anim":"sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

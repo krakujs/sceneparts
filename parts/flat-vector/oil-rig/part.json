@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/oil-rig",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Oil rig",
+  "summary": "Offshore oil platform with legs in the sea, lattice derrick, crane, helipad and flare stack. anim lights blinks.",
+  "tags": ["oil rig", "offshore platform", "drilling rig", "sea", "ocean", "derrick", "industry", "flare"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "sea floor line: the legs stand on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 920 px wide and 900 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "steel colour for the legs, deck and tower"},
+    {"name": "color2", "type": "colour", "default": "#FF8A3D", "note": "accent colour for the crane arm"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "lights = the beacon blinks and the windows flicker on"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

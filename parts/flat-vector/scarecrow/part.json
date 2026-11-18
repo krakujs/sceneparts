@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/scarecrow",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Scarecrow",
+  "summary": "Friendly field scarecrow on a pole with a straw hat, patched shirt and sack-cloth face; anim sway rocks its head.",
+  "tags": ["scarecrow", "field", "farm", "straw hat", "crops", "harvest", "pole", "countryside"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "foot of the pole: it stands on y (about 1130 px tall at s = 1)"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 710 px wide and 1130 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "shirt colour"},
+    {"name": "color2", "type": "colour", "default": "#253058", "note": "trouser colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "sway"], "note": "sway = the head rocks gently in the breeze"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

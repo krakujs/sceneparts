@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/planet",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Planet",
+  "summary": "Ringed planet with banded colours and a tilted ring, for space scenes. Anim: spin, float.",
+  "tags": ["planet", "ringed planet", "space", "saturn", "solar system", "bands", "cosmos"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 960, "note": "centre y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the ring is about 680 px wide, body 380 px"},
+    {"name": "color", "type": "colour", "default": "#E8A25E", "note": "body colour; the bands are shades of it"},
+    {"name": "color2", "type": "colour", "default": "#D9BE8A", "note": "ring colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "spin", "float"], "note": "spin = bands slide across the body; float = bobs gently"}
+  ],
+  "example": {"x": 540, "y": 960, "s": 1, "color": "#E8A25E", "color2": "#D9BE8A", "anim": "float"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

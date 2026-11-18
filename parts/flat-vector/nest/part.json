@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/nest",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bird nest",
+  "summary": "Woven twig bird nest holding three pale-blue eggs, with no bird. For spring, garden and tree scenes.",
+  "tags": ["bird nest", "nest", "eggs", "twigs", "spring", "birds", "woven nest", "garden"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the nest rests on y (about 480 px wide at s = 1)"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 480 px wide and 210 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#A9764A", "note": "twig colour"},
+    {"name": "color2", "type": "colour", "default": "#BFE3F5", "note": "egg colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop"], "note": "pop = scales in"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/storm-cloud",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Storm cloud",
+  "summary": "Dark heavy storm cloud with a lightning bolt and rain for thunderstorm scenes. Anim: flash.",
+  "tags": ["storm cloud", "storm", "thunder", "thunderstorm", "lightning", "dark cloud", "weather"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 500, "note": "centre y of the cloud"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 500 px wide, bolt reaches about 370 px below the centre"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "cloud colour"},
+    {"name": "color2", "type": "colour", "default": "#3A4157", "note": "flat underside colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "flash"], "note": "flash = lightning flashes in bursts and rain falls faster"}
+  ],
+  "example": {"x": 540, "y": 500, "s": 1, "color": "#5D6578", "color2": "#3A4157", "anim": "flash"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

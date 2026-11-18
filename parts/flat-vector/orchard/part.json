@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/orchard",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Orchard",
+  "summary": "Row of small round fruit trees hung with red fruit on a grass strip; for farms, harvest and countryside scenes.",
+  "tags": ["orchard", "fruit trees", "apple trees", "farm", "harvest", "fruit", "countryside"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the row"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the trees stand on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 1000 px wide and 560 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#4BB46A", "note": "crown colour"},
+    {"name": "color2", "type": "colour", "default": "#E8503F", "note": "fruit colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "sway"], "note": "sway = the crowns move gently"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

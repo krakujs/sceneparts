@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/pond",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Pond",
+  "summary": "Small round pond with lily pads, reeds and stones around its rim. anim ripple adds rings.",
+  "tags": [
+    "pond",
+    "lily pads",
+    "reeds",
+    "water",
+    "stones",
+    "garden pond",
+    "frog pond"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the part stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 520 px wide and 330 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#4AA3D9",
+      "note": "water colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "bank colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "ripple"
+      ],
+      "note": "ripple = rings spread on the water"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "ripple"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

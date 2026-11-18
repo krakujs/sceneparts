@@ -1,0 +1,15 @@
+{
+  "id": "flat-vector/field-of-wheat",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Field of wheat",
+  "summary": "Rows of golden wheat stalks with ears receding into the distance; use for farm and harvest scenes.",
+  "tags": ["wheat","field","harvest","grain","farm","crops","golden"],
+  "params": [{"name":"x","type":"number","default":540,"note":"centre x"},{"name":"y","type":"number","default":1600,"note":"ground line"},{"name":"s","type":"number","default":1,"note":"about 1000 px wide and 400 px tall at s = 1"},{"name":"color","type":"colour","default":"#E9B949","note":"ear colour"},{"name":"anim","type":"enum","default":"none","values":["none","sway"],"note":"sway = stalks rock in the wind"},{"name":"flip","type":"boolean","default":false,"note":"mirror"}],
+  "example": {"x":540,"y":1600,"s":1,"anim":"sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

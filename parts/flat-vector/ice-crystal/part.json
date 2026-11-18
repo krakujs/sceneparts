@@ -1,0 +1,15 @@
+{
+  "id": "flat-vector/ice-crystal",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Ice crystal",
+  "summary": "Faceted icy-blue hexagonal crystal cluster with sparkles; use for cold, icy or winter moments.",
+  "tags": ["ice","crystal","icy","sparkle","winter","gem"],
+  "params": [{"name":"x","type":"number","default":540,"note":"centre x"},{"name":"y","type":"number","default":960,"note":"centre y"},{"name":"s","type":"number","default":1,"note":"about 420 px wide and 480 px tall at s = 1"},{"name":"color","type":"colour","default":"#8FD3F2","note":"ice colour"},{"name":"anim","type":"enum","default":"none","values":["none","sparkle","spin"],"note":"sparkle = sparkles twinkle; spin = cluster turns slowly"}],
+  "example": {"x":540,"y":960,"s":1,"anim":"sparkle"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

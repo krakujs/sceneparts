@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/snowman",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Snowman",
+  "summary": "Friendly snowman with coal eyes, carrot nose, stick arms, scarf and knit hat; anim wave lifts one arm.",
+  "tags": ["snowman", "snow", "winter", "christmas", "frosty", "snowball", "cold", "outdoors"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom centre: the bottom snowball rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 500 px wide and 1000 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "snow colour"},
+    {"name": "color2", "type": "colour", "default": "#E8503F", "note": "scarf colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "wave"], "note": "wave = one stick arm waves"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "wave"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

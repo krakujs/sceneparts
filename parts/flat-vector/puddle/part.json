@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/puddle",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Puddle",
+  "summary": "Flat oval rain puddle with a sky reflection and ripple rings; anim ripple sends rings out. For wet streets and paths.",
+  "tags": ["puddle", "rain", "water", "wet ground", "reflection", "ripples", "street", "rainy day"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "the puddle lies on y (about 780 px wide at s = 1)"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 780 px wide and 105 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#8EC5E8", "note": "water colour"},
+    {"name": "color2", "type": "colour", "default": "#CFE6F5", "note": "sky reflection colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "ripple"], "note": "ripple = rings spread out from a raindrop, looping"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "ripple"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1202,7 +1202,7 @@
     "title": "Buildings and places",
     "style": "flat-vector",
     "type": "scenery",
-    "status": "partial",
+    "status": "done",
     "generator": null,
     "brief": "Generic buildings and landmarks types (not copies of real named landmarks).",
     "names": [
@@ -1316,26 +1316,17 @@
       "bell tower"
     ],
     "count": 108,
-    "built": 96,
-    "date": "2026-11-17",
-    "remaining": [
-      "hospital",
-      "stadium",
-      "swimming pool",
-      "playground",
-      "oil rig",
-      "dam",
-      "temple",
-      "diner"
-    ],
-    "notes": "Building convention: front elevation standing on y (default 1600), params x,y,s,color,color2,anim(none/pop/lights),flip; ≤1000 px wide, ≤1450 px tall; no words (only 'H'/'P' where named), no red-cross emblem, generic not real landmarks. Skipped as covered: 'lighthouse building' (flat-vector/lighthouse), 'bus shelter' (flat-vector/bus-stop), 'radio tower' (flat-vector/antenna-tower), 'bridge arch' (flat-vector/bridge is an arched bridge). Slugs: tower->watchtower, park bench area->park-corner, monument obelisk->obelisk, colosseum-style arena->ancient-arena, billboard blank->billboard. Deleted in review, rebuild next run: hospital (garbled sign and ambulance bay), stadium (read as a top-down oval with a door), swimming pool (floating diving board, weak), playground (floating bars, sparse), oil rig (read as scaffolding), dam (read as a building next to water), temple (read as a tiered cake, no shikhara), diner (read as a train carriage). Fixed in review: nuclear-plant cooling towers given a real waist."
+    "built": 104,
+    "date": "2026-11-18",
+    "remaining": [],
+    "notes": "Building convention: front elevation standing on y (default 1600), params x,y,s,color,color2,anim(none/pop/lights),flip; ≤1000 px wide, ≤1450 px tall; no words (only 'H'/'P' where named), no red-cross emblem, generic not real landmarks. Skipped as covered: 'lighthouse building' (flat-vector/lighthouse), 'bus shelter' (flat-vector/bus-stop), 'radio tower' (flat-vector/antenna-tower), 'bridge arch' (flat-vector/bridge is an arched bridge). Slugs: tower->watchtower, park bench area->park-corner, monument obelisk->obelisk, colosseum-style arena->ancient-arena, billboard blank->billboard. Deleted in review, rebuild next run: hospital (garbled sign and ambulance bay), stadium (read as a top-down oval with a door), swimming pool (floating diving board, weak), playground (floating bars, sparse), oil rig (read as scaffolding), dam (read as a building next to water), temple (read as a tiered cake, no shikhara), diner (read as a train carriage). Fixed in review: nuclear-plant cooling towers given a real waist. Rebuilt 2026-11-18 (batch 11 run): hospital, stadium, swimming-pool, playground, oil-rig, dam, temple, diner."
   },
   {
     "id": "11-flat-vector-nature",
     "title": "Nature, plants, landscape and weather",
     "style": "flat-vector",
     "type": "scenery",
-    "status": "todo",
+    "status": "partial",
     "generator": null,
     "brief": "Plants, landscape elements, weather and sky objects.",
     "names": [
@@ -1444,7 +1435,15 @@
       "well",
       "windbreak"
     ],
-    "count": 104
+    "count": 104,
+    "built": 99,
+    "date": "2026-11-18",
+    "remaining": [
+      "rice paddy",
+      "cliff",
+      "waterfall"
+    ],
+    "notes": "Nature convention: grounded scenery/props stand on y (1600 scenery, 1560 small props), anim none/pop/sway for plants, flow for water; sky and weather objects are type effect centred on x,y (default y 500); landscape pieces are ~1000 px wide vignettes on y, not full backgrounds. Skipped as covered: 'campfire' (flat-vector/fire-pit), 'egg' (nest has eggs; boiled-egg/fried-egg exist). 'log' is a single fallen log (logs = stack). Deleted in review, rebuild next run: rice paddy (read as a tiered cake), cliff (read as a grey striped building), waterfall (rock was a rounded grey box, read as a water tank). Fixed in review: dead-tree, jungle and playground scaled so nothing touches the frame edge; jungle lianas no longer hang below the ground; playground anim renamed lights -> swing."
   },
   {
     "id": "12-flat-vector-backgrounds",

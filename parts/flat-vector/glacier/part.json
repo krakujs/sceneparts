@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/glacier",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Glacier",
+  "summary": "Icy blue-white glacier with crevasses flowing between rocky slopes, ending in an ice cliff.",
+  "tags": [
+    "glacier",
+    "ice",
+    "ice field",
+    "crevasse",
+    "icy",
+    "polar",
+    "snow"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the part stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 1000 px wide and 800 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#EAF7FC",
+      "note": "ice colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "rock colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "flow"
+      ],
+      "note": "flow = the water or ice moves"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "flow"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

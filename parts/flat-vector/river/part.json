@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/river",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "River",
+  "summary": "Winding blue river in low 3/4 view between grassy banks, narrowing into the distance. anim flow.",
+  "tags": [
+    "river",
+    "stream",
+    "winding river",
+    "water",
+    "grassy banks",
+    "valley",
+    "flowing water"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the part stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 1000 px wide and 680 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#4AA3D9",
+      "note": "water colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "bank colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "flow"
+      ],
+      "note": "flow = the water or ice moves"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "flow"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

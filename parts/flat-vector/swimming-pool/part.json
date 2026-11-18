@@ -1,0 +1,15 @@
+{
+  "id": "flat-vector/swimming-pool",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Swimming pool",
+  "summary": "Low 3/4 view of a blue pool sunk into a tiled deck, with lane ropes, ladder, diving board and lifeguard chair.",
+  "tags": ["swimming pool","pool","swimming","water","diving board","lifeguard","lanes"],
+  "params": [{"name":"x","type":"number","default":540,"note":"centre x"},{"name":"y","type":"number","default":1600,"note":"front edge of the deck"},{"name":"s","type":"number","default":1,"note":"about 1000 px wide and 400 px tall at s = 1"},{"name":"color","type":"colour","default":"#F7F3EC","note":"deck tile colour"},{"name":"color2","type":"colour","default":"#4FB3E8","note":"water colour"},{"name":"anim","type":"enum","default":"none","values":["none","pop","lights"],"note":"lights = water shimmers"},{"name":"flip","type":"boolean","default":false,"note":"mirror"}],
+  "example": {"x":540,"y":1600,"s":0.9,"anim":"lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

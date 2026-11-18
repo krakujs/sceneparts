@@ -1,0 +1,20 @@
+{
+  "id": "flat-vector/snowflake",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Snowflake",
+  "summary": "Six-armed white and ice-blue snowflake with branches, for winter and snow scenes. Anim: spin, fall.",
+  "tags": ["snowflake", "snow", "winter", "ice", "frost", "cold", "crystal"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 960, "note": "centre y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 540 px across"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "spin", "fall"], "note": "spin = slow turn; fall = drifts down in a fading loop"}
+  ],
+  "example": {"x": 540, "y": 960, "s": 1, "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/iceberg",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Iceberg",
+  "summary": "White-blue iceberg above a sea line, with the larger lighter-blue part under the water. anim bob.",
+  "tags": [
+    "iceberg",
+    "ice",
+    "sea",
+    "polar",
+    "floating ice",
+    "arctic",
+    "ocean"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the part stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 700 px wide and 540 px tall at s = 1 above the water (about 240 px of ice sits under it)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F4FBFF",
+      "note": "ice colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#2F86C6",
+      "note": "sea colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "bob"
+      ],
+      "note": "bob = the ice rises and falls on the sea"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "bob"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

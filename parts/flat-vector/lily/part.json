@@ -1,0 +1,73 @@
+{
+  "id": "flat-vector/lily",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Lily",
+  "summary": "White funnel-shaped lily with six pointed petals and orange stamens on a tall stem; use for gardens and weddings.",
+  "tags": [
+    "lily",
+    "flower",
+    "white",
+    "funnel-shaped",
+    "stamens",
+    "garden",
+    "tall plant"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the stem rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 700 px tall, use about 0.5 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "petal colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = the stem and bloom move gently"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "color": "#FFFFFF",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

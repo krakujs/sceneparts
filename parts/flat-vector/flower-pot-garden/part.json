@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/flower-pot-garden",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Flower pot garden",
+  "summary": "Group of four terracotta pots of different sizes with flowers and herbs; anim sway rocks the plants gently.",
+  "tags": ["flower pots", "terracotta", "garden", "flowers", "herbs", "patio", "balcony", "plants"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the pots stand on y (about 900 px wide at s = 1)"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 900 px wide and 620 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#C9704E", "note": "terracotta colour"},
+    {"name": "color2", "type": "colour", "default": "#4BB46A", "note": "leaf and stem colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "sway"], "note": "sway = the plants rock gently, each pot out of step"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

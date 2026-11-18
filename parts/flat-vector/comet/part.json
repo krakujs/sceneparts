@@ -1,0 +1,20 @@
+{
+  "id": "flat-vector/comet",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Comet",
+  "summary": "Bright icy comet head with a long fading tail, for space and night-sky scenes. Anim: fly across.",
+  "tags": ["comet", "shooting star", "space", "night sky", "ice", "tail", "meteor"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the head"},
+    {"name": "y", "type": "number", "default": 500, "note": "centre y of the head"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the tail is about 560 px long"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "fly"], "note": "fly = crosses the sky diagonally in a fading loop"}
+  ],
+  "example": {"x": 540, "y": 500, "s": 1, "anim": "fly"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

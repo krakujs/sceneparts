@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/crescent-moon",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Crescent moon",
+  "summary": "Thick crescent moon with a soft glow for night skies and bedtime scenes. Anim: float, pop.",
+  "tags": ["crescent moon", "moon", "night", "sky", "bedtime", "glow", "crescent"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the full disc"},
+    {"name": "y", "type": "number", "default": 500, "note": "centre y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 345 px wide, 520 px with the glow"},
+    {"name": "color", "type": "colour", "default": "#F7E7A1", "note": "moon colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "float", "pop"], "note": "float = bobs gently"}
+  ],
+  "example": {"x": 540, "y": 500, "s": 1, "color": "#F7E7A1", "anim": "float"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

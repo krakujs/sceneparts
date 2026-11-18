@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/cherry-blossom-tree",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Cherry blossom tree",
+  "summary": "Cherry tree with a dark twisting trunk and a pink blossom crown; sway also drifts petals. For spring and parks.",
+  "tags": [
+    "cherry blossom",
+    "cherry tree",
+    "sakura",
+    "blossom",
+    "pink tree",
+    "spring",
+    "petals"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the trunk"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the trunk stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 880 px wide and 1000 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F27BA6",
+      "note": "blossom colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5E3B26",
+      "note": "trunk and branch colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = crown sways and a few petals drift down"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

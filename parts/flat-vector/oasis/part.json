@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/oasis",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Oasis",
+  "summary": "Small blue pond with two palm trees and grass on sand. For desert watering-hole scenes.",
+  "tags": [
+    "oasis",
+    "palm trees",
+    "desert pond",
+    "water",
+    "sand",
+    "palm",
+    "desert"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the part stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 1000 px wide and 470 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#4AA3D9",
+      "note": "pond colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E9D3A9",
+      "note": "sand colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = grass tufts or palm fronds move in the breeze"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

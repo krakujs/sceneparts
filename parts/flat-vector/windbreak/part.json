@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/windbreak",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Windbreak",
+  "summary": "Row of tall narrow poplar-style trees sheltering a field edge; anim sway rocks them in the wind. For farmland.",
+  "tags": ["windbreak", "poplar", "tree row", "hedgerow", "field edge", "farmland", "shelter belt", "countryside"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the trees stand on y (about 960 px tall at s = 1)"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 1000 px wide and 960 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#348A4F", "note": "leaf colour"},
+    {"name": "color2", "type": "colour", "default": "#B88A5A", "note": "tilled soil colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "sway"], "note": "sway = the trees rock in the wind, each out of step"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

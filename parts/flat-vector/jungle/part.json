@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/jungle",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Jungle",
+  "summary": "Dense tropical vignette of big leaves, palms and hanging lianas; for rainforest, adventure and tropical scenes.",
+  "tags": ["jungle", "rainforest", "tropical", "palm trees", "lianas", "foliage", "dense plants"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the vignette"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the plants stand on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 800 px wide and 860 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#348A4F", "note": "dark background foliage colour"},
+    {"name": "color2", "type": "colour", "default": "#5E3B26", "note": "liana colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "sway"], "note": "sway = the foliage and palms move in the breeze"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "sway"},
+  "uses": ["flat-vector/style", "flat-vector/palm-tree"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

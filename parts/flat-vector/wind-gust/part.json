@@ -1,0 +1,20 @@
+{
+  "id": "flat-vector/wind-gust",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Wind gust",
+  "summary": "Curling white swoosh lines with blown leaves, for wind, breeze and gusty weather. Anim: blow.",
+  "tags": ["wind", "gust", "breeze", "swoosh", "blowing", "leaves", "air"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 700, "note": "centre y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 760 px wide"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "blow"], "note": "blow = swooshes sway and leaves tumble"}
+  ],
+  "example": {"x": 540, "y": 700, "s": 1, "anim": "blow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

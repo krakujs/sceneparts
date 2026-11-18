@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/wave",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Wave",
+  "summary": "Big curling ocean wave with a white foam crest. For surf, storms and sea scenes.",
+  "tags": [
+    "wave",
+    "ocean wave",
+    "surf",
+    "curl",
+    "foam",
+    "sea",
+    "breaker"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the part stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 850 px wide and 500 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#2E8BC6",
+      "note": "wave colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "foam colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "flow"
+      ],
+      "note": "flow = the water or ice moves"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "flow"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

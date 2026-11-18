@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/forest",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Forest",
+  "summary": "Vignette of overlapping pine, birch and oak trees with a bush, in two depth rows; for woodland and countryside scenes.",
+  "tags": ["forest", "woods", "woodland", "trees", "grove", "nature", "landscape"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the vignette"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the near trees stand on y, the far trees a little higher"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 1000 px wide and 1250 px tall at s = 1"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "sway"], "note": "sway = all the trees sway in the wind"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "sway"},
+  "uses": ["flat-vector/style", "flat-vector/pine-tree", "flat-vector/birch-tree", "flat-vector/oak-tree", "flat-vector/bush"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

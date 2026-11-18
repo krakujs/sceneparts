@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/vine",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Vine",
+  "summary": "Green climbing vine with leaves and curling tendrils on a wooden trellis; for gardens, walls and cottage scenes.",
+  "tags": ["vine", "climbing plant", "creeper", "ivy", "trellis", "garden", "tendrils"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the trellis"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the posts stand on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 560 px wide and 1150 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#4BB46A", "note": "leaf and vine colour"},
+    {"name": "color2", "type": "colour", "default": "#8A5A3C", "note": "wood colour of the trellis"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "sway"], "note": "sway = leaves flutter in the breeze"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

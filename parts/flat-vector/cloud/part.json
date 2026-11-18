@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/cloud",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Cloud",
+  "summary": "Puffy white cloud with a soft blue underside for fair-weather skies. Anim: drift, pop.",
+  "tags": ["cloud", "clouds", "sky", "weather", "fluffy", "white cloud", "daytime"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 500, "note": "centre y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 500 px wide"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "cloud colour"},
+    {"name": "color2", "type": "colour", "default": "#8EC5E8", "note": "flat underside colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "drift"], "note": "drift = slides gently side to side"}
+  ],
+  "example": {"x": 540, "y": 500, "s": 1, "color": "#FFFFFF", "color2": "#8EC5E8", "anim": "drift"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

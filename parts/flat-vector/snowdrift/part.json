@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/snowdrift",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Snowdrift",
+  "summary": "Low soft drifts of white snow with blue shadows and a few sparkles; anim sparkle twinkles. For winter ground.",
+  "tags": ["snowdrift", "snow", "drift", "winter", "snowbank", "frost", "ground", "cold"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the drifts sit on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 1000 px wide and 280 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "snow colour"},
+    {"name": "color2", "type": "colour", "default": "#BFD8EE", "note": "blue shadow colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "sparkle"], "note": "sparkle = the glints twinkle"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "sparkle"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

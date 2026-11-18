@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/sunset",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Sunset",
+  "summary": "Half orange-red sun sinking at a horizon with glow bands and reflections, for evening scenes. Anim: set.",
+  "tags": ["sunset", "evening", "dusk", "horizon", "sun", "orange sky", "twilight"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1150, "note": "y of the horizon line; the sun sits above it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 1040 px wide, glow bands reach about 680 px above y"},
+    {"name": "color", "type": "colour", "default": "#FF6F4A", "note": "sun colour (orange-red)"},
+    {"name": "color2", "type": "colour", "default": "#FF8A3D", "note": "glow colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "set"], "note": "set = the sun sinks slowly over 5 seconds"}
+  ],
+  "example": {"x": 540, "y": 1150, "s": 1, "anim": "set"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

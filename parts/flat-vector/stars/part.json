@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/stars",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Stars",
+  "summary": "Cluster of twelve mixed-size four- and five-pointed stars for night skies. Anim: twinkle.",
+  "tags": ["stars", "night", "sky", "starry", "twinkle", "space", "constellation"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the cluster"},
+    {"name": "y", "type": "number", "default": 500, "note": "centre y of the cluster"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 900 x 600 px"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "star colour (some are drawn a shade darker)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "twinkle"], "note": "twinkle = each star fades in and out at its own pace"}
+  ],
+  "example": {"x": 540, "y": 500, "s": 1, "color": "#FFC83D", "anim": "twinkle"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

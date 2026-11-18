@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/sun",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Sun",
+  "summary": "Round yellow sun with rays and a lighter core for sunny, clear or daytime scenes. Anim: pop, spin, pulse.",
+  "tags": ["sun", "sunshine", "sunny", "weather", "daytime", "sky", "bright"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 500, "note": "centre y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 470 px wide including rays"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "sun colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "spin", "pulse"], "note": "spin = slow turn of the rays; pulse = gentle breathing"}
+  ],
+  "example": {"x": 540, "y": 500, "s": 1, "color": "#FFC83D", "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
