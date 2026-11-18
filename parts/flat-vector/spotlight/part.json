@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/spotlight",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Spotlight",
+  "summary": "Stage spotlight on a tripod stand with a warm light cone; anim on flicks it on, sweep turns the beam across the stage.",
+  "tags": ["spotlight", "stage light", "theatre light", "stage", "lamp", "beam", "concert"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the stand foot"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the stand's feet rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale; 1 m is about 560 px, so at s = 1 the spotlight is about 1.6 m (900 px) tall"},
+    {"name": "color", "type": "colour", "default": "#253058", "note": "stand and housing colour"},
+    {"name": "beam", "type": "colour", "default": "#FFF2B3", "note": "light colour"},
+    {"name": "anim", "type": "enum", "default": "sweep", "values": ["none", "on", "sweep", "pop"], "note": "on = the light fades up and holds; sweep = the head turns and the beam swings left and right"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the beam then points left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#253058", "beam": "#FFF2B3", "anim": "sweep"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/sketchbook",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Sketchbook",
+  "summary": "Open spiral-bound sketchbook with a simple pencil drawing of a sun and hill on the page; for drawing scenes.",
+  "tags": ["sketchbook", "sketch pad", "drawing", "notebook", "spiral", "art", "doodle"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the book rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the open book is about 520 px wide and 380 px tall"},
+    {"name": "cover", "type": "colour", "default": "#3D6FE0", "note": "cover colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "wobble = the book rocks gently"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "cover": "#3D6FE0", "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

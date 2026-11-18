@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/yoga-mat",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Yoga mat",
+  "summary": "Yoga mat lying flat on the floor with a rolled-up end; anim unroll slides the mat out; use for yoga and fitness scenes.",
+  "tags": ["yoga mat", "yoga", "mat", "pilates", "fitness", "stretch", "prop"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the mat sits on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 830 px wide (800 px mat plus the roll) and 260 px tall"},
+    {"name": "color", "type": "colour", "default": "#A8D85A", "note": "mat colour"},
+    {"name": "color2", "type": "colour", "default": "#7B5CD6", "note": "roll colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "unroll", "bob", "pop"], "note": "unroll = the mat slides out of its roll over the first second"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "roll on the left instead of the right"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#A8D85A", "color2": "#7B5CD6", "anim": "unroll"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

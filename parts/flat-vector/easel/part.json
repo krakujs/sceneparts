@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/easel",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Easel",
+  "summary": "Wooden A-frame studio easel holding a canvas on a tray; blank or painted. For painting and art-studio scenes.",
+  "tags": ["easel", "painting", "art studio", "canvas", "artist", "wooden easel", "a-frame"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the easel"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the front feet rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale; 1 m is about 560 px, so at s = 1 the easel is about 1.8 m (1000 px) tall"},
+    {"name": "color", "type": "colour", "default": "#A9793F", "note": "wood colour"},
+    {"name": "art", "type": "enum", "default": "blank", "values": ["blank", "landscape", "abstract"], "note": "what is painted on the canvas"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "wobble = the canvas rocks very slightly on its tray"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#A9793F", "art": "landscape", "anim": "none"},
+  "uses": ["flat-vector/style", "flat-vector/canvas"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

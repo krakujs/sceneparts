@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/acoustic-guitar",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Acoustic guitar",
+  "summary": "Upright wooden acoustic guitar with a sound hole and six strings; anim strum makes the strings vibrate.",
+  "tags": [
+    "acoustic guitar",
+    "guitar",
+    "music",
+    "strings",
+    "band",
+    "folk",
+    "strum"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the base rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; room-scale: at s = 1 about 560 px tall (1 m = 560 px), 240 px wide"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#C68558",
+      "note": "wood colour of the body"
+    },
+    {
+      "name": "accent",
+      "type": "colour",
+      "default": "#5E3B26",
+      "note": "neck and fingerboard colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "strum",
+        "bob",
+        "wobble"
+      ],
+      "note": "strum = strings vibrate in turn and the body hums"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "strum"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

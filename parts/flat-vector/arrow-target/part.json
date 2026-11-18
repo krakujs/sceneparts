@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/arrow-target",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Arrow target",
+  "summary": "Round archery target with coloured rings on a wooden stand and an arrow in the centre; anim hit makes the arrow thud in.",
+  "tags": ["archery target", "target", "arrow", "bullseye", "archery", "aim", "practice"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the stand feet rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 460 px wide and 620 px tall"},
+    {"name": "color", "type": "colour", "default": "#F4F1EA", "note": "outer ring colour (inner rings are red and blue)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "pop", "hit"], "note": "hit = the arrow flies in and lands in the centre, the target wobbles"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "hit"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

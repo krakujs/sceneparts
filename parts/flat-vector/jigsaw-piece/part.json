@@ -1,0 +1,74 @@
+{
+  "id": "flat-vector/jigsaw-piece",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Jigsaw piece",
+  "summary": "Single big jigsaw puzzle piece with knobs on its sides; for puzzle, teamwork and missing-piece scenes. anim pop.",
+  "tags": [
+    "jigsaw",
+    "puzzle piece",
+    "jigsaw piece",
+    "puzzle",
+    "missing piece",
+    "teamwork",
+    "fit"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the piece rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 about 380 px square with knobs"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "piece colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "pop",
+        "wobble"
+      ],
+      "note": "pop = the piece springs in from small"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#FFC83D",
+    "anim": "bob"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

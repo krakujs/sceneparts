@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/microphone-stand",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Microphone stand",
+  "summary": "Tall straight microphone stand with a round base and a mic clipped at the top; anim sway for singing scenes.",
+  "tags": ["microphone stand", "mic stand", "boom stand", "stage", "singing", "concert", "podium"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the base"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the round base rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale; 1 m is about 560 px, so at s = 1 the stand is about 1.6 m (920 px) tall"},
+    {"name": "color", "type": "colour", "default": "#253058", "note": "stand colour"},
+    {"name": "head", "type": "colour", "default": "#5D6578", "note": "microphone head colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "sway", "bob", "pop"], "note": "sway = the mic head tilts gently on its clip"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#253058", "head": "#5D6578", "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

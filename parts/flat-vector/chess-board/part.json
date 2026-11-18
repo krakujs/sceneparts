@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/chess-board",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Chess board",
+  "summary": "8x8 chess board seen at an angle with a few simple pieces on it; for strategy, game and study scenes.",
+  "tags": ["chess", "chess board", "chessboard", "board game", "strategy", "pieces", "checkmate"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1320, "note": "centre y of the board on the table"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the board is about 820 px wide at the near edge"},
+    {"name": "color", "type": "colour", "default": "#8A5A3C", "note": "dark square colour (light squares are cream)"},
+    {"name": "accent", "type": "colour", "default": "#FFFFFF", "note": "light piece colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "pop", "move"], "note": "move = one light piece slides to a new square"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1320, "s": 1, "anim": "move"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

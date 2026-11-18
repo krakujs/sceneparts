@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/recorder",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Recorder",
+  "summary": "Simple wooden or plastic recorder with a mouthpiece, eight finger holes and a bell; for school or folk music scenes.",
+  "tags": ["recorder", "wooden flute", "school music", "woodwind", "instrument", "tin whistle"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the bell rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 110 px wide and 620 px tall"},
+    {"name": "color", "type": "colour", "default": "#E9D3A9", "note": "body colour (pale wood by default; use a bright colour for a plastic recorder)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion of the whole recorder"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E9D3A9", "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

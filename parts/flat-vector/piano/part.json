@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/piano",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Upright piano",
+  "summary": "Upright piano with top, front panel, keyboard and pedals; anim play dips the keys in a wave. For room and music scenes.",
+  "tags": [
+    "piano",
+    "upright piano",
+    "keyboard",
+    "keys",
+    "music",
+    "instrument",
+    "pianist"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the pedal plinth rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; room-sized: 1 m is about 560 px, so at s = 1 about 740 px wide and 860 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#5E3B26",
+      "note": "cabinet colour"
+    },
+    {
+      "name": "accent",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "pedal and trim colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "play"
+      ],
+      "note": "play = the keys dip in a wave from left to right and the pedals press"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 0.85,
+    "color": "#5E3B26",
+    "accent": "#FFC83D",
+    "anim": "play"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

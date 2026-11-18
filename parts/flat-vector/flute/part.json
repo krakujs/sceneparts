@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/flute",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flute",
+  "summary": "Silver transverse flute held horizontally at an angle, with keys and a mouth hole; for classical or orchestral scenes.",
+  "tags": ["flute", "silver flute", "transverse flute", "woodwind", "orchestra", "instrument", "concert flute"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the lowest end rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 740 px wide and 140 px tall"},
+    {"name": "color", "type": "colour", "default": "#DDE2EA", "note": "metal colour of the tube"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion of the whole flute"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (mouth end moves to the right)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#DDE2EA", "anim": "wobble"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

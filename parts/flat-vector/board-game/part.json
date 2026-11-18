@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/board-game",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Board game",
+  "summary": "Open board game box with a winding path, tokens and dice; for family game night scenes.",
+  "tags": [
+    "board game",
+    "game",
+    "family game",
+    "tabletop",
+    "dice",
+    "tokens",
+    "game night"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the box rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 about 760 px wide and 420 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "box lid colour"
+    },
+    {
+      "name": "accent",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "winding path colour (spaces alternate with a lighter tone)"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "pop",
+        "move"
+      ],
+      "note": "move = the first token hops along the path"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "move"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

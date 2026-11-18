@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/pencil",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Pencil",
+  "summary": "Yellow wooden pencil with a pink eraser ferrule and a sharpened graphite tip; for drawing, school and writing scenes.",
+  "tags": ["pencil", "graphite", "writing", "drawing", "school", "sketch", "eraser"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the pencil lies on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the pencil is about 560 px long"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "barrel colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "wobble = the pencil rocks gently on its end"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the point then faces left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FFC83D", "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/clapperboard",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Clapperboard",
+  "summary": "Film slate with a black-and-white striped clapper arm, blank lines only and no text; anim clap snaps it shut.",
+  "tags": ["clapperboard", "clapper", "film slate", "movie", "action", "lights camera action", "film"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the board rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the board is about 520 px wide and 420 px tall"},
+    {"name": "color", "type": "colour", "default": "#1F2433", "note": "board colour"},
+    {"name": "anim", "type": "enum", "default": "clap", "values": ["none", "clap", "bob", "pop"], "note": "clap = the striped arm snaps down onto the board, then lifts"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#1F2433", "anim": "clap"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

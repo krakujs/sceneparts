@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/sitar",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Sitar",
+  "summary": "Indian sitar with a long fretted neck, round gourd body and tuning pegs, standing at an angle. For world or raga scenes.",
+  "tags": ["sitar", "indian instrument", "raga", "string instrument", "world music", "gourd", "lute"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the gourd rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 1 m long: at s = 1 about 330 px wide and 900 px tall"},
+    {"name": "color", "type": "colour", "default": "#B5793F", "note": "wood colour of the neck and gourd"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion of the whole sitar"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (neck leans to the left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#B5793F", "anim": "wobble"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/table-tennis-bat",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Table tennis bat",
+  "summary": "Table tennis bat (ping-pong paddle) with a round red rubber face and a wooden handle, standing upright.",
+  "tags": ["table tennis bat", "ping pong paddle", "table tennis", "ping pong", "paddle", "bat", "sport"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the handle's bottom rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 340 px wide and 640 px tall (hero size)"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "rubber face colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "swing"], "note": "bob = gentle up and down; swing = rocks on its handle"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the bat"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "swing"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

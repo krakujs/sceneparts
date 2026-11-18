@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/bell",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Hand bell",
+  "summary": "Brass hand bell with a wooden handle and clapper; anim ring makes it swing. For church, school and handbell scenes.",
+  "tags": ["hand bell", "handbell", "bell", "brass", "ring", "school bell", "chime"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the handle's base rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the bell is about 320 px wide and 520 px tall"},
+    {"name": "color", "type": "colour", "default": "#E0A21F", "note": "brass colour"},
+    {"name": "color2", "type": "colour", "default": "#8A5A3C", "note": "wooden handle colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "ring", "bob", "pop"], "note": "ring = the bell swings back and forth on its handle"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E0A21F", "color2": "#8A5A3C", "anim": "ring"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

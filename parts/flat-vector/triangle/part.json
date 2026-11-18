@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/triangle",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Triangle",
+  "summary": "Steel orchestral triangle hanging on a loop with its beater; anim ring makes it chime. For music and percussion scenes.",
+  "tags": ["triangle", "percussion", "orchestra", "instrument", "chime", "music", "ting"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the triangle"},
+    {"name": "y", "type": "number", "default": 1000, "note": "y of the hanging loop (the triangle hangs below it)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the triangle is about 300 px wide and 340 px tall"},
+    {"name": "color", "type": "colour", "default": "#A9B4C6", "note": "steel colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "ring", "bob", "wobble"], "note": "ring = the triangle swings and shakes as if struck"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1000, "s": 1, "color": "#A9B4C6", "anim": "ring"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

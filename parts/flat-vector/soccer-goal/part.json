@@ -1,0 +1,72 @@
+{
+  "id": "flat-vector/soccer-goal",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Soccer goal",
+  "summary": "White soccer goal with a mesh net, seen from the front at a slight angle; a sports prop for pitch scenes.",
+  "tags": [
+    "soccer goal",
+    "football goal",
+    "goal",
+    "goal post",
+    "net",
+    "sport",
+    "pitch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "ground line: the posts stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 620 px wide and 400 px tall (hero size)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "frame colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "wobble"
+      ],
+      "note": "pop = scales in from nothing; wobble = frame rocks gently on its base"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror the goal"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "none"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

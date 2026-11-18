@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/drum-kit",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Drum kit",
+  "summary": "Drum kit with bass drum, two toms, snare, hi-hat and crash cymbal on stands; anim play hits each piece in turn.",
+  "tags": ["drum kit", "drums", "drum set", "percussion", "rock band", "drummer", "kit"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the bass drum feet rest on y"},
+    {"name": "s", "type": "number", "default": 0.85, "note": "scale; room-sized: about 940 px wide and 660 px tall at s = 0.85 (the whole kit fits within the frame at this scale)"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "shell colour of the drums"},
+    {"name": "accent", "type": "colour", "default": "#FFC83D", "note": "cymbal colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "play"], "note": "play = each drum and cymbal is struck in turn and bounces"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 0.85, "color": "#3D6FE0", "accent": "#FFC83D", "anim": "play"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

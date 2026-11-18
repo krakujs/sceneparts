@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/basketball-hoop",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Basketball hoop",
+  "summary": "Basketball hoop on a pole with a square backboard, orange rim and net; the net can sway. A court prop.",
+  "tags": ["basketball hoop", "hoop", "basketball", "backboard", "rim", "net", "court"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the pole"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the base rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 430 px wide and 1040 px tall (hero size)"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "rim colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "swish", "wobble"], "note": "swish = the net sways side to side; wobble = the whole hoop rocks gently"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the hoop"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "swish"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

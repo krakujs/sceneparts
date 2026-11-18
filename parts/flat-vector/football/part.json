@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/football",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Football",
+  "summary": "Classic black and white panelled football (soccer ball), generic and unbranded; bounces or spins. A hero prop.",
+  "tags": ["football", "soccer ball", "soccer", "ball", "sport", "panelled ball", "pentagon"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the ball rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 300 px across (hero size)"},
+    {"name": "color", "type": "colour", "default": "#1F2433", "note": "colour of the panels (the patches)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bounce", "spin"], "note": "bounce = hops on the spot; spin = turns over and over"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the ball"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "bounce"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

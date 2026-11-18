@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/violin",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Violin",
+  "summary": "Violin standing upright with a bow lying beside it; anim play slides the bow across the strings for music scenes.",
+  "tags": ["violin", "fiddle", "bow", "strings", "orchestra", "classical", "music"],
+  "params": [
+    {"name": "x", "type": "number", "default": 480, "note": "centre x of the violin"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom of the violin body rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 330 px tall for the body and 560 px with the scroll; the bow adds about 300 px on the right"},
+    {"name": "color", "type": "colour", "default": "#B0622E", "note": "wood colour of the violin"},
+    {"name": "accent", "type": "colour", "default": "#5E3B26", "note": "fingerboard and bow stick colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "play", "bob", "wobble"], "note": "play = the bow slides across the strings and the strings tremble"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (bow moves to the left)"}
+  ],
+  "example": {"x": 480, "y": 1560, "s": 1, "anim": "play"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/skis",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Skis",
+  "summary": "Pair of long skis standing upright on their tails with two ski poles beside them; a winter sports prop.",
+  "tags": ["skis", "ski", "snow skis", "skiing", "poles", "winter", "snow"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the pair"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the tails rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 780 px tall and 480 px wide with poles (hero size)"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "ski base colour"},
+    {"name": "color2", "type": "colour", "default": "#FFC83D", "note": "graphic stripe colour on the skis"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "sway"], "note": "bob = gentle up and down; sway = the pair rocks a little on its tails"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the pair"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

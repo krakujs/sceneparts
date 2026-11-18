@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/car-interior",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Car interior",
+  "summary": "Full-frame flat car interior background: driver's view with windscreen, road, dashboard, wheel and mirror.",
+  "tags": ["car interior", "car", "driving", "dashboard", "windscreen", "steering wheel", "road trip", "background"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "light on the sky, road and dashboard" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "weather seen through the windscreen" },
+    { "name": "dash", "type": "colour", "default": "#353C52", "note": "dashboard colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = lane lines stream towards you and weather moves" }
+  ],
+  "example": { "time": "day", "weather": "clear" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/rice-paddy",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Rice paddy",
+  "summary": "Stepped rice terraces on a green hillside with water, rice tufts and palms; for farm and rural Asia scenes.",
+  "tags": ["rice paddy", "rice terraces", "terraces", "paddy field", "hillside", "farmland", "water", "countryside"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1600, "note": "front edge: the part stands on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "about 1000 px wide and 720 px tall at s = 1" },
+    { "name": "water", "type": "colour", "default": "#7FA7BD", "note": "terrace water colour" },
+    { "name": "anim", "type": "enum", "default": "sway", "values": ["none", "sway", "shimmer"], "note": "sway = rice tufts and palm fronds move; shimmer = water glints" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1600, "s": 1, "anim": "sway" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

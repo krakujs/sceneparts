@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/baseball-bat",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Baseball bat",
+  "summary": "Tapered wooden baseball bat with a fat barrel and a taped handle, standing upright; can swing on its base.",
+  "tags": ["baseball bat", "baseball", "bat", "wooden bat", "sport", "slugger", "batting"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the handle's end rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 700 px tall and 120 px wide (hero size)"},
+    {"name": "color", "type": "colour", "default": "#C68558", "note": "wood colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "swing", "bob"], "note": "swing = rocks on its handle; bob = gentle up and down"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the bat"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "swing"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

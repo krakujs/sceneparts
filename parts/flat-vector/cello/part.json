@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/cello",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Cello",
+  "summary": "Large upright cello on its endpin with a bow leaning beside it; anim play bows the strings.",
+  "tags": [
+    "cello",
+    "violoncello",
+    "strings",
+    "orchestra",
+    "classical",
+    "music",
+    "bow"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the endpin rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; room-scale: at s = 1 about 810 px tall (1 m = 560 px), 280 px wide"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#B0622E",
+      "note": "wood colour of the cello"
+    },
+    {
+      "name": "accent",
+      "type": "colour",
+      "default": "#5E3B26",
+      "note": "fingerboard and bow colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "play",
+        "bob",
+        "wobble"
+      ],
+      "note": "play = the bow slides across the strings and the strings tremble"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (bow moves to the left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "play"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

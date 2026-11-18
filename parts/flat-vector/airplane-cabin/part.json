@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/airplane-cabin",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Airplane cabin",
+  "summary": "Full-frame flat airplane cabin: aisle view with big seat backs, overhead bins and oval windows showing weather.",
+  "tags": ["airplane cabin", "aeroplane", "airplane seats", "cabin", "flight", "travel", "window", "background"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "light in the cabin and the sky seen through the oval windows" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "weather seen through the oval windows" },
+    { "name": "seat", "type": "colour", "default": "#3D6FE0", "note": "seat colour" },
+    { "name": "wall", "type": "colour", "default": "#EEF2F7", "note": "cabin wall colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = weather moves in the windows and the seat-belt sign blinks" }
+  ],
+  "example": { "time": "day", "weather": "clear" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

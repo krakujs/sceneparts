@@ -1326,7 +1326,7 @@
     "title": "Nature, plants, landscape and weather",
     "style": "flat-vector",
     "type": "scenery",
-    "status": "partial",
+    "status": "done",
     "generator": null,
     "brief": "Plants, landscape elements, weather and sky objects.",
     "names": [
@@ -1436,19 +1436,16 @@
       "windbreak"
     ],
     "count": 104,
-    "built": 101,
+    "built": 102,
     "date": "2026-11-18",
-    "remaining": [
-      "rice paddy"
-    ],
-    "notes": "Nature convention: grounded scenery/props stand on y (1600 scenery, 1560 small props), anim none/pop/sway for plants, flow for water; sky and weather objects are type effect centred on x,y (default y 500); landscape pieces are ~1000 px wide vignettes on y, not full backgrounds. Skipped as covered: 'campfire' (flat-vector/fire-pit), 'egg' (nest has eggs; boiled-egg/fried-egg exist). 'log' is a single fallen log (logs = stack). Deleted in review, rebuild next run: rice paddy (read as a tiered cake), cliff (read as a grey striped building), waterfall (rock was a rounded grey box, read as a water tank). Fixed in review: dead-tree, jungle and playground scaled so nothing touches the frame edge; jungle lianas no longer hang below the ground; playground anim renamed lights -> swing. Run 2026-11-18 (with batch 12): cliff and waterfall rebuilt and kept; rice paddy deleted again (terraces read as a striped rug) – needs a clearer design, e.g. a hillside with stepped curved terraces and planted rows seen at an angle."
+    "notes": "Nature convention: grounded scenery/props stand on y (1600 scenery, 1560 small props), anim none/pop/sway for plants, flow for water; sky and weather objects are type effect centred on x,y (default y 500); landscape pieces are ~1000 px wide vignettes on y, not full backgrounds. Skipped as covered: 'campfire' (flat-vector/fire-pit), 'egg' (nest has eggs; boiled-egg/fried-egg exist). 'log' is a single fallen log (logs = stack). Deleted in review, rebuild next run: rice paddy (read as a tiered cake), cliff (read as a grey striped building), waterfall (rock was a rounded grey box, read as a water tank). Fixed in review: dead-tree, jungle and playground scaled so nothing touches the frame edge; jungle lianas no longer hang below the ground; playground anim renamed lights -> swing. Run 2026-11-18 (with batch 12): cliff and waterfall rebuilt and kept; rice paddy deleted again (terraces read as a striped rug) – needs a clearer design, e.g. a hillside with stepped curved terraces and planted rows seen at an angle. Run 2026-11-18 (with batch 13): rice paddy rebuilt as a hillside with five curved stepped terraces, water, rice tufts and palms – kept."
   },
   {
     "id": "12-flat-vector-backgrounds",
     "title": "Backgrounds and settings",
     "style": "flat-vector",
     "type": "background",
-    "status": "partial",
+    "status": "done",
     "generator": "flat-vector/backdrop",
     "brief": "Full-frame parametric backgrounds (time of day, weather params) for common settings.",
     "names": [
@@ -1549,22 +1546,16 @@
       "foggy harbor"
     ],
     "count": 95,
-    "built": 92,
+    "built": 96,
     "date": "2026-11-18",
-    "remaining": [
-      "airplane cabin",
-      "car interior",
-      "throne room",
-      "podcast studio"
-    ],
-    "notes": "Foundation: flat-vector/backdrop (type background, layer bg) – outdoor sky/land or indoor room generator with time (day/morning/dusk/night) and weather (clear/cloudy/rain/snow/fog/storm); exports Sky, Hills, Mountains, Skyline, TreeLine, Ground, WeatherFx, Window, Room, Lamp, Cloud, Stars, lit, mix, rnd. Every background preset imports it and has time/weather/anim params (weather shows through Window for interiors); centre stage x 220-860, y 1300-1750 kept clear. Note: the check preview draws the style's ground strip over the bottom of backgrounds; in stories use ground:false on shots with a full-frame background. Slugs renamed where a building/scenery part already existed: mall-interior, gym-interior, indoor-pool (swimming pool), police-station-interior, fire-station-interior, cave-interior; playground scene = playground-scene. Deleted in review, rebuild next run: airplane cabin (seat rows tiny at the edges, aisle dominated), car interior (road strip drawn inside the cabin), throne room (throne read as a yellow trophy/cake), podcast studio (too dark, mics too small to read). Fixed in review: moon-surface planet continents were floating in the sky; bus-interior/car-interior passed height instead of h to WeatherFx (rain covered the whole frame)."
+    "notes": "Foundation: flat-vector/backdrop (type background, layer bg) – outdoor sky/land or indoor room generator with time (day/morning/dusk/night) and weather (clear/cloudy/rain/snow/fog/storm); exports Sky, Hills, Mountains, Skyline, TreeLine, Ground, WeatherFx, Window, Room, Lamp, Cloud, Stars, lit, mix, rnd. Every background preset imports it and has time/weather/anim params (weather shows through Window for interiors); centre stage x 220-860, y 1300-1750 kept clear. Note: the check preview draws the style's ground strip over the bottom of backgrounds; in stories use ground:false on shots with a full-frame background. Slugs renamed where a building/scenery part already existed: mall-interior, gym-interior, indoor-pool (swimming pool), police-station-interior, fire-station-interior, cave-interior; playground scene = playground-scene. Deleted in review, rebuild next run: airplane cabin (seat rows tiny at the edges, aisle dominated), car interior (road strip drawn inside the cabin), throne room (throne read as a yellow trophy/cake), podcast studio (too dark, mics too small to read). Fixed in review: moon-surface planet continents were floating in the sky; bus-interior/car-interior passed height instead of h to WeatherFx (rain covered the whole frame). Run 2026-11-18 (with batch 13): airplane-cabin, car-interior, throne-room and podcast-studio rebuilt and kept (airplane-cabin WeatherFx props fixed to numbers for tsc)."
   },
   {
     "id": "13-flat-vector-sport-music-art",
     "title": "Sport, games, music and art",
     "style": "flat-vector",
     "type": "prop",
-    "status": "todo",
+    "status": "partial",
     "generator": null,
     "brief": "Equipment and instruments.",
     "names": [
@@ -1674,7 +1665,14 @@
       "spotlight",
       "theater masks"
     ],
-    "count": 105
+    "count": 105,
+    "built": 99,
+    "date": "2026-11-18",
+    "remaining": [
+      "tuba",
+      "paint tubes"
+    ],
+    "notes": "Prop convention as 06/07: handheld items hero size at s = 1 (~300-600 px), floor/room items 1 m ≈ 560 px; wall items centre on x,y; kite is a sky item on x,y; music-note is type effect on x,y. Skipped as covered: 'guitar' (= acoustic-guitar), 'camera art' (camera, dslr-camera, film-camera exist), 'vinyl' (vinyl-record), 'headphones music' (headphones). Trademark-free slugs: rubik cube -> puzzle-cube, frisbee -> flying-disc. clay pot wheel slug kept as clay-pot-wheel (name 'Pottery wheel'). Redrawn in review: electric-guitar and bass-guitar (body horns were floating wings), sitar (read as a banjo), clay-pot-wheel (read as a coffee grinder), whistle (body detached from lanyard), yo-yo (tiny disc with a spike), yoga-mat (thin line). Examples switched off intro anims so frame 0 is not empty: podium, chess-king, jigsaw-piece, soccer-goal, music-note. Deleted in review, rebuild next run: tuba (read as a coiled target, then as a bin with ring handles – draw an upright tuba with a big upturned bell, valve cluster and looped tubing), paint tubes (read as markers/sticks twice – draw large crimped-end tubes with caps, one squeezed). Note: bass-guitar is close to electric-guitar in silhouette (4 strings, longer neck)."
   },
   {
     "id": "14-flat-vector-science-health-school",

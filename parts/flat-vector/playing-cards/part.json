@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/playing-cards",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Playing cards",
+  "summary": "Fanned hand of five playing cards with generic suit symbols and no faces; for card game and casino scenes.",
+  "tags": ["playing cards", "cards", "card game", "hand", "poker", "deck", "casino"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the fan"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the fan pivots on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the fan is about 600 px wide and 300 px tall"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "card back colour"},
+    {"name": "accent", "type": "colour", "default": "#E8503F", "note": "red suit colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "pop", "deal"], "note": "deal = the cards fan out from the pivot one after another"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the fan"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "deal"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

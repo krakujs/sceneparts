@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/flying-disc",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flying disc",
+  "summary": "Plastic flying disc seen at an angle; anim spin turns it edge-on and back, for park and beach scenes.",
+  "tags": [
+    "flying disc",
+    "disc",
+    "throw",
+    "park",
+    "beach",
+    "toss"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1400,
+      "note": "bottom of the disc's shadow line (the disc hovers above it)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 about 480 px wide and 230 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "disc colour"
+    },
+    {
+      "name": "accent",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "inner ring colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "spin",
+        "bob",
+        "pop"
+      ],
+      "note": "spin = the disc turns about its vertical axis, edge-on and back"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1400,
+    "s": 1,
+    "anim": "spin"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

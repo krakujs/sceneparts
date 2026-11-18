@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/ice-skates",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Ice skates",
+  "summary": "Pair of laced ice-skate boots with steel blades, side by side, standing on y; can bob or glide side to side.",
+  "tags": ["ice skates", "skates", "figure skates", "ice", "blades", "winter", "skating"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the pair"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the blades rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 500 px wide and 360 px tall (hero size)"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "boot colour"},
+    {"name": "color2", "type": "colour", "default": "#3D6FE0", "note": "cuff trim colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "glide"], "note": "bob = gentle up and down; glide = slides a little left and right"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the pair (toes point left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "glide"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

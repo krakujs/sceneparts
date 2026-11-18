@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/discus",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Discus",
+  "summary": "Flat discus with a metal rim, seen at an angle lying on the ground; anim spin turns it over. Use for throwing events.",
+  "tags": ["discus", "throw", "throwing", "athletics", "field event", "disc", "prop"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the disc rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 660 px wide and 380 px tall"},
+    {"name": "color", "type": "colour", "default": "#F4F1EA", "note": "disc face colour"},
+    {"name": "color2", "type": "colour", "default": "#9AA3B5", "note": "metal rim colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "spin", "bob", "pop"], "note": "spin = the disc turns over on its edge, as if mid-throw"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the disc"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#F4F1EA", "color2": "#9AA3B5", "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

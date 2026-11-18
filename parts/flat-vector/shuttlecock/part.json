@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/shuttlecock",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Shuttlecock",
+  "summary": "White shuttlecock (birdie) with a feather skirt on a round cork base, standing on y. For badminton scenes.",
+  "tags": ["shuttlecock", "birdie", "shuttle", "badminton", "feathers", "cork", "sport"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the cork base rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 340 px wide and 370 px tall (hero size)"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "feather colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble"], "note": "bob = gentle up and down; wobble = tips slightly on its base"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the shuttlecock"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "bob"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

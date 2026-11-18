@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/marbles",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Marbles",
+  "summary": "Handful of glass marbles in a little pile with swirls and highlights; for playground, game and toy scenes.",
+  "tags": ["marbles", "marble", "glass marbles", "toy", "playground", "game", "pile"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the pile"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the marbles rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 380 px wide and 200 px tall"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "main marble colour (other marbles use the accent and two more colours)"},
+    {"name": "accent", "type": "colour", "default": "#FF8A3D", "note": "second marble colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "pop", "roll"], "note": "roll = the front marble rolls forward and the others turn"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "roll"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

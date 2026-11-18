@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/cricket-bat",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Cricket bat",
+  "summary": "Cricket bat with a flat-faced willow blade and a taped handle, standing upright; can swing on its base.",
+  "tags": ["cricket bat", "cricket", "bat", "willow", "sport", "blade", "batting"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the blade's bottom rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 720 px tall and 170 px wide (hero size)"},
+    {"name": "color", "type": "colour", "default": "#E9D3A9", "note": "willow colour of the blade"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "swing", "bob"], "note": "swing = rocks back and forth on its base; bob = gentle up and down"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the bat"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "swing"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

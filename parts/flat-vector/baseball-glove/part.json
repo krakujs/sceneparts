@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/baseball-glove",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Baseball glove",
+  "summary": "Brown leather baseball glove (mitt) with laced webbing and a wrist cuff, standing upright; a sports prop.",
+  "tags": ["baseball glove", "mitt", "baseball", "glove", "leather", "fielding", "sport"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the cuff rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 480 px wide and 500 px tall (hero size)"},
+    {"name": "color", "type": "colour", "default": "#8A5A3C", "note": "leather colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble"], "note": "bob = gentle up and down; wobble = rocks on its cuff"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the glove (thumb moves to the right)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "bob"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

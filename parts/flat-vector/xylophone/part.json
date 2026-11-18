@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/xylophone",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Xylophone",
+  "summary": "Xylophone with coloured bars on a wooden frame and two mallets; anim play strikes the bars in turn. For music scenes.",
+  "tags": ["xylophone", "percussion", "glockenspiel", "mallets", "music", "kids music", "instrument"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the frame feet rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 760 px wide and 560 px tall (table-top size: about 0.6 next to a person)"},
+    {"name": "color", "type": "colour", "default": "#8A5A3C", "note": "wooden frame colour"},
+    {"name": "accent", "type": "colour", "default": "#FF8A3D", "note": "mallet head colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "play"], "note": "play = the mallets strike the bars in turn, left to right and back"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (bars run right to left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#8A5A3C", "accent": "#FF8A3D", "anim": "play"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

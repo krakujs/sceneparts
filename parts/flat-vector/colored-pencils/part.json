@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/colored-pencils",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Coloured pencils",
+  "summary": "Fanned set of coloured pencils with sharpened tips, spread from one end; for art, drawing and school scenes.",
+  "tags": ["coloured pencils", "colored pencils", "colour pencils", "drawing", "art", "school", "pencil set"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the fan rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the fan is about 520 px wide and 430 px tall"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "wobble = the fan sways gently from its base"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "wobble"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

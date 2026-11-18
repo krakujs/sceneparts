@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/chess-king",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Chess king",
+  "summary": "Single large chess king piece with a cross on top, standing on a round base; for strategy, game and royalty scenes.",
+  "tags": [
+    "chess",
+    "chess king",
+    "king",
+    "chess piece",
+    "strategy",
+    "board game",
+    "royal"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the base rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 about 300 px wide and 620 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "piece colour (use a dark colour for the black king)"
+    },
+    {
+      "name": "accent",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "trim colour on the crown ring"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "pop",
+        "wobble"
+      ],
+      "note": "pop = the king springs up onto the board"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#FFFFFF",
+    "anim": "bob"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

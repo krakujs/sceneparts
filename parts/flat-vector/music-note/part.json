@@ -1,0 +1,68 @@
+{
+  "id": "flat-vector/music-note",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Music notes",
+  "summary": "Floating quaver and beamed pair of music notes, centred on x,y; anim float drifts them up or pulse beats them.",
+  "tags": [
+    "music notes",
+    "music note",
+    "quaver",
+    "eighth note",
+    "melody",
+    "sound",
+    "song"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 700,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the group is about 360 px wide and 420 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "note colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "float",
+      "values": [
+        "none",
+        "float",
+        "pulse",
+        "spin"
+      ],
+      "note": "float = notes drift up and fade in a loop; pulse = they grow and shrink to the beat"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 700,
+    "s": 1,
+    "color": "#3D6FE0",
+    "anim": "pulse"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

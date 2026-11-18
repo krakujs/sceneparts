@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/yo-yo",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Yo-yo",
+  "summary": "Yo-yo with two round discs on a string, hanging from a finger loop; anim updown makes it bob up and down the string.",
+  "tags": ["yo-yo", "yoyo", "toy", "string toy", "play", "retro toy", "spin"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 640, "note": "top of the string: the finger loop hangs from y; the yo-yo drops about 170 px on updown, so keep y above about 800"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the disc is about 300 px wide and the yo-yo about 560 px tall"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "disc colour"},
+    {"name": "accent", "type": "colour", "default": "#FFC83D", "note": "centre axle and rim accent"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "updown", "bob", "pop"], "note": "updown = the yo-yo drops to the end of the string and climbs back"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 640, "s": 1, "anim": "updown"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/starting-block",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Starting block",
+  "summary": "Pair of angled sprint starting blocks bolted to a rail on the track; use for athletics start and race scenes.",
+  "tags": ["starting block", "starting blocks", "sprint", "athletics", "track", "race", "prop"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "track line: the rail sits on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: 1 m is about 560 px; the pair is about 840 px wide and 400 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "footplate colour"},
+    {"name": "color2", "type": "colour", "default": "#3A4157", "note": "rail and frame colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror so the blocks face left"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E8503F", "color2": "#3A4157", "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/dumbbell",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Dumbbell",
+  "summary": "Hand dumbbell with a grey handle and hexagonal plates at each end, lying on the floor; use for gym and fitness scenes.",
+  "tags": ["dumbbell", "weights", "gym", "fitness", "workout", "hand weight", "prop"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the plates rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 560 px wide and 170 px tall"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "plate colour"},
+    {"name": "color2", "type": "colour", "default": "#9AA3B5", "note": "handle colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the dumbbell"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3D6FE0", "color2": "#9AA3B5", "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
