@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/space-station",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Space station interior",
+  "summary": "Full-frame flat space station background: curved walls, round port showing a planet, lit panels and handrails.",
+  "tags": ["space station", "spaceship", "space", "interior", "sci-fi", "background", "astronaut"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "lights the room; night makes the port show stars and the lights glow" },
+    { "name": "wall", "type": "colour", "default": "#E9EEF5", "note": "module wall colour" },
+    { "name": "accent", "type": "colour", "default": "#3D6FE0", "note": "colour of the wall panel strips" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = planet slowly moves in the port and lights blink" }
+  ],
+  "example": { "time": "day" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

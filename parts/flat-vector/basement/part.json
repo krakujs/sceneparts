@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/basement",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Basement",
+  "summary": "Full-frame flat basement background: concrete walls, pipes, boiler, shelves of boxes, high window and bare bulb.",
+  "tags": ["basement", "cellar", "concrete", "pipes", "boiler", "storage", "interior", "background"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "light in the high window and room tint" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "seen through the small high window" },
+    { "name": "wall", "type": "colour", "default": "#A7AAB3", "note": "concrete wall colour" },
+    { "name": "boiler", "type": "colour", "default": "#E8503F", "note": "boiler colour" },
+    { "name": "bulb", "type": "boolean", "default": true, "note": "bare bulb switched on (glows)" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = weather and window scene move from p.f" }
+  ],
+  "example": { "time": "day", "weather": "clear", "bulb": true },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

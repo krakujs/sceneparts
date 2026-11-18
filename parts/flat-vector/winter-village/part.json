@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/winter-village",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Winter village",
+  "summary": "Full-frame flat winter village background: snowy cottages with lit panes, snowy pines, falling snow and chimney smoke.",
+  "tags": [
+    "winter",
+    "snow",
+    "village",
+    "cottage",
+    "pine trees",
+    "chimney",
+    "background"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "dusk",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light of the day; lamps and windows glow at dusk and night"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "snow",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky and weather drawn over the scene"
+    },
+    {
+      "name": "pane",
+      "type": "colour",
+      "default": "#FFD66B",
+      "note": "colour of the lit cottage panes"
+    },
+    {
+      "name": "smoke",
+      "type": "boolean",
+      "default": true,
+      "note": "chimney smoke rising from p.f"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds, leaves, smoke and lights move from p.f"
+    }
+  ],
+  "example": {
+    "time": "dusk",
+    "weather": "snow"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

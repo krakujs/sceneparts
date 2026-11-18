@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/restaurant-interior",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Restaurant interior",
+  "summary": "Full-frame flat restaurant interior background: tables with tablecloths and candles, booths, bar shelves and warm lamps.",
+  "tags": ["restaurant", "dining", "interior", "candles", "bar", "background", "food"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "dusk", "values": ["day", "morning", "dusk", "night"], "note": "room light; candles and lamps glow more at dusk and night" },
+    { "name": "cloth", "type": "colour", "default": "#E8503F", "note": "tablecloth colour" },
+    { "name": "wall", "type": "colour", "default": "#5E2A33", "note": "wall colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = candle flames flicker" }
+  ],
+  "example": { "time": "dusk" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

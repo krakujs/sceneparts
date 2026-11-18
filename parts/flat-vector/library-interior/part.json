@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/library-interior",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Library interior",
+  "summary": "Full-frame flat library interior background: tall bookshelves of coloured books, reading table with lamp, step ladder.",
+  "tags": ["library", "bookshelf", "books", "reading", "study", "interior", "background", "school"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "room tint; the reading lamp and pendant lamp glow at dusk and night" },
+    { "name": "wall", "type": "colour", "default": "#E9DDC7", "note": "wall colour" },
+    { "name": "wood", "type": "colour", "default": "#8A5A3C", "note": "shelf and table wood colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = dust motes float in the lamp light" }
+  ],
+  "example": { "time": "day", "wood": "#8A5A3C" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

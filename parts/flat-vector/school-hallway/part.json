@@ -1,0 +1,66 @@
+{
+  "id": "flat-vector/school-hallway",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "School hallway",
+  "summary": "Full-frame flat school hallway background: lockers, classroom doors, notice board, tiled floor, ceiling lights.",
+  "tags": [
+    "hallway",
+    "school",
+    "corridor",
+    "lockers",
+    "classroom",
+    "education",
+    "background",
+    "interior"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "tints the walls, floor and lockers"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#F3E3C7",
+      "note": "wall colour"
+    },
+    {
+      "name": "lockers",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "locker colour (alternate lockers are a shade darker)"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = ceiling lights gently flicker"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "lockers": "#3D6FE0"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/desert",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Desert",
+  "summary": "Full-frame flat desert background: layered dunes, a far mesa, heat haze, saguaro cacti and rocks under a bright sun.",
+  "tags": ["desert", "dunes", "cactus", "sand", "heat", "hot", "background", "outdoor"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "sun and sand light" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "sky tint and animated weather (storm = dust storm feel)" },
+    { "name": "sand", "type": "colour", "default": "#E9CB94", "note": "sand colour of the ground" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = clouds and heat haze move from p.f" }
+  ],
+  "example": { "time": "day", "weather": "clear", "sand": "#E9CB94" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

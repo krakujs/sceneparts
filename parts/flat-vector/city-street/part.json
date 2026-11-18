@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/city-street",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "City street",
+  "summary": "Full-frame flat city street background: shopfronts with awnings, sidewalk, road, street lamps and a traffic light.",
+  "tags": [
+    "city",
+    "street",
+    "shops",
+    "traffic light",
+    "sidewalk",
+    "urban",
+    "background"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light of the day; lamps and windows glow at dusk and night"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky and weather drawn over the scene"
+    },
+    {
+      "name": "awning",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "shop awning colour"
+    },
+    {
+      "name": "trafficLight",
+      "type": "boolean",
+      "default": true,
+      "note": "traffic light on a pole at the right kerb"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds, leaves, smoke and lights move from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

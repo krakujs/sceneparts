@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/summer-field",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Summer field",
+  "summary": "Full-frame flat summer field background: swaying tall grass and wildflowers, bright sun, wide sky and a lone tree.",
+  "tags": ["summer", "field", "meadow", "grass", "wildflowers", "sunny", "background", "outdoor"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "bright day by default; dusk gives a golden field" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "sky tint and animated weather" },
+    { "name": "grass", "type": "colour", "default": "#A9D36E", "note": "grass colour" },
+    { "name": "wildflowers", "type": "boolean", "default": true, "note": "show swaying wildflowers" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = grass, flowers and clouds sway from p.f" }
+  ],
+  "example": { "time": "day", "weather": "clear", "grass": "#A9D36E", "wildflowers": true },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

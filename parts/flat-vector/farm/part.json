@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/farm",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Farm",
+  "summary": "Full-frame flat farm background: red barn, silo, fence, ploughed field rows, hay bales and far hills.",
+  "tags": ["farm", "barn", "silo", "countryside", "hay", "fields", "background", "outdoor"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "sky and landscape light" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "sky tint and animated weather" },
+    { "name": "barn", "type": "colour", "default": "#E8503F", "note": "barn wall colour" },
+    { "name": "field", "type": "colour", "default": "#4BB46A", "note": "field colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = clouds move from p.f" }
+  ],
+  "example": { "time": "day", "weather": "clear", "barn": "#E8503F" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

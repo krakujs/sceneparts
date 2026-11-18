@@ -1,0 +1,32 @@
+{
+  "id": "flat-vector/backdrop",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Flat backdrop",
+  "summary": "Flat vector full-frame background generator: outdoor sky/land or indoor room, with time of day and weather params.",
+  "tags": ["background", "backdrop", "generator", "sky", "weather", "time of day", "room", "landscape", "setting"],
+  "params": [
+    { "name": "setting", "type": "enum", "default": "outdoor", "values": ["outdoor", "indoor"], "note": "outdoor = sky, land and ground; indoor = wall, floor, window and lamp" },
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "lights the sky and every colour; night shows moon and stars" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "greys the sky and adds animated rain, snow, fog or lightning (also seen through indoor windows)" },
+    { "name": "land", "type": "enum", "default": "hills", "values": ["hills", "mountains", "city", "flat"], "note": "outdoor only: what stands on the horizon" },
+    { "name": "horizon", "type": "number", "default": 1150, "note": "outdoor horizon y; ground starts about 280 px lower" },
+    { "name": "groundColor", "type": "colour", "default": "#4BB46A", "note": "outdoor grass colour (snow weather turns it white; city land always gets a road)" },
+    { "name": "wall", "type": "colour", "default": "#F3E3C7", "note": "indoor wall colour" },
+    { "name": "floor", "type": "colour", "default": "#C99A6B", "note": "indoor floor colour" },
+    { "name": "floorKind", "type": "enum", "default": "boards", "values": ["boards", "tiles", "checker", "carpet", "concrete"], "note": "indoor floor pattern" },
+    { "name": "floorY", "type": "number", "default": 1360, "note": "indoor y where wall meets floor; stand characters a little below it" },
+    { "name": "curtains", "type": "colour", "default": "#1FA39A", "note": "indoor window curtains, or none" },
+    { "name": "showWindow", "type": "boolean", "default": true, "note": "indoor: show the window" },
+    { "name": "lamp", "type": "boolean", "default": true, "note": "indoor: ceiling lamp (glows at dusk and night)" },
+    { "name": "seed", "type": "number", "default": 1, "note": "varies cloud, hill, skyline and tree placement" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = clouds drift and trees sway from p.f; weather always animates" }
+  ],
+  "example": { "setting": "outdoor", "time": "day", "weather": "clear", "land": "hills" },
+  "uses": ["flat-vector/style"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

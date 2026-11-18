@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/snowy-mountains",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Snowy mountains",
+  "summary": "Full-frame flat snowy mountain background: snow-capped peaks, snow slopes and ground, and snowy pines at the sides.",
+  "tags": ["snow", "winter", "mountains", "alpine", "pine", "ski", "background", "outdoor"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "light on the snow" },
+    { "name": "weather", "type": "enum", "default": "snow", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "snow is the default: falling flakes; clear gives a bright winter day" },
+    { "name": "treeCover", "type": "boolean", "default": true, "note": "show snowy pine trees" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = clouds move and snow falls from p.f" }
+  ],
+  "example": { "time": "day", "weather": "snow", "treeCover": true },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

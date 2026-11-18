@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/bus-interior",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Bus interior",
+  "summary": "Full-frame flat bus interior background: seats, grab poles, a glass strip with moving scenery, stop buttons.",
+  "tags": ["bus", "bus interior", "commute", "transport", "public transport", "background", "seats"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "light inside and the scenery seen through the glass strip" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "weather seen through the glass strip" },
+    { "name": "seat", "type": "colour", "default": "#FF8A3D", "note": "seat colour" },
+    { "name": "wall", "type": "colour", "default": "#E7EDF5", "note": "wall colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = scenery streams past the glass strip, stop lights flash" }
+  ],
+  "example": { "time": "day", "weather": "clear" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "flat-vector/operating-theater",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Operating theater",
+  "summary": "Full-frame flat operating theater background: operating table, round surgical lights, monitors, trolley.",
+  "tags": [
+    "operating theater",
+    "operating room",
+    "surgery",
+    "hospital",
+    "medical",
+    "surgical lights",
+    "background",
+    "interior"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "tints the room; the theater has no Windows, so there is no weather"
+    },
+    {
+      "name": "tiles",
+      "type": "colour",
+      "default": "#BFE7E0",
+      "note": "green-blue wall tile colour"
+    },
+    {
+      "name": "lightsOn",
+      "type": "boolean",
+      "default": true,
+      "note": "surgical lights on (false = dark lenses)"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = the surgical light glow and monitor traces move"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "tiles": "#BFE7E0",
+    "lightsOn": true
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

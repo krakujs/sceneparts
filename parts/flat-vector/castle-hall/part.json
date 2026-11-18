@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/castle-hall",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Castle hall",
+  "summary": "Full-frame flat castle hall background: stone walls, hanging banners, flickering torches, tall windows, long table.",
+  "tags": ["castle", "hall", "medieval", "stone", "torch", "banner", "fantasy", "background"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "dusk", "values": ["day", "morning", "dusk", "night"], "note": "light through the windows; torches glow more at dusk and night" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "seen through the tall windows" },
+    { "name": "banner", "type": "colour", "default": "#3D6FE0", "note": "banner colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = torch flames flicker and weather moves from p.f" }
+  ],
+  "example": { "time": "dusk", "weather": "clear" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

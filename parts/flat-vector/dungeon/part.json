@@ -1,0 +1,20 @@
+{
+  "id": "flat-vector/dungeon",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Dungeon",
+  "summary": "Full-frame flat dungeon background: cartoon stone walls, barred cell, hanging chains, torch flicker, straw floor.",
+  "tags": ["dungeon", "cell", "prison", "stone", "torch", "chains", "fantasy", "background"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "dusk", "values": ["day", "morning", "dusk", "night"], "note": "light tint; the torch glows more at dusk and night" },
+    { "name": "stone", "type": "colour", "default": "#8F93A3", "note": "stone wall colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = torch flame flickers from p.f" }
+  ],
+  "example": { "time": "dusk" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

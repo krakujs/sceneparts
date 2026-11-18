@@ -1436,22 +1436,20 @@
       "windbreak"
     ],
     "count": 104,
-    "built": 99,
+    "built": 101,
     "date": "2026-11-18",
     "remaining": [
-      "rice paddy",
-      "cliff",
-      "waterfall"
+      "rice paddy"
     ],
-    "notes": "Nature convention: grounded scenery/props stand on y (1600 scenery, 1560 small props), anim none/pop/sway for plants, flow for water; sky and weather objects are type effect centred on x,y (default y 500); landscape pieces are ~1000 px wide vignettes on y, not full backgrounds. Skipped as covered: 'campfire' (flat-vector/fire-pit), 'egg' (nest has eggs; boiled-egg/fried-egg exist). 'log' is a single fallen log (logs = stack). Deleted in review, rebuild next run: rice paddy (read as a tiered cake), cliff (read as a grey striped building), waterfall (rock was a rounded grey box, read as a water tank). Fixed in review: dead-tree, jungle and playground scaled so nothing touches the frame edge; jungle lianas no longer hang below the ground; playground anim renamed lights -> swing."
+    "notes": "Nature convention: grounded scenery/props stand on y (1600 scenery, 1560 small props), anim none/pop/sway for plants, flow for water; sky and weather objects are type effect centred on x,y (default y 500); landscape pieces are ~1000 px wide vignettes on y, not full backgrounds. Skipped as covered: 'campfire' (flat-vector/fire-pit), 'egg' (nest has eggs; boiled-egg/fried-egg exist). 'log' is a single fallen log (logs = stack). Deleted in review, rebuild next run: rice paddy (read as a tiered cake), cliff (read as a grey striped building), waterfall (rock was a rounded grey box, read as a water tank). Fixed in review: dead-tree, jungle and playground scaled so nothing touches the frame edge; jungle lianas no longer hang below the ground; playground anim renamed lights -> swing. Run 2026-11-18 (with batch 12): cliff and waterfall rebuilt and kept; rice paddy deleted again (terraces read as a striped rug) – needs a clearer design, e.g. a hillside with stepped curved terraces and planted rows seen at an angle."
   },
   {
     "id": "12-flat-vector-backgrounds",
     "title": "Backgrounds and settings",
     "style": "flat-vector",
     "type": "background",
-    "status": "todo",
-    "generator": null,
+    "status": "partial",
+    "generator": "flat-vector/backdrop",
     "brief": "Full-frame parametric backgrounds (time of day, weather params) for common settings.",
     "names": [
       "city skyline day",
@@ -1550,7 +1548,16 @@
       "rainy street",
       "foggy harbor"
     ],
-    "count": 95
+    "count": 95,
+    "built": 92,
+    "date": "2026-11-18",
+    "remaining": [
+      "airplane cabin",
+      "car interior",
+      "throne room",
+      "podcast studio"
+    ],
+    "notes": "Foundation: flat-vector/backdrop (type background, layer bg) – outdoor sky/land or indoor room generator with time (day/morning/dusk/night) and weather (clear/cloudy/rain/snow/fog/storm); exports Sky, Hills, Mountains, Skyline, TreeLine, Ground, WeatherFx, Window, Room, Lamp, Cloud, Stars, lit, mix, rnd. Every background preset imports it and has time/weather/anim params (weather shows through Window for interiors); centre stage x 220-860, y 1300-1750 kept clear. Note: the check preview draws the style's ground strip over the bottom of backgrounds; in stories use ground:false on shots with a full-frame background. Slugs renamed where a building/scenery part already existed: mall-interior, gym-interior, indoor-pool (swimming pool), police-station-interior, fire-station-interior, cave-interior; playground scene = playground-scene. Deleted in review, rebuild next run: airplane cabin (seat rows tiny at the edges, aisle dominated), car interior (road strip drawn inside the cabin), throne room (throne read as a yellow trophy/cake), podcast studio (too dark, mics too small to read). Fixed in review: moon-surface planet continents were floating in the sky; bus-interior/car-interior passed height instead of h to WeatherFx (rain covered the whole frame)."
   },
   {
     "id": "13-flat-vector-sport-music-art",

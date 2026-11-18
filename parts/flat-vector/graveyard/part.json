@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/graveyard",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Graveyard",
+  "summary": "Full-frame flat graveyard background: rounded blank headstones, crooked fence, bare tree, moon and bats.",
+  "tags": [
+    "graveyard",
+    "cemetery",
+    "night",
+    "headstones",
+    "moon",
+    "spooky",
+    "background"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "night",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light of the day; lamps and windows glow at dusk and night"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky and weather drawn over the scene"
+    },
+    {
+      "name": "stone",
+      "type": "colour",
+      "default": "#D9DEE8",
+      "note": "headstone colour"
+    },
+    {
+      "name": "bats",
+      "type": "boolean",
+      "default": true,
+      "note": "a few cartoon bats flying across from p.f"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds, leaves, smoke and lights move from p.f"
+    }
+  ],
+  "example": {
+    "time": "night",
+    "weather": "clear"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

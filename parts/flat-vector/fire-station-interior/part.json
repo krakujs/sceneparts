@@ -1,0 +1,20 @@
+{
+  "id": "flat-vector/fire-station-interior",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Fire station interior",
+  "summary": "Full-frame flat fire station interior: red fire engine, roller door, brass pole, hoses and helmets on hooks.",
+  "tags": ["fire station", "firefighter", "engine bay", "fire engine", "rescue", "emergency", "background", "indoor"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "bay light tint" },
+    { "name": "engine", "type": "colour", "default": "#E8503F", "note": "fire engine colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = the engine's warning light flashes from p.f" }
+  ],
+  "example": { "time": "day" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

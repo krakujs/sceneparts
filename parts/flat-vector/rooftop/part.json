@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/rooftop",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Rooftop",
+  "summary": "Full-frame flat rooftop background: parapet, wooden water tank, vents, roof hatch, antenna and a city skyline behind.",
+  "tags": [
+    "rooftop",
+    "roof",
+    "city",
+    "skyline",
+    "water tank",
+    "antenna",
+    "background"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light of the day; lamps and windows glow at dusk and night"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky and weather drawn over the scene"
+    },
+    {
+      "name": "tank",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "water tank wood colour"
+    },
+    {
+      "name": "antenna",
+      "type": "boolean",
+      "default": true,
+      "note": "antenna mast with a blinking light"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds, leaves, smoke and lights move from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

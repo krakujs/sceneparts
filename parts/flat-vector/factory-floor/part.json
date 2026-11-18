@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/factory-floor",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Factory floor",
+  "summary": "Full-frame flat factory floor background: conveyor with moving boxes, machines, pipes, safety lines, high Windows.",
+  "tags": [
+    "factory",
+    "factory floor",
+    "conveyor",
+    "machines",
+    "industry",
+    "manufacturing",
+    "background",
+    "interior"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light through the high Windows and room tint"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "seen through the high Windows"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#C9D1DC",
+      "note": "wall colour"
+    },
+    {
+      "name": "machine",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "main machine colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = boxes move on the belt, gauges turn and weather animates"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear",
+    "machine": "#3D6FE0"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

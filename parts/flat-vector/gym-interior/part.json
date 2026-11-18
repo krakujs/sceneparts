@@ -1,0 +1,20 @@
+{
+  "id": "flat-vector/gym-interior",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Gym interior",
+  "summary": "Full-frame flat gym interior background: mirror wall, weight rack, treadmills, dumbbells, rubber floor.",
+  "tags": ["gym", "fitness", "workout", "exercise", "weights", "treadmill", "background", "indoor"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "room light tint" },
+    { "name": "accent", "type": "colour", "default": "#FF8A3D", "note": "wall stripe and treadmill accent colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = mirror glints and belt movement from p.f" }
+  ],
+  "example": { "time": "day" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

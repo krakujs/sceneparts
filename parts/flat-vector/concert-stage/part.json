@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/concert-stage",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Concert stage",
+  "summary": "Full-frame flat concert stage background: lighting truss, moving coloured beams, back screen, speakers, crowd.",
+  "tags": ["concert", "stage", "gig", "music", "lights", "crowd", "background", "live"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "night", "values": ["day", "morning", "dusk", "night"], "note": "overall light; night makes the beams stand out" },
+    { "name": "beam1", "type": "colour", "default": "#F27BA6", "note": "first moving beam colour" },
+    { "name": "beam2", "type": "colour", "default": "#1FA39A", "note": "second moving beam colour" },
+    { "name": "beam3", "type": "colour", "default": "#FFC83D", "note": "third moving beam colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = beams sweep and crowd bobs from p.f" }
+  ],
+  "example": { "time": "night" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

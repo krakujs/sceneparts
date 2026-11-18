@@ -1,0 +1,20 @@
+{
+  "id": "flat-vector/server-room",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Server room",
+  "summary": "Full-frame flat server room background: rows of server racks with blinking LEDs, raised floor tiles and cable tray.",
+  "tags": ["server room", "data center", "servers", "racks", "computers", "tech", "background", "interior"],
+  "params": [
+    { "name": "led", "type": "colour", "default": "#6FE3FF", "note": "LED light colour" },
+    { "name": "wall", "type": "colour", "default": "#2A3A66", "note": "wall colour (cool blue)" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = LEDs blink on their own rhythms; none = steady LEDs" }
+  ],
+  "example": { "led": "#6FE3FF", "wall": "#2A3A66" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

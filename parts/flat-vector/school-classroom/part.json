@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/school-classroom",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "School classroom",
+  "summary": "Full-frame flat school classroom background: chalkboard, clock, Windows, teacher and student desks.",
+  "tags": [
+    "classroom",
+    "school",
+    "class",
+    "chalkboard",
+    "desks",
+    "education",
+    "background",
+    "interior"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "outside light through the Windows and room tint"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "seen through the Windows"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#F3E3C7",
+      "note": "wall colour"
+    },
+    {
+      "name": "board",
+      "type": "colour",
+      "default": "#167A73",
+      "note": "chalkboard colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds drift, clock hands turn and weather animates"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

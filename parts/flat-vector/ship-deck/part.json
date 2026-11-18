@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/ship-deck",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Ship deck",
+  "summary": "Full-frame flat ship deck background: wooden deck boards, railing, lifebuoy, funnel and mast, sea and horizon beyond.",
+  "tags": ["ship", "boat", "deck", "sea", "ocean", "sailing", "background", "voyage"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "sky and sea light" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "sky and weather over the sea" },
+    { "name": "sea", "type": "colour", "default": "#3D8FD6", "note": "sea colour" },
+    { "name": "deck", "type": "colour", "default": "#B5814F", "note": "wooden deck colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = waves roll and clouds move from p.f" }
+  ],
+  "example": { "time": "day", "weather": "clear" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

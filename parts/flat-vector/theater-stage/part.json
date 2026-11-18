@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/theater-stage",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Theater stage",
+  "summary": "Full-frame flat theatre stage background: proscenium arch, red velvet curtains, wooden floor, footlights, spotlights.",
+  "tags": ["theatre", "theater", "stage", "curtains", "play", "performance", "background", "indoor"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "room light; footlights glow more at dusk and night" },
+    { "name": "curtains", "type": "colour", "default": "#E8503F", "note": "velvet curtain and valance colour" },
+    { "name": "wood", "type": "colour", "default": "#B9825A", "note": "stage floor colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = curtains sway and footlights twinkle from p.f" }
+  ],
+  "example": { "time": "dusk" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

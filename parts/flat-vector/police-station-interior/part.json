@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/police-station-interior",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Police station interior",
+  "summary": "Full-frame flat police station background: front desk, notice board, waiting chairs, blue accents, Window.",
+  "tags": [
+    "police station",
+    "police",
+    "station",
+    "front desk",
+    "waiting room",
+    "government",
+    "background",
+    "interior"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light through the blinds and room tint"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "seen through the blinds"
+    },
+    {
+      "name": "accent",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "blue accent colour (stripe, desk, chairs)"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#E9F0F7",
+      "note": "wall colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds drift behind the blinds and weather animates"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear",
+    "accent": "#3D6FE0"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

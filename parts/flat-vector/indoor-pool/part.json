@@ -1,0 +1,20 @@
+{
+  "id": "flat-vector/indoor-pool",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Indoor swimming pool",
+  "summary": "Full-frame flat indoor pool background: lane ropes, rippling water, tiled edges, ladder, diving board.",
+  "tags": ["swimming pool", "pool", "swim", "water", "tiles", "leisure centre", "background", "indoor"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "room light tint" },
+    { "name": "water", "type": "colour", "default": "#3FB8E6", "note": "water colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = ripples move across the water from p.f" }
+  ],
+  "example": { "time": "day" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

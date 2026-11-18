@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/cinema-hall",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Cinema hall",
+  "summary": "Full-frame flat cinema hall background: glowing screen, projector beam, red seat rows, aisle lights.",
+  "tags": ["cinema", "movie theatre", "screening", "seats", "film", "background", "indoor"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "room light; screen and aisle lights glow more at dusk and night" },
+    { "name": "seats", "type": "colour", "default": "#E8503F", "note": "seat colour" },
+    { "name": "screen", "type": "colour", "default": "#7FB8E8", "note": "screen colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = screen highlight and aisle lights move from p.f" }
+  ],
+  "example": { "time": "night" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

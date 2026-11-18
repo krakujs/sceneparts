@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/rainy-street",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Rainy street",
+  "summary": "Full-frame flat rainy street background: wet road with puddle reflections, glowing lamps, dark buildings, rain.",
+  "tags": [
+    "rain",
+    "rainy",
+    "street",
+    "puddles",
+    "reflections",
+    "night",
+    "background"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "night",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light of the day; lamps and windows glow at dusk and night"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "rain",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky and weather drawn over the scene"
+    },
+    {
+      "name": "reflections",
+      "type": "boolean",
+      "default": true,
+      "note": "lamp light reflected in the puddles"
+    },
+    {
+      "name": "pavement",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "wet road colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds, leaves, smoke and lights move from p.f"
+    }
+  ],
+  "example": {
+    "time": "night",
+    "weather": "rain"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

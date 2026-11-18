@@ -1,0 +1,77 @@
+{
+  "id": "flat-vector/waterfall",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Waterfall",
+  "summary": "Water pouring over a rock ledge into a foamy pool, with rocky sides and moss. For rivers, nature and fantasy.",
+  "tags": [
+    "waterfall",
+    "falls",
+    "cascade",
+    "rock ledge",
+    "pool",
+    "splash",
+    "flowing water"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the part stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 1000 px wide and 720 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8EC5E8",
+      "note": "water colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "foam and streak colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "flow"
+      ],
+      "note": "flow = the water streaks fall, and the ripples and spray move"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "flow"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

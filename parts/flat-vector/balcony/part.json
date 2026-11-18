@@ -1,0 +1,84 @@
+{
+  "id": "flat-vector/balcony",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Balcony",
+  "summary": "Full-frame flat balcony background: foreground railing, potted plants, a chair at the side and a city or hills view.",
+  "tags": [
+    "balcony",
+    "terrace",
+    "plants",
+    "railing",
+    "view",
+    "home",
+    "background"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light of the day; lamps and windows glow at dusk and night"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky and weather drawn over the scene"
+    },
+    {
+      "name": "view",
+      "type": "enum",
+      "default": "city",
+      "values": [
+        "city",
+        "hills"
+      ],
+      "note": "what lies beyond the balcony"
+    },
+    {
+      "name": "deck",
+      "type": "colour",
+      "default": "#C99A6B",
+      "note": "wooden deck colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds, leaves, smoke and lights move from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear",
+    "view": "city"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

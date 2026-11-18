@@ -1,0 +1,19 @@
+{
+  "id": "flat-vector/underwater",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Underwater",
+  "summary": "Full-frame flat underwater background: blue water bands, surface light rays, sandy seabed, seaweed, coral and bubbles.",
+  "tags": ["underwater", "sea", "ocean", "coral", "seaweed", "bubbles", "background"],
+  "params": [
+    { "name": "depth", "type": "enum", "default": "shallow", "values": ["shallow", "deep"], "note": "shallow = bright turquoise with many light rays; deep = dark blue, faint light and darker seabed" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = bubbles rise, weed sways and rays shift from p.f" }
+  ],
+  "example": { "depth": "shallow" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
