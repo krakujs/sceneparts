@@ -1,0 +1,72 @@
+{
+  "id": "flat-vector/flask",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Conical flask",
+  "summary": "Conical Erlenmeyer lab flask with a narrow neck and bubbling coloured liquid; use for chemistry or experiments.",
+  "tags": [
+    "flask",
+    "erlenmeyer",
+    "lab",
+    "chemistry",
+    "science",
+    "fizz",
+    "experiment"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 about 320 px wide and 400 px tall; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "liquid colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bubbles"
+      ],
+      "note": "bubbles = fizz rises from the liquid"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#7B5CD6",
+    "anim": "bubbles"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

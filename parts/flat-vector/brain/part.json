@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/brain",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Brain",
+  "summary": "Pink brain in side view with folds and cerebellum; anim glow or pulse. For thinking and science scenes.",
+  "tags": ["brain", "anatomy", "mind", "neuroscience", "thinking", "organ", "idea"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 900, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 500 px wide" },
+    { "name": "color", "type": "colour", "default": "#F27BA6", "note": "brain colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "glow", "pulse"], "note": "glow = a soft yellow halo breathes; pulse = the brain swells and settles" }
+  ],
+  "example": { "x": 540, "y": 900, "s": 1, "color": "#F27BA6", "anim": "glow" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/tooth",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Tooth",
+  "summary": "Big white molar with roots, optional cavity spot and a twinkling shine. For dental, hygiene and health scenes.",
+  "tags": ["tooth", "molar", "teeth", "dentist", "dental", "cavity", "oral health"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 900, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 360 px wide" },
+    { "name": "color", "type": "colour", "default": "#FFFFFF", "note": "enamel colour" },
+    { "name": "color2", "type": "colour", "default": "#FFC83D", "note": "sparkle colour" },
+    { "name": "cavity", "type": "boolean", "default": false, "note": "true = show a decay spot on the crown" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "shine"], "note": "shine = sparkles twinkle on the enamel" }
+  ],
+  "example": { "x": 540, "y": 900, "s": 1, "color": "#FFFFFF", "color2": "#FFC83D", "cavity": false, "anim": "shine" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

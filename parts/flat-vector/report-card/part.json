@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/report-card",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Report Card",
+  "summary": "School report card sheet with subject rows, letter grade boxes and a star sticker; for grades, school and results.",
+  "tags": ["report card", "school report", "grades", "results", "school", "marks", "exam"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the card rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size at s = 1 (about 500 px wide, 640 px tall)"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "header band colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "pop = scales in with a small overshoot"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3D6FE0", "anim": "wobble"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

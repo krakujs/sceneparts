@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/magnifying-glass",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Magnifying glass",
+  "summary": "Round lens with a glass shine and an angled handle; anim search moves the lens in a small circle.",
+  "tags": ["magnifying glass", "magnifier", "search", "zoom", "investigate", "lens", "find"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the grip"},
+    {"name": "y", "type": "number", "default": 1560, "note": "the grip's bottom tip rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 520 px across; use about 0.2–0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "rim colour"},
+    {"name": "color2", "type": "colour", "default": "#8A5A3C", "note": "handle colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "search"], "note": "search = the lens circles while the handle stays still"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3D6FE0", "color2": "#8A5A3C", "anim": "search"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

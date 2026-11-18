@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/board-eraser",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Board eraser",
+  "summary": "Wooden blackboard duster with a felt pad and puffs of chalk dust; anim wipe sweeps it back and forth.",
+  "tags": [
+    "board eraser",
+    "duster",
+    "chalk eraser",
+    "blackboard",
+    "wipe",
+    "classroom",
+    "chalk dust"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom of the felt pad rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "hero size: at s = 1 about 440 px wide; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "wood colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#9AA3B5",
+      "note": "felt colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "wipe"
+      ],
+      "note": "wipe = sweeps side to side and sheds chalk dust"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#8A5A3C",
+    "color2": "#9AA3B5",
+    "anim": "wipe"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

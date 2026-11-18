@@ -1,0 +1,72 @@
+{
+  "id": "flat-vector/prism",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Glass prism",
+  "summary": "Triangular glass prism with a white beam in and a rainbow fan out; use for optics or light-splitting scenes.",
+  "tags": [
+    "prism",
+    "rainbow",
+    "light",
+    "optics",
+    "spectrum",
+    "glass",
+    "physics"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 1000 px wide with the beam and 340 px tall; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8EC5E8",
+      "note": "glass colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "light"
+      ],
+      "note": "light = the beam travels in and the rainbow fans out"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#8EC5E8",
+    "anim": "light"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

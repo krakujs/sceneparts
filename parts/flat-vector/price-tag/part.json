@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/price-tag",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Price tag",
+  "summary": "Card price tag on a string with a hole and a percent mark; anim swing for sales and discounts.",
+  "tags": ["price tag", "tag", "sale", "discount", "label", "offer", "shopping"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the pivot"},
+    {"name": "y", "type": "number", "default": 700, "note": "pivot: the point where the string hangs from (not the bottom); the tag hangs below it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 380 px wide and 400 px tall including the string"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "tag colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "swing"], "note": "swing = the tag swings gently from the pivot"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 700, "s": 1, "color": "#E8503F", "anim": "swing"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

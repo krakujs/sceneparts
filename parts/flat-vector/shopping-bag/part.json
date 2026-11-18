@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/shopping-bag",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Shopping bag",
+  "summary": "Plain unbranded paper shopping bag with rope handles; anim bob sways it as if carried.",
+  "tags": ["shopping bag", "paper bag", "shopping", "retail", "carrier bag", "store", "gift"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the bag stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 340 px wide and 530 px tall; use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#E9D3A9", "note": "paper colour"},
+    {"name": "color2", "type": "colour", "default": "#8A5A3C", "note": "rope handle colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob"], "note": "bob = the bag sways and lifts a little"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E9D3A9", "color2": "#8A5A3C", "anim": "bob"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "flat-vector/blood-drop",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Blood drop",
+  "summary": "Single red teardrop with a shine, centred on x,y; for blood donation and health icons. Not gory.",
+  "tags": [
+    "blood drop",
+    "blood donation",
+    "droplet",
+    "red drop",
+    "health",
+    "teardrop",
+    "donor"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "at s = 1 about 180 px wide and 270 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "drop colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "drip",
+        "pulse"
+      ],
+      "note": "drip = falls and squashes in a loop; pulse = gentle beat"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "s": 1,
+    "color": "#E8503F",
+    "anim": "drip"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

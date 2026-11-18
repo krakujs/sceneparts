@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/money-bag",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Money bag",
+  "summary": "Tied cloth money sack with a coin emblem and coins at its base; anim bounce for payouts and riches.",
+  "tags": ["money bag", "money", "cash", "savings", "payout", "wealth", "coins", "treasure"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the bag rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 480 px wide and 560 px tall; use about 0.2–0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#4BB46A", "note": "cloth colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bounce"], "note": "bounce = the sack hops a little and its shadow shrinks"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#4BB46A", "anim": "bounce"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

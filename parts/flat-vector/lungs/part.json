@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/lungs",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Lungs",
+  "summary": "Pair of pink lungs with trachea and bronchi; anim breathe swells them in and out. For breathing and health lessons.",
+  "tags": ["lungs", "breathing", "anatomy", "respiratory", "organ", "biology", "health"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 900, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 640 px wide" },
+    { "name": "color", "type": "colour", "default": "#F27BA6", "note": "lung colour" },
+    { "name": "color2", "type": "colour", "default": "#D9578A", "note": "airway colour (trachea and bronchi)" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "breathe"], "note": "breathe = the pair scales in and out over 120 frames" }
+  ],
+  "example": { "x": 540, "y": 900, "s": 1, "color": "#F27BA6", "color2": "#D9578A", "anim": "breathe" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

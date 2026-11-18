@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/lens",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Optical lens",
+  "summary": "Biconvex glass lens in a holder on a stand, with rays converging to a focus; use for optics or photography scenes.",
+  "tags": [
+    "lens",
+    "optics",
+    "magnifying",
+    "focus",
+    "light",
+    "rays",
+    "physics"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 900 px wide and 600 px tall; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#A9DCF2",
+      "note": "glass colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#9AA3B5",
+      "note": "holder colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "rays"
+      ],
+      "note": "rays = light flows along the rays to the focus, which glows"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#A9DCF2",
+    "color2": "#9AA3B5",
+    "anim": "rays"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

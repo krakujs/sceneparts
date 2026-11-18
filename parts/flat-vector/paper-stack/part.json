@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/paper-stack",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Paper Stack",
+  "summary": "Neat stack of white paper sheets with the top sheet askew; anim flutter lifts it. For reports, forms and paperwork.",
+  "tags": ["paper stack", "papers", "documents", "ream", "paperwork", "sheets", "stack"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the stack rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the stack is about 380 px wide"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "paper colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "flutter", "bob", "wobble", "pop"], "note": "flutter = top sheet lifts and flaps"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FFFFFF", "anim": "flutter"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

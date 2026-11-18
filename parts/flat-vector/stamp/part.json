@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/stamp",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Postage Stamp",
+  "summary": "Perforated postage stamp with a sun-and-mountains picture and a wavy postmark; for mail, travel and postcards.",
+  "tags": ["stamp", "postage stamp", "postmark", "mail", "post", "postcard", "travel"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the stamp stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size at s = 1 (about 380 px tall)"},
+    {"name": "color", "type": "colour", "default": "#1FA39A", "note": "stamp border colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "pop = scales in with a small overshoot"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#1FA39A", "anim": "wobble"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

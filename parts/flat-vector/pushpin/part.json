@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/pushpin",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Push Pin",
+  "summary": "Round-head push pin stuck at an angle with a small shadow; for noticeboards, reminders and corkboards.",
+  "tags": ["push pin", "pushpin", "thumbtack", "pin", "noticeboard", "corkboard", "reminder"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "the pin tip sits on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 260 px tall"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "head colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "pop = scales in with a small overshoot"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the angle"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E8503F", "anim": "pop"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

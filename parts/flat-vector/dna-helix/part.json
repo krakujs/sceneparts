@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/dna-helix",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "DNA helix",
+  "summary": "Vertical double helix of two coloured strands with rungs, centred on x,y; use for genetics or biology scenes.",
+  "tags": [
+    "dna",
+    "helix",
+    "genetics",
+    "biology",
+    "double helix",
+    "science",
+    "gene"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the helix is about 400 px wide and 900 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1FA39A",
+      "note": "first strand colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "second strand colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "spin"
+      ],
+      "note": "spin = the strands phase-shift so the helix looks like it turns"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "s": 1,
+    "color": "#1FA39A",
+    "color2": "#FF8A3D",
+    "anim": "spin"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,82 @@
+{
+  "id": "flat-vector/id-badge",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "ID Badge",
+  "summary": "Staff ID badge on a lanyard with a generic avatar and blank lines; anim swing sways it. For staff passes.",
+  "tags": [
+    "id badge",
+    "badge",
+    "lanyard",
+    "id card",
+    "staff pass",
+    "name badge",
+    "access card"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom of the card hangs on y; the lanyard rises above it"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size at s = 1 (about 400 px card plus lanyard); use about 0.3–0.4 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "colour of the top band of the card"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#2A50AE",
+      "note": "lanyard colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "swing",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "swing = sways from the top of the lanyard"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3D6FE0",
+    "color2": "#2A50AE",
+    "anim": "swing"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

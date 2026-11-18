@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/banknotes",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Banknotes",
+  "summary": "Fanned stack of generic green banknotes with plain oval patterns; anim count flicks the top note.",
+  "tags": ["banknotes", "bank notes", "cash", "money", "payment", "counting", "bills"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom of the fan rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 480 px wide; use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#4BB46A", "note": "note colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "count"], "note": "count = the top note flicks up and back every 60 frames"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#4BB46A", "anim": "count"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

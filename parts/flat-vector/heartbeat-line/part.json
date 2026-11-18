@@ -1,0 +1,73 @@
+{
+  "id": "flat-vector/heartbeat-line",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Heartbeat line",
+  "summary": "ECG heartbeat trace about 800 px wide, centred on x,y, with an optional heart; anim trace draws it.",
+  "tags": [
+    "heartbeat",
+    "ecg",
+    "ekg",
+    "pulse line",
+    "heart rate",
+    "health",
+    "cardiogram"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "at s = 1 about 850 px wide"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "trace colour"
+    },
+    {
+      "name": "heart",
+      "type": "boolean",
+      "default": true,
+      "note": "show a small heart at the right end"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "trace"
+      ],
+      "note": "trace = the line draws left to right, repeating, with a glowing head"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "s": 1,
+    "color": "#E8503F",
+    "heart": true,
+    "anim": "trace"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

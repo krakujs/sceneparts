@@ -1,0 +1,72 @@
+{
+  "id": "flat-vector/thermometer",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Thermometer",
+  "summary": "Glass-bulb clinical or lab thermometer with a red column and tick marks; use for health, weather or heat scenes.",
+  "tags": [
+    "thermometer",
+    "temperature",
+    "fever",
+    "health",
+    "lab",
+    "heat",
+    "mercury"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 about 130 px wide and 740 px tall; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "column colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "rise"
+      ],
+      "note": "rise = the column climbs in 90 frames"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#E8503F",
+    "anim": "rise"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

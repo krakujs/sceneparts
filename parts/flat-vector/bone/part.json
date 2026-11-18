@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/bone",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bone",
+  "summary": "Classic cartoon bone with knobbly ends, tilted on y; anim bob or wobble. For skeleton and fun scenes.",
+  "tags": ["bone", "cartoon bone", "skeleton", "femur", "dog bone", "fun", "prop"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom: the lowest point of the bone rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 400 px long; use about 0.2–0.3 next to a person" },
+    { "name": "angle", "type": "number", "default": -30, "note": "tilt in degrees (negative tilts the right end up)" },
+    { "name": "color", "type": "colour", "default": "#FFFFFF", "note": "bone colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble"], "note": "bob = lifts and settles; wobble = rocks on its lowest point" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror the bone" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "angle": -30, "color": "#FFFFFF", "anim": "wobble" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "flat-vector/protractor",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Protractor",
+  "summary": "Clear semicircle protractor with degree tick marks on tinted plastic; for maths and geometry scenes.",
+  "tags": [
+    "protractor",
+    "angle",
+    "maths",
+    "geometry",
+    "degrees",
+    "measure",
+    "school"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "flat edge rests on y (bottom centre)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "at s = 1 about 560 px wide and 300 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8EC5E8",
+      "note": "plastic tint"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "pop = scales in with a small overshoot"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#8EC5E8",
+    "anim": "bob"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/bacteria",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Bacteria",
+  "summary": "Cluster of three rod-shaped bacteria with wavy flagella; anim wiggle makes them squirm. For microbiology scenes.",
+  "tags": ["bacteria", "bacterium", "microbe", "germ", "microbiology", "flagella", "science"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 900, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 560 px wide" },
+    { "name": "color", "type": "colour", "default": "#1FA39A", "note": "bacteria body colour" },
+    { "name": "color2", "type": "colour", "default": "#7B5CD6", "note": "flagella (tail) colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "wiggle"], "note": "wiggle = each one rocks and its tail ripples" }
+  ],
+  "example": { "x": 540, "y": 900, "s": 1, "color": "#1FA39A", "color2": "#7B5CD6", "anim": "wiggle" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

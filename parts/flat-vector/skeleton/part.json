@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/skeleton",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Skeleton model",
+  "summary": "Friendly anatomy-class skeleton on a pole stand; anim wave sways one arm. For biology and science lessons.",
+  "tags": ["skeleton", "anatomy", "bones", "anatomy model", "biology", "science class", "human body"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the round base stands on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 1000 px tall" },
+    { "name": "color", "type": "colour", "default": "#F4F1EA", "note": "bone colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "wave"], "note": "wave = the right arm sways from the shoulder" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror the skeleton" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "color": "#F4F1EA", "anim": "wave" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

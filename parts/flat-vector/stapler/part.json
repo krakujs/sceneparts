@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/stapler",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Stapler",
+  "summary": "Desktop stapler in side view; anim staple presses the top arm down and back. For office, paperwork and binding.",
+  "tags": ["stapler", "staple", "office", "desk", "paperwork", "binding", "stationery"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the base rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 500 px wide; use about 0.3–0.4 next to a person"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "body colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "staple", "bob", "wobble", "pop"], "note": "staple = top arm presses down and springs back"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E8503F", "anim": "staple"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

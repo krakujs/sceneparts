@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/paperclip",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Paper Clip",
+  "summary": "Large metal paper clip tilted at an angle; colour can be metal or any colour. For attachments, files and office life.",
+  "tags": ["paperclip", "paper clip", "attachment", "office", "clip", "metal", "stationery"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the clip sits on y, shadow below it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; large at s = 1 (about 600 px tall)"},
+    {"name": "color", "type": "colour", "default": "#9AA3B5", "note": "wire colour: metal grey, or any colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "pop = scales in with a small overshoot"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the clip's tilt"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#9AA3B5", "anim": "wobble"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

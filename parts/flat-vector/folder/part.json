@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/folder",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "File Folder",
+  "summary": "Manila file folder with a tab and papers peeking out; anim open lifts the papers out. For documents, filing and records.",
+  "tags": ["folder", "file folder", "manila folder", "documents", "filing", "papers", "records"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the folder rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size at s = 1 (about 540 px wide); use about 0.2–0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "folder colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "open", "bob", "wobble", "pop"], "note": "open = papers rise out of the folder"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FFC83D", "anim": "open"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

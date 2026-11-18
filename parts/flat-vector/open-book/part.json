@@ -1,0 +1,72 @@
+{
+  "id": "flat-vector/open-book",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Open book",
+  "summary": "Open book lying flat, seen from slightly above, with grey text lines; anim flip turns a page.",
+  "tags": [
+    "open book",
+    "book",
+    "reading",
+    "story",
+    "pages",
+    "textbook",
+    "learn"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the book rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "at s = 1 about 840 px wide and 300 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#7B5CD6",
+      "note": "cover colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "flip"
+      ],
+      "note": "flip = a page turns over and back, looping"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#7B5CD6",
+    "anim": "flip"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

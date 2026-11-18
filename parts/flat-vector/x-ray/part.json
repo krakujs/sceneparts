@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/x-ray",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "X-ray lightbox",
+  "summary": "Wall lightbox with a chest x-ray, white ribs on dark blue; anim on flickers the light on. For clinic scenes.",
+  "tags": ["x-ray", "xray", "lightbox", "radiology", "chest x-ray", "scan", "wall"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 760, "note": "wall item: centred on (x, y); default y 760 is about eye height on the wall" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the lightbox is about 580 px wide and 730 px tall" },
+    { "name": "color", "type": "colour", "default": "#DDE2EA", "note": "box frame colour" },
+    { "name": "color2", "type": "colour", "default": "#253058", "note": "glass colour behind the image (dark blue)" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "on"], "note": "on = the light warms up from dim and flickers, then steadies" }
+  ],
+  "example": { "x": 540, "y": 760, "s": 1, "color": "#DDE2EA", "color2": "#253058", "anim": "on" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

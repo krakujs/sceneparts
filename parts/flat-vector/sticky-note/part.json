@@ -1,0 +1,74 @@
+{
+  "id": "flat-vector/sticky-note",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Sticky Note",
+  "summary": "Square yellow sticky note with a curled corner and doodles; anim flutter sways it gently. For reminders and quick notes.",
+  "tags": [
+    "sticky note",
+    "note",
+    "reminder",
+    "memo",
+    "yellow note",
+    "doodle"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the note hangs from its bottom edge on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size at s = 1 (about 420 px square); use about 0.2\u20130.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "note colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "flutter",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "flutter = sways and lifts a little"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#FFC83D",
+    "anim": "flutter"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

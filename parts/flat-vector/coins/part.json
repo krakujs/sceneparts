@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/coins",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Coins",
+  "summary": "Stacks of gold coins with loose coins in front; anim drop lands a coin on the stack.",
+  "tags": ["coins", "gold coins", "money", "savings", "cash", "stack", "wealth"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor point under the stacks (1 m ~ 560 px)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the group is about 500 px wide; use about 0.5 next to a person"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "gold colour of the coins"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "drop"], "note": "drop = a coin falls onto the left stack and fades on landing, every 60 frames"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FFC83D", "anim": "drop"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
