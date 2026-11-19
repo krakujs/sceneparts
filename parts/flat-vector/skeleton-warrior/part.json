@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/skeleton-warrior",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Skeleton warrior",
+  "summary": "Friendly cartoon skeleton in a dented steel helmet, with a round wooden shield and a short sword. Front view.",
+  "tags": ["skeleton", "skeleton warrior", "undead", "bones", "knight", "shield", "sword", "spooky"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "feet"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 1000 px tall at 1"},
+    {"name": "anim", "type": "enum", "default": "idle", "values": ["none", "idle"], "note": "idle = the sword sways"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "anim": "idle"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

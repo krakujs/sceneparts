@@ -1,0 +1,86 @@
+{
+  "id": "flat-vector/hanukkah-menorah",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Hanukkah menorah",
+  "summary": "Nine-branched Hanukkah menorah with a raised shamash candle; set lit (0-9) for how many candles flame.",
+  "tags": [
+    "menorah",
+    "hanukkah",
+    "hanukkiah",
+    "chanukah",
+    "candles",
+    "jewish festival",
+    "lights"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom of the base sits on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 600 px wide and 560 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E0A21F",
+      "note": "gold metal colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#F4E3C1",
+      "note": "candle colour"
+    },
+    {
+      "name": "lit",
+      "type": "number",
+      "default": 9,
+      "min": 0,
+      "max": 9,
+      "note": "how many of the nine candles are flaming (0-9); the centre candle is the shamash"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "flicker"
+      ],
+      "note": "flicker = the flames sway and pulse"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "lit": 9,
+    "anim": "flicker"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

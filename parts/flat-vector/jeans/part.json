@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/jeans",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Jeans",
+  "summary": "Blue denim jeans with rivets, contrast stitching and a button fly on a clip hanger; sways. For wardrobe scenes.",
+  "tags": [
+    "jeans",
+    "denim",
+    "denim jeans",
+    "blue jeans",
+    "clothes",
+    "wardrobe",
+    "fashion",
+    "denim trousers"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the item rests on y (hem or tip)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 340 px wide and 690 px tall at s = 1 (hook included)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#2A50AE",
+      "note": "denim colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "contrast stitching colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = the jeans swing gently from the hook"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#2A50AE",
+    "color2": "#FF8A3D",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

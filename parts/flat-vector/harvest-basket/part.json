@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/harvest-basket",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Harvest basket",
+  "summary": "Wicker basket overflowing with pumpkins, apples, corn and grapes, for autumn harvest and Thanksgiving scenes.",
+  "tags": ["harvest", "basket", "wicker basket", "pumpkin", "autumn", "fall", "thanksgiving"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the basket"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the basket rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the basket is about 620 px wide and 720 px tall with its handle"},
+    {"name": "color", "type": "colour", "default": "#C9915A", "note": "wicker colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob"], "note": "bob = the whole basket rocks gently"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "bob"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

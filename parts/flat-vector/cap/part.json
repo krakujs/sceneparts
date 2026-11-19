@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/cap",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Cap",
+  "summary": "Plain baseball cap in side three-quarter view with a curved peak and back strap; bobs. For casual and sporty looks.",
+  "tags": [
+    "cap",
+    "baseball cap",
+    "ball cap",
+    "peaked cap",
+    "sports cap",
+    "hat",
+    "curved peak",
+    "casual"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the item rests on y (hem or tip)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 560 px wide and 300 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "crown colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#253058",
+      "note": "peak and strap colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob"
+      ],
+      "note": "bob = the cap bounces gently"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#E8503F",
+    "color2": "#253058",
+    "anim": "bob"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

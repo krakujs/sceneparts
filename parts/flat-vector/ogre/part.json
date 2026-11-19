@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/ogre",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Ogre",
+  "summary": "Big friendly green-brown ogre with a round belly, tusks, long arms and a wooden club. Front view, about 1100 px tall.",
+  "tags": ["ogre", "giant", "brute", "monster", "club", "tusks", "fairy tale", "big"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "feet"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 1100 px tall at 1"},
+    {"name": "skin", "type": "colour", "default": "#7A9A5C", "note": "green-brown skin (hex)"},
+    {"name": "anim", "type": "enum", "default": "idle", "values": ["none", "idle"], "note": "idle = the belly breathes"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "anim": "idle"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

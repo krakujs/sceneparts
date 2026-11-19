@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/balloon",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Balloon",
+  "summary": "Single round shiny balloon with a knot and a curly string; a colour param sets the balloon. Anim bob or float.",
+  "tags": ["balloon", "party balloon", "helium", "celebration", "birthday", "float", "string"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "x of the knot"},
+    {"name": "y", "type": "number", "default": 1000, "note": "y of the knot; the balloon rises about 480 px above it and the string hangs below"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the balloon is about 300 px wide and 480 px tall"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "balloon colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "float"], "note": "bob = gentle up and down; float = slow drift up and sideways"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1000, "s": 1, "color": "#E8503F", "anim": "bob"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

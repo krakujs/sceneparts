@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/kite-festival",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Kite festival",
+  "summary": "Five colourful diamond and fighter kites at different heights with tails trailing down, swaying in the wind.",
+  "tags": ["kite festival", "kites", "sky", "uttarayan", "wind", "festival", "colourful"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the group"},
+    {"name": "y", "type": "number", "default": 600, "note": "centre y of the group (sky item)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale of the whole group; at s = 1 it spans about 800 px wide"},
+    {"name": "anim", "type": "enum", "default": "fly", "values": ["none", "fly"], "note": "fly = every kite sways and its tail ripples, at slightly different phases"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the group"}
+  ],
+  "example": {"x": 540, "y": 600, "s": 1, "anim": "fly"},
+  "uses": ["flat-vector/style", "flat-vector/kite"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

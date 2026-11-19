@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/new-year-clock",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "New year clock",
+  "summary": "Big round clock face just before midnight, hands near twelve with confetti around it. Anim tick moves the hands to 12.",
+  "tags": ["new year", "midnight", "countdown", "clock", "new years eve", "celebration", "confetti"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the clock"},
+    {"name": "y", "type": "number", "default": 800, "note": "centre y of the clock face"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the clock is about 520 px across with confetti about 1000 px"},
+    {"name": "color", "type": "colour", "default": "#253058", "note": "clock rim colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "tick"], "note": "tick = the minute hand moves up to 12 over about 1.3 s and stays there; frame 0 is just before midnight"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 800, "s": 1, "anim": "tick"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

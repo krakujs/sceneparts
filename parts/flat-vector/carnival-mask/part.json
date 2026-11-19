@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/carnival-mask",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Carnival mask",
+  "summary": "Decorative carnival eye mask with gold trim, swirls, gems and feathers on a stick; for festivals and parties.",
+  "tags": [
+    "carnival mask",
+    "eye mask",
+    "masquerade",
+    "mask",
+    "festival",
+    "party",
+    "feathers"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom of the stick: the stick stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 470 px wide and 520 px tall at s = 1; hold it in a hand at about 0.5"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#7B5CD6",
+      "note": "main colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "gold trim, swirls and stick binding colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sparkle"
+      ],
+      "note": "sparkle = stars around the mask twinkle"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#7B5CD6",
+    "color2": "#FFC83D",
+    "anim": "sparkle"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

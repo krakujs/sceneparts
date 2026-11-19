@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/kurta",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Kurta",
+  "summary": "Long tunic kurta with a band collar, short button placket, side slits and long sleeves, on a hanger.",
+  "tags": [
+    "kurta",
+    "kurta tunic",
+    "tunic",
+    "indian clothing",
+    "ethnic wear",
+    "south asian",
+    "long shirt"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the hem rests on y (the hanger hangs above it)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 600-700 px tall at s = 1; hero size"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F5A03D",
+      "note": "main colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "band collar, placket and cuffs colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway",
+        "pop"
+      ],
+      "note": "sway = swings gently from the hanger hook; pop = small settle bounce"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#F5A03D",
+    "color2": "#FFC83D",
+    "anim": "pop"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

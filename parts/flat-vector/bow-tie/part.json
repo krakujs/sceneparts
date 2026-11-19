@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/bow-tie",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bow tie",
+  "summary": "Classic bow tie with a centre knot and dotted wings; for formal wear, weddings and dinner jackets.",
+  "tags": [
+    "bow tie",
+    "bowtie",
+    "bow-tie",
+    "dickey bow",
+    "formal",
+    "wedding",
+    "tuxedo",
+    "dinner jacket"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the item rests on y (hem or tip)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 420 px wide and 220 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#253058",
+      "note": "wing colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "dot and knot colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = bow tilts gently from side to side"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#253058",
+    "color2": "#FFC83D",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/paper-lantern",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Paper lantern",
+  "summary": "Round red paper lantern with gold caps and a tassel, hanging from a cord; use for festivals and hanging decorations.",
+  "tags": [
+    "paper lantern",
+    "round lantern",
+    "chinese lantern",
+    "festival",
+    "hanging",
+    "red lantern",
+    "tassel"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 300,
+      "note": "the top hook point: the lantern hangs from y (default 300 keeps it in the frame)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 360 px wide and 600 px tall including the tassel"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "paper colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "cap and tassel colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway",
+        "glow"
+      ],
+      "note": "sway = the lantern swings on its cord; glow = the light pulses"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 300,
+    "s": 1,
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

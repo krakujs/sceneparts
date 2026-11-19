@@ -1,0 +1,77 @@
+{
+  "id": "flat-vector/wreath",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Christmas wreath",
+  "summary": "Round evergreen wreath with red berries and a red bow at the bottom, hung by a cord; use for holiday doors and walls.",
+  "tags": [
+    "wreath",
+    "christmas wreath",
+    "holiday wreath",
+    "evergreen",
+    "door decoration",
+    "berries",
+    "xmas"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 240,
+      "note": "the top hook point: the wreath hangs from y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 540 px wide and 690 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "leaf colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "berry and bow colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = the wreath turns gently on its hook"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 240,
+    "s": 1,
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

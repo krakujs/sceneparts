@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/dreidel",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Dreidel",
+  "summary": "Four-sided spinning top with a handle and plain geometric symbols; use for Hanukkah toys and games.",
+  "tags": [
+    "dreidel",
+    "spinning top",
+    "hanukkah",
+    "top",
+    "game",
+    "toy",
+    "chanukah"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "the tip sits on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 240 px wide and 380 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "face colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "alternate face and knob colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "spin",
+        "wobble"
+      ],
+      "note": "spin = the top turns on its axis; wobble = it rocks side to side"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "spin"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

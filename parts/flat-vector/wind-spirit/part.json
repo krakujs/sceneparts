@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/wind-spirit",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Wind spirit",
+  "summary": "Airy translucent pale-cyan spirit of spiralling wind with a friendly round face, streaks and drifting leaves.",
+  "tags": ["wind spirit", "wind", "air", "spirit", "swirl", "fantasy", "elemental", "breeze"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground under the swirl"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 760 px tall at 1"},
+    {"name": "anim", "type": "enum", "default": "swirl", "values": ["none", "swirl"], "note": "swirl = the spiral turns, the head bobs and the streaks and leaves drift"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "anim": "swirl"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

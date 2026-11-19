@@ -1,0 +1,24 @@
+{
+  "id": "core/pointer-hand",
+  "type": "effect",
+  "style": "core",
+  "name": "Pointer hand",
+  "summary": "White UI pointing hand with an outlined index finger and thumb; points or taps at x,y to call out something on screen.",
+  "tags": ["pointer", "pointing hand", "hand", "point", "tap", "click", "look here", "ui"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "fingertip target x" },
+    { "name": "y", "type": "number", "default": 960, "note": "fingertip target y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 250 × 400 px at s = 1" },
+    { "name": "dir", "type": "enum", "default": "right", "values": ["right", "left", "up", "down"], "note": "direction the finger points" },
+    { "name": "anim", "type": "enum", "default": "point", "values": ["none", "point", "tap"], "note": "point = nudges toward the target; tap = presses with a ripple" },
+    { "name": "color", "type": "colour", "note": "ripple colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "x": 640, "y": 960, "dir": "right", "anim": "point" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

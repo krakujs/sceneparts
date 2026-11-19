@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/dress",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Dress",
+  "summary": "Sleeveless A-line dress with a fitted waist, belt and dotted skirt on a hanger; sways. For fashion and wardrobe scenes.",
+  "tags": [
+    "dress",
+    "summer dress",
+    "a-line dress",
+    "sundress",
+    "frock",
+    "clothes",
+    "wardrobe",
+    "fashion",
+    "skirt dress"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the item rests on y (hem or tip)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 500 px wide and 690 px tall at s = 1 (hook included)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F27BA6",
+      "note": "dress colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#7B5CD6",
+      "note": "belt colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = the dress swings gently from the hook"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#F27BA6",
+    "color2": "#7B5CD6",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

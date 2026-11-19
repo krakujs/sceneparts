@@ -1,0 +1,83 @@
+{
+  "id": "flat-vector/bunny-ears",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bunny ears headband",
+  "summary": "Costume bunny-ears headband with two tall fluffy ears and pink inners; use for Easter and fancy-dress characters.",
+  "tags": [
+    "bunny ears",
+    "bunny",
+    "headband",
+    "costume",
+    "easter",
+    "rabbit ears",
+    "fancy dress"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 700,
+      "note": "centre of the headband: put it on the top of the head at y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 380 px wide and 400 px tall; use about 0.5 on a child"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#7B5CD6",
+      "note": "headband colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "ear fur colour"
+    },
+    {
+      "name": "color3",
+      "type": "colour",
+      "default": "#F27BA6",
+      "note": "inner ear colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "wiggle"
+      ],
+      "note": "wiggle = the ears wobble from their bases"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 700,
+    "s": 1,
+    "anim": "wiggle"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

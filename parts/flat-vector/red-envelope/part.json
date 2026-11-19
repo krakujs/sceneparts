@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/red-envelope",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Red envelope",
+  "summary": "Red gift envelope with a gold geometric pattern and a gold coin peeking out; anim pop scales it in.",
+  "tags": ["red envelope", "hongbao", "lucky money", "lunar new year", "gift", "money", "festival"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the envelope stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size about 440 px wide; use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#D8322A", "note": "envelope colour"},
+    {"name": "color2", "type": "colour", "default": "#FFC83D", "note": "pattern and coin colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "bob"], "note": "pop = scales in with overshoot; bob = gentle up and down"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#D8322A", "color2": "#FFC83D", "anim": "bob"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

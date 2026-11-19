@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/socks",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Socks",
+  "summary": "Pair of crew socks laid in an L with a ribbed cuff, coloured heel and toe; for laundry and clothing scenes.",
+  "tags": ["socks", "crew socks", "pair of socks", "clothing", "laundry", "footwear", "stockings"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the sole of the foot rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the pair is about 480 px wide and 470 px tall; use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#7B5CD6", "note": "sock colour"},
+    {"name": "color2", "type": "colour", "default": "#FFC83D", "note": "cuff, heel and toe colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "wiggle", "bob"], "note": "wiggle = the pair sways a little; bob = the pair bounces"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (foot points left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#7B5CD6", "color2": "#FFC83D", "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

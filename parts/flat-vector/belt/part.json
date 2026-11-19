@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/belt",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Belt",
+  "summary": "Leather belt loosely coiled into an oval with a metal buckle and holes; for fashion, clothing and dressing scenes.",
+  "tags": ["belt", "leather belt", "buckle", "clothing", "fashion", "accessory", "strap"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the coil rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the belt is about 540 px wide; use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#8A5A3C", "note": "leather colour"},
+    {"name": "color2", "type": "colour", "default": "#C9D1DC", "note": "buckle metal colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "sway", "pop"], "note": "sway = the coil rocks slightly; pop = it springs in once"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#8A5A3C", "color2": "#C9D1DC", "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

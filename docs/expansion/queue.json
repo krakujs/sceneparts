@@ -1915,7 +1915,7 @@
     "title": "Infographics, UI and motion text",
     "style": "core",
     "type": "text",
-    "status": "partial",
+    "status": "done",
     "generator": "core/stat-card (kit)",
     "brief": "Style-free parts in parts/core/: charts with animated values, arrows, callouts, lower thirds, badges, counters, timelines, progress, maps pins. Use the style palette via p.style.",
     "names": [
@@ -2028,22 +2028,17 @@
       "rain overlay"
     ],
     "count": 107,
-    "remaining": [
-      "pointer hand",
-      "swipe gesture",
-      "thumbs rating",
-      "brush stroke"
-    ],
-    "built": 103,
+    "remaining": [],
+    "built": 107,
     "date": "2026-11-19",
-    "notes": "Foundation (written by the orchestrator): core/stat-card is both a part and the shared kit for every core infographic (ui(style) palette from p.style: ink/accent/font + card, muted, soft, good, bad, warn, series[8]; startFrame(p) from `at`; enter/popIn/count/fmt/fitSize; Card, Txt; pathLen/drawDash/DrawPath for draw-on strokes). IMPORTANT: never use pathLength – resvg (previews, gallery, server SVG) ignores it; use DrawPath or drawDash(len, k). Built 103 core parts (charts, counters, lists, diagrams, maps, arrows, marks, frames, social UI, broadcast cards, badges, game HUD, particles and overlays). Fixed in review: 11 parts used pathLength (dotted/pale lines in previews) -> DrawPath/drawDash; loading-spinner arc; ticker-tape text sat on the band edge; box-frame interior was grey; unique clipPath ids for ticker/breaking-news. Deleted in review, rebuild next run: pointer hand (upright single finger with no thumb could read as a rude gesture – draw a clear index finger + visible thumb + curled fingers, default dir right), swipe gesture (hand unreadable), thumbs rating (blocky thumbs, down one unreadable – reuse simple icon shapes with a clear thumb), brush stroke (fringe tail looked like a comb). Also from 15: flat-vector/handshake deleted again (one paddle hand poking the other) – rebuild in flat-vector with clasped hands seen from the side, the top hand's fingers wrapping down over the back of the other. Run 17 (2026-11-19): flat-vector/handshake rebuilt (clasped from the side) and kept. pointer hand, swipe gesture, thumbs rating, brush stroke redrawn by a sub-agent and deleted again in review: pointer hand read as a 'finger gun' (thumb straight up) and dir up showed three raised fingers; swipe reused it; thumbs icons were blobs (down one read like a '9'); brush stroke tail was still a row of even spikes. Suggest the orchestrator draws these four itself next time."
+    "notes": "Foundation (written by the orchestrator): core/stat-card is both a part and the shared kit for every core infographic (ui(style) palette from p.style: ink/accent/font + card, muted, soft, good, bad, warn, series[8]; startFrame(p) from `at`; enter/popIn/count/fmt/fitSize; Card, Txt; pathLen/drawDash/DrawPath for draw-on strokes). IMPORTANT: never use pathLength – resvg (previews, gallery, server SVG) ignores it; use DrawPath or drawDash(len, k). Built 103 core parts (charts, counters, lists, diagrams, maps, arrows, marks, frames, social UI, broadcast cards, badges, game HUD, particles and overlays). Fixed in review: 11 parts used pathLength (dotted/pale lines in previews) -> DrawPath/drawDash; loading-spinner arc; ticker-tape text sat on the band edge; box-frame interior was grey; unique clipPath ids for ticker/breaking-news. Deleted in review, rebuild next run: pointer hand (upright single finger with no thumb could read as a rude gesture – draw a clear index finger + visible thumb + curled fingers, default dir right), swipe gesture (hand unreadable), thumbs rating (blocky thumbs, down one unreadable – reuse simple icon shapes with a clear thumb), brush stroke (fringe tail looked like a comb). Also from 15: flat-vector/handshake deleted again (one paddle hand poking the other) – rebuild in flat-vector with clasped hands seen from the side, the top hand's fingers wrapping down over the back of the other. Run 17 (2026-11-19): flat-vector/handshake rebuilt (clasped from the side) and kept. pointer hand, swipe gesture, thumbs rating, brush stroke redrawn by a sub-agent and deleted again in review: pointer hand read as a 'finger gun' (thumb straight up) and dir up showed three raised fingers; swipe reused it; thumbs icons were blobs (down one read like a '9'); brush stroke tail was still a row of even spikes. Suggest the orchestrator draws these four itself next time. Run 18 (2026-11-19): the orchestrator drew the four itself and kept them: core/pointer-hand (outlined UI hand: straight index finger, three curled knuckles, thumb tucked along the side; dir right/left/up/down, point/tap; exports <Hand>), core/swipe-gesture (reuses <Hand>, finger-up hand slides with a trail and dashed arrow), core/thumbs-rating (two round buttons with a clear fist-and-thumb icon, the down one is the up icon mirrored vertically; pick fills and ticks the count; exports <Thumb>), core/brush-stroke (wavy swash with a loaded rounded start, uneven tapering dry-brush slivers, paints on with a growing clip). Batch 16 is done."
   },
   {
     "id": "17-flat-vector-fantasy-scifi",
     "title": "Fantasy, myth and sci-fi (original designs)",
     "style": "flat-vector",
     "type": "character",
-    "status": "partial",
+    "status": "done",
     "generator": null,
     "brief": "Original creatures and sci-fi elements; nothing from existing franchises.",
     "names": [
@@ -2152,26 +2147,17 @@
       "wind spirit"
     ],
     "count": 103,
-    "built": 90,
+    "built": 98,
     "date": "2026-11-19",
-    "remaining": [
-      "centaur",
-      "skeleton warrior",
-      "ogre",
-      "kaiju-style monster",
-      "dragon egg",
-      "escape pod",
-      "jet bike",
-      "wind spirit"
-    ],
-    "notes": "Built 90 original fantasy/sci-fi parts (humanoids on the person generator, beasts on quadruped/bird looks, magic props, sci-fi tech, vehicles, space effects, spirits). Skipped as covered: flying saucer (=ufo), ringed planet (=planet), gold coins pile (=coins), vampire bat (=bat + vampire), fairy creature (flat-vector/fairy exists; a sub-agent overwrote it and it was restored). Renamed for IP safety: lightsaber-style beam sword -> beam-sword (crossguard hilt), kaiju-style monster -> giant-monster (not kept), space marine -> space-soldier, loch monster -> lake-monster. Deleted in review, rebuild next run: centaur (horse kept its own head with the torso mid-back - torso must replace the head/neck), skeleton warrior (white blob, no readable bones), ogre (shapeless body), giant-monster (jaw floated off the head), dragon egg (read as a cactus), escape pod (orange bean with a visor on legs read like a famous game crewmate - make it a cone/capsule with fins), jet bike (sled on stilts), wind spirit (looked like a stacked cake). Fixed in review: aliens no longer blink at f0; tree-spirit TS type error."
+    "remaining": [],
+    "notes": "Built 90 original fantasy/sci-fi parts (humanoids on the person generator, beasts on quadruped/bird looks, magic props, sci-fi tech, vehicles, space effects, spirits). Skipped as covered: flying saucer (=ufo), ringed planet (=planet), gold coins pile (=coins), vampire bat (=bat + vampire), fairy creature (flat-vector/fairy exists; a sub-agent overwrote it and it was restored). Renamed for IP safety: lightsaber-style beam sword -> beam-sword (crossguard hilt), kaiju-style monster -> giant-monster (not kept), space marine -> space-soldier, loch monster -> lake-monster. Deleted in review, rebuild next run: centaur (horse kept its own head with the torso mid-back - torso must replace the head/neck), skeleton warrior (white blob, no readable bones), ogre (shapeless body), giant-monster (jaw floated off the head), dragon egg (read as a cactus), escape pod (orange bean with a visor on legs read like a famous game crewmate - make it a cone/capsule with fins), jet bike (sled on stilts), wind spirit (looked like a stacked cake). Fixed in review: aliens no longer blink at f0; tree-spirit TS type error. Run 18 (2026-11-19): all 8 rebuilt by a sub-agent and kept after review: centaur (human torso rises from the chest end, no horse head/neck), skeleton-warrior (separate bones, helmet, shield, short sword), ogre, giant-monster (jaw part of the head), dragon-egg (smooth scaled oval in a nest), escape-pod (white cone capsule with fins and flame), jet-bike (wheel-less hover bike with twin jets), wind-spirit (spiral swirls with a face). Batch 17 is done."
   },
   {
     "id": "18-flat-vector-festivals-clothes",
     "title": "Festivals, celebrations and clothing",
     "style": "flat-vector",
     "type": "prop",
-    "status": "todo",
+    "status": "partial",
     "generator": null,
     "brief": "Celebrations from many cultures (generic, respectful) and clothing items.",
     "names": [
@@ -2276,7 +2262,17 @@
       "umbrella item",
       "mask party"
     ],
-    "count": 100
+    "count": 100,
+    "built": 85,
+    "date": "2026-11-19",
+    "remaining": [
+      "sandals",
+      "mooncake",
+      "high heels",
+      "helmet bike",
+      "chinese dragon dance head"
+    ],
+    "notes": "Built 85 flat-vector parts: festival props (diya, rangoli, firecracker, sparkler, fireworks, sky lanterns, paper lantern, Christmas, Hanukkah, Eid/Ramadan, Easter, Holi, party, wedding, New Year, harvest), cultural garments (turban and hijab on faceless display forms; saree, kurta, sherwani, kimono, hanbok on hangers) and clothing/accessories. Convention: garments are front-view catalogue items on a coat or clip hanger, hem on y, anim sway. Skipped as covered: christmas tree decorated (=christmas-tree), christmas gift (=gift-box), halloween pumpkin (=jack-o-lantern), cake candles (=birthday-cake), confetti (=core/confetti-burst), sunglasses item (=sunglasses), watch item (=watch), backpack item (=backpack), handbag item (=handbag), mask party (=carnival-mask). Renamed: kimono item -> kimono, hanbok item -> hanbok, umbrella item -> umbrella, pinata-style donkey -> pinata-donkey. Failed/deleted, rebuild next run: sandals (sub-agent: straps read as sticks/worms), mooncake (cut wedge read as a separate blob - draw a whole round fluted cake with an embossed flower, no wedge), high heels (red wedge on black stilts, unreadable - draw one clear stiletto pump in side view: pointed toe, arched sole, thin tall heel), helmet bike (blue blob - show vents as clear slots, a visor peak and chin straps), chinese dragon dance head (read as a worm/snake - draw a big boxy festival lion-dance-style head with a wide mouth, large eyes with lids, a single horn, fur trim, and a short draped cloth body). Fixed in review: tie redrawn (stripes now clipped to a proper tapered blade with a knot), tiara scaled up and made gold, red-envelope example no longer invisible at f0, belt TS readonly tuple error; trademark tags dropped: levis, stetson."
   },
   {
     "id": "19-pixel-art-people",

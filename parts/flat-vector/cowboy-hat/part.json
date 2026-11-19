@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/cowboy-hat",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Cowboy hat",
+  "summary": "Brown western cowboy hat with pinched crown, curled brim and buckle band; sways. For western and rodeo scenes.",
+  "tags": [
+    "cowboy hat",
+    "cowboy",
+    "western hat",
+    "ten gallon hat",
+    "rodeo",
+    "sheriff hat",
+    "country"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the item rests on y (hem or tip)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 600 px wide and 360 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "felt colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5E3B26",
+      "note": "band colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = the hat tilts gently"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#8A5A3C",
+    "color2": "#5E3B26",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

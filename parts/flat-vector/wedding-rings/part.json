@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/wedding-rings",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Wedding rings",
+  "summary": "Two interlocked gold wedding bands, one with a small diamond that sparkles; for engagement and wedding scenes.",
+  "tags": ["wedding rings", "rings", "gold ring", "engagement", "wedding", "diamond", "marriage"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 900, "note": "centre y of the two rings (the diamond rises about 200 px above)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the pair is about 480 px wide and 560 px tall"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "first band colour"},
+    {"name": "color2", "type": "colour", "default": "#E0A21F", "note": "second band colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "sparkle", "bob"], "note": "sparkle = the diamond glints; bob = the rings rise and fall gently"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 900, "s": 1, "anim": "sparkle"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

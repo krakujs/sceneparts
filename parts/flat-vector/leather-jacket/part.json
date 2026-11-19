@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/leather-jacket",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Leather jacket",
+  "summary": "Dark biker-style leather jacket with wide lapels, an off-centre zip and shiny highlights, on a hanger.",
+  "tags": [
+    "leather jacket",
+    "biker jacket",
+    "biker",
+    "moto jacket",
+    "rock",
+    "outerwear",
+    "clothes"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the hem rests on y (the hanger hangs above it)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 600-700 px tall at s = 1; hero size"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3A4157",
+      "note": "main colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#DDE2EA",
+      "note": "zip and hardware colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway",
+        "pop"
+      ],
+      "note": "sway = swings gently from the hanger hook; pop = small settle bounce"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3A4157",
+    "color2": "#DDE2EA",
+    "anim": "pop"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

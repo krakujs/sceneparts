@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/birthday-balloons",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Birthday balloons",
+  "summary": "Bunch of five shiny mixed-colour balloons tied together with curly ribbons; for birthday and party scenes. Anim bob.",
+  "tags": ["birthday balloons", "balloon bunch", "party", "birthday", "celebration", "ribbon", "decoration"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "x of the tied knot"},
+    {"name": "y", "type": "number", "default": 1100, "note": "y of the tied knot; the balloons rise about 500 px above it"},
+    {"name": "s", "type": "number", "default": 1.1, "note": "scale; at the default the bunch is about 700 px wide"},
+    {"name": "ribbon", "type": "colour", "default": "#7B5CD6", "note": "ribbon colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob"], "note": "bob = the bunch rises and falls gently, each balloon out of step"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1100, "s": 1.1, "anim": "bob"},
+  "uses": ["flat-vector/style", "flat-vector/balloon"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

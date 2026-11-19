@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/lantern-float",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Floating water lantern",
+  "summary": "Square paper lantern with a glowing candle on a small wooden raft floating on water; for night festivals and wishes.",
+  "tags": [
+    "water lantern",
+    "floating lantern",
+    "paper lantern",
+    "lantern",
+    "river",
+    "night festival",
+    "candle"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "water surface: the raft floats on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 340 px wide and 400 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "main colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5E3B26",
+      "note": "raft and frame colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob"
+      ],
+      "note": "bob = the lantern rises and falls on the water, glow pulses"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#FF8A3D",
+    "color2": "#5E3B26",
+    "anim": "bob"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

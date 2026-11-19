@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/sneakers",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Sneakers",
+  "summary": "Pair of lace-up trainers with a thick white sole and toe cap; for sport, running and everyday footwear scenes.",
+  "tags": ["sneakers", "trainers", "sneaker", "running shoes", "shoes", "footwear", "sport"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the soles sit on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the pair is about 560 px wide; use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "upper colour"},
+    {"name": "color2", "type": "colour", "default": "#FFFFFF", "note": "sole colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "walk"], "note": "bob = the pair bounces; walk = the far shoe lifts and steps"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (toe points left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FF8A3D", "color2": "#FFFFFF", "anim": "bob"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

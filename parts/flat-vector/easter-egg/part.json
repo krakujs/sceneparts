@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/easter-egg",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Easter egg",
+  "summary": "Pastel decorated Easter egg with a zigzag band and dots, standing on its end; use for Easter and spring scenes.",
+  "tags": [
+    "easter egg",
+    "easter",
+    "decorated egg",
+    "pastel",
+    "spring",
+    "egg",
+    "zigzag"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom of the egg sits on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 400 px wide and 520 px tall; use about 0.2 in a basket"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F9D3E2",
+      "note": "egg base colour (pastel)"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#B9DDF5",
+      "note": "zigzag band colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "wobble",
+        "bob",
+        "pop"
+      ],
+      "note": "wobble = the egg rocks gently; bob = it rises and falls; pop = springs in once"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "wobble"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

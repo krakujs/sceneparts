@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/skirt",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Skirt",
+  "summary": "Pleated A-line skirt with a waistband, hung from a clip hanger by the waistband; sways. For fashion and wardrobe scenes.",
+  "tags": [
+    "skirt",
+    "pleated skirt",
+    "a-line skirt",
+    "mini skirt",
+    "clothes",
+    "wardrobe",
+    "fashion",
+    "clothing",
+    "hanging clothes"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the item rests on y (hem or tip)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 480 px wide and 690 px tall at s = 1 (hook included)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "skirt colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "waistband and button colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = the skirt swings gently from the hook"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3D6FE0",
+    "color2": "#FFC83D",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

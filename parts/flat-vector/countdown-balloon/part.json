@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/countdown-balloon",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Countdown balloon",
+  "summary": "Large gold foil number balloon showing a digit 0 to 9, for countdowns and birthday or anniversary numbers. Anim bob.",
+  "tags": ["number balloon", "foil balloon", "countdown", "birthday", "anniversary", "digit", "gold balloon"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "x of the knot"},
+    {"name": "y", "type": "number", "default": 1050, "note": "y of the knot; the numeral rises about 350 px above it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the numeral is about 350 px tall"},
+    {"name": "digit", "type": "number", "default": 0, "min": 0, "max": 9, "note": "the digit shown, 0 to 9"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "foil colour (gold by default)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob"], "note": "bob = gentle up and down with a slight tilt"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1050, "s": 1, "digit": 0, "anim": "bob"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

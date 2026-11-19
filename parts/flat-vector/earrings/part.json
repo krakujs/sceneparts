@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/earrings",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Earrings",
+  "summary": "Pair of gold drop earrings with gem drops, hanging from a small display card; for jewellery and beauty scenes.",
+  "tags": ["earrings", "drop earrings", "pair of earrings", "jewellery", "jewelry", "gems", "accessory"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the stand base sits on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: about 400 px wide and 560 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "gold colour of the hooks and caps"},
+    {"name": "color2", "type": "colour", "default": "#F27BA6", "note": "gem drop colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "sway", "sparkle"], "note": "sway = the earrings swing on their hooks; sparkle = glints pulse beside the drops"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FFC83D", "color2": "#F27BA6", "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

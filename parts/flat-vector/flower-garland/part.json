@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/flower-garland",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flower garland",
+  "summary": "Marigold flower garland hung in a U swag with leaves and a tassel; for weddings, festivals and doorways.",
+  "tags": [
+    "flower garland",
+    "marigold",
+    "garland",
+    "flower string",
+    "torana",
+    "wedding decor",
+    "festival"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 520,
+      "note": "attach height: the two hooks at the ends hang from y, the swag sags below"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 960 px wide and 420 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "main colour (orange flowers)"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "alternate flower colour and tassel colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = the swag breathes and the tassel swings"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 520,
+    "s": 1,
+    "color": "#FF8A3D",
+    "color2": "#FFC83D",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

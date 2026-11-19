@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/tie",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Tie",
+  "summary": "Long necktie hanging straight down with a knot and diagonal stripes; sways gently. For suits, office and formal looks.",
+  "tags": [
+    "tie",
+    "necktie",
+    "neck tie",
+    "formal",
+    "suit",
+    "office",
+    "stripes",
+    "business"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the item rests on y (hem or tip)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 300 px wide and 830 px long at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#253058",
+      "note": "blade colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "stripe colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = swings gently from the knot"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#253058",
+    "color2": "#E8503F",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

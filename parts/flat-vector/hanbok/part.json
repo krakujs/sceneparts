@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/hanbok",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Hanbok",
+  "summary": "Korean hanbok: short jacket with a white V collar and bow ribbon over a full high-waisted pleated skirt, on a hanger.",
+  "tags": [
+    "hanbok",
+    "korean dress",
+    "korean traditional",
+    "jeogori",
+    "chima",
+    "traditional dress",
+    "korea"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the hem rests on y (the hanger hangs above it)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 600-700 px tall at s = 1; hero size"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "jacket (jeogori) colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#1FA39A",
+      "note": "skirt (chima) and bow ribbon colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway",
+        "pop"
+      ],
+      "note": "sway = swings gently from the hanger hook; pop = small settle bounce"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#E8503F",
+    "color2": "#1FA39A",
+    "anim": "pop"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

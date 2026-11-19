@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/garland",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bunting garland",
+  "summary": "String of triangular pennant flags swagged across about 800 px between two points; y is the attach height. Anim sway.",
+  "tags": ["bunting", "garland", "pennant", "flags", "party", "banner", "decoration"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the swag"},
+    {"name": "y", "type": "number", "default": 420, "note": "attach height: the y where both ends of the string are tied (the swag hangs below it)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the swag is about 800 px wide and hangs about 300 px below y"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "flag colour (alternating)"},
+    {"name": "color2", "type": "colour", "default": "#FFC83D", "note": "second flag colour (alternating)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "sway"], "note": "sway = the flags swing gently from the string"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 420, "s": 1, "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

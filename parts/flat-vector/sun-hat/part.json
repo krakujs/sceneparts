@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/sun-hat",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Sun hat",
+  "summary": "Wide-brimmed straw sun hat with a ribbon band, in front three-quarter view; sways. For summer, beach and garden scenes.",
+  "tags": [
+    "sun hat",
+    "straw hat",
+    "summer hat",
+    "beach hat",
+    "wide brim",
+    "panama",
+    "garden hat",
+    "sunhat"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the item rests on y (hem or tip)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 600 px wide and 330 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F2D59B",
+      "note": "straw colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "ribbon colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = the hat tilts gently in a breeze"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#F2D59B",
+    "color2": "#E8503F",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

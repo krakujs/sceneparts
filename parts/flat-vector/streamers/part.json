@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/streamers",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Streamers",
+  "summary": "Several curly paper streamers in party colours twirling down through the frame. Anim fall makes them drift down.",
+  "tags": ["streamers", "party streamers", "paper streamers", "confetti", "celebration", "party", "curly"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the streamers"},
+    {"name": "y", "type": "number", "default": 960, "note": "centre y of the streamers"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the group is about 1000 px wide and 700 px tall"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "fall"], "note": "fall = the streamers drift down and wrap around, twirling"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 960, "s": 1, "anim": "fall"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

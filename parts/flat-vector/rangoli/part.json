@@ -1,0 +1,83 @@
+{
+  "id": "flat-vector/rangoli",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Rangoli",
+  "summary": "Colourful rangoli floor pattern of petals and dots seen from above; use for festival entrances and Diwali scenes.",
+  "tags": [
+    "rangoli",
+    "floor pattern",
+    "diwali",
+    "pongal",
+    "festival",
+    "colourful",
+    "mandala"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom of the pattern sits on y; the pattern is flat on the floor"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 660 px wide and 330 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "outer petal colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "second petal colour"
+    },
+    {
+      "name": "color3",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "third petal colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bloom"
+      ],
+      "note": "bloom = the rings open outward from the centre in turn; frame 0 is already the full pattern"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "bloom"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

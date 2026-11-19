@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/bracelet",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bracelet",
+  "summary": "Gold bangle bracelet standing as a 3/4 ellipse ring with a row of beads; for jewellery, wrist and fashion scenes.",
+  "tags": ["bracelet", "bangle", "wristlet", "jewellery", "jewelry", "beads", "accessory"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the bangle's lowest edge rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: about 480 px wide and 290 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "bangle metal colour"},
+    {"name": "color2", "type": "colour", "default": "#F27BA6", "note": "bead colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "sparkle"], "note": "bob = the bangle rocks gently; sparkle = glints pulse on the band"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FFC83D", "color2": "#F27BA6", "anim": "sparkle"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

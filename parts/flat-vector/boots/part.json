@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/boots",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Boots",
+  "summary": "Pair of ankle-high lace-up leather work boots with a chunky tread sole; for work and outdoor scenes.",
+  "tags": ["boots", "work boots", "leather boots", "footwear", "shoes", "hiking", "lace-up"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the soles sit on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the pair is about 600 px wide and 480 px tall; use about 0.25 next to a person"},
+    {"name": "color", "type": "colour", "default": "#8A5A3C", "note": "leather colour"},
+    {"name": "color2", "type": "colour", "default": "#3A4157", "note": "sole and pull tab colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "walk"], "note": "bob = the pair bounces; walk = the far boot lifts and steps"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (toe points left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#8A5A3C", "color2": "#3A4157", "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

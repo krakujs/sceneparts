@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/winter-coat",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Winter coat",
+  "summary": "Long quilted puffer coat with horizontal baffles and a fur-trimmed hood, on a hanger; for cold winter scenes.",
+  "tags": [
+    "winter coat",
+    "puffer coat",
+    "puffer jacket",
+    "parka",
+    "down coat",
+    "quilted",
+    "cold weather"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the hem rests on y (the hanger hangs above it)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 600-700 px tall at s = 1; hero size"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "coat colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#F4F1EA",
+      "note": "fur trim and cuffs colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway",
+        "pop"
+      ],
+      "note": "sway = swings gently from the hanger hook; pop = small settle bounce"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3D6FE0",
+    "color2": "#F4F1EA",
+    "anim": "pop"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

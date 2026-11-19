@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/holi-colors",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Holi colours",
+  "summary": "Bursts of pink, yellow, green, blue and orange colour powder thrown outward for Holi scenes. Anim puff expands.",
+  "tags": ["holi", "colour powder", "gulal", "festival", "india", "colours", "splash"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the burst"},
+    {"name": "y", "type": "number", "default": 960, "note": "centre y of the burst"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the cloud is about 900 px across"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "puff"], "note": "puff = the clouds burst outward from the centre and settle"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 960, "s": 1, "anim": "puff"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

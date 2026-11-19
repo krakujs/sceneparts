@@ -1,0 +1,25 @@
+{
+  "id": "core/swipe-gesture",
+  "type": "effect",
+  "style": "core",
+  "name": "Swipe gesture",
+  "summary": "Touch-screen swipe hint: a pointing hand slides left, right, up or down with a trail and arrow, on a loop.",
+  "tags": ["swipe", "gesture", "hand", "touch", "scroll", "slide", "tutorial", "ui"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x of the swipe path" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y of the swipe path" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "dir", "type": "enum", "default": "left", "values": ["left", "right", "up", "down"], "note": "swipe direction" },
+    { "name": "dist", "type": "number", "default": 380, "note": "swipe length in px at s = 1" },
+    { "name": "cycle", "type": "number", "default": 48, "note": "frames per swipe loop" },
+    { "name": "color", "type": "colour", "note": "arrow and trail colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "x": 540, "y": 960, "dir": "left" },
+  "layer": "screen",
+  "uses": ["core/stat-card", "core/pointer-hand"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

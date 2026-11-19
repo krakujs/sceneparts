@@ -1,0 +1,84 @@
+{
+  "id": "flat-vector/ramadan-lantern",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Ramadan lantern",
+  "summary": "Ornate metal fanous lantern with coloured glass panels and a glowing candle; use for Ramadan and Eid scenes.",
+  "tags": [
+    "ramadan lantern",
+    "fanous",
+    "ramadan",
+    "lantern",
+    "eid",
+    "glass lantern",
+    "candle"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 300,
+      "note": "the top ring: the lantern hangs from y (default 300 keeps it in the frame)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 300 px wide and 480 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "first glass colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#C9963A",
+      "note": "metal colour"
+    },
+    {
+      "name": "color3",
+      "type": "colour",
+      "default": "#1FA39A",
+      "note": "second glass colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "flicker",
+        "sway"
+      ],
+      "note": "flicker = the candle and glow pulse; sway = the lantern swings on its ring"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 300,
+    "s": 1,
+    "anim": "flicker"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

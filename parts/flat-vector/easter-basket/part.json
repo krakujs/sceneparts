@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/easter-basket",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Easter basket",
+  "summary": "Woven Easter basket with a handle, green grass and five decorated eggs; use for Easter and spring scenes.",
+  "tags": [
+    "easter basket",
+    "easter",
+    "eggs",
+    "spring",
+    "grass",
+    "hunt",
+    "basket"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom of the basket sits on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 500 px wide and 690 px tall; use about 0.5 on a table"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#C98B52",
+      "note": "wicker colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5DBB63",
+      "note": "grass colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob"
+      ],
+      "note": "bob = the basket gently rises and falls"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "bob"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/easter-egg"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/tiara",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Tiara",
+  "summary": "Delicate jewelled tiara: an arched band with a central peak and gems; the gems sparkle. For weddings and pageants.",
+  "tags": [
+    "tiara",
+    "diadem",
+    "princess tiara",
+    "bridal tiara",
+    "wedding tiara",
+    "jewelled crown",
+    "pageant",
+    "headpiece"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the item rests on y (hem or tip)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 700 px wide and 510 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "metal colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "gem colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sparkle"
+      ],
+      "note": "sparkle = the gems twinkle"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#FFC83D",
+    "color2": "#3D6FE0",
+    "anim": "sparkle"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
