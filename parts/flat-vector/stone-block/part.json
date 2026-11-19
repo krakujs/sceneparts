@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/stone-block",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Stone block",
+  "summary": "Big cut stone block in 3/4 view with chisel facets and a crack; for ruins, temples, quarry and building scenes.",
+  "tags": ["stone block", "stone", "block", "masonry", "quarry", "ruins", "rock"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the block sits on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: at s = 1 about 620 px wide and 440 px tall; use about 0.5 next to a person"},
+    {"name": "color", "type": "colour", "default": "#9AA3B5", "note": "stone colour"},
+    {"name": "color2", "type": "colour", "default": "#DDE2EA", "note": "lit top colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion of the whole block"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

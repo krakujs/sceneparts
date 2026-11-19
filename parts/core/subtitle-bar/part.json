@@ -1,0 +1,26 @@
+{
+  "id": "core/subtitle-bar",
+  "type": "text",
+  "style": "core",
+  "name": "Subtitle bar",
+  "summary": "Dark translucent rounded caption bar with one or two lines that slide up and fade in; for captions over video.",
+  "tags": ["subtitle", "caption", "captions", "lower third", "bar", "text", "speech"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1500, "note": "centre y of the bar" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "w", "type": "number", "default": 920, "note": "bar width" },
+    { "name": "line1", "type": "string", "default": "This is the caption people read", "note": "first line; keep it short" },
+    { "name": "line2", "type": "string", "default": "", "note": "optional second line; leave empty for one line" },
+    { "name": "color", "type": "colour", "note": "thin accent edge on top of the bar; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "line1": "This is the caption people read", "line2": "" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

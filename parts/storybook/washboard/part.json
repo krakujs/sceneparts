@@ -1,0 +1,22 @@
+{
+  "id": "storybook/washboard",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Washboard",
+  "summary": "Wooden washboard with ribbed tin in a tin tub of soap suds. Use for laundry, scrubbing or washing-day scenes.",
+  "tags": ["washboard", "laundry", "washing", "tub", "soap suds", "scrubbing", "household", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~450 px tall at 1" },
+    { "name": "wood", "type": "colour", "default": "#A97C50", "note": "frame colour" },
+    { "name": "suds", "type": "boolean", "default": true, "note": "soap suds bobbing" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1500, "s": 1.1 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

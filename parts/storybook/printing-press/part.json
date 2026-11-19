@@ -1,0 +1,22 @@
+{
+  "id": "storybook/printing-press",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Printing press",
+  "summary": "Wooden hand printing press with screw, platen and big lever, a sheet on the bed; for print shop or newspaper scenes.",
+  "tags": ["printing press", "print", "wooden", "newspaper", "workshop", "victorian", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "floor, bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~840 px wide, ~800 px tall at 1" },
+    { "name": "pressing", "type": "boolean", "default": true, "note": "platen presses and lever sways" },
+    { "name": "wood", "type": "colour", "default": "#8A6A45" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1500, "s": 0.9 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

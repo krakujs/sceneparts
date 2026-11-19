@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/iguana",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Iguana",
+  "summary": "Flat vector green iguana with dorsal spikes, a dewlap and a banded tail; a big friendly lizard.",
+  "tags": [
+    "iguana",
+    "lizard",
+    "reptile",
+    "green",
+    "spikes",
+    "jungle",
+    "animal"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "ground under the body"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "idle",
+      "values": [
+        "stand",
+        "walk",
+        "slither",
+        "idle",
+        "raised"
+      ],
+      "note": "walk = legs swing; slither = wave travels; idle = breathing, blink, tongue; raised = head up"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#6FB34B",
+      "note": "main colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "idle"
+  },
+  "uses": [
+    "flat-vector/reptile",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

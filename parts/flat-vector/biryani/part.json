@@ -1,0 +1,31 @@
+{
+  "id": "flat-vector/biryani",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Biryani",
+  "summary": "Wide plate of orange-and-white spiced rice with a chicken leg and herbs; for Indian feast and celebration meal scenes.",
+  "tags": [
+    "biryani",
+    "rice",
+    "food",
+    "indian food",
+    "chicken",
+    "feast",
+    "plate"
+  ],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the plate rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the plate is hero size (~500 px wide); use about 0.2–0.3 next to a person"},
+    {"name": "fillColor", "type": "colour", "default": "#FFF6E3", "note": "rice colour"},
+    {"name": "fillColor2", "type": "colour", "default": "#F4A259", "note": "saffron grain colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "pop"], "note": "bob = gentle up and down, pop = scale in with overshoot"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1},
+  "uses": ["flat-vector/dish", "flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

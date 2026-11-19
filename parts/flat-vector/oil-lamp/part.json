@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/oil-lamp",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Oil lamp",
+  "summary": "Traditional clay oil lamp with a spout and a flickering flame; for ancient, cave, tomb and candlelit scenes.",
+  "tags": ["oil lamp", "clay lamp", "lamp", "flame", "candle", "ancient", "light"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the lamp stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 420 px wide (hero size); use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#E9D3A9", "note": "clay colour"},
+    {"name": "color2", "type": "colour", "default": "#F28D3D", "note": "flame colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "flicker", "bob", "pop"], "note": "flicker = the flame sways and pulses"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the spout then points left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "flicker"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/tuba",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Tuba",
+  "summary": "Upright brass tuba with a big upturned bell, four piston valves and looped tubing; anim toot puffs sound rings up.",
+  "tags": ["tuba", "brass", "instrument", "band", "orchestra", "music", "marching band", "horn"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the bottom bow rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 480 px wide and 680 px tall; use about 0.5 next to a person" },
+    { "name": "color", "type": "colour", "default": "#FFC83D", "note": "brass colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "toot"], "note": "toot = sound rings rise out of the bell in turn" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror (valves on the right)" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "color": "#FFC83D", "anim": "toot" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

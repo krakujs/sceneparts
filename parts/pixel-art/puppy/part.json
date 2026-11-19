@@ -1,0 +1,112 @@
+{
+  "id": "pixel-art/puppy",
+  "type": "character",
+  "style": "pixel-art",
+  "name": "Puppy",
+  "summary": "Pixel-art puppy: small round young dog with floppy ears and a blue collar; for baby animal and pet scenes.",
+  "tags": [
+    "puppy",
+    "dog",
+    "baby animal",
+    "pet",
+    "animal",
+    "pixel",
+    "pixel art",
+    "retro"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "feet / ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; one cell = 24 px at s = 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "walk",
+      "values": [
+        "walk",
+        "run",
+        "none",
+        "bob",
+        "bounce",
+        "float",
+        "shake",
+        "pulse"
+      ],
+      "note": "walk/run swap leg cels; others move the whole sprite"
+    },
+    {
+      "name": "fps",
+      "type": "number",
+      "default": 8,
+      "note": "video frames per walk cel"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame drift (pair with walk)"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#e9b872",
+      "note": "main colour (char a)"
+    },
+    {
+      "name": "coat2",
+      "type": "colour",
+      "default": "#b5783a",
+      "note": "shade colour: ears, legs, tail (char A)"
+    },
+    {
+      "name": "pal",
+      "type": "object",
+      "note": "replace colours by char, e.g. {\"z\": \"#2f5fb8\"}"
+    },
+    {
+      "name": "px",
+      "type": "number",
+      "default": 24,
+      "note": "cell size"
+    },
+    {
+      "name": "outline",
+      "type": "boolean",
+      "default": true,
+      "note": "dark one-cell outline"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1.5,
+    "anim": "walk"
+  },
+  "uses": [
+    "pixel-art/sprite"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

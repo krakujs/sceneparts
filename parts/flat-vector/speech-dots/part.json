@@ -1,0 +1,77 @@
+{
+  "id": "flat-vector/speech-dots",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Speech Dots",
+  "summary": "Speech bubble with three dots that bounce in turn: use for typing, talking or waiting for a reply.",
+  "tags": [
+    "typing",
+    "speech",
+    "bubble",
+    "dots",
+    "talking",
+    "chat",
+    "waiting"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 480 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "bubble colour; a darker edge is added"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "bounce",
+      "values": [
+        "none",
+        "bounce",
+        "pulse"
+      ],
+      "note": "bounce = dots hop in turn, pulse = slight breathing"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror left-right"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "anim": "bounce"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

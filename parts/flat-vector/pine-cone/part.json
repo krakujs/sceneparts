@@ -1,0 +1,72 @@
+{
+  "id": "flat-vector/pine-cone",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Pine cone",
+  "summary": "Brown pine cone with overlapping scales; use for forests, winter and woodland props.",
+  "tags": [
+    "pine cone",
+    "pinecone",
+    "conifer",
+    "forest",
+    "brown",
+    "winter",
+    "nature"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "tip of the cone rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 400 px tall, hand-sized"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "cone colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop"
+      ],
+      "note": "pop = scales in"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#8A5A3C",
+    "anim": "none"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

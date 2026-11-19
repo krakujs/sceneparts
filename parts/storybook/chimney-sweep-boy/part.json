@@ -1,0 +1,24 @@
+{
+  "id": "storybook/chimney-sweep-boy",
+  "type": "character",
+  "style": "storybook",
+  "name": "Chimney sweep boy",
+  "summary": "Sooty young chimney sweep with a round brush on a pole and a bundle of rods, climbing the flue of a house.",
+  "tags": ["chimney sweep", "sweep", "soot", "child", "victorian", "history", "brush", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1580, "note": "feet" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~640 px tall at 1" },
+    { "name": "walk", "type": "boolean", "default": false, "note": "walk with the brush carried" },
+    { "name": "coat", "type": "colour", "default": "#4A4E5E" },
+    { "name": "skin", "type": "colour", "default": "#8D5A3B" },
+    { "name": "flip", "type": "boolean", "note": "face left" },
+    { "name": "vx", "type": "number", "note": "px per frame" }
+  ],
+  "example": { "x": 540, "y": 1580, "s": 1 },
+  "uses": ["storybook/style", "storybook/townsfolk"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "flat-vector/flower",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Flower",
+  "summary": "Garden flower on a stem with two leaves and a round five-petal bloom; use for gardens and meadows.",
+  "tags": [
+    "flower",
+    "bloom",
+    "garden",
+    "stem",
+    "petals",
+    "plant"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the stem rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 450 px tall, use about 0.4 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F27BA6",
+      "note": "petal colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = bloom and leaves move gently in the breeze"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "color": "#F27BA6",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

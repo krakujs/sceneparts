@@ -1,0 +1,23 @@
+{
+  "id": "core/phone-frame",
+  "type": "text",
+  "style": "core",
+  "name": "Phone frame",
+  "summary": "Generic modern smartphone outline with thin bezel and punch-hole camera; place content on the screen area.",
+  "tags": ["phone", "mobile", "device", "smartphone", "frame", "screen", "mockup"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "w", "type": "number", "default": 520, "note": "body width; height is about 2.1x" },
+    { "name": "screen", "type": "colour", "note": "screen fill; default the style's soft colour" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "w": 520 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

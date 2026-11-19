@@ -1,0 +1,33 @@
+{
+  "id": "storybook/rain",
+  "type": "effect",
+  "style": "storybook",
+  "name": "Rain",
+  "summary": "Falling rain streaks over the whole frame.",
+  "tags": [
+    "storybook",
+    "flat",
+    "rain",
+    "weather",
+    "storm",
+    "wet"
+  ],
+  "params": [
+    {
+      "name": "n",
+      "type": "number",
+      "default": 70
+    }
+  ],
+  "example": {
+    "n": 70
+  },
+  "uses": [
+    "storybook/world-sky"
+  ],
+  "layer": "fg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

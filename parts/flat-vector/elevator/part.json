@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/elevator",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Elevator",
+  "summary": "Lift doors in a wall frame with an up and down arrow indicator; anim open slides the doors apart. For buildings.",
+  "tags": [
+    "elevator",
+    "lift",
+    "doors",
+    "building",
+    "office",
+    "floor",
+    "hallway"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the doors stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 620 px wide and 1000 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#DDE2EA",
+      "note": "door colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "door frame and handle colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "open",
+        "bob",
+        "pop"
+      ],
+      "note": "open = the doors slide apart over 40 frames and stay open"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "open"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

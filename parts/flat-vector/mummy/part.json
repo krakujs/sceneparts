@@ -1,0 +1,92 @@
+{
+  "id": "flat-vector/mummy",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Mummy",
+  "summary": "Flat vector bandage-wrapped cartoon mummy with glowing eyes and arms forward; friendly, for spooky-fun scenes.",
+  "tags": [
+    "mummy",
+    "bandage",
+    "egypt",
+    "undead",
+    "glowing eyes",
+    "cartoon",
+    "halloween",
+    "spooky"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "hold",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "wave",
+        "point",
+        "think",
+        "cheer",
+        "talk",
+        "hold"
+      ],
+      "note": "hold = arms forward"
+    },
+    {
+      "name": "expression",
+      "type": "enum",
+      "default": "neutral",
+      "values": [
+        "smile",
+        "neutral",
+        "open",
+        "surprised",
+        "sad",
+        "angry",
+        "laugh"
+      ]
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "hold"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

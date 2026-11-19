@@ -1,0 +1,77 @@
+{
+  "id": "ink-sketch/beach-sunset",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Beach at sunset",
+  "summary": "Ink sketch beach at sunset: low sun on the horizon, reflection streak on the sea, silhouetted palm and sand.",
+  "tags": [
+    "beach",
+    "sunset",
+    "sea",
+    "palm",
+    "evening",
+    "dusk",
+    "background",
+    "outdoor",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "dusk",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "dusk is the classic look; night gives a moonlit beach"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky tint and animated weather"
+    },
+    {
+      "name": "silhouette",
+      "type": "colour",
+      "default": "#2B2540",
+      "note": "colour of the palm silhouette"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds and the reflection shimmer move from p.f"
+    }
+  ],
+  "example": {
+    "time": "dusk",
+    "weather": "clear",
+    "silhouette": "#2B2540"
+  },
+  "uses": [
+    "flat-vector/beach-sunset",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

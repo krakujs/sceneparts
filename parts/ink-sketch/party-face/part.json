@@ -1,0 +1,155 @@
+{
+  "id": "ink-sketch/party-face",
+  "type": "effect",
+  "style": "ink-sketch",
+  "name": "Party Face",
+  "summary": "Ink sketch sticker celebrating face in a party hat with confetti; reaction for videos and comments.",
+  "tags": [
+    "party",
+    "celebrate",
+    "birthday",
+    "hooray",
+    "fun",
+    "face",
+    "reaction",
+    "emotion",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; face is about 360 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "face colour (one darker crescent is added automatically)"
+    },
+    {
+      "name": "brows",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "up",
+        "angry",
+        "worried",
+        "one",
+        "flat"
+      ],
+      "note": "eyebrows; one = one raised (skeptical)"
+    },
+    {
+      "name": "tears",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "drop",
+        "streams",
+        "fountain"
+      ],
+      "note": "drop = one rolling tear, streams = crying, fountain = tears of laughter"
+    },
+    {
+      "name": "blush",
+      "type": "boolean",
+      "default": false,
+      "note": "pink cheeks"
+    },
+    {
+      "name": "sweat",
+      "type": "boolean",
+      "default": false,
+      "note": "sweat drop sliding down the forehead"
+    },
+    {
+      "name": "look",
+      "type": "enum",
+      "default": "center",
+      "values": [
+        "center",
+        "left",
+        "right",
+        "up",
+        "down"
+      ],
+      "note": "pupil direction for dot, open and wide eyes"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "bounce",
+      "values": [
+        "none",
+        "bob",
+        "bounce",
+        "shake",
+        "wobble",
+        "pulse",
+        "tremble",
+        "spin",
+        "nod"
+      ],
+      "note": "idle motion from p.f"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    },
+    {
+      "name": "blink",
+      "type": "boolean",
+      "default": true,
+      "note": "blinks every 96 frames"
+    },
+    {
+      "name": "border",
+      "type": "boolean",
+      "default": true,
+      "note": "white die-cut sticker edge around the face"
+    },
+    {
+      "name": "rotate",
+      "type": "number",
+      "default": 0,
+      "note": "degrees; 180 = upside down"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror left-right"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960
+  },
+  "uses": [
+    "flat-vector/party-face",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

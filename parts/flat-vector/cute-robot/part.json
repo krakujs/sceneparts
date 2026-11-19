@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/cute-robot",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Robot cute",
+  "summary": "Small rounded white and teal robot with a screen face and glowing eyes, hovering on thrusters.",
+  "tags": ["robot", "cute", "cartoon", "hover", "screen face", "friendly", "sci-fi", "kids"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540},
+    {"name": "y", "type": "number", "default": 1400, "note": "floor point under the robot (its shadow); it hovers above"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; ~750 px tall at 1"},
+    {"name": "anim", "type": "enum", "default": "hover", "values": ["hover", "none"], "note": "hover = bobs gently with flickering thrusters"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1400, "anim": "hover"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

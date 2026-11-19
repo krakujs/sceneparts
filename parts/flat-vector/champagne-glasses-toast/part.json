@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/champagne-glasses-toast",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Toasting glasses",
+  "summary": "Two tall champagne flutes of bubbly clinking at an angle with a small splash; for toasts and celebrations. Anim clink.",
+  "tags": ["champagne", "toast", "cheers", "clink", "celebration", "wine glass", "new year"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x between the two feet"},
+    {"name": "y", "type": "number", "default": 1400, "note": "y of the feet (the glasses stand on y)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the pair is about 560 px wide and 600 px tall"},
+    {"name": "color", "type": "colour", "default": "#F4D27A", "note": "champagne colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "clink", "sparkle"], "note": "clink = the glasses knock together and the splash flashes; sparkle = bubbles keep rising"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1400, "s": 1, "anim": "clink"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

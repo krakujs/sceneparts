@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/lifeguard-tower",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Lifeguard Tower",
+  "summary": "Raised lifeguard chair with a ramp, a flag and a rescue buoy on the beach. For beach safety scenes.",
+  "tags": [
+    "lifeguard",
+    "lifeguard tower",
+    "beach",
+    "rescue",
+    "buoy",
+    "sea",
+    "safety"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the base stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 720 px wide and 910 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "Chair colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "Roof and accent colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "lights"
+      ],
+      "note": "pop = scales in; lights = the beacon light on the chair blinks"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "lights"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

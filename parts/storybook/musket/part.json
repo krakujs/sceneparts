@@ -1,0 +1,23 @@
+{
+  "id": "storybook/musket",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Musket",
+  "summary": "Long flintlock musket with a wooden stock resting across two stands. For soldiers, forts or history scenes.",
+  "tags": ["musket", "flintlock", "rifle", "gun", "soldier", "history", "wood", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "bottom centre, on the stands" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~860 px wide at 1" },
+    { "name": "wood", "type": "colour", "default": "#8A6A45", "note": "stock colour" },
+    { "name": "iron", "type": "colour", "default": "#4A4E5E", "note": "barrel colour" },
+    { "name": "angle", "type": "number", "default": -6, "min": -30, "max": 30, "note": "tilt in degrees" },
+    { "name": "flip", "type": "boolean", "note": "butt on the right" }
+  ],
+  "example": { "x": 540, "y": 1500, "s": 0.9 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/lever",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Floor Lever",
+  "summary": "Floor-mounted lever or switch handle with a round knob that can be pulled over; for control and machine scenes.",
+  "tags": [
+    "lever",
+    "switch",
+    "handle",
+    "floor lever",
+    "pull",
+    "control",
+    "machine",
+    "toggle"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the base plate sits on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "hero scale: about 420 px tall at s = 1; use about 0.3–0.4 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "knob colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#9AA3B5",
+      "note": "rod colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "pull"
+      ],
+      "note": "pull = the lever swings over to the left and back"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the lever then leans left and pulls to the right)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "pull"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

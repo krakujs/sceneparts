@@ -1,0 +1,111 @@
+{
+  "id": "pixel-art/hippo",
+  "type": "character",
+  "style": "pixel-art",
+  "name": "Hippopotamus",
+  "summary": "Pixel-art hippo in side view with a barrel body, wide muzzle and tiny ears; two-cel walk for river and zoo scenes.",
+  "tags": [
+    "hippo",
+    "hippopotamus",
+    "wild animal",
+    "pixel",
+    "pixel art",
+    "retro",
+    "river"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "feet / ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 0.9,
+      "note": "scale; one cell = 24 px at s = 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "walk",
+      "values": [
+        "walk",
+        "run",
+        "none",
+        "bob",
+        "bounce",
+        "float",
+        "shake",
+        "pulse"
+      ],
+      "note": "walk/run swap leg cels; others move the whole sprite"
+    },
+    {
+      "name": "fps",
+      "type": "number",
+      "default": 8,
+      "note": "video frames per cel"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame drift (pair with walk or fly)"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#8c7fa0",
+      "note": "main skin colour (char a)"
+    },
+    {
+      "name": "coat2",
+      "type": "colour",
+      "default": "#5f5470",
+      "note": "shade colour (char A): wings, ears, legs, tail"
+    },
+    {
+      "name": "pal",
+      "type": "object",
+      "note": "replace colours by char, e.g. {\"k\": \"#000000\"}"
+    },
+    {
+      "name": "px",
+      "type": "number",
+      "default": 24,
+      "note": "cell size"
+    },
+    {
+      "name": "outline",
+      "type": "boolean",
+      "default": true,
+      "note": "dark one-cell outline"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 0.9,
+    "anim": "walk"
+  },
+  "uses": [
+    "pixel-art/sprite"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

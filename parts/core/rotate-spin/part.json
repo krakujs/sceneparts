@@ -1,0 +1,24 @@
+{
+  "id": "core/rotate-spin",
+  "type": "effect",
+  "style": "core",
+  "name": "Rotate spin",
+  "summary": "Spiral-wedge transition: a coloured sector sweeps round the centre like a clock hand, covering or clearing the frame.",
+  "tags": ["spin", "spiral", "clock wipe", "rotate", "transition", "wedge"],
+  "params": [
+    { "name": "mode", "type": "enum", "default": "in", "values": ["in", "out"], "note": "in covers the frame by spinning, out clears it" },
+    { "name": "x", "type": "number", "default": 540, "note": "pivot x in px" },
+    { "name": "y", "type": "number", "default": 960, "note": "pivot y in px" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "len", "type": "number", "default": 28, "note": "frames the sweep takes" },
+    { "name": "color", "type": "colour", "default": "#1a1410", "note": "wedge colour" }
+  ],
+  "example": { "mode": "in", "len": 40 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

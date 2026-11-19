@@ -1,0 +1,74 @@
+{
+  "id": "flat-vector/comb",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Comb",
+  "summary": "Plastic hair comb lying slightly angled on the floor; for hair and grooming scenes.",
+  "tags": [
+    "comb",
+    "hair comb",
+    "hair",
+    "grooming",
+    "plastic comb",
+    "hairbrush",
+    "bathroom"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F27BA6",
+      "note": "comb colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "swipe"
+      ],
+      "note": "swipe = slides a little from side to side"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#F27BA6"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

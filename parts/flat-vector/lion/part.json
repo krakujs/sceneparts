@@ -1,0 +1,92 @@
+{
+  "id": "flat-vector/lion",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Lion",
+  "summary": "Flat vector male lion with golden coat, big brown mane and tufted tail; for savanna and safari scenes.",
+  "tags": [
+    "lion",
+    "male lion",
+    "savanna",
+    "safari",
+    "animal",
+    "big cat",
+    "africa"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "idle",
+        "sit",
+        "lie",
+        "graze"
+      ],
+      "note": "idle = breathing + tail wag; graze = head down"
+    },
+    {
+      "name": "mouth",
+      "type": "enum",
+      "default": "smile",
+      "values": [
+        "none",
+        "smile",
+        "open",
+        "tongue"
+      ]
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#D9A441",
+      "note": "coat colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "stand"
+  },
+  "uses": [
+    "flat-vector/quadruped",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

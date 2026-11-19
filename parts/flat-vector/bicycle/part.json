@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/bicycle",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Bicycle",
+  "summary": "Diamond-frame bicycle in side view facing right, with pedals, chain ring and handlebars; pedals turn when driving.",
+  "tags": ["bicycle", "bike", "cycling", "cycle", "pedal", "road", "vehicle"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x at frame 0" },
+    { "name": "y", "type": "number", "default": 1560, "note": "floor line: the wheels stand on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "room scale: about 480 px wide and 380 px tall at s = 1" },
+    { "name": "color", "type": "colour", "default": "#E8503F", "note": "frame colour" },
+    { "name": "color2", "type": "colour", "default": "#5D6578", "note": "wheel rim and chain colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "drive", "bob", "pop"], "note": "drive = wheels and pedals turn (also on when vx is not 0)" },
+    { "name": "vx", "type": "number", "default": 0, "note": "horizontal speed in px per frame (negative = left; set flip too)" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror so the bike faces left" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "anim": "drive" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

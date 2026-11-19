@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/earbuds",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Wireless Earbuds",
+  "summary": "Open wireless earbuds charging case with the buds in and beside it; for music, podcast and gadget scenes.",
+  "tags": ["earbuds", "earphones", "airpods", "wireless", "charging case", "headphones", "music"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the case and bud stand on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 580 px wide and 330 px tall (hero size); use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "case colour"},
+    {"name": "color2", "type": "colour", "default": "#FFFFFF", "note": "bud colour"},
+    {"name": "accent", "type": "colour", "default": "#4BB46A", "note": "charge light colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pulse", "pop"], "note": "pulse = the charge light breathes"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "pulse"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

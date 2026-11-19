@@ -1,0 +1,76 @@
+{
+  "id": "flat-vector/alarm-clock",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Alarm Clock",
+  "summary": "Twin-bell alarm clock on little legs; anim ring shakes it with motion lines, tick moves the hands. For bedrooms.",
+  "tags": [
+    "alarm clock",
+    "clock",
+    "twin bell",
+    "wake up",
+    "bedside clock",
+    "morning",
+    "ringing"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the feet rest on y; set y to a bedside table top to place it"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size (about 400 px across); use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "case colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "ring",
+        "tick"
+      ],
+      "note": "ring = shakes with motion lines; tick = second hand jumps once a second"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#E8503F",
+    "anim": "ring"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

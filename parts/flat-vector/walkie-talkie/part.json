@@ -1,0 +1,75 @@
+{
+  "id": "flat-vector/walkie-talkie",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Walkie talkie",
+  "summary": "Handheld two-way radio with antenna and speaker grille; anim talk presses the button and sends sound.",
+  "tags": [
+    "walkie talkie",
+    "two way radio",
+    "handheld radio",
+    "radio",
+    "walkie",
+    "walkie-talkie",
+    "communication"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the body rests on y; the antenna rises above it"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 the body is about 200 px wide and 420 px tall, with the antenna about 650 px in all"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "body colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "talk"
+      ],
+      "note": "talk = the talk button presses and sound arcs pulse out of the grille"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#FF8A3D",
+    "anim": "talk"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

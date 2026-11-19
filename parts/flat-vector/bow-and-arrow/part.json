@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/bow-and-arrow",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bow and arrow",
+  "summary": "Upright wooden recurve bow with an arrow nocked on the string; anim draw pulls the string back and releases.",
+  "tags": ["bow", "bow and arrow", "archery", "arrow", "recurve bow", "archer", "hunting", "weapon"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the bow's grip"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom tip of the bow rests on y"},
+    {"name": "s", "type": "number", "default": 1.2, "note": "scale; about 620 px tall and 260 px wide at s = 1"},
+    {"name": "color", "type": "colour", "default": "#A8703F", "note": "wood colour"},
+    {"name": "anim", "type": "enum", "default": "draw", "values": ["none", "draw"], "note": "draw = the string is pulled back and the arrow snaps forward, looping"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror: the arrow points left"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1.2, "anim": "draw"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

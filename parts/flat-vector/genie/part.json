@@ -1,0 +1,65 @@
+{
+  "id": "flat-vector/genie",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Genie",
+  "summary": "Flat vector magic genie with purple skin, a smoky tail instead of legs, plum waistcoat and folded arms.",
+  "tags": [
+    "genie",
+    "spirit",
+    "magic",
+    "smoke",
+    "wish",
+    "lamp",
+    "fantasy",
+    "djinn"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#A8489E",
+      "note": "Skin colour (purple-magenta)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

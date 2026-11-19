@@ -1,0 +1,52 @@
+{
+  "id": "pixel-art/haunted-house",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Haunted house",
+  "summary": "Pixel-art haunted house on a hill at night: crooked mansion, flickering window, bats and dead trees.",
+  "tags": [
+    "haunted house",
+    "mansion",
+    "spooky",
+    "night",
+    "halloween",
+    "background",
+    "pixel",
+    "pixel art"
+  ],
+  "params": [
+    {
+      "name": "groundY",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line; stand characters on it"
+    },
+    {
+      "name": "seed",
+      "type": "number",
+      "default": 9,
+      "note": "varies clouds, skyline and details"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "flicker",
+      "values": [
+        "flicker",
+        "none"
+      ],
+      "note": "bats fly and a window flickers from p.f"
+    }
+  ],
+  "example": {
+    "anim": "flicker"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

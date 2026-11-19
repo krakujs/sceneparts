@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/circuit-board",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Circuit board",
+  "summary": "Green circuit board on two posts with copper traces, chips and capacitors; anim pulse sends light along the traces.",
+  "tags": ["circuit board", "pcb", "electronics", "microchip", "chip", "tech", "hardware"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom centre: the posts rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the board is about 520 px wide and 380 px tall (hero size)"},
+    {"name": "color", "type": "colour", "default": "#348A4F", "note": "board colour"},
+    {"name": "trace", "type": "colour", "default": "#FFC83D", "note": "copper trace colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "pulse"], "note": "pulse = bright light pulses travel along the traces"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "color": "#348A4F", "anim": "pulse"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

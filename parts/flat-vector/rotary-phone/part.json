@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/rotary-phone",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Rotary Phone",
+  "summary": "Classic dial telephone with the handset resting on its cradles; use for old-fashioned, retro or landline scenes.",
+  "tags": ["rotary phone", "dial phone", "landline", "telephone", "retro phone", "old phone", "ringing"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the base rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the phone is hero size (about 500 px wide); use about 0.4 on a desk next to a person"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "body colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "ring"], "note": "ring = handset shakes with motion lines"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E8503F", "anim": "ring"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

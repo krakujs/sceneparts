@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/museum-gallery",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Museum gallery",
+  "summary": "Full-frame flat museum gallery: framed abstract paintings, vase on pedestal, bench, rope barriers, spotlights.",
+  "tags": ["museum", "gallery", "art", "paintings", "exhibition", "pedestal", "background", "indoor"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "room light; spotlights show more at night" },
+    { "name": "wall", "type": "colour", "default": "#F1ECE2", "note": "gallery wall colour" },
+    { "name": "accent", "type": "colour", "default": "#1FA39A", "note": "accent colour in the paintings and vase" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = barrier rope sways from p.f" }
+  ],
+  "example": { "time": "day" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

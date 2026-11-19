@@ -1,0 +1,26 @@
+{
+  "id": "core/emoji-caption",
+  "type": "text",
+  "style": "core",
+  "name": "Emoji caption",
+  "summary": "Caption pill with a drawn round reaction face (happy, shock, laugh, sad, love, think) that pops in and bounces.",
+  "tags": ["emoji", "reaction", "caption", "face", "pill", "meme", "text"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1400, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "w", "type": "number", "default": 800, "note": "pill width" },
+    { "name": "text", "type": "string", "default": "This is so relatable", "note": "caption; shrinks to fit" },
+    { "name": "face", "type": "enum", "values": ["happy", "shock", "laugh", "sad", "love", "think"], "default": "happy", "note": "reaction face" },
+    { "name": "color", "type": "colour", "note": "face colour; default a warm yellow" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "text": "This is so relatable", "face": "laugh" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

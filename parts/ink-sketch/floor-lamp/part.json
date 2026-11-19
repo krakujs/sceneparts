@@ -1,0 +1,94 @@
+{
+  "id": "ink-sketch/floor-lamp",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Floor Lamp",
+  "summary": "Ink sketch tall standing lamp with a straight or arched pole and drum shade; anim on gives a glow.",
+  "tags": [
+    "floor lamp",
+    "standing lamp",
+    "lamp",
+    "reading lamp",
+    "living room",
+    "light",
+    "arc lamp",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the base rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 matches a ink-sketch person at s = 1 (about 900 px tall)"
+    },
+    {
+      "name": "variant",
+      "type": "enum",
+      "default": "straight",
+      "values": [
+        "straight",
+        "arc"
+      ],
+      "note": "straight = upright pole; arc = pole bends over to the right"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E9D3A9",
+      "note": "shade colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#3A4157",
+      "note": "pole and base colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "on"
+      ],
+      "note": "on = lamp switched on with a warm glow"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "variant": "arc",
+    "anim": "on"
+  },
+  "uses": [
+    "flat-vector/floor-lamp",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

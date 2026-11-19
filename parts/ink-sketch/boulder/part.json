@@ -1,0 +1,79 @@
+{
+  "id": "ink-sketch/boulder",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Boulder",
+  "summary": "Ink sketch big rounded grey boulder with cracks and a moss patch. For fields, cliffs and rocky scenes.",
+  "tags": [
+    "boulder",
+    "big rock",
+    "moss",
+    "cracks",
+    "stone",
+    "grey",
+    "rocky ground",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the part stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 600 px wide and 330 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#9AA3B5",
+      "note": "boulder colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "moss colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop"
+      ],
+      "note": "pop = grows into place"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1
+  },
+  "uses": [
+    "flat-vector/boulder",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

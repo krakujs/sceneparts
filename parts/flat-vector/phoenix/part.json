@@ -1,0 +1,65 @@
+{
+  "id": "flat-vector/phoenix",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Phoenix",
+  "summary": "Fiery phoenix flying with wings spread and flame-like tail feathers that flicker. For magic and rebirth scenes.",
+  "tags": [
+    "phoenix",
+    "fire bird",
+    "flame",
+    "firebird",
+    "flying",
+    "bird",
+    "magic",
+    "fantasy"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900,
+      "note": "body centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "flicker",
+      "values": [
+        "flicker",
+        "none"
+      ],
+      "note": "flicker = flames dance; none = still"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "anim": "flicker"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,82 @@
+{
+  "id": "flat-vector/seed",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Seed",
+  "summary": "Seeds: a large striped sunflower seed with two beans, or one bean splitting open with a tiny sprout. Hand-sized props.",
+  "tags": [
+    "seed",
+    "seeds",
+    "bean",
+    "sunflower seed",
+    "sprout",
+    "germination",
+    "nature"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom of the seeds rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 380 px wide, hand-sized"
+    },
+    {
+      "name": "variant",
+      "type": "enum",
+      "default": "seeds",
+      "values": [
+        "seeds",
+        "sprouting"
+      ],
+      "note": "seeds = striped seed and two beans, sprouting = one bean splitting with a tiny sprout"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "colour of the large seed (sprouting) or bean"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop"
+      ],
+      "note": "pop = scales in"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "variant": "seeds",
+    "anim": "none"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

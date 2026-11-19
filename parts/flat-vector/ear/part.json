@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/ear",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Ear",
+  "summary": "Human ear in side view with a skin tone param and sound arcs; anim sound pulses the arcs toward it. For hearing lessons.",
+  "tags": ["ear", "hearing", "listening", "sound", "anatomy", "ear canal", "audio"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 900, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 350 px tall" },
+    { "name": "skin", "type": "enum", "default": "fair", "values": ["light", "fair", "tan", "medium", "brown", "dark"], "note": "skin tone from the style palette" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "sound"], "note": "sound = the arcs pulse one after another toward the ear" }
+  ],
+  "example": { "x": 540, "y": 900, "s": 1, "skin": "tan", "anim": "sound" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

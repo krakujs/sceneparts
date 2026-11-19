@@ -1,0 +1,76 @@
+{
+  "id": "flat-vector/frog",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Frog",
+  "summary": "Flat vector green frog with big top eyes and a wide smile; sits, hops or croaks, for pond and cute scenes.",
+  "tags": [
+    "frog",
+    "amphibian",
+    "green",
+    "pond",
+    "hop",
+    "croak",
+    "animal"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "ground under the body"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "sit",
+      "values": [
+        "sit",
+        "hop",
+        "croak"
+      ],
+      "note": "sit = sitting, breathing; hop = jump arc from f; croak = throat sac inflates"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#5DB85A",
+      "note": "main colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "sit"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

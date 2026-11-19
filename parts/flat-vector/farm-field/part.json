@@ -1,0 +1,15 @@
+{
+  "id": "flat-vector/farm-field",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Farm field",
+  "summary": "Ploughed brown furrows in perspective with a green crop strip across the middle; use for farmland backgrounds.",
+  "tags": ["farm field","furrows","ploughed","farmland","crops","soil","countryside"],
+  "params": [{"name":"x","type":"number","default":540,"note":"centre x"},{"name":"y","type":"number","default":1600,"note":"near edge of the field"},{"name":"s","type":"number","default":1,"note":"about 1000 px wide and 420 px tall at s = 1"},{"name":"color","type":"colour","default":"#B07B4F","note":"soil colour"},{"name":"color2","type":"colour","default":"#5DAA55","note":"crop strip colour"},{"name":"flip","type":"boolean","default":false,"note":"mirror"}],
+  "example": {"x":540,"y":1600,"s":1},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

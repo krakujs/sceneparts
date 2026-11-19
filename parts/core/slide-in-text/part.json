@@ -1,0 +1,28 @@
+{
+  "id": "core/slide-in-text",
+  "type": "text",
+  "style": "core",
+  "name": "Slide in text",
+  "summary": "A word or phrase that slides in from a chosen side behind a mask with an ease-out, for lower thirds and headers.",
+  "tags": ["slide", "slide in", "mask", "lower third", "header", "entrance", "text"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame; overrides at when set" },
+    { "name": "text", "type": "string", "default": "Coming up next", "note": "the words that slide in" },
+    { "name": "size", "type": "number", "default": 130, "note": "font size; shrinks to fit 960 px" },
+    { "name": "dir", "type": "enum", "values": ["left", "right", "up", "down"], "default": "left", "note": "side it enters from; up = from below, down = from above" },
+    { "name": "len", "type": "number", "default": 22, "note": "frames for the slide" },
+    { "name": "seed", "type": "string", "default": "slide", "note": "unique id prefix for the mask" },
+    { "name": "color", "type": "colour", "note": "text colour; default style accent" }
+  ],
+  "example": { "text": "Coming up next", "size": 130, "dir": "left" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

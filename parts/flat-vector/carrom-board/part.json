@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/carrom-board",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Carrom board",
+  "summary": "Square carrom board with four corner pockets, coins and a striker, seen at an angle; for tabletop game scenes.",
+  "tags": ["carrom", "carrom board", "board game", "pockets", "striker", "coins", "table game"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1320, "note": "centre y of the board on the table"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the board is about 760 px wide at the near edge"},
+    {"name": "color", "type": "colour", "default": "#F2C29E", "note": "board surface colour"},
+    {"name": "accent", "type": "colour", "default": "#E8503F", "note": "coin colour (the other coins are cream)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "pop", "strike"], "note": "strike = the striker slides into the coins"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1320, "s": 1, "anim": "strike"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

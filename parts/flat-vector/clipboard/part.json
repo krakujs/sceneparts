@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/clipboard",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Clipboard",
+  "summary": "Brown clipboard with a metal clip and a checklist of ticked boxes; anim check ticks the items off one by one.",
+  "tags": ["clipboard", "checklist", "to do", "tick", "checkbox", "list", "audit"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the board rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size at s = 1 (about 660 px tall); use about 0.2–0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#8A5A3C", "note": "board colour"},
+    {"name": "color2", "type": "colour", "default": "#2FA85B", "note": "tick colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "check", "bob", "wobble", "pop"], "note": "check = ticks appear one by one; with none all ticks show"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#8A5A3C", "color2": "#2FA85B", "anim": "check"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/escape-pod",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Escape pod",
+  "summary": "White and grey cone-nosed escape capsule with a round window, three base fins and a glowing thruster flame.",
+  "tags": ["escape pod", "capsule", "spaceship", "lander", "rescue", "sci-fi", "pod", "rocket"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1300, "note": "tip of the flame; the pod hovers above it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 740 px tall at 1"},
+    {"name": "anim", "type": "enum", "default": "bob", "values": ["none", "bob"], "note": "bob = the pod bobs and the flame flickers"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1300, "anim": "bob"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

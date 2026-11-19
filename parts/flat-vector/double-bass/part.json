@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/double-bass",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Double bass",
+  "summary": "Very tall upright double bass on its endpin, with a bow beside it. For orchestra, jazz or band scenes.",
+  "tags": ["double bass", "upright bass", "contrabass", "string bass", "orchestra", "jazz", "bass"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the endpin rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; room-sized: about 1.8 m tall, so at s = 1 about 500 px wide and 1010 px tall"},
+    {"name": "color", "type": "colour", "default": "#8A5A3C", "note": "wood colour of the body"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion of the whole bass"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (bow moves to the left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#8A5A3C", "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

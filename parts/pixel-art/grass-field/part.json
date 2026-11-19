@@ -1,0 +1,21 @@
+{
+  "id": "pixel-art/grass-field",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Grass field",
+  "summary": "Pixel-art open meadow background: sky, distant hills, lawn with flowers and grass tufts; for outdoor scenes.",
+  "tags": ["grass", "meadow", "field", "lawn", "outdoor", "background", "pixel", "pixel art", "game", "level"],
+  "params": [
+    {"name": "time", "type": "enum", "default": "day", "values": ["day", "dusk", "night"], "note": "sky colours and light"},
+    {"name": "groundY", "type": "number", "default": 1600, "note": "ground line; stand characters on it"},
+    {"name": "seed", "type": "number", "default": 3, "note": "varies clouds, hills and flower spots"},
+    {"name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "clouds drift and grass tufts sway from p.f"}
+  ],
+  "example": {"time": "day"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

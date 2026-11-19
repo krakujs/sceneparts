@@ -1,0 +1,94 @@
+{
+  "id": "ink-sketch/cow",
+  "type": "character",
+  "style": "ink-sketch",
+  "name": "Cow",
+  "summary": "Ink sketch white dairy cow with black patches, a pink muzzle and small horns; for farm and dairy scenes.",
+  "tags": [
+    "cow",
+    "dairy",
+    "farm",
+    "cattle",
+    "animal",
+    "mammal",
+    "moo",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "idle",
+        "sit",
+        "lie",
+        "graze"
+      ],
+      "note": "idle = breathing + tail wag; graze = head down"
+    },
+    {
+      "name": "mouth",
+      "type": "enum",
+      "default": "smile",
+      "values": [
+        "none",
+        "smile",
+        "open",
+        "tongue"
+      ]
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F7F5F0",
+      "note": "coat colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "stand"
+  },
+  "uses": [
+    "ink-sketch/quadruped",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

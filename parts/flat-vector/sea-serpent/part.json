@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/sea-serpent",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Sea serpent",
+  "summary": "Long teal sea serpent with fins and a raised head, humps rising out of waves. For sea, ocean and myth scenes.",
+  "tags": [
+    "sea serpent",
+    "serpent",
+    "sea monster",
+    "ocean",
+    "waves",
+    "dragon",
+    "fins",
+    "myth"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the water strip"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1FA39A",
+      "note": "body colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "swim",
+      "values": [
+        "swim",
+        "none"
+      ],
+      "note": "swim = body undulates and waves roll; none = still"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "anim": "swim"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

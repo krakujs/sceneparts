@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/traffic-cone",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Traffic cone",
+  "summary": "Orange traffic cone with white reflective bands on a square base; for roadworks, street and warning scenes.",
+  "tags": ["traffic cone", "cone", "roadworks", "road", "warning", "street", "orange cone"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the base stands on the floor at y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (about 420 px tall); use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "cone colour"},
+    {"name": "color2", "type": "colour", "default": "#FFFFFF", "note": "reflective band colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "flash"], "note": "flash = the reflective bands brighten and dim"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "flash"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

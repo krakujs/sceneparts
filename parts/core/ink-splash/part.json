@@ -1,0 +1,25 @@
+{
+  "id": "core/ink-splash",
+  "type": "effect",
+  "style": "core",
+  "name": "Ink splash",
+  "summary": "Ink blot that splats out of a point with droplets and streaks, then holds still; for punchy title reveals.",
+  "tags": ["ink", "splash", "splat", "blot", "paint", "reveal"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "splat centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "splat centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "size", "type": "number", "default": 230, "note": "blot radius in px" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "seed", "type": "string", "default": "ink", "note": "change for a different blot shape" },
+    { "name": "color", "type": "colour", "note": "ink colour; default the style ink" }
+  ],
+  "example": { "x": 540, "y": 900, "size": 240 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "core/impact-frame",
+  "type": "effect",
+  "style": "core",
+  "name": "Impact frame",
+  "summary": "Full-frame hit: the screen flashes inverted black and white with a radial burst; for big punchlines and hits.",
+  "tags": ["impact", "flash", "burst", "hit", "manga", "punchline"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "burst centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "burst centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "burst size multiplier" },
+    { "name": "count", "type": "number", "default": 28, "note": "number of rays, 8 to 60 (only even slots are drawn)" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "seed", "type": "string", "default": "impact", "note": "change for a different ray jitter" }
+  ],
+  "example": { "x": 540, "y": 900, "count": 28 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

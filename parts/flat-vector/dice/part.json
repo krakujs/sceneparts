@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/dice",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Dice",
+  "summary": "Two white dice with pips showing, resting on the ground; anim roll tumbles them for a game or chance scene.",
+  "tags": ["dice", "die", "game", "gambling", "luck", "board game", "roll"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the pair"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the dice rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the pair is about 460 px wide and 230 px tall"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "die body colour"},
+    {"name": "accent", "type": "colour", "default": "#E8503F", "note": "pip colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "roll", "bob", "pop"], "note": "roll = both dice tumble and settle on new faces"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "roll"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

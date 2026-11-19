@@ -1,0 +1,20 @@
+{
+  "id": "flat-vector/tv-studio",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "TV studio",
+  "summary": "Full-frame flat TV studio background: backdrop screen with abstract graphics, lights rig, studio cameras, news desk.",
+  "tags": ["tv studio", "news", "broadcast", "studio", "cameras", "presenter", "television", "background"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "studio light tint; spotlight beams show more at night" },
+    { "name": "graphics", "type": "colour", "default": "#3D6FE0", "note": "backdrop screen colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = on-air light blinks from p.f" }
+  ],
+  "example": { "time": "day" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

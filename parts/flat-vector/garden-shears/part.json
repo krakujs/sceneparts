@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/garden-shears",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Garden shears",
+  "summary": "Long-handled hedge shears lying on the ground, blades open; for gardening, hedge-trimming and yard scenes.",
+  "tags": ["shears", "hedge shears", "garden shears", "hedge trimmer", "gardening", "cutting", "pruning"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line under the handle ends"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 460 px long (hero size); use about 0.25 next to a person"},
+    {"name": "color", "type": "colour", "default": "#9AA3B5", "note": "blade colour"},
+    {"name": "color2", "type": "colour", "default": "#348A4F", "note": "handle colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "snip"], "note": "snip = the blades open and close"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "snip"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "flat-vector/thought-cloud",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Thought Cloud",
+  "summary": "Fluffy thought cloud with two small trailing puffs: use for thinking, ideas or dreaming.",
+  "tags": [
+    "thought",
+    "thinking",
+    "idea",
+    "dream",
+    "cloud",
+    "think",
+    "bubble"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 460 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#DDE2EA",
+      "note": "cloud colour; a darker edge is added"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "bob",
+      "values": [
+        "none",
+        "bob",
+        "pulse"
+      ],
+      "note": "bob = cloud floats, pulse = slight breathing"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror left-right"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "anim": "bob"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

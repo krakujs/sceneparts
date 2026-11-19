@@ -1,0 +1,22 @@
+{
+  "id": "storybook/water-pump",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Water pump",
+  "summary": "Cast-iron village hand pump with curved handle and a spout that drips water; for village green or yard scenes.",
+  "tags": ["water pump", "hand pump", "village", "well", "cast iron", "victorian", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "ground, bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~730 px tall at 1" },
+    { "name": "pumping", "type": "boolean", "default": true, "note": "handle moves and water drips" },
+    { "name": "metal", "type": "colour", "default": "#4A4E5E" },
+    { "name": "flip", "type": "boolean", "note": "spout to the left" }
+  ],
+  "example": { "x": 540, "y": 1500, "s": 1 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "ink-sketch/daisy",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Daisy",
+  "summary": "Ink sketch small clump of white daisies with yellow centres on thin stems; use for meadows, lawns and cheerful gardens.",
+  "tags": [
+    "daisy",
+    "flower",
+    "white",
+    "meadow",
+    "clump",
+    "garden",
+    "small plant",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the stems rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 430 px tall, use about 0.5 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "petal colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = heads nod gently in the breeze"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "color": "#FFFFFF",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/daisy",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

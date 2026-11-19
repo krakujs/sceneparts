@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/chocolate-bar",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Chocolate bar",
+  "summary": "Segmented chocolate bar with the foil peeled back and a broken corner, plain wrapper, for snack and sweets scenes.",
+  "tags": ["food", "chocolate", "candy", "sweets", "snack", "dessert", "treat"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the bar rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (~330 px tall); use about 0.2–0.3 next to a person" },
+    { "name": "color", "type": "colour", "default": "#6B3E26", "note": "chocolate colour, e.g. milk #8A5A3C, dark #3E2418" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down, wobble = small rock, pop = scale in with overshoot" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1 },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

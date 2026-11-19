@@ -1,0 +1,21 @@
+{
+  "id": "core/page-flip",
+  "type": "effect",
+  "style": "core",
+  "name": "Page flip",
+  "summary": "Paper page with a curling edge turns across the frame like a book page, with a shadow along the fold.",
+  "tags": ["page flip", "book", "page turn", "paper", "transition", "curl"],
+  "params": [
+    { "name": "mode", "type": "enum", "default": "in", "values": ["in", "out"], "note": "in turns a page over the frame, out turns it away" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "len", "type": "number", "default": 30, "note": "frames the page takes to turn" }
+  ],
+  "example": { "mode": "in", "len": 30 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

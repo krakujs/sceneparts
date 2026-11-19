@@ -1,0 +1,81 @@
+{
+  "id": "ink-sketch/city-skyline-day",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "City skyline (day)",
+  "summary": "Ink sketch city skyline background: layered towers, antenna tower, river and lamp-lit promenade in daylight.",
+  "tags": [
+    "city",
+    "skyline",
+    "buildings",
+    "daytime",
+    "river",
+    "urban",
+    "background",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light of the day; lamps and windows glow at dusk and night"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky and weather drawn over the scene"
+    },
+    {
+      "name": "buildings",
+      "type": "colour",
+      "default": "#5B6E96",
+      "note": "main building colour"
+    },
+    {
+      "name": "river",
+      "type": "boolean",
+      "default": true,
+      "note": "water strip with ripples in front of the towers"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds, leaves, smoke and lights move from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear"
+  },
+  "uses": [
+    "flat-vector/city-skyline-day",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

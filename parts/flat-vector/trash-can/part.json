@@ -1,0 +1,85 @@
+{
+  "id": "flat-vector/trash-can",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Trash Can",
+  "summary": "Kitchen pedal bin with a lid that can be shut or tipped open; for kitchen and rubbish scenes.",
+  "tags": [
+    "trash can",
+    "bin",
+    "rubbish bin",
+    "garbage",
+    "kitchen bin",
+    "pedal bin",
+    "waste"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 matches a flat-vector person at s = 1"
+    },
+    {
+      "name": "variant",
+      "type": "enum",
+      "default": "closed",
+      "values": [
+        "closed",
+        "open"
+      ],
+      "note": "closed = lid shut; open = lid tipped back"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#9AA3B5",
+      "note": "bin colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "flap"
+      ],
+      "note": "flap = the lid opens and shuts over time"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "variant": "closed",
+    "color": "#9AA3B5"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

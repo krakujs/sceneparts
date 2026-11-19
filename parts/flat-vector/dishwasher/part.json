@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/dishwasher",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Dishwasher",
+  "summary": "Under-counter kitchen dishwasher with control strip and door handle; open variant shows racks with plates.",
+  "tags": ["dishwasher", "kitchen", "dishes", "appliance", "washing", "under counter"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the dishwasher stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 matches a flat-vector person at s = 1 (about 490 px tall)"},
+    {"name": "variant", "type": "enum", "default": "closed", "values": ["closed", "open"], "note": "closed = door shut; open = door dropped forward showing the racks"},
+    {"name": "color", "type": "colour", "default": "#DDE2EA", "note": "cabinet colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "run"], "note": "run = the indicator lights blink as if washing"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "variant": "closed", "color": "#DDE2EA", "anim": "run"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/line-chart-board",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Line chart board",
+  "summary": "Presentation board on a tripod easel with a rising line chart, dots and an arrow; anim draw traces the line.",
+  "tags": ["line chart", "chart", "growth", "presentation", "trend", "easel", "board", "graph"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor point under the easel centre (1 m ~ 560 px)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the easel is about 500 px wide and 900 px tall"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "draw"], "note": "draw = the line is traced from left to right; frame 0 shows the first quarter"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "draw"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

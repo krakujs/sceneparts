@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/beach-hut",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Beach Hut",
+  "summary": "Small striped wooden beach hut on stilts on the sand. For seaside and summer holiday scenes.",
+  "tags": [
+    "beach hut",
+    "beach",
+    "hut",
+    "striped",
+    "seaside",
+    "sand",
+    "summer",
+    "stilts"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the base stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 540 px wide and 640 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1FA39A",
+      "note": "Stripe colour 1"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "Stripe colour 2"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "lights"
+      ],
+      "note": "pop = scales in; lights = the hut windows glow one after another"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "lights"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

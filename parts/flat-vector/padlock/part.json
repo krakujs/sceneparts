@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/padlock",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Padlock",
+  "summary": "Chunky padlock with keyhole and a shackle that can animate open or closed; for security and access scenes.",
+  "tags": ["padlock", "lock", "locked", "unlock", "security", "key", "safe"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the lock stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 300 px wide and hero size; use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "body colour"},
+    {"name": "color2", "type": "colour", "default": "#9AA3B5", "note": "shackle metal colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "open", "close", "bob", "wobble", "pop"], "note": "open = shackle lifts and swings back in, close = shackle drops shut; both loop every 90 frames"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "open"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

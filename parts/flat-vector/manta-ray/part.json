@@ -1,0 +1,70 @@
+{
+  "id": "flat-vector/manta-ray",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Manta ray",
+  "summary": "Flat vector dark-blue manta ray with a pale belly and slowly flapping wings; y is body centre.",
+  "tags": [
+    "manta ray",
+    "manta",
+    "ray",
+    "sea",
+    "ocean",
+    "marine",
+    "flying"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "body centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1000,
+      "note": "body centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; sizes below are px at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "swim",
+      "values": [
+        "swim",
+        "idle"
+      ],
+      "note": "swim = gentle motion from p.f; idle = slow hover"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1000,
+    "pose": "swim"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

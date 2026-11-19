@@ -1,0 +1,26 @@
+{
+  "id": "core/percentage-counter",
+  "type": "text",
+  "style": "core",
+  "name": "Percentage counter",
+  "summary": "Huge percentage that counts up to a value, with a thin bar under it and a caption; for a headline rate.",
+  "tags": ["percentage", "percent", "counter", "rate", "statistic", "kpi", "big number", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; card is 880×480 at s = 1" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "bar colour; default the style's accent" },
+    { "name": "value", "type": "number", "default": 87, "note": "final percentage, 0..100" },
+    { "name": "from", "type": "number", "default": 0, "note": "percentage the count starts from" },
+    { "name": "decimals", "type": "number", "default": 0 },
+    { "name": "caption", "type": "string", "default": "of customers renew after year one" }
+  ],
+  "example": { "value": 87, "caption": "of customers renew after year one" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

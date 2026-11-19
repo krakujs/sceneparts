@@ -1,0 +1,72 @@
+{
+  "id": "pixel-art/inventory-panel",
+  "type": "text",
+  "style": "pixel-art",
+  "name": "Inventory panel",
+  "summary": "Pixel-art inventory grid: 4 by 3 item slots with potion, sword, key, gem, coin and chest icons and a moving cursor.",
+  "tags": [
+    "inventory",
+    "item grid",
+    "bag",
+    "backpack",
+    "hud",
+    "ui",
+    "pixel",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; panel is about 552 px wide at s = 1"
+    },
+    {
+      "name": "at",
+      "type": "number",
+      "default": 0,
+      "note": "frame the panel pops open"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "default": "BAG",
+      "note": "header text on the panel"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "move",
+      "values": [
+        "move",
+        "none"
+      ],
+      "note": "the highlighted cursor steps through the slots from p.f"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "s": 1.8
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

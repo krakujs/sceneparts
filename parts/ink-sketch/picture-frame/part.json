@@ -1,0 +1,76 @@
+{
+  "id": "ink-sketch/picture-frame",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Picture Frame",
+  "summary": "Ink sketch small standing tabletop photo frame showing a simple sunny landscape; for desks, shelves and bedside tables.",
+  "tags": [
+    "picture frame",
+    "photo frame",
+    "photograph",
+    "tabletop frame",
+    "desk",
+    "shelf",
+    "landscape",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the stand rests on y; set y to a table top to place it"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the frame is hero size (about 400 px tall); use about 0.3–0.5 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "frame colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#8A5A3C"
+  },
+  "uses": [
+    "flat-vector/picture-frame",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

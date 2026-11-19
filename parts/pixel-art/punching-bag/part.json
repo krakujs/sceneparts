@@ -1,0 +1,28 @@
+{
+  "id": "pixel-art/punching-bag",
+  "type": "prop",
+  "style": "pixel-art",
+  "name": "Punching bag",
+  "summary": "Pixel-art red punching bag hanging from a chain; for boxing, gym and training scenes.",
+  "tags": ["punching bag","boxing","gym","training","sport","pixel","pixel art"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x; [from,to] to move"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom of the item (centre when centre = true)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; one cell = 24 px at s = 1"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror horizontally"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "bounce", "float", "shake", "pulse"], "note": "whole-sprite motion; float/bob suit pickups"},
+    {"name": "centre", "type": "boolean", "default": false, "note": "anchor on the centre instead of the bottom"},
+    {"name": "vx", "type": "number", "note": "px per frame drift"},
+    {"name": "colour", "type": "colour", "default": "#d2403f", "note": "bag colour (char a), e.g. #2f5fb8 for a blue bag"},
+    {"name": "colour2", "type": "colour", "default": "#9c2a2f", "note": "shade colour (char A)"},
+    {"name": "pal", "type": "object", "note": "replace colours by char, e.g. {\"z\": \"#2e6b45\"}"},
+    {"name": "px", "type": "number", "default": 24, "note": "cell size"},
+    {"name": "outline", "type": "boolean", "default": true, "note": "dark one-cell outline"}
+  ],
+  "example": {"x":540,"y":1600,"s":1.2},
+  "uses": ["pixel-art/sprite"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

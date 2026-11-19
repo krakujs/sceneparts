@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/water-bucket",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bucket of water",
+  "summary": "Metal pail full of water with a wire handle, optionally sloshing or splashing; for farm and cleaning scenes.",
+  "tags": ["bucket", "pail", "water", "splash", "slosh", "metal bucket", "cleaning"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line under the pail"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 330 px wide and 460 px tall (hero size); use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#9AA3B5", "note": "pail colour"},
+    {"name": "color2", "type": "colour", "default": "#3D6FE0", "note": "water colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "slosh", "splash"], "note": "slosh = the water surface rocks; splash = drops leap out of the water"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "splash"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

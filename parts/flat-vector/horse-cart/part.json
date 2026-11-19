@@ -1,0 +1,94 @@
+{
+  "id": "flat-vector/horse-cart",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Horse Cart",
+  "summary": "Two-wheeled farm cart with hay and shafts, pulled by a horse by default; set animal to false for the cart alone.",
+  "tags": [
+    "horse cart",
+    "cart",
+    "wagon",
+    "farm",
+    "horse",
+    "hay",
+    "countryside",
+    "village"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the whole cart and horse at frame 0"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the wheel and the hooves stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: about 980 px wide and 420 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "cart paint colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "wheel colour"
+    },
+    {
+      "name": "animal",
+      "type": "boolean",
+      "default": true,
+      "note": "draw the flat-vector/horse pulling the cart; false = the cart alone"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "drive",
+        "bob",
+        "pop"
+      ],
+      "note": "drive = wheel turns, cart bounces and the horse walks (also on when vx is not 0)"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "horizontal speed in px per frame (negative = left; set flip too)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror so the horse and shafts face left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "drive",
+    "animal": true
+  },
+  "uses": [
+    "flat-vector/horse",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

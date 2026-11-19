@@ -1,0 +1,23 @@
+{
+  "id": "core/typing-indicator",
+  "type": "text",
+  "style": "core",
+  "name": "Typing indicator",
+  "summary": "Left-aligned chat bubble with three bouncing dots, the 'they are typing' sign; loops forever.",
+  "tags": ["typing", "typing indicator", "chat", "dots", "bubble", "loading", "message"],
+  "params": [
+    { "name": "x", "type": "number", "default": 300, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "period", "type": "number", "default": 36, "note": "frames per bounce cycle" },
+    { "name": "color", "type": "colour", "note": "dot colour; default the style's muted ink" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "period": 36 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

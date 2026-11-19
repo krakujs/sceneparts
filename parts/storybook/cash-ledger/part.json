@@ -1,0 +1,23 @@
+{
+  "id": "storybook/cash-ledger",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Cash ledger",
+  "summary": "Open thick ledger with ruled columns, a ribbon bookmark and fluttering pages. For counting-house or accounts scenes.",
+  "tags": ["ledger", "account book", "accounts", "bookkeeping", "counting house", "victorian", "book", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~400 px tall at 1" },
+    { "name": "cover", "type": "colour", "default": "#7E2E22", "note": "leather cover colour" },
+    { "name": "ribbon", "type": "colour", "default": "#B5452F", "note": "bookmark ribbon colour" },
+    { "name": "flutter", "type": "boolean", "default": true, "note": "right page flutters" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1300, "s": 1.2 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

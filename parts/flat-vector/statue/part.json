@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/statue",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Statue",
+  "summary": "Generic featureless hero statue with one arm raised, on a stepped plinth; not a real statue. anim lights waves the arm.",
+  "tags": ["statue", "monument", "hero", "plinth", "sculpture", "square", "plaza"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the plinth stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 420 px wide and 1150 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#D5DBE5", "note": "stone colour of the figure"},
+    {"name": "color2", "type": "colour", "default": "#9AA3B5", "note": "plinth colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "pop = scales in; lights = the raised arm waves slowly"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (raised arm on the left)"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

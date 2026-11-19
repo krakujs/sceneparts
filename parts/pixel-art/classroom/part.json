@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/classroom",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Classroom",
+  "summary": "Pixel-art classroom: blank chalkboard, teacher desk, rows of student desks, a clock and windows; for lessons.",
+  "tags": [
+    "classroom",
+    "school",
+    "lesson",
+    "teacher",
+    "desk",
+    "background",
+    "indoor",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "tick",
+      "values": [
+        "tick",
+        "none"
+      ],
+      "note": "the wall clock hand moves from p.f"
+    }
+  ],
+  "example": {
+    "anim": "tick"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

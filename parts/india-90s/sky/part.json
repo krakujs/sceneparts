@@ -1,0 +1,41 @@
+{
+  "id": "india-90s/sky",
+  "type": "background",
+  "style": "india-90s",
+  "name": "Dusk sky with kites",
+  "summary": "Warm sun low in the sky with two drifting kites (patang) on strings.",
+  "tags": [
+    "90s",
+    "dusk",
+    "india",
+    "kites",
+    "nostalgia",
+    "patang",
+    "sankranti",
+    "sky",
+    "sun"
+  ],
+  "params": [
+    {
+      "name": "sunY",
+      "type": "number",
+      "default": 760
+    },
+    {
+      "name": "kites",
+      "type": "boolean",
+      "default": true
+    }
+  ],
+  "example": {
+    "sunY": 760
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

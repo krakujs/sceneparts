@@ -1,0 +1,24 @@
+{
+  "id": "core/arrow-bounce",
+  "type": "effect",
+  "style": "core",
+  "name": "Arrow bounce",
+  "summary": "Big chunky arrow that pops in and bounces to point at something; for pointing out a detail.",
+  "tags": ["arrow", "pointer", "bounce", "direction", "callout", "icon", "animation"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; arrow is about 280 px tall at s = 1" },
+    { "name": "dir", "type": "enum", "values": ["up", "down", "left", "right"], "default": "down", "note": "direction the arrow points and bounces" },
+    { "name": "color", "type": "colour", "note": "arrow colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "dir": "down" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

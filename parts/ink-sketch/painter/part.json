@@ -1,0 +1,279 @@
+{
+  "id": "ink-sketch/painter",
+  "type": "character",
+  "style": "ink-sketch",
+  "name": "Painter",
+  "summary": "Ink-sketch painter in a paint-spotted apron and green beret, with a brush and palette; for art studio scenes.",
+  "tags": [
+    "painter",
+    "artist",
+    "paint",
+    "beret",
+    "palette",
+    "studio",
+    "people",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "feet / ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; adult ≈ 980 px tall at s = 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "build",
+      "type": "enum",
+      "values": [
+        "adult",
+        "teen",
+        "child",
+        "toddler",
+        "baby",
+        "elder"
+      ],
+      "default": "adult",
+      "note": "body proportions; baby is a seated infant ≈ 300 px; elder stoops"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "values": [
+        "idle",
+        "walk",
+        "run",
+        "wave",
+        "cheer",
+        "jump",
+        "talk",
+        "none"
+      ],
+      "default": "idle",
+      "note": "idle breathes and blinks; walk/run swing; wave raises the front hand"
+    },
+    {
+      "name": "arms",
+      "type": "enum",
+      "values": [
+        "down",
+        "up",
+        "one-up"
+      ],
+      "default": "down",
+      "note": "arm pose when anim does not set one"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "values": [
+        "stand",
+        "sit"
+      ],
+      "default": "stand",
+      "note": "sit bends the legs forward (a seat also sets it)"
+    },
+    {
+      "name": "seat",
+      "type": "enum",
+      "values": [
+        "none",
+        "chair",
+        "wheelchair"
+      ],
+      "default": "none",
+      "note": "draw a seat under a sitting person"
+    },
+    {
+      "name": "beard",
+      "type": "enum",
+      "values": [
+        "none",
+        "beard",
+        "moustache",
+        "goatee",
+        "stubble"
+      ],
+      "default": "none",
+      "note": "facial hair"
+    },
+    {
+      "name": "glasses",
+      "type": "enum",
+      "values": [
+        "none",
+        "glasses",
+        "shades",
+        "goggles",
+        "eyepatch"
+      ],
+      "default": "none",
+      "note": "eyewear"
+    },
+    {
+      "name": "eyes",
+      "type": "enum",
+      "values": [
+        "open",
+        "happy",
+        "closed"
+      ],
+      "default": "open",
+      "note": "eye shape"
+    },
+    {
+      "name": "mouth",
+      "type": "enum",
+      "values": [
+        "smile",
+        "flat",
+        "open",
+        "frown",
+        "mask"
+      ],
+      "default": "smile",
+      "note": "mouth; mask = face mask; anim talk opens it"
+    },
+    {
+      "name": "blush",
+      "type": "boolean",
+      "default": false,
+      "note": "pink cheeks"
+    },
+    {
+      "name": "inner",
+      "type": "colour",
+      "default": "#f7f2e7",
+      "note": "shirt under a jacket, collar, overall shirt"
+    },
+    {
+      "name": "shoeStyle",
+      "type": "enum",
+      "values": [
+        "shoes",
+        "boots",
+        "sneakers",
+        "bare"
+      ],
+      "default": "shoes",
+      "note": "footwear"
+    },
+    {
+      "name": "shoes",
+      "type": "colour",
+      "default": "#3a2a22",
+      "note": "shoe colour"
+    },
+    {
+      "name": "neck",
+      "type": "enum",
+      "values": [
+        "none",
+        "tie",
+        "bowtie",
+        "stethoscope",
+        "lanyard",
+        "scarf",
+        "medal",
+        "necklace",
+        "whistle",
+        "cameraneck",
+        "pearls"
+      ],
+      "default": "none",
+      "note": "neckwear"
+    },
+    {
+      "name": "neckColour",
+      "type": "colour",
+      "default": "red",
+      "note": "tie, bow tie, scarf, lanyard colour"
+    },
+    {
+      "name": "belt",
+      "type": "boolean",
+      "default": false,
+      "note": "belt with a buckle"
+    },
+    {
+      "name": "badge",
+      "type": "colour",
+      "default": "none",
+      "note": "chest badge colour (none = no badge)"
+    },
+    {
+      "name": "back",
+      "type": "enum",
+      "values": [
+        "none",
+        "backpack",
+        "cape",
+        "wings",
+        "tank",
+        "guitar",
+        "quiver"
+      ],
+      "default": "none",
+      "note": "gear behind the body"
+    },
+    {
+      "name": "backColour",
+      "type": "colour",
+      "default": "red",
+      "note": "backpack / cape / wings colour (uses itemColour if not set)"
+    },
+    {
+      "name": "belly",
+      "type": "boolean",
+      "default": false,
+      "note": "rounded belly"
+    },
+    {
+      "name": "wash",
+      "type": "enum",
+      "values": [
+        "colour",
+        "accent",
+        "none"
+      ],
+      "default": "colour",
+      "note": "colour: garments washed in their colours; accent: only the top gets the accent; none: pure line art"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame drift (pair with walk)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "anim": "idle"
+  },
+  "uses": [
+    "ink-sketch/person"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

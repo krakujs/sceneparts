@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/starship",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Starship",
+  "summary": "Sleek navy spaceship in side view, nose to the right, with a glass canopy and glowing engines. Thrust flicker animation.",
+  "tags": ["starship", "spaceship", "rocket", "space", "sci-fi", "engines", "thrust", "flight"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the hull"},
+    {"name": "y", "type": "number", "default": 800, "note": "centre y of the hull"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 780 px long at s = 1"},
+    {"name": "color", "type": "colour", "default": "#253058", "note": "hull colour"},
+    {"name": "accent", "type": "colour", "default": "#FF8A3D", "note": "stripe and fin colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "thrust"], "note": "thrust = flames flicker and the ship bobs"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "face left"}
+  ],
+  "example": {"x": 540, "y": 800, "s": 1, "anim": "thrust"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

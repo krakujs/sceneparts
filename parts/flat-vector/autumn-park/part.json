@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/autumn-park",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Autumn park",
+  "summary": "Full-frame flat autumn park background: orange and red trees, leaf-covered path, bench and leaves falling from p.f.",
+  "tags": [
+    "autumn",
+    "fall",
+    "park",
+    "leaves",
+    "trees",
+    "bench",
+    "background"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light of the day; lamps and windows glow at dusk and night"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky and weather drawn over the scene"
+    },
+    {
+      "name": "leafColour",
+      "type": "colour",
+      "default": "#E8703A",
+      "note": "main tree and leaf colour"
+    },
+    {
+      "name": "bench",
+      "type": "boolean",
+      "default": true,
+      "note": "park bench at the right side"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds, leaves, smoke and lights move from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

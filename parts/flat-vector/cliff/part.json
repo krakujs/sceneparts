@@ -1,0 +1,76 @@
+{
+  "id": "flat-vector/cliff",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Cliff",
+  "summary": "Tall rocky sea-cliff with a grass top and sand-coloured facets, surf at the foot. For coasts and seaside scenes.",
+  "tags": [
+    "cliff",
+    "sea cliff",
+    "rock face",
+    "coast",
+    "seaside",
+    "rocky shore",
+    "landscape"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the part stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 1000 px wide and 1000 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#C68A55",
+      "note": "rock colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E9C990",
+      "note": "lit sand facet colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "flow"
+      ],
+      "note": "flow = the surf at the foot moves"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/pie-chart-board",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Pie chart board",
+  "summary": "Presentation board on a tripod easel showing a coloured pie chart; anim grow sweeps the slices in.",
+  "tags": ["pie chart", "chart", "presentation", "statistics", "data", "easel", "board", "report"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor point under the easel centre (1 m ~ 560 px)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the easel is about 500 px wide and 900 px tall"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "grow"], "note": "grow = the slices sweep in clockwise; frame 0 already shows about 35 % of the pie"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "grow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

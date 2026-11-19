@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/pulley",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Pulley",
+  "summary": "Wheel pulley on a floor frame with a rope, hanging weight and free end; for simple machine and lifting scenes.",
+  "tags": [
+    "pulley",
+    "rope",
+    "wheel",
+    "lift",
+    "hoist",
+    "weight",
+    "simple machine",
+    "block and tackle"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the base sits on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 730 px tall at s = 1; use about 0.5–0.6 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "wheel colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "frame, post and weight colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "lift"
+      ],
+      "note": "lift = the weight rises and the free end drops, and the wheel turns"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the weight then hangs on the right)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 0.8,
+    "anim": "lift"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

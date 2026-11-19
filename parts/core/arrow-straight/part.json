@@ -1,0 +1,84 @@
+{
+  "id": "core/arrow-straight",
+  "type": "effect",
+  "style": "core",
+  "name": "Arrow straight",
+  "summary": "Thick hand-drawn-ish arrow from A to B: the shaft draws itself, then the head pops.",
+  "tags": [
+    "arrow",
+    "pointer",
+    "direction",
+    "callout",
+    "draw",
+    "straight"
+  ],
+  "params": [
+    {
+      "name": "ax",
+      "type": "number",
+      "default": 240,
+      "note": "start x"
+    },
+    {
+      "name": "ay",
+      "type": "number",
+      "default": 960,
+      "note": "start y"
+    },
+    {
+      "name": "bx",
+      "type": "number",
+      "default": 840,
+      "note": "end x"
+    },
+    {
+      "name": "by",
+      "type": "number",
+      "default": 960,
+      "note": "end y"
+    },
+    {
+      "name": "at",
+      "type": "number",
+      "default": 0,
+      "note": "start as a fraction of the shot (0..1)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "note": "override the style accent"
+    },
+    {
+      "name": "look",
+      "type": "enum",
+      "default": "solid",
+      "values": [
+        "solid",
+        "outline",
+        "sketch"
+      ],
+      "note": "solid fill, ink outline or sketchy hand-drawn"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    }
+  ],
+  "example": {
+    "ax": 240,
+    "ay": 960,
+    "bx": 840,
+    "by": 960,
+    "look": "solid"
+  },
+  "layer": "screen",
+  "uses": [
+    "core/stat-card"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

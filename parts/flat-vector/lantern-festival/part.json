@@ -1,0 +1,83 @@
+{
+  "id": "flat-vector/lantern-festival",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Sky lantern festival",
+  "summary": "Glowing paper sky lanterns of different sizes centred on x,y, rising slowly; use for lantern festivals and night wishes.",
+  "tags": [
+    "sky lantern",
+    "lanterns",
+    "lantern festival",
+    "float",
+    "night",
+    "celebration",
+    "wish"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y of the cluster"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 700 px wide and 900 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "first lantern colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "second lantern colour"
+    },
+    {
+      "name": "color3",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "third lantern colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "rise"
+      ],
+      "note": "rise = the lanterns drift slowly upward, fading out at the top and reappearing below"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "s": 1,
+    "anim": "rise"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

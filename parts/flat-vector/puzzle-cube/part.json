@@ -1,0 +1,73 @@
+{
+  "id": "flat-vector/puzzle-cube",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Puzzle cube",
+  "summary": "Generic 3x3 coloured puzzle cube in a three-quarter view; anim twist turns the top layer for brain-teaser scenes.",
+  "tags": [
+    "puzzle cube",
+    "cube",
+    "3x3",
+    "twisty puzzle",
+    "brain teaser",
+    "colour cube",
+    "puzzle"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the cube rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 about 420 px wide and 400 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1F2433",
+      "note": "body colour between the stickers"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "twist",
+        "bob",
+        "pop"
+      ],
+      "note": "twist = the top layer turns 90 degrees, pauses, and repeats every 60 frames"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "twist"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

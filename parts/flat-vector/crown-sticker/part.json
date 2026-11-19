@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/crown-sticker",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Crown Sticker",
+  "summary": "Flat gold three-point crown with jewels, for king, best or top-of-the-list moments.",
+  "tags": ["crown", "king", "queen", "best", "top", "royal", "sticker"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 440 px wide at s = 1" },
+    { "name": "color", "type": "colour", "default": "#FFC83D", "note": "crown colour; one darker shade is added for depth" },
+    { "name": "anim", "type": "enum", "default": "sparkle", "values": ["none", "sparkle", "bob", "wobble"], "note": "idle motion from p.f; sparkle twinkles two glints" },
+    { "name": "popIn", "type": "boolean", "default": true, "note": "springs in over the first 10 frames" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror left-right" }
+  ],
+  "example": { "x": 540, "y": 960, "anim": "sparkle" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

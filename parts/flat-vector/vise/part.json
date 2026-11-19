@@ -1,0 +1,77 @@
+{
+  "id": "flat-vector/vise",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bench Vise",
+  "summary": "Bench vise on a wooden bench edge with fixed and moving jaws, a clamped wood block and a T-handle screw.",
+  "tags": [
+    "vise",
+    "vice",
+    "bench vise",
+    "workshop",
+    "clamp",
+    "metalwork",
+    "tool"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line under the bench edge"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 600 px wide and 340 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "jaw and body colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "screw, T-handle and base plate colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "pop"
+      ],
+      "note": "bob = gentle lift"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the T-handle then sits on the right)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

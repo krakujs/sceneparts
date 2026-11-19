@@ -1,0 +1,28 @@
+{
+  "id": "pixel-art/rug",
+  "type": "prop",
+  "style": "pixel-art",
+  "name": "Rug",
+  "summary": "Pixel-art patterned rectangular rug with fringe, seen at a low angle; for floor and room scenes.",
+  "tags": ["rug","carpet","mat","floor","patterned","furniture","pixel","pixel art"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x; [from,to] to move"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom of the item (centre when centre = true)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; one cell = 24 px at s = 1"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror horizontally"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "bounce", "float", "shake", "pulse"], "note": "whole-sprite motion; float/bob suit pickups"},
+    {"name": "centre", "type": "boolean", "default": false, "note": "anchor on the centre instead of the bottom"},
+    {"name": "vx", "type": "number", "note": "px per frame drift"},
+    {"name": "colour", "type": "colour", "default": "#8a3b5c", "note": "main colour (char a), e.g. #2e6b45 for a green rug"},
+    {"name": "colour2", "type": "colour", "default": "#5c2540", "note": "shade colour (char A)"},
+    {"name": "pal", "type": "object", "note": "replace colours by char, e.g. {\"z\": \"#2e6b45\"}"},
+    {"name": "px", "type": "number", "default": 24, "note": "cell size"},
+    {"name": "outline", "type": "boolean", "default": true, "note": "dark one-cell outline"}
+  ],
+  "example": {"x":540,"y":1600,"s":1},
+  "uses": ["pixel-art/sprite"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

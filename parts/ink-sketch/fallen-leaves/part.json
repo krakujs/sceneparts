@@ -1,0 +1,74 @@
+{
+  "id": "ink-sketch/fallen-leaves",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Fallen leaves",
+  "summary": "Ink sketch low pile of autumn leaves in orange, red and yellow on the ground; use for autumn paths and parks.",
+  "tags": [
+    "autumn",
+    "fallen leaves",
+    "leaves",
+    "pile",
+    "orange",
+    "fall season",
+    "ground",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the pile rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 600 px wide and 130 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F08A3E",
+      "note": "first leaf colour (red and yellow leaves are also mixed in)"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop"
+      ],
+      "note": "pop = pile scales in"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "color": "#F08A3E"
+  },
+  "uses": [
+    "flat-vector/fallen-leaves",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

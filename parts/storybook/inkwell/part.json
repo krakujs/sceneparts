@@ -1,0 +1,21 @@
+{
+  "id": "storybook/inkwell",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Inkwell",
+  "summary": "Glass inkwell of dark ink with a quill standing in it; for desks, writing and letter scenes.",
+  "tags": ["inkwell", "ink", "quill", "glass", "desk", "writing", "victorian", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1000, "note": "base, bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~580 px tall at 1" },
+    { "name": "ink", "type": "colour", "default": "#1E2A47" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1100, "s": 1 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

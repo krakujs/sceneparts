@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/turban",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Turban",
+  "summary": "Neatly wrapped turban on a plain faceless display head form; for cultural and fashion scenes.",
+  "tags": [
+    "turban",
+    "head wrap",
+    "headwear",
+    "head covering",
+    "pagri",
+    "display head",
+    "cultural"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom of the bust base: it stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 380 px wide and 660 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "main colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "pleated fan at the front colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop"
+      ],
+      "note": "pop = settles in with a small bounce"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#FF8A3D",
+    "color2": "#FFC83D",
+    "anim": "pop"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/tent-pegs",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Tent pegs",
+  "summary": "Three steel tent pegs standing point-down with a small wooden mallet beside them; for camping and tent-pitching scenes.",
+  "tags": ["tent pegs", "tent stakes", "camping", "mallet", "tent", "hammer", "pitch"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line under the pegs"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 560 px wide (hero size); use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#9AA3B5", "note": "steel colour of the pegs"},
+    {"name": "color2", "type": "colour", "default": "#8A5A3C", "note": "mallet wood colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "tap"], "note": "tap = the mallet head lifts and drops as if driving a peg in"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the mallet then sits on the left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "tap"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

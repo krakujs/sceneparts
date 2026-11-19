@@ -1,0 +1,25 @@
+{
+  "id": "storybook/lector",
+  "type": "character",
+  "style": "storybook",
+  "name": "Lector",
+  "summary": "Reader in waistcoat and spectacles reading a newspaper aloud to a crowd, one hand gesturing.",
+  "tags": ["lector", "reader", "newspaper", "speaker", "spectacles", "history", "storyteller", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1580, "note": "feet" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~640 px tall at 1" },
+    { "name": "walk", "type": "boolean", "default": false, "note": "pace while reading" },
+    { "name": "coat", "type": "colour", "default": "#7E2E22" },
+    { "name": "hairColour", "type": "colour", "default": "#8A8A8A" },
+    { "name": "skin", "type": "colour", "default": "#C98E64" },
+    { "name": "flip", "type": "boolean", "note": "face left" },
+    { "name": "vx", "type": "number", "note": "px per frame" }
+  ],
+  "example": { "x": 540, "y": 1580, "s": 1 },
+  "uses": ["storybook/style", "storybook/townsfolk"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

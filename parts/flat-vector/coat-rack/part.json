@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/coat-rack",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Coat Rack",
+  "summary": "Standing hall coat tree with a coat and hat hanging from its hooks; for entrance and hallway scenes.",
+  "tags": [
+    "coat rack",
+    "coat tree",
+    "hall stand",
+    "hat stand",
+    "entryway",
+    "hallway",
+    "furniture"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the base rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 matches a flat-vector person at s = 1 (about 1000 px tall)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "wood colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "coat colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#8A5A3C",
+    "color2": "#3D6FE0"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

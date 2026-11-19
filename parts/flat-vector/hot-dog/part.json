@@ -1,0 +1,25 @@
+{
+  "id": "flat-vector/hot-dog",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flat hot dog",
+  "summary": "Flat hot dog in a long bun with sausage, mustard zig-zag and ketchup. For street food, snack or ballpark scenes.",
+  "tags": ["food", "hot dog", "fast food", "snack", "street food", "meal", "sausage"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the hot dog rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (~400 px wide); use about 0.2 to 0.3 next to a person" },
+    { "name": "bunColor", "type": "colour", "default": "#F2C27B", "note": "bun colour" },
+    { "name": "sausageColor", "type": "colour", "default": "#D9644A", "note": "sausage colour" },
+    { "name": "mustard", "type": "boolean", "default": true, "note": "yellow mustard zig-zag" },
+    { "name": "ketchup", "type": "boolean", "default": true, "note": "red ketchup line" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down, wobble = rock on its base, pop = scale in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1 },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

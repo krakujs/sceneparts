@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/djinn-lamp",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Djinn lamp",
+  "summary": "Golden oil lamp with a long curved spout and a loop handle; a purple smoke wisp curls out. For wish and genie tales.",
+  "tags": ["magic lamp", "genie lamp", "djinn", "genie", "oil lamp", "wish", "aladdin", "smoke"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom of the lamp rests on y"},
+    {"name": "s", "type": "number", "default": 1.4, "note": "scale; about 420 px wide and 260 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "brass colour"},
+    {"name": "smoke", "type": "colour", "default": "#7B5CD6", "note": "smoke colour"},
+    {"name": "anim", "type": "enum", "default": "smoke", "values": ["none", "smoke"], "note": "smoke = a purple wisp rises from the spout in a loop"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror: the spout points left"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1.4, "anim": "smoke"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

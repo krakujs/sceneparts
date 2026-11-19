@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/electric-guitar",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Electric guitar",
+  "summary": "Solid-body electric guitar with two horns and two pickups, standing upright; for rock and band scenes.",
+  "tags": [
+    "electric guitar",
+    "guitar",
+    "rock",
+    "solid body",
+    "band",
+    "music",
+    "strings"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the base rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; room-scale: at s = 1 about 560 px tall (1 m = 560 px), 260 px wide"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "body colour"
+    },
+    {
+      "name": "accent",
+      "type": "colour",
+      "default": "#1F2433",
+      "note": "neck and pickguard colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "strum",
+        "bob",
+        "wobble"
+      ],
+      "note": "strum = strings vibrate in turn"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#E8503F",
+    "anim": "strum"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

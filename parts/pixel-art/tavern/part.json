@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/tavern",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Tavern",
+  "summary": "Pixel-art medieval tavern: wooden bar, barrels, mugs, a lit fireplace, tables and lanterns; for inn scenes.",
+  "tags": [
+    "tavern",
+    "inn",
+    "pub",
+    "bar",
+    "medieval",
+    "background",
+    "indoor",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "flicker",
+      "values": [
+        "flicker",
+        "none"
+      ],
+      "note": "the fire and lantern glow flicker from p.f"
+    }
+  ],
+  "example": {
+    "anim": "flicker"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

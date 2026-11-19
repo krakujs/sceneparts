@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/street-lamp",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Street lamp",
+  "summary": "Curved street lamp post with a dome head; anim lights switches the lamp on with a glow. For street and night scenes.",
+  "tags": ["street lamp", "lamp post", "lamppost", "streetlight", "street light", "night", "city"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x of the post" },
+    { "name": "y", "type": "number", "default": 1600, "note": "floor line: the foot of the post stands on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "about 330 px wide and 1080 px tall at s = 1 (about 1.5 people tall at s = 1)" },
+    { "name": "color", "type": "colour", "default": "#5D6578", "note": "post and arm colour" },
+    { "name": "color2", "type": "colour", "default": "#3A4157", "note": "lamp head colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "lights", "pop"], "note": "lights = the lamp glows on, with its light cone and pool on the pavement; pop = scales in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror so the arm reaches left" }
+  ],
+  "example": { "x": 540, "y": 1600, "s": 1, "anim": "lights" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

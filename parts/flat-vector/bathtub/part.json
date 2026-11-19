@@ -1,0 +1,85 @@
+{
+  "id": "flat-vector/bathtub",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bathtub",
+  "summary": "Built-in or clawfoot bathtub with water, a tap and rising bubbles; for bathroom and bath-time scenes.",
+  "tags": [
+    "bathtub",
+    "bath",
+    "tub",
+    "clawfoot bath",
+    "bubbles",
+    "bathroom",
+    "bath time"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 matches a flat-vector person at s = 1"
+    },
+    {
+      "name": "variant",
+      "type": "enum",
+      "default": "built-in",
+      "values": [
+        "built-in",
+        "clawfoot"
+      ],
+      "note": "built-in = sits on the floor; clawfoot = raised on claw feet"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "tub colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "bubbles"
+      ],
+      "note": "bubbles = bubbles rise from the water"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "variant": "built-in",
+    "color": "#FFFFFF"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "flat-vector/pixie",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Pixie",
+  "summary": "Flat vector small mischievous pixie in a flower hat with dragonfly wings, hovering in the air.",
+  "tags": [
+    "pixie",
+    "flower hat",
+    "dragonfly wings",
+    "hovering",
+    "mischief",
+    "sprite",
+    "tiny",
+    "fairy garden"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8CC36B",
+      "note": "Tunic colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1200
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/school",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "School",
+  "summary": "Pixel-art school corridor: lockers, a notice board, windows, a wall clock and tiled floor; for school scenes.",
+  "tags": [
+    "school",
+    "corridor",
+    "classroom",
+    "hallway",
+    "background",
+    "indoor",
+    "pixel art",
+    "game",
+    "level"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "blink",
+      "values": [
+        "blink",
+        "none"
+      ],
+      "note": "the wall clock hand ticks from p.f"
+    }
+  ],
+  "example": {
+    "anim": "blink"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

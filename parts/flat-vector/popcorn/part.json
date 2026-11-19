@@ -1,0 +1,31 @@
+{
+  "id": "flat-vector/popcorn",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Popcorn tub",
+  "summary": "Red-and-white striped paper popcorn tub overflowing with puffed popcorn; for cinema, party and movie-night scenes.",
+  "tags": [
+    "popcorn",
+    "cinema",
+    "snack",
+    "food",
+    "movie night",
+    "tub",
+    "party"
+  ],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the tub rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the tub is hero size (~460 px wide); use about 0.2–0.3 next to a person"},
+    {"name": "stripeColor", "type": "colour", "default": "#E8503F", "note": "stripe colour (the other stripes are white)"},
+    {"name": "popcornColor", "type": "colour", "default": "#FFF3C4", "note": "popcorn colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "pop"], "note": "bob = gentle up and down, pop = scale in with overshoot"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/ring",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Ring",
+  "summary": "Gold ring standing upright with a large faceted gem on top; for jewellery, engagement and celebration scenes.",
+  "tags": ["ring", "gold ring", "gem ring", "diamond ring", "jewellery", "jewelry", "engagement"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the band rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: about 360 px wide and 490 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "gold colour of the band"},
+    {"name": "color2", "type": "colour", "default": "#3D6FE0", "note": "gem colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "sparkle"], "note": "sparkle = glints twinkle around the gem"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FFC83D", "color2": "#3D6FE0", "anim": "sparkle"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

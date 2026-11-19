@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/raindrop",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Raindrop",
+  "summary": "Single blue teardrop with a highlight, for rain, water or tear motifs. Anim: fall, pop.",
+  "tags": ["raindrop", "rain", "water", "drop", "teardrop", "wet", "blue drop"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 960, "note": "centre y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 220 px wide, 340 px tall"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "drop colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "fall", "pop"], "note": "fall = drops in a fading loop"}
+  ],
+  "example": {"x": 540, "y": 960, "s": 1, "color": "#3D6FE0", "anim": "fall"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

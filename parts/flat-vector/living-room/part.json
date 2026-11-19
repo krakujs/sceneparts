@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/living-room",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Living room",
+  "summary": "Full-frame flat living room background: sofa, picture, plant, side lamp, rug and a window with time and weather.",
+  "tags": ["living room", "home", "interior", "lounge", "sofa", "house", "background", "indoor"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "outside light in the window and room tint; lamps glow at dusk and night" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "seen through the window" },
+    { "name": "wall", "type": "colour", "default": "#F3E3C7", "note": "wall colour" },
+    { "name": "sofa", "type": "colour", "default": "#3D6FE0", "note": "sofa colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = weather and plant move from p.f" }
+  ],
+  "example": { "time": "day", "weather": "clear" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/calculator",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Calculator",
+  "summary": "Pocket calculator with a display and a grid of number and operator keys; use for maths, budgets and shop scenes.",
+  "tags": ["calculator", "pocket calculator", "maths", "numbers", "keys", "accounting", "arithmetic"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the calculator rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the calculator is hero size (about 560 px tall); use about 0.4 next to a hand"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "casing colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "tap"], "note": "tap = the equals key is pressed over and over"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#5D6578", "anim": "tap"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

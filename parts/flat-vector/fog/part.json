@@ -1,0 +1,20 @@
+{
+  "id": "flat-vector/fog",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Fog",
+  "summary": "Several long soft grey-white fog bands across the frame, for mist and dense weather. Anim: drift.",
+  "tags": ["fog", "mist", "haze", "foggy", "weather", "soft", "grey"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 960, "note": "centre y of the stack of bands"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the bands are about 1000 px wide"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "drift"], "note": "drift = bands slide gently sideways"}
+  ],
+  "example": {"x": 540, "y": 960, "s": 1, "anim": "drift"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/mittens",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Mittens",
+  "summary": "Pair of thumb-only winter mittens with ribbed cuffs, joined by a string; sways. For snow and cold-weather scenes.",
+  "tags": [
+    "mittens",
+    "mitten",
+    "winter mittens",
+    "gloves",
+    "mitts",
+    "cold weather",
+    "snow",
+    "kids mittens"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the item rests on y (hem or tip)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 0.9,
+      "note": "scale; about 420 px wide and 470 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "mitten colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "cuff and string colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = the mittens swing gently on their string"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 0.9,
+    "color": "#E8503F",
+    "color2": "#FFC83D",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

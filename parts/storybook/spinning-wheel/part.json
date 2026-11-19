@@ -1,0 +1,23 @@
+{
+  "id": "storybook/spinning-wheel",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Spinning wheel",
+  "summary": "Wooden treadle spinning wheel with turning spokes and a distaff of wool; for cottage, weaving or village scenes.",
+  "tags": ["spinning wheel", "spinning", "wool", "treadle", "cottage", "craft", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "floor, bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~560 px wide, ~620 px tall at 1" },
+    { "name": "spinning", "type": "boolean", "default": true, "note": "wheel turns" },
+    { "name": "wood", "type": "colour", "default": "#8A6A45" },
+    { "name": "wool", "type": "colour", "default": "#F4EAD5" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1500, "s": 1.1 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/crystal-ball",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Crystal ball",
+  "summary": "Glass orb on an ornate stand with swirling mist glowing inside; for fortune tellers, magic and mystery scenes.",
+  "tags": ["crystal ball", "fortune teller", "orb", "magic", "mystic", "glass ball", "mist", "fantasy"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom of the stand rests on y"},
+    {"name": "s", "type": "number", "default": 1.2, "note": "scale; about 360 px wide and 480 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#8EC5E8", "note": "glass glow colour"},
+    {"name": "anim", "type": "enum", "default": "swirl", "values": ["none", "swirl"], "note": "swirl = mist churns and the glow pulses"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1.2, "anim": "swirl"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,86 @@
+{
+  "id": "pixel-art/score-panel",
+  "type": "text",
+  "style": "pixel-art",
+  "name": "Score panel",
+  "summary": "Pixel-art score box: SCORE label with a six-digit number counting up, and a HI score line in a panel.",
+  "tags": [
+    "score",
+    "score panel",
+    "points",
+    "high score",
+    "hud",
+    "ui",
+    "pixel",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; panel is 480 px wide at s = 1"
+    },
+    {
+      "name": "at",
+      "type": "number",
+      "default": 0,
+      "note": "frame the counting starts"
+    },
+    {
+      "name": "score",
+      "type": "number",
+      "default": 12450,
+      "note": "score the number counts up to"
+    },
+    {
+      "name": "hi",
+      "type": "number",
+      "default": 98000,
+      "note": "high score shown on the HI line"
+    },
+    {
+      "name": "speed",
+      "type": "number",
+      "default": 400,
+      "note": "points added per frame while counting"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "count",
+      "values": [
+        "count",
+        "none"
+      ],
+      "note": "the score counts up from p.f; none shows it at once"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 300,
+    "s": 2,
+    "score": 12450,
+    "hi": 98000
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

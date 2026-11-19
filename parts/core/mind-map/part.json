@@ -1,0 +1,27 @@
+{
+  "id": "core/mind-map",
+  "type": "text",
+  "style": "core",
+  "name": "Mind map",
+  "summary": "Central bubble with 3-6 branch bubbles joined by curved lines that grow out from the centre.",
+  "tags": ["mind map", "brainstorm", "ideas", "branches", "bubbles", "diagram", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "accent override for the central bubble" },
+    { "name": "center", "type": "string", "default": "Project plan", "note": "text in the central bubble" },
+    { "name": "branches", "type": "string[]", "default": ["Ideas", "Goals", "Tasks", "People", "Risks"], "note": "3 to 6 branch bubbles" }
+  ],
+  "example": {
+    "center": "Project plan",
+    "branches": ["Ideas", "Goals", "Tasks", "People", "Risks"]
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

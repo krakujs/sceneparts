@@ -1,0 +1,24 @@
+{
+  "id": "core/blinds-transition",
+  "type": "effect",
+  "style": "core",
+  "name": "Blinds transition",
+  "summary": "Staggered horizontal or vertical slats grow shut (or open) across the frame, like window blinds.",
+  "tags": ["blinds", "venetian", "transition", "slats", "stagger", "scene change"],
+  "params": [
+    { "name": "mode", "type": "enum", "default": "in", "values": ["in", "out"], "note": "in closes the blinds, out opens them" },
+    { "name": "dir", "type": "enum", "default": "horizontal", "values": ["horizontal", "vertical"], "note": "slat orientation" },
+    { "name": "count", "type": "number", "default": 10, "note": "number of slats, 4 to 16" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "len", "type": "number", "default": 24, "note": "frames the whole stagger takes" },
+    { "name": "color", "type": "colour", "default": "#1a1410", "note": "slat colour" }
+  ],
+  "example": { "mode": "in", "dir": "horizontal", "count": 10, "len": 40 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

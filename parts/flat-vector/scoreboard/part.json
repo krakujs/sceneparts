@@ -1,0 +1,25 @@
+{
+  "id": "flat-vector/scoreboard",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Scoreboard",
+  "summary": "Rectangular stadium scoreboard on two posts with a home and an away score panel; use for match and game scenes.",
+  "tags": ["scoreboard", "score", "stadium", "match", "game", "sports", "prop"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the posts stand on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: 1 m is about 560 px; the board is about 780 px wide at s = 1"},
+    {"name": "home", "type": "number", "default": 2, "min": 0, "max": 99, "note": "home team score, 0 to 99"},
+    {"name": "away", "type": "number", "default": 1, "min": 0, "max": 99, "note": "away team score, 0 to 99"},
+    {"name": "color", "type": "colour", "default": "#253058", "note": "board frame colour"},
+    {"name": "color2", "type": "colour", "default": "#1F2433", "note": "digit panel colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "wobble = the board sways on its posts"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (home and away swap sides)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "home": 2, "away": 1, "color": "#253058", "color2": "#1F2433", "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

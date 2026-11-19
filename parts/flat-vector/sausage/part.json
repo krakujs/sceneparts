@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/sausage",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flat sausages",
+  "summary": "Flat pair of plump curved sausages with grill marks. For barbecue, breakfast or cookout scenes.",
+  "tags": ["food", "sausage", "bbq", "barbecue", "grill", "meat", "meal"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the sausages rest on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (~400 px wide); use about 0.2 to 0.3 next to a person" },
+    { "name": "sausageColor", "type": "colour", "default": "#C9573A", "note": "sausage colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down, wobble = slight rock, pop = scale in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1 },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

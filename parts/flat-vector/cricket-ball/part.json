@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/cricket-ball",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Cricket ball",
+  "summary": "Red leather cricket ball with a raised white seam and red stitching; can bounce or spin. A hero prop.",
+  "tags": ["cricket ball", "cricket", "ball", "red ball", "sport", "leather ball", "seam"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the ball rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 260 px across (hero size)"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "leather colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bounce", "spin"], "note": "bounce = hops on the spot; spin = turns, seam and all"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the ball"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "bounce"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/maracas",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Maracas",
+  "summary": "Pair of maracas with patterned heads and handles; anim shake rattles them. Use for Latin music or percussion scenes.",
+  "tags": ["maracas", "shakers", "percussion", "latin music", "rattle", "instrument"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the handle ends rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the pair is about 520 px wide and 420 px tall"},
+    {"name": "color", "type": "colour", "default": "#E0A21F", "note": "head colour of the left maraca (the right one is a contrasting colour)"},
+    {"name": "accent", "type": "colour", "default": "#FF8A3D", "note": "colour of the right maraca head and the dot pattern"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "shake"], "note": "shake = the two maracas rattle up and down, out of step"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E0A21F", "accent": "#FF8A3D", "anim": "shake"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

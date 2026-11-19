@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/mud-house",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Mud House",
+  "summary": "Rural Indian mud house with a tiled roof, painted border and a cot outside. For village and countryside scenes.",
+  "tags": [
+    "mud house",
+    "village",
+    "rural",
+    "india",
+    "tiled roof",
+    "cot",
+    "charpai"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the base stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 850 px wide and 640 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#D2A679",
+      "note": "Mud wall colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#B5573E",
+      "note": "Tiled roof and painted border colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "lights"
+      ],
+      "note": "pop = scales in; lights = the window lamp glows"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "lights"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

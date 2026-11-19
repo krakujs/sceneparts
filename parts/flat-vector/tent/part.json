@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/tent",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Tent",
+  "summary": "A-frame camping tent with an open flap, guy ropes and pegs. For camping and outdoor scenes.",
+  "tags": ["tent", "camping", "camp", "a-frame tent", "outdoors", "campsite", "holiday"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the tent pegs sit on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 520 px wide and 520 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#F27BA6", "note": "tent canvas colour"},
+    {"name": "color2", "type": "colour", "default": "#FFFFFF", "note": "stripe and rope colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "lights = a lantern glows inside the tent"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

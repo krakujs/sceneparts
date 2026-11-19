@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/anvil",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Anvil",
+  "summary": "Classic blacksmith's anvil with a horn, hardy hole and sparks on the strike; for forge, smithy and blacksmith scenes.",
+  "tags": ["anvil", "blacksmith", "smithy", "forge", "smith", "iron", "metalwork"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom centre: the foot stands on the floor at y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: at s = 1 about 810 px wide; use about 0.5 for a smaller scene"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "iron colour"},
+    {"name": "color2", "type": "colour", "default": "#FFC83D", "note": "spark colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "ring"], "note": "ring = the anvil shakes on each strike and sparks fly up"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the horn then points right)"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "ring"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

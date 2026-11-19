@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/conveyor-belt",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Conveyor Belt",
+  "summary": "Factory conveyor belt with a motor and cardboard boxes riding along it; for production line scenes.",
+  "tags": [
+    "conveyor belt",
+    "conveyor",
+    "factory",
+    "production line",
+    "boxes",
+    "warehouse",
+    "packing",
+    "assembly line"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the legs stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 880 px wide and 370 px tall at s = 1; use about 0.5 for a smaller scene"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "frame and leg colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E9D3A9",
+      "note": "box colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "move"
+      ],
+      "note": "move = the boxes travel along the belt and wrap round"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the motor then sits at the right)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "move"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/dining-room",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Dining room",
+  "summary": "Full-frame flat dining room background: table with chairs, pendant lamp, sideboard with bowl and a framed picture.",
+  "tags": ["dining room", "dining table", "chairs", "home", "interior", "background", "sideboard", "dinner"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "outside light in the window and room tint; the pendant lamp glows at dusk and night" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "seen through the window" },
+    { "name": "wood", "type": "colour", "default": "#8A5A3C", "note": "table and sideboard wood colour" },
+    { "name": "chair", "type": "colour", "default": "#167A73", "note": "chair seat and back colour" },
+    { "name": "curtains", "type": "colour", "default": "#7B5CD6", "note": "window curtains, or none" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = weather and the window scene move from p.f" }
+  ],
+  "example": { "time": "day", "weather": "clear" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

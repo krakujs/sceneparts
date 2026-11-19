@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/crown",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Crown",
+  "summary": "Gold royal crown with jewels, five points and a velvet cap; twinkles on sparkle. For kings, queens and fairy tales.",
+  "tags": [
+    "crown",
+    "royal crown",
+    "king crown",
+    "queen crown",
+    "gold crown",
+    "jewel crown",
+    "royalty",
+    "winner crown",
+    "monarch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the item rests on y (hem or tip)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 480 px wide and 340 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "gold colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#7B5CD6",
+      "note": "velvet cap colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sparkle"
+      ],
+      "note": "sparkle = the jewels twinkle"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#FFC83D",
+    "color2": "#7B5CD6",
+    "anim": "sparkle"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "flat-vector/playground",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Playground",
+  "summary": "Playground with a swing set, a slide with ladder, and a see-saw; every leg stands on the ground.",
+  "tags": ["playground","swings","slide","see-saw","park","kids","play"],
+  "params": [{"name":"x","type":"number","default":540,"note":"centre x"},{"name":"y","type":"number","default":1600,"note":"ground line"},{"name":"s","type":"number","default":1,"note":"about 860 px wide and 540 px tall at s = 1"},{"name":"color","type":"colour","default":"#FF8A3D","note":"frame colour"},{"name":"color2","type":"colour","default":"#3D6FE0","note":"seat, board and slide colour"},{"name":"anim","type":"enum","default":"none","values":["none","pop","swing"],"note":"swing = the swings rock gently"},{"name":"flip","type":"boolean","default":false,"note":"mirror"}],
+  "example": {"x":540,"y":1600,"s":1,"anim":"swing"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,90 @@
+{
+  "id": "flat-vector/stack-of-books",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Stack of books",
+  "summary": "Stack of four or five coloured books with an optional apple on top; for school and library scenes.",
+  "tags": [
+    "stack of books",
+    "books",
+    "pile of books",
+    "textbooks",
+    "library",
+    "education",
+    "apple"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the base rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "hero size: at s = 1 about 480 px wide and 430 px tall; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "colour of the bottom book; the others vary"
+    },
+    {
+      "name": "count",
+      "type": "number",
+      "default": 5,
+      "min": 4,
+      "max": 5,
+      "note": "number of books, 4 or 5"
+    },
+    {
+      "name": "apple",
+      "type": "boolean",
+      "default": false,
+      "note": "red apple on top"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "pop = scales in with a small overshoot"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3D6FE0",
+    "count": 5,
+    "apple": true,
+    "anim": "pop"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

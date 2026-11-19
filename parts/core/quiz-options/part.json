@@ -1,0 +1,31 @@
+{
+  "id": "core/quiz-options",
+  "type": "text",
+  "style": "core",
+  "name": "Quiz options",
+  "summary": "Question card with 2-4 answer pills (A-D); the correct answer turns green with a check, the rest dim.",
+  "tags": ["quiz", "question", "answer", "multiple choice", "trivia", "poll", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "accent override for the letter badges" },
+    { "name": "question", "type": "string", "default": "Which planet is the largest?" },
+    { "name": "options", "type": "string[]", "default": ["Mars", "Jupiter", "Venus", "Earth"], "note": "2 to 4 answers, shown as A-D" },
+    { "name": "answer", "type": "number", "default": 1, "note": "index of the correct option (0 = A)" },
+    { "name": "reveal", "type": "number", "default": 30, "note": "frames after the start when the answer shows" }
+  ],
+  "example": {
+    "question": "Which planet is the largest?",
+    "options": ["Mars", "Jupiter", "Venus", "Earth"],
+    "answer": 1,
+    "reveal": 30
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

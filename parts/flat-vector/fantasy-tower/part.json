@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/fantasy-tower",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Castle tower fantasy",
+  "summary": "Tall slender wizard tower with a pointed purple cone roof, glowing round windows and a flag; for fantasy scenes.",
+  "tags": ["wizard tower", "fantasy tower", "magic tower", "castle tower", "spire", "wizard", "fantasy", "purple roof"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the tower stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 340 px wide and 1300 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#E9E3F5", "note": "stone colour"},
+    {"name": "color2", "type": "colour", "default": "#7B5CD6", "note": "roof colour"},
+    {"name": "anim", "type": "enum", "default": "glow", "values": ["none", "glow", "flag"], "note": "glow = the round windows light up in turn; flag = the pennant waves"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "glow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

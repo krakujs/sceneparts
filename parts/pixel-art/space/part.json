@@ -1,0 +1,46 @@
+{
+  "id": "pixel-art/space",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Space",
+  "summary": "Pixel-art outer space: twinkling stars, a ringed planet and a small pink moon, no ground. For sci-fi scenes.",
+  "tags": [
+    "space",
+    "stars",
+    "planet",
+    "sci-fi",
+    "background",
+    "pixel",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "seed",
+      "type": "number",
+      "default": 5,
+      "note": "varies clouds, skyline and details"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "twinkle",
+      "values": [
+        "twinkle",
+        "none"
+      ],
+      "note": "stars twinkle from p.f"
+    }
+  ],
+  "example": {
+    "anim": "twinkle"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

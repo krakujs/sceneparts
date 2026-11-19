@@ -1,0 +1,120 @@
+{
+  "id": "flat-vector/samurai",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Samurai",
+  "summary": "Flat vector samurai in lacquer armour with a topknot and sheathed sword; for Japanese history and honour stories.",
+  "tags": [
+    "samurai",
+    "japan",
+    "armour",
+    "topknot",
+    "history",
+    "warrior",
+    "honour",
+    "traditional"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "age",
+      "type": "enum",
+      "default": "adult",
+      "values": [
+        "adult",
+        "teen",
+        "child",
+        "toddler",
+        "elder"
+      ],
+      "note": "teen/child/toddler: smaller with a bigger head; elder: slight stoop"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "wave",
+        "point",
+        "think",
+        "cheer",
+        "talk",
+        "sit",
+        "hold"
+      ]
+    },
+    {
+      "name": "expression",
+      "type": "enum",
+      "default": "neutral",
+      "values": [
+        "smile",
+        "neutral",
+        "open",
+        "surprised",
+        "sad",
+        "angry",
+        "laugh"
+      ]
+    },
+    {
+      "name": "skin",
+      "type": "string",
+      "default": "tan",
+      "note": "light | fair | tan | medium | brown | dark, or a hex colour"
+    },
+    {
+      "name": "hairColor",
+      "type": "string",
+      "default": "black",
+      "note": "black | brown | auburn | blonde | grey | white | red | blue | pink, or hex"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "stand",
+    "expression": "neutral",
+    "skin": "tan",
+    "hairColor": "black"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "flat-vector/combine-harvester",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Combine harvester",
+  "summary": "Combine harvester in side view with a cutting header, spinning reel, cab and grain tank; for farm and harvest scenes.",
+  "tags": [
+    "combine harvester",
+    "harvester",
+    "combine",
+    "farm",
+    "harvest",
+    "wheat",
+    "agriculture",
+    "field",
+    "vehicle"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x at frame 0"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the tyres stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: about 940 px wide and 780 px tall at s = 1; about 0.6 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "body colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "pipe, reel, ladder and cutter bar colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "drive",
+        "bob",
+        "pop"
+      ],
+      "note": "drive = wheels and reel turn and the body rocks (also on when vx is not 0)"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "horizontal speed in px per frame (negative = left; set flip too)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror so it faces left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "drive"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

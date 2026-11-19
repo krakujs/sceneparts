@@ -1,0 +1,24 @@
+{
+  "id": "core/halftone-dots",
+  "type": "effect",
+  "style": "core",
+  "name": "Halftone dots",
+  "summary": "Comic halftone dot pattern fading in from one corner, with dots sized by distance from that corner.",
+  "tags": ["halftone", "comic", "dots", "pop art", "pattern", "overlay"],
+  "params": [
+    { "name": "corner", "type": "enum", "default": "bottom-right", "values": ["top-left", "top-right", "bottom-left", "bottom-right"], "note": "corner the dots are biggest in" },
+    { "name": "spacing", "type": "number", "default": 56, "note": "distance between dot centres in px, 24 to 120" },
+    { "name": "reach", "type": "number", "default": 1200, "note": "distance from the corner where the dots vanish, px" },
+    { "name": "opacity", "type": "number", "default": 0.55, "note": "dot strength, 0 to 1" },
+    { "name": "color", "type": "colour", "default": "#1a1410", "note": "dot colour" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "corner": "bottom-right", "spacing": 56, "opacity": 0.55 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

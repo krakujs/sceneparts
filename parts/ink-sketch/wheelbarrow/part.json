@@ -1,0 +1,89 @@
+{
+  "id": "ink-sketch/wheelbarrow",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Wheelbarrow",
+  "summary": "Ink sketch single-wheel garden barrow, room scale, optionally loaded with soil; for gardens.",
+  "tags": [
+    "wheelbarrow",
+    "barrow",
+    "garden",
+    "soil",
+    "building site",
+    "wheel",
+    "farm",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line under the wheel"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: at s = 1 about 690 px wide and 400 px tall; use about 0.5 for a smaller scene"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "tray colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "frame, handles and wheel hub colour"
+    },
+    {
+      "name": "load",
+      "type": "boolean",
+      "default": true,
+      "note": "true = the tray holds a mound of soil"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "roll"
+      ],
+      "note": "roll = the wheel turns"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the handles then point right)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "load": true,
+    "anim": "roll"
+  },
+  "uses": [
+    "flat-vector/wheelbarrow",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

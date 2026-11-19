@@ -1,0 +1,85 @@
+{
+  "id": "storybook/plague-doctor",
+  "type": "character",
+  "style": "storybook",
+  "name": "Plague doctor",
+  "summary": "Plague doctor in beaked mask, wide hat and long gown; walks with a stick or bucket, optional smoke.",
+  "tags": [
+    "storybook",
+    "flat",
+    "plague",
+    "doctor",
+    "medieval",
+    "black death",
+    "mask",
+    "history",
+    "disease"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1
+    },
+    {
+      "name": "walk",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "stick",
+      "type": "number",
+      "default": 0.3
+    },
+    {
+      "name": "prop",
+      "type": "enum",
+      "values": [
+        "stick",
+        "bucket",
+        "none"
+      ],
+      "default": "stick"
+    },
+    {
+      "name": "flip",
+      "type": "boolean"
+    },
+    {
+      "name": "cape",
+      "type": "colour"
+    },
+    {
+      "name": "smoke",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "vx",
+      "type": "number"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1500,
+    "s": 1,
+    "walk": true
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

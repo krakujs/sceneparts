@@ -1,0 +1,20 @@
+{
+  "id": "pixel-art/sky-clouds",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Sky clouds",
+  "summary": "Pixel-art blue sky with many drifting pixel clouds and no ground; good behind flying sprites and titles.",
+  "tags": ["sky", "clouds", "blue sky", "air", "flying", "background", "pixel", "pixel art", "game", "level"],
+  "params": [
+    {"name": "time", "type": "enum", "default": "day", "values": ["day", "dusk", "night"], "note": "sky colours; night clouds are dim blue"},
+    {"name": "seed", "type": "number", "default": 9, "note": "varies cloud positions"},
+    {"name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "clouds drift across the sky from p.f"}
+  ],
+  "example": {"time": "day"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

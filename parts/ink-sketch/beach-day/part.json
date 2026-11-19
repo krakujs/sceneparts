@@ -1,0 +1,77 @@
+{
+  "id": "ink-sketch/beach-day",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Beach (day)",
+  "summary": "Ink sketch sunny beach background: sea horizon with gentle waves, sand, striped umbrella, towel and a palm.",
+  "tags": [
+    "beach",
+    "sea",
+    "sand",
+    "summer",
+    "palm",
+    "seaside",
+    "background",
+    "outdoor",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "daylight tint of sea and sand"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky tint and animated weather"
+    },
+    {
+      "name": "umbrella",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "first colour of the umbrella stripes"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = waves, clouds and weather move from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear",
+    "umbrella": "#E8503F"
+  },
+  "uses": [
+    "flat-vector/beach-day",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

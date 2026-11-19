@@ -1,0 +1,79 @@
+{
+  "id": "core/arrow-curved",
+  "type": "effect",
+  "style": "core",
+  "name": "Arrow curved",
+  "summary": "Curved arrow from A to B with a bend, drawn on with round caps and a head that pops at the end.",
+  "tags": [
+    "arrow",
+    "curved",
+    "curve",
+    "pointer",
+    "direction",
+    "callout"
+  ],
+  "params": [
+    {
+      "name": "ax",
+      "type": "number",
+      "default": 240,
+      "note": "start x"
+    },
+    {
+      "name": "ay",
+      "type": "number",
+      "default": 960,
+      "note": "start y"
+    },
+    {
+      "name": "bx",
+      "type": "number",
+      "default": 840,
+      "note": "end x"
+    },
+    {
+      "name": "by",
+      "type": "number",
+      "default": 960,
+      "note": "end y"
+    },
+    {
+      "name": "at",
+      "type": "number",
+      "default": 0,
+      "note": "start as a fraction of the shot (0..1)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "note": "override the style accent"
+    },
+    {
+      "name": "bend",
+      "type": "number",
+      "default": 0.4,
+      "note": "how far the arc bows; negative flips it"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    }
+  ],
+  "example": {
+    "ax": 240,
+    "ay": 1000,
+    "bx": 840,
+    "by": 900,
+    "bend": 0.4
+  },
+  "layer": "screen",
+  "uses": [
+    "core/stat-card"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

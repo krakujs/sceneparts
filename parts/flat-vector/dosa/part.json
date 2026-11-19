@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/dosa",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flat dosa",
+  "summary": "Flat long crispy rolled dosa on a steel plate with two chutney bowls. For South Indian food and breakfast scenes.",
+  "tags": ["food", "dosa", "indian food", "south indian", "breakfast", "crepe", "meal"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the plate rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (~460 px wide); use about 0.2 to 0.3 next to a person" },
+    { "name": "dosaColor", "type": "colour", "default": "#E9A94A", "note": "crispy golden colour" },
+    { "name": "chutneyColor", "type": "colour", "default": "#E0C27A", "note": "colour of the first chutney" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down, wobble = slight rock, pop = scale in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1 },
+  "uses": ["flat-vector/style", "flat-vector/dish"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

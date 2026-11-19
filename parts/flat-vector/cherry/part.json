@@ -1,0 +1,73 @@
+{
+  "id": "flat-vector/cherry",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flat cherries",
+  "summary": "Flat pair of red cherries on two stems joined by a leaf, for fruit, dessert and summer scenes.",
+  "tags": [
+    "food",
+    "fruit",
+    "cherry",
+    "cherries",
+    "red",
+    "dessert"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size (~350 px wide); use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "cherry colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "bob = gentle up and down, wobble = rock on its base, pop = scale in"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#E8503F",
+    "anim": "none"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

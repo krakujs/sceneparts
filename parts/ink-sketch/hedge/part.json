@@ -1,0 +1,73 @@
+{
+  "id": "ink-sketch/hedge",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Hedge",
+  "summary": "Ink sketch trimmed boxy green hedge segment, 1000 px wide, that tiles seamlessly; for gardens, parks and property edges.",
+  "tags": [
+    "hedge",
+    "hedges",
+    "trimmed hedge",
+    "garden wall",
+    "boxwood",
+    "tile",
+    "border",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the hedge sits on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "1000 px wide and 350 px tall at s = 1; tiles horizontally at x offsets of 1000 * s with no seam"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#348A4F",
+      "note": "hedge colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop"
+      ],
+      "note": "pop = grows in"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the pattern is symmetric, so this only matters for lighting)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1
+  },
+  "uses": [
+    "flat-vector/hedge",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

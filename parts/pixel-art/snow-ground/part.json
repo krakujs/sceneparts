@@ -1,0 +1,20 @@
+{
+  "id": "pixel-art/snow-ground",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Snow ground",
+  "summary": "Pixel-art winter outdoor scene: grey sky, falling pixel snowflakes, snowy hills, snow ground and snowy pines.",
+  "tags": ["snow", "winter", "snowfall", "snowy", "ice", "outdoor", "background", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "groundY", "type": "number", "default": 1600, "note": "snow ground line; stand characters on it"},
+    {"name": "seed", "type": "number", "default": 7, "note": "varies hills, pines and flake spots"},
+    {"name": "anim", "type": "enum", "default": "snow", "values": ["snow", "none"], "note": "snowflakes fall and drift from p.f"}
+  ],
+  "example": {"anim": "snow"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

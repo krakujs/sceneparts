@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/punching-bag",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Punching bag",
+  "summary": "Heavy cylinder punching bag on a ceiling chain, with an optional swing; use for gym and boxing scenes.",
+  "tags": [
+    "punching bag",
+    "heavy bag",
+    "boxing",
+    "gym",
+    "training",
+    "fight",
+    "prop"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the hook"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 700,
+      "note": "top: the hook point the chain hangs from"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: 1 m is about 560 px; the bag is about 1.2 m tall and 280 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "bag colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#9AA3B5",
+      "note": "chain and hook colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "swing",
+        "wobble",
+        "pop"
+      ],
+      "note": "swing = the bag swings on its chain (the hook stays fixed)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror the bag"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 700,
+    "s": 1,
+    "color": "#E8503F",
+    "anim": "swing"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

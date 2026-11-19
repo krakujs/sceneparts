@@ -1,0 +1,25 @@
+{
+  "id": "flat-vector/handshake",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Handshake",
+  "summary": "Flat die-cut handshake of two clasped hands with different sleeves and skin tones, for deals, teamwork and agreement.",
+  "tags": ["handshake", "deal", "agreement", "teamwork", "partnership", "greeting", "shake hands"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 760 px wide at s = 1" },
+    { "name": "skin", "type": "colour", "default": "fair", "note": "skin of the left hand: a SKIN name from the style (light, fair, tan, medium, brown, dark) or any hex" },
+    { "name": "skin2", "type": "colour", "default": "brown", "note": "skin of the right hand: a SKIN name or any hex" },
+    { "name": "color", "type": "colour", "default": "#3D6FE0", "note": "left sleeve colour" },
+    { "name": "color2", "type": "colour", "default": "#1FA39A", "note": "right sleeve colour" },
+    { "name": "anim", "type": "enum", "default": "shake", "values": ["none", "shake", "bob"], "note": "shake pumps up and down; bob gently lifts" },
+    { "name": "popIn", "type": "boolean", "default": true, "note": "springs in over the first 10 frames" }
+  ],
+  "example": { "x": 540, "y": 960, "anim": "shake" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

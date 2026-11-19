@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/gift-box",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Gift box",
+  "summary": "Wrapped present with ribbon and bow; anim open pops the lid up with sparkles, shake rattles it.",
+  "tags": ["gift box", "present", "gift", "birthday", "surprise", "ribbon", "reward"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the box sits on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 450 px wide and 390 px tall; use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "wrapping colour"},
+    {"name": "color2", "type": "colour", "default": "#FFC83D", "note": "ribbon and bow colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "open", "shake"], "note": "open = the lid lifts once with sparkles (frame 0 closed); shake = the box rattles"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E8503F", "color2": "#FFC83D", "anim": "open"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

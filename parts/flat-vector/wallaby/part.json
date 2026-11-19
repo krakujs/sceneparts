@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/wallaby",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Wallaby",
+  "summary": "Flat vector grey-brown wallaby, a smaller kangaroo relative with darker paws; stands upright or hops.",
+  "tags": ["wallaby", "kangaroo", "marsupial", "australia", "animal", "hop", "mammal"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "feet (bottom centre)" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 450 px tall at s = 1" },
+    { "name": "pose", "type": "enum", "default": "stand", "values": ["stand", "hop"], "note": "stand = upright, ears and tail twitching from p.f; hop = bounds into the air from p.f" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "face left" },
+    { "name": "vx", "type": "number", "default": 0, "note": "px per frame" }
+  ],
+  "example": { "x": 540, "y": 1560, "pose": "stand" },
+  "uses": ["flat-vector/style", "flat-vector/quadruped"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

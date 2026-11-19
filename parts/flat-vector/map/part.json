@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/map",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Folded map",
+  "summary": "Partly unfolded paper map with fold panels, a dashed route and a red pin; use for travel or navigation scenes.",
+  "tags": [
+    "map",
+    "paper map",
+    "route",
+    "travel",
+    "navigation",
+    "directions",
+    "pin"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 about 760 px wide and 720 px tall; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F4F1EA",
+      "note": "paper colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "pin colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "route"
+      ],
+      "note": "route = the dashed route draws in over 60 frames"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#F4F1EA",
+    "color2": "#E8503F",
+    "anim": "route"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

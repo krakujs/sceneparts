@@ -1,0 +1,84 @@
+{
+  "id": "ink-sketch/spray-can",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Spray can",
+  "summary": "Ink sketch aerosol spray paint can with a nozzle and an optional drifting mist; for graffiti.",
+  "tags": [
+    "spray can",
+    "spray paint",
+    "aerosol",
+    "graffiti",
+    "street art",
+    "paint can",
+    "mist",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the can stands on the floor at y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size (about 440 px tall); use about 0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "can colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#1F2433",
+      "note": "cap and nozzle colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "spray"
+      ],
+      "note": "spray = puffs of mist drift out of the nozzle"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the nozzle then points left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#FF8A3D",
+    "anim": "spray"
+  },
+  "uses": [
+    "flat-vector/spray-can",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

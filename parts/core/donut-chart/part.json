@@ -1,0 +1,34 @@
+{
+  "id": "core/donut-chart",
+  "type": "text",
+  "style": "core",
+  "name": "Donut chart",
+  "summary": "Donut chart whose ring segments sweep in, with a big total in the hole and a legend with percentages.",
+  "tags": ["donut chart", "donut", "ring chart", "share", "total", "chart", "statistics", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; card is 940×1040 at s = 1" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "first segment colour; default the style's accent" },
+    { "name": "title", "type": "string", "default": "Traffic sources" },
+    { "name": "values", "type": "object", "default": [5200, 2800, 2000], "note": "numbers; shares are computed from them" },
+    { "name": "labels", "type": "string[]", "default": ["Organic", "Paid", "Direct"], "note": "segment names" },
+    { "name": "total", "type": "number", "note": "centre number; default is the sum of values" },
+    { "name": "centerLabel", "type": "string", "default": "visits", "note": "small text under the centre number" },
+    { "name": "prefix", "type": "string", "default": "", "note": "e.g. $ in front of the centre number" },
+    { "name": "suffix", "type": "string", "default": "", "note": "e.g. % after the centre number" }
+  ],
+  "example": {
+    "title": "Traffic sources",
+    "values": [5200, 2800, 2000],
+    "labels": ["Organic", "Paid", "Direct"],
+    "centerLabel": "visits"
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

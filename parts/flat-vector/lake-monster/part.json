@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/lake-monster",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Loch monster",
+  "summary": "Shy long-necked loch monster with humps and a small smile, half in the water. For lake and legend scenes.",
+  "tags": [
+    "loch monster",
+    "lake monster",
+    "nessie",
+    "plesiosaur",
+    "lake",
+    "dinosaur",
+    "water",
+    "shy"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the water strip"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#5FB58C",
+      "note": "body colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "idle",
+      "values": [
+        "idle",
+        "none"
+      ],
+      "note": "idle = body bobs and neck sways; none = still"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "anim": "idle"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

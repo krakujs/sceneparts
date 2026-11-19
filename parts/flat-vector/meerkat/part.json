@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/meerkat",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Meerkat",
+  "summary": "Flat vector sandy meerkat standing alert on its hind legs with dark eye patches and a thin tail; can walk low.",
+  "tags": ["meerkat", "mongoose", "animal", "desert", "alert", "sentry", "mammal"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "feet (bottom centre)" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 300 px tall at s = 1" },
+    { "name": "pose", "type": "enum", "default": "sentry", "values": ["sentry", "walk"], "note": "sentry = upright on hind legs, head turning on watch from p.f; walk = low on all fours, legs cycling from p.f" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "face left" },
+    { "name": "vx", "type": "number", "default": 0, "note": "px per frame" }
+  ],
+  "example": { "x": 540, "y": 1560, "pose": "sentry" },
+  "uses": ["flat-vector/style", "flat-vector/quadruped"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

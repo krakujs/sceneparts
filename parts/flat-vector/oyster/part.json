@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/oyster",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Oyster",
+  "summary": "Flat vector rough grey oyster that opens its shell to show a white pearl inside; sits on the ground.",
+  "tags": ["oyster", "pearl", "shell", "seafood", "sea", "mollusc", "bivalve"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre (ground)" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 200 px wide at s = 1" },
+    { "name": "pose", "type": "enum", "default": "idle", "values": ["idle", "open", "closed"], "note": "idle = slowly opens and closes from p.f; open = wide open; closed = shut" },
+    { "name": "pearl", "type": "boolean", "default": true, "note": "show a white pearl in the bowl while the shell is open" },
+    { "name": "color", "type": "string", "default": "#9EA5AF", "note": "shell colour (hex)" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror left-right" },
+    { "name": "vx", "type": "number", "default": 0, "note": "px per frame drift" }
+  ],
+  "example": { "x": 540, "y": 1560, "pose": "open", "pearl": true },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

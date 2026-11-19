@@ -1,0 +1,84 @@
+{
+  "id": "ink-sketch/paintbrush",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Paintbrush",
+  "summary": "Ink sketch decorator's flat paintbrush with wet paint on the bristle tips; for painting, decorating and art scenes.",
+  "tags": [
+    "paintbrush",
+    "paint brush",
+    "brush",
+    "painting",
+    "decorating",
+    "art",
+    "flat brush",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the brush lies on the floor at y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size (about 490 px long); use about 0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "paint colour on the bristle tips"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "handle colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = the brush sweeps gently around the ferrule"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the paint then sits on the left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3D6FE0",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/paintbrush",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

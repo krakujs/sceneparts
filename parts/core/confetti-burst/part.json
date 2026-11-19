@@ -1,0 +1,26 @@
+{
+  "id": "core/confetti-burst",
+  "type": "effect",
+  "style": "core",
+  "name": "Confetti burst",
+  "summary": "Burst of tumbling confetti in the style colours, flung out and pulled down by gravity; for wins and celebrations.",
+  "tags": ["confetti", "celebration", "burst", "party", "win", "tumble"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "burst centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "burst centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale of the whole burst" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "count", "type": "number", "default": 80, "note": "pieces, 60 to 100 looks best" },
+    { "name": "speed", "type": "number", "default": 1, "note": "launch speed multiplier" },
+    { "name": "seed", "type": "string", "default": "confetti", "note": "change for a different pattern" },
+    { "name": "color", "type": "colour", "note": "first colour; default the style accent, then the series" }
+  ],
+  "example": { "x": 540, "y": 900, "count": 80 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "flat-vector/fishing-net",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Fishing Net",
+  "summary": "Hand landing net with a wooden pole, round hoop and a deep mesh bag holding a fish. For fishing and lake scenes.",
+  "tags": [
+    "fishing net",
+    "landing net",
+    "fishing",
+    "fish",
+    "angler",
+    "lake",
+    "river"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the bottom of the grip stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 580 px wide and 870 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "hoop colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "pole colour (the grip is darker)"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "pop"
+      ],
+      "note": "bob = gentle lift"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the pole then leans to the right)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

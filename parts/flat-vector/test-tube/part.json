@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/test-tube",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Test tube",
+  "summary": "Glass test tube with coloured liquid standing in a wooden rack; use for chemistry, lab or science scenes.",
+  "tags": [
+    "test tube",
+    "lab",
+    "science",
+    "chemistry",
+    "liquid",
+    "experiment",
+    "rack"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 about 340 px wide and 600 px tall; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1FA39A",
+      "note": "liquid colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "rack colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bubbles"
+      ],
+      "note": "bubbles = bubbles rise through the liquid"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#1FA39A",
+    "color2": "#8A5A3C",
+    "anim": "bubbles"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

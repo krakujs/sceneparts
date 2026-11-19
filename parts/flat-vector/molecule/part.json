@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/molecule",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Molecule",
+  "summary": "Ball-and-stick molecule of seven coloured spheres, centred on x,y; use for chemistry or biology explainers.",
+  "tags": [
+    "molecule",
+    "atom",
+    "chemistry",
+    "ball and stick",
+    "science",
+    "bonds",
+    "spheres"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the molecule is about 560 px across"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "first sphere colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "second sphere colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "spin",
+        "bob"
+      ],
+      "note": "spin = slow turn; bob = gentle float"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "s": 1,
+    "color": "#3D6FE0",
+    "color2": "#FF8A3D",
+    "anim": "spin"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

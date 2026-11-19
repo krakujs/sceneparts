@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/graphics-tablet",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Graphics Tablet",
+  "summary": "Drawing pad with an active area and a stylus lying on it; use for digital art and design scenes.",
+  "tags": ["graphics tablet", "drawing tablet", "drawing pad", "digital art", "pen tablet", "stylus", "design"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom edge: the pad rests on y (set y to a desk top)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 520 px wide and 290 px deep (hero size)"},
+    {"name": "color", "type": "colour", "default": "#4A5268", "note": "pad frame colour"},
+    {"name": "ink", "type": "colour", "default": "#3D6FE0", "note": "colour of the doodle on the active area"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "draw"], "note": "draw = the doodle is drawn stroke by stroke"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#4A5268", "ink": "#3D6FE0", "anim": "draw"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

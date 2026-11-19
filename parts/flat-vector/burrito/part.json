@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/burrito",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flat burrito",
+  "summary": "Flat burrito: wrapped tortilla cut open to show rice, beans and filling, with half a foil wrap. For Mexican food scenes.",
+  "tags": ["food", "burrito", "mexican food", "fast food", "takeaway", "meal", "lunch"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the burrito rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (~420 px wide); use about 0.2 to 0.3 next to a person" },
+    { "name": "tortillaColor", "type": "colour", "default": "#F3D39B", "note": "tortilla colour" },
+    { "name": "foil", "type": "boolean", "default": true, "note": "show the half foil wrap" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down, wobble = rock on its base, pop = scale in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1 },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

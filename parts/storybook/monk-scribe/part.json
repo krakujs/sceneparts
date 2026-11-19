@@ -1,0 +1,80 @@
+{
+  "id": "storybook/monk-scribe",
+  "type": "character",
+  "style": "storybook",
+  "name": "Monk scribe",
+  "summary": "Tonsured monk in brown hooded robe and rope belt holding a big book and quill, for medieval manuscript scenes.",
+  "tags": [
+    "monk",
+    "scribe",
+    "scriptorium",
+    "manuscript",
+    "medieval",
+    "quill",
+    "book",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#6E4A2E"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#E8B990"
+    },
+    {
+      "name": "hairColour",
+      "type": "colour",
+      "default": "#8A7A6A"
+    },
+    {
+      "name": "walk",
+      "type": "boolean",
+      "default": false,
+      "note": "walk with the book"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/jacket",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Jacket",
+  "summary": "Casual zip jacket with a stand collar, two hip pockets and ribbed cuffs, on a hanger; for everyday outerwear.",
+  "tags": [
+    "jacket",
+    "zip jacket",
+    "zip up",
+    "bomber",
+    "outerwear",
+    "clothes",
+    "casual"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the hem rests on y (the hanger hangs above it)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 600-700 px tall at s = 1; hero size"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "main colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "zip, cuffs and hem colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway",
+        "pop"
+      ],
+      "note": "sway = swings gently from the hanger hook; pop = small settle bounce"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#4BB46A",
+    "color2": "#5D6578",
+    "anim": "pop"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

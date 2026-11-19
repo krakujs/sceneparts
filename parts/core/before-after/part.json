@@ -1,0 +1,24 @@
+{
+  "id": "core/before-after",
+  "type": "text",
+  "style": "core",
+  "name": "Before after",
+  "summary": "One card split in two with BEFORE and AFTER labels and a slider handle that sweeps across; neutral placeholder halves.",
+  "tags": ["before after", "comparison", "slider", "reveal", "transformation", "split", "compare", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; card is 900×600 at s = 1" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "after-side colour; default the style's accent" },
+    { "name": "beforeLabel", "type": "string", "default": "BEFORE" },
+    { "name": "afterLabel", "type": "string", "default": "AFTER" }
+  ],
+  "example": { "beforeLabel": "BEFORE", "afterLabel": "AFTER" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

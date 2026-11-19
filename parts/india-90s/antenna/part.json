@@ -1,0 +1,65 @@
+{
+  "id": "india-90s/antenna",
+  "type": "prop",
+  "style": "india-90s",
+  "name": "Roof TV antenna",
+  "summary": "Yagi TV antenna on a pole; angle turns it, tilt knocks it crooked (the classic \"adjust the antenna\").",
+  "tags": [
+    "90s",
+    "aerial",
+    "antenna",
+    "india",
+    "nostalgia",
+    "roof",
+    "signal",
+    "tv"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "baseY",
+      "type": "number",
+      "default": 1300
+    },
+    {
+      "name": "height",
+      "type": "number",
+      "default": 620
+    },
+    {
+      "name": "angle",
+      "type": "number",
+      "default": 0,
+      "note": "turn, degrees"
+    },
+    {
+      "name": "tilt",
+      "type": "number",
+      "default": 0
+    },
+    {
+      "name": "scale",
+      "type": "number",
+      "default": 1
+    }
+  ],
+  "example": {
+    "x": 540,
+    "baseY": 1500,
+    "angle": [
+      0,
+      40
+    ]
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

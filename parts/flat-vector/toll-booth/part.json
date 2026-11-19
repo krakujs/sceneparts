@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/toll-booth",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Toll Booth",
+  "summary": "Small road toll booth with a window and a striped barrier arm that lifts with anim open. For highway and road scenes.",
+  "tags": ["toll booth", "toll", "barrier", "highway", "road", "checkpoint", "booth"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the booth stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 700 px wide and 520 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "booth colour"},
+    {"name": "color2", "type": "colour", "default": "#3D6FE0", "note": "roof colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "open", "bob", "pop"], "note": "open = the barrier arm lifts over 40 frames"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the barrier then sits on the left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "open"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

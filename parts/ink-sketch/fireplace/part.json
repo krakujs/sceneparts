@@ -1,0 +1,85 @@
+{
+  "id": "ink-sketch/fireplace",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Fireplace",
+  "summary": "Ink sketch brick fireplace with a wooden mantel, candles and a burning fire; anim flicker moves the flames.",
+  "tags": [
+    "fireplace",
+    "fire",
+    "hearth",
+    "mantel",
+    "brick",
+    "flames",
+    "winter",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the hearth rests on y (room scale, about 700 px wide and tall)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 matches a ink-sketch person at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#B5583E",
+      "note": "brick colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "mantel colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "flicker"
+      ],
+      "note": "flicker = flames move and the glow pulses"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#B5583E",
+    "color2": "#8A5A3C",
+    "anim": "flicker"
+  },
+  "uses": [
+    "flat-vector/fireplace",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

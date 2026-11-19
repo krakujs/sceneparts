@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/jet-bike",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Jet bike",
+  "summary": "Sleek wheel-less hover motorbike with twin blue jet flames, a headlight and a glow below. Faces right, side view.",
+  "tags": ["jet bike", "hover bike", "hoverbike", "motorbike", "sci-fi", "future", "vehicle", "speeder"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1400, "note": "ground point under the bike; it hovers above it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 720 px long at 1"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "body colour"},
+    {"name": "glow", "type": "colour", "default": "#6FE7FF", "note": "hover glow and light-strip colour"},
+    {"name": "anim", "type": "enum", "default": "hover", "values": ["none", "hover"], "note": "hover = the bike bobs, the glow pulses and the flames flicker"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "face left"}
+  ],
+  "example": {"x": 540, "y": 1400, "anim": "hover"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

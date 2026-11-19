@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/brownie",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Brownie",
+  "summary": "Two stacked square chocolate brownies with a crackly top, for dessert, bakery and sweets scenes.",
+  "tags": ["food", "brownie", "chocolate", "dessert", "sweets", "bakery", "baking"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the stack rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (~400 px wide); use about 0.2–0.3 next to a person" },
+    { "name": "color", "type": "colour", "default": "#5E3B26", "note": "brownie colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down, wobble = small rock, pop = scale in with overshoot" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1 },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/bus-station",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Bus Station",
+  "summary": "Bus terminal with a long canopy over the bays, a blank departures board and a kiosk; anim lights blinks lamps.",
+  "tags": ["bus station", "bus terminal", "bus", "coach station", "departures", "canopy", "transport"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the bays stand on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 1000 px wide and 450 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "canopy colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "posts and frame colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "lights"], "note": "lights = canopy lamps and the board lamp glow in turn"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

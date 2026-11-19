@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/hover-car",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Hover car",
+  "summary": "Low futuristic car with no wheels, floating on glowing pads, side view facing right. For sci-fi streets.",
+  "tags": [
+    "hover car",
+    "flying car",
+    "car",
+    "future",
+    "sci-fi",
+    "hover",
+    "vehicle",
+    "city"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1400,
+      "note": "bottom of the pads; the car hovers above it"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 720 px long at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1FA39A",
+      "note": "body colour"
+    },
+    {
+      "name": "glow",
+      "type": "colour",
+      "default": "#6FE7FF",
+      "note": "pad and light-strip glow"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "hover",
+      "values": [
+        "none",
+        "hover"
+      ],
+      "note": "hover = bobs up and down and the pads pulse"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1400,
+    "s": 1,
+    "anim": "hover"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "ink-sketch/village-road",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Village road",
+  "summary": "Ink sketch village road background: cobbled road between small cottages, round trees, fences and hills.",
+  "tags": [
+    "village",
+    "cottage",
+    "road",
+    "countryside",
+    "hills",
+    "cobbles",
+    "background",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light of the day; lamps and windows glow at dusk and night"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky and weather drawn over the scene"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#F3E3C7",
+      "note": "cottage wall colour"
+    },
+    {
+      "name": "roof",
+      "type": "colour",
+      "default": "#B53A2E",
+      "note": "cottage roof colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds, leaves, smoke and lights move from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear"
+  },
+  "uses": [
+    "flat-vector/village-road",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

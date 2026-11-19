@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/dragon-egg",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Dragon egg",
+  "summary": "Large smooth purple and teal scaled dragon egg with golden glowing cracks, resting in a nest of rocks and straw.",
+  "tags": ["dragon egg", "egg", "dragon", "fantasy", "nest", "magic", "treasure", "scales"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom of the nest"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 580 px tall at 1"},
+    {"name": "color", "type": "colour", "default": "#7B5CD6", "note": "shell colour (the scales are teal and darker shades of it)"},
+    {"name": "anim", "type": "enum", "default": "wobble", "values": ["none", "wobble"], "note": "wobble = the egg rocks in its nest and the golden cracks pulse"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "anim": "wobble"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

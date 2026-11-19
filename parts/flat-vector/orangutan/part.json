@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/orangutan",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Orangutan",
+  "summary": "Flat vector shaggy orange-red orangutan with very long arms, a darker face and cheek pads; stands or sits.",
+  "tags": [
+    "orangutan",
+    "ape",
+    "primate",
+    "animal",
+    "jungle",
+    "orange",
+    "mammal"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet or seat (bottom centre)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 550 px tall standing at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "sit",
+      "values": [
+        "sit",
+        "stand"
+      ],
+      "note": "stand = upright with long arms hanging; sit = seated, breathing from p.f"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "sit"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/quadruped"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

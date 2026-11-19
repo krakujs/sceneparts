@@ -1,0 +1,21 @@
+{
+  "id": "pixel-art/minimap",
+  "type": "text",
+  "style": "pixel-art",
+  "name": "Minimap",
+  "summary": "Pixel-art minimap panel: tiny terrain tiles with paths, a blinking player dot and a star goal marker.",
+  "tags": ["minimap", "map", "radar", "level map", "hud", "ui", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "x", "type": "number", "default": 900, "note": "centre x; top-right corner by default"},
+    {"name": "y", "type": "number", "default": 240, "note": "centre y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; panel is 216 px square at s = 1"},
+    {"name": "at", "type": "number", "default": 0, "note": "frame the map appears"},
+    {"name": "anim", "type": "enum", "default": "blink", "values": ["blink", "none"], "note": "the player dot blinks from p.f"}
+  ],
+  "example": {"x": 900, "y": 240},
+  "uses": ["pixel-art/backdrop"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/question-mark",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Question Mark",
+  "summary": "Chunky blue question mark: use for questions, confusion, FAQs or help.",
+  "tags": [
+    "question",
+    "confused",
+    "faq",
+    "help",
+    "ask",
+    "doubt",
+    "what"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 310 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "glyph colour; a darker edge is added"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "wobble",
+      "values": [
+        "none",
+        "wobble",
+        "bob"
+      ],
+      "note": "wobble = gentle tilt, bob = gentle float"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "anim": "wobble"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

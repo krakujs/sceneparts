@@ -1,0 +1,31 @@
+{
+  "id": "flat-vector/spring-roll",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Spring rolls",
+  "summary": "Plate of three golden crispy spring rolls with a small bowl of dipping sauce; for starter and takeaway scenes.",
+  "tags": [
+    "spring roll",
+    "spring rolls",
+    "food",
+    "starter",
+    "takeaway",
+    "crispy",
+    "asian food"
+  ],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the plate rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the plate is hero size (~460 px wide); use about 0.2–0.3 next to a person"},
+    {"name": "rollColor", "type": "colour", "default": "#E8A94A", "note": "golden crust colour"},
+    {"name": "sauceColor", "type": "colour", "default": "#D9413A", "note": "dipping sauce colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "pop"], "note": "bob = gentle up and down, pop = scale in with overshoot"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1},
+  "uses": ["flat-vector/dish", "flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

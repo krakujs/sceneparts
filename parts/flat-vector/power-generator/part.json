@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/power-generator",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Portable Generator",
+  "summary": "Framed portable petrol generator on wheels with a fan, fuel tank, sockets and a dial; for power cuts, sites and camping.",
+  "tags": ["generator", "power generator", "petrol generator", "portable generator", "power cut", "electricity", "site"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the wheels stand on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: at s = 1 about 520 px wide and 530 px tall; use about 0.6–0.8 for a yard or site scene"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "housing colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "frame, tank and chassis colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "spin", "bob", "wobble"], "note": "spin = the fan turns"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 0.7, "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

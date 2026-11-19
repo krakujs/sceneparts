@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/e-reader",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "E-reader",
+  "summary": "Slim paper-white e-reader with grey text lines on screen; use for reading, books and commute scenes.",
+  "tags": ["e-reader", "ebook", "e reader", "reading", "book", "kindle style", "tablet"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom edge: the reader stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 280 px wide and 450 px tall (hero size)"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "body colour (paper white)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "page"], "note": "page = a page edge sweeps across the screen"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FFFFFF", "anim": "page"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

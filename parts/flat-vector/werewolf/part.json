@@ -1,0 +1,98 @@
+{
+  "id": "flat-vector/werewolf",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Werewolf",
+  "summary": "Flat vector friendly cartoon werewolf on two legs in a torn shirt and shorts, with a howl pose; not scary.",
+  "tags": [
+    "werewolf",
+    "wolf",
+    "howl",
+    "monster",
+    "halloween",
+    "cartoon",
+    "friendly",
+    "spooky"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "howl",
+        "walk",
+        "wave",
+        "point",
+        "think",
+        "cheer",
+        "talk",
+        "hold"
+      ],
+      "note": "howl = head back, muzzle open"
+    },
+    {
+      "name": "expression",
+      "type": "enum",
+      "default": "smile",
+      "values": [
+        "smile",
+        "neutral",
+        "open",
+        "surprised",
+        "sad",
+        "angry",
+        "laugh"
+      ]
+    },
+    {
+      "name": "skin",
+      "type": "string",
+      "default": "#8D7A66",
+      "note": "fur colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "howl"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/hand-drill",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Hand Drill",
+  "summary": "Old crank hand drill with a big toothed gear and crank handle; anim spin turns the gear and bit.",
+  "tags": [
+    "hand drill",
+    "egg beater drill",
+    "crank drill",
+    "drill",
+    "workshop",
+    "tool",
+    "carpentry"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the body"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the bit tip stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "hero size: about 600 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "body colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "gear, chuck and collar colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "spin",
+        "bob",
+        "pop"
+      ],
+      "note": "spin = the big gear, crank handle and bit turn"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the crank then sits on the left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "spin"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "flat-vector/plaster",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Adhesive plaster",
+  "summary": "Sticking plaster strip with a padded centre and tiny holes, at a slight angle. Use for small cuts and first-aid moments.",
+  "tags": [
+    "plaster",
+    "sticking plaster",
+    "first aid",
+    "cut",
+    "adhesive",
+    "adhesive bandage"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the lowest corner rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 about 450 px long; use about 0.2\u20130.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F2C29E",
+      "note": "strip colour: a skin tone, or a fun colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "pop = scales in with a small overshoot"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror the strip"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#F2C29E",
+    "anim": "wobble"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

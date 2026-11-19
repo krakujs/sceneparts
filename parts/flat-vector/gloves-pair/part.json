@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/gloves-pair",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Gloves",
+  "summary": "Pair of five-fingered winter gloves with ribbed cuffs; bobs gently. For cold weather, snow and winter scenes.",
+  "tags": [
+    "gloves",
+    "pair of gloves",
+    "winter gloves",
+    "mittens",
+    "knitted gloves",
+    "cold weather",
+    "hands",
+    "warm"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the item rests on y (hem or tip)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 0.9,
+      "note": "scale; about 580 px wide and 420 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "glove colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "cuff and stitch colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob"
+      ],
+      "note": "bob = the pair bobs gently up and down"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 0.9,
+    "color": "#3D6FE0",
+    "color2": "#FFFFFF",
+    "anim": "bob"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

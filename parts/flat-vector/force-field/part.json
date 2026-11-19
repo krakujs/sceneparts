@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/force-field",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Force field",
+  "summary": "Translucent hexagon-tiled dome bubble with a shimmer sweep and ripples; for shields and protective domes.",
+  "tags": ["force field", "shield", "dome", "bubble", "hexagon", "energy", "sci-fi", "barrier"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the dome"},
+    {"name": "y", "type": "number", "default": 960, "note": "centre y of the dome"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 840 px wide at 1"},
+    {"name": "color", "type": "colour", "default": "#6FE3FF", "note": "shield colour"},
+    {"name": "anim", "type": "enum", "default": "shimmer", "values": ["shimmer", "none"], "note": "shimmer = a light sweep and ripples"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 960, "color": "#6FE3FF", "anim": "shimmer"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

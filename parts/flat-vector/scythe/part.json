@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/scythe",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Scythe",
+  "summary": "Long-handled farming scythe with a curved blade, standing on its heel; for mowing, harvest and farm scenes.",
+  "tags": ["scythe", "farming", "mowing", "harvest", "long handle", "farm tool", "hay"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line under the heel of the blade"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 480 px tall (hero size); use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#9AA3B5", "note": "blade colour"},
+    {"name": "color2", "type": "colour", "default": "#8A5A3C", "note": "snath (handle) and grip colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "swing"], "note": "swing = the blade sweeps side to side, as when mowing"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the blade then reaches left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "swing"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

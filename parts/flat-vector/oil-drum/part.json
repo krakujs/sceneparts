@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/oil-drum",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Oil drum",
+  "summary": "Upright 200 litre metal drum with vertical ribs and a top bung, colour adjustable; for industrial, fuel and yard scenes.",
+  "tags": ["oil drum", "barrel", "metal drum", "fuel", "industrial", "drum", "steel"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the drum stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 540 px tall and hero size; use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "drum colour (blue, red, green, grey or any hex)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion of the whole drum"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E8503F"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "storybook/mudlark",
+  "type": "character",
+  "style": "storybook",
+  "name": "Mudlark",
+  "summary": "Ragged barefoot child who searches river mud for lost coins and scraps, holding up a found coin.",
+  "tags": ["mudlark", "thames", "river", "child", "poverty", "victorian", "coin", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1580, "note": "feet" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~640 px tall at 1" },
+    { "name": "walk", "type": "boolean", "default": false, "note": "walk along the shore" },
+    { "name": "rags", "type": "colour", "default": "#8A7A62" },
+    { "name": "skin", "type": "colour", "default": "#B8875C" },
+    { "name": "hairColour", "type": "colour", "default": "#3B2A1E" },
+    { "name": "flip", "type": "boolean", "note": "face left" },
+    { "name": "vx", "type": "number", "note": "px per frame" }
+  ],
+  "example": { "x": 540, "y": 1580, "s": 1 },
+  "uses": ["storybook/style", "storybook/townsfolk"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

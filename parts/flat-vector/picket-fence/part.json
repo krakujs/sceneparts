@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/picket-fence",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Picket fence",
+  "summary": "White picket fence segment with pointed pickets, 1040 px wide so it tiles; anim lights strings fairy lights on the rail.",
+  "tags": ["picket fence", "white fence", "picket", "garden", "cottage", "boundary", "yard"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x of this segment; place copies at x ± 1040 to tile" },
+    { "name": "y", "type": "number", "default": 1600, "note": "floor line: the pickets stand on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "about 1040 px wide and 360 px tall at s = 1" },
+    { "name": "color", "type": "colour", "default": "#FFFFFF", "note": "picket colour" },
+    { "name": "color2", "type": "colour", "default": "#DDE2EA", "note": "rail colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "lights", "pop"], "note": "lights = fairy lights on the top rail glow one after another; pop = scales in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1600, "s": 1, "anim": "none" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,94 @@
+{
+  "id": "ink-sketch/snow-leopard",
+  "type": "character",
+  "style": "ink-sketch",
+  "name": "Snow leopard",
+  "summary": "Ink sketch pale grey snow leopard with grey rosettes and very thick long tail; for mountain scenes.",
+  "tags": [
+    "snow leopard",
+    "big cat",
+    "mountain",
+    "snow",
+    "animal",
+    "wild",
+    "himalaya",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "idle",
+        "sit",
+        "lie",
+        "graze"
+      ],
+      "note": "idle = breathing + tail wag; graze = head down"
+    },
+    {
+      "name": "mouth",
+      "type": "enum",
+      "default": "smile",
+      "values": [
+        "none",
+        "smile",
+        "open",
+        "tongue"
+      ]
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#D5DBE3",
+      "note": "coat colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "stand"
+  },
+  "uses": [
+    "ink-sketch/quadruped",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

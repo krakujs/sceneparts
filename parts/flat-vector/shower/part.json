@@ -1,0 +1,74 @@
+{
+  "id": "flat-vector/shower",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Shower",
+  "summary": "Wall-mounted shower head with a white tray and a curtain on a rail; anim makes water fall. For bathroom scenes.",
+  "tags": [
+    "shower",
+    "shower head",
+    "shower curtain",
+    "bathroom",
+    "water",
+    "shower tray",
+    "washing"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 matches a flat-vector person at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1FA39A",
+      "note": "curtain colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "water"
+      ],
+      "note": "water = drops fall from the head into the tray"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#1FA39A"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

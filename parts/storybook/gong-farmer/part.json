@@ -1,0 +1,70 @@
+{
+  "id": "storybook/gong-farmer",
+  "type": "character",
+  "style": "storybook",
+  "name": "Gong farmer",
+  "summary": "Medieval night-soil worker with shovel, wooden bucket, kerchief over the nose and a lantern.",
+  "tags": [
+    "gong farmer",
+    "medieval",
+    "night soil",
+    "sanitation",
+    "shovel",
+    "lantern",
+    "worker",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#6B5B3E",
+      "note": "tunic colour"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#A9714A"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/school",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "School",
+  "summary": "Two-storey school with a bell tower, clock and big windows; anim lights glows the windows in turn.",
+  "tags": ["school", "classroom", "education", "building", "clock", "bell", "town", "campus"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the base stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 820 px wide and 1000 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#F9E0B0", "note": "wall colour"},
+    {"name": "color2", "type": "colour", "default": "#E8503F", "note": "roof and bell tower trim colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "lights = the windows glow on one after another"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

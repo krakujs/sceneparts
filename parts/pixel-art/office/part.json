@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/office",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Office",
+  "summary": "Pixel-art office: desks with computers, office chairs, a city-view window, a plant and carpet; for work scenes.",
+  "tags": [
+    "office",
+    "desk",
+    "computer",
+    "work",
+    "background",
+    "indoor",
+    "pixel art",
+    "game",
+    "level"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "blink",
+      "values": [
+        "blink",
+        "none"
+      ],
+      "note": "the lit windows of the city blink from p.f"
+    }
+  ],
+  "example": {
+    "anim": "blink"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

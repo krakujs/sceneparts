@@ -1,0 +1,221 @@
+{
+  "id": "flat-vector/old-man",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Old man",
+  "summary": "Flat vector older man with grey hair, glasses, a cardigan and a cane; for ageing, retirement and health explainers.",
+  "tags": [
+    "old man",
+    "elder",
+    "senior",
+    "older",
+    "pensioner",
+    "cane",
+    "glasses"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "wave",
+        "point",
+        "think",
+        "cheer",
+        "talk",
+        "sit",
+        "hold"
+      ]
+    },
+    {
+      "name": "expression",
+      "type": "enum",
+      "default": "smile",
+      "values": [
+        "smile",
+        "neutral",
+        "open",
+        "surprised",
+        "sad",
+        "angry",
+        "laugh"
+      ]
+    },
+    {
+      "name": "skin",
+      "type": "string",
+      "default": "fair",
+      "note": "light | fair | tan | medium | brown | dark, or a hex colour"
+    },
+    {
+      "name": "hair",
+      "type": "enum",
+      "default": "short",
+      "values": [
+        "short",
+        "buzz",
+        "side",
+        "spiky",
+        "curly",
+        "afro",
+        "long",
+        "ponytail",
+        "bun",
+        "bob",
+        "braid",
+        "none"
+      ]
+    },
+    {
+      "name": "hairColor",
+      "type": "string",
+      "default": "grey",
+      "note": "black | brown | auburn | blonde | grey | white | red | blue | pink, or hex"
+    },
+    {
+      "name": "topColor",
+      "type": "colour",
+      "default": "#8A5A3C"
+    },
+    {
+      "name": "shirtColor",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "shirt under a blazer or coat"
+    },
+    {
+      "name": "bottom",
+      "type": "enum",
+      "default": "trousers",
+      "values": [
+        "trousers",
+        "shorts",
+        "skirt",
+        "overalls"
+      ]
+    },
+    {
+      "name": "bottomColor",
+      "type": "colour",
+      "default": "#5D6578"
+    },
+    {
+      "name": "shoesColor",
+      "type": "colour",
+      "default": "#1F2433"
+    },
+    {
+      "name": "hat",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "cap",
+        "beanie",
+        "hardhat",
+        "chef",
+        "beret",
+        "brim",
+        "fedora",
+        "peaked",
+        "helmet",
+        "headscarf",
+        "turban",
+        "mortarboard",
+        "bandana",
+        "tophat",
+        "scrubcap",
+        "skullcap",
+        "sailor"
+      ]
+    },
+    {
+      "name": "hatColor",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "also colours goggles and headphones"
+    },
+    {
+      "name": "extra",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "tie",
+        "bowtie",
+        "apron",
+        "hivis",
+        "lanyard",
+        "stethoscope",
+        "scarf",
+        "badge",
+        "backpack",
+        "toolbelt",
+        "sash"
+      ]
+    },
+    {
+      "name": "extraColor",
+      "type": "colour",
+      "default": "#E8503F"
+    },
+    {
+      "name": "propColor",
+      "type": "colour",
+      "default": "#5E3B26"
+    },
+    {
+      "name": "seat",
+      "type": "boolean",
+      "default": true,
+      "note": "draw a bench when pose is sit"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "stand",
+    "skin": "fair"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/shop",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Corner Shop",
+  "summary": "Corner shop with a striped awning, display window, door and sign board; for street and town scenes.",
+  "tags": ["shop", "corner shop", "store", "storefront", "awning", "street", "town"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the building stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 600 px wide and 720 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#DCC79A", "note": "building wall colour"},
+    {"name": "color2", "type": "colour", "default": "#1FA39A", "note": "awning colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "lights"], "note": "lights = the shop window glows and the sign lamp flickers"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

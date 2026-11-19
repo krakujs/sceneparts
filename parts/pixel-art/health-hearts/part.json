@@ -1,0 +1,23 @@
+{
+  "id": "pixel-art/health-hearts",
+  "type": "text",
+  "style": "pixel-art",
+  "name": "Health hearts",
+  "summary": "Pixel-art health bar: a row of hearts with half hearts for odd health that beat when health is low.",
+  "tags": ["health", "hearts", "lives", "hp", "hud", "ui", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 960, "note": "centre y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; a row of 5 hearts is about 548 px wide at s = 1"},
+    {"name": "at", "type": "number", "default": 0, "note": "frame the hearts appear"},
+    {"name": "max", "type": "number", "default": 5, "note": "number of hearts"},
+    {"name": "value", "type": "number", "default": 3.5, "note": "current health in hearts; .5 shows a half heart"},
+    {"name": "anim", "type": "enum", "default": "beat", "values": ["beat", "none"], "note": "hearts beat when health is low (2 or less)"}
+  ],
+  "example": {"x": 300, "y": 160, "value": 3.5},
+  "uses": ["pixel-art/backdrop"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

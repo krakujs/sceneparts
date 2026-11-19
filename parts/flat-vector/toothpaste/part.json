@@ -1,0 +1,88 @@
+{
+  "id": "flat-vector/toothpaste",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Toothpaste",
+  "summary": "Squeezed toothpaste tube lying on its side with a cap and an optional paste blob; no text. For bathroom scenes.",
+  "tags": [
+    "toothpaste",
+    "toothpaste tube",
+    "tube",
+    "dental",
+    "bathroom",
+    "oral hygiene",
+    "paste"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "tube colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "cap colour"
+    },
+    {
+      "name": "paste",
+      "type": "boolean",
+      "default": true,
+      "note": "true = a small blob of paste at the cap"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "squeeze"
+      ],
+      "note": "squeeze = the tube pulses as if being squeezed"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3D6FE0",
+    "color2": "#FFFFFF",
+    "paste": true
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

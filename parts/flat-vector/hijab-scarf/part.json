@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/hijab-scarf",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Hijab",
+  "summary": "Head scarf neatly wrapped around the face opening on a plain faceless display bust; for modest fashion scenes.",
+  "tags": [
+    "hijab",
+    "head scarf",
+    "headscarf",
+    "scarf",
+    "modest fashion",
+    "headwear",
+    "muslim"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom of the bust base: it stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 400 px wide and 660 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1FA39A",
+      "note": "main colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "brooch and face-opening rim colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop"
+      ],
+      "note": "pop = settles in with a small bounce"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#1FA39A",
+    "color2": "#FFC83D",
+    "anim": "pop"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

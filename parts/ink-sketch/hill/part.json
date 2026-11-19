@@ -1,0 +1,80 @@
+{
+  "id": "ink-sketch/hill",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Hill",
+  "summary": "Ink sketch gentle rounded grassy hill with a few grass tufts. For meadows, countryside and backdrops.",
+  "tags": [
+    "hill",
+    "grassy hill",
+    "meadow",
+    "countryside",
+    "rolling hills",
+    "grass",
+    "landscape",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the part stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 1000 px wide and 440 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "grass colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#348A4F",
+      "note": "tuft colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = grass tufts or palm fronds move in the breeze"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1
+  },
+  "uses": [
+    "flat-vector/hill",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

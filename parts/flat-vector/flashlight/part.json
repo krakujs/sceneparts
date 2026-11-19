@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/flashlight",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flashlight",
+  "summary": "Handheld torch in side view with a ribbed grip and optional light beam; for camping, night and torch-search scenes.",
+  "tags": ["flashlight", "torch", "hand torch", "light beam", "camping", "night", "lamp"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the torch lies on the floor at y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (about 420 px long); use about 0.2–0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "body colour"},
+    {"name": "color2", "type": "colour", "default": "#3A4157", "note": "head and switch colour"},
+    {"name": "beam", "type": "boolean", "default": false, "note": "true = show a light beam from the lens"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "pulse"], "note": "pulse = the beam breathes in and out (needs beam true)"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the beam then points left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "beam": true, "anim": "pulse"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

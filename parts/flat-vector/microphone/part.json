@@ -1,0 +1,82 @@
+{
+  "id": "flat-vector/microphone",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Microphone",
+  "summary": "Handheld stage microphone with a mesh head; anim sound sends sound arcs out. For singing scenes.",
+  "tags": [
+    "microphone",
+    "mic",
+    "stage mic",
+    "singing",
+    "vocals",
+    "karaoke",
+    "speech"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the foot of the handle rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 the mic is about 290 px wide and 600 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1F2433",
+      "note": "handle colour"
+    },
+    {
+      "name": "head",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "mesh head colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "sound"
+      ],
+      "note": "sound = arcs pulse out from the mesh head"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#1F2433",
+    "head": "#5D6578",
+    "anim": "sound"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

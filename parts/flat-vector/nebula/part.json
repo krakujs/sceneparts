@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/nebula",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Nebula",
+  "summary": "Colourful soft gas cloud with a scatter of stars, about 800 px across. Slow drift. For space backgrounds.",
+  "tags": ["nebula", "gas cloud", "space", "stars", "cosmic", "colourful", "background", "galaxy"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 960, "note": "centre y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 800 px across at s = 1"},
+    {"name": "anim", "type": "enum", "default": "drift", "values": ["none", "drift"], "note": "drift = the cloud slowly moves and the stars twinkle"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 960, "s": 1, "anim": "drift"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

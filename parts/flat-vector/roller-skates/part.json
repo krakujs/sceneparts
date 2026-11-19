@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/roller-skates",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Roller Skates",
+  "summary": "Quad roller skate boot in side view facing right, with a plate and four wheels; a hero prop for retro and sport scenes.",
+  "tags": ["roller skates", "quad skates", "rollerskate", "skating", "retro", "wheels", "prop"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "ground line: the wheels touch y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 450 px wide (hero size)" },
+    { "name": "color", "type": "colour", "default": "#F27BA6", "note": "boot colour" },
+    { "name": "color2", "type": "colour", "default": "#3D6FE0", "note": "wheel colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "drive", "bob", "pop"], "note": "drive = wheels spin (also on when vx is not 0)" },
+    { "name": "vx", "type": "number", "default": 0, "note": "horizontal speed in px per frame (negative = left; set flip too)" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror so the skate faces left" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "anim": "drive" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

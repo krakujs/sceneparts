@@ -1,0 +1,73 @@
+{
+  "id": "flat-vector/sprout",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Sprout",
+  "summary": "Tiny seedling with two round leaves growing from a soil mound; use for gardens, spring and new-growth themes.",
+  "tags": [
+    "sprout",
+    "seedling",
+    "young plant",
+    "soil",
+    "spring",
+    "growing",
+    "leaves"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the soil mound rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 300 px wide and 320 px tall, use about 0.6 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "leaf colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = leaves tilt gently"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "color": "#4BB46A",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

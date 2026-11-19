@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/gate-arch",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Gate arch",
+  "summary": "Ornamental entrance archway with stone pillars, a decorated arch top and an iron gate; anim lights glows the lanterns.",
+  "tags": ["gate", "archway", "arch", "entrance", "gateway", "garden gate", "pillars"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1600, "note": "floor line: the pillar bases stand on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "about 840 px wide and 960 px tall at s = 1" },
+    { "name": "color", "type": "colour", "default": "#E9D3A9", "note": "stone colour for the pillars and arch" },
+    { "name": "color2", "type": "colour", "default": "#253058", "note": "iron colour for the gate, finials and medallion" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "lights", "pop"], "note": "lights = the two pillar lanterns and the top orb glow on one after another; pop = scales in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1600, "s": 1, "anim": "lights" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

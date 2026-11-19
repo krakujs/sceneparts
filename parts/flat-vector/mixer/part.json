@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/mixer",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Stand Mixer",
+  "summary": "Kitchen stand mixer with a steel bowl and wire whisk head; anim whisk turns the whisk for baking scenes.",
+  "tags": ["mixer", "stand mixer", "kitchen mixer", "baking", "whisk", "kitchen", "appliance"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the mixer stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (about 460 px tall); use about 0.2–0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#F27BA6", "note": "body colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "whisk"], "note": "whisk = the whisk turns about its axis"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#F27BA6", "anim": "whisk"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

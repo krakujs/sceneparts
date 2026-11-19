@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/blacksmith-shop",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Blacksmith shop",
+  "summary": "Pixel-art blacksmith forge: glowing coals, bellows, an anvil and a wall rack of hammers and swords; for craft scenes.",
+  "tags": [
+    "blacksmith",
+    "forge",
+    "smithy",
+    "anvil",
+    "medieval",
+    "background",
+    "indoor",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "glow",
+      "values": [
+        "glow",
+        "none"
+      ],
+      "note": "the forge coals and glow flicker from p.f"
+    }
+  ],
+  "example": {
+    "anim": "glow"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

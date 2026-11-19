@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/rug",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Rug",
+  "summary": "Flat rug lying on the floor in perspective, a wide rounded shape with a simple border pattern. For room scenes.",
+  "tags": [
+    "rug",
+    "carpet",
+    "floor",
+    "living room",
+    "mat",
+    "decor"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "centre of the rug, on the floor line; half sits just above y and half just below"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the rug is about 760 px wide"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "main rug colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "border pattern colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; bob is a gentle breathing squash on the floor"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#E8503F",
+    "color2": "#FFC83D"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

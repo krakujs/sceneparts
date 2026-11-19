@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/metal-detector",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Metal Detector",
+  "summary": "Long-handled metal detector with a search coil, control box and meter; for treasure hunting and beach scenes.",
+  "tags": ["metal detector", "treasure hunting", "detector", "beach", "search coil", "hobby", "outdoor"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the search coil rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: at s = 1 about 790 px tall and 300 px wide; about 0.5 for a smaller scene"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "search coil colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "sweep"], "note": "sweep = meter bars move and a beep ring expands from the coil"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "color": "#FF8A3D", "anim": "sweep"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

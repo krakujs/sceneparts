@@ -1,0 +1,14 @@
+{
+  "id": "ink-sketch/style",
+  "type": "style",
+  "style": "ink-sketch",
+  "name": "Ink sketch",
+  "summary": "Hand-drawn black ink line on warm off-white paper with one loose watercolour accent wash and hand-lettered titles.",
+  "tags": ["ink", "sketch", "line art", "hand drawn", "watercolour", "notebook", "illustration", "editorial"],
+  "params": [],
+  "example": {},
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

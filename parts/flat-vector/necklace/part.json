@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/necklace",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Necklace",
+  "summary": "Gold chain necklace with a teardrop pendant laid on a display bust; for jewellery, fashion and gift scenes.",
+  "tags": ["necklace", "gold necklace", "chain", "pendant", "jewellery", "jewelry", "accessory"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the bust plinth sits on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: about 420 px wide and 340 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "gold colour of the chain and bezel"},
+    {"name": "color2", "type": "colour", "default": "#1FA39A", "note": "pendant gem colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "sway", "sparkle"], "note": "sway = the pendant swings on its chain; sparkle = a glint pulses beside it"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FFC83D", "color2": "#1FA39A", "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

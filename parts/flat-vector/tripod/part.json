@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/tripod",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Tripod",
+  "summary": "Three-legged camera tripod with a pan head and quick-release plate; room-scale stand for photo and video scenes.",
+  "tags": ["tripod", "camera stand", "stand", "photography", "camera mount", "filming", "legs"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom centre: the middle of the feet rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; room-scale: at s = 1 the tripod is about 1010 px tall and 680 px wide; use about 0.5 for a small prop"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "leg colour"},
+    {"name": "head", "type": "colour", "default": "#1F2433", "note": "pan head colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion only; driven by the frame"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "color": "#5D6578", "head": "#1F2433"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

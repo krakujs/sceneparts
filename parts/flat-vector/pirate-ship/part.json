@@ -1,0 +1,86 @@
+{
+  "id": "flat-vector/pirate-ship",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Pirate Ship",
+  "summary": "Generic wooden sailing ship with square sails and a dark skull flag; for cartoon pirate adventure scenes.",
+  "tags": [
+    "pirate ship",
+    "pirate",
+    "sailing ship",
+    "galleon",
+    "skull flag",
+    "ship",
+    "sea",
+    "adventure"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x at frame 0"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "waterline: the hull floats with its waterline on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: about 760 px wide and 650 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "wooden hull colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#F4F1EA",
+      "note": "sail colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "drive",
+        "bob",
+        "pop"
+      ],
+      "note": "drive = the boat rocks on the waves and its oar, paddle, wake or propeller moves"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "horizontal speed in px per frame (negative = left; set flip too)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror so it faces left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 0.8,
+    "anim": "drive"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

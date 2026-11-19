@@ -1,0 +1,71 @@
+{
+  "id": "storybook/sky",
+  "type": "background",
+  "style": "storybook",
+  "name": "Storybook sky",
+  "summary": "Full-frame sky: night, dawn, day, paper, modern or dark, with optional stars, glowing moon and fog.",
+  "tags": [
+    "storybook",
+    "vintage",
+    "flat",
+    "history",
+    "sky",
+    "night",
+    "dawn",
+    "moon",
+    "stars",
+    "fog",
+    "background"
+  ],
+  "params": [
+    {
+      "name": "sky",
+      "type": "enum",
+      "values": [
+        "night",
+        "dawn",
+        "day",
+        "paper",
+        "modern",
+        "dark"
+      ],
+      "default": "night"
+    },
+    {
+      "name": "stars",
+      "type": "boolean",
+      "note": "default on at night"
+    },
+    {
+      "name": "moon",
+      "type": "boolean",
+      "note": "default on at night"
+    },
+    {
+      "name": "fog",
+      "type": "boolean",
+      "note": "default on at night"
+    },
+    {
+      "name": "moonX",
+      "type": "number",
+      "default": 860
+    },
+    {
+      "name": "moonY",
+      "type": "number",
+      "default": 700
+    }
+  ],
+  "example": {
+    "sky": "night"
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

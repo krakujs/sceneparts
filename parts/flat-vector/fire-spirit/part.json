@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/fire-spirit",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Fire spirit",
+  "summary": "Friendly floating living flame with a face and flame-tongue arms, flickering in layers of red, orange and yellow.",
+  "tags": ["fire spirit", "flame", "fire", "elemental", "fantasy", "living fire", "spirit", "magic"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1100, "note": "bottom of the flame; the spirit floats above it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 680 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "outer flame colour"},
+    {"name": "anim", "type": "enum", "default": "flicker", "values": ["none", "flicker"], "note": "flicker = the flame dances, arms wave and the spirit bobs"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1100, "s": 1, "anim": "flicker"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

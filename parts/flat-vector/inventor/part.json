@@ -1,0 +1,113 @@
+{
+  "id": "flat-vector/inventor",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Inventor",
+  "summary": "Flat vector inventor in overalls and goggles with a gear contraption and a flickering idea bulb.",
+  "tags": [
+    "inventor",
+    "invention",
+    "idea",
+    "lightbulb",
+    "gears",
+    "goggles",
+    "engineer",
+    "creative"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "age",
+      "type": "enum",
+      "default": "adult",
+      "values": [
+        "adult",
+        "teen",
+        "child",
+        "toddler",
+        "elder"
+      ],
+      "note": "teen/child/toddler: smaller with a bigger head; elder: slight stoop"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "wave",
+        "point",
+        "think",
+        "cheer",
+        "talk",
+        "sit",
+        "hold"
+      ]
+    },
+    {
+      "name": "expression",
+      "type": "enum",
+      "default": "smile",
+      "values": [
+        "smile",
+        "neutral",
+        "open",
+        "surprised",
+        "sad",
+        "angry",
+        "laugh"
+      ]
+    },
+    {
+      "name": "skin",
+      "type": "string",
+      "default": "tan",
+      "note": "light | fair | tan | medium | brown | dark, or a hex colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "stand",
+    "expression": "smile",
+    "skin": "tan"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

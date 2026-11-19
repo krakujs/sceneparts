@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/gps-device",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "GPS Device",
+  "summary": "Handheld outdoor GPS unit with a map screen, route and stubby antenna; for hiking and navigation scenes.",
+  "tags": ["gps", "gps device", "handheld gps", "navigation", "hiking", "map", "outdoor"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom edge: the unit stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 300 px wide and 540 px tall (hero size)"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "case colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "locate"], "note": "locate = position dot pulses and the route dashes run along"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FF8A3D", "anim": "locate"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

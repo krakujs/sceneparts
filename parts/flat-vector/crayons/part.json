@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/crayons",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Crayons",
+  "summary": "Pile of colourful wax crayons with pointed tips and paper wrappers; for kids, drawing and classroom scenes.",
+  "tags": ["crayons", "crayon", "wax crayons", "colouring", "drawing", "kids", "art"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the pile rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the pile is about 480 px wide and 300 px tall"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "wobble = the top crayons rock gently"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

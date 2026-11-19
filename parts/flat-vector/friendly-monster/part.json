@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/friendly-monster",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Friendly monster",
+  "summary": "Tall furry orange monster with purple spots, three eyes and small horns, waving hello. For kids' monster stories.",
+  "tags": [
+    "friendly monster",
+    "monster",
+    "furry",
+    "three eyes",
+    "waving",
+    "orange",
+    "cute",
+    "creature"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "fur colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "wave",
+      "values": [
+        "wave",
+        "none"
+      ],
+      "note": "wave = right arm waves; none = still"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "anim": "wave"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

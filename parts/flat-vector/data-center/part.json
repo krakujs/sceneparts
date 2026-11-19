@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/data-center",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Data Center",
+  "summary": "Windowless data centre with cooling units on the roof and blinking status lights. For tech and server scenes.",
+  "tags": [
+    "data center",
+    "datacenter",
+    "server",
+    "cloud",
+    "cooling",
+    "tech",
+    "blinking lights"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the base stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 860 px wide and 560 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#DDE2EA",
+      "note": "Wall colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#253058",
+      "note": "Roof unit and stripe colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "lights"
+      ],
+      "note": "pop = scales in; lights = the status lights blink in turn and the roof fans spin"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "lights"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

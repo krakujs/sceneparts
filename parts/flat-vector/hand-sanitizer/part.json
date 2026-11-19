@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/hand-sanitizer",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Hand sanitizer",
+  "summary": "Pump bottle of clear gel with a blank label; anim pump presses the head and a drop appears.",
+  "tags": [
+    "hand sanitizer",
+    "sanitiser",
+    "hand gel",
+    "pump bottle",
+    "hygiene",
+    "clean hands",
+    "germs"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the base rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "hero size: at s = 1 about 400 px tall; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1FA39A",
+      "note": "pump colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#8BE0CB",
+      "note": "gel colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pump"
+      ],
+      "note": "pump = head presses and a drop falls"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#1FA39A",
+    "color2": "#8BE0CB",
+    "anim": "pump"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

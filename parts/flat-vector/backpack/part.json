@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/backpack",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Backpack",
+  "summary": "School or day backpack with a front pocket, shoulder straps and a top loop; for school, travel and hiking scenes.",
+  "tags": ["backpack", "rucksack", "school bag", "schoolbag", "bag", "daypack", "school"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the bag rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (about 460 px tall); use about 0.3–0.4 next to a child"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "bag colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion only; driven by the frame"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3D6FE0"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/snail",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Snail",
+  "summary": "Flat vector garden snail with a brown spiral shell, soft tan body and eye stalks; crawls slowly.",
+  "tags": ["snail", "garden", "slow", "mollusc", "shell", "creature", "crawl"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre (ground)" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 200 px long at s = 1" },
+    { "name": "pose", "type": "enum", "default": "idle", "values": ["idle", "crawl"], "note": "idle = slow eye-stalk sway; crawl = body stretches in a slow wave and eye stalks swing" },
+    { "name": "color", "type": "string", "default": "#BDB09A", "note": "body colour (hex)" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "face left" },
+    { "name": "vx", "type": "number", "default": 0, "note": "px per frame drift (use a small value, e.g. 0.6, for a slow crawl)" }
+  ],
+  "example": { "x": 540, "y": 1560, "pose": "crawl", "vx": 0.6 },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

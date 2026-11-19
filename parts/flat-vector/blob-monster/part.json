@@ -1,0 +1,72 @@
+{
+  "id": "flat-vector/blob-monster",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Monster blob",
+  "summary": "Wobbly round jelly blob monster with one big eye and tiny arms. For cute alien and monster scenes.",
+  "tags": [
+    "blob",
+    "blob monster",
+    "jelly",
+    "one eye",
+    "cute monster",
+    "wobbly",
+    "creature",
+    "cartoon"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F27BA6",
+      "note": "body colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "wobble",
+      "values": [
+        "wobble",
+        "blink",
+        "none"
+      ],
+      "note": "wobble = body jiggles; blink = eye blinks; none = still"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "anim": "wobble"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

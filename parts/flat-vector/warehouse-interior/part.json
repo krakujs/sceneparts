@@ -1,0 +1,66 @@
+{
+  "id": "flat-vector/warehouse-interior",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Warehouse interior",
+  "summary": "Full-frame flat warehouse interior background: pallet racking with boxes, roller door, forklift, concrete floor.",
+  "tags": [
+    "warehouse",
+    "storage",
+    "pallets",
+    "forklift",
+    "boxes",
+    "logistics",
+    "background",
+    "interior"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "room tint; pendant lamps glow at dusk and night"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#D7DCE4",
+      "note": "wall colour"
+    },
+    {
+      "name": "racking",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "pallet racking colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = the lamps sway gently"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "racking": "#FF8A3D"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

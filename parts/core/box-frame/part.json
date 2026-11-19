@@ -1,0 +1,26 @@
+{
+  "id": "core/box-frame",
+  "type": "text",
+  "style": "core",
+  "name": "Box frame",
+  "summary": "Square-cornered thick ink frame that draws its border on corner to corner, with an optional caption tab.",
+  "tags": ["frame", "border", "box", "outline", "image frame", "caption", "highlight"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "w", "type": "number", "default": 900, "note": "frame width" },
+    { "name": "h", "type": "number", "default": 1000, "note": "frame height" },
+    { "name": "caption", "type": "string", "default": "", "note": "optional tab on the top-left edge" },
+    { "name": "color", "type": "colour", "note": "tab colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "len", "type": "number", "default": 30, "note": "draw-on length in frames" }
+  ],
+  "example": { "w": 900, "h": 1000, "caption": "Before" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

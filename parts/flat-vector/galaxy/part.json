@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/galaxy",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Galaxy",
+  "summary": "Spiral galaxy at a slant with a glowing core and two arms of stars. Slow rotation. For space and night-sky scenes.",
+  "tags": ["galaxy", "spiral galaxy", "milky way", "stars", "space", "cosmic", "universe", "night sky"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the core"},
+    {"name": "y", "type": "number", "default": 960, "note": "centre y of the core"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 800 px wide at s = 1"},
+    {"name": "anim", "type": "enum", "default": "spin", "values": ["none", "spin"], "note": "spin = the galaxy turns slowly"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 960, "s": 1, "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

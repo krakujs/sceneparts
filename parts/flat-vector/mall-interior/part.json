@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/mall-interior",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Mall interior",
+  "summary": "Full-frame flat mall atrium background: two levels of shopfronts with blank signs, escalators, skylight and plants.",
+  "tags": ["mall", "shopping mall", "atrium", "shops", "escalator", "background", "indoor"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "light through the skylight and inside the mall" },
+    { "name": "wall", "type": "colour", "default": "#F1ECE4", "note": "wall colour" },
+    { "name": "accent", "type": "colour", "default": "#7B5CD6", "note": "escalator rail colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = light strip shimmers and plant leaves sway from p.f" }
+  ],
+  "example": { "time": "day" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/petrol-pump",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Petrol Pump",
+  "summary": "Fuel dispenser with a display, keypad, hose and nozzle, with no brand. For petrol station and road trip scenes.",
+  "tags": ["petrol pump", "fuel pump", "gas pump", "petrol station", "filling station", "fuel", "road trip"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the plinth stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 900 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "pump body colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "plinth, keypad and nozzle colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "pop"], "note": "bob = gentle lift"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the hose then hangs on the left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

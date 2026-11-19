@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/toy-box",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Toy Box",
+  "summary": "Wooden toy chest with its lid propped open and a ball, block and toy car peeking out; for playroom and bedtime scenes.",
+  "tags": ["toy box", "toy chest", "playroom", "toys", "wooden box", "kids room", "chest"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the box rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the box is room size (about 540 px wide); use about 0.4–0.6 next to a child"},
+    {"name": "color", "type": "colour", "default": "#8A5A3C", "note": "wood colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion only; driven by the frame"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#8A5A3C"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

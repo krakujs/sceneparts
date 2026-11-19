@@ -1,0 +1,63 @@
+{
+  "id": "storybook/wax-seal",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Wax seal",
+  "summary": "Folded letter sealed with red wax and a star stamp, with the seal stamp beside it; for letter scenes.",
+  "tags": [
+    "wax seal",
+    "letter",
+    "seal",
+    "stamp",
+    "envelope",
+    "history",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1000,
+      "note": "centre of the letter"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~520 px wide at 1"
+    },
+    {
+      "name": "wax",
+      "type": "colour",
+      "default": "#B5452F"
+    },
+    {
+      "name": "stamping",
+      "type": "boolean",
+      "default": false,
+      "note": "stamp presses down onto the wax"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 500,
+    "y": 1000,
+    "s": 1.1
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

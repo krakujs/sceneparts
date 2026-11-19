@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/footprints",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Footprints",
+  "summary": "Trail of bare footprints walking diagonally across sand or snow; anim appear prints them one by one.",
+  "tags": ["footprints", "tracks", "footsteps", "sand", "snow", "trail", "barefoot", "walking"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the trail"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom-left of the trail: the first print sits on y (about 560 px wide at s = 1)"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 560 px wide and 420 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#7A5A3A", "note": "print colour (darker sand or snow shadow)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "appear"], "note": "appear = the prints appear one after another, then fade and repeat"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#7A5A3A", "anim": "appear"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "core/venn-diagram",
+  "type": "text",
+  "style": "core",
+  "name": "Venn diagram",
+  "summary": "2 or 3 translucent overlapping circles with labels and an overlap label, for shared traits and intersections.",
+  "tags": ["venn", "overlap", "intersection", "sets", "comparison", "circles", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "accent override; circles use the style's series colours" },
+    { "name": "sets", "type": "enum", "values": ["2", "3"], "default": "3", "note": "number of circles" },
+    { "name": "labels", "type": "string[]", "default": ["Design", "Code", "Business"], "note": "one label per circle" },
+    { "name": "overlap", "type": "string", "default": "Sweet spot", "note": "label in the middle of the overlap" }
+  ],
+  "example": {
+    "sets": "3",
+    "labels": ["Design", "Code", "Business"],
+    "overlap": "Sweet spot"
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

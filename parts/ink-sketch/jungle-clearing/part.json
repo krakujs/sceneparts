@@ -1,0 +1,84 @@
+{
+  "id": "ink-sketch/jungle-clearing",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Jungle clearing",
+  "summary": "Ink sketch jungle clearing background: big leaves framing the edges, vines, layered canopy, mossy ground and mist.",
+  "tags": [
+    "jungle",
+    "rainforest",
+    "clearing",
+    "leaves",
+    "vines",
+    "nature",
+    "background",
+    "outdoor",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light under the canopy"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "animated weather over the scene (rain suits a jungle)"
+    },
+    {
+      "name": "canopy",
+      "type": "colour",
+      "default": "#2F8A5B",
+      "note": "main canopy green"
+    },
+    {
+      "name": "leaf",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "colour of the big framing leaves"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = mist moves from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear",
+    "canopy": "#2F8A5B",
+    "leaf": "#4BB46A"
+  },
+  "uses": [
+    "flat-vector/jungle-clearing",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

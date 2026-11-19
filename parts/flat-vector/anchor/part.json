@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/anchor",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Anchor",
+  "summary": "Classic ship anchor with ring, stock, shank and curved arms; a nautical prop for harbour and sea scenes.",
+  "tags": [
+    "anchor",
+    "ship anchor",
+    "nautical",
+    "harbour",
+    "sea",
+    "boat",
+    "prop",
+    "ocean"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the prop stands with its base on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 340 px wide and 500 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "metal colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#9AA3B5",
+      "note": "highlight colour (the crown)"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "bob = floats up and down; wobble = rocks on its base"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror the prop"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "wobble"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "flat-vector/pill",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Capsule pill",
+  "summary": "Two-tone capsule pill at a slight angle, or a round tablet via variant; use for medicine or health scenes.",
+  "tags": [
+    "pill",
+    "capsule",
+    "tablet",
+    "medicine",
+    "medication",
+    "health",
+    "drug"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 about 420 px wide; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "first half colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "second half colour"
+    },
+    {
+      "name": "variant",
+      "type": "enum",
+      "default": "capsule",
+      "values": [
+        "capsule",
+        "tablet"
+      ],
+      "note": "capsule = long pill; tablet = round tablet"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble"
+      ],
+      "note": "bob = floats up and down; wobble = rocks a little"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3D6FE0",
+    "color2": "#FFFFFF",
+    "variant": "capsule",
+    "anim": "bob"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

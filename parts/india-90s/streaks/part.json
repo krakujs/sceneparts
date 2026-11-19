@@ -1,0 +1,56 @@
+{
+  "id": "india-90s/streaks",
+  "type": "effect",
+  "style": "india-90s",
+  "name": "Speed streaks",
+  "summary": "Motion streak lines behind something moving fast.",
+  "tags": [
+    "90s",
+    "fast",
+    "india",
+    "lines",
+    "motion",
+    "nostalgia",
+    "speed"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900
+    },
+    {
+      "name": "dx",
+      "type": "number",
+      "default": -200
+    },
+    {
+      "name": "dy",
+      "type": "number",
+      "default": 0
+    },
+    {
+      "name": "n",
+      "type": "number",
+      "default": 4
+    }
+  ],
+  "example": {
+    "x": 600,
+    "y": 900,
+    "dx": -300,
+    "dy": 60
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

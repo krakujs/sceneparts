@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/lightning",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Lightning",
+  "summary": "Jagged yellow lightning bolt with a glow, for storms and flashes. Anim: flash flickers on and off.",
+  "tags": ["lightning", "lightning bolt", "thunder", "storm", "electric", "zigzag", "flash"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 500, "note": "centre y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 300 px wide, 520 px tall"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "bolt and glow colour; the core is always pale yellow-white"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "flash"], "note": "flash = on/off flicker"}
+  ],
+  "example": {"x": 540, "y": 500, "s": 1, "color": "#FFC83D", "anim": "flash"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

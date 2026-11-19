@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/stumps",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Stumps",
+  "summary": "Three wooden cricket stumps with two bails on top, standing on y; the bails can fly off as a knock.",
+  "tags": ["stumps", "cricket stumps", "wicket", "bails", "cricket", "sport", "wood"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the stumps stand on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 140 px wide and 410 px tall (hero size)"},
+    {"name": "color", "type": "colour", "default": "#E9D3A9", "note": "wood colour of the stumps"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "knock", "wobble"], "note": "knock = the bails fly off the top from frame 20 on; wobble = stumps sway a little"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the stumps"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "knock"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "storybook/abacus",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Abacus",
+  "summary": "Wooden abacus with coloured beads that slide along the wire rods. For counting, school, market or shop scenes.",
+  "tags": ["abacus", "counting", "maths", "school", "beads", "market", "wood", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~400 px tall, 460 px wide at 1" },
+    { "name": "frame", "type": "colour", "default": "#8A6A45", "note": "wood frame colour" },
+    { "name": "slide", "type": "boolean", "default": true, "note": "beads slide along the rods" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1300, "s": 1.2 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/music-studio",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Music studio",
+  "summary": "Full-frame flat music studio: foam acoustic panels, mixing desk, speakers, guitars on stands and a microphone.",
+  "tags": ["music studio", "recording", "mixing desk", "speakers", "guitar", "microphone", "studio", "background"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "night", "values": ["day", "morning", "dusk", "night"], "note": "the room is dim by default; the mixing screen and lamp glow at dusk and night" },
+    { "name": "foam", "type": "colour", "default": "#4B5282", "note": "acoustic foam panel colour" },
+    { "name": "wall", "type": "colour", "default": "#3B3F5C", "note": "wall colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = the mixing screen pulses from p.f" }
+  ],
+  "example": { "time": "night", "foam": "#4B5282" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

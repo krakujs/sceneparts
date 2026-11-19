@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/file-cabinet",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Filing Cabinet",
+  "summary": "Three-drawer metal office filing cabinet with blank label slots; anim open slides the top drawer out with files.",
+  "tags": ["filing cabinet", "file cabinet", "cabinet", "office", "drawer", "archive", "records"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor: the feet stand on y; 1 m is about 560 px"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the cabinet is about 1.3 m tall (about 720 px)"},
+    {"name": "color", "type": "colour", "default": "#9AA3B5", "note": "metal colour of the body"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "open", "bob", "wobble", "pop"], "note": "open = top drawer slides out with files"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#9AA3B5", "anim": "open"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

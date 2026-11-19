@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/coral",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Coral",
+  "summary": "Flat vector coral clump in branch, brain or sea-fan form with a gentle sway; use as reef scenery.",
+  "tags": ["coral", "reef", "sea", "ocean", "underwater", "scenery", "marine"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre (ground)" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 360 px tall at s = 1" },
+    { "name": "variant", "type": "enum", "default": "branch", "values": ["branch", "brain", "fan"], "note": "branch = branching tubes; brain = domed brain coral; fan = sea fan on a stem" },
+    { "name": "pose", "type": "enum", "default": "idle", "values": ["idle", "sway"], "note": "idle = gentle sway from p.f; sway = larger sway" },
+    { "name": "color", "type": "string", "default": "#F57F86", "note": "coral colour (hex); shading is derived from it" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror left-right" },
+    { "name": "vx", "type": "number", "default": 0, "note": "px per frame drift" }
+  ],
+  "example": { "x": 540, "y": 1560, "variant": "branch", "pose": "idle" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

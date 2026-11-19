@@ -1,0 +1,75 @@
+{
+  "id": "storybook/soldier-ww1",
+  "type": "character",
+  "style": "storybook",
+  "name": "WW1 soldier",
+  "summary": "Generic WW1 infantryman in khaki greatcoat, steel helmet and puttees, rifle slung on the shoulder; no insignia.",
+  "tags": [
+    "soldier",
+    "ww1",
+    "world war",
+    "infantry",
+    "trench",
+    "military",
+    "history",
+    "rifle"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#8A7F5B",
+      "note": "khaki greatcoat colour"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#C98E64"
+    },
+    {
+      "name": "hairColour",
+      "type": "colour",
+      "default": "#4A3324"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

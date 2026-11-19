@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/flip-phone",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flip Phone",
+  "summary": "Clamshell flip phone shown open: small screen on the upper lid, keypad below, hinge between. anim hinge swings the lid.",
+  "tags": ["flip phone", "clamshell", "flip", "mobile phone", "keypad", "retro phone", "hinge"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom centre: the lower half stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the open phone is about 250 px wide and 600 px tall (hand-held size)"},
+    {"name": "color", "type": "colour", "default": "#7B5CD6", "note": "body colour"},
+    {"name": "screen", "type": "colour", "default": "#8EC5E8", "note": "lid screen colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "hinge"], "note": "hinge = the lid swings slightly open and shut"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "color": "#7B5CD6", "screen": "#8EC5E8", "anim": "hinge"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

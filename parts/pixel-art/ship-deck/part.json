@@ -1,0 +1,63 @@
+{
+  "id": "pixel-art/ship-deck",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Ship deck",
+  "summary": "Pixel-art sailing ship deck: wooden planks, mast, sails and rails with the sea beyond. For sea adventures.",
+  "tags": [
+    "ship",
+    "deck",
+    "sailing",
+    "pirate",
+    "sea",
+    "background",
+    "pixel",
+    "pixel art"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "dusk",
+        "night"
+      ],
+      "note": "sky colours and light"
+    },
+    {
+      "name": "groundY",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line; stand characters on it"
+    },
+    {
+      "name": "seed",
+      "type": "number",
+      "default": 14,
+      "note": "varies clouds, skyline and details"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "sail",
+      "values": [
+        "sail",
+        "none"
+      ],
+      "note": "sails flutter and the sea waves from p.f"
+    }
+  ],
+  "example": {
+    "time": "day"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

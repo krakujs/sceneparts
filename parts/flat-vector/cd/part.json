@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/cd",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "CD",
+  "summary": "Shiny compact disc with a rainbow sheen and centre hole; use for music, burning discs or 90s media scenes.",
+  "tags": ["cd", "compact disc", "disc", "music cd", "rainbow", "media", "spinning"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1000, "note": "centre y of the disc (floating item, not a floor object)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; disc about 600 px across at s = 1; about 0.3 in a hand"},
+    {"name": "color", "type": "colour", "default": "#DDE2EA", "note": "base disc colour under the sheen"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "spin"], "note": "spin = the disc turns and the sheen rotates with it"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (spin direction is unchanged)"}
+  ],
+  "example": {"x": 540, "y": 1000, "s": 1, "color": "#DDE2EA", "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

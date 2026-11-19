@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/top-hat",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Top hat",
+  "summary": "Tall black top hat with a flat brim and a coloured silk band; sways. For magic, formal and gentleman costumes.",
+  "tags": [
+    "top hat",
+    "tall hat",
+    "silk hat",
+    "formal hat",
+    "magic hat",
+    "magician",
+    "gentleman",
+    "tophat"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the item rests on y (hem or tip)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 400 px wide and 430 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1F2433",
+      "note": "hat colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "band colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = the hat tilts gently"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#1F2433",
+    "color2": "#E8503F",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

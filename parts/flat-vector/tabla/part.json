@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/tabla",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Tabla",
+  "summary": "Pair of Indian hand drums: a small wooden dayan and a larger metal bayan with black centre spots; anim play taps them.",
+  "tags": ["tabla", "tabla drums", "indian drums", "hand drum", "percussion", "bayan", "dayan"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the drums rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 520 px wide and 330 px tall"},
+    {"name": "color", "type": "colour", "default": "#C68558", "note": "wood colour of the dayan"},
+    {"name": "accent", "type": "colour", "default": "#E0A21F", "note": "metal (brass) colour of the bayan"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "play"], "note": "play = the two drums take turns to bounce as they are struck"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (bayan on the right)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#C68558", "accent": "#E0A21F", "anim": "play"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

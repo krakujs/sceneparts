@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/apartment-block",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Apartment Block",
+  "summary": "Five to six storey residential block with balconies and a window grid. For city and street scenes.",
+  "tags": ["apartment", "apartment block", "flats", "residential", "city", "building", "block"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the block stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 720 px wide and 1100 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#E9D3A9", "note": "wall colour"},
+    {"name": "color2", "type": "colour", "default": "#3D6FE0", "note": "balcony and awning accent colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "lights = the windows light up floor by floor, one after another"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

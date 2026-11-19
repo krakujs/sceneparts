@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/smart-speaker",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Smart Speaker",
+  "summary": "Cylinder smart speaker with fabric texture and a glowing light ring on top; anim pulse breathes the light ring.",
+  "tags": ["smart speaker", "speaker", "voice assistant", "home speaker", "cylinder", "light ring", "audio"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom centre: the speaker stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the speaker is about 300 px wide and 400 px tall (hand-held to tabletop size)"},
+    {"name": "color", "type": "colour", "default": "#3A4157", "note": "fabric colour"},
+    {"name": "light", "type": "colour", "default": "#1FA39A", "note": "light ring colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "pulse"], "note": "pulse = the light ring breathes in and out"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "color": "#3A4157", "light": "#1FA39A", "anim": "pulse"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/heater",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Portable Heater",
+  "summary": "Portable electric room heater with a glowing bar grille and dial; anim glow pulses the heat for winter scenes.",
+  "tags": ["heater", "room heater", "electric heater", "radiator", "winter", "warm", "appliance"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the heater stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 matches real size (about 490 px tall); use about 0.5–0.6 next to a person"},
+    {"name": "color", "type": "colour", "default": "#DDE2EA", "note": "body colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "glow"], "note": "glow = the heating bars pulse orange and yellow"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#DDE2EA", "anim": "glow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

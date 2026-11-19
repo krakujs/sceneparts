@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/power-plant",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Power Plant",
+  "summary": "Thermal power plant with a tall striped chimney, a louvred boiler hall and steam rising; anim lights drifts the steam.",
+  "tags": ["power plant", "power station", "chimney", "steam", "energy", "industry", "boiler"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the base stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 700 px wide and 1420 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#DDE2EA", "note": "wall and chimney colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "roof colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "lights"], "note": "lights = steam drifts up from the chimney top and fades"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

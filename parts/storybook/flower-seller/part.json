@@ -1,0 +1,85 @@
+{
+  "id": "storybook/flower-seller",
+  "type": "character",
+  "style": "storybook",
+  "name": "Flower seller",
+  "summary": "Woman in shawl and bonnet with a basket of colourful posies, offering one to the viewer, for market or street scenes.",
+  "tags": [
+    "flower seller",
+    "posy",
+    "bonnet",
+    "market",
+    "street",
+    "victorian",
+    "woman",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#B5452F"
+    },
+    {
+      "name": "hatColour",
+      "type": "colour",
+      "default": "#F4EAD5"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#E8B990"
+    },
+    {
+      "name": "hairColour",
+      "type": "colour",
+      "default": "#4A3324"
+    },
+    {
+      "name": "walk",
+      "type": "boolean",
+      "default": false,
+      "note": "walk with the basket"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

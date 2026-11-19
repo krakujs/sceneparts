@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/trumpet",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Trumpet",
+  "summary": "Brass trumpet with three valves and a flared bell, held level; anim toot puffs sound rings from the bell.",
+  "tags": ["trumpet", "brass", "horn", "jazz", "fanfare", "instrument", "bugle"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the bottom of the bell rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 740 px wide and 260 px tall"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "brass colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "toot"], "note": "toot = sound rings puff out of the bell in turn"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (bell points left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FFC83D", "anim": "toot"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

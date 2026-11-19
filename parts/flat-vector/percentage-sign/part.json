@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/percentage-sign",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Percentage sign",
+  "summary": "Big chunky 3D percent sign centred on x,y; anim pop or spin, for sale and discount scenes.",
+  "tags": ["percentage sign", "percent", "discount", "sale", "offer", "percentage", "promotion"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 900, "note": "centre y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 460 px across"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "face colour"},
+    {"name": "color2", "type": "colour", "default": "#B35A22", "note": "shade colour of the 3D side"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "spin"], "note": "pop = scales in with a small overshoot; spin = turns about its vertical axis"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 900, "s": 1, "color": "#FF8A3D", "color2": "#B35A22", "anim": "pop"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

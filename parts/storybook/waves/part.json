@@ -1,0 +1,48 @@
+{
+  "id": "storybook/waves",
+  "type": "scenery",
+  "style": "storybook",
+  "name": "Waves",
+  "summary": "Band of rolling sea waves from y down; stack two (far, near) for depth.",
+  "tags": [
+    "storybook",
+    "flat",
+    "sea",
+    "ocean",
+    "water",
+    "waves",
+    "shipwreck"
+  ],
+  "params": [
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1300
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#0B1830"
+    },
+    {
+      "name": "amp",
+      "type": "number",
+      "default": 14
+    },
+    {
+      "name": "seed",
+      "type": "string",
+      "default": "w"
+    }
+  ],
+  "example": {
+    "y": 1300
+  },
+  "uses": [
+    "storybook/world-sky"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/energy-core",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Energy core",
+  "summary": "Glowing reactor cylinder in a metal cage with light rings that climb and pulse; for sci-fi power sources.",
+  "tags": ["energy core", "reactor", "power", "glow", "sci-fi", "cylinder", "machine", "energy"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor point under the base"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; ~700 px tall at 1"},
+    {"name": "color", "type": "colour", "default": "#4FD8F0", "note": "glow colour"},
+    {"name": "anim", "type": "enum", "default": "pulse", "values": ["pulse", "none"], "note": "pulse = rings climb and the glow breathes"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "color": "#4FD8F0", "anim": "pulse"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

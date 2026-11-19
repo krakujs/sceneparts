@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/space-rover",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Space rover",
+  "summary": "Six-wheeled planetary rover with a mast camera and solar panel, side view. For Mars and moon exploration scenes.",
+  "tags": ["rover", "space rover", "mars rover", "planet", "exploration", "wheels", "solar panel", "robot"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground point under the wheels"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 560 px wide and tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "chassis colour"},
+    {"name": "accent", "type": "colour", "default": "#FF8A3D", "note": "wheel hub and stripe colour"},
+    {"name": "anim", "type": "enum", "default": "roll", "values": ["none", "roll"], "note": "roll = wheels turn and the mast camera pans"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "face left"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "roll"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

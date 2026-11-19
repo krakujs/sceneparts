@@ -1,0 +1,27 @@
+{
+  "id": "core/table-grid",
+  "type": "text",
+  "style": "core",
+  "name": "Table grid",
+  "summary": "Card table with an accent header row and 3-5 data rows that slide in one by one; for short comparisons or price lists.",
+  "tags": ["table", "grid", "data table", "list", "pricing", "comparison", "rows", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; card is 900 wide at s = 1" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "header colour; default the style's accent" },
+    { "name": "columns", "type": "string[]", "default": ["Plan", "Price", "Seats", "Support"], "note": "header names" },
+    { "name": "rows", "type": "object", "default": [["Starter", "$9", "1", "Email"], ["Team", "$29", "10", "Chat"], ["Business", "$79", "50", "Priority"], ["Enterprise", "Custom", "Unlimited", "Dedicated"]], "note": "array of string arrays, one per row" }
+  ],
+  "example": {
+    "columns": ["Plan", "Price", "Seats", "Support"],
+    "rows": [["Starter", "$9", "1", "Email"], ["Team", "$29", "10", "Chat"], ["Business", "$79", "50", "Priority"]]
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

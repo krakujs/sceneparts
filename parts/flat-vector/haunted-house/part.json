@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/haunted-house",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Haunted house",
+  "summary": "Full-frame flat haunted house background: cobwebs, blank portraits, creaky stairs, candles, moonlit window and ghost.",
+  "tags": ["haunted house", "spooky", "halloween", "ghost", "cobweb", "candles", "interior", "background"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "night", "values": ["day", "morning", "dusk", "night"], "note": "night gives the moonlit, candle-lit look; day and dusk are gentler" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "seen through the window" },
+    { "name": "ghost", "type": "boolean", "default": true, "note": "show a friendly floating ghost above the stairs" },
+    { "name": "cobwebs", "type": "boolean", "default": true, "note": "cobwebs in the top corners" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = the ghost floats, candle flames flicker and the window scene moves from p.f" }
+  ],
+  "example": { "time": "night", "weather": "clear", "ghost": true, "cobwebs": true },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

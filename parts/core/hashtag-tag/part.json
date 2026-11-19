@@ -1,0 +1,24 @@
+{
+  "id": "core/hashtag-tag",
+  "type": "text",
+  "style": "core",
+  "name": "Hashtag tag",
+  "summary": "Pill chip reading #word that pops in with a slight wobble; for topic tags on short-form video.",
+  "tags": ["hashtag", "tag", "chip", "pill", "topic", "label", "social"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1400, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "word", "type": "string", "default": "trending", "note": "word without the # (it is added); shrinks to fit" },
+    { "name": "color", "type": "colour", "note": "chip colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "word": "trending" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

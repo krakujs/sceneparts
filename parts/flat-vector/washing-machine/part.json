@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/washing-machine",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Washing Machine",
+  "summary": "Front-loading washing machine with a round door showing clothes; anim spin turns the drum.",
+  "tags": ["washing machine", "washer", "laundry", "front loader", "appliance", "clothes", "wash"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the machine stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 matches a flat-vector person at s = 1 (about 490 px tall)"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "cabinet colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "spin"], "note": "spin = the drum and clothes turn"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FFFFFF", "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

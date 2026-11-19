@@ -1,0 +1,70 @@
+{
+  "id": "storybook/horse-tram",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Horse tram",
+  "summary": "Victorian double-deck tram car on rails pulled by a cartoon horse; the horse's legs trot when walking.",
+  "tags": [
+    "tram",
+    "horse",
+    "rails",
+    "victorian",
+    "transport",
+    "city",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500,
+      "note": "rail level, bottom centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~870 px wide at 1"
+    },
+    {
+      "name": "walk",
+      "type": "boolean",
+      "default": false,
+      "note": "horse trots and wheels turn"
+    },
+    {
+      "name": "colour",
+      "type": "colour",
+      "default": "#B5452F",
+      "note": "tram body"
+    },
+    {
+      "name": "horse",
+      "type": "colour",
+      "default": "#8A6A45"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1450,
+    "s": 0.9,
+    "walk": true
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

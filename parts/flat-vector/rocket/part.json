@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/rocket",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Rocket",
+  "summary": "Classic space rocket with a porthole and fins; the launch animation shows the flame and the rocket rising.",
+  "tags": [
+    "rocket",
+    "space",
+    "launch",
+    "spaceship",
+    "moon",
+    "science",
+    "astronaut",
+    "lift off"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the engine bell stands on y (the launch pad)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale: about 300 px wide and 1220 px tall at s = 1; use about 0.5 for a smaller rocket"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "body colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "nose cone and fin colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "launch",
+        "bob",
+        "pop"
+      ],
+      "note": "launch = flame burns and the rocket accelerates upward; bob = small wobble"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (no visible change for a symmetric rocket)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "launch"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

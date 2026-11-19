@@ -1,0 +1,28 @@
+{
+  "id": "core/speed-lines",
+  "type": "effect",
+  "style": "core",
+  "name": "Speed lines",
+  "summary": "Full-frame manga focus lines converging on a subject, or horizontal motion streaks, flickering; for dashes and reveals.",
+  "tags": ["speed lines", "focus lines", "manga", "motion", "rush", "dash"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "focus x the lines converge on" },
+    { "name": "y", "type": "number", "default": 960, "note": "focus y the lines converge on" },
+    { "name": "dir", "type": "enum", "default": "radial", "values": ["radial", "horizontal"], "note": "radial focus lines or horizontal streaks" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "count", "type": "number", "default": 72, "note": "number of lines" },
+    { "name": "inner", "type": "number", "default": 300, "note": "clear radius around the focus in px" },
+    { "name": "flicker", "type": "number", "default": 0.5, "note": "0 steady, 1 lines grow and shrink a lot" },
+    { "name": "strength", "type": "number", "default": 0.55, "note": "opacity, 0 to 1" },
+    { "name": "seed", "type": "string", "default": "speed", "note": "change for a different set of lines" },
+    { "name": "color", "type": "colour", "note": "line colour; default the style ink" }
+  ],
+  "example": { "x": 540, "y": 900, "dir": "radial", "count": 72 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

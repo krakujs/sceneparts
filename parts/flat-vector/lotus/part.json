@@ -1,0 +1,73 @@
+{
+  "id": "flat-vector/lotus",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Lotus",
+  "summary": "Pink lotus bloom with pointed petals on a round green pad on a small patch of water; use for ponds and temples.",
+  "tags": [
+    "lotus",
+    "water lily",
+    "pond",
+    "pink flower",
+    "water",
+    "pad",
+    "flower"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the water patch rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 600 px wide, use about 0.4 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F27BA6",
+      "note": "petal colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = the pad bobs gently on the water"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "color": "#F27BA6",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

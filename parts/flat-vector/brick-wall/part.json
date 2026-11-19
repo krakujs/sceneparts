@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/brick-wall",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Brick wall",
+  "summary": "Brick wall segment with staggered bricks and a coping cap, 1000 px wide so it tiles; for streets, gardens and yards.",
+  "tags": ["brick wall", "wall", "brick", "boundary", "garden wall", "street", "masonry"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x of this segment; place copies at x ± 1000 to tile" },
+    { "name": "y", "type": "number", "default": 1600, "note": "floor line: the plinth stands on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "about 1040 px wide and 480 px tall at s = 1 (1000 px of wall between the caps)" },
+    { "name": "color", "type": "colour", "default": "#B53A2E", "note": "brick colour" },
+    { "name": "color2", "type": "colour", "default": "#DDE2EA", "note": "mortar colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "lights", "pop"], "note": "lights = small wall lights along the coping glow one after another; pop = scales in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1600, "s": 1, "anim": "none" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

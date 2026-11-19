@@ -1,0 +1,22 @@
+{
+  "id": "storybook/gas-lamp-post",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Gas lamp post",
+  "summary": "Tall ornate cast-iron Victorian street lamp with a glowing glass lantern and ladder bar; for street scenes at dusk.",
+  "tags": ["gas lamp", "street lamp", "lamp post", "victorian", "night", "street", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "pavement, bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~1000 px tall at 1" },
+    { "name": "lit", "type": "boolean", "default": true, "note": "flame and glow" },
+    { "name": "iron", "type": "colour", "default": "#2C2F3B" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1500, "s": 0.9 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

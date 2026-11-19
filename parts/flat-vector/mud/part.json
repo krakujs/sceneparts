@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/mud",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Mud",
+  "summary": "Flat brown mud patch with splatters, bubbles and a boot print; anim bubble makes bubbles rise and pop.",
+  "tags": ["mud", "muddy", "brown mud", "puddle of mud", "boot print", "dirt", "wet ground", "splatter"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "the mud patch lies on y (about 840 px wide at s = 1)"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 840 px wide and 200 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#7A5230", "note": "mud colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bubble"], "note": "bubble = bubbles rise and pop, looping"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "bubble"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

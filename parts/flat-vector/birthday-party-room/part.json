@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/birthday-party-room",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Birthday party room",
+  "summary": "Full-frame flat birthday party room background: bunting, balloons, streamers, a cake on a table and wrapped presents.",
+  "tags": ["birthday", "party", "balloons", "cake", "bunting", "presents", "celebration", "background"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "tints the room; night gives a cosy party light" },
+    { "name": "wall", "type": "colour", "default": "#FFE3EC", "note": "wall colour" },
+    { "name": "bunting", "type": "boolean", "default": true, "note": "show the bunting across the top" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = balloons bob from p.f" }
+  ],
+  "example": { "time": "day", "bunting": true },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

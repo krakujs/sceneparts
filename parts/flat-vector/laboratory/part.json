@@ -1,0 +1,66 @@
+{
+  "id": "flat-vector/laboratory",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Laboratory",
+  "summary": "Full-frame flat laboratory background: bench with bubbling flasks and microscope, fume hood, bottle shelves.",
+  "tags": [
+    "laboratory",
+    "lab",
+    "science",
+    "chemistry",
+    "flasks",
+    "experiment",
+    "background",
+    "interior"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "room tint; the ceiling lamp glows at dusk and night"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#DDEBEF",
+      "note": "wall colour"
+    },
+    {
+      "name": "liquid",
+      "type": "colour",
+      "default": "#7B5CD6",
+      "note": "colour of the liquid in the first flask"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = bubbles rise in the flasks"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "liquid": "#7B5CD6"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

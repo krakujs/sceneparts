@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/handheld-console",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Handheld Console",
+  "summary": "Original handheld game device with a screen, d-pad and buttons; use for portable gaming or playing on the go.",
+  "tags": ["handheld console", "handheld", "portable console", "game device", "gaming", "portable game", "gamer"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the base rests on y; use a hand or table height to place it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size, about 460 px wide at s = 1; about 0.4 in hands"},
+    {"name": "color", "type": "colour", "default": "#1FA39A", "note": "body colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "play"], "note": "play = simple blocks move across the screen"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#1FA39A", "anim": "play"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

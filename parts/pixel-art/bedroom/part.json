@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/bedroom",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Bedroom",
+  "summary": "Pixel-art bedroom: bed with pillow and blanket, window, nightstand lamp, posters, rug and wardrobe; for home scenes.",
+  "tags": [
+    "bedroom",
+    "bed",
+    "room",
+    "home",
+    "sleep",
+    "background",
+    "indoor",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "glow",
+      "values": [
+        "glow",
+        "none"
+      ],
+      "note": "the nightstand lamp glow flickers from p.f"
+    }
+  ],
+  "example": {
+    "anim": "glow"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

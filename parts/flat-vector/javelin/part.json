@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/javelin",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Javelin",
+  "summary": "Long javelin spear with a metal tip and a grip binding, shown angled up from the ground; use for throwing events.",
+  "tags": ["javelin", "spear", "throw", "throwing", "athletics", "field event", "prop"],
+  "params": [
+    {"name": "x", "type": "number", "default": 400, "note": "x of the tip on the ground"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the tip rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the javelin is about 900 px long and 800 px tall at the default angle"},
+    {"name": "angle", "type": "number", "default": 60, "min": 20, "max": 80, "note": "degrees above the ground"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "grip binding colour"},
+    {"name": "color2", "type": "colour", "default": "#C9CED8", "note": "shaft and tip colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "wobble", "bob", "pop"], "note": "wobble = the shaft sways a little"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror so the javelin leans to the left"}
+  ],
+  "example": {"x": 400, "y": 1560, "s": 1, "angle": 60, "color": "#E8503F", "color2": "#C9CED8", "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

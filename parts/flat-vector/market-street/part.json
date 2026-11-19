@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/market-street",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Market street",
+  "summary": "Full-frame flat market street background: striped stall awnings, crates of produce, shutters and string lights.",
+  "tags": [
+    "market",
+    "stalls",
+    "street",
+    "produce",
+    "awning",
+    "string lights",
+    "background"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light of the day; lamps and windows glow at dusk and night"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky and weather drawn over the scene"
+    },
+    {
+      "name": "awning",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "stall awning colour (alternates with white)"
+    },
+    {
+      "name": "lights",
+      "type": "boolean",
+      "default": true,
+      "note": "hanging string lights across the top"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds, leaves, smoke and lights move from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

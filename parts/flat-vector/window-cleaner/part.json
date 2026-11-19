@@ -1,0 +1,180 @@
+{
+  "id": "flat-vector/window-cleaner",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Window Cleaner",
+  "summary": "Flat vector window cleaner in overalls and a cap with a bucket of water; for cleaning and home service explainers.",
+  "tags": [
+    "window cleaner",
+    "cleaning",
+    "window washer",
+    "janitor",
+    "worker",
+    "home service",
+    "profession",
+    "person"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "wave",
+        "point",
+        "think",
+        "cheer",
+        "talk",
+        "sit",
+        "hold"
+      ]
+    },
+    {
+      "name": "expression",
+      "type": "enum",
+      "default": "smile",
+      "values": [
+        "smile",
+        "neutral",
+        "open",
+        "surprised",
+        "sad",
+        "angry",
+        "laugh"
+      ]
+    },
+    {
+      "name": "skin",
+      "type": "string",
+      "default": "medium",
+      "note": "light | fair | tan | medium | brown | dark, or a hex colour"
+    },
+    {
+      "name": "hair",
+      "type": "enum",
+      "default": "buzz",
+      "values": [
+        "short",
+        "buzz",
+        "side",
+        "spiky",
+        "curly",
+        "afro",
+        "long",
+        "ponytail",
+        "bun",
+        "bob",
+        "braid",
+        "none"
+      ]
+    },
+    {
+      "name": "hairColor",
+      "type": "string",
+      "default": "black",
+      "note": "black | brown | auburn | blonde | grey | white | red | blue | pink, or hex"
+    },
+    {
+      "name": "shirtColor",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "shirt under a blazer or coat"
+    },
+    {
+      "name": "accessory",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "glasses",
+        "sunglasses",
+        "goggles",
+        "mask",
+        "beard",
+        "moustache",
+        "stubble",
+        "headset",
+        "headphones",
+        "earrings"
+      ]
+    },
+    {
+      "name": "extra",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "tie",
+        "bowtie",
+        "apron",
+        "hivis",
+        "lanyard",
+        "stethoscope",
+        "scarf",
+        "badge",
+        "backpack",
+        "toolbelt",
+        "sash"
+      ]
+    },
+    {
+      "name": "extraColor",
+      "type": "colour",
+      "default": "#E8503F"
+    },
+    {
+      "name": "seat",
+      "type": "boolean",
+      "default": true,
+      "note": "draw a bench when pose is sit"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "hold",
+    "skin": "medium",
+    "hair": "buzz",
+    "hairColor": "black"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

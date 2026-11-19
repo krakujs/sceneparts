@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/cobra",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Cobra",
+  "summary": "Flat vector tan-brown cobra coiled with a raised head, open hood and flicking tongue; friendly, not scary.",
+  "tags": [
+    "cobra",
+    "snake",
+    "serpent",
+    "reptile",
+    "coiled",
+    "hood",
+    "animal"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "ground under the body"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "raised",
+      "values": [
+        "stand",
+        "walk",
+        "slither",
+        "idle",
+        "raised"
+      ],
+      "note": "walk = legs swing; slither = wave travels; idle = breathing, blink, tongue; raised = head up"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#B98A4E",
+      "note": "main colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "raised"
+  },
+  "uses": [
+    "flat-vector/reptile",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

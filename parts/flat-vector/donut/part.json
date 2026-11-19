@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/donut",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Donut",
+  "summary": "Ring donut with pink icing drips and sprinkles, for dessert, breakfast and sweets scenes.",
+  "tags": ["food", "donut", "doughnut", "dessert", "sweets", "bakery"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the donut rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (~360 px wide); use about 0.2–0.3 next to a person" },
+    { "name": "icing", "type": "colour", "default": "#F27BA6", "note": "icing colour, e.g. pink, chocolate #5E3B26, white #FFFFFF" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down, wobble = small rock, pop = scale in with overshoot" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "icing": "#F27BA6" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

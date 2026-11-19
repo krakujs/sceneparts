@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/ironing-board",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Ironing Board",
+  "summary": "Folding ironing board with a patterned cover and X-frame legs; for laundry and housework scenes.",
+  "tags": ["ironing board", "ironing", "laundry", "housework", "board", "clothes", "home"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the feet stand on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 matches a flat-vector person at s = 1 (about 560 px tall, about 800 px long)"},
+    {"name": "color", "type": "colour", "default": "#1FA39A", "note": "cover colour (the dot pattern is white)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion only; driven by the frame"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (tip points left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#1FA39A"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

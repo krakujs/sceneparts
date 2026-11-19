@@ -1,0 +1,82 @@
+{
+  "id": "flat-vector/rocking-horse",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Rocking Horse",
+  "summary": "Wooden side-view rocking horse on two curved rockers, room size, with a red saddle; anim rock swings it.",
+  "tags": [
+    "rocking horse",
+    "toy horse",
+    "nursery",
+    "playroom",
+    "wooden toy",
+    "rocker",
+    "kids toy"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the lowest point of the rockers sits on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the horse is room size (about 550 px tall); use about 0.5–0.7 next to a child"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E9D3A9",
+      "note": "body colour (cream wood)"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "saddle colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "rock"
+      ],
+      "note": "rock = swings on the rockers; the others are gentle motions"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (faces left when true)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#E9D3A9",
+    "color2": "#E8503F",
+    "anim": "rock"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

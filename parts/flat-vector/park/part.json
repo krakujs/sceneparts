@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/park",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Park",
+  "summary": "Full-frame flat park background: lawn, path, bench, lamp post, round trees, bushes and a pond with a fountain.",
+  "tags": ["park", "garden", "lawn", "bench", "lamp post", "fountain", "city", "background", "outdoor"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "lamp post glows at dusk and night" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "sky tint and animated weather" },
+    { "name": "fountain", "type": "boolean", "default": true, "note": "animated fountain spray in the pond" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = fountain spray and trees move from p.f" }
+  ],
+  "example": { "time": "day", "weather": "clear", "fountain": true },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

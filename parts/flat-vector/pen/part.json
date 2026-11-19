@@ -1,0 +1,73 @@
+{
+  "id": "flat-vector/pen",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Ballpoint pen",
+  "summary": "Clicky ballpoint pen at a diagonal with clip and tip; anim click presses the button, write wobbles it.",
+  "tags": [
+    "pen",
+    "ballpoint pen",
+    "biro",
+    "writing",
+    "ink",
+    "stationery",
+    "school"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "tip rests on y (bottom centre)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "hero size: at s = 1 about 450 px long; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "barrel colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "click",
+        "write"
+      ],
+      "note": "click = button presses down; write = wobbles as if writing"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3D6FE0",
+    "anim": "click"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/suit",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Suit",
+  "summary": "Two-piece suit on a wooden hanger: lapel jacket, shirt, tie and matching trousers below; sways. For formal wardrobe.",
+  "tags": [
+    "suit",
+    "business suit",
+    "two piece suit",
+    "blazer and trousers",
+    "formal suit",
+    "menswear",
+    "office suit",
+    "wardrobe",
+    "clothes"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the item rests on y (hem or tip)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 520 px wide and 690 px tall at s = 1 (hook included)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3A4157",
+      "note": "suit colour (jacket and trousers)"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "tie colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = the suit swings gently from the hook"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3A4157",
+    "color2": "#E8503F",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

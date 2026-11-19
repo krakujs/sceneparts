@@ -1,0 +1,75 @@
+{
+  "id": "ink-sketch/fern",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Fern",
+  "summary": "Ink sketch fern with arching fronds of many small leaflets from one base; use for forest floors, shade and jungle.",
+  "tags": [
+    "fern",
+    "frond",
+    "leaves",
+    "forest",
+    "shade",
+    "jungle",
+    "green plant",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "base rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 550 px tall and 600 px wide, use about 0.5 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "frond colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = fronds drift gently in the breeze"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "color": "#4BB46A",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/fern",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

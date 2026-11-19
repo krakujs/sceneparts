@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/tambourine",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Tambourine",
+  "summary": "Round hand tambourine with wooden frame, skin head and jingles; anim shake jangles it. For folk or percussion scenes.",
+  "tags": ["tambourine", "percussion", "jingles", "hand drum", "folk", "instrument"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the lowest point of the frame rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 480 px across and 480 px tall"},
+    {"name": "color", "type": "colour", "default": "#C68558", "note": "wooden frame colour"},
+    {"name": "accent", "type": "colour", "default": "#FFC83D", "note": "jingle colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "shake"], "note": "shake = the tambourine tilts and the jingles rattle"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#C68558", "accent": "#FFC83D", "anim": "shake"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

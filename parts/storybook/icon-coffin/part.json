@@ -1,0 +1,50 @@
+{
+  "id": "storybook/icon-coffin",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Coffin icon",
+  "summary": "Flat storybook coffin icon; same params as storybook/icon.",
+  "tags": [
+    "storybook",
+    "vintage",
+    "icon",
+    "coffin"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900
+    },
+    {
+      "name": "size",
+      "type": "number",
+      "default": 420
+    },
+    {
+      "name": "r",
+      "type": "number",
+      "default": 0
+    },
+    {
+      "name": "bob",
+      "type": "boolean",
+      "default": false
+    }
+  ],
+  "example": {
+    "size": 500
+  },
+  "uses": [
+    "storybook/icon"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

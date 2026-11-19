@@ -1,0 +1,84 @@
+{
+  "id": "ink-sketch/paint-roller",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Paint roller",
+  "summary": "Ink sketch paint roller with a painted sleeve, yoke, pole and T-grip; for decorating.",
+  "tags": [
+    "paint roller",
+    "roller",
+    "painting",
+    "decorating",
+    "paint",
+    "wall",
+    "diy",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the sleeve rests on the floor at y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size (about 480 px tall); use about 0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "paint colour on the sleeve"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "frame and pole colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "roll"
+      ],
+      "note": "roll = stripes run across the sleeve as if it is rolling"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3D6FE0",
+    "anim": "roll"
+  },
+  "uses": [
+    "flat-vector/paint-roller",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

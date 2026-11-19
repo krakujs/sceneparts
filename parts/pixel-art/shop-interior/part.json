@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/shop-interior",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Shop interior",
+  "summary": "Pixel-art item shop: wooden counter, potion shelves, hanging sign and wooden floor; for trading scenes.",
+  "tags": [
+    "shop",
+    "store",
+    "item shop",
+    "market",
+    "background",
+    "indoor",
+    "pixel art",
+    "game",
+    "level"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "sway",
+      "values": [
+        "sway",
+        "none"
+      ],
+      "note": "the hanging sign rocks gently from p.f"
+    }
+  ],
+  "example": {
+    "anim": "sway"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

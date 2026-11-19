@@ -1,0 +1,77 @@
+{
+  "id": "flat-vector/sweat-drops",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Sweat Drops",
+  "summary": "Three blue sweat drops flying outward, placed beside a head: use for effort, stress or phew.",
+  "tags": [
+    "sweat",
+    "drops",
+    "stress",
+    "effort",
+    "phew",
+    "nervous",
+    "worry"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 420 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "drop colour; a darker edge is added"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "fly",
+      "values": [
+        "none",
+        "fly",
+        "shake"
+      ],
+      "note": "fly = drops drift outward and fade, shake = small tremble"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror left-right"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "anim": "fly"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

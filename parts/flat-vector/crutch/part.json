@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/crutch",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Crutch",
+  "summary": "Underarm crutch with padded armrest, twin rails, hand grip and adjustable leg; for injury and recovery scenes.",
+  "tags": [
+    "crutch",
+    "crutches",
+    "walking aid",
+    "injury",
+    "recovery",
+    "mobility",
+    "hospital"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the rubber foot stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; 1 m is about 560 px at s = 1; the crutch is about 1.3 m tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "pad and grip colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#AEB7C6",
+      "note": "aluminium leg colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "pop = scales in with a small overshoot"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror: grip points left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3D6FE0",
+    "color2": "#AEB7C6",
+    "anim": "bob"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "core/warning-banner",
+  "type": "text",
+  "style": "core",
+  "name": "Warning banner",
+  "summary": "Yellow and black hazard-stripe banner with a triangle warning icon and short text; shakes in on entrance.",
+  "tags": ["warning", "caution", "hazard", "alert", "banner", "danger", "warning sign"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; banner is 860 x 200 at s = 1" },
+    { "name": "title", "type": "string", "default": "WARNING", "note": "small line above the text" },
+    { "name": "text", "type": "string", "default": "Wet floor ahead", "note": "one short line; shrinks to fit" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "title": "WARNING", "text": "Wet floor ahead" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

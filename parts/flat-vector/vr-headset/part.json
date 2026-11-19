@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/vr-headset",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "VR Headset",
+  "summary": "Generic VR visor headset with two lenses and a strap; use for virtual reality, gaming or metaverse scenes.",
+  "tags": ["vr headset", "vr", "virtual reality", "headset", "visor", "goggles", "gaming"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the visor base is at y; set y to a table or hand height to place it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size, about 600 px wide at s = 1; use about 0.4 on a person's head"},
+    {"name": "color", "type": "colour", "default": "#3A4157", "note": "visor colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "float"], "note": "float = drifts gently up and down"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3A4157", "anim": "float"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/flag-pole",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Flag pole",
+  "summary": "Tall flag pole with a plain flag in any colour that ripples in the breeze; no national flags or emblems.",
+  "tags": ["flag pole", "flagpole", "flag", "banner", "pole", "wind", "plain flag"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x of the pole" },
+    { "name": "y", "type": "number", "default": 1600, "note": "floor line: the base plinth stands on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "about 430 px wide and 1360 px tall at s = 1" },
+    { "name": "color", "type": "colour", "default": "#3D6FE0", "note": "plain flag colour (no emblem)" },
+    { "name": "color2", "type": "colour", "default": "#DDE2EA", "note": "pole colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "lights", "pop"], "note": "lights = the flag ripples in the breeze; pop = scales in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror so the flag flies to the left" }
+  ],
+  "example": { "x": 540, "y": 1600, "s": 1, "anim": "lights" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

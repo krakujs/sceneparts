@@ -1,0 +1,23 @@
+{
+  "id": "core/flash-black",
+  "type": "effect",
+  "style": "core",
+  "name": "Flash black",
+  "summary": "Quick dip to black and back up with adjustable attack and decay; a punchy cut for drops and scene breaks.",
+  "tags": ["flash black", "dip to black", "fade", "transition", "blackout", "cut"],
+  "params": [
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "attack", "type": "number", "default": 3, "note": "frames to reach full black" },
+    { "name": "decay", "type": "number", "default": 10, "note": "frames to lift back to the scene" },
+    { "name": "peak", "type": "number", "default": 1, "note": "peak darkness, 0 to 1" },
+    { "name": "color", "type": "colour", "default": "#000000", "note": "dip colour" }
+  ],
+  "example": { "attack": 3, "decay": 10, "peak": 1 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

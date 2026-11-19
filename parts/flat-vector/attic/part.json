@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/attic",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Attic",
+  "summary": "Full-frame flat attic background: sloped roof beams, round window, boxes, old trunk, dusty chair and hanging bulb.",
+  "tags": ["attic", "loft", "roof beams", "storage", "old trunk", "interior", "background", "boxes"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "light in the round window and room tint; the bulb glows at dusk and night" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "greys the sky seen through the round window" },
+    { "name": "beam", "type": "colour", "default": "#8A5A3C", "note": "roof beam colour" },
+    { "name": "wall", "type": "colour", "default": "#E0B98F", "note": "wall colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = the cobweb sways from p.f" }
+  ],
+  "example": { "time": "day", "weather": "clear" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/spider-web",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Spider web",
+  "summary": "Radial cobweb in a corner or centred, with a tiny cute spider dangling on a thread; for Halloween and spooky scenes.",
+  "tags": ["spider web", "cobweb", "web", "spider", "halloween", "spooky", "corner", "creepy"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the web (corner params put the anchor here)"},
+    {"name": "y", "type": "number", "default": 300, "note": "centre y of the web"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 560 px across at s = 1"},
+    {"name": "corner", "type": "enum", "default": "centre", "values": ["centre", "top-left", "top-right"], "note": "centre = web is centred on x, y; top-left / top-right = web hangs from the top corner of the frame"},
+    {"name": "anim", "type": "enum", "default": "sway", "values": ["none", "sway"], "note": "sway = the spider bobs up and down on its thread"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 300, "s": 1, "corner": "centre", "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

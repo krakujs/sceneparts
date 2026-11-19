@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/hut",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Hut",
+  "summary": "Round mud-and-straw hut with a conical thatch roof and a doorway. For village, savanna and rural scenes.",
+  "tags": ["hut", "round hut", "mud hut", "thatch", "village", "shelter", "savanna"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the hut stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 560 px wide and 640 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#E9D3A9", "note": "mud wall colour"},
+    {"name": "color2", "type": "colour", "default": "#C9A063", "note": "straw thatch colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "lights = a cooking-fire glow flickers in the doorway"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

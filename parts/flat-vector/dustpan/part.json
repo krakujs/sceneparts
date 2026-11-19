@@ -1,0 +1,74 @@
+{
+  "id": "flat-vector/dustpan",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Dustpan",
+  "summary": "Dustpan with a long handle and a small hand brush on the floor; for sweeping and tidy-up scenes.",
+  "tags": [
+    "dustpan",
+    "dustpan and brush",
+    "sweep",
+    "cleaning",
+    "dust",
+    "tidy up",
+    "housework"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "pan colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "tilt"
+      ],
+      "note": "tilt = rocks the pan from the floor, as if tipping dust in"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#FF8A3D"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

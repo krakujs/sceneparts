@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/centaur",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Centaur",
+  "summary": "Flat vector centaur: horse body with a human torso, bare arms and head rising from the chest, holding a bow.",
+  "tags": ["centaur", "horse", "archer", "myth", "fantasy", "bow", "creature", "half horse"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "hooves"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 1000 px tall at 1"},
+    {"name": "coat", "type": "colour", "default": "#8A5A3C", "note": "horse coat colour (hex)"},
+    {"name": "skin", "type": "string", "default": "fair", "note": "light | fair | tan | medium | brown | dark, or a hex colour"},
+    {"name": "hair", "type": "string", "default": "brown", "note": "black | brown | auburn | blonde | grey | white | red | blue | pink, or a hex colour; also the tail colour"},
+    {"name": "anim", "type": "enum", "default": "idle", "values": ["none", "idle", "walk"], "note": "idle = slow breathing and tail sway; walk = legs step and body bobs"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "face left"}
+  ],
+  "example": {"x": 540, "y": 1560, "anim": "idle"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

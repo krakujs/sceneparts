@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/pie",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Pie",
+  "summary": "Round fruit pie with a golden lattice crust in a white dish, optionally with a slice cut out, for dessert scenes.",
+  "tags": ["food", "pie", "dessert", "bakery", "sweets", "lattice", "fruit pie"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the dish rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (~500 px wide); use about 0.2–0.3 next to a person" },
+    { "name": "slice", "type": "boolean", "default": false, "note": "cut one wedge out and move it aside" },
+    { "name": "filling", "type": "colour", "default": "#C2342E", "note": "filling colour seen in the gap, e.g. cherry red, apple #E0A21F" },
+    { "name": "color", "type": "colour", "default": "#E8A24A", "note": "crust colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down, wobble = small rock, pop = scale in with overshoot" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "slice": true },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/metronome",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Metronome",
+  "summary": "Wooden pyramid metronome with a swinging brass arm and weight; anim tick swings it to keep time. For music lessons.",
+  "tags": ["metronome", "tempo", "timing", "music lesson", "practice", "beat", "piano"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the base rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the metronome is about 300 px wide and 560 px tall"},
+    {"name": "color", "type": "colour", "default": "#8A5A3C", "note": "wood colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "tick", "bob", "pop"], "note": "tick = the arm swings left and right, one beat every 30 frames"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#8A5A3C", "anim": "tick"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

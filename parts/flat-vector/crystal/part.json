@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/crystal",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Crystal",
+  "summary": "Cluster of glowing faceted gem crystals on a rock base; anim shimmer makes them sparkle. For caves and magic.",
+  "tags": ["crystal", "gem", "crystals", "gemstone", "cave", "magic", "amethyst", "sparkle"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom of the rock base rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 420 px wide and 520 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#9B6BE8", "note": "crystal colour"},
+    {"name": "anim", "type": "enum", "default": "shimmer", "values": ["none", "shimmer"], "note": "shimmer = a light sweeps across the facets in a loop"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#9B6BE8", "anim": "shimmer"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

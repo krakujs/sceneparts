@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/tape-measure",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Tape measure",
+  "summary": "Retractable tape measure with a length of tape pulled out and a hook; for DIY, measuring and building scenes.",
+  "tags": ["tape measure", "measuring tape", "measure", "tape", "diy", "carpentry", "builder"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the case sits on the floor at y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (about 430 px across); use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "case colour"},
+    {"name": "color2", "type": "colour", "default": "#FFC83D", "note": "tape colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "spin"], "note": "spin = the reel turns as if winding the tape"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the tape then comes out to the left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

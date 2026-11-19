@@ -1,0 +1,87 @@
+{
+  "id": "flat-vector/forklift",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Forklift",
+  "summary": "Warehouse forklift in side view with mast, forks and optional loaded pallet; room-scale for warehouse scenes.",
+  "tags": [
+    "forklift",
+    "fork lift",
+    "warehouse",
+    "pallet",
+    "lift truck",
+    "logistics",
+    "factory",
+    "vehicle"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the wheels stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: about 900 px tall and 720 px wide at s = 1; use about 0.5 for a smaller scene"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "body colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "mast, forks and frame colour"
+    },
+    {
+      "name": "pallet",
+      "type": "boolean",
+      "default": true,
+      "note": "true = a loaded pallet on the forks"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "lift"
+      ],
+      "note": "lift = the forks and load rise and fall on the mast"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the forks then point left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 0.8,
+    "anim": "lift"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

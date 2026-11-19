@@ -1,0 +1,24 @@
+{
+  "id": "core/pixelate-transition",
+  "type": "effect",
+  "style": "core",
+  "name": "Pixelate transition",
+  "summary": "Grid of square blocks fills the frame (or clears it) in a shuffled order; a retro digital scene change.",
+  "tags": ["pixelate", "pixel", "blocks", "mosaic", "transition", "retro"],
+  "params": [
+    { "name": "mode", "type": "enum", "default": "in", "values": ["in", "out"], "note": "in fills the frame with blocks, out clears it" },
+    { "name": "block", "type": "number", "default": 120, "note": "block size in px, 40 to 400" },
+    { "name": "seed", "type": "string", "default": "pixel", "note": "change for a different block order" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "len", "type": "number", "default": 24, "note": "frames the transition takes" },
+    { "name": "color", "type": "colour", "default": "#1a1410", "note": "block colour" }
+  ],
+  "example": { "mode": "in", "block": 120, "len": 40 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

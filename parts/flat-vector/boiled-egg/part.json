@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/boiled-egg",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flat boiled egg",
+  "summary": "Flat whole boiled egg beside a halved one with a yellow yolk. For breakfast, lunch or healthy food scenes.",
+  "tags": ["food", "egg", "boiled egg", "breakfast", "protein", "snack", "meal"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the eggs rest on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (~380 px wide); use about 0.2 to 0.3 next to a person" },
+    { "name": "whiteColor", "type": "colour", "default": "#FFFFFF", "note": "egg white colour" },
+    { "name": "yolkColor", "type": "colour", "default": "#FFB530", "note": "yolk colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down, wobble = rock on its base, pop = scale in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1 },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

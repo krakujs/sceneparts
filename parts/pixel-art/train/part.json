@@ -1,0 +1,46 @@
+{
+  "id": "pixel-art/train",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Train",
+  "summary": "Pixel-art train carriage interior: seats, lit ceiling and windows with scenery scrolling past. For travel scenes.",
+  "tags": [
+    "train",
+    "carriage",
+    "interior",
+    "travel",
+    "transport",
+    "background",
+    "pixel",
+    "pixel art"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where the carriage floor begins; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "scroll",
+      "values": [
+        "scroll",
+        "none"
+      ],
+      "note": "scenery scrolls past the windows from p.f"
+    }
+  ],
+  "example": {
+    "anim": "scroll"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

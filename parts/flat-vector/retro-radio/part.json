@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/retro-radio",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Retro radio",
+  "summary": "1950s wooden tabletop radio with an arched top, cloth grille, round dial and knobs; anim tune swings the dial needle.",
+  "tags": ["retro radio", "vintage radio", "wooden radio", "1950s", "tabletop radio", "old radio", "tube radio"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the feet rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the radio is about 400 px wide and 360 px tall"},
+    {"name": "color", "type": "colour", "default": "#8A5A3C", "note": "wood colour"},
+    {"name": "cloth", "type": "colour", "default": "#E9D3A9", "note": "speaker cloth colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "tune"], "note": "tune = the red dial needle sweeps back and forth"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#8A5A3C", "cloth": "#E9D3A9", "anim": "tune"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "flat-vector/idli",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Idli",
+  "summary": "Steel plate of white steamed idli with a bowl of green chutney and a bowl of sambar; for South Indian breakfast scenes.",
+  "tags": [
+    "idli",
+    "south indian food",
+    "breakfast",
+    "food",
+    "chutney",
+    "sambar",
+    "steamed"
+  ],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the plate rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the plate is hero size (~480 px wide); use about 0.2–0.3 next to a person"},
+    {"name": "vesselColor", "type": "colour", "default": "#C9D1DC", "note": "steel plate colour"},
+    {"name": "steam", "type": "boolean", "default": true, "note": "three steam curls rising and fading"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "pop"], "note": "bob = gentle up and down, pop = scale in with overshoot"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "steam": true},
+  "uses": ["flat-vector/dish", "flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

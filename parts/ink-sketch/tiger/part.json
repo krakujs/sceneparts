@@ -1,0 +1,94 @@
+{
+  "id": "ink-sketch/tiger",
+  "type": "character",
+  "style": "ink-sketch",
+  "name": "Tiger",
+  "summary": "Ink sketch tiger with orange coat, dark stripes and a white belly and muzzle; for jungle and zoo scenes.",
+  "tags": [
+    "tiger",
+    "big cat",
+    "jungle",
+    "stripes",
+    "animal",
+    "zoo",
+    "asia",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "idle",
+        "sit",
+        "lie",
+        "graze"
+      ],
+      "note": "idle = breathing + tail wag; graze = head down"
+    },
+    {
+      "name": "mouth",
+      "type": "enum",
+      "default": "smile",
+      "values": [
+        "none",
+        "smile",
+        "open",
+        "tongue"
+      ]
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#EF8A34",
+      "note": "coat colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "stand"
+  },
+  "uses": [
+    "ink-sketch/quadruped",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

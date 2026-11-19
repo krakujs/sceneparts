@@ -1,0 +1,68 @@
+{
+  "id": "ink-sketch/doctor-office",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Doctor office",
+  "summary": "Ink sketch doctor office background: examination couch, eye chart of shapes, desk with monitor, cabinet and clock.",
+  "tags": [
+    "doctor",
+    "doctor office",
+    "clinic",
+    "medical",
+    "examination",
+    "surgery",
+    "background",
+    "interior",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "room tint"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#E6F4F7",
+      "note": "wall colour"
+    },
+    {
+      "name": "couch",
+      "type": "colour",
+      "default": "#1FA39A",
+      "note": "examination couch colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = the clock's second hand turns"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "couch": "#1FA39A"
+  },
+  "uses": [
+    "flat-vector/doctor-office",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

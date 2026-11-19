@@ -1,0 +1,50 @@
+{
+  "id": "india-90s/pen",
+  "type": "prop",
+  "style": "india-90s",
+  "name": "Fountain pen",
+  "summary": "Fountain pen for writing scenes; rot angles it.",
+  "tags": [
+    "90s",
+    "india",
+    "ink",
+    "nostalgia",
+    "pen",
+    "school",
+    "writing"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900
+    },
+    {
+      "name": "rot",
+      "type": "number",
+      "default": -35
+    },
+    {
+      "name": "scale",
+      "type": "number",
+      "default": 1
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "scale": 2
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

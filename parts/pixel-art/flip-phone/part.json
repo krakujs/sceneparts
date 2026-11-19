@@ -1,0 +1,110 @@
+{
+  "id": "pixel-art/flip-phone",
+  "type": "prop",
+  "style": "pixel-art",
+  "name": "Flip phone",
+  "summary": "Pixel-art opened flip phone with screen top and keypad bottom; for retro and 2000s-style phone scenes.",
+  "tags": [
+    "flip phone",
+    "clamshell",
+    "retro",
+    "keypad",
+    "tech",
+    "pixel",
+    "pixel art"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the item (centre when centre = true)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; one cell = 24 px at s = 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror horizontally"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "float",
+      "values": [
+        "none",
+        "bob",
+        "bounce",
+        "float",
+        "shake",
+        "pulse"
+      ],
+      "note": "whole-sprite motion; float/bob suit pickups"
+    },
+    {
+      "name": "centre",
+      "type": "boolean",
+      "default": false,
+      "note": "anchor on the centre instead of the bottom"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame drift"
+    },
+    {
+      "name": "colour",
+      "type": "colour",
+      "default": "#7a4bb5",
+      "note": "phone body (char a), e.g. #c84b8c for a pink phone"
+    },
+    {
+      "name": "colour2",
+      "type": "colour",
+      "default": "#4b2d78",
+      "note": "shade colour (char A)"
+    },
+    {
+      "name": "pal",
+      "type": "object",
+      "note": "replace colours by char, e.g. {\"z\": \"#2e6b45\"}"
+    },
+    {
+      "name": "px",
+      "type": "number",
+      "default": 24,
+      "note": "cell size"
+    },
+    {
+      "name": "outline",
+      "type": "boolean",
+      "default": true,
+      "note": "dark one-cell outline"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1000,
+    "s": 2,
+    "anim": "float",
+    "centre": true
+  },
+  "uses": [
+    "pixel-art/sprite"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/school-bell",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "School bell",
+  "summary": "Round red electric school gong bell on a wall plate; anim ring shakes the striker with sound lines.",
+  "tags": [
+    "school bell",
+    "bell",
+    "gong",
+    "school",
+    "classroom",
+    "alarm bell",
+    "ring"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 760,
+      "note": "wall item: centred on (x, y); default y = 760 is about eye height"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "at s = 1 about 360 px across"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "bell colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#DDE2EA",
+      "note": "wall plate colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "ring"
+      ],
+      "note": "ring = striker strikes in a loop with sound lines"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 760,
+    "s": 1,
+    "color": "#E8503F",
+    "color2": "#DDE2EA",
+    "anim": "ring"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

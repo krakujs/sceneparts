@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/music-notes",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Music Notes",
+  "summary": "Two beamed eighth notes floating and bobbing: use for music, singing or melody.",
+  "tags": [
+    "music",
+    "notes",
+    "song",
+    "singing",
+    "melody",
+    "sound",
+    "audio"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 370 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#7B5CD6",
+      "note": "note colour; a darker edge is added"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "bob",
+      "values": [
+        "none",
+        "bob",
+        "sway"
+      ],
+      "note": "bob = notes float up and down, sway = gentle tilt"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "anim": "bob"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

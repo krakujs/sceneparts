@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/piggy-bank",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Piggy bank",
+  "summary": "Pink ceramic piggy bank with a coin slot on its back; anim coin drops a coin in, for saving money.",
+  "tags": ["piggy bank", "savings", "saving", "money", "bank", "coin", "budget"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor point under the feet (1 m ~ 560 px)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 560 px wide and 360 px tall; use about 0.5 next to a person"},
+    {"name": "color", "type": "colour", "default": "#F27BA6", "note": "ceramic colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "coin"], "note": "coin = a coin drops into the back slot every 90 frames"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (faces left instead of right)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#F27BA6", "anim": "coin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

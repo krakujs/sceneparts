@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/harbor",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Harbor",
+  "summary": "Harbour quay at the water's edge with bollards, containers, a dock crane and a warehouse; anim lights glows lamps.",
+  "tags": ["harbor", "harbour", "quay", "port", "containers", "dock", "waterfront"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "quay edge: the quay stands on y, the water lies in front"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 1040 px wide and 500 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "front container colour"},
+    {"name": "color2", "type": "colour", "default": "#DDE2EA", "note": "warehouse wall colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "lights"], "note": "lights = warehouse lamps and the crane light glow in turn"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

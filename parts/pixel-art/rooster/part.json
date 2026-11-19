@@ -1,0 +1,113 @@
+{
+  "id": "pixel-art/rooster",
+  "type": "character",
+  "style": "pixel-art",
+  "name": "Rooster",
+  "summary": "Pixel-art red-brown rooster with a big red comb and an arching green-black tail; for farm and sunrise scenes.",
+  "tags": [
+    "rooster",
+    "cockerel",
+    "chicken",
+    "farm animal",
+    "bird",
+    "pixel",
+    "pixel art",
+    "retro"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "feet / ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; one cell = 24 px at s = 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "walk",
+      "note": "walk/run swap leg cels; fly swaps wing cels",
+      "values": [
+        "walk",
+        "run",
+        "fly",
+        "none",
+        "bob",
+        "bounce",
+        "float",
+        "shake",
+        "pulse"
+      ]
+    },
+    {
+      "name": "fps",
+      "type": "number",
+      "default": 8,
+      "note": "video frames per cel"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame drift"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#b5522a",
+      "note": "red-brown feathers (char a)"
+    },
+    {
+      "name": "coat2",
+      "type": "colour",
+      "default": "#7a4a2b",
+      "note": "dark brown shade (char A)"
+    },
+    {
+      "name": "pal",
+      "type": "object",
+      "note": "replace colours by char, e.g. {\"z\": \"#...\"} for the accent"
+    },
+    {
+      "name": "px",
+      "type": "number",
+      "default": 24,
+      "note": "cell size"
+    },
+    {
+      "name": "outline",
+      "type": "boolean",
+      "default": true,
+      "note": "dark one-cell outline"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1.5,
+    "anim": "walk"
+  },
+  "uses": [
+    "pixel-art/sprite"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

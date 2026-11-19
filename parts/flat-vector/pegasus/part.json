@@ -1,0 +1,65 @@
+{
+  "id": "flat-vector/pegasus",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Pegasus",
+  "summary": "White winged horse with big feathered wings that flap, side view. For flying, myth and sky scenes.",
+  "tags": [
+    "pegasus",
+    "winged horse",
+    "horse",
+    "wings",
+    "flying",
+    "myth",
+    "feathers",
+    "sky"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "flap",
+      "values": [
+        "flap",
+        "none"
+      ],
+      "note": "flap = wings beat; none = still"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "anim": "flap"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

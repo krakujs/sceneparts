@@ -1,0 +1,27 @@
+{
+  "id": "core/cycle-diagram",
+  "type": "text",
+  "style": "core",
+  "name": "Cycle diagram",
+  "summary": "3-6 nodes on a circle joined by curved arrows that run round the loop, with a slow idle sway.",
+  "tags": ["cycle", "loop", "circle", "process", "repeat", "feedback loop", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "accent override; nodes use the series colours" },
+    { "name": "nodes", "type": "string[]", "default": ["Plan", "Build", "Measure", "Learn"], "note": "3 to 6 nodes, going round clockwise from the top" },
+    { "name": "center", "type": "string", "default": "Repeat", "note": "label in the middle" }
+  ],
+  "example": {
+    "nodes": ["Plan", "Build", "Measure", "Learn"],
+    "center": "Repeat"
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

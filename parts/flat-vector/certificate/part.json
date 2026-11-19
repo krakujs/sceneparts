@@ -1,0 +1,83 @@
+{
+  "id": "flat-vector/certificate",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Certificate",
+  "summary": "Framed wall certificate with gold border and rosette seal; anim shine sweeps a glint across it. For awards.",
+  "tags": [
+    "certificate",
+    "award",
+    "framed certificate",
+    "diploma",
+    "achievement",
+    "wall",
+    "seal",
+    "shine"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 760,
+      "note": "wall item: centred on (x, y); default y = 760 is about eye height"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the frame is about 660 px wide"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#253058",
+      "note": "frame colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "gold border and seal colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "shine",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "shine = a glint sweeps across the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 760,
+    "s": 1,
+    "color": "#253058",
+    "color2": "#FFC83D",
+    "anim": "shine"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

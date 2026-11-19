@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/library",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Library",
+  "summary": "Pixel-art library: tall bookshelves of coloured book spines, a ladder, reading table and desk lamp; for study scenes.",
+  "tags": [
+    "library",
+    "books",
+    "bookshelf",
+    "study",
+    "reading",
+    "background",
+    "indoor",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "flicker",
+      "values": [
+        "flicker",
+        "none"
+      ],
+      "note": "the desk lamp glow flickers from p.f"
+    }
+  ],
+  "example": {
+    "anim": "flicker"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

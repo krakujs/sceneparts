@@ -1,0 +1,72 @@
+{
+  "id": "flat-vector/stethoscope",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Stethoscope",
+  "summary": "Stethoscope laid flat: metal ear tubes, Y joint, looping tube and round chest piece; for medical or health scenes.",
+  "tags": [
+    "stethoscope",
+    "doctor",
+    "medical",
+    "health",
+    "heartbeat",
+    "nurse",
+    "clinic"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 about 420 px wide and 600 px tall; use about 0.2\u20130.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#167A73",
+      "note": "tubing colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = the stethoscope rocks gently"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#167A73",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

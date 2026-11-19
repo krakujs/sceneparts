@@ -1,0 +1,82 @@
+{
+  "id": "ink-sketch/kitchen",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Kitchen",
+  "summary": "Ink sketch kitchen background: cabinets, worktop, sink under a window, stove, fridge, hanging pans and tiles.",
+  "tags": [
+    "kitchen",
+    "cooking",
+    "home",
+    "interior",
+    "background",
+    "indoor",
+    "counter",
+    "cabinets",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "outside light in the window and room tint; the ceiling lamp glows at dusk and night"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "seen through the window above the sink"
+    },
+    {
+      "name": "cabinets",
+      "type": "colour",
+      "default": "#167A73",
+      "note": "cabinet colour"
+    },
+    {
+      "name": "worktop",
+      "type": "colour",
+      "default": "#E9D3A9",
+      "note": "worktop colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = weather, window clouds and plant move from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear"
+  },
+  "uses": [
+    "flat-vector/kitchen",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

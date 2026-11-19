@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/ambulance-light",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Emergency beacon",
+  "summary": "Red and blue dome beacon on a short base; anim flash alternates the lit side with glow and rays.",
+  "tags": [
+    "emergency light",
+    "beacon",
+    "warning light",
+    "red blue light",
+    "siren",
+    "rescue",
+    "dome light"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the base rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "at s = 1 about 340 px wide and 300 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "red side"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "blue side"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "flash"
+      ],
+      "note": "flash = the lit side alternates with glow and rays"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#E8503F",
+    "color2": "#3D6FE0",
+    "anim": "flash"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

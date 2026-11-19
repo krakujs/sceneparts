@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/escalator",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Escalator",
+  "summary": "Moving staircase in side view with a glass balustrade; the steps climb the slope with anim drive. For stations.",
+  "tags": [
+    "escalator",
+    "moving stairs",
+    "staircase",
+    "station",
+    "mall",
+    "building",
+    "stairs"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "ground line under the lower landing"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 800 px wide and 500 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#9AA3B5",
+      "note": "step colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "landing plate colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "drive",
+        "bob",
+        "pop"
+      ],
+      "note": "drive = the steps move up the slope"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the slope then runs down to the right)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "drive"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

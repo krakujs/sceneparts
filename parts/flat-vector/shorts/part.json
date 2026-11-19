@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/shorts",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Shorts",
+  "summary": "Casual shorts with belt loops, pockets and contrast stitching on a clip hanger; sways. For summer wardrobe scenes.",
+  "tags": [
+    "shorts",
+    "short trousers",
+    "bermuda shorts",
+    "summer shorts",
+    "clothes",
+    "wardrobe",
+    "fashion",
+    "denim shorts",
+    "clothing"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the item rests on y (hem or tip)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 340 px wide and 690 px tall at s = 1 (hook included)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1FA39A",
+      "note": "fabric colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "stitching and waistband colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = the shorts swing gently from the hook"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#1FA39A",
+    "color2": "#FFFFFF",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

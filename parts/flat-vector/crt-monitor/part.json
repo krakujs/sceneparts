@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/crt-monitor",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "CRT Monitor",
+  "summary": "Old deep-backed beige CRT computer monitor with a green text-line screen; use for retro computing or 80s office scenes.",
+  "tags": ["crt monitor", "crt", "computer monitor", "retro computer", "old monitor", "beige", "terminal"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the stand rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 500 px wide at s = 1; about 0.5 on a desk next to a person"},
+    {"name": "color", "type": "colour", "default": "#DDC9A3", "note": "casing colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "glow"], "note": "glow = the screen glows and the lines flicker"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#DDC9A3", "anim": "glow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

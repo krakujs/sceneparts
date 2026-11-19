@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/fish-fillet",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flat fish fillet",
+  "summary": "Flat pink salmon fillet with white fat lines, lemon wedge and dill on a plate. For healthy dinner or seafood scenes.",
+  "tags": ["food", "fish", "salmon", "seafood", "dinner", "healthy food", "meal"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the plate rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (~420 px wide); use about 0.2 to 0.3 next to a person" },
+    { "name": "fleshColor", "type": "colour", "default": "#F4937A", "note": "salmon flesh colour" },
+    { "name": "lemon", "type": "boolean", "default": true, "note": "show the lemon wedge" },
+    { "name": "dill", "type": "boolean", "default": true, "note": "show the dill sprig" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down, wobble = slight rock, pop = scale in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1 },
+  "uses": ["flat-vector/style", "flat-vector/dish"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

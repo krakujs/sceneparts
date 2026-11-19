@@ -1,0 +1,15 @@
+{
+  "id": "flat-vector/garden-bed",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Garden bed",
+  "summary": "Raised wooden garden bed with soil, lettuces, carrot tops and a staked tomato plant; use for vegetable garden scenes.",
+  "tags": ["garden bed","raised bed","vegetables","lettuce","tomato","carrot","garden"],
+  "params": [{"name":"x","type":"number","default":540,"note":"centre x"},{"name":"y","type":"number","default":1600,"note":"ground line"},{"name":"s","type":"number","default":1,"note":"about 900 px wide and 620 px tall at s = 1"},{"name":"color","type":"colour","default":"#B07A4A","note":"wood colour"},{"name":"color2","type":"colour","default":"#4BB46A","note":"leaf colour"},{"name":"anim","type":"enum","default":"none","values":["none","sway"],"note":"sway = plants move gently"},{"name":"flip","type":"boolean","default":false,"note":"mirror"}],
+  "example": {"x":540,"y":1600,"s":1,"anim":"sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

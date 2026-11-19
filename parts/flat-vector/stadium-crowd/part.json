@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/stadium-crowd",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Stadium crowd",
+  "summary": "Full-frame flat stadium background: tiered stands of fans in team colours, floodlight towers, pitch edge.",
+  "tags": ["stadium", "crowd", "fans", "football", "sports", "match", "background", "outdoor"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "dusk", "values": ["day", "morning", "dusk", "night"], "note": "sky light; floodlights glow at dusk and night" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "greys the sky and adds weather over the stands" },
+    { "name": "teamA", "type": "colour", "default": "#3D6FE0", "note": "first team colour in the stands" },
+    { "name": "teamB", "type": "colour", "default": "#E8503F", "note": "second team colour in the stands" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = fans bob, clouds and weather move from p.f" }
+  ],
+  "example": { "time": "dusk", "weather": "clear" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

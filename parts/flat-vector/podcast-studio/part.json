@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/podcast-studio",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Podcast studio",
+  "summary": "Full-frame flat podcast studio background: bright room, foam panels, two big mics on boom arms, ON AIR sign.",
+  "tags": ["podcast studio", "podcast", "recording studio", "microphone", "broadcast", "on air", "studio", "background"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "light in the room; the ON AIR sign glows more at night" },
+    { "name": "foam", "type": "colour", "default": "#5FB3A8", "note": "acoustic foam panel colour" },
+    { "name": "wall", "type": "colour", "default": "#F6E7CF", "note": "wall colour" },
+    { "name": "floor", "type": "colour", "default": "#C99A6B", "note": "floor colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = the ON AIR sign pulses" }
+  ],
+  "example": { "time": "day" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/payphone",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Payphone",
+  "summary": "Street payphone with a hanging handset, keypad and coin slot; use for public-phone and city street scenes.",
+  "tags": ["payphone", "pay phone", "public phone", "street phone", "phone booth", "coin phone", "telephone"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom centre: the plinth rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; room scale, about 900 px tall at s = 1 (fits the canvas at default x, y); about 0.5 next to a person"},
+    {"name": "color", "type": "colour", "default": "#1FA39A", "note": "unit colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "blink"], "note": "blink = top lamp flashes"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (handset moves to the right)"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "color": "#1FA39A", "anim": "blink"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

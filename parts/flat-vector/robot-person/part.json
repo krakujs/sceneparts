@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/robot-person",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Robot person",
+  "summary": "Original flat vector humanoid robot with screen face, blinking antenna and segmented limbs; walks from p.f.",
+  "tags": [
+    "robot",
+    "android",
+    "machine",
+    "tech",
+    "future",
+    "ai",
+    "humanoid",
+    "automaton"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "walk",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "wave",
+        "point",
+        "think",
+        "cheer",
+        "talk",
+        "sit",
+        "hold"
+      ]
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "walk"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/security-camera",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Security camera",
+  "summary": "Wall-mounted CCTV camera on a bracket with a red LED and a round lens; use for surveillance and home security scenes.",
+  "tags": ["security camera", "cctv", "surveillance", "camera", "home security", "wall camera", "monitoring"],
+  "params": [
+    {"name": "x", "type": "number", "default": 300, "note": "where the bracket meets the wall (left edge); the camera points right"},
+    {"name": "y", "type": "number", "default": 900, "note": "wall mount point: the bracket sits at y on the wall (the camera is not standing on the floor)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the camera is about 500 px wide including the bracket"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "body colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "pan"], "note": "pan = the camera head slowly swivels"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (camera points left)"}
+  ],
+  "example": {"x": 300, "y": 900, "s": 1, "color": "#5D6578", "anim": "pan"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/open-plan-office",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Open-plan office",
+  "summary": "Full-frame flat open-plan office background: desk rows with monitors, glass partitions, plants and lights.",
+  "tags": [
+    "open plan office",
+    "office",
+    "desks",
+    "monitors",
+    "workplace",
+    "coworking",
+    "background",
+    "interior"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light through the Window and room tint"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "seen through the Window"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#E9EEF3",
+      "note": "wall colour"
+    },
+    {
+      "name": "desk",
+      "type": "colour",
+      "default": "#B08A63",
+      "note": "desk top colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = plants sway and weather animates"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

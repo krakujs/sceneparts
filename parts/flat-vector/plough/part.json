@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/plough",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Plough",
+  "summary": "Old horse-drawn farm plough with beam, stilts, share and land wheel, room scale; for farm and historical scenes.",
+  "tags": ["plough", "plow", "farm", "horse drawn", "field", "agriculture", "history"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line under the land wheel"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: at s = 1 about 720 px wide and 580 px tall; use about 0.5 for a smaller scene"},
+    {"name": "color", "type": "colour", "default": "#8A5A3C", "note": "wood colour (beam, stilts and wheel)"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "iron colour (share, coulter and hub)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "roll"], "note": "roll = the land wheel turns"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the share then points left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "roll"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

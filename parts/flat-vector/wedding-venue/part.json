@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/wedding-venue",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Wedding venue",
+  "summary": "Full-frame flat wedding venue background: floral arch, rows of chairs, aisle carpet, string lights and flower stands.",
+  "tags": ["wedding", "wedding venue", "floral arch", "chairs", "string lights", "ceremony", "celebration", "background"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "tints the room; the string lights are always on at dusk and night" },
+    { "name": "carpet", "type": "colour", "default": "#F27BA6", "note": "aisle carpet colour" },
+    { "name": "chair", "type": "colour", "default": "#FFFFFF", "note": "chair colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = string lights twinkle from p.f" }
+  ],
+  "example": { "time": "day" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/factory",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Factory",
+  "summary": "Pixel-art factory: conveyor belt with moving boxes, pipes, gears and machines with blinking lights; for industry scenes.",
+  "tags": [
+    "factory",
+    "conveyor",
+    "industrial",
+    "machine",
+    "pipes",
+    "background",
+    "indoor",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "belt",
+      "values": [
+        "belt",
+        "none"
+      ],
+      "note": "the conveyor moves boxes and the gears turn from p.f"
+    }
+  ],
+  "example": {
+    "anim": "belt"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

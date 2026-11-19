@@ -1,0 +1,60 @@
+{
+  "id": "flat-vector/scared-person",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Scared person",
+  "summary": "Flat vector scared person with arms up, trembling legs and sweat drops; for fear, panic and nervous moments.",
+  "tags": [
+    "scared",
+    "afraid",
+    "fear",
+    "nervous",
+    "panic",
+    "trembling",
+    "sweat",
+    "person"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "india-90s/house-window",
+  "type": "scenery",
+  "style": "india-90s",
+  "name": "Neighbour window",
+  "summary": "House window that can break (broken 0..1) with an angry aunty leaning out (aunty 0..1).",
+  "tags": [
+    "90s",
+    "aunty",
+    "broken glass",
+    "gully cricket",
+    "india",
+    "neighbour",
+    "nostalgia",
+    "window"
+  ],
+  "params": [
+    {
+      "name": "broken",
+      "type": "number",
+      "default": 0
+    },
+    {
+      "name": "aunty",
+      "type": "number",
+      "default": 0
+    },
+    {
+      "name": "angry",
+      "type": "boolean",
+      "default": true
+    }
+  ],
+  "example": {
+    "broken": 1,
+    "aunty": 1
+  },
+  "uses": [
+    "india-90s/style",
+    "india-90s/adult"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

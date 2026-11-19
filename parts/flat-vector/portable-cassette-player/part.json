@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/portable-cassette-player",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Portable cassette player",
+  "summary": "1980s personal cassette player with headphones draped over it; use for retro music, walking and 80s scenes.",
+  "tags": ["cassette player", "personal stereo", "headphones", "tape", "80s", "retro music"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the player rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the player is hero size (about 460 px across with headphones)"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "body colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "spin"], "note": "spin = both tape reels turn"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FF8A3D", "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

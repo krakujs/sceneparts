@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/alien-ship",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Alien ship",
+  "summary": "Organic alien mothership in side view: pod-shaped hull, glowing pods, dangling tendrils. Hovers. For sci-fi scenes.",
+  "tags": [
+    "alien ship",
+    "mothership",
+    "alien",
+    "spaceship",
+    "organic",
+    "sci-fi",
+    "space",
+    "hover"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the hull"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 760,
+      "note": "centre y of the hull; the tendrils hang about 300 px below it"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 900 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#2FA58A",
+      "note": "hull colour"
+    },
+    {
+      "name": "glow",
+      "type": "colour",
+      "default": "#B8F25C",
+      "note": "colour of the pods and tendril tips"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "hover"
+      ],
+      "note": "hover = floats up and down, pods pulse and tendrils wave"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 760,
+    "s": 1,
+    "anim": "hover"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

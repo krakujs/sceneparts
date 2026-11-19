@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/hammer",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Hammer",
+  "summary": "Claw hammer lying on the floor in side view with wooden handle and steel head; for DIY, building and repair scenes.",
+  "tags": [
+    "hammer",
+    "claw hammer",
+    "diy",
+    "carpentry",
+    "repair",
+    "tool",
+    "build"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the item stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "hero size: about 460 px long at s = 1; use about 0.25–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "handle colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#9AA3B5",
+      "note": "head colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "pop = the hammer pops in; bob = gentle lift; wobble = slight rock"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (faces left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#8A5A3C",
+    "color2": "#9AA3B5",
+    "anim": "bob"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

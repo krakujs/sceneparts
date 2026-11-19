@@ -1,0 +1,75 @@
+{
+  "id": "storybook/nurse-ww1",
+  "type": "character",
+  "style": "storybook",
+  "name": "WW1 nurse",
+  "summary": "First World War nurse in a long blue dress, white apron and veil, holding a roll of bandage; no emblems.",
+  "tags": [
+    "nurse",
+    "ww1",
+    "world war",
+    "hospital",
+    "medic",
+    "bandage",
+    "history",
+    "veil"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "dress",
+      "type": "colour",
+      "default": "#2E5E8C",
+      "note": "dress colour"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#F1CDAA"
+    },
+    {
+      "name": "hairColour",
+      "type": "colour",
+      "default": "#5C3A26"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

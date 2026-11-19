@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/gaming-room",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Gaming room",
+  "summary": "Full-frame flat gaming room background: glowing monitors, LED strips, gaming chair, figure shelves and posters.",
+  "tags": ["gaming room", "gamer", "monitors", "led lights", "gaming chair", "desk", "interior", "background"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "night", "values": ["day", "morning", "dusk", "night"], "note": "the room is dim by default; the LED strips and monitors glow strongest at night" },
+    { "name": "accent", "type": "colour", "default": "#7B5CD6", "note": "main accent colour for the chair, desk trim and monitor glow" },
+    { "name": "wall", "type": "colour", "default": "#2B2F4A", "note": "wall colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = LED strips and monitor glow pulse from p.f" }
+  ],
+  "example": { "time": "night", "accent": "#7B5CD6" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

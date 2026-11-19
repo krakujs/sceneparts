@@ -1,0 +1,77 @@
+{
+  "id": "flat-vector/eid-crescent-lantern",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Eid crescent and lanterns",
+  "summary": "Golden crescent moon with a star and two small hanging lanterns, hung from a cord; use for Eid and Ramadan decor.",
+  "tags": [
+    "eid",
+    "crescent moon",
+    "lantern",
+    "ramadan",
+    "star",
+    "eid al fitr",
+    "hanging decoration"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 240,
+      "note": "the top hook point: the decoration hangs from y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 360 px wide and 560 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "crescent and star colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "first lantern colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = the decoration swings on its cord and the lanterns trail behind"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 240,
+    "s": 1,
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

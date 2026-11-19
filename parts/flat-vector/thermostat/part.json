@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/thermostat",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Thermostat",
+  "summary": "Round thermostat with a ring dial, setpoint arc and dark display face; for home heating and climate scenes.",
+  "tags": ["thermostat", "temperature", "heating", "climate", "dial", "smart home", "room temperature"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom edge: the foot stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 400 px wide and 500 px tall (hero size)"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "body colour"},
+    {"name": "level", "type": "number", "default": 0.6, "min": 0, "max": 1, "note": "dial position from 0 (low) to 1 (high)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "glow"], "note": "glow = display and halo glow softly"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FFFFFF", "level": 0.6, "anim": "glow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

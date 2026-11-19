@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/court-room",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Court room",
+  "summary": "Full-frame flat court room background: judge's raised bench, wall emblem, witness stand, wooden rail, Window.",
+  "tags": [
+    "court room",
+    "courtroom",
+    "judge",
+    "law",
+    "trial",
+    "justice",
+    "background",
+    "interior"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light through the Window and room tint"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "seen through the Window"
+    },
+    {
+      "name": "wood",
+      "type": "colour",
+      "default": "#B58A5E",
+      "note": "wood colour for the panelling, bench and stand"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#F3E3C7",
+      "note": "wall colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds drift and weather animates"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear",
+    "wood": "#B58A5E"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

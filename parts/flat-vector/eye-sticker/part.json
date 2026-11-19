@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/eye-sticker",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Eye Sticker",
+  "summary": "Flat cartoon eye whose iris looks around and blinks, for watch, look or see moments.",
+  "tags": ["eye", "look", "watch", "see", "sticker", "peek", "vision"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 480 px wide at s = 1" },
+    { "name": "color", "type": "colour", "default": "#3D6FE0", "note": "iris colour" },
+    { "name": "anim", "type": "enum", "default": "look", "values": ["none", "look", "blink"], "note": "look = iris wanders and blinks; blink = blinks only" },
+    { "name": "popIn", "type": "boolean", "default": true, "note": "springs in over the first 10 frames" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror left-right" }
+  ],
+  "example": { "x": 540, "y": 960, "anim": "look" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

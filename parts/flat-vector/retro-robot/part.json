@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/retro-robot",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Robot retro",
+  "summary": "Boxy 1950s tin robot with a round dial chest, coil antenna and claw hands; walks or stands.",
+  "tags": ["robot", "retro", "tin robot", "1950s", "vintage", "claw", "walking", "sci-fi"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540},
+    {"name": "y", "type": "number", "default": 1560, "note": "feet"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; ~1000 px tall at 1"},
+    {"name": "walk", "type": "boolean", "default": true, "note": "false = stands still"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "face left"}
+  ],
+  "example": {"x": 540, "y": 1560, "walk": true},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

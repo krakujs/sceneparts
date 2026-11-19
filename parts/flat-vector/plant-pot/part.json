@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/plant-pot",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Plant Pot",
+  "summary": "Empty terracotta flower pot with a rim and saucer; a blank pot for plant and gardening scenes.",
+  "tags": ["plant pot", "flower pot", "terracotta", "pot", "planter", "garden", "empty pot"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the saucer rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (about 380 px wide); use about 0.2–0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#C9704E", "note": "terracotta colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion only"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#C9704E"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

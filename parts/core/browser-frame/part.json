@@ -1,0 +1,78 @@
+{
+  "id": "core/browser-frame",
+  "type": "text",
+  "style": "core",
+  "name": "Browser frame",
+  "summary": "Generic browser window with neutral top-bar dots, back and forward chevrons, and an address pill; empty content.",
+  "tags": [
+    "browser",
+    "window",
+    "web",
+    "address bar",
+    "frame",
+    "mockup",
+    "website"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "w",
+      "type": "number",
+      "default": 900,
+      "note": "window width"
+    },
+    {
+      "name": "h",
+      "type": "number",
+      "default": 900,
+      "note": "window height"
+    },
+    {
+      "name": "url",
+      "type": "string",
+      "default": "www.example.com",
+      "note": "address pill text"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "note": "accent override (the window itself uses neutral colours)"
+    },
+    {
+      "name": "at",
+      "type": "number",
+      "default": 0,
+      "note": "start as a fraction of the shot (0..1)"
+    }
+  ],
+  "example": {
+    "w": 900,
+    "h": 900,
+    "url": "www.example.com"
+  },
+  "layer": "screen",
+  "uses": [
+    "core/stat-card"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

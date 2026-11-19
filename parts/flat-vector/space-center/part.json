@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/space-center",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Space Center",
+  "summary": "Launch pad with a gantry tower, a rocket on the pad and a control building. For rocket launch and space scenes.",
+  "tags": [
+    "space center",
+    "launch pad",
+    "rocket",
+    "gantry",
+    "spaceport",
+    "rocket launch",
+    "control room"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the base stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 910 px wide and 1180 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#DDE2EA",
+      "note": "Structure and rocket body colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "Rocket nose and fin colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "lights"
+      ],
+      "note": "pop = scales in; lights = the control room windows glow one after another"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "lights"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

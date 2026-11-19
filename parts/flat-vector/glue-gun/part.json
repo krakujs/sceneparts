@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/glue-gun",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Glue gun",
+  "summary": "Hot glue gun standing on its grip with a glue stick and a drip at the nozzle; for crafts and DIY scenes.",
+  "tags": [
+    "glue gun",
+    "hot glue",
+    "glue",
+    "craft",
+    "crafts",
+    "diy",
+    "glue stick"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the item stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "hero size: about 480 px wide at s = 1; use about 0.25–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "body colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "trim colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pulse",
+        "bob",
+        "pop"
+      ],
+      "note": "pulse = the glue drip swells and shrinks; bob = gentle lift; pop = pops in"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (faces left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "pulse"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

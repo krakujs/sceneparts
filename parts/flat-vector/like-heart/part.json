@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/like-heart",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Like Heart",
+  "summary": "Flat white heart in a red bubble with mini hearts floating up, for a like or love reaction.",
+  "tags": ["like", "love", "heart", "reaction", "favourite", "sticker", "adore"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 480 px wide at s = 1" },
+    { "name": "color", "type": "colour", "default": "#E8503F", "note": "bubble colour; one darker shade is added for depth" },
+    { "name": "anim", "type": "enum", "default": "pulse", "values": ["none", "pulse", "bounce", "wobble"], "note": "idle motion from p.f" },
+    { "name": "popIn", "type": "boolean", "default": true, "note": "springs in over the first 10 frames" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror left-right" }
+  ],
+  "example": { "x": 540, "y": 960, "anim": "pulse" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

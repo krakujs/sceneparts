@@ -1,0 +1,97 @@
+{
+  "id": "flat-vector/cyborg",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Cyborg",
+  "summary": "Flat vector cyborg with a robotic arm, a metal cheek plate and a glowing cyan eye implant; original sci-fi look.",
+  "tags": [
+    "cyborg",
+    "robot",
+    "robotic arm",
+    "sci-fi",
+    "implant",
+    "android",
+    "future",
+    "machine"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "wave",
+        "point",
+        "think",
+        "cheer",
+        "talk",
+        "hold"
+      ]
+    },
+    {
+      "name": "expression",
+      "type": "enum",
+      "default": "smile",
+      "values": [
+        "smile",
+        "neutral",
+        "open",
+        "surprised",
+        "sad",
+        "angry",
+        "laugh"
+      ]
+    },
+    {
+      "name": "skin",
+      "type": "string",
+      "default": "fair",
+      "note": "light | fair | tan | medium | brown | dark, or a hex colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "stand"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

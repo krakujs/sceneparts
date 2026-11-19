@@ -1,0 +1,317 @@
+{
+  "id": "ink-sketch/bus-driver",
+  "type": "character",
+  "style": "ink-sketch",
+  "name": "Bus driver",
+  "summary": "Ink-sketch bus driver in a peaked cap and navy uniform with a tie; for public transport scenes.",
+  "tags": [
+    "bus",
+    "driver",
+    "transport",
+    "commute",
+    "uniform",
+    "cap",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "feet / ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; adult ≈ 980 px tall at s = 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "values": [
+        "idle",
+        "walk",
+        "run",
+        "wave",
+        "cheer",
+        "jump",
+        "talk",
+        "none"
+      ],
+      "default": "idle",
+      "note": "idle breathes and blinks; walk/run swing; wave raises the front hand"
+    },
+    {
+      "name": "arms",
+      "type": "enum",
+      "values": [
+        "down",
+        "up",
+        "one-up"
+      ],
+      "default": "down",
+      "note": "arm pose when anim does not set one"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "values": [
+        "stand",
+        "sit"
+      ],
+      "default": "stand",
+      "note": "sit bends the legs forward (a seat also sets it)"
+    },
+    {
+      "name": "seat",
+      "type": "enum",
+      "values": [
+        "none",
+        "chair",
+        "wheelchair"
+      ],
+      "default": "none",
+      "note": "draw a seat under a sitting person"
+    },
+    {
+      "name": "beard",
+      "type": "enum",
+      "values": [
+        "none",
+        "beard",
+        "moustache",
+        "goatee",
+        "stubble"
+      ],
+      "default": "none",
+      "note": "facial hair"
+    },
+    {
+      "name": "glasses",
+      "type": "enum",
+      "values": [
+        "none",
+        "glasses",
+        "shades",
+        "goggles",
+        "eyepatch"
+      ],
+      "default": "none",
+      "note": "eyewear"
+    },
+    {
+      "name": "eyes",
+      "type": "enum",
+      "values": [
+        "open",
+        "happy",
+        "closed"
+      ],
+      "default": "open",
+      "note": "eye shape"
+    },
+    {
+      "name": "mouth",
+      "type": "enum",
+      "values": [
+        "smile",
+        "flat",
+        "open",
+        "frown",
+        "mask"
+      ],
+      "default": "smile",
+      "note": "mouth; mask = face mask; anim talk opens it"
+    },
+    {
+      "name": "blush",
+      "type": "boolean",
+      "default": false,
+      "note": "pink cheeks"
+    },
+    {
+      "name": "shoeStyle",
+      "type": "enum",
+      "values": [
+        "shoes",
+        "boots",
+        "sneakers",
+        "bare"
+      ],
+      "default": "shoes",
+      "note": "footwear"
+    },
+    {
+      "name": "shoes",
+      "type": "colour",
+      "default": "#3a2a22",
+      "note": "shoe colour"
+    },
+    {
+      "name": "over",
+      "type": "enum",
+      "values": [
+        "none",
+        "apron",
+        "hivis",
+        "vest",
+        "sash",
+        "lifejacket"
+      ],
+      "default": "none",
+      "note": "garment over the top"
+    },
+    {
+      "name": "overColour",
+      "type": "colour",
+      "default": "yellow",
+      "note": "overlay colour"
+    },
+    {
+      "name": "belt",
+      "type": "boolean",
+      "default": false,
+      "note": "belt with a buckle"
+    },
+    {
+      "name": "badge",
+      "type": "colour",
+      "default": "none",
+      "note": "chest badge colour (none = no badge)"
+    },
+    {
+      "name": "hold",
+      "type": "enum",
+      "values": [
+        "none",
+        "clipboard",
+        "wrench",
+        "book",
+        "phone",
+        "mic",
+        "cup",
+        "tray",
+        "briefcase",
+        "bag",
+        "camera",
+        "spatula",
+        "hammer",
+        "magnifier",
+        "paintbrush",
+        "palette",
+        "envelope",
+        "syringe",
+        "bottle",
+        "torch",
+        "sword",
+        "wand",
+        "ball",
+        "baton",
+        "gavel",
+        "guitar",
+        "baby",
+        "openbook",
+        "parcel",
+        "controller",
+        "laptop",
+        "bouquet",
+        "tablet",
+        "bowl",
+        "cane",
+        "whitecane",
+        "broom",
+        "crutch",
+        "shovel",
+        "rake",
+        "pitchfork",
+        "mop",
+        "staff",
+        "flag",
+        "fishingrod"
+      ],
+      "default": "none",
+      "note": "item in the front hand; guitar … bowl are held at the chest with both hands; cane … fishingrod are long poles"
+    },
+    {
+      "name": "itemColour",
+      "type": "colour",
+      "default": "red",
+      "note": "colour of book, bag, bottle, flag, blanket, ball, bouquet"
+    },
+    {
+      "name": "back",
+      "type": "enum",
+      "values": [
+        "none",
+        "backpack",
+        "cape",
+        "wings",
+        "tank",
+        "guitar",
+        "quiver"
+      ],
+      "default": "none",
+      "note": "gear behind the body"
+    },
+    {
+      "name": "backColour",
+      "type": "colour",
+      "default": "red",
+      "note": "backpack / cape / wings colour (uses itemColour if not set)"
+    },
+    {
+      "name": "belly",
+      "type": "boolean",
+      "default": false,
+      "note": "rounded belly"
+    },
+    {
+      "name": "wash",
+      "type": "enum",
+      "values": [
+        "colour",
+        "accent",
+        "none"
+      ],
+      "default": "colour",
+      "note": "colour: garments washed in their colours; accent: only the top gets the accent; none: pure line art"
+    },
+    {
+      "name": "extra",
+      "type": "object",
+      "note": "array of overlays {d (SVG path), fill?, at: head|body|hand, back?}; see ANCHOR"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame drift (pair with walk)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "anim": "idle"
+  },
+  "uses": [
+    "ink-sketch/person"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

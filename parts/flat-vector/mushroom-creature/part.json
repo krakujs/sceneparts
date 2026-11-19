@@ -1,0 +1,72 @@
+{
+  "id": "flat-vector/mushroom-creature",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Mushroom creature",
+  "summary": "Walking mushroom with an orange cap and cream spots, a stem body with a face and leaf arms. For fairy-tale scenes.",
+  "tags": [
+    "mushroom",
+    "mushroom creature",
+    "walking mushroom",
+    "leaf arms",
+    "cute",
+    "fairy tale",
+    "creature",
+    "forest"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "cap colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "walk",
+      "values": [
+        "walk",
+        "wave",
+        "none"
+      ],
+      "note": "walk = little steps; wave = leaf waves; none = still"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "anim": "walk"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

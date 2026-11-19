@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/sandals",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Sandals",
+  "summary": "Pair of leather sandals seen from above: cork soles, wide buckled straps, heel strap; for summer and beach scenes.",
+  "tags": ["sandals", "shoes", "footwear", "summer", "beach", "leather", "holiday"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the heels rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the pair is about 460 px wide and 560 px tall"},
+    {"name": "color", "type": "colour", "default": "#8A5A3C", "note": "strap colour"},
+    {"name": "color2", "type": "colour", "default": "#E9D3A9", "note": "sole colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "wiggle", "bob"], "note": "wiggle = the pair rocks a little; bob = the pair lifts and settles"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

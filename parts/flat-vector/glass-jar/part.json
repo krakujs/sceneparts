@@ -1,0 +1,86 @@
+{
+  "id": "flat-vector/glass-jar",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Glass Jar",
+  "summary": "Empty mason-style glass storage jar with a metal lid; fill it with beans, pasta or cookies for pantry scenes.",
+  "tags": [
+    "glass jar",
+    "mason jar",
+    "storage jar",
+    "pantry",
+    "kitchen",
+    "preserves",
+    "jar"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "fill",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "beans",
+        "pasta",
+        "cookies"
+      ],
+      "note": "none = empty jar; beans, pasta or cookies = jar filled to the top"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "lid colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "fill": "pasta",
+    "color": "#E8503F"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

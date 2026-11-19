@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/palette",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Paint palette",
+  "summary": "Wooden kidney-shaped painter's palette with a thumb hole and blobs of paint; for art and painting scenes.",
+  "tags": ["palette", "paint palette", "painter", "paint", "art", "wood palette", "artist"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the palette rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the palette is about 480 px wide and 300 px tall"},
+    {"name": "wood", "type": "colour", "default": "#C9A46C", "note": "wood colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "wobble = the palette tilts gently"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "wood": "#C9A46C", "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

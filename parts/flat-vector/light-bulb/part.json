@@ -1,0 +1,75 @@
+{
+  "id": "flat-vector/light-bulb",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Light Bulb",
+  "summary": "Classic glass light bulb with a screw base; anim on lights the filament with a glow and rays. For bright ideas.",
+  "tags": [
+    "light bulb",
+    "bulb",
+    "idea",
+    "lightbulb",
+    "glow",
+    "lamp",
+    "bright idea"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the bulb stands on its tip on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size (about 400 px tall); use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFE9A3",
+      "note": "glass colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "on"
+      ],
+      "note": "on = lit with a glow and rays"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#FFE9A3",
+    "anim": "on"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "pixel-art/underwater",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Underwater",
+  "summary": "Pixel-art underwater scene: deep blue water, light rays, swaying seaweed, rocks and rising bubbles.",
+  "tags": [
+    "underwater",
+    "sea",
+    "ocean",
+    "bubbles",
+    "background",
+    "pixel",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "groundY",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line; stand characters on it"
+    },
+    {
+      "name": "seed",
+      "type": "number",
+      "default": 7,
+      "note": "varies clouds, skyline and details"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "bubbles",
+      "values": [
+        "bubbles",
+        "none"
+      ],
+      "note": "bubbles rise, seaweed sways and water animates from p.f"
+    }
+  ],
+  "example": {
+    "anim": "bubbles"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

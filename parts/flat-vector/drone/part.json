@@ -1,0 +1,74 @@
+{
+  "id": "flat-vector/drone",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Drone",
+  "summary": "Quadcopter drone with four rotors and a camera gimbal; anim hover bobs it and spins the rotors.",
+  "tags": [
+    "drone",
+    "quadcopter",
+    "quadrocopter",
+    "camera drone",
+    "flying",
+    "hover",
+    "rotor"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; floats, so x, y is the centre of the body (not the floor)"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900,
+      "note": "centre y of the body in the air; the drone does not rest on the floor"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the drone is about 580 px wide (hero size)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "body colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "hover",
+        "wobble",
+        "pop"
+      ],
+      "note": "hover = bobs gently and the rotors spin with a blur"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 800,
+    "s": 1,
+    "color": "#3D6FE0",
+    "anim": "hover"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

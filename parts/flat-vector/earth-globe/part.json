@@ -1,0 +1,15 @@
+{
+  "id": "flat-vector/earth-globe",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Earth globe",
+  "summary": "Blue planet with green land, white cloud wisps and a soft rim light; use for space, world or climate scenes.",
+  "tags": ["earth","globe","planet","world","space","blue planet","map"],
+  "params": [{"name":"x","type":"number","default":540,"note":"centre x"},{"name":"y","type":"number","default":960,"note":"centre y"},{"name":"s","type":"number","default":1,"note":"about 800 px across at s = 1"},{"name":"color","type":"colour","default":"#3D6FE0","note":"ocean colour"},{"name":"color2","type":"colour","default":"#4BB46A","note":"land colour"},{"name":"anim","type":"enum","default":"none","values":["none","spin","float"],"note":"spin = land and clouds drift across; float = gentle bob"}],
+  "example": {"x":540,"y":960,"s":1,"anim":"spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

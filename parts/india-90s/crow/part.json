@@ -1,0 +1,50 @@
+{
+  "id": "india-90s/crow",
+  "type": "character",
+  "style": "india-90s",
+  "name": "Crow",
+  "summary": "Black crow perched or flapping (flap 0..1); sits on antennas and walls.",
+  "tags": [
+    "90s",
+    "animal",
+    "bird",
+    "crow",
+    "india",
+    "nostalgia"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900
+    },
+    {
+      "name": "scale",
+      "type": "number",
+      "default": 1
+    },
+    {
+      "name": "flap",
+      "type": "number",
+      "default": 0,
+      "note": "0..1"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "scale": 1.6
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

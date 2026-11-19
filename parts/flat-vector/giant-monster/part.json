@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/giant-monster",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Giant monster",
+  "summary": "Huge stocky teal lizard monster with yellow back plates, small arms, glowing eyes and an open jaw. Side view.",
+  "tags": ["giant monster", "kaiju", "lizard", "monster", "city", "stomp", "roar", "reptile"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the feet"},
+    {"name": "y", "type": "number", "default": 1560, "note": "feet"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 920 px tall at 1"},
+    {"name": "color", "type": "colour", "default": "#1FA39A", "note": "body colour (teal-green)"},
+    {"name": "anim", "type": "enum", "default": "idle", "values": ["none", "idle", "roar"], "note": "idle = slow breathing; roar = the jaw opens slightly and the eyes flare, the jaw stays attached"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "face left"}
+  ],
+  "example": {"x": 540, "y": 1560, "anim": "idle"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

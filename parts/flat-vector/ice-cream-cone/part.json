@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/ice-cream-cone",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Ice cream cone",
+  "summary": "Waffle cone with one to three colourful ice cream scoops, for summer, dessert and sweets scenes.",
+  "tags": ["food", "ice cream", "dessert", "sweets", "cone", "summer", "treat"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the cone tip rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (~380 px tall); use about 0.2–0.3 next to a person" },
+    { "name": "scoops", "type": "number", "default": 2, "note": "number of scoops, 1 to 3" },
+    { "name": "color", "type": "colour", "default": "#F7B6CF", "note": "colour of the bottom scoop; the others vary (chocolate, mint, vanilla)" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down, wobble = small rock, pop = scale in with overshoot" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "scoops": 2 },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/battery-pack",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Battery Pack",
+  "summary": "Large rechargeable battery pack with a carrying handle and charge-level bars; for power, camping and charging scenes.",
+  "tags": ["battery", "battery pack", "power bank", "rechargeable", "power", "charge", "portable power"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the pack stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 380 px wide and 400 px tall (hero size); use about 0.4 next to a person"},
+    {"name": "color", "type": "colour", "default": "#1FA39A", "note": "case colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "handle colour"},
+    {"name": "level", "type": "number", "default": 3, "note": "charge bars lit, 0 to 4 (ignored when anim is charge)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "charge"], "note": "charge = the bars fill up one after another"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "level": 3, "anim": "charge"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

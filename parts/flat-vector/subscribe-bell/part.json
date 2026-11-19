@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/subscribe-bell",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Subscribe Bell",
+  "summary": "Flat notification bell with a red dot badge that swings to ring, for alerts and notifications.",
+  "tags": ["notification", "bell", "alert", "ring", "reminder", "notify", "sticker"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 400 px wide at s = 1" },
+    { "name": "color", "type": "colour", "default": "#FFC83D", "note": "bell colour; one darker shade is added for depth" },
+    { "name": "anim", "type": "enum", "default": "swing", "values": ["none", "swing", "shake"], "note": "idle motion from p.f; swing rings it from the top" },
+    { "name": "popIn", "type": "boolean", "default": true, "note": "springs in over the first 10 frames" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror left-right" }
+  ],
+  "example": { "x": 540, "y": 960, "anim": "swing" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

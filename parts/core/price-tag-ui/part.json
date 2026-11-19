@@ -1,0 +1,26 @@
+{
+  "id": "core/price-tag-ui",
+  "type": "text",
+  "style": "core",
+  "name": "Price tag UI",
+  "summary": "Modern rounded price label: optional struck-through old price and a big new price with a currency prefix.",
+  "tags": ["price", "price tag", "sale", "discount", "cost", "pricing", "label"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "price", "type": "number", "default": 19.99, "note": "new price, shown big" },
+    { "name": "was", "type": "number", "note": "old price, struck through above the new one; leave out to hide" },
+    { "name": "currency", "type": "string", "default": "$", "note": "prefix, e.g. $, €, £" },
+    { "name": "decimals", "type": "number", "default": 2, "note": "decimal places" },
+    { "name": "color", "type": "colour", "note": "tag colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "price": 19.99, "was": 29.99, "currency": "$" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

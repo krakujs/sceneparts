@@ -1,0 +1,27 @@
+{
+  "id": "core/pros-cons-list",
+  "type": "text",
+  "style": "core",
+  "name": "Pros cons list",
+  "summary": "Two-column card with green PROS (check marks) and red CONS (crosses); items appear one by one.",
+  "tags": ["pros and cons", "comparison", "list", "checklist", "advantages", "disadvantages", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "accent override; PROS and CONS keep green and red" },
+    { "name": "pros", "type": "string[]", "default": ["Cheap to start", "Easy to learn", "Fast results"], "note": "up to 6 items" },
+    { "name": "cons", "type": "string[]", "default": ["Limited support", "Costs more later", "Steep setup"], "note": "up to 6 items" }
+  ],
+  "example": {
+    "pros": ["Cheap to start", "Easy to learn", "Fast results"],
+    "cons": ["Limited support", "Costs more later", "Steep setup"]
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

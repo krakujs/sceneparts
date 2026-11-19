@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/skateboard",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Skateboard",
+  "summary": "Skateboard with a curved deck, two trucks and four wheels, in side view facing right; a small hero prop.",
+  "tags": ["skateboard", "skate", "skateboarding", "deck", "wheels", "street", "prop"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "ground line: the wheels touch y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 520 px wide (hero size)" },
+    { "name": "color", "type": "colour", "default": "#FF8A3D", "note": "deck colour" },
+    { "name": "color2", "type": "colour", "default": "#FFC83D", "note": "wheel colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "drive", "bob", "pop"], "note": "drive = wheels spin and the board bobs (also on when vx is not 0)" },
+    { "name": "vx", "type": "number", "default": 0, "note": "horizontal speed in px per frame (negative = left; set flip too)" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror so the board faces left" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "anim": "drive" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

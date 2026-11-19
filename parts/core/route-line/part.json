@@ -1,0 +1,80 @@
+{
+  "id": "core/route-line",
+  "type": "effect",
+  "style": "core",
+  "name": "Route line",
+  "summary": "Dashed curved route from A to B that draws itself, with a start dot, an end flag and a dot travelling along it.",
+  "tags": [
+    "route",
+    "path",
+    "journey",
+    "map",
+    "trip",
+    "line",
+    "travel"
+  ],
+  "params": [
+    {
+      "name": "ax",
+      "type": "number",
+      "default": 250,
+      "note": "start x"
+    },
+    {
+      "name": "ay",
+      "type": "number",
+      "default": 1250,
+      "note": "start y"
+    },
+    {
+      "name": "bx",
+      "type": "number",
+      "default": 830,
+      "note": "end x"
+    },
+    {
+      "name": "by",
+      "type": "number",
+      "default": 650,
+      "note": "end y"
+    },
+    {
+      "name": "bend",
+      "type": "number",
+      "default": 0.35,
+      "note": "how far it bows; 0 straight, negative flips the side"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "at",
+      "type": "number",
+      "default": 0,
+      "note": "start as a fraction of the shot"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "note": "route colour; default the style accent"
+    }
+  ],
+  "example": {
+    "ax": 250,
+    "ay": 1250,
+    "bx": 830,
+    "by": 650,
+    "bend": 0.35
+  },
+  "layer": "screen",
+  "uses": [
+    "core/stat-card"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

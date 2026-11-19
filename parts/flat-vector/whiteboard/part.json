@@ -1,0 +1,72 @@
+{
+  "id": "flat-vector/whiteboard",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Whiteboard",
+  "summary": "Mobile whiteboard on a stand with wheels and marker doodles of boxes and arrows, no words; anim draw.",
+  "tags": [
+    "whiteboard",
+    "dry erase board",
+    "office board",
+    "meeting board",
+    "flowchart",
+    "brainstorm",
+    "wheeled board"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "the stand rests on y (floor); floor scale 1 m ≈ 560 px"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "floor scale: at s = 1 about 670 px wide and 920 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#C4CBD8",
+      "note": "frame colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "draw"
+      ],
+      "note": "draw = the boxes and arrows are sketched one by one"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#C4CBD8",
+    "anim": "draw"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

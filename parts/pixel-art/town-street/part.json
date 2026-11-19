@@ -1,0 +1,63 @@
+{
+  "id": "pixel-art/town-street",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Town street",
+  "summary": "Pixel-art town street: shop fronts with striped awnings, glowing lamp posts and a pavement. For city scenes.",
+  "tags": [
+    "street",
+    "town",
+    "shops",
+    "city",
+    "background",
+    "pixel",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "dusk",
+        "night"
+      ],
+      "note": "sky colours and light"
+    },
+    {
+      "name": "groundY",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line; stand characters on it"
+    },
+    {
+      "name": "seed",
+      "type": "number",
+      "default": 3,
+      "note": "varies clouds, skyline and details"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "lamps",
+      "values": [
+        "lamps",
+        "none"
+      ],
+      "note": "street lamps glow and flicker from p.f"
+    }
+  ],
+  "example": {
+    "time": "dusk"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

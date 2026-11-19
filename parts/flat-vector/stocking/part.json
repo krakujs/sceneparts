@@ -1,0 +1,77 @@
+{
+  "id": "flat-vector/stocking",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Christmas stocking",
+  "summary": "Red Christmas stocking with a white knitted cuff and a hanging loop; use for fireplace and holiday scenes.",
+  "tags": [
+    "stocking",
+    "christmas stocking",
+    "xmas stocking",
+    "santa",
+    "christmas",
+    "gift",
+    "hanging"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 300,
+      "note": "the top of the hanging loop: the stocking hangs from y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 380 px wide and 600 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "stocking colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "cuff colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = the stocking swings gently from its loop"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 300,
+    "s": 1,
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

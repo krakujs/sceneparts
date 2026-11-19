@@ -1,0 +1,138 @@
+{
+  "id": "flat-vector/athlete",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Athlete",
+  "summary": "Flat vector athlete in a blue tank top, teal shorts and headband, mid-run; for sport, fitness and exercise explainers.",
+  "tags": [
+    "athlete",
+    "sport",
+    "sports",
+    "running",
+    "runner",
+    "fitness",
+    "exercise",
+    "person"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "run",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "wave",
+        "point",
+        "think",
+        "cheer",
+        "talk",
+        "sit",
+        "hold"
+      ]
+    },
+    {
+      "name": "expression",
+      "type": "enum",
+      "default": "open",
+      "values": [
+        "smile",
+        "neutral",
+        "open",
+        "surprised",
+        "sad",
+        "angry",
+        "laugh"
+      ]
+    },
+    {
+      "name": "skin",
+      "type": "string",
+      "default": "dark",
+      "note": "light | fair | tan | medium | brown | dark, or a hex colour"
+    },
+    {
+      "name": "hair",
+      "type": "enum",
+      "default": "ponytail",
+      "values": [
+        "short",
+        "buzz",
+        "side",
+        "spiky",
+        "curly",
+        "afro",
+        "long",
+        "ponytail",
+        "bun",
+        "bob",
+        "braid",
+        "none"
+      ]
+    },
+    {
+      "name": "hairColor",
+      "type": "string",
+      "default": "black",
+      "note": "black | brown | auburn | blonde | grey | white | red | blue | pink, or hex"
+    },
+    {
+      "name": "shirtColor",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "shirt under a blazer or coat"
+    },
+    {
+      "name": "seat",
+      "type": "boolean",
+      "default": true,
+      "note": "draw a bench when pose is sit"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "run",
+    "skin": "dark",
+    "hair": "ponytail",
+    "hairColor": "black"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

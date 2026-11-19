@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/bass-guitar",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bass guitar",
+  "summary": "Solid-body bass guitar with a longer neck and four strings, standing upright on its base; for band and groove scenes.",
+  "tags": ["bass guitar", "bass", "electric bass", "band", "groove", "music", "strings"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the base rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; room-scale: at s = 1 about 640 px tall (longer neck), 260 px wide"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "body colour"},
+    {"name": "accent", "type": "colour", "default": "#1F2433", "note": "neck and pickguard colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "strum", "bob", "wobble"], "note": "strum = the four strings vibrate in turn"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3D6FE0", "anim": "strum"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

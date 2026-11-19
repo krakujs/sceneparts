@@ -1,0 +1,27 @@
+{
+  "id": "core/follower-counter",
+  "type": "text",
+  "style": "core",
+  "name": "Follower counter",
+  "summary": "Person icon with a follower count that counts up, and a green +N bump floating up when it grows.",
+  "tags": ["followers", "follower count", "subscribers", "audience", "counter", "growth", "person"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "value", "type": "number", "default": 12400, "note": "final count" },
+    { "name": "from", "type": "number", "default": 0, "note": "count starts from" },
+    { "name": "gain", "type": "number", "default": 128, "note": "the +N shown as the bump" },
+    { "name": "short", "type": "boolean", "default": true, "note": "1.2K / 3.4M" },
+    { "name": "color", "type": "colour", "note": "icon colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "len", "type": "number", "default": 30, "note": "count-up length in frames" }
+  ],
+  "example": { "value": 12400, "gain": 128, "short": true },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

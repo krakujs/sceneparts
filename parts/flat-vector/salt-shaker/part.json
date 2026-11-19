@@ -1,0 +1,31 @@
+{
+  "id": "flat-vector/salt-shaker",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Salt shaker",
+  "summary": "Glass salt shaker full of white salt with a silver dome cap and holes; for dining table and kitchen scenes.",
+  "tags": [
+    "salt shaker",
+    "salt",
+    "kitchen",
+    "table",
+    "seasoning",
+    "glass",
+    "food"
+  ],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the shaker stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the shaker is hero size (~320 px wide); use about 0.2–0.3 next to a person"},
+    {"name": "glassColor", "type": "colour", "default": "#BFE0F2", "note": "glass tint"},
+    {"name": "capColor", "type": "colour", "default": "#C9D1DC", "note": "silver cap colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "pop"], "note": "bob = gentle up and down, pop = scale in with overshoot"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

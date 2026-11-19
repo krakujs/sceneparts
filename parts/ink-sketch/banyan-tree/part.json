@@ -1,0 +1,81 @@
+{
+  "id": "ink-sketch/banyan-tree",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Banyan tree",
+  "summary": "Ink sketch very wide dense banyan crown with many hanging aerial roots that form extra trunks.",
+  "tags": [
+    "banyan tree",
+    "banyan",
+    "fig tree",
+    "aerial roots",
+    "tropical",
+    "jungle",
+    "tree",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the main trunk"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the trunk and extra trunks stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 900 px wide and 1080 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#348A4F",
+      "note": "canopy colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "trunk and aerial root colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = canopy moves gently in the breeze"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/banyan-tree",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

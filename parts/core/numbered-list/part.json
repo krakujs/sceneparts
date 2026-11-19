@@ -1,0 +1,25 @@
+{
+  "id": "core/numbered-list",
+  "type": "text",
+  "style": "core",
+  "name": "Numbered list",
+  "summary": "Steps or points in cards with big round number badges (1, 2, 3...) that slide in one by one.",
+  "tags": ["numbered list", "steps", "ranking", "points", "list", "badges", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "badge colour; default the style's accent" },
+    { "name": "items", "type": "string[]", "default": ["Set a clear goal", "Gather the facts", "Make a plan", "Start small and learn"], "note": "up to 6 items" }
+  ],
+  "example": {
+    "items": ["Set a clear goal", "Gather the facts", "Make a plan", "Start small and learn"]
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/party-hat",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Party hat",
+  "summary": "Striped paper cone party hat with a pompom on top and an elastic band; anim pop or wobble.",
+  "tags": ["party hat", "cone hat", "birthday hat", "celebration", "party", "pompom", "hat"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the hat"},
+    {"name": "y", "type": "number", "default": 1000, "note": "y of the open rim (bottom of the hat); the hat rises about 450 px above it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the hat is about 300 px wide and 470 px tall; use about 0.3 on a head"},
+    {"name": "color", "type": "colour", "default": "#F27BA6", "note": "first stripe colour"},
+    {"name": "color2", "type": "colour", "default": "#FFC83D", "note": "second stripe colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "wobble"], "note": "pop = scales in with overshoot; wobble = small tilt back and forth"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1000, "s": 1, "anim": "wobble"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

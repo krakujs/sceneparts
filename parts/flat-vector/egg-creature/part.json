@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/egg-creature",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Egg creature",
+  "summary": "Egg-shaped creature wearing a cracked eggshell hat, with little legs and arms. For cute friendly creature scenes.",
+  "tags": [
+    "egg",
+    "egg creature",
+    "cracked egg",
+    "eggshell",
+    "cute",
+    "creature",
+    "hatching",
+    "cartoon"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFF4D6",
+      "note": "egg colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "wiggle",
+      "values": [
+        "wiggle",
+        "none"
+      ],
+      "note": "wiggle = rocks and waves; none = still"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "anim": "wiggle"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

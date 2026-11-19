@@ -1,0 +1,83 @@
+{
+  "id": "ink-sketch/orchid",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Orchid",
+  "summary": "Ink sketch potted orchid with an arching stem of purple or white blooms and broad leaves; use for homes.",
+  "tags": [
+    "orchid",
+    "flower",
+    "potted plant",
+    "purple",
+    "arching",
+    "indoor plant",
+    "bloom",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the pot rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 620 px tall, use about 0.6 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#7B5CD6",
+      "note": "bloom colour (try #FFFFFF for white)"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#C9704E",
+      "note": "pot colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = the arching stem moves gently"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "color": "#7B5CD6",
+    "color2": "#C9704E",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/orchid",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

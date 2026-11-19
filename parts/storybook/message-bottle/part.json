@@ -1,0 +1,22 @@
+{
+  "id": "storybook/message-bottle",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Message in a bottle",
+  "summary": "Green glass bottle with a cork and a rolled note inside, bobbing on a small wave. For castaway or sea adventure scenes.",
+  "tags": ["message in a bottle", "bottle", "sea", "castaway", "note", "wave", "island", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "bottom centre, on the water" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~480 px tall at 1" },
+    { "name": "glass", "type": "colour", "default": "#6E9E6B", "note": "glass colour" },
+    { "name": "bob", "type": "boolean", "default": true, "note": "bobs on the wave" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1500, "s": 1.2 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "storybook/telephone-operator",
+  "type": "character",
+  "style": "storybook",
+  "name": "Telephone operator",
+  "summary": "1920s telephone operator in a headset, holding a candlestick telephone; for switchboard, office or phone scenes.",
+  "tags": [
+    "telephone",
+    "operator",
+    "switchboard",
+    "headset",
+    "1920s",
+    "office",
+    "phone",
+    "job"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "ringing",
+      "type": "boolean",
+      "default": false,
+      "note": "receiver shakes as if ringing"
+    },
+    {
+      "name": "blouse",
+      "type": "colour",
+      "default": "#F4EAD5",
+      "note": "blouse colour"
+    },
+    {
+      "name": "skirt",
+      "type": "colour",
+      "default": "#2E7D7A",
+      "note": "skirt colour"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#F1CDAA"
+    },
+    {
+      "name": "hairColour",
+      "type": "colour",
+      "default": "#5C3A26"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

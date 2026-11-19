@@ -1,0 +1,24 @@
+{
+  "id": "core/tip-banner",
+  "type": "text",
+  "style": "core",
+  "name": "Tip banner",
+  "summary": "Friendly green or accent banner with a lightbulb icon and a TIP: label followed by a short sentence.",
+  "tags": ["tip", "hint", "advice", "banner", "lightbulb", "pro tip", "friendly"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "label", "type": "string", "default": "TIP:", "note": "small chip before the text" },
+    { "name": "text", "type": "string", "default": "Save the receipt until you are sure the order is right.", "note": "up to three lines" },
+    { "name": "color", "type": "colour", "note": "banner colour; default a friendly green" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "label": "TIP:", "text": "Save the receipt until you are sure the order is right." },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

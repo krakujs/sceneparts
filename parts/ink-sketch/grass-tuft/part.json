@@ -1,0 +1,76 @@
+{
+  "id": "ink-sketch/grass-tuft",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Grass tuft",
+  "summary": "Ink sketch small clump of pointed grass blades about 250 px tall; use to dress ground, paths and meadow edges.",
+  "tags": [
+    "grass",
+    "tuft",
+    "clump",
+    "blades",
+    "meadow",
+    "ground cover",
+    "plant",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the clump rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 260 px tall, about 0.8 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "blade colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = blades bend in the wind"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "color": "#4BB46A",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/grass-tuft",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

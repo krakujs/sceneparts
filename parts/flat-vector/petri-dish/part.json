@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/petri-dish",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Petri dish",
+  "summary": "Shallow glass petri dish with its lid tilted beside it and coloured colonies; use for biology or microbe scenes.",
+  "tags": [
+    "petri dish",
+    "lab",
+    "biology",
+    "microbe",
+    "colony",
+    "science",
+    "culture"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 about 500 px wide; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#A8D85A",
+      "note": "colony colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#F27BA6",
+      "note": "second colony colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "grow"
+      ],
+      "note": "grow = colonies swell and settle in turn"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#A8D85A",
+    "color2": "#F27BA6",
+    "anim": "grow"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

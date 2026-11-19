@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/bulldozer",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bulldozer",
+  "summary": "Tracked bulldozer with a wide front blade in side view; room-scale earthmoving machine for construction scenes.",
+  "tags": [
+    "bulldozer",
+    "dozer",
+    "construction",
+    "earthmoving",
+    "blade",
+    "tracks",
+    "building site",
+    "digger"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the tracks stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: about 720 px wide and 770 px tall at s = 1; use about 0.6 for a smaller scene"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "body and cab colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "blade, arms and exhaust colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "push"
+      ],
+      "note": "push = the dozer drives forward and back"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the blade then faces left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 0.9,
+    "anim": "push"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

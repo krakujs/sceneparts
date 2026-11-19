@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/golf-ball",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Golf ball",
+  "summary": "White dimpled golf ball, optionally resting on a wooden tee; can bounce or spin. A small hero prop.",
+  "tags": ["golf ball", "golf", "dimples", "ball", "tee", "white ball", "sport"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the ball (or tee) rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 220 px across, with the tee about 330 px tall (hero size)"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "ball colour"},
+    {"name": "tee", "type": "boolean", "default": true, "note": "true = the ball sits on a wooden tee; false = the ball sits on the ground"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bounce", "spin"], "note": "bounce = hops on the spot; spin = turns, dimples and all"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the ball"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "tee": true, "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

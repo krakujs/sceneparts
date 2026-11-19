@@ -1,0 +1,22 @@
+{
+  "id": "core/camera-flash",
+  "type": "effect",
+  "style": "core",
+  "name": "Camera flash",
+  "summary": "White camera-flash pop with a bloom and four-point glare star at a chosen point, fading out.",
+  "tags": ["camera flash", "flash", "glare", "bloom", "paparazzi", "pop"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre of the glare in px" },
+    { "name": "y", "type": "number", "default": 800, "note": "centre of the glare in px" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "len", "type": "number", "default": 26, "note": "frames the flash takes to fade out" }
+  ],
+  "example": { "x": 540, "y": 800, "len": 26 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

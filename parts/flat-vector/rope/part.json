@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/rope",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Rope",
+  "summary": "Coiled thick rope in side view; for camping, sailing, climbing and tow or rescue scenes.",
+  "tags": ["rope", "coil", "cord", "lasso", "camping", "climbing", "sailing"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the coil rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the coil is hero size (about 420 px wide); use about 0.25 next to a person"},
+    {"name": "color", "type": "colour", "default": "#D9A441", "note": "rope colour"},
+    {"name": "color2", "type": "colour", "default": "#A87A2A", "note": "shadow between the turns"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion of the whole coil"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#D9A441"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/tears",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Tears",
+  "summary": "Pair of big blue tear drops falling in turn: use for crying, sadness or heartache.",
+  "tags": [
+    "tears",
+    "crying",
+    "sad",
+    "cry",
+    "drop",
+    "upset",
+    "emotion"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 390 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#4FA3E8",
+      "note": "drop colour; a darker edge is added"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "fall",
+      "values": [
+        "none",
+        "fall",
+        "bob"
+      ],
+      "note": "fall = drops fall in turn and fade, bob = gentle float"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "anim": "fall"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/joystick",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Joystick",
+  "summary": "Retro desktop joystick with a round base, stick and fire button; use for old-school gaming or 80s arcade scenes.",
+  "tags": ["joystick", "retro joystick", "arcade stick", "fire button", "gaming", "old games", "control stick"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the base rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size, about 480 px wide at s = 1; about 0.4 on a desk next to a person"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "base colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "fire"], "note": "fire = the red button presses down and the stick jiggles"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#5D6578", "anim": "fire"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

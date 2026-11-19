@@ -1,0 +1,81 @@
+{
+  "id": "storybook/whaleman",
+  "type": "character",
+  "style": "storybook",
+  "name": "Whaleman",
+  "summary": "Whaling sailor in oilskin and knit cap, holding an upright harpoon with a coiled rope.",
+  "tags": [
+    "whaleman",
+    "whaler",
+    "harpoon",
+    "sailor",
+    "oilskin",
+    "sea",
+    "nautical",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#C98A2B",
+      "note": "oilskin colour"
+    },
+    {
+      "name": "capColour",
+      "type": "colour",
+      "default": "#B5452F",
+      "note": "knit cap colour"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#C98E64"
+    },
+    {
+      "name": "hairColour",
+      "type": "colour",
+      "default": "#8A8F99"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "flat-vector/pressure-cooker",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Pressure Cooker",
+  "summary": "Indian-style pressure cooker with a long side handle and whistle weight; anim whistle jiggles it and puffs steam.",
+  "tags": [
+    "pressure cooker",
+    "whistle",
+    "cooker",
+    "kitchen",
+    "steam",
+    "indian kitchen",
+    "cookware"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#C9D1DC",
+      "note": "body colour (steel by default)"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "whistle",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "whistle",
+    "color": "#C9D1DC"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,84 @@
+{
+  "id": "flat-vector/towel",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Towel",
+  "summary": "Stack of folded towels, or a towel hanging over a freestanding rail; for bathroom and spa scenes.",
+  "tags": [
+    "towel",
+    "towels",
+    "bath towel",
+    "folded towel",
+    "towel rail",
+    "bathroom",
+    "laundry"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "variant",
+      "type": "enum",
+      "default": "folded",
+      "values": [
+        "folded",
+        "hanging"
+      ],
+      "note": "folded = stack of three towels; hanging = towel over a rail"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1FA39A",
+      "note": "towel colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "variant": "folded",
+    "color": "#1FA39A"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

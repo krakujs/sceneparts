@@ -1,0 +1,20 @@
+{
+  "id": "flat-vector/rainbow",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Rainbow",
+  "summary": "Arc of six colour bands with a small cloud at each end, for after-rain and sunny-sky scenes. Anim: grow.",
+  "tags": ["rainbow", "arc", "colours", "after rain", "sky", "weather", "colourful"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 700, "note": "y of the arc's base line; the top sits about 430 px above it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 1000 px wide"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "grow"], "note": "grow = the arc draws in from the left"}
+  ],
+  "example": {"x": 540, "y": 700, "s": 1, "anim": "grow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/umbrella-stand",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Umbrella Stand",
+  "summary": "Cylinder hall stand holding two folded umbrellas with cane handles; for entrance hall, porch and rainy-day scenes.",
+  "tags": ["umbrella stand", "umbrella", "hall stand", "entryway", "hallway", "rain", "furniture"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the stand rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 matches a flat-vector person at s = 1 (stand about 360 px tall with umbrellas)"},
+    {"name": "color", "type": "colour", "default": "#1FA39A", "note": "stand colour"},
+    {"name": "color2", "type": "colour", "default": "#E8503F", "note": "first umbrella colour (second is blue)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion only; driven by the frame"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#1FA39A", "color2": "#E8503F"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

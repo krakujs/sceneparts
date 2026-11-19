@@ -1,0 +1,26 @@
+{
+  "id": "core/loading-bar-fun",
+  "type": "effect",
+  "style": "core",
+  "name": "Loading bar fun",
+  "summary": "Chunky striped loading bar with moving stripes, a counting percentage and a playful label that changes.",
+  "tags": ["loading", "progress bar", "striped", "fun", "percent", "meme", "animation"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; bar is 880 px wide at s = 1" },
+    { "name": "w", "type": "number", "default": 880, "note": "bar width" },
+    { "name": "labels", "type": "string", "default": "loading brain...|warming up the snacks|almost there", "note": "playful labels separated by |, shown in turn as the bar fills" },
+    { "name": "len", "type": "number", "default": 90, "note": "frames for the bar to fill from 0 to 100%" },
+    { "name": "color", "type": "colour", "note": "bar colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "labels": "loading brain...|warming up the snacks|almost there", "len": 90 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

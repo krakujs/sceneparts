@@ -1,0 +1,86 @@
+{
+  "id": "ink-sketch/stool",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Stool",
+  "summary": "Ink sketch round-top wooden stool with three or four legs, in low or bar height. For kitchens, bars and workshops.",
+  "tags": [
+    "stool",
+    "bar stool",
+    "wooden stool",
+    "seat",
+    "kitchen",
+    "furniture",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 matches a ink-sketch person at s = 1"
+    },
+    {
+      "name": "variant",
+      "type": "enum",
+      "default": "low",
+      "values": [
+        "low",
+        "bar"
+      ],
+      "note": "low = kitchen stool; bar = tall bar stool"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#A8703F",
+      "note": "wood colour of the round seat"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "variant": "low",
+    "color": "#A8703F"
+  },
+  "uses": [
+    "flat-vector/stool",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

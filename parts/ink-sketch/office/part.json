@@ -1,0 +1,94 @@
+{
+  "id": "ink-sketch/office",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Office",
+  "summary": "Ink sketch office background: desk with computer, filing cabinet, potted plant, city-view window and wall clock.",
+  "tags": [
+    "office",
+    "desk",
+    "computer",
+    "workplace",
+    "work",
+    "business",
+    "background",
+    "interior",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light through the Window and room tint"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "seen through the Window"
+    },
+    {
+      "name": "view",
+      "type": "enum",
+      "default": "city",
+      "values": [
+        "city",
+        "trees",
+        "sky"
+      ],
+      "note": "what the Window looks out on"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#EEF1F6",
+      "note": "wall colour"
+    },
+    {
+      "name": "desk",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "desk colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds drift, clock turns, plant sways and weather animates"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear",
+    "view": "city"
+  },
+  "uses": [
+    "flat-vector/office",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

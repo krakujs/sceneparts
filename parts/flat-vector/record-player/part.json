@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/record-player",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Record Player",
+  "summary": "Turntable with platter, record and tone arm; the record spins on request. Use for vinyl, music or retro scenes.",
+  "tags": ["record player", "turntable", "gramophone", "vinyl player", "stereo", "music", "vinyl"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the plinth rests on y; set y to a table top to place it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 640 px wide at s = 1; about 0.4 on a table next to a person"},
+    {"name": "color", "type": "colour", "default": "#8A5A3C", "note": "plinth colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "spin"], "note": "spin = the record turns on the platter and the arm sways"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (tone arm moves to the left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#8A5A3C", "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

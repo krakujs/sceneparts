@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/ai-core",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "AI core",
+  "summary": "Server-rack pillar with a glowing segmented ring eye and blinking data lights; for AI and computer scenes.",
+  "tags": ["ai", "ai core", "server", "computer", "data", "tech", "sci-fi", "machine"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor point under the plinth"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; ~1000 px tall at 1"},
+    {"name": "color", "type": "colour", "default": "#2ED8C3", "note": "eye and light colour (teal)"},
+    {"name": "anim", "type": "enum", "default": "pulse", "values": ["pulse", "none"], "note": "pulse = the eye turns and the lights blink"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "color": "#2ED8C3", "anim": "pulse"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

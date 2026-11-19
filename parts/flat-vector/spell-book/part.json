@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/spell-book",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Spell book",
+  "summary": "Thick old leather spell book, closed or open with glowing pages and floating runes; for magic and library scenes.",
+  "tags": ["spell book", "spellbook", "magic book", "grimoire", "tome", "book", "magic", "runes"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom of the book rests on y"},
+    {"name": "s", "type": "number", "default": 1.4, "note": "scale; about 460 px wide at s = 1"},
+    {"name": "color", "type": "colour", "default": "#5E3B26", "note": "leather cover colour"},
+    {"name": "state", "type": "enum", "default": "open", "values": ["open", "closed"], "note": "open = pages spread with glowing runes; closed = shut and clasped"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "float"], "note": "float = runes drift up and fade out in a loop (open only)"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1.4, "state": "open", "anim": "float"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

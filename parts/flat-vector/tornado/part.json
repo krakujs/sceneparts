@@ -1,0 +1,20 @@
+{
+  "id": "flat-vector/tornado",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Tornado",
+  "summary": "Grey funnel of swirling bands narrowing to the ground, with debris, for storm and disaster scenes. Anim: spin.",
+  "tags": ["tornado", "twister", "funnel", "storm", "wind", "disaster", "cyclone"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 800, "note": "y where the funnel touches the ground; about 500 px tall, cloud at the top"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 460 px wide at the top"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "spin"], "note": "spin = bands sway and debris orbits the base"}
+  ],
+  "example": {"x": 540, "y": 800, "s": 1, "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

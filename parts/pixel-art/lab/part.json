@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/lab",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Lab",
+  "summary": "Pixel-art science lab: benches with bubbling flasks, shelves, a monitor and test tubes; for experiment scenes.",
+  "tags": [
+    "lab",
+    "laboratory",
+    "science",
+    "flask",
+    "chemistry",
+    "background",
+    "indoor",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "bubble",
+      "values": [
+        "bubble",
+        "none"
+      ],
+      "note": "the flasks bubble and the indicator blinks from p.f"
+    }
+  ],
+  "example": {
+    "anim": "bubble"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

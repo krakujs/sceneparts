@@ -1,0 +1,28 @@
+{
+  "id": "core/shine-sweep",
+  "type": "effect",
+  "style": "core",
+  "name": "Shine sweep",
+  "summary": "Diagonal white light band that sweeps across a box and repeats; for glossy cards, badges and titles.",
+  "tags": ["shine", "sweep", "gloss", "light", "glint", "shimmer"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "box centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "box centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "w", "type": "number", "default": 600, "note": "box width in px" },
+    { "name": "h", "type": "number", "default": 400, "note": "box height in px" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "every", "type": "number", "default": 48, "note": "frames between sweeps" },
+    { "name": "dur", "type": "number", "default": 36, "note": "frames one sweep takes" },
+    { "name": "delay", "type": "number", "default": 6, "note": "frames before the first sweep" },
+    { "name": "seed", "type": "string", "default": "a", "note": "change when placing two sweeps at the same x, y" }
+  ],
+  "example": { "x": 540, "y": 900, "w": 640, "h": 360 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

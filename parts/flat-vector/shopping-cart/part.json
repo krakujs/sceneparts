@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/shopping-cart",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Shopping cart",
+  "summary": "Metal supermarket trolley with wheels and a few groceries; anim roll spins the wheels as it is pushed.",
+  "tags": ["shopping cart", "trolley", "supermarket", "groceries", "shopping", "store", "retail"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor point under the wheels (1 m ~ 560 px)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 0.75 m wide and 1.2 m tall; use about 0.5 next to a person"},
+    {"name": "color", "type": "colour", "default": "#DDE2EA", "note": "metal colour of the basket"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "roll"], "note": "roll = wheels spin and the load bobs slightly"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#DDE2EA", "anim": "roll"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

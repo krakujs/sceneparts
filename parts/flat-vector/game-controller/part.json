@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/game-controller",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Game Controller",
+  "summary": "Generic gamepad with d-pad, face buttons and two sticks; use for gaming, playing or controller scenes.",
+  "tags": ["game controller", "gamepad", "controller", "joypad", "gaming", "video game", "playing"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the grips rest on y; set y to a table or hand height to place it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size, about 500 px wide at s = 1; use about 0.4 in hands"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "body colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "rumble"], "note": "rumble = quick shake with motion lines"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#5D6578", "anim": "rumble"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

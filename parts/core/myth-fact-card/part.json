@@ -1,0 +1,25 @@
+{
+  "id": "core/myth-fact-card",
+  "type": "text",
+  "style": "core",
+  "name": "Myth fact card",
+  "summary": "Split card: MYTH struck through with a red cross on top, then FACT with a green tick revealed below.",
+  "tags": ["myth", "fact", "myth busting", "split card", "misconception", "explainer", "text"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; card is 860×640 at s = 1" },
+    { "name": "myth", "type": "string", "default": "Goldfish only have a three second memory", "note": "the myth; up to three lines" },
+    { "name": "fact", "type": "string", "default": "Goldfish can remember things for months", "note": "the fact; up to three lines" },
+    { "name": "factAt", "type": "number", "default": 30, "note": "frames after the start when the fact appears" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "myth": "Goldfish only have a three second memory", "fact": "Goldfish can remember things for months", "factAt": 30 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

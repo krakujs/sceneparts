@@ -1,0 +1,19 @@
+{
+  "id": "pixel-art/pipes-level",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Pipes level",
+  "summary": "Pixel-art industrial level: big teal and steel pipes with elbows, valves, steam puffs and a metal floor.",
+  "tags": ["pipes", "industrial", "factory", "metal", "level", "background", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "floorY", "type": "number", "default": 1480, "note": "where the metal wall meets the floor; stand characters a little below it"},
+    {"name": "anim", "type": "enum", "default": "steam", "values": ["steam", "none"], "note": "steam puffs rise from the valves from p.f"}
+  ],
+  "example": {"anim": "steam"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "flat-vector/vase-with-flowers",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Vase with Flowers",
+  "summary": "Ceramic vase with a bunch of simple round flowers and leaves; anim sway rocks the bouquet. For tables and rooms.",
+  "tags": [
+    "vase",
+    "flowers",
+    "bouquet",
+    "flower vase",
+    "table decoration",
+    "ceramic",
+    "floral"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the vase base rests on y; set y to a table top to place it"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size (about 560 px tall); use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "vase colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = bouquet rocks gently from the vase"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3D6FE0",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

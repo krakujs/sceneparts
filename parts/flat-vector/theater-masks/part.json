@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/theater-masks",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Theatre masks",
+  "summary": "Pair of generic comedy and tragedy theatre masks side by side, original design; for drama and stage scenes.",
+  "tags": ["theatre masks", "theater masks", "comedy", "tragedy", "drama", "stage", "acting"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the pair"},
+    {"name": "y", "type": "number", "default": 1000, "note": "centre y of the pair"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the pair is about 620 px wide and 440 px tall"},
+    {"name": "mask", "type": "colour", "default": "#FFFFFF", "note": "mask face colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = the masks rise and fall alternately, like a pair talking"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the comedy mask then sits on the right)"}
+  ],
+  "example": {"x": 540, "y": 1000, "s": 1, "mask": "#FFFFFF", "anim": "bob"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

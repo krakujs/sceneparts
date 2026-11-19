@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/taco",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flat taco",
+  "summary": "Flat taco: folded yellow corn shell with meat, lettuce, tomato and cheese. For Mexican food or street food scenes.",
+  "tags": ["food", "taco", "mexican food", "street food", "snack", "meal", "lunch"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the taco rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (~360 px wide); use about 0.2 to 0.3 next to a person" },
+    { "name": "shellColor", "type": "colour", "default": "#F5C542", "note": "corn shell colour" },
+    { "name": "meatColor", "type": "colour", "default": "#8A4B2A", "note": "meat filling colour" },
+    { "name": "cheese", "type": "boolean", "default": true, "note": "show cheese bits" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down, wobble = rock on its base, pop = scale in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1 },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

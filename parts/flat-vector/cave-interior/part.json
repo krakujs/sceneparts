@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/cave-interior",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Cave interior",
+  "summary": "Full-frame flat cave background: rocky walls, stalactites, stalagmites, glowing crystals, cave-mouth light.",
+  "tags": ["cave", "cavern", "rock", "crystal", "underground", "stalactite", "background", "adventure"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "night darkens the rock; the light from the cave mouth still shows" },
+    { "name": "rock", "type": "colour", "default": "#6E6A78", "note": "rock colour" },
+    { "name": "crystal", "type": "colour", "default": "#5BE0F0", "note": "crystal glow colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = crystals and cave-mouth light pulse from p.f" }
+  ],
+  "example": { "time": "day" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

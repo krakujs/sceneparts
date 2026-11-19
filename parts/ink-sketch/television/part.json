@@ -1,0 +1,85 @@
+{
+  "id": "ink-sketch/television",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Television",
+  "summary": "Ink sketch flat-screen TV on a small foot stand with a plain coloured screen.",
+  "tags": [
+    "television",
+    "tv",
+    "flat screen",
+    "screen",
+    "living room",
+    "watching tv",
+    "appliance",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the foot stand rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the TV is about 600 px wide (room scale)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3A4157",
+      "note": "bezel colour"
+    },
+    {
+      "name": "screen",
+      "type": "colour",
+      "default": "#8EC5E8",
+      "note": "screen colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "glow"
+      ],
+      "note": "glow = screen flickers softly with a faint halo"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3A4157",
+    "screen": "#8EC5E8",
+    "anim": "glow"
+  },
+  "uses": [
+    "flat-vector/television",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

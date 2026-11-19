@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/pinata-donkey",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Pinata donkey",
+  "summary": "Colourful paper pinata shaped as a stylised donkey, with fringed crepe-paper stripes, hanging from a rope. Anim swing.",
+  "tags": ["pinata", "pinata donkey", "donkey", "party", "birthday", "crepe paper", "fiesta", "rope"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "x of the rope's top"},
+    {"name": "y", "type": "number", "default": 220, "note": "y of the rope's top (where it is tied); the donkey hangs about 400 px below"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the donkey is about 560 px wide and 580 px tall with the rope"},
+    {"name": "color", "type": "colour", "default": "#F27BA6", "note": "head colour; the body stripes are other bright colours"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "swing"], "note": "swing = the piñata swings gently from the rope"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror: the head faces left"}
+  ],
+  "example": {"x": 540, "y": 220, "s": 1, "anim": "swing"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

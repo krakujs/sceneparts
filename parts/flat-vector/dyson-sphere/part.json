@@ -1,0 +1,66 @@
+{
+  "id": "flat-vector/dyson-sphere",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Dyson sphere",
+  "summary": "A bright star enclosed by a partial shell of solar-panel tiles, with gaps for light. Glowing pulse. For sci-fi space.",
+  "tags": [
+    "dyson sphere",
+    "star",
+    "megastructure",
+    "sci-fi",
+    "space",
+    "solar panels",
+    "glow",
+    "shell"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the star"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y of the star"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 640 px across at s = 1"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "pulse",
+      "values": [
+        "none",
+        "pulse"
+      ],
+      "note": "pulse = the glow breathes and the shell turns slowly"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "no visible effect (the sphere is symmetric)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "s": 1,
+    "anim": "pulse"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

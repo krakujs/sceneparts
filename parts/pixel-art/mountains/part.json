@@ -1,0 +1,21 @@
+{
+  "id": "pixel-art/mountains",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Mountains",
+  "summary": "Pixel-art snow-capped mountain range with foothills, pines and a dirt path; for hiking, quest and epic outdoor scenes.",
+  "tags": ["mountains", "mountain", "snow peaks", "hills", "hiking", "outdoor", "background", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "time", "type": "enum", "default": "day", "values": ["day", "dusk", "night"], "note": "sky colours and light on the peaks"},
+    {"name": "groundY", "type": "number", "default": 1600, "note": "path ground line; stand characters on it"},
+    {"name": "seed", "type": "number", "default": 5, "note": "varies the peak shapes"},
+    {"name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "clouds drift across the peaks from p.f"}
+  ],
+  "example": {"time": "day"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

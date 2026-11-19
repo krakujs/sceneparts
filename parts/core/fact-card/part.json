@@ -1,0 +1,25 @@
+{
+  "id": "core/fact-card",
+  "type": "text",
+  "style": "core",
+  "name": "Fact card",
+  "summary": "Card with a DID YOU KNOW accent header pill, a bulb or info icon and a two to four line fact.",
+  "tags": ["fact", "did you know", "trivia", "info card", "tip card", "explainer", "card"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y; the card grows with the fact" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "header", "type": "string", "default": "DID YOU KNOW?", "note": "text in the accent pill; keep it short" },
+    { "name": "fact", "type": "string", "default": "Octopuses have three hearts and blue blood.", "note": "word-wrapped; two to four lines" },
+    { "name": "icon", "type": "enum", "values": ["bulb", "info"], "default": "bulb", "note": "lightbulb or info icon" },
+    { "name": "color", "type": "colour", "note": "header pill colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "header": "DID YOU KNOW?", "fact": "Octopuses have three hearts and blue blood.", "icon": "bulb" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

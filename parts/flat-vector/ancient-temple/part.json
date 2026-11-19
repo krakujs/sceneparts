@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/ancient-temple",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Ancient temple",
+  "summary": "Full-frame flat ancient temple background: stone columns, stepped platform, vines, statues, light beams.",
+  "tags": ["temple", "ancient", "ruins", "stone", "columns", "jungle", "adventure", "background"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "sky and light; beams fade at night" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "greys the sky and adds weather" },
+    { "name": "stone", "type": "colour", "default": "#E3D5B8", "note": "stone colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = vines sway and clouds move from p.f" }
+  ],
+  "example": { "time": "day", "weather": "clear" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

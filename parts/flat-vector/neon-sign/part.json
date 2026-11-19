@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/neon-sign",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Neon sign",
+  "summary": "Wall neon sign with glowing tube shapes (heart, arrow, star, lightning or OPEN) and an optional flicker.",
+  "tags": ["neon", "neon sign", "sign", "glow", "wall", "heart", "open sign", "lights"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 900, "note": "centre y of the sign"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; ~580 x 460 px at 1"},
+    {"name": "shape", "type": "enum", "default": "heart", "values": ["heart", "arrow", "star", "lightning", "OPEN"], "note": "what the tubes spell or draw"},
+    {"name": "color", "type": "colour", "default": "#FF5FA2", "note": "tube glow colour"},
+    {"name": "anim", "type": "enum", "default": "flicker", "values": ["flicker", "none"], "note": "flicker = stutters like an old neon tube"},
+    {"name": "backing", "type": "boolean", "default": true, "note": "dark wall plate behind the tubes"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 900, "shape": "OPEN", "color": "#FF5FA2", "anim": "flicker"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

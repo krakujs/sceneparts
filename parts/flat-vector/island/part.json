@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/island",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Island",
+  "summary": "Small sand island with one palm tree in a ring of sea water. For tropical sea scenes.",
+  "tags": [
+    "island",
+    "palm tree",
+    "sand island",
+    "tropical",
+    "sea",
+    "ocean",
+    "tropics"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the part stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 1000 px wide and 420 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#2F86C6",
+      "note": "deep sea colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#7CC9E8",
+      "note": "shallow water colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = grass tufts or palm fronds move in the breeze"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

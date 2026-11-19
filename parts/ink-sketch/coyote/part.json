@@ -1,0 +1,94 @@
+{
+  "id": "ink-sketch/coyote",
+  "type": "character",
+  "style": "ink-sketch",
+  "name": "Coyote",
+  "summary": "Ink sketch lean tawny grey-brown coyote with big ears and bushy dark-tipped tail; for desert scenes.",
+  "tags": [
+    "coyote",
+    "wild dog",
+    "desert",
+    "animal",
+    "wild",
+    "mammal",
+    "prairie",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "idle",
+        "sit",
+        "lie",
+        "graze"
+      ],
+      "note": "idle = breathing + tail wag; graze = head down"
+    },
+    {
+      "name": "mouth",
+      "type": "enum",
+      "default": "smile",
+      "values": [
+        "none",
+        "smile",
+        "open",
+        "tongue"
+      ]
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#A88A66",
+      "note": "coat colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "stand"
+  },
+  "uses": [
+    "ink-sketch/quadruped",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

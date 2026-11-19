@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/tea-cup",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Tea cup",
+  "summary": "Dainty flat teacup on a saucer with amber tea, steam and a small floral band; for tea time scenes.",
+  "tags": [
+    "tea",
+    "teacup",
+    "tea cup",
+    "afternoon tea",
+    "drink",
+    "saucer",
+    "cup"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F7EFE3",
+      "note": "cup colour"
+    },
+    {
+      "name": "steam",
+      "type": "boolean",
+      "default": true,
+      "note": "steam curls rising and fading"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "steam": true
+  },
+  "uses": [
+    "flat-vector/drink",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

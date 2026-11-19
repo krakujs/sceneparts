@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/finish-line",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Finish line",
+  "summary": "Chequered finish banner between two posts with tape; anim flutter ripples it. Use for race finishes.",
+  "tags": [
+    "finish line",
+    "finish",
+    "chequered",
+    "race",
+    "tape",
+    "marathon",
+    "prop"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the posts stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: 1 m is about 560 px; the banner is about 820 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "light squares of the chequer"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#1F2433",
+      "note": "dark squares and post colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "flutter",
+      "values": [
+        "none",
+        "flutter",
+        "bob",
+        "pop"
+      ],
+      "note": "flutter = the banner ripples in the breeze"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror the banner"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#FFFFFF",
+    "color2": "#1F2433",
+    "anim": "flutter"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

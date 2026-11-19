@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/gift-wrapping",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Gift wrapping",
+  "summary": "Patterned wrapping paper roll partly unrolled, with scissors and a ribbon spool beside it; for present-wrapping scenes.",
+  "tags": ["gift wrapping", "wrapping paper", "present", "ribbon", "scissors", "craft", "birthday"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the set"},
+    {"name": "y", "type": "number", "default": 1560, "note": "y of the floor the set rests on"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the set is about 800 px wide and 300 px tall"},
+    {"name": "color", "type": "colour", "default": "#F27BA6", "note": "wrapping paper colour"},
+    {"name": "color2", "type": "colour", "default": "#3D6FE0", "note": "roll and ribbon colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob"], "note": "bob = the scissors and ribbon spool bob gently"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "bob"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

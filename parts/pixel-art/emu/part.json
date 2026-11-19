@@ -1,0 +1,117 @@
+{
+  "id": "pixel-art/emu",
+  "type": "character",
+  "style": "pixel-art",
+  "name": "Emu",
+  "summary": "Pixel-art emu with a shaggy grey-brown body, long blue-grey neck and long legs; for outback and farm scenes.",
+  "tags": [
+    "emu",
+    "bird",
+    "flightless bird",
+    "pixel",
+    "pixel art",
+    "8-bit",
+    "retro"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "feet / ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; one cell = 24 px at s = 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "walk",
+      "values": [
+        "walk",
+        "run",
+        "none",
+        "bob",
+        "bounce",
+        "float",
+        "shake",
+        "pulse"
+      ],
+      "note": "walk/run swap leg cels"
+    },
+    {
+      "name": "fps",
+      "type": "number",
+      "default": 8,
+      "note": "video frames per cel"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame drift"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#6b5a4a",
+      "note": "main plumage/fur colour (char a)"
+    },
+    {
+      "name": "coat2",
+      "type": "colour",
+      "default": "#4a3c30",
+      "note": "shade colour (char A)"
+    },
+    {
+      "name": "accent",
+      "type": "colour",
+      "default": "#7f98b3",
+      "note": "accent colour (char z)"
+    },
+    {
+      "name": "pal",
+      "type": "object",
+      "note": "replace colours by char"
+    },
+    {
+      "name": "px",
+      "type": "number",
+      "default": 24,
+      "note": "cell size"
+    },
+    {
+      "name": "outline",
+      "type": "boolean",
+      "default": true,
+      "note": "dark one-cell outline"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1.5,
+    "anim": "walk"
+  },
+  "uses": [
+    "pixel-art/sprite"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "flat-vector/marker",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Whiteboard marker",
+  "summary": "Chunky whiteboard marker standing beside its cap; the colour sets the ink and cap colour.",
+  "tags": [
+    "marker",
+    "whiteboard marker",
+    "felt tip",
+    "dry erase marker",
+    "pen",
+    "classroom",
+    "ink"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the marker stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "hero size: at s = 1 about 400 px tall; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "ink and cap colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "pop = scales in with a small overshoot"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#E8503F",
+    "anim": "wobble"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

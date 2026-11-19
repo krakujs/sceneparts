@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/space-shuttle",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Space shuttle",
+  "summary": "Space shuttle on its launch stack with an orange tank and two white boosters; anim fly shows flames and a lift-off.",
+  "tags": ["space shuttle", "shuttle", "rocket", "launch", "space", "spacecraft", "lift off"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1600, "note": "launch pad line: the engines stand on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "about 640 px wide and 1190 px tall at s = 1" },
+    { "name": "color", "type": "colour", "default": "#FF8A3D", "note": "external tank colour" },
+    { "name": "color2", "type": "colour", "default": "#FFFFFF", "note": "boosters and orbiter colour (the nose and wing edges stay black)" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "fly", "bob", "pop"], "note": "fly = flames pour out and the stack lifts off, rising with the frame number; bob = a gentle hover; pop = scales in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1600, "s": 1, "anim": "fly" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

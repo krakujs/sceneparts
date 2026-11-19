@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/satellite-dish",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Satellite Dish",
+  "summary": "Large parabolic satellite dish in 3/4 view with the bowl, feed arm and LNB on a pole; for rooftop, TV and signal scenes.",
+  "tags": ["satellite dish", "satellite", "dish", "tv aerial", "antenna", "rooftop", "signal"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground line: the base stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: at s = 1 about 600 px wide and 880 px tall; use about 0.4 for a rooftop or garden scene"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "dish colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "pole, bracket and LNB colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "wobble", "bob", "pulse"], "note": "wobble = slow sway, pulse = signal arcs fade in turn"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 0.5, "anim": "pulse"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

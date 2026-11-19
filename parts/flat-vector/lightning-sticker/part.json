@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/lightning-sticker",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Lightning Sticker",
+  "summary": "Zigzag yellow lightning bolt that flashes: use for energy, speed, power or electric moments.",
+  "tags": [
+    "lightning",
+    "bolt",
+    "energy",
+    "fast",
+    "power",
+    "electric",
+    "zap"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 360 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "bolt colour; a darker edge is added"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "flash",
+      "values": [
+        "none",
+        "flash",
+        "shake"
+      ],
+      "note": "flash = sparks of white light, shake = small tremble"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "anim": "flash"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

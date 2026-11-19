@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/welding-mask",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Welding mask",
+  "summary": "Dark welding helmet with a large green visor window and side knobs; for welding, metalwork and forge scenes.",
+  "tags": ["welding mask", "welding helmet", "welder", "welding", "visor", "metalwork", "forge"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the shell stands on the floor at y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (about 380 px wide); use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#2B2F3A", "note": "shell colour"},
+    {"name": "color2", "type": "colour", "default": "#A8D85A", "note": "visor window colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "flash"], "note": "flash = the visor flashes bright, as when an arc strikes"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "flash"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

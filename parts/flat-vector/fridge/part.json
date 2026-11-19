@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/fridge",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Fridge",
+  "summary": "Tall two-door fridge-freezer with handles; open variant shows shelves and food. For kitchen scenes.",
+  "tags": ["fridge", "refrigerator", "fridge freezer", "kitchen", "appliance", "food", "cold"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the fridge stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 matches a flat-vector person at s = 1 (about 1000 px tall)"},
+    {"name": "variant", "type": "enum", "default": "closed", "values": ["closed", "open"], "note": "closed = two doors with handles; open = fridge door swung open to show shelves and food"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "cabinet colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion only; driven by the frame"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "variant": "closed", "color": "#FFFFFF"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

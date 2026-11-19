@@ -1,0 +1,77 @@
+{
+  "id": "ink-sketch/ocean-horizon",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Ocean horizon",
+  "summary": "Ink sketch open ocean background: horizon, rows of waves, a far sailboat silhouette and gulls.",
+  "tags": [
+    "ocean",
+    "sea",
+    "horizon",
+    "waves",
+    "sailboat",
+    "gulls",
+    "background",
+    "outdoor",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light on the sky and sea"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky tint and animated weather"
+    },
+    {
+      "name": "sea",
+      "type": "colour",
+      "default": "#8FD3F0",
+      "note": "colour of the sea near the horizon"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = waves, gulls and clouds move from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear",
+    "sea": "#8FD3F0"
+  },
+  "uses": [
+    "flat-vector/ocean-horizon",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

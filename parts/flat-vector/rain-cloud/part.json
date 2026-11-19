@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/rain-cloud",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Rain cloud",
+  "summary": "Grey cloud with rain streaks falling below it, for showers and wet weather. Anim: rain.",
+  "tags": ["rain cloud", "rain", "rainy", "weather", "grey cloud", "shower", "wet"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 500, "note": "centre y of the cloud"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 500 px wide, rain reaches about 380 px below the centre"},
+    {"name": "color", "type": "colour", "default": "#B4BCCB", "note": "cloud colour"},
+    {"name": "color2", "type": "colour", "default": "#8C95A8", "note": "flat underside colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "rain"], "note": "rain = streaks fall in a loop"}
+  ],
+  "example": {"x": 540, "y": 500, "s": 1, "color": "#B4BCCB", "color2": "#8C95A8", "anim": "rain"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

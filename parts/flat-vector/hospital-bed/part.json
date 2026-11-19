@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/hospital-bed",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Hospital bed",
+  "summary": "Adjustable hospital bed with a raised back, side rails, pillow and blanket on wheels. For ward and clinic scenes.",
+  "tags": ["hospital bed", "hospital", "ward", "patient bed", "medical bed", "clinic", "bed"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the wheels rest on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the bed is about 900 px long and 500 px tall" },
+    { "name": "color", "type": "colour", "default": "#DDE2EA", "note": "frame and rail colour" },
+    { "name": "color2", "type": "colour", "default": "#1FA39A", "note": "blanket colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "raise"], "note": "raise = the back rises from flat to raised and back in a loop of 180 frames" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "headboard on the right instead of the left" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "color": "#DDE2EA", "color2": "#1FA39A", "anim": "raise" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

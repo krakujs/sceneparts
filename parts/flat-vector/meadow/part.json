@@ -1,0 +1,15 @@
+{
+  "id": "flat-vector/meadow",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Meadow",
+  "summary": "Green meadow with scattered wildflowers and a butterfly; use for summer and nature scenes.",
+  "tags": ["meadow","wildflowers","grass","butterfly","flowers","field","summer"],
+  "params": [{"name":"x","type":"number","default":540,"note":"centre x"},{"name":"y","type":"number","default":1600,"note":"ground line"},{"name":"s","type":"number","default":1,"note":"about 1000 px wide and 450 px tall at s = 1"},{"name":"color","type":"colour","default":"#6CC06A","note":"grass colour"},{"name":"anim","type":"enum","default":"none","values":["none","sway"],"note":"sway = flowers rock and the butterfly flaps"},{"name":"flip","type":"boolean","default":false,"note":"mirror"}],
+  "example": {"x":540,"y":1600,"s":1,"anim":"sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

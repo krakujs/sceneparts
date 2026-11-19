@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/cheese",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flat cheese",
+  "summary": "Flat yellow cheese wedge with holes and a small cube, or a cheese wheel. For breakfast, cheese board or snack scenes.",
+  "tags": ["food", "cheese", "dairy", "snack", "cheese board", "breakfast", "meal"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the cheese rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (~380 px wide); use about 0.2 to 0.3 next to a person" },
+    { "name": "variant", "type": "enum", "default": "wedge", "values": ["wedge", "wheel"], "note": "wedge = triangle with a small cube, wheel = round cheese" },
+    { "name": "cheeseColor", "type": "colour", "default": "#FFC83D", "note": "cheese colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down, wobble = slight rock, pop = scale in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "variant": "wedge" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

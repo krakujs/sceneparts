@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/compass-rose",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Compass rose",
+  "summary": "Eight-point compass rose with N E S W letters, centred on x,y; use for navigation or map-style scenes.",
+  "tags": [
+    "compass",
+    "compass rose",
+    "north",
+    "navigation",
+    "map",
+    "direction",
+    "rose"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the rose is about 720 px across"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#253058",
+      "note": "first half of each point"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "second half of each point"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "spin",
+        "pulse"
+      ],
+      "note": "spin = turns in over 50 frames and settles; pulse = gently breathes"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "s": 1,
+    "color": "#253058",
+    "color2": "#E8503F",
+    "anim": "spin"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

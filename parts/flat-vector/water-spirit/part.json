@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/water-spirit",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Water spirit",
+  "summary": "Translucent blue water spirit with wave-shaped hair, streaming arms and falling droplets. Flowing ripple animation.",
+  "tags": ["water spirit", "water", "elemental", "ocean", "fantasy", "translucent", "spirit", "droplets"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the pool"},
+    {"name": "y", "type": "number", "default": 1560, "note": "ground level of the pool"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 950 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#3D9BE0", "note": "water colour"},
+    {"name": "anim", "type": "enum", "default": "flow", "values": ["none", "flow"], "note": "flow = body ripples, hair streams and droplets keep moving"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "flow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

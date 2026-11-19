@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/stairs",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Stairs",
+  "summary": "Indoor wooden staircase rising to the right with a banister and rail posts. Use flip to make it rise to the left.",
+  "tags": ["stairs", "staircase", "steps", "banister", "indoor", "house"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom of the first step: the stairs rest on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the run is about 900 px wide" },
+    { "name": "color", "type": "colour", "default": "#A8703F", "note": "wood colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "motion only; driven by the frame" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror: rises to the left instead" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "color": "#A8703F" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

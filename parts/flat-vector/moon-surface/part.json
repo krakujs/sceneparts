@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/moon-surface",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Moon surface",
+  "summary": "Full-frame flat Moon surface background: grey cratered ground, black starry sky and a blue planet on the horizon.",
+  "tags": ["moon", "space", "lunar", "craters", "night sky", "background", "astronaut"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "night", "values": ["day", "morning", "dusk", "night"], "note": "the sky stays black; day and morning only make the ground a little brighter" },
+    { "name": "ground", "type": "colour", "default": "#A7AEBB", "note": "grey regolith colour" },
+    { "name": "seed", "type": "number", "default": 6, "note": "varies star and boulder placement" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = stars twinkle and the blue planet gently bobs" }
+  ],
+  "example": { "time": "night" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

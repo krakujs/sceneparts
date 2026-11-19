@@ -1,0 +1,26 @@
+{
+  "id": "core/answer-reveal",
+  "type": "text",
+  "style": "core",
+  "name": "Answer reveal",
+  "summary": "Question card with a covered answer; the cover slides away to reveal the answer with a tick sparkle.",
+  "tags": ["answer", "reveal", "quiz", "question", "trivia", "cover", "text"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; card is 860×400 at s = 1" },
+    { "name": "question", "type": "string", "default": "How many hearts does an octopus have?", "note": "question shown at the top" },
+    { "name": "answer", "type": "string", "default": "Three", "note": "answer revealed under the cover; keep it short" },
+    { "name": "revealAt", "type": "number", "default": 24, "note": "frames after the start when the cover slides away" },
+    { "name": "color", "type": "colour", "note": "cover colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "question": "How many hearts does an octopus have?", "answer": "Three", "revealAt": 24 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "core/shock-lines",
+  "type": "effect",
+  "style": "core",
+  "name": "Shock lines",
+  "summary": "Radiating emphasis strokes that pop out around a point and flicker; for surprise, realisation and shock beats.",
+  "tags": ["shock", "lines", "emphasis", "surprise", "comic", "flicker"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "r", "type": "number", "default": 230, "note": "inner radius where the strokes start, px" },
+    { "name": "len", "type": "number", "default": 170, "note": "stroke length in px" },
+    { "name": "count", "type": "number", "default": 14, "note": "strokes, 6 to 24" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "seed", "type": "string", "default": "shock", "note": "change for a different flicker" },
+    { "name": "color", "type": "colour", "note": "stroke colour; default the style ink" }
+  ],
+  "example": { "x": 540, "y": 900, "r": 230, "count": 14 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

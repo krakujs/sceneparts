@@ -1,0 +1,85 @@
+{
+  "id": "ink-sketch/ostrich",
+  "type": "character",
+  "style": "ink-sketch",
+  "name": "Ostrich",
+  "summary": "Ink sketch ostrich: large black body, white plumes, very long bare neck and long legs; flightless, for savanna scenes.",
+  "tags": [
+    "ostrich",
+    "flightless bird",
+    "long neck",
+    "savanna",
+    "africa",
+    "bird",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet on the ground (perch line / water line for perch and swim)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; sizes below are px at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "hop",
+        "peck",
+        "perch",
+        "fly",
+        "glide",
+        "swim",
+        "idle"
+      ],
+      "note": "perch = sitting, legs tucked; fly = wings flap, lifted by alt; swim = floating, no legs; idle = breathing + head turn"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#C7ADA8",
+      "note": "body and head colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame drift"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "stand"
+  },
+  "uses": [
+    "ink-sketch/bird",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "flat-vector/stomach",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Stomach",
+  "summary": "Pink anatomical stomach with oesophagus and duodenum; anim churn wobbles it. For digestion lessons.",
+  "tags": [
+    "stomach",
+    "digestion",
+    "anatomy",
+    "organ",
+    "gut",
+    "biology",
+    "belly"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 520 px tall and 560 px wide"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F27BA6",
+      "note": "stomach colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "churn"
+      ],
+      "note": "churn = a gentle wobble, as if digesting"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "s": 1,
+    "color": "#F27BA6",
+    "anim": "churn"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

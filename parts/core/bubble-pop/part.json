@@ -1,0 +1,26 @@
+{
+  "id": "core/bubble-pop",
+  "type": "effect",
+  "style": "core",
+  "name": "Bubble pop",
+  "summary": "Shiny soap bubble that drifts and wobbles, then pops into a ring and droplets; for light-hearted endings and bursts.",
+  "tags": ["bubble", "pop", "soap", "droplets", "wobble", "float"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "starting x of the bubble" },
+    { "name": "y", "type": "number", "default": 960, "note": "starting y of the bubble" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "size", "type": "number", "default": 110, "note": "bubble radius in px" },
+    { "name": "popAt", "type": "number", "default": 40, "note": "frame inside the shot when the bubble pops" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "seed", "type": "string", "default": "bubble", "note": "change for a different spray" },
+    { "name": "color", "type": "colour", "note": "accent colour, unused by the water droplets" }
+  ],
+  "example": { "x": 540, "y": 1000, "size": 110, "popAt": 40 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

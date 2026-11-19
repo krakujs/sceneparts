@@ -1,0 +1,72 @@
+{
+  "id": "flat-vector/bike-helmet",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bike helmet",
+  "summary": "Cycling helmet in side view with vent slots, a visor peak and chin straps meeting at a buckle; for cycling scenes.",
+  "tags": [
+    "bike helmet",
+    "cycling helmet",
+    "helmet",
+    "cyclist",
+    "bicycle",
+    "safety",
+    "sport"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the shell's rear base sits on y; the chin straps hang below it"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the helmet is about 520 px wide; use about 0.35 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "shell colour (blue by default)"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob"
+      ],
+      "note": "bob = the helmet bobs gently"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (visor points left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3D6FE0",
+    "anim": "bob"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

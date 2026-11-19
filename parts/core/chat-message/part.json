@@ -1,0 +1,29 @@
+{
+  "id": "core/chat-message",
+  "type": "text",
+  "style": "core",
+  "name": "Chat message",
+  "summary": "Column of 2 to 4 chat bubbles, theirs on the left and mine on the right, popping in one by one with avatars.",
+  "tags": ["chat", "message", "bubble", "conversation", "text message", "dialogue", "reply"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "messages", "type": "object", "default": [{ "from": "them", "text": "Hey, are you free later?" }, { "from": "me", "text": "Yes! What's up?" }, { "from": "them", "text": "Let's meet at five" }], "note": "[{from:\"me\"|\"them\", text}], 2 to 4 items" },
+    { "name": "color", "type": "colour", "note": "my bubble colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": {
+    "messages": [
+      { "from": "them", "text": "Hey, are you free later?" },
+      { "from": "me", "text": "Yes! What's up?" },
+      { "from": "them", "text": "Let's meet at five" }
+    ]
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

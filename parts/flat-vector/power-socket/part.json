@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/power-socket",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Power Socket",
+  "summary": "Generic wall power socket plate with two round holes and a pilot light; anim pilot pulses the light.",
+  "tags": ["power socket", "wall socket", "outlet", "electric", "plug", "wall plate", "home"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 760, "note": "wall item: centred on y (default 760), no ground shadow"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (about 300 px across); use about 0.5 for a real-scale wall"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "plate colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "pilot"], "note": "pilot = the small light pulses"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 760, "s": 1, "color": "#FFFFFF", "anim": "pilot"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

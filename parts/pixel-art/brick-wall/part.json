@@ -1,0 +1,20 @@
+{
+  "id": "pixel-art/brick-wall",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Brick wall",
+  "summary": "Pixel-art red brick wall filling the frame with cracked bricks, a stone floor strip and optional flickering torches.",
+  "tags": ["brick", "brick wall", "castle", "dungeon", "indoor", "background", "pixel", "pixel art", "game", "level"],
+  "params": [
+    {"name": "floorY", "type": "number", "default": 1480, "note": "where the wall meets the stone floor strip"},
+    {"name": "seed", "type": "number", "default": 4, "note": "varies dark and cracked brick spots"},
+    {"name": "anim", "type": "enum", "default": "torch", "values": ["torch", "none"], "note": "wall torches flicker from p.f"}
+  ],
+  "example": {"anim": "torch"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

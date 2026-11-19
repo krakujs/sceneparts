@@ -1,0 +1,206 @@
+{
+  "id": "flat-vector/fruit",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flat fruit",
+  "summary": "Flat fruit or vegetable: round, oval, pear, heart, bell and more, with stems, leaves, textures, cut halves and motion.",
+  "tags": [
+    "generator",
+    "fruit",
+    "vegetable",
+    "food",
+    "produce",
+    "apple",
+    "citrus"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size (~350 px wide); use about 0.2\u20130.3 next to a person"
+    },
+    {
+      "name": "shape",
+      "type": "enum",
+      "default": "round",
+      "values": [
+        "round",
+        "oval",
+        "pear",
+        "teardrop",
+        "long",
+        "squat",
+        "heart",
+        "bell"
+      ],
+      "note": "round = apple, oval = lemon/plum/kiwi, pear, teardrop = mango/avocado, long = eggplant/cucumber, squat = pumpkin, heart = strawberry, bell = pepper"
+    },
+    {
+      "name": "w",
+      "type": "number",
+      "default": 320,
+      "note": "width px (thickness for shape long: use about 120\u2013180)"
+    },
+    {
+      "name": "h",
+      "type": "number",
+      "note": "height px (default from shape)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "skin colour"
+    },
+    {
+      "name": "color2",
+      "type": "string",
+      "default": "none",
+      "note": "second-tone blush on the shaded side, or none"
+    },
+    {
+      "name": "texture",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "dots",
+        "ribs",
+        "segments",
+        "fuzz",
+        "peel",
+        "seeds"
+      ],
+      "note": "dots = citrus pores, ribs = pumpkin, seeds = strawberry, fuzz = kiwi/peach, peel = onion/garlic"
+    },
+    {
+      "name": "textureColor",
+      "type": "string",
+      "default": "none",
+      "note": "texture colour, or none for a shade of color"
+    },
+    {
+      "name": "stem",
+      "type": "enum",
+      "default": "short",
+      "values": [
+        "none",
+        "short",
+        "curly",
+        "thick",
+        "calyx",
+        "crown"
+      ],
+      "note": "calyx = tomato/eggplant green star cap, crown = pomegranate"
+    },
+    {
+      "name": "stemColor",
+      "type": "colour",
+      "default": "#6B4A2E",
+      "note": "stem colour (calyx defaults to green)"
+    },
+    {
+      "name": "leaves",
+      "type": "number",
+      "default": 0,
+      "min": 0,
+      "max": 3,
+      "note": "small leaves by the stem, 0 to 3"
+    },
+    {
+      "name": "leafColor",
+      "type": "colour",
+      "default": "#4BB46A"
+    },
+    {
+      "name": "cut",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "half"
+      ],
+      "note": "half = the cut face lies in front"
+    },
+    {
+      "name": "fleshColor",
+      "type": "colour",
+      "default": "#F6C65A",
+      "note": "flesh colour of the cut face"
+    },
+    {
+      "name": "pit",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "stone",
+        "seeds",
+        "ring",
+        "segments"
+      ],
+      "note": "on the cut face: stone = avocado, seeds, ring = kiwi, segments = citrus"
+    },
+    {
+      "name": "shine",
+      "type": "boolean",
+      "default": true,
+      "note": "one soft white highlight"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "bounce",
+        "roll",
+        "pop"
+      ],
+      "note": "bob = gentle up and down, wobble = rock on its base, bounce = drop in, roll = roll in from the left, pop = scale in"
+    },
+    {
+      "name": "rot",
+      "type": "number",
+      "default": 0,
+      "note": "rotation in degrees about the base"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "shape": "round",
+    "color": "#E8503F",
+    "stem": "short",
+    "leaves": 2,
+    "shine": true
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

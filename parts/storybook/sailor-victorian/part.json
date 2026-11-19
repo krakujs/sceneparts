@@ -1,0 +1,81 @@
+{
+  "id": "storybook/sailor-victorian",
+  "type": "character",
+  "style": "storybook",
+  "name": "Victorian sailor",
+  "summary": "Victorian sailor in a white blouse, square navy collar and flat cap, with a kit bag on his shoulder; for sea stories.",
+  "tags": [
+    "sailor",
+    "victorian",
+    "navy",
+    "sea",
+    "ship",
+    "kit bag",
+    "dock",
+    "history"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "collar",
+      "type": "colour",
+      "default": "#1E2A47",
+      "note": "square collar colour"
+    },
+    {
+      "name": "walk",
+      "type": "boolean",
+      "default": false,
+      "note": "walk with the kit bag"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#E8B990"
+    },
+    {
+      "name": "hairColour",
+      "type": "colour",
+      "default": "#5C3A26"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

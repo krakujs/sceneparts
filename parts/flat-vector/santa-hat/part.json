@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/santa-hat",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Santa hat",
+  "summary": "Floppy red Santa hat with a white fur brim and pompom; a standalone item for Christmas costumes and scenes.",
+  "tags": [
+    "santa hat",
+    "christmas hat",
+    "santa",
+    "christmas",
+    "xmas",
+    "red hat",
+    "holiday"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom of the brim sits on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 470 px wide and 430 px tall; use about 0.35 on a head"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "hat colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "fur brim and pompom colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway",
+        "bob"
+      ],
+      "note": "sway = the tip swings gently; bob = the hat bobs up and down"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

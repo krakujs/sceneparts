@@ -1,0 +1,408 @@
+{
+  "id": "pixel-art/ghost-costume",
+  "type": "character",
+  "style": "pixel-art",
+  "name": "Ghost costume",
+  "summary": "Pixel-art child under a white sheet with two eye holes and a wavy hem; for Halloween and spooky scenes.",
+  "tags": [
+    "ghost",
+    "costume",
+    "halloween",
+    "sheet",
+    "spooky",
+    "spirit",
+    "pixel",
+    "people"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "feet / ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; adult ≈ 980 px tall at s = 1 (24 px cells)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "build",
+      "type": "enum",
+      "values": [
+        "adult",
+        "teen",
+        "child",
+        "toddler"
+      ],
+      "default": "adult",
+      "note": "body proportions"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "values": [
+        "idle",
+        "walk",
+        "run",
+        "wave",
+        "cheer",
+        "jump",
+        "talk",
+        "none"
+      ],
+      "default": "idle",
+      "note": "idle blinks; walk/run swing legs and arms; wave raises the front hand"
+    },
+    {
+      "name": "arms",
+      "type": "enum",
+      "values": [
+        "down",
+        "up",
+        "one-up"
+      ],
+      "default": "down",
+      "note": "arm pose when anim does not set one"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "values": [
+        "stand",
+        "sit"
+      ],
+      "default": "stand",
+      "note": "sit bends the legs forward (seat sets it too)"
+    },
+    {
+      "name": "seat",
+      "type": "enum",
+      "values": [
+        "none",
+        "chair",
+        "wheelchair"
+      ],
+      "default": "none",
+      "note": "draw a seat under a sitting person"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "fair",
+      "note": "light|fair|tan|medium|brown|dark or a colour"
+    },
+    {
+      "name": "hairColour",
+      "type": "colour",
+      "default": "brown",
+      "note": "black|brown|auburn|blonde|red|grey|white|blue|pink|green|purple or a colour"
+    },
+    {
+      "name": "beard",
+      "type": "enum",
+      "values": [
+        "none",
+        "beard",
+        "moustache",
+        "goatee",
+        "stubble"
+      ],
+      "default": "none",
+      "note": "facial hair"
+    },
+    {
+      "name": "glasses",
+      "type": "enum",
+      "values": [
+        "none",
+        "glasses",
+        "shades",
+        "goggles",
+        "eyepatch"
+      ],
+      "default": "none",
+      "note": "eyewear"
+    },
+    {
+      "name": "eyes",
+      "type": "enum",
+      "values": [
+        "open",
+        "happy",
+        "closed"
+      ],
+      "default": "open",
+      "note": "eyes look right"
+    },
+    {
+      "name": "mouth",
+      "type": "enum",
+      "values": [
+        "smile",
+        "flat",
+        "open",
+        "frown",
+        "mask"
+      ],
+      "default": "smile",
+      "note": "mouth; mask = face mask"
+    },
+    {
+      "name": "blush",
+      "type": "boolean",
+      "default": false,
+      "note": "pink cheeks"
+    },
+    {
+      "name": "hat",
+      "type": "enum",
+      "values": [
+        "none",
+        "cap",
+        "hardhat",
+        "minerhat",
+        "beanie",
+        "chef",
+        "peaked",
+        "nurse",
+        "surgical",
+        "cowboy",
+        "tophat",
+        "helmet",
+        "firehelmet",
+        "graduation",
+        "beret",
+        "witch",
+        "crown",
+        "headset",
+        "headscarf",
+        "bandana",
+        "santa",
+        "sunhat",
+        "party",
+        "turban",
+        "spacehelmet",
+        "pirate",
+        "flowers",
+        "bunnyears"
+      ],
+      "default": "none",
+      "note": "headwear (flowers = flower band + bridal veil)"
+    },
+    {
+      "name": "hatColour",
+      "type": "colour",
+      "default": "#d2403f",
+      "note": "hat colour"
+    },
+    {
+      "name": "inner",
+      "type": "colour",
+      "default": "#f5f1e8",
+      "note": "shirt under a jacket/coat, collar, overall shirt, sweater stripe"
+    },
+    {
+      "name": "legsColour",
+      "type": "colour",
+      "default": "#23305e",
+      "note": "trousers/shorts/skirt/overall colour"
+    },
+    {
+      "name": "shoes",
+      "type": "colour",
+      "default": "#3a2a22",
+      "note": "shoe colour"
+    },
+    {
+      "name": "over",
+      "type": "enum",
+      "values": [
+        "none",
+        "apron",
+        "hivis",
+        "vest",
+        "sash",
+        "lifejacket"
+      ],
+      "default": "none",
+      "note": "garment over the top"
+    },
+    {
+      "name": "overColour",
+      "type": "colour",
+      "default": "#f5f1e8",
+      "note": "overlay colour"
+    },
+    {
+      "name": "neck",
+      "type": "enum",
+      "values": [
+        "none",
+        "tie",
+        "bowtie",
+        "stethoscope",
+        "lanyard",
+        "scarf",
+        "medal",
+        "necklace",
+        "whistle",
+        "cameraneck",
+        "pearls"
+      ],
+      "default": "none",
+      "note": "neckwear; coloured parts use neckColour"
+    },
+    {
+      "name": "neckColour",
+      "type": "colour",
+      "default": "#d2403f",
+      "note": "tie, bow tie, scarf, lanyard, ribbon colour"
+    },
+    {
+      "name": "belt",
+      "type": "boolean",
+      "default": false,
+      "note": "black belt with gold buckle"
+    },
+    {
+      "name": "badge",
+      "type": "colour",
+      "default": "none",
+      "note": "chest badge colour (palette char or colour)"
+    },
+    {
+      "name": "hold",
+      "type": "enum",
+      "values": [
+        "none",
+        "clipboard",
+        "wrench",
+        "book",
+        "phone",
+        "mic",
+        "cup",
+        "tray",
+        "briefcase",
+        "bag",
+        "camera",
+        "spatula",
+        "hammer",
+        "magnifier",
+        "paintbrush",
+        "palette",
+        "envelope",
+        "syringe",
+        "bottle",
+        "torch",
+        "sword",
+        "wand",
+        "ball",
+        "baton",
+        "gavel",
+        "guitar",
+        "baby",
+        "openbook",
+        "parcel",
+        "controller",
+        "laptop",
+        "bouquet",
+        "tablet",
+        "bowl",
+        "cane",
+        "whitecane",
+        "broom",
+        "crutch",
+        "shovel",
+        "rake",
+        "pitchfork",
+        "mop",
+        "staff",
+        "flag",
+        "fishingrod"
+      ],
+      "default": "none",
+      "note": "item in the front hand; guitar … bowl are held at the chest with both hands; cane … fishingrod are long poles"
+    },
+    {
+      "name": "itemColour",
+      "type": "colour",
+      "default": "#d2403f",
+      "note": "colour of book, bag, bottle, flag, baby blanket, brush tip (q)"
+    },
+    {
+      "name": "back",
+      "type": "enum",
+      "values": [
+        "none",
+        "backpack",
+        "cape",
+        "wings",
+        "tank",
+        "guitar",
+        "quiver"
+      ],
+      "default": "none",
+      "note": "gear behind the body"
+    },
+    {
+      "name": "backColour",
+      "type": "colour",
+      "default": "#d2403f",
+      "note": "backpack / cape colour (uses itemColour if not set)"
+    },
+    {
+      "name": "belly",
+      "type": "boolean",
+      "default": false,
+      "note": "rounded pregnant belly"
+    },
+    {
+      "name": "pal",
+      "type": "object",
+      "note": "replace colours by char, e.g. {\"q\": \"#ffffff\"}"
+    },
+    {
+      "name": "px",
+      "type": "number",
+      "default": 24,
+      "note": "cell size"
+    },
+    {
+      "name": "outline",
+      "type": "boolean",
+      "default": true,
+      "note": "dark one-cell outline"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame drift (pair with walk)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "anim": "idle"
+  },
+  "uses": [
+    "pixel-art/person"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

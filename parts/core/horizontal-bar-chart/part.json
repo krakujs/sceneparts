@@ -1,0 +1,31 @@
+{
+  "id": "core/horizontal-bar-chart",
+  "type": "text",
+  "style": "core",
+  "name": "Horizontal bar chart",
+  "summary": "Ranked horizontal bars that grow left to right, with rank and label at the left and value at each bar's end.",
+  "tags": ["bar chart", "ranking", "leaderboard", "ranked list", "chart", "comparison", "statistics", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; card is 960 wide at s = 1" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "bar colour; default the style's accent" },
+    { "name": "title", "type": "string", "default": "Favourite drinks" },
+    { "name": "values", "type": "object", "default": [48, 31, 22, 15, 9], "note": "numbers, largest first for a ranking" },
+    { "name": "labels", "type": "string[]", "default": ["Coffee", "Tea", "Juice", "Water", "Soda"], "note": "one name per bar" },
+    { "name": "unit", "type": "string", "default": "%", "note": "suffix on the values" }
+  ],
+  "example": {
+    "title": "Favourite drinks",
+    "values": [48, 31, 22, 15, 9],
+    "labels": ["Coffee", "Tea", "Juice", "Water", "Soda"],
+    "unit": "%"
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

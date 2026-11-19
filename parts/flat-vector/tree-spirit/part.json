@@ -1,0 +1,72 @@
+{
+  "id": "flat-vector/tree-spirit",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Tree spirit",
+  "summary": "Gentle forest spirit of bark and leaves, with glowing eyes and a round leafy crown. Walks slowly. For fantasy forests.",
+  "tags": [
+    "tree spirit",
+    "forest spirit",
+    "nature",
+    "fantasy",
+    "bark",
+    "leaves",
+    "forest",
+    "creature"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the feet"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 1000 px tall at s = 1"
+    },
+    {
+      "name": "eye",
+      "type": "colour",
+      "default": "#FFE27A",
+      "note": "glow colour of the eyes"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "walk",
+      "values": [
+        "none",
+        "walk"
+      ],
+      "note": "walk = slow steps, bobbing and a swaying crown"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "walk"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

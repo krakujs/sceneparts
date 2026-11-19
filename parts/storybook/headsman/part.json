@@ -1,0 +1,70 @@
+{
+  "id": "storybook/headsman",
+  "type": "character",
+  "style": "storybook",
+  "name": "Headsman",
+  "summary": "Cartoon executioner in a black hood with eye holes and bare arms, leaning on a big axe. No gore.",
+  "tags": [
+    "headsman",
+    "executioner",
+    "hood",
+    "axe",
+    "medieval",
+    "villain",
+    "character",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "hood",
+      "type": "colour",
+      "default": "#2C2F3B",
+      "note": "hood colour"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#C98E64"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

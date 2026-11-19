@@ -1,0 +1,27 @@
+{
+  "id": "core/funnel-diagram",
+  "type": "text",
+  "style": "core",
+  "name": "Funnel diagram",
+  "summary": "3-5 narrowing layers from top to bottom, each with a stage label and value, for conversion funnels.",
+  "tags": ["funnel", "conversion", "sales funnel", "stages", "drop off", "metrics", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "accent override; layers use the style's series colours" },
+    { "name": "labels", "type": "string[]", "default": ["Visitors", "Sign-ups", "Trials", "Buyers"], "note": "3 to 5 stages, top to bottom" },
+    { "name": "values", "type": "string[]", "default": ["10,000", "2,400", "600", "300"], "note": "one value per stage, shown under the label" }
+  ],
+  "example": {
+    "labels": ["Visitors", "Sign-ups", "Trials", "Buyers"],
+    "values": ["10,000", "2,400", "600", "300"]
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

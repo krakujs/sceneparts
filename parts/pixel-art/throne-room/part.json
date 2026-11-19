@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/throne-room",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Throne room",
+  "summary": "Pixel-art royal throne room: a tall-backed throne on a dais, red carpet, pillars and banners; for royal court scenes.",
+  "tags": [
+    "throne",
+    "royal",
+    "king",
+    "court",
+    "castle",
+    "background",
+    "indoor",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "glow",
+      "values": [
+        "glow",
+        "none"
+      ],
+      "note": "the royal glow behind the throne pulses from p.f"
+    }
+  ],
+  "example": {
+    "anim": "glow"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

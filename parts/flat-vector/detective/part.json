@@ -1,0 +1,127 @@
+{
+  "id": "flat-vector/detective",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Detective",
+  "summary": "Flat vector detective in a trench coat and fedora with magnifier and notepad; for mystery stories.",
+  "tags": [
+    "detective",
+    "mystery",
+    "investigator",
+    "fedora",
+    "magnifying glass",
+    "trench coat",
+    "crime",
+    "clue"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "think",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "wave",
+        "point",
+        "think",
+        "cheer",
+        "talk",
+        "sit",
+        "hold"
+      ]
+    },
+    {
+      "name": "expression",
+      "type": "enum",
+      "default": "neutral",
+      "values": [
+        "smile",
+        "neutral",
+        "open",
+        "surprised",
+        "sad",
+        "angry",
+        "laugh"
+      ]
+    },
+    {
+      "name": "skin",
+      "type": "string",
+      "default": "light",
+      "note": "light | fair | tan | medium | brown | dark, or a hex colour"
+    },
+    {
+      "name": "hair",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "short",
+        "buzz",
+        "side",
+        "spiky",
+        "curly",
+        "afro",
+        "long",
+        "ponytail",
+        "bun",
+        "bob",
+        "braid",
+        "none"
+      ]
+    },
+    {
+      "name": "hairColor",
+      "type": "string",
+      "default": "brown",
+      "note": "black | brown | auburn | blonde | grey | white | red | blue | pink, or hex"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "think",
+    "expression": "neutral",
+    "skin": "light",
+    "hair": "none",
+    "hairColor": "brown"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

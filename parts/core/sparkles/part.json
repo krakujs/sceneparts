@@ -1,0 +1,26 @@
+{
+  "id": "core/sparkles",
+  "type": "effect",
+  "style": "core",
+  "name": "Sparkles",
+  "summary": "A cluster of four-point twinkle stars that pulse at different phases; for magic, shine and reveals.",
+  "tags": ["sparkle", "twinkle", "star", "shine", "magic", "glitter"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "cluster centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "cluster centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale of the cluster" },
+    { "name": "r", "type": "number", "default": 220, "note": "scatter radius in px" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "count", "type": "number", "default": 9, "note": "stars, 6 to 12" },
+    { "name": "seed", "type": "string", "default": "sparkle", "note": "change for a different layout" },
+    { "name": "color", "type": "colour", "note": "accent colour for every third star" }
+  ],
+  "example": { "x": 540, "y": 900, "r": 260, "count": 9 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

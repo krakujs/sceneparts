@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/projector",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Projector",
+  "summary": "Small box projector on a stand throwing a light cone from its lens; use for presentations, cinema or meeting scenes.",
+  "tags": ["projector", "beamer", "presentation", "light beam", "cinema", "slideshow", "meeting"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the stand rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 560 px wide with the beam at s = 1; use about 0.5 on a table next to a person"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "body colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "glow"], "note": "glow = lens and light beam brighten and dim softly"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (beam points to the left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#5D6578", "anim": "glow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

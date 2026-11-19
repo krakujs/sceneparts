@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/spinning-top",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Spinning top",
+  "summary": "Wooden spinning top balanced on its point; anim spin makes it wobble as it turns.",
+  "tags": [
+    "spinning top",
+    "top",
+    "toy",
+    "wooden toy",
+    "spin",
+    "whirl",
+    "playground"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the top's tip"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "the tip rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 about 300 px wide and 380 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "top body colour"
+    },
+    {
+      "name": "accent",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "band and stripe colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "spin",
+        "bob",
+        "pop"
+      ],
+      "note": "spin = the top turns on its point and wobbles"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "spin"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

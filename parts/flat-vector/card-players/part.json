@@ -1,0 +1,54 @@
+{
+  "id": "flat-vector/card-players",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Card players",
+  "summary": "Three people seated around a table holding fanned cards, one laughing; for game night and casual group scenes.",
+  "tags": [
+    "cards",
+    "card game",
+    "poker",
+    "players",
+    "table",
+    "game night",
+    "group",
+    "people"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "overall scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror the whole group"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

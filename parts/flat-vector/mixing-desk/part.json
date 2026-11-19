@@ -1,0 +1,75 @@
+{
+  "id": "flat-vector/mixing-desk",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Mixing desk",
+  "summary": "Audio mixing console with channel knobs and faders; anim faders slides the fader caps. For studios.",
+  "tags": [
+    "mixing desk",
+    "mixer",
+    "sound desk",
+    "audio mixer",
+    "console",
+    "studio",
+    "dj"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the console rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 810 px wide and 240 px tall at s = 1 (a wide desk prop)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3A4157",
+      "note": "console colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "faders"
+      ],
+      "note": "faders = the fader caps slide up and down"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3A4157",
+    "anim": "faders"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

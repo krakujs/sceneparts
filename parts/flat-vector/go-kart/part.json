@@ -1,0 +1,85 @@
+{
+  "id": "flat-vector/go-kart",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Go-kart",
+  "summary": "Low open go-kart in side view with fat tyres, bucket seat, rear engine and steering wheel; for racing scenes.",
+  "tags": [
+    "go-kart",
+    "go kart",
+    "kart",
+    "racing",
+    "karting",
+    "vehicle",
+    "race"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x at frame 0"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the tyres stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 800 px wide and 330 px tall at s = 1; about 0.6 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "chassis colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#253058",
+      "note": "seat colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "drive",
+        "bob",
+        "pop"
+      ],
+      "note": "drive = wheels spin and the body bounces (also on when vx is not 0)"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "horizontal speed in px per frame (negative = left; set flip too)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror so the kart faces left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "drive"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

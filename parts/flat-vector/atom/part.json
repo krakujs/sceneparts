@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/atom",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Atom",
+  "summary": "Atom with a nucleus, three elliptical orbits and electrons, centred on x,y; use for physics or chemistry scenes.",
+  "tags": [
+    "atom",
+    "orbit",
+    "electron",
+    "nucleus",
+    "physics",
+    "science",
+    "chemistry"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the atom is about 680 px wide and 360 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "electron colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "nucleus colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "orbit"
+      ],
+      "note": "orbit = the electrons travel round their orbits"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "s": 1,
+    "color": "#FFC83D",
+    "color2": "#E8503F",
+    "anim": "orbit"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

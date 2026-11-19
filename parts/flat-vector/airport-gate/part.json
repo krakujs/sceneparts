@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/airport-gate",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Airport gate",
+  "summary": "Full-frame flat airport gate background: big glass wall with a plane outside, seats, gate desk, departure screen.",
+  "tags": ["airport", "gate", "departure lounge", "travel", "flight", "background", "terminal"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "light outside the glass and inside the room" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "seen through the big glass wall" },
+    { "name": "carpet", "type": "colour", "default": "#3D6FE0", "note": "floor carpet colour" },
+    { "name": "wall", "type": "colour", "default": "#E6EBF2", "note": "wall colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = plane gently moves and the screen lines blink" }
+  ],
+  "example": { "time": "day", "weather": "clear" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

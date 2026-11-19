@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/toothbrush",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Toothbrush",
+  "summary": "Upright toothbrush with a coloured handle and white bristles, optionally with toothpaste; for teeth-cleaning scenes.",
+  "tags": [
+    "toothbrush",
+    "teeth",
+    "brushing teeth",
+    "dental",
+    "bathroom",
+    "oral hygiene",
+    "toothpaste"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "handle colour"
+    },
+    {
+      "name": "paste",
+      "type": "boolean",
+      "default": false,
+      "note": "true = a blob of mint toothpaste on the bristles"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "brush"
+      ],
+      "note": "brush = the head rocks, as if brushing"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3D6FE0",
+    "paste": true
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

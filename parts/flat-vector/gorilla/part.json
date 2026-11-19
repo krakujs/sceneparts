@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/gorilla",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Gorilla",
+  "summary": "Flat vector big dark grey-black gorilla with a silver back patch, standing tall or walking on its knuckles.",
+  "tags": [
+    "gorilla",
+    "ape",
+    "primate",
+    "animal",
+    "jungle",
+    "silverback",
+    "mammal"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet (bottom centre)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 700 px tall standing at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "knuckle",
+      "values": [
+        "knuckle",
+        "stand"
+      ],
+      "note": "stand = upright with a slow sway; knuckle = walking on knuckles, limbs swing from p.f"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "knuckle"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/quadruped"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

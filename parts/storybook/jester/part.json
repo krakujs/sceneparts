@@ -1,0 +1,82 @@
+{
+  "id": "storybook/jester",
+  "type": "character",
+  "style": "storybook",
+  "name": "Jester",
+  "summary": "Court jester in two-colour motley and a belled three-point cap, holding a bauble sceptre.",
+  "tags": [
+    "jester",
+    "fool",
+    "court",
+    "motley",
+    "medieval",
+    "entertainer",
+    "bauble",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#2E7D7A",
+      "note": "left half of the motley tunic"
+    },
+    {
+      "name": "motley",
+      "type": "colour",
+      "default": "#F2B544",
+      "note": "right half of the motley tunic"
+    },
+    {
+      "name": "legs",
+      "type": "colour",
+      "default": "#B5452F",
+      "note": "hose colour"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#E8B990"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

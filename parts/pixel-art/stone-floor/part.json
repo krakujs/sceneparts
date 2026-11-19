@@ -1,0 +1,19 @@
+{
+  "id": "pixel-art/stone-floor",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Stone floor",
+  "summary": "Pixel-art grey stone slab floor seen from above, with moss in the seams and glints; for castle and dungeon scenes.",
+  "tags": ["stone", "floor", "slabs", "tiles", "castle", "dungeon", "background", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "seed", "type": "number", "default": 5, "note": "varies moss and cracks"},
+    {"name": "anim", "type": "enum", "default": "sparkle", "values": ["sparkle", "none"], "note": "glints blink across the floor from p.f"}
+  ],
+  "example": {"anim": "sparkle"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

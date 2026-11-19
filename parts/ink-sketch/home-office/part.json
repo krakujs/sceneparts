@@ -1,0 +1,82 @@
+{
+  "id": "ink-sketch/home-office",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Home office",
+  "summary": "Ink sketch home office background: desk with monitor and lamp, bookshelf, window, plant and office chair.",
+  "tags": [
+    "home office",
+    "office",
+    "desk",
+    "computer",
+    "bookshelf",
+    "work from home",
+    "interior",
+    "background",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "outside light in the window and room tint; the monitor glows and the lamp is lit at dusk and night"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "seen through the window"
+    },
+    {
+      "name": "accent",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "office chair and desk lamp colour"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#DCE9E4",
+      "note": "wall colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = weather, window scene and plant move from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear"
+  },
+  "uses": [
+    "flat-vector/home-office",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

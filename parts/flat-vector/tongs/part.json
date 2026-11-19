@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/tongs",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Blacksmith tongs",
+  "summary": "Long blacksmith's forge tongs with wooden grips, jaws gripping a glowing hot bar; for forge and metalwork scenes.",
+  "tags": ["tongs", "blacksmith", "forge", "smithy", "hot metal", "metalwork", "fire tongs"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the tongs lie on the floor at y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (about 500 px long); use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "iron colour"},
+    {"name": "color2", "type": "colour", "default": "#FF8A3D", "note": "hot bar colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "glow"], "note": "glow = the hot bar pulses with heat"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the jaws then point left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "glow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

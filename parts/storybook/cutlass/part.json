@@ -1,0 +1,77 @@
+{
+  "id": "storybook/cutlass",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Cutlass",
+  "summary": "Curved sailor's cutlass with brass basket guard, point-down in a barrel top. For pirate or sea adventure scenes.",
+  "tags": [
+    "cutlass",
+    "sword",
+    "sabre",
+    "pirate",
+    "sailor",
+    "brass",
+    "weapon",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500,
+      "note": "bottom centre of the barrel"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~600 px tall at 1"
+    },
+    {
+      "name": "steel",
+      "type": "colour",
+      "default": "#C9D3DA",
+      "note": "blade colour"
+    },
+    {
+      "name": "brass",
+      "type": "colour",
+      "default": "#C99A4A",
+      "note": "guard colour"
+    },
+    {
+      "name": "wood",
+      "type": "colour",
+      "default": "#6A4E30",
+      "note": "grip colour"
+    },
+    {
+      "name": "glint",
+      "type": "boolean",
+      "default": true,
+      "note": "light glints along the blade"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1500,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

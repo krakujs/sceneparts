@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/rake",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Garden rake",
+  "summary": "Garden or leaf rake standing upright on its tines, with a long wooden handle; for garden, autumn and yard-work scenes.",
+  "tags": ["rake", "garden rake", "leaf rake", "yard", "autumn", "gardening", "tines"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line under the tines"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 500 px tall (hero size); use about 0.25 next to a person"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "head and tine colour"},
+    {"name": "color2", "type": "colour", "default": "#8A5A3C", "note": "handle colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "pop = the rake springs up to full size once"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/well",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Well",
+  "summary": "Round stone well with a little wooden roof, crank and a bucket on a rope; anim bucket sways it.",
+  "tags": ["well", "water well", "stone well", "bucket", "village", "farm", "rope", "countryside"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the well stands on y (about 760 px tall at s = 1)"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 500 px wide and 760 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#B8B0A0", "note": "stone colour"},
+    {"name": "color2", "type": "colour", "default": "#8A5A3C", "note": "wood colour for posts, crank and bucket"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "bucket"], "note": "bucket = the bucket sways on its rope"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "bucket"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

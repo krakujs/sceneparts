@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/hourglass",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Hourglass",
+  "summary": "Wooden-framed sand timer; anim flow drains the top sand into the bottom bulb for time passing.",
+  "tags": ["hourglass", "sand timer", "time", "countdown", "deadline", "waiting", "clock"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the base rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 560 px tall; use about 0.2–0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#8A5A3C", "note": "wood colour of the frame"},
+    {"name": "color2", "type": "colour", "default": "#FFC83D", "note": "sand colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "flow"], "note": "flow = top sand drains into the bottom over the shot (uses p.f and p.d)"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#8A5A3C", "color2": "#FFC83D", "anim": "flow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

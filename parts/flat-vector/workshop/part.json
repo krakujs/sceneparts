@@ -1,0 +1,72 @@
+{
+  "id": "flat-vector/workshop",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Workshop",
+  "summary": "Full-frame flat workshop background: workbench with vise, tool pegboard, sawhorses, planks, paint tin shelves.",
+  "tags": [
+    "workshop",
+    "workbench",
+    "tools",
+    "carpentry",
+    "garage",
+    "diy",
+    "background",
+    "interior"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "room tint; the pendant lamp glows at dusk and night"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#D9B98C",
+      "note": "wood-panel wall colour"
+    },
+    {
+      "name": "bench",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "workbench wood colour"
+    },
+    {
+      "name": "peg",
+      "type": "colour",
+      "default": "#C9A06A",
+      "note": "pegboard colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = the pendant lamp swings gently"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "bench": "#8A5A3C"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

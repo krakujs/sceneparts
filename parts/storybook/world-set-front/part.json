@@ -1,0 +1,54 @@
+{
+  "id": "storybook/world-set-front",
+  "type": "scenery",
+  "style": "storybook",
+  "name": "World set (front layer)",
+  "summary": "Front layer of a world set, drawn over the characters (near waves, railings, smoke).",
+  "tags": [
+    "storybook",
+    "flat",
+    "setting",
+    "foreground",
+    "waves"
+  ],
+  "params": [
+    {
+      "name": "set",
+      "type": "enum",
+      "values": [
+        "sea",
+        "galleon",
+        "liner",
+        "deck",
+        "boat",
+        "ice",
+        "street",
+        "court",
+        "trench",
+        "underwater",
+        "frontier",
+        "volcano",
+        "island",
+        "winter",
+        "space",
+        "bridge",
+        "flood",
+        "airship",
+        "sickroom",
+        "tower"
+      ],
+      "default": "sea"
+    }
+  ],
+  "example": {
+    "set": "sea"
+  },
+  "uses": [
+    "storybook/world-set"
+  ],
+  "layer": "fg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

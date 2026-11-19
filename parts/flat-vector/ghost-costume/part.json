@@ -1,0 +1,60 @@
+{
+  "id": "flat-vector/ghost-costume",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Ghost costume",
+  "summary": "Flat vector person under a white sheet ghost costume with eye holes, gently swaying; for Halloween explainers.",
+  "tags": [
+    "ghost",
+    "costume",
+    "halloween",
+    "sheet",
+    "spooky",
+    "dress-up",
+    "boo",
+    "person"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

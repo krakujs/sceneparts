@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/accordion",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Accordion",
+  "summary": "Accordion with pleated bellows, keys on the right and buttons on the left; anim squeeze opens and closes it.",
+  "tags": [
+    "accordion",
+    "squeezebox",
+    "bellows",
+    "folk",
+    "music",
+    "instrument",
+    "concertina"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the lowest edge rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 about 640 px wide and 480 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#C2532B",
+      "note": "body colour of the two end panels"
+    },
+    {
+      "name": "accent",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "button and trim colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "squeeze"
+      ],
+      "note": "squeeze = the bellows open and close, with the panels moving in and out"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (keyboard moves to the left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#C2532B",
+    "accent": "#FFC83D",
+    "anim": "squeeze"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

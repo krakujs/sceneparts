@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/heart",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Heart",
+  "summary": "Glossy red heart sticker that beats: use for love, like, favourites and affection.",
+  "tags": [
+    "heart",
+    "love",
+    "like",
+    "favourite",
+    "romance",
+    "valentine",
+    "sticker"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 490 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "heart colour; a darker edge is added"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "beat",
+      "values": [
+        "none",
+        "beat",
+        "bob"
+      ],
+      "note": "beat = heartbeat pulse, bob = gentle float"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "anim": "beat"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

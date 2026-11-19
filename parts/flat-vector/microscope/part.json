@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/microscope",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Microscope",
+  "summary": "Laboratory microscope with eyepiece, arm, stage and lamp; for science lab and biology scenes.",
+  "tags": ["microscope", "lab", "laboratory", "science", "biology", "eyepiece", "research"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom edge: the base rests on y (set y to a bench top)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 400 px wide and 620 px tall"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "body colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "light"], "note": "light = the lamp under the stage pulses"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3D6FE0", "anim": "light"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

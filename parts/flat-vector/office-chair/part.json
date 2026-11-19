@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/office-chair",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Office Chair",
+  "summary": "Swivel office chair with padded back and five-star wheeled base, side 3/4 view. Can gently sway. For offices.",
+  "tags": ["office chair", "swivel chair", "desk chair", "office", "chair", "furniture"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the wheels rest on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 matches a flat-vector person at s = 1" },
+    { "name": "color", "type": "colour", "default": "#3A4157", "note": "upholstery colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "spin", "bob", "pop"], "note": "spin = gentle swivel sway of the seat and back; motion only" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "face left instead of right" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1, "color": "#3A4157" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

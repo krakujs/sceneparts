@@ -1,0 +1,80 @@
+{
+  "id": "storybook/pony-express-rider",
+  "type": "character",
+  "style": "storybook",
+  "name": "Pony express rider",
+  "summary": "Young mail rider in fringed jacket and wide hat with a leather mail pouch over the shoulder, walking.",
+  "tags": [
+    "pony express",
+    "rider",
+    "mail",
+    "messenger",
+    "american west",
+    "wild west",
+    "history",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#8D5A3B",
+      "note": "jacket colour"
+    },
+    {
+      "name": "hatColour",
+      "type": "colour",
+      "default": "#6B4A2E"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#E8B990"
+    },
+    {
+      "name": "hairColour",
+      "type": "colour",
+      "default": "#8D5A3B"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

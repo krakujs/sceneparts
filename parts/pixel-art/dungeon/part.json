@@ -1,0 +1,19 @@
+{
+  "id": "pixel-art/dungeon",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Dungeon",
+  "summary": "Pixel-art dungeon background: dark block walls, barred arch door, flickering torches and stone floor; for RPG scenes.",
+  "tags": ["dungeon", "castle", "prison", "rpg", "background", "indoor", "pixel", "pixel art", "game", "level"],
+  "params": [
+    {"name": "floorY", "type": "number", "default": 1480, "note": "where wall meets floor; stand characters a little below it"},
+    {"name": "anim", "type": "enum", "default": "flicker", "values": ["flicker", "none"], "note": "torch flames and glow flicker from p.f"}
+  ],
+  "example": {"anim": "flicker"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

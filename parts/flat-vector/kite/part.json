@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/kite",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Kite",
+  "summary": "Diamond kite with cross spars and tail bows on a string, centred on x,y in the sky; anim fly makes it sway in the wind.",
+  "tags": ["kite", "flying kite", "sky", "wind", "summer", "string", "fly"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the kite"},
+    {"name": "y", "type": "number", "default": 600, "note": "centre y of the kite (sky item)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the kite is about 340 px tall plus a tail of about 380 px"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "kite colour (the other panel is yellow)"},
+    {"name": "accent", "type": "colour", "default": "#FFC83D", "note": "second panel and tail bow colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "pop", "fly"], "note": "fly = the kite sways and the tail ripples"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 600, "s": 1, "anim": "fly"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

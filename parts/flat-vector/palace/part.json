@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/palace",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Palace",
+  "summary": "Grand symmetrical palace with a central dome, wings, columns and steps. For royal and capital city scenes.",
+  "tags": ["palace", "grand building", "dome", "columns", "royal", "mansion", "capital"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the palace stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 1000 px wide and 740 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#F4F1EA", "note": "stone wall colour"},
+    {"name": "color2", "type": "colour", "default": "#3D6FE0", "note": "dome and roof accent colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "lights = the windows glow one after another"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

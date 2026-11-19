@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/pickaxe",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Pickaxe",
+  "summary": "Double-pointed pickaxe on a long wooden handle, standing upright; for mining, digging and building-site scenes.",
+  "tags": ["pickaxe", "pick axe", "mining", "miner", "dig", "tool", "quarry"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line under the handle end"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 480 px tall (hero size); use about 0.25 next to a person"},
+    {"name": "color", "type": "colour", "default": "#9AA3B5", "note": "head colour"},
+    {"name": "color2", "type": "colour", "default": "#8A5A3C", "note": "handle colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "swing"], "note": "swing = the head rocks side to side around the socket"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "swing"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/teleport-ring",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Teleport ring",
+  "summary": "Standing hexagonal metal gate with a rippling hex-tiled energy surface; for teleport and portal-gate scenes.",
+  "tags": ["teleport", "gate", "ring", "hexagon", "energy", "ripple", "sci-fi", "stargate"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the gate"},
+    {"name": "y", "type": "number", "default": 960, "note": "centre y of the gate"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 680 px across at 1"},
+    {"name": "color", "type": "colour", "default": "#4FD8F0", "note": "energy colour"},
+    {"name": "anim", "type": "enum", "default": "ripple", "values": ["ripple", "none"], "note": "ripple = rings spread across the surface and tiles shimmer"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 960, "color": "#4FD8F0", "anim": "ripple"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

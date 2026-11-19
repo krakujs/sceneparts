@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/vinyl-record",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Vinyl Record",
+  "summary": "Black vinyl record with grooves and a coloured blank label; spins on request. Use for music, DJ or vinyl scenes.",
+  "tags": ["vinyl record", "vinyl", "record", "lp", "album", "music", "turntable"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1000, "note": "centre y of the record (floating item, not a floor object)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; record about 600 px across at s = 1; about 0.3 in a hand"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "label colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "spin"], "note": "spin = the record turns with its label"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1000, "s": 1, "color": "#E8503F", "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

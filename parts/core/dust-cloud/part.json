@@ -1,0 +1,25 @@
+{
+  "id": "core/dust-cloud",
+  "type": "effect",
+  "style": "core",
+  "name": "Dust cloud",
+  "summary": "Low brown dust cloud kicked up along the ground with flying pebbles; for skids, stomps and landings.",
+  "tags": ["dust", "cloud", "skid", "landing", "ground", "pebbles"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "impact point x on the ground" },
+    { "name": "y", "type": "number", "default": 960, "note": "ground line y at the impact" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "width", "type": "number", "default": 320, "note": "how wide the cloud spreads in px" },
+    { "name": "count", "type": "number", "default": 14, "note": "dust puffs, 6 to 30" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "seed", "type": "string", "default": "dust", "note": "change for a different cloud" }
+  ],
+  "example": { "x": 540, "y": 1000, "width": 360, "count": 14 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

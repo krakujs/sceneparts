@@ -1,0 +1,65 @@
+{
+  "id": "flat-vector/yeti",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Yeti",
+  "summary": "Flat vector big white-blue shaggy yeti with a friendly face, waving; for snowy mountain and winter scenes.",
+  "tags": [
+    "yeti",
+    "snow",
+    "shaggy",
+    "monster",
+    "winter",
+    "mountain",
+    "abominable",
+    "friendly"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F2F8FC",
+      "note": "Fur colour (white-blue)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

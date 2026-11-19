@@ -1,0 +1,72 @@
+{
+  "id": "storybook/cannon",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Cannon",
+  "summary": "Black iron cannon on a wooden carriage; kicks back and puffs smoke when fire is on. For ships, forts or pirates.",
+  "tags": [
+    "cannon",
+    "artillery",
+    "ship",
+    "fort",
+    "pirate",
+    "smoke",
+    "iron",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500,
+      "note": "bottom centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~600 px wide at 1"
+    },
+    {
+      "name": "fire",
+      "type": "boolean",
+      "default": false,
+      "note": "recoil and a puff of smoke"
+    },
+    {
+      "name": "iron",
+      "type": "colour",
+      "default": "#2A2D36",
+      "note": "iron colour"
+    },
+    {
+      "name": "wood",
+      "type": "colour",
+      "default": "#8A6A45",
+      "note": "carriage colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "fires to the left"
+    }
+  ],
+  "example": {
+    "x": 480,
+    "y": 1500,
+    "s": 1,
+    "fire": true
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

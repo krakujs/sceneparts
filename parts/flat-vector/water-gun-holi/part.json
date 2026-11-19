@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/water-gun-holi",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Holi water gun",
+  "summary": "Bright plastic pump-action water squirter spraying a coloured stream, a toy for Holi and water-fight scenes. Anim spray.",
+  "tags": ["water gun", "pichkari", "holi", "squirt gun", "water fight", "toy", "festival"],
+  "params": [
+    {"name": "x", "type": "number", "default": 300, "note": "x of the back of the tank"},
+    {"name": "y", "type": "number", "default": 1100, "note": "y of the bottom of the grip (the gun is held or rests here)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the gun is about 480 px long plus a stream of about 500 px"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "body colour"},
+    {"name": "color2", "type": "colour", "default": "#3D6FE0", "note": "tank and water colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "spray"], "note": "spray = the coloured stream keeps flowing out of the nozzle"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror: the nozzle points left"}
+  ],
+  "example": {"x": 300, "y": 1100, "s": 1, "anim": "spray"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

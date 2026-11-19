@@ -1,0 +1,80 @@
+{
+  "id": "flat-vector/pliers",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Pliers",
+  "summary": "Combination pliers lying on the floor with coloured grips and steel jaws; for gripping, bending and fixing scenes.",
+  "tags": [
+    "pliers",
+    "combination pliers",
+    "grip",
+    "tool",
+    "electrician",
+    "repair",
+    "diy"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the item stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "hero size: about 420 px long at s = 1; use about 0.25–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "grip colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#9AA3B5",
+      "note": "steel colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "snap"
+      ],
+      "note": "snap = jaws open and close; bob = gentle lift; wobble = slight rock"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (faces left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#E8503F",
+    "anim": "snap"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

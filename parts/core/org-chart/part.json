@@ -1,0 +1,29 @@
+{
+  "id": "core/org-chart",
+  "type": "text",
+  "style": "core",
+  "name": "Org chart",
+  "summary": "Organisation chart: one top box, 1-3 middle boxes and 1-4 bottom boxes with avatar circles and elbow lines.",
+  "tags": ["org chart", "organisation", "hierarchy", "team", "structure", "boxes", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "accent override for the top box" },
+    { "name": "top", "type": "string", "default": "CEO", "note": "top box title" },
+    { "name": "middle", "type": "string[]", "default": ["Head of Sales", "Head of Product", "Head of Ops"], "note": "1 to 3 middle boxes" },
+    { "name": "bottom", "type": "string[]", "default": ["Sales team", "Design", "Engineering", "Support"], "note": "1 to 4 bottom boxes, shared out under the middle boxes" }
+  ],
+  "example": {
+    "top": "CEO",
+    "middle": ["Head of Sales", "Head of Product", "Head of Ops"],
+    "bottom": ["Sales team", "Design", "Engineering", "Support"]
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

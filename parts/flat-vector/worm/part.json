@@ -1,0 +1,74 @@
+{
+  "id": "flat-vector/worm",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Earthworm",
+  "summary": "Earthworm: pink segmented worm that wriggles; pose crawl, or peek half out of a soil hole.",
+  "tags": [
+    "worm",
+    "earthworm",
+    "garden",
+    "pink",
+    "segmented",
+    "wriggle"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet / bottom centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 240 px long at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "crawl",
+      "values": [
+        "crawl",
+        "peek"
+      ],
+      "note": "crawl = wriggles on the ground; peek = half out of a soil hole"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F27BA6",
+      "note": "body colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "crawl"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

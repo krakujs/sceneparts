@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/umbrella",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Umbrella",
+  "summary": "Open umbrella with eight scalloped panels and a curved J handle, standing upright; for rain, weather and shelter scenes.",
+  "tags": ["umbrella", "open umbrella", "brolly", "rain", "parasol", "weather", "shelter"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the J handle tip sits on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the umbrella is about 500 px wide and 840 px tall; use about 0.4 next to a person"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "panel colour (alternate panels)"},
+    {"name": "color2", "type": "colour", "default": "#FFC83D", "note": "second panel colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "spin", "sway"], "note": "spin = the canopy turns slightly back and forth; sway = the whole umbrella rocks a touch"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (handle curls to the left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E8503F", "color2": "#FFC83D", "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

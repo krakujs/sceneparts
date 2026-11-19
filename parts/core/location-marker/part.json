@@ -1,0 +1,64 @@
+{
+  "id": "core/location-marker",
+  "type": "text",
+  "style": "core",
+  "name": "Location marker",
+  "summary": "Flat dot with pulsing radar rings and a label card above it, for 'you are here' moments.",
+  "tags": [
+    "location",
+    "marker",
+    "radar",
+    "you are here",
+    "pin",
+    "map",
+    "pulse"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "default": "You are here",
+      "note": "label card text"
+    },
+    {
+      "name": "at",
+      "type": "number",
+      "default": 0,
+      "note": "start as a fraction of the shot (0..1)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "note": "override the style accent"
+    }
+  ],
+  "example": {
+    "label": "You are here"
+  },
+  "layer": "screen",
+  "uses": [
+    "core/stat-card"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

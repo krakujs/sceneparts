@@ -1,0 +1,22 @@
+{
+  "id": "core/diagonal-wipe",
+  "type": "effect",
+  "style": "core",
+  "name": "Diagonal wipe",
+  "summary": "Two-tone diagonal band (colour plus accent) sweeping corner to corner; a dynamic scene change.",
+  "tags": ["diagonal wipe", "wipe", "transition", "diagonal", "scene change", "band"],
+  "params": [
+    { "name": "mode", "type": "enum", "default": "in", "values": ["in", "out"], "note": "in covers the frame, out reveals it" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "len", "type": "number", "default": 24, "note": "frames the band takes to cross" },
+    { "name": "color", "type": "colour", "default": "#1a1410", "note": "main band colour (accent edge comes from the style)" }
+  ],
+  "example": { "mode": "in", "len": 24 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

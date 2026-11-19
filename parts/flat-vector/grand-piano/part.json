@@ -1,0 +1,74 @@
+{
+  "id": "flat-vector/grand-piano",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Grand piano",
+  "summary": "Grand piano in side three-quarter view with the lid propped open, three legs and keyboard. For concert scenes.",
+  "tags": [
+    "grand piano",
+    "piano",
+    "concert piano",
+    "keyboard",
+    "music",
+    "concert",
+    "instrument"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the feet rest on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; room-sized: about 860 px wide and 900 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1F2433",
+      "note": "body colour (black by default)"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion of the whole piano"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (lid and tail swing to the left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 0.9,
+    "color": "#1F2433",
+    "anim": "none"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/trombone",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Trombone",
+  "summary": "Brass slide trombone held level with a long U-shaped slide and flared bell; anim slide moves the slide in and out.",
+  "tags": ["trombone", "slide trombone", "brass", "jazz", "band", "instrument", "bone"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the bottom of the bell rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 760 px wide and 230 px tall"},
+    {"name": "color", "type": "colour", "default": "#E0A21F", "note": "brass colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "slide"], "note": "slide = the slide moves out and back along the tube"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (bell points left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E0A21F", "anim": "slide"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

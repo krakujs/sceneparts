@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/throne-room",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Throne room",
+  "summary": "Full-frame flat throne room background: stone hall, red carpet to a raised throne, banners, windows, chandeliers.",
+  "tags": ["throne room", "throne", "royal hall", "palace", "castle", "red carpet", "stone hall", "background"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "dusk", "values": ["day", "morning", "dusk", "night"], "note": "light through the windows; torches and candles glow more at dusk and night" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "seen through the tall windows" },
+    { "name": "carpet", "type": "colour", "default": "#A8323A", "note": "carpet colour" },
+    { "name": "throne", "type": "colour", "default": "#C2382C", "note": "throne velvet colour" },
+    { "name": "banner", "type": "colour", "default": "#3D6FE0", "note": "banner colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = torch and candle flames flicker and weather moves from p.f" }
+  ],
+  "example": { "time": "dusk", "weather": "clear" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

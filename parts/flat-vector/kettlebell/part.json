@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/kettlebell",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Kettlebell",
+  "summary": "Round iron kettlebell with a loop handle standing on the floor; use for home workout and gym scenes.",
+  "tags": ["kettlebell", "kettle bell", "weights", "gym", "fitness", "workout", "prop"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the base rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 380 px wide and 480 px tall"},
+    {"name": "color", "type": "colour", "default": "#3A4157", "note": "iron body colour"},
+    {"name": "color2", "type": "colour", "default": "#FFC83D", "note": "weight label colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "wobble = rocks on its base"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the kettlebell"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3A4157", "color2": "#FFC83D", "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

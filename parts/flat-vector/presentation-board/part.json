@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/presentation-board",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Flip chart",
+  "summary": "Flip chart on a tripod easel with a paper pad of boxes and arrows; anim flip folds the top sheet over.",
+  "tags": ["flip chart", "presentation", "easel", "whiteboard", "meeting", "workshop", "flowchart", "board"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor point under the easel centre (1 m ~ 560 px)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the easel is about 500 px wide and 900 px tall"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "flip"], "note": "flip = the top sheet folds up over its hinge, then rests"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "flip"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

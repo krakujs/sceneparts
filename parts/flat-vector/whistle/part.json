@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/whistle",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Whistle",
+  "summary": "Metal sports whistle with a mouthpiece, air slot and lanyard loop; anim swing sways it, blow puffs sound lines.",
+  "tags": ["whistle", "referee", "coach", "sports", "lanyard", "ref", "prop"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 900, "note": "top of the lanyard: it hangs from this point"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 390 px wide and 370 px tall below the lanyard top"},
+    {"name": "color", "type": "colour", "default": "#9AA3B5", "note": "whistle metal colour"},
+    {"name": "color2", "type": "colour", "default": "#E8503F", "note": "lanyard colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "swing", "bob", "pop", "blow"], "note": "swing = the whistle sways on its lanyard; blow = sound lines puff out of the mouthpiece"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the whistle"}
+  ],
+  "example": {"x": 540, "y": 900, "s": 1, "color": "#9AA3B5", "color2": "#E8503F", "anim": "swing"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

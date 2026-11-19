@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/spring-garden",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Spring garden",
+  "summary": "Full-frame flat spring garden background: blossom tree, picket fence, flowers in bloom, watering can and butterflies.",
+  "tags": ["spring", "garden", "flowers", "blossom", "butterfly", "picket fence", "background", "outdoor"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "light in the garden" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "sky tint and animated weather (rain suits spring)" },
+    { "name": "blossom", "type": "colour", "default": "#F27BA6", "note": "colour of the blossom tree" },
+    { "name": "petalFall", "type": "boolean", "default": true, "note": "petals drift down from p.f" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = butterflies, petals and clouds move from p.f" }
+  ],
+  "example": { "time": "day", "weather": "clear", "blossom": "#F27BA6", "petalFall": true },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

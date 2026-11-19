@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/credit-card",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Credit card",
+  "summary": "Generic bank card at an angle with a gold chip and contactless arcs, no brand; for payment scenes.",
+  "tags": ["credit card", "bank card", "payment", "debit card", "card", "checkout", "money"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor or table point under the card's lowest corner"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 480 px wide; use about 0.4 next to a person"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "card colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "tilt"], "note": "tilt = the card rocks gently about its centre"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3D6FE0", "anim": "tilt"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

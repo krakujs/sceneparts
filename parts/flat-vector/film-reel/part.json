@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/film-reel",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Film reel",
+  "summary": "Metal movie reel with holes and a film strip trailing from it; anim spin turns it. For cinema and film scenes.",
+  "tags": ["film reel", "movie reel", "film", "cinema", "movie", "projector", "reel"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the reel"},
+    {"name": "y", "type": "number", "default": 900, "note": "centre y of the reel"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the reel is about 420 px across, with film trailing below"},
+    {"name": "color", "type": "colour", "default": "#A9B4C6", "note": "metal colour"},
+    {"name": "anim", "type": "enum", "default": "spin", "values": ["none", "spin", "bob", "pop"], "note": "spin = the reel turns slowly; the film strip stays still"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 900, "s": 1, "color": "#A9B4C6", "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

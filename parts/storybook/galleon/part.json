@@ -1,0 +1,63 @@
+{
+  "id": "storybook/galleon",
+  "type": "scenery",
+  "style": "storybook",
+  "name": "Galleon",
+  "summary": "Sailing ship (galleon / carrack / Mayflower) at the waterline; can be broken, recoloured, flagged.",
+  "tags": [
+    "storybook",
+    "flat",
+    "ship",
+    "sailing ship",
+    "pirate",
+    "mayflower",
+    "explorer",
+    "sea"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1250,
+      "note": "waterline"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 0.9
+    },
+    {
+      "name": "broken",
+      "type": "boolean"
+    },
+    {
+      "name": "sail",
+      "type": "colour"
+    },
+    {
+      "name": "hull",
+      "type": "colour"
+    },
+    {
+      "name": "flag",
+      "type": "colour"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1300,
+    "s": 0.9
+  },
+  "uses": [
+    "storybook/world-set"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

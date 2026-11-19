@@ -1,0 +1,87 @@
+{
+  "id": "flat-vector/wine-glass",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Wine glass",
+  "summary": "Flat stemmed wine glass of red, white or rose wine; for dinner and celebration scenes.",
+  "tags": [
+    "wine",
+    "wine glass",
+    "red wine",
+    "white wine",
+    "rose",
+    "drink",
+    "celebration"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "liquid",
+      "type": "enum",
+      "default": "red",
+      "values": [
+        "red",
+        "white",
+        "rose"
+      ],
+      "note": "wine colour"
+    },
+    {
+      "name": "level",
+      "type": "number",
+      "default": 0.55,
+      "min": 0,
+      "max": 1,
+      "note": "wine fill, 0 to 1 of the height"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "liquid": "red"
+  },
+  "uses": [
+    "flat-vector/drink",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

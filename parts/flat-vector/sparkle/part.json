@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/sparkle",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Sparkle",
+  "summary": "Cluster of three twinkling four-point sparkles: use for magic, something new, clean or shiny moments.",
+  "tags": [
+    "sparkle",
+    "sparkles",
+    "magic",
+    "new",
+    "clean",
+    "shine",
+    "twinkle"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 450 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "sparkle colour; a darker edge is added"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "twinkle",
+      "values": [
+        "none",
+        "twinkle",
+        "bob"
+      ],
+      "note": "twinkle = each sparkle pulses in turn"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "anim": "twinkle"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

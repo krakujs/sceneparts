@@ -1,0 +1,75 @@
+{
+  "id": "flat-vector/envelope",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Envelope",
+  "summary": "Closed envelope with a flap and red wax seal; anim open swings the flap up and the letter peeks out. For mail.",
+  "tags": [
+    "envelope",
+    "letter",
+    "mail",
+    "post",
+    "email",
+    "invitation",
+    "seal"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the envelope rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size at s = 1 (about 580 px wide); use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "envelope colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "open",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "open = flap opens and the letter peeks out"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#FFFFFF",
+    "anim": "open"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

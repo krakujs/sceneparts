@@ -1,0 +1,73 @@
+{
+  "id": "core/highlighter-mark",
+  "type": "effect",
+  "style": "core",
+  "name": "Highlighter mark",
+  "summary": "Translucent highlighter band that wipes in left to right with ragged ends.",
+  "tags": [
+    "highlighter",
+    "highlight",
+    "marker",
+    "band",
+    "emphasis",
+    "yellow",
+    "wipe"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "w",
+      "type": "number",
+      "default": 520,
+      "note": "band width"
+    },
+    {
+      "name": "h",
+      "type": "number",
+      "default": 60,
+      "note": "band height"
+    },
+    {
+      "name": "at",
+      "type": "number",
+      "default": 0,
+      "note": "start as a fraction of the shot (0..1)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "note": "override the style accent"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "w": 520,
+    "h": 60
+  },
+  "layer": "screen",
+  "uses": [
+    "core/stat-card"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

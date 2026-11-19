@@ -1,0 +1,27 @@
+{
+  "id": "core/bullet-list",
+  "type": "text",
+  "style": "core",
+  "name": "Bullet list",
+  "summary": "Title with 3-6 bullet points that fade and slide in one after another; for key points and takeaways.",
+  "tags": ["bullet list", "key points", "takeaways", "list", "summary", "bullets", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "bullet and title bar colour; default the style's accent" },
+    { "name": "title", "type": "string", "default": "Key points", "note": "empty hides the title" },
+    { "name": "items", "type": "string[]", "default": ["Clear goals and deadlines", "Shared ownership", "Weekly progress check-ins", "Room for feedback"], "note": "3 to 6 points" }
+  ],
+  "example": {
+    "title": "Key points",
+    "items": ["Clear goals and deadlines", "Shared ownership", "Weekly progress check-ins", "Room for feedback"]
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "storybook/gallows-sign",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Gallows sign",
+  "summary": "Blank wooden inn sign on a gallows-shaped bracket post, swinging gently; no text, for any inn or shop.",
+  "tags": [
+    "inn sign",
+    "sign",
+    "tavern",
+    "wooden",
+    "village",
+    "bracket",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500,
+      "note": "ground, bottom centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~540 px wide, ~900 px tall at 1"
+    },
+    {
+      "name": "swing",
+      "type": "boolean",
+      "default": true,
+      "note": "sign sways in the breeze"
+    },
+    {
+      "name": "board",
+      "type": "colour",
+      "default": "#B98B52",
+      "note": "sign board colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1500,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

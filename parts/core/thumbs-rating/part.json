@@ -1,0 +1,27 @@
+{
+  "id": "core/thumbs-rating",
+  "type": "text",
+  "style": "core",
+  "name": "Thumbs rating",
+  "summary": "Thumbs-up and thumbs-down buttons with counts; the chosen one fills, pops and ticks up. For votes and reactions.",
+  "tags": ["thumbs up", "thumbs down", "rating", "like", "dislike", "vote", "feedback", "ui"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y of the buttons" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 600 × 470 px at s = 1" },
+    { "name": "up", "type": "number", "default": 1240, "note": "thumbs-up count before the pick" },
+    { "name": "down", "type": "number", "default": 36, "note": "thumbs-down count before the pick" },
+    { "name": "pick", "type": "enum", "default": "up", "values": ["up", "down", "none"], "note": "which button gets pressed" },
+    { "name": "pickAt", "type": "number", "default": 20, "note": "frames after the start when the pick happens" },
+    { "name": "color", "type": "colour", "note": "thumbs-up colour; default green" },
+    { "name": "color2", "type": "colour", "note": "thumbs-down colour; default red" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "up": 1240, "down": 36, "pick": "up" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

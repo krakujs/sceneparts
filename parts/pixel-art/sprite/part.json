@@ -1,0 +1,29 @@
+{
+  "id": "pixel-art/sprite",
+  "type": "prop",
+  "style": "pixel-art",
+  "name": "Pixel sprite",
+  "summary": "Pixel sprite generator: any retro game sprite from pixel-map strings and the 16-colour palette, 1-4 frames.",
+  "tags": ["pixel", "sprite", "pixel art", "8-bit", "retro", "game", "generator", "icon"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x; [from,to] to move"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom of the sprite (centre when centre = true)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; one cell = px * s pixels"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror horizontally"},
+    {"name": "map", "type": "string", "note": "pixel map: rows separated by '/', one char per cell, '.' empty; chars k w g d r o y e f c b n p m u x are palette colours"},
+    {"name": "frames", "type": "object", "note": "array of 2-4 pixel maps (strings or arrays of rows) to cycle; overrides map"},
+    {"name": "fps", "type": "number", "default": 8, "note": "video frames per animation cel"},
+    {"name": "px", "type": "number", "default": 24, "note": "cell size in px at s = 1"},
+    {"name": "pal", "type": "object", "note": "extra or replaced colours, e.g. {\"s\": \"#f1c39b\"}"},
+    {"name": "outline", "type": "boolean", "default": true, "note": "add the dark one-cell outline"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "bounce", "float", "shake", "pulse"], "note": "whole-sprite motion, moves in whole cells"},
+    {"name": "centre", "type": "boolean", "default": false, "note": "anchor on the centre instead of the bottom (for icons and effects)"},
+    {"name": "vx", "type": "number", "note": "px per frame horizontal drift"}
+  ],
+  "example": {"x": 540, "y": 1100, "s": 1.5, "anim": "float", "map": "....yyyy..../...yyyyyy.../..yyywwyyy../..yyywkyyy../..yyyyyyyy../..yyyyoooo../...yyyyyy.../....yyyy...."},
+  "uses": ["pixel-art/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

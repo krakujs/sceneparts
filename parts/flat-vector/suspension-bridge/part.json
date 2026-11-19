@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/suspension-bridge",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Suspension Bridge",
+  "summary": "Suspension bridge over water with two tall towers, sagging main cables and hanger cables down to the deck.",
+  "tags": ["suspension bridge", "bridge", "towers", "cables", "river", "water", "crossing"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "water line: the piers stand in the water below y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 1040 px wide and 1100 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "tower colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "cable colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "lights"], "note": "lights = the tower warning lamps blink in turn"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

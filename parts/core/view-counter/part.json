@@ -1,0 +1,27 @@
+{
+  "id": "core/view-counter",
+  "type": "text",
+  "style": "core",
+  "name": "View counter",
+  "summary": "Eye icon with a view count that counts up (1.2K style) and a views caption, in a pill; pops in.",
+  "tags": ["views", "view count", "eye", "counter", "impressions", "reach", "count"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "value", "type": "number", "default": 48200, "note": "final count" },
+    { "name": "from", "type": "number", "default": 0, "note": "count starts from" },
+    { "name": "short", "type": "boolean", "default": true, "note": "1.2K / 3.4M" },
+    { "name": "caption", "type": "string", "default": "views", "note": "small text under the number" },
+    { "name": "color", "type": "colour", "note": "iris colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "len", "type": "number", "default": 34, "note": "count-up length in frames" }
+  ],
+  "example": { "value": 48200, "short": true, "caption": "views" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

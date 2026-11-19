@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/eraser",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Eraser",
+  "summary": "Pink and white rubber eraser block with a worn, crumbly corner; for drawing, school and mistake scenes.",
+  "tags": ["eraser", "rubber", "rubber eraser", "pink eraser", "drawing", "school", "mistake"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the eraser rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the eraser is about 300 px wide and 170 px tall"},
+    {"name": "color", "type": "colour", "default": "#F27BA6", "note": "rubber colour (the other half stays white)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "wobble = the eraser rocks gently"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#F27BA6", "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

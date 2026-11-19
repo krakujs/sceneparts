@@ -1,0 +1,71 @@
+{
+  "id": "core/country-outline-placeholder",
+  "type": "text",
+  "style": "core",
+  "name": "Country outline placeholder",
+  "summary": "Generic irregular land blob (not a real country) with dashed border, name and capital star; insert country here.",
+  "tags": [
+    "country",
+    "placeholder",
+    "outline",
+    "map",
+    "capital",
+    "region",
+    "land"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "default": "Country name",
+      "note": "name shown inside"
+    },
+    {
+      "name": "capital",
+      "type": "string",
+      "default": "Capital",
+      "note": "label above the capital star"
+    },
+    {
+      "name": "at",
+      "type": "number",
+      "default": 0,
+      "note": "start as a fraction of the shot (0..1)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "note": "override the style accent"
+    }
+  ],
+  "example": {
+    "name": "Country name",
+    "capital": "Capital"
+  },
+  "layer": "screen",
+  "uses": [
+    "core/stat-card"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

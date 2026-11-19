@@ -1,0 +1,22 @@
+{
+  "id": "core/wipe-left",
+  "type": "effect",
+  "style": "core",
+  "name": "Wipe left",
+  "summary": "Solid colour panel sweeps across the frame from right to left with a soft edge and accent line; a clean scene cut.",
+  "tags": ["wipe", "transition", "wipe left", "scene change", "cut", "panel"],
+  "params": [
+    { "name": "mode", "type": "enum", "default": "in", "values": ["in", "out"], "note": "in covers the frame, out reveals it" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "len", "type": "number", "default": 20, "note": "frames the wipe takes" },
+    { "name": "color", "type": "colour", "default": "#1a1410", "note": "panel colour" }
+  ],
+  "example": { "mode": "in", "len": 20 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

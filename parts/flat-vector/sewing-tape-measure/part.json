@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/sewing-tape-measure",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Sewing Tape Measure",
+  "summary": "Soft yellow cloth tailor's tape measure rolled into a coil; for sewing, tailoring and dressmaking scenes.",
+  "tags": [
+    "tape measure",
+    "sewing tape",
+    "tailor",
+    "measuring tape",
+    "dressmaker",
+    "fabric",
+    "measure",
+    "sewing"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the coil lies on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "hero scale: about 420 px across at s = 1; use about 0.25–0.35 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFE38A",
+      "note": "soft yellow of the cloth tape"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#3A4157",
+      "note": "colour of the tick marks"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "unroll"
+      ],
+      "note": "unroll = the tape strip slides out and back"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the tape then runs out to the left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "unroll"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

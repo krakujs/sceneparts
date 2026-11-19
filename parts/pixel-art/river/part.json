@@ -1,0 +1,21 @@
+{
+  "id": "pixel-art/river",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "River",
+  "summary": "Pixel-art river flowing across the frame between grassy banks, with trees, stones and an animated water band.",
+  "tags": ["river", "stream", "water", "banks", "flowing water", "nature", "background", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "time", "type": "enum", "default": "day", "values": ["day", "dusk", "night"], "note": "sky colours and light"},
+    {"name": "riverY", "type": "number", "default": 980, "note": "top edge of the water band; the river runs 300 px down"},
+    {"name": "seed", "type": "number", "default": 8, "note": "varies stones, trees and clouds"},
+    {"name": "anim", "type": "enum", "default": "flow", "values": ["flow", "none"], "note": "water scrolls and foam streaks slide from p.f"}
+  ],
+  "example": {"time": "day"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

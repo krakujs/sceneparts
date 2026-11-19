@@ -1,0 +1,72 @@
+{
+  "id": "flat-vector/tiny-monster",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Tiny monster",
+  "summary": "Small fuzzy round monster with one horn on two little feet. For cute small-creature and kids' scenes.",
+  "tags": [
+    "tiny monster",
+    "little monster",
+    "fuzzy",
+    "cute",
+    "one horn",
+    "creature",
+    "small",
+    "friendly"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#B39DDB",
+      "note": "fur colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "hop",
+      "values": [
+        "hop",
+        "blink",
+        "none"
+      ],
+      "note": "hop = small bounce; blink = eyes blink; none = still"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "anim": "hop"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

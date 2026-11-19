@@ -1,0 +1,26 @@
+{
+  "id": "core/magic-dust",
+  "type": "effect",
+  "style": "core",
+  "name": "Magic dust",
+  "summary": "Swirling colourful glitter motes that spiral upward and fade; for spells, transformations and dreamy moments.",
+  "tags": ["magic", "glitter", "dust", "sparkle", "spiral", "fairy"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x of the swirl" },
+    { "name": "y", "type": "number", "default": 960, "note": "base y where the dust rises from" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "count", "type": "number", "default": 46, "note": "motes, 8 to 80" },
+    { "name": "height", "type": "number", "default": 620, "note": "how high the dust rises in px" },
+    { "name": "r", "type": "number", "default": 240, "note": "spiral radius in px" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "seed", "type": "string", "default": "magic", "note": "change for a different swirl" }
+  ],
+  "example": { "x": 540, "y": 1000, "count": 46, "height": 620 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

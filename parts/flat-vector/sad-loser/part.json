@@ -1,0 +1,60 @@
+{
+  "id": "flat-vector/sad-loser",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Sad loser",
+  "summary": "Flat vector person looking sad and slumped under a small grey rain cloud; for losses, setbacks and bad-news moments.",
+  "tags": [
+    "sad",
+    "loser",
+    "lost",
+    "upset",
+    "gloomy",
+    "rain cloud",
+    "setback",
+    "person"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

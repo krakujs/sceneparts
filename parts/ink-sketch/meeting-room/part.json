@@ -1,0 +1,89 @@
+{
+  "id": "ink-sketch/meeting-room",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Meeting room",
+  "summary": "Ink sketch meeting room background: long table with chairs, screen with chart shapes, glass wall with a view.",
+  "tags": [
+    "meeting room",
+    "boardroom",
+    "office",
+    "table",
+    "screen",
+    "presentation",
+    "background",
+    "interior",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light through the glass wall and room tint"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "seen through the glass wall"
+    },
+    {
+      "name": "table",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "table colour"
+    },
+    {
+      "name": "screen",
+      "type": "boolean",
+      "default": true,
+      "note": "show the chart on the screen (false = blank screen)"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#EEF1F6",
+      "note": "wall colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds drift and weather animates"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear",
+    "screen": true
+  },
+  "uses": [
+    "flat-vector/meeting-room",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

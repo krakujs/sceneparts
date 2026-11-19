@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/time-machine",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Time machine",
+  "summary": "Original brass-and-glass time machine with a seat, big clock dial and spinning gyro rings; for time-travel scenes.",
+  "tags": ["time machine", "time travel", "clock", "brass", "gyro", "sci-fi", "invention", "future"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor centre under the plinth"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; ~1000 px tall, ~860 px wide at 1"},
+    {"name": "glow", "type": "colour", "default": "#3DE0C0", "note": "glow in the tubes and plinth"},
+    {"name": "anim", "type": "enum", "default": "spin", "values": ["spin", "none"], "note": "spin = rings turn, clock hands move, bubbles rise"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

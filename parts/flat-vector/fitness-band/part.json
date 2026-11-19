@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/fitness-band",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Fitness Band",
+  "summary": "Slim fitness band lying flat with a pill display showing a heart and a steps bar; anim beat pulses the heart.",
+  "tags": ["fitness band", "fitness tracker", "activity tracker", "wristband", "heart rate", "steps", "wearable"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom centre: the band lies on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the band is about 680 px wide and 120 px tall (hand-held size, lying flat)"},
+    {"name": "color", "type": "colour", "default": "#1FA39A", "note": "strap colour"},
+    {"name": "screen", "type": "colour", "default": "#253058", "note": "display colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "beat"], "note": "beat = the heart icon pulses like a heartbeat"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "color": "#1FA39A", "screen": "#253058", "anim": "beat"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

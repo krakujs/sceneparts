@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/scissors",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Scissors",
+  "summary": "Pair of open scissors with coloured handle rings and steel blades; for cutting, snipping and craft scenes.",
+  "tags": [
+    "scissors",
+    "shears",
+    "snip",
+    "cutting",
+    "haircut",
+    "tailor",
+    "craft",
+    "blades"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the scissors lie on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "hero scale: about 420 px across at s = 1; use about 0.25–0.35 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "handle ring colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#9AA3B5",
+      "note": "blade colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "snip"
+      ],
+      "note": "snip = the upper blade opens and closes round the pivot"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "snip"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

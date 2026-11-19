@@ -1,0 +1,83 @@
+{
+  "id": "ink-sketch/cactus-pot",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Cactus Pot",
+  "summary": "Ink sketch small potted cactus with two arms and a tiny pink flower on top; for desks.",
+  "tags": [
+    "cactus",
+    "cactus pot",
+    "succulent",
+    "desk plant",
+    "small plant",
+    "potted plant",
+    "flower",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the pot rests on y; set y to a desk top to place it"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size (about 360 px tall); use about 0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "cactus colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "pot colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#4BB46A",
+    "color2": "#FF8A3D"
+  },
+  "uses": [
+    "flat-vector/cactus-pot",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

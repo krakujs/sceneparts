@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/hoe",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Garden hoe",
+  "summary": "Long-handled garden hoe with a flat blade at the foot, standing upright; for vegetable-patch and gardening scenes.",
+  "tags": ["hoe", "garden hoe", "gardening", "weeding", "vegetable patch", "long handle", "farm"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line under the blade"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 500 px tall (hero size); use about 0.25 next to a person"},
+    {"name": "color", "type": "colour", "default": "#9AA3B5", "note": "blade colour"},
+    {"name": "color2", "type": "colour", "default": "#8A5A3C", "note": "handle colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "chop"], "note": "chop = the blade rocks up and down as if hoeing"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "chop"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

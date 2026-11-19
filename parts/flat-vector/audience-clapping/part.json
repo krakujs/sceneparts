@@ -1,0 +1,54 @@
+{
+  "id": "flat-vector/audience-clapping",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Audience clapping",
+  "summary": "Two rows of seated audience members clapping with spark marks on each clap; for applause, shows and finales.",
+  "tags": [
+    "audience",
+    "clapping",
+    "applause",
+    "seated",
+    "crowd",
+    "theatre",
+    "people",
+    "group"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "overall scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror the whole group"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

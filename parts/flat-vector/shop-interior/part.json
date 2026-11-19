@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/shop-interior",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Shop interior",
+  "summary": "Full-frame flat shop interior background: shelves of goods, counter with till, shop glass and a hanging sign shape.",
+  "tags": ["shop", "store", "retail", "interior", "shelves", "counter", "background"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "light outside the shop glass and inside" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "weather seen through the shop glass" },
+    { "name": "accent", "type": "colour", "default": "#1FA39A", "note": "hanging sign and ceiling lamp colour" },
+    { "name": "wall", "type": "colour", "default": "#F4EEE2", "note": "wall colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = street moves in the shop glass and weather animates" }
+  ],
+  "example": { "time": "day", "weather": "clear" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

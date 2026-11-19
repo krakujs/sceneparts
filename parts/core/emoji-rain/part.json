@@ -1,0 +1,23 @@
+{
+  "id": "core/emoji-rain",
+  "type": "effect",
+  "style": "core",
+  "name": "Emoji rain",
+  "summary": "Full-frame rain of spinning original round faces (smile, laugh, heart eyes, wink); for hype and reaction moments.",
+  "tags": ["emoji", "faces", "rain", "reaction", "fun", "hype"],
+  "params": [
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "count", "type": "number", "default": 36, "note": "faces on screen, 6 to 60" },
+    { "name": "variant", "type": "enum", "default": "mixed", "values": ["mixed", "smile", "laugh", "heart", "wink"], "note": "one face kind or a mix" },
+    { "name": "speed", "type": "number", "default": 1, "note": "fall speed multiplier" },
+    { "name": "seed", "type": "string", "default": "emoji", "note": "change for a different spread" }
+  ],
+  "example": { "count": 36, "variant": "mixed" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

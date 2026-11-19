@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/sewing-machine",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Sewing machine",
+  "summary": "Classic desktop sewing machine in side view with a turning handwheel; for tailoring, home craft and workshop scenes.",
+  "tags": ["sewing machine", "sewing", "tailor", "stitching", "craft", "fabric", "workshop"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the base sits on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale: at s = 1 about 600 px wide and 520 px tall; use about 0.5 next to a person"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "body colour"},
+    {"name": "color2", "type": "colour", "default": "#DDE2EA", "note": "metal parts colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "spin", "bob", "wobble", "pop"], "note": "spin = handwheel turns and the needle bobs"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the arm then reaches left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

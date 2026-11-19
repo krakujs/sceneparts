@@ -1,0 +1,93 @@
+{
+  "id": "storybook/world-set",
+  "type": "background",
+  "style": "storybook",
+  "name": "World set",
+  "summary": "Whole historical/disaster setting behind the characters: sea, galleon, liner, trench, volcano, space, tower\u2026",
+  "tags": [
+    "storybook",
+    "flat",
+    "setting",
+    "scene",
+    "ship",
+    "titanic",
+    "trench",
+    "volcano",
+    "space",
+    "history",
+    "disaster"
+  ],
+  "params": [
+    {
+      "name": "set",
+      "type": "enum",
+      "values": [
+        "sea",
+        "galleon",
+        "liner",
+        "deck",
+        "boat",
+        "ice",
+        "street",
+        "court",
+        "trench",
+        "underwater",
+        "frontier",
+        "volcano",
+        "island",
+        "winter",
+        "space",
+        "bridge",
+        "flood",
+        "airship",
+        "sickroom",
+        "tower"
+      ],
+      "default": "sea"
+    },
+    {
+      "name": "tilt",
+      "type": "object",
+      "note": "[fromDeg, toDeg] roll (ships)"
+    },
+    {
+      "name": "sink",
+      "type": "object",
+      "note": "[fromY, toY] set moves down"
+    },
+    {
+      "name": "ship",
+      "type": "string",
+      "note": "sea: liner | galleon"
+    },
+    {
+      "name": "shipTilt",
+      "type": "number"
+    },
+    {
+      "name": "shipScale",
+      "type": "number"
+    },
+    {
+      "name": "broken",
+      "type": "boolean"
+    },
+    {
+      "name": "mid",
+      "type": "boolean",
+      "default": true
+    }
+  ],
+  "example": {
+    "set": "galleon"
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/world-sky"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

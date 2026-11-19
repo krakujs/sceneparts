@@ -1,0 +1,62 @@
+{
+  "id": "storybook/oil-lantern",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Oil lantern",
+  "summary": "Brass oil lantern with glass chimney and flickering flame; light source for night, mine or ship scenes.",
+  "tags": [
+    "lantern",
+    "oil lamp",
+    "light",
+    "flame",
+    "victorian",
+    "history",
+    "night",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500,
+      "note": "bottom centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~560 px tall at 1"
+    },
+    {
+      "name": "lit",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "name": "metal",
+      "type": "colour",
+      "default": "#B98B52"
+    },
+    {
+      "name": "flip",
+      "type": "boolean"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1300,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

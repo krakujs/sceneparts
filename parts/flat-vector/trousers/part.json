@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/trousers",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Trousers",
+  "summary": "Full-length tailored trousers with a crease, belt loops and side pockets on a clip hanger; sways. For wardrobe scenes.",
+  "tags": [
+    "trousers",
+    "pants",
+    "slacks",
+    "chinos",
+    "dress pants",
+    "office trousers",
+    "clothes",
+    "wardrobe",
+    "fashion"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom: the item rests on y (hem or tip)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 340 px wide and 690 px tall at s = 1 (hook included)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#253058",
+      "note": "fabric colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "belt loop and stitch colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sway"
+      ],
+      "note": "sway = the trousers swing gently from the hook"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#253058",
+    "color2": "#FFFFFF",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

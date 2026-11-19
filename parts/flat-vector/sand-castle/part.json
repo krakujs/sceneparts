@@ -1,0 +1,15 @@
+{
+  "id": "flat-vector/sand-castle",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Sand castle",
+  "summary": "Sand castle with towers, crenellations and a flag, beside a small bucket and spade; use for beach scenes.",
+  "tags": ["sand castle","sandcastle","beach","sand","towers","bucket","spade"],
+  "params": [{"name":"x","type":"number","default":540,"note":"centre x"},{"name":"y","type":"number","default":1600,"note":"ground line"},{"name":"s","type":"number","default":1,"note":"about 940 px wide and 560 px tall at s = 1"},{"name":"color","type":"colour","default":"#E8C98E","note":"sand colour"},{"name":"color2","type":"colour","default":"#E8503F","note":"flag colour"},{"name":"flip","type":"boolean","default":false,"note":"mirror"}],
+  "example": {"x":540,"y":1600,"s":0.7},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

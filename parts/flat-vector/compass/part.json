@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/compass",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Compass",
+  "summary": "Round magnetic compass on a small foot with N/E/S/W marks and a wobbling needle; for hiking and navigation scenes.",
+  "tags": ["compass", "magnetic compass", "navigation", "direction", "hiking", "north", "map"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom edge: the foot stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 460 px wide and 510 px tall (hero size)"},
+    {"name": "color", "type": "colour", "default": "#1FA39A", "note": "case colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "needle"], "note": "needle = the needle wobbles about north"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#1FA39A", "anim": "needle"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

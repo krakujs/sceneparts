@@ -1,0 +1,31 @@
+{
+  "id": "flat-vector/pepper-mill",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Pepper mill",
+  "summary": "Tall wooden pepper grinder with a curved waist and a round knob on top; for dining table and kitchen scenes.",
+  "tags": [
+    "pepper mill",
+    "pepper grinder",
+    "pepper",
+    "kitchen",
+    "wood",
+    "seasoning",
+    "table"
+  ],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the grinder stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the grinder is hero size (~375 px wide, ~800 px tall); use about 0.2–0.3 next to a person"},
+    {"name": "woodColor", "type": "colour", "default": "#8A5A3C", "note": "wood colour"},
+    {"name": "metalColor", "type": "colour", "default": "#9AA3B5", "note": "metal ring colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "pop"], "note": "bob = gentle up and down, pop = scale in with overshoot"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

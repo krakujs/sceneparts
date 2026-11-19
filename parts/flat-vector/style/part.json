@@ -1,0 +1,14 @@
+{
+  "id": "flat-vector/style",
+  "type": "style",
+  "style": "flat-vector",
+  "name": "Flat vector",
+  "summary": "Clean modern flat explainer style: solid fills, no outlines, one shade for depth, bright friendly palette.",
+  "tags": ["flat", "vector", "modern", "explainer", "minimal", "corporate", "infographic", "style"],
+  "params": [],
+  "example": {},
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

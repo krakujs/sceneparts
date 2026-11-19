@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/pager",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Pager",
+  "summary": "Small belt-clip pager with a tiny LCD and buttons; use for beeper, 90s office or on-call scenes.",
+  "tags": ["pager", "beeper", "bleeper", "on call", "lcd", "retro gadget", "clip"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the base of the body rests on y; set y to a hand or belt height to place it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size, about 330 px tall at s = 1; use about 0.3 clipped to a person"},
+    {"name": "color", "type": "colour", "default": "#5D6578", "note": "body colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "blink"], "note": "blink = LCD flickers and the status light pulses"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (clip moves to the left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#5D6578", "anim": "blink"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

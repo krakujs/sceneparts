@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/birch-tree",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Birch tree",
+  "summary": "Slim white birch with black bark dashes and an airy yellow-green crown; for spring, woodland and meadow scenes.",
+  "tags": ["birch tree", "birch", "white tree", "silver birch", "spring", "woodland", "tree"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the trunk"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the trunk stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 680 px wide and 1170 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#A8D85A", "note": "crown colour (yellow-green)"},
+    {"name": "color2", "type": "colour", "default": "#FFFFFF", "note": "trunk colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "sway"], "note": "sway = crown moves gently in the breeze"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

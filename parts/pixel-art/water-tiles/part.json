@@ -1,0 +1,19 @@
+{
+  "id": "pixel-art/water-tiles",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Water tiles",
+  "summary": "Pixel-art animated water surface filling the frame, with wave crests and sparkles; for seas, pools and rivers.",
+  "tags": ["water", "sea", "ocean", "waves", "surface", "background", "pixel", "pixel art", "game", "level"],
+  "params": [
+    {"name": "seed", "type": "number", "default": 1, "note": "varies where crests and sparkles sit"},
+    {"name": "anim", "type": "enum", "default": "waves", "values": ["waves", "none"], "note": "water frames swap and sparkles blink from p.f"}
+  ],
+  "example": {"anim": "waves"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

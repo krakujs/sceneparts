@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/signpost",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Signpost",
+  "summary": "Wooden signpost with three blank arrow boards pointing left and right; for road, village and trail scenes.",
+  "tags": ["signpost", "sign post", "arrow sign", "directions", "road sign", "trail", "wooden sign"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x of the post" },
+    { "name": "y", "type": "number", "default": 1600, "note": "floor line: the foot of the post stands on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "about 640 px wide and 930 px tall at s = 1 (about 1.2 people tall at s = 1)" },
+    { "name": "color", "type": "colour", "default": "#1F6FE0", "note": "arrow board colour" },
+    { "name": "color2", "type": "colour", "default": "#8A5A3C", "note": "wood colour of the post" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "lights", "pop"], "note": "lights = the reflector studs on the boards flash one after another; pop = scales in" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror (the boards then start on the left)" }
+  ],
+  "example": { "x": 540, "y": 1600, "s": 1, "anim": "none" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

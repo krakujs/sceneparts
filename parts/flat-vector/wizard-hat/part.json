@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/wizard-hat",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Wizard hat",
+  "summary": "Tall bent pointed wizard hat with a wide brim, stars and a moon; for magic, fantasy and witch scenes.",
+  "tags": ["wizard hat", "witch hat", "magic hat", "pointed hat", "wizard", "magic", "fantasy", "moon"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom of the brim stands on y"},
+    {"name": "s", "type": "number", "default": 1.2, "note": "scale; about 420 px wide and 700 px tall at s = 1; use about 0.3 on a person's head"},
+    {"name": "color", "type": "colour", "default": "#7B5CD6", "note": "hat colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "sway", "twinkle"], "note": "sway = tip wobbles gently, twinkle = stars blink in turn"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1.2, "color": "#7B5CD6", "anim": "twinkle"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

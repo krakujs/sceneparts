@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/riverbank",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Riverbank",
+  "summary": "Full-frame flat riverbank background: a river flowing across with moving ripples, grassy banks, stones, reeds and trees.",
+  "tags": ["river", "riverbank", "water", "stream", "reeds", "stones", "background", "outdoor"],
+  "params": [
+    { "name": "time", "type": "enum", "default": "day", "values": ["day", "morning", "dusk", "night"], "note": "light on the water and banks" },
+    { "name": "weather", "type": "enum", "default": "clear", "values": ["clear", "cloudy", "rain", "snow", "fog", "storm"], "note": "sky tint and animated weather" },
+    { "name": "water", "type": "colour", "default": "#4E9ED8", "note": "river colour" },
+    { "name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = ripples flow and trees sway from p.f" }
+  ],
+  "example": { "time": "day", "weather": "clear", "water": "#4E9ED8" },
+  "uses": ["flat-vector/style", "flat-vector/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

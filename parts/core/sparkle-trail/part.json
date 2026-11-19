@@ -1,0 +1,26 @@
+{
+  "id": "core/sparkle-trail",
+  "type": "effect",
+  "style": "core",
+  "name": "Sparkle trail",
+  "summary": "A bright sparkle flies along an arc from one point to another, leaving a fading trail of twinkles; for magic moves.",
+  "tags": ["sparkle", "trail", "twinkle", "magic", "arc", "shine"],
+  "params": [
+    { "name": "x1", "type": "number", "default": 200, "note": "start x" },
+    { "name": "y1", "type": "number", "default": 1300, "note": "start y" },
+    { "name": "x2", "type": "number", "default": 880, "note": "end x" },
+    { "name": "y2", "type": "number", "default": 700, "note": "end y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale about the middle of the path" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "seed", "type": "string", "default": "trail", "note": "change for a different trail jitter" },
+    { "name": "color", "type": "colour", "note": "accent colour of the lead sparkle" }
+  ],
+  "example": { "x1": 160, "y1": 1250, "x2": 920, "y2": 640 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

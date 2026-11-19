@@ -1,0 +1,15 @@
+{
+  "id": "flat-vector/vineyard",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Vineyard",
+  "summary": "Rows of grape vines on wooden posts and wires with purple grape bunches; use for wine-country scenes.",
+  "tags": ["vineyard","grapes","vines","wine","farm","rows","purple"],
+  "params": [{"name":"x","type":"number","default":540,"note":"centre x"},{"name":"y","type":"number","default":1600,"note":"ground line"},{"name":"s","type":"number","default":1,"note":"about 1000 px wide and 330 px tall at s = 1"},{"name":"color","type":"colour","default":"#7B5CD6","note":"grape colour"},{"name":"color2","type":"colour","default":"#3E9B4F","note":"leaf colour"},{"name":"anim","type":"enum","default":"none","values":["none","sway"],"note":"sway = rows rock gently"},{"name":"flip","type":"boolean","default":false,"note":"mirror"}],
+  "example": {"x":540,"y":1600,"s":1,"anim":"sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

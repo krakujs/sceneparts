@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/hologram",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Hologram",
+  "summary": "Blue translucent hologram cone from a small round projector, showing a rotating cube or globe with scanlines.",
+  "tags": ["hologram", "projection", "sci-fi", "blue beam", "scanlines", "cube", "globe", "tech"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the projector lens"},
+    {"name": "y", "type": "number", "default": 1500, "note": "projector lens; the beam rises about 620 px above it at s = 1"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale"},
+    {"name": "shape", "type": "enum", "default": "cube", "values": ["cube", "globe"], "note": "what is projected"},
+    {"name": "color", "type": "colour", "default": "#5BC8FF", "note": "beam and wireframe colour"},
+    {"name": "anim", "type": "enum", "default": "spin", "values": ["spin", "flicker", "none"], "note": "spin = rotates with drifting scanlines; flicker = unstable light"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1500, "shape": "cube", "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

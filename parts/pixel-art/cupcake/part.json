@@ -1,0 +1,111 @@
+{
+  "id": "pixel-art/cupcake",
+  "type": "prop",
+  "style": "pixel-art",
+  "name": "Cupcake",
+  "summary": "Pixel-art cupcake with pink frosting swirl and cherry on a striped cup; for sweet treats and parties.",
+  "tags": [
+    "cupcake",
+    "dessert",
+    "sweets",
+    "birthday",
+    "food",
+    "item",
+    "pixel",
+    "pixel art"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the item (centre when centre = true)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; one cell = 24 px at s = 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror horizontally"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "float",
+      "values": [
+        "none",
+        "bob",
+        "bounce",
+        "float",
+        "shake",
+        "pulse"
+      ],
+      "note": "whole-sprite motion; float/bob suit pickups"
+    },
+    {
+      "name": "centre",
+      "type": "boolean",
+      "default": true,
+      "note": "anchor on the centre instead of the bottom"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame drift"
+    },
+    {
+      "name": "colour",
+      "type": "colour",
+      "default": "#ef8fb4",
+      "note": "main colour (char a), e.g. #ef8fb4"
+    },
+    {
+      "name": "colour2",
+      "type": "colour",
+      "default": "#b8527f",
+      "note": "shade colour (char A)"
+    },
+    {
+      "name": "pal",
+      "type": "object",
+      "note": "replace colours by char, e.g. {\"z\": \"#e0303a\"}"
+    },
+    {
+      "name": "px",
+      "type": "number",
+      "default": 24,
+      "note": "cell size"
+    },
+    {
+      "name": "outline",
+      "type": "boolean",
+      "default": true,
+      "note": "dark one-cell outline"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1100,
+    "s": 2.5,
+    "anim": "float",
+    "centre": true
+  },
+  "uses": [
+    "pixel-art/sprite"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

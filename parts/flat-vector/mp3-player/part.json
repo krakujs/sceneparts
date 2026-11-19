@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/mp3-player",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "MP3 player",
+  "summary": "Small digital music player with a colour screen, click pad and earphone lead; use for modern music listening scenes.",
+  "tags": ["mp3 player", "music player", "digital music", "earphones", "click wheel", "portable music", "gadget"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the player rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the player is hero size (about 340 px tall); use about 0.5 next to a hand"},
+    {"name": "color", "type": "colour", "default": "#7B5CD6", "note": "body colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "play"], "note": "play = equaliser bars dance on the screen"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#7B5CD6", "anim": "play"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

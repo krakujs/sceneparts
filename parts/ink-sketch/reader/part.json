@@ -1,0 +1,293 @@
+{
+  "id": "ink-sketch/reader",
+  "type": "character",
+  "style": "ink-sketch",
+  "name": "Reader",
+  "summary": "Ink-sketch reader seated on a chair in a green sweater and glasses, with an open book; for library and reading scenes.",
+  "tags": [
+    "reader",
+    "reading",
+    "book",
+    "library",
+    "seated",
+    "bookworm",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "feet / ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; adult ≈ 980 px tall at s = 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "build",
+      "type": "enum",
+      "values": [
+        "adult",
+        "teen",
+        "child",
+        "toddler",
+        "baby",
+        "elder"
+      ],
+      "default": "adult",
+      "note": "body proportions; baby is a seated infant ≈ 300 px; elder stoops"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "values": [
+        "idle",
+        "walk",
+        "run",
+        "wave",
+        "cheer",
+        "jump",
+        "talk",
+        "none"
+      ],
+      "default": "idle",
+      "note": "idle breathes and blinks; walk/run swing; wave raises the front hand"
+    },
+    {
+      "name": "arms",
+      "type": "enum",
+      "values": [
+        "down",
+        "up",
+        "one-up"
+      ],
+      "default": "down",
+      "note": "arm pose when anim does not set one"
+    },
+    {
+      "name": "beard",
+      "type": "enum",
+      "values": [
+        "none",
+        "beard",
+        "moustache",
+        "goatee",
+        "stubble"
+      ],
+      "default": "none",
+      "note": "facial hair"
+    },
+    {
+      "name": "eyes",
+      "type": "enum",
+      "values": [
+        "open",
+        "happy",
+        "closed"
+      ],
+      "default": "open",
+      "note": "eye shape"
+    },
+    {
+      "name": "mouth",
+      "type": "enum",
+      "values": [
+        "smile",
+        "flat",
+        "open",
+        "frown",
+        "mask"
+      ],
+      "default": "smile",
+      "note": "mouth; mask = face mask; anim talk opens it"
+    },
+    {
+      "name": "blush",
+      "type": "boolean",
+      "default": false,
+      "note": "pink cheeks"
+    },
+    {
+      "name": "hat",
+      "type": "enum",
+      "values": [
+        "none",
+        "cap",
+        "hardhat",
+        "minerhat",
+        "beanie",
+        "chef",
+        "peaked",
+        "nurse",
+        "surgical",
+        "cowboy",
+        "tophat",
+        "helmet",
+        "firehelmet",
+        "graduation",
+        "beret",
+        "witch",
+        "crown",
+        "headset",
+        "headscarf",
+        "bandana",
+        "santa",
+        "sunhat",
+        "party",
+        "turban",
+        "spacehelmet",
+        "pirate",
+        "flowers",
+        "bunnyears"
+      ],
+      "default": "none",
+      "note": "headwear (flowers = flower band + bridal veil)"
+    },
+    {
+      "name": "hatColour",
+      "type": "colour",
+      "default": "red",
+      "note": "hat colour"
+    },
+    {
+      "name": "inner",
+      "type": "colour",
+      "default": "#f7f2e7",
+      "note": "shirt under a jacket, collar, overall shirt"
+    },
+    {
+      "name": "over",
+      "type": "enum",
+      "values": [
+        "none",
+        "apron",
+        "hivis",
+        "vest",
+        "sash",
+        "lifejacket"
+      ],
+      "default": "none",
+      "note": "garment over the top"
+    },
+    {
+      "name": "overColour",
+      "type": "colour",
+      "default": "yellow",
+      "note": "overlay colour"
+    },
+    {
+      "name": "neck",
+      "type": "enum",
+      "values": [
+        "none",
+        "tie",
+        "bowtie",
+        "stethoscope",
+        "lanyard",
+        "scarf",
+        "medal",
+        "necklace",
+        "whistle",
+        "cameraneck",
+        "pearls"
+      ],
+      "default": "none",
+      "note": "neckwear"
+    },
+    {
+      "name": "neckColour",
+      "type": "colour",
+      "default": "red",
+      "note": "tie, bow tie, scarf, lanyard colour"
+    },
+    {
+      "name": "belt",
+      "type": "boolean",
+      "default": false,
+      "note": "belt with a buckle"
+    },
+    {
+      "name": "badge",
+      "type": "colour",
+      "default": "none",
+      "note": "chest badge colour (none = no badge)"
+    },
+    {
+      "name": "back",
+      "type": "enum",
+      "values": [
+        "none",
+        "backpack",
+        "cape",
+        "wings",
+        "tank",
+        "guitar",
+        "quiver"
+      ],
+      "default": "none",
+      "note": "gear behind the body"
+    },
+    {
+      "name": "backColour",
+      "type": "colour",
+      "default": "red",
+      "note": "backpack / cape / wings colour (uses itemColour if not set)"
+    },
+    {
+      "name": "belly",
+      "type": "boolean",
+      "default": false,
+      "note": "rounded belly"
+    },
+    {
+      "name": "wash",
+      "type": "enum",
+      "values": [
+        "colour",
+        "accent",
+        "none"
+      ],
+      "default": "colour",
+      "note": "colour: garments washed in their colours; accent: only the top gets the accent; none: pure line art"
+    },
+    {
+      "name": "extra",
+      "type": "object",
+      "note": "array of overlays {d (SVG path), fill?, at: head|body|hand, back?}; see ANCHOR"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame drift (pair with walk)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "anim": "idle"
+  },
+  "uses": [
+    "ink-sketch/person"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/germ",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Germ",
+  "summary": "Cartoon blobby microbe with a bumpy outline and a cheeky grin; anim wobble rocks it. Friendly germ character.",
+  "tags": ["germ", "microbe", "bug", "cartoon germ", "mischief", "microbes", "character"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 900, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 380 px across" },
+    { "name": "color", "type": "colour", "default": "#A8D85A", "note": "body colour" },
+    { "name": "color2", "type": "colour", "default": "#7B5CD6", "note": "feeler colour" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "wobble"], "note": "wobble = the body rocks and squashes gently" }
+  ],
+  "example": { "x": 540, "y": 900, "s": 1, "color": "#A8D85A", "color2": "#7B5CD6", "anim": "wobble" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

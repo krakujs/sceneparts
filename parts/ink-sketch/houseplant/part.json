@@ -1,0 +1,85 @@
+{
+  "id": "ink-sketch/houseplant",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Houseplant",
+  "summary": "Ink sketch leafy indoor plant with broad leaves in a pot, room-sized; anim sway moves the leaves. For homes and offices.",
+  "tags": [
+    "houseplant",
+    "indoor plant",
+    "plant",
+    "leaves",
+    "potted plant",
+    "room",
+    "greenery",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the pot rests on y (room scale, about 600 px tall)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 matches a ink-sketch person at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "leaf colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#C9704E",
+      "note": "pot colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = leaves move gently in the breeze"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#4BB46A",
+    "color2": "#C9704E",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/houseplant",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

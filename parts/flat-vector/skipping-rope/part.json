@@ -1,0 +1,81 @@
+{
+  "id": "flat-vector/skipping-rope",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Skipping rope",
+  "summary": "Skipping rope with two handles and a looping rope; anim swing turns the rope. Use for fitness scenes.",
+  "tags": [
+    "skipping rope",
+    "jump rope",
+    "skipping",
+    "fitness",
+    "cardio",
+    "playground",
+    "prop"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the lowest point of the rope touches y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 about 520 px wide and 720 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "handle colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#253058",
+      "note": "rope colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "swing",
+        "bob",
+        "pop"
+      ],
+      "note": "swing = the rope turns over and back, as if being skipped"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror the rope"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#FF8A3D",
+    "color2": "#253058",
+    "anim": "swing"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

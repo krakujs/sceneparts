@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/house-interior",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "House interior",
+  "summary": "Pixel-art cosy living room: window, sofa, rug, picture frame, floor lamp, bookshelf and wood floor; for home scenes.",
+  "tags": [
+    "house",
+    "living room",
+    "home",
+    "cosy",
+    "background",
+    "indoor",
+    "pixel art",
+    "game",
+    "level"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "glow",
+      "values": [
+        "glow",
+        "none"
+      ],
+      "note": "the floor lamp glow flickers from p.f"
+    }
+  ],
+  "example": {
+    "anim": "glow"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

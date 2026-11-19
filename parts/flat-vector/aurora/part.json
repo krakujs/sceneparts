@@ -1,0 +1,20 @@
+{
+  "id": "flat-vector/aurora",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Aurora",
+  "summary": "Wavy translucent green, teal and purple light curtains for northern-lights night skies. Anim: wave.",
+  "tags": ["aurora", "northern lights", "night sky", "light curtain", "green light", "space", "glow"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 500, "note": "centre y of the curtains"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 1080 px wide and 500 px tall"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "wave"], "note": "wave = curtains ripple along their length"}
+  ],
+  "example": {"x": 540, "y": 500, "s": 1, "anim": "wave"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

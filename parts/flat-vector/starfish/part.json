@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/starfish",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Starfish",
+  "summary": "Flat vector orange five-armed starfish with dot texture on the ground; arm tips wiggle slowly.",
+  "tags": ["starfish", "sea star", "sea", "beach", "marine", "orange", "ocean"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre (ground)" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 220 px across at s = 1" },
+    { "name": "pose", "type": "enum", "default": "wiggle", "values": ["wiggle", "idle"], "note": "wiggle = arm tips wiggle slowly from p.f; idle = almost still" },
+    { "name": "color", "type": "string", "default": "#FF8A3D", "note": "body colour (hex)" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror left-right" },
+    { "name": "vx", "type": "number", "default": 0, "note": "px per frame drift" }
+  ],
+  "example": { "x": 540, "y": 1560, "pose": "wiggle" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

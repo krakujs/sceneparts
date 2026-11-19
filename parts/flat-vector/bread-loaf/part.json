@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/bread-loaf",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bread loaf",
+  "summary": "Golden domed bread loaf with scored crust, for bakery, breakfast and food scenes.",
+  "tags": ["food", "bread", "bakery", "loaf", "baking", "breakfast"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1560, "note": "bottom centre: the loaf rests on y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size (~400 px wide); use about 0.2–0.3 next to a person" },
+    { "name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down, wobble = small rock, pop = scale in with overshoot" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror" },
+    { "name": "color", "type": "colour", "default": "#F0B046", "note": "crust colour (golden)" },
+    { "name": "crumb", "type": "colour", "default": "#FFF1D0", "note": "scoring slash colour (the inside of the loaf)" }
+  ],
+  "example": { "x": 540, "y": 1560, "s": 1 },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

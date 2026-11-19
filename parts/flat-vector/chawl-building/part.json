@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/chawl-building",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Chawl Building",
+  "summary": "Mumbai chawl: a four-storey building with long common balconies and washing lines. For city and Mumbai scenes.",
+  "tags": [
+    "chawl",
+    "mumbai",
+    "india",
+    "apartment",
+    "balcony",
+    "clothesline",
+    "city"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "floor line: the base stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 830 px wide and 1010 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F5D07A",
+      "note": "Wall colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#1FA39A",
+      "note": "Balcony rail and trim colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "lights"
+      ],
+      "note": "pop = scales in; lights = the windows glow one after another"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "lights"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

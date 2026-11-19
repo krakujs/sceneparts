@@ -1,0 +1,78 @@
+{
+  "id": "flat-vector/moon-base",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Moon base",
+  "summary": "Moon base with glass domes, a habitat module, antenna and lit windows on a grey regolith hill. For space colony scenes.",
+  "tags": [
+    "moon base",
+    "moon",
+    "lunar base",
+    "dome",
+    "colony",
+    "space",
+    "habitat",
+    "antenna"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the base"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line the base sits on; the grey hill is drawn below it"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 900 px wide and 330 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#C7CCD6",
+      "note": "module colour"
+    },
+    {
+      "name": "glass",
+      "type": "colour",
+      "default": "#CFE6F5",
+      "note": "dome colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "glow",
+      "values": [
+        "none",
+        "glow"
+      ],
+      "note": "glow = windows glow and the antenna light blinks"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "glow"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

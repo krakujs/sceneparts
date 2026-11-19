@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/rocket-sticker",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Rocket Sticker",
+  "summary": "Flat rocket blasting diagonally up with flame and puffs, for launch, growth and fast moments.",
+  "tags": ["rocket", "launch", "growth", "fast", "speed", "boost", "sticker"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 420 px across at s = 1" },
+    { "name": "color", "type": "colour", "default": "#E8503F", "note": "rocket colour; one darker shade is added for depth" },
+    { "name": "anim", "type": "enum", "default": "flame", "values": ["none", "flame", "bob"], "note": "idle motion from p.f; flame flickers and puffs exhaust" },
+    { "name": "popIn", "type": "boolean", "default": true, "note": "springs in over the first 10 frames" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror left-right (launches up and to the left)" }
+  ],
+  "example": { "x": 540, "y": 960, "anim": "flame" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

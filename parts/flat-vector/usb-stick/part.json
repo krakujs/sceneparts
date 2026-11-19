@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/usb-stick",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "USB Stick",
+  "summary": "USB flash drive lying flat, with a metal connector, a coloured body, a cap and a small LED; anim blink flickers the LED.",
+  "tags": ["usb stick", "usb drive", "flash drive", "thumb drive", "memory stick", "usb", "storage"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "bottom centre: the stick lies flat on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the stick is about 560 px long and 120 px tall (hand-held size)"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "body colour"},
+    {"name": "cap", "type": "colour", "default": "#2A50AE", "note": "cap colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "blink"], "note": "blink = the activity LED flickers"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (connector moves to the right)"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "color": "#3D6FE0", "cap": "#2A50AE", "anim": "blink"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

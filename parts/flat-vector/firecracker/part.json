@@ -1,0 +1,77 @@
+{
+  "id": "flat-vector/firecracker",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Firecracker",
+  "summary": "Red paper firecracker with twisted ends and a sparking fuse; use for New Year, Diwali or celebration scenes.",
+  "tags": [
+    "firecracker",
+    "fire cracker",
+    "fuse",
+    "bang",
+    "new year",
+    "celebration",
+    "cracker"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom of the tube sits on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 600 px wide and 200 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "paper colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "band and twisted-end colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "sparks"
+      ],
+      "note": "sparks = sparks travel along the fuse toward the tip, looping"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "sparks"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

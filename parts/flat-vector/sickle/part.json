@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/sickle",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Sickle",
+  "summary": "Harvest sickle with a crescent steel blade and short wooden handle, standing upright; for farming and harvest scenes.",
+  "tags": [
+    "sickle",
+    "harvest",
+    "reaping",
+    "farming",
+    "wheat",
+    "hook blade",
+    "farm tool"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line under the handle"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 400 px long (hero size); use about 0.25 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#9AA3B5",
+      "note": "blade colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "handle colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "swing"
+      ],
+      "note": "swing = the blade sweeps through an arc around the grip"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "swing"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

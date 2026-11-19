@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/green-alien",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Alien green",
+  "summary": "Classic little green alien with antennae, big black almond eyes and a silver jumpsuit; waves or stands.",
+  "tags": ["alien", "green alien", "space", "antennae", "cartoon", "extraterrestrial", "sci-fi", "kids"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540},
+    {"name": "y", "type": "number", "default": 1560, "note": "feet"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; ~1000 px tall at 1"},
+    {"name": "pose", "type": "enum", "default": "wave", "values": ["wave", "stand"], "note": "wave = right hand raised; stand = arms down"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "face left"}
+  ],
+  "example": {"x": 540, "y": 1560, "pose": "wave"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

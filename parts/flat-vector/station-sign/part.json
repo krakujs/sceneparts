@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/station-sign",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Station Sign",
+  "summary": "Hanging rail platform sign with a blank board, a train pictogram and a clock beside it. No words. For station scenes.",
+  "tags": ["station sign", "train station", "platform", "railway", "rail", "clock", "sign"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line under the hanging sign"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 720 px wide and 830 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#253058", "note": "board colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "hangers, bar and clock rim colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "sway", "bob", "pop"], "note": "sway = the sign swings gently from its hangers"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (the clock then sits on the left)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,138 @@
+{
+  "id": "flat-vector/surfer",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Surfer",
+  "summary": "Flat vector surfer in a teal rash guard and board shorts with a surfboard under the arm; for beach explainers.",
+  "tags": [
+    "surfer",
+    "surf",
+    "surfing",
+    "surfboard",
+    "beach",
+    "ocean",
+    "summer",
+    "sport"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "age",
+      "type": "enum",
+      "default": "adult",
+      "values": [
+        "adult",
+        "teen",
+        "child",
+        "toddler",
+        "elder"
+      ],
+      "note": "teen/child/toddler: smaller with a bigger head; elder: slight stoop"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "wave",
+        "point",
+        "think",
+        "cheer",
+        "talk",
+        "sit",
+        "hold"
+      ]
+    },
+    {
+      "name": "expression",
+      "type": "enum",
+      "default": "smile",
+      "values": [
+        "smile",
+        "neutral",
+        "open",
+        "surprised",
+        "sad",
+        "angry",
+        "laugh"
+      ]
+    },
+    {
+      "name": "skin",
+      "type": "string",
+      "default": "fair",
+      "note": "light | fair | tan | medium | brown | dark, or a hex colour"
+    },
+    {
+      "name": "hair",
+      "type": "enum",
+      "default": "long",
+      "values": [
+        "short",
+        "buzz",
+        "side",
+        "spiky",
+        "curly",
+        "afro",
+        "long",
+        "ponytail",
+        "bun",
+        "bob",
+        "braid",
+        "none"
+      ]
+    },
+    {
+      "name": "hairColor",
+      "type": "string",
+      "default": "blonde",
+      "note": "black | brown | auburn | blonde | grey | white | red | blue | pink, or hex"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "skin": "tan",
+    "hair": "long",
+    "hairColor": "blonde"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

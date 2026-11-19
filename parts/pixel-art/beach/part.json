@@ -1,0 +1,21 @@
+{
+  "id": "pixel-art/beach",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Beach",
+  "summary": "Pixel-art sunny beach: rolling sea with foam, sandy shore, a striped parasol and a palm; for summer and holiday scenes.",
+  "tags": ["beach", "sea", "ocean", "sand", "summer", "parasol", "holiday", "background", "pixel", "pixel art"],
+  "params": [
+    {"name": "time", "type": "enum", "default": "day", "values": ["day", "dusk"], "note": "bright day or a sunset over the sea"},
+    {"name": "groundY", "type": "number", "default": 1600, "note": "sand line; stand characters on it"},
+    {"name": "seed", "type": "number", "default": 6, "note": "varies cloud positions"},
+    {"name": "anim", "type": "enum", "default": "waves", "values": ["waves", "none"], "note": "water frames swap and crests move from p.f"}
+  ],
+  "example": {"time": "day"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

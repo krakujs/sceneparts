@@ -1,0 +1,84 @@
+{
+  "id": "flat-vector/graduation-cap",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Graduation Cap",
+  "summary": "Square mortarboard graduation cap with a gold tassel; anim toss flings it up and spins it. For graduations.",
+  "tags": [
+    "graduation cap",
+    "mortarboard",
+    "graduation",
+    "cap",
+    "tassel",
+    "degree",
+    "university",
+    "toss"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the base of the cap rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size at s = 1 (about 600 px wide); use about 0.2–0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#253058",
+      "note": "colour of the board and cap"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "tassel and button colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "toss",
+        "sway",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "toss = flies up and spins in a loop, tassel swings; sway = tassel swings only"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror the cap and tassel"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#253058",
+    "color2": "#FFC83D",
+    "anim": "toss"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

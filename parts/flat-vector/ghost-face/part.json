@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/ghost-face",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Ghost Face",
+  "summary": "Cute flat white sheet ghost with a wavy hem and an O mouth, floating, for boo, spooky or Halloween moments.",
+  "tags": ["ghost", "boo", "spooky", "halloween", "cute", "floating", "sticker"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 380 px wide at s = 1" },
+    { "name": "color", "type": "colour", "default": "#FFFFFF", "note": "sheet colour; a slightly darker shade is added for depth" },
+    { "name": "anim", "type": "enum", "default": "float", "values": ["none", "float", "wobble"], "note": "idle motion from p.f; float bobs up and down and blinks" },
+    { "name": "popIn", "type": "boolean", "default": true, "note": "springs in over the first 10 frames" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror left-right" }
+  ],
+  "example": { "x": 540, "y": 960, "anim": "float" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

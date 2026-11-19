@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/wind-turbine",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Wind turbine",
+  "summary": "Tall three-blade wind turbine on a tapered tower, room scale; use for wind power, green energy and countryside scenes.",
+  "tags": ["wind turbine", "wind power", "windmill", "wind farm", "renewable energy", "green energy", "turbine"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the foundation"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground: the foundation rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; room scale: at s = 1 the turbine is about 1000 px tall and fits the canvas"},
+    {"name": "color", "type": "colour", "default": "#FFFFFF", "note": "tower and blade colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "spin"], "note": "spin = the blades rotate"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "color": "#FFFFFF", "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

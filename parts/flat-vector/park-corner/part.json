@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/park-corner",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Park Corner",
+  "summary": "Park corner with a round-crowned tree, a wooden bench on a path and a tall lamp post; anim lights flickers the lantern.",
+  "tags": ["park", "bench", "tree", "lamp post", "path", "garden", "corner"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the path and bench stand on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 800 px wide and 960 px tall at s = 1 (tree and lamp reach highest)"},
+    {"name": "color", "type": "colour", "default": "#4BB46A", "note": "tree leaf colour"},
+    {"name": "color2", "type": "colour", "default": "#8A5A3C", "note": "bench and trunk wood colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "pop = scales in; lights = leaves sway and the lantern glows on and off"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

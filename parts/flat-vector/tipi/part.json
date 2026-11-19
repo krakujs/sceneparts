@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/tipi",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Tipi",
+  "summary": "Conical canvas tent with poles crossing at the top and plain geometric bands. For camping and plains scenes.",
+  "tags": ["tipi", "tepee", "teepee", "conical tent", "camping", "tent", "canvas"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the tipi stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 600 px wide and 900 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#E9D3A9", "note": "canvas colour"},
+    {"name": "color2", "type": "colour", "default": "#E8503F", "note": "geometric band colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "lights = a fire glows in the opening"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

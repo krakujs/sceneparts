@@ -1,0 +1,84 @@
+{
+  "id": "core/meter",
+  "type": "text",
+  "style": "core",
+  "name": "Meter bar",
+  "summary": "Labelled meter bar with a value box (odds, danger, anger, health); animate level, it shakes when it falls.",
+  "tags": [
+    "meter",
+    "progress",
+    "gauge",
+    "odds",
+    "danger",
+    "health",
+    "bar",
+    "statistic"
+  ],
+  "params": [
+    {
+      "name": "label",
+      "type": "string",
+      "default": "YOUR\nODDS",
+      "note": "\\n for two lines"
+    },
+    {
+      "name": "level",
+      "type": "number",
+      "default": 0.7,
+      "note": "0..1; [0.8, 0.3] to fall"
+    },
+    {
+      "name": "from",
+      "type": "number",
+      "note": "level before this shot, for the fall shake"
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "default": "?"
+    },
+    {
+      "name": "invert",
+      "type": "boolean",
+      "default": false,
+      "note": "red when full (anger)"
+    },
+    {
+      "name": "color",
+      "type": "colour"
+    },
+    {
+      "name": "x",
+      "type": "number",
+      "default": 80
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 240
+    },
+    {
+      "name": "w",
+      "type": "number",
+      "default": 520
+    },
+    {
+      "name": "shakeOnFall",
+      "type": "boolean",
+      "default": true
+    }
+  ],
+  "example": {
+    "level": [
+      0.8,
+      0.3
+    ],
+    "from": 0.8,
+    "value": "16%"
+  },
+  "layer": "screen",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

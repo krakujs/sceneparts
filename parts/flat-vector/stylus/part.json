@@ -1,0 +1,75 @@
+{
+  "id": "flat-vector/stylus",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Stylus",
+  "summary": "Digital pen with a pointed nib and status light, at hero scale on a slight diagonal; for drawing and notes.",
+  "tags": [
+    "stylus",
+    "digital pen",
+    "pen",
+    "smart pen",
+    "tablet pen",
+    "drawing",
+    "note taking"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the nib"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "the nib touches y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 480 px tall (hero size)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "barrel colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "tap"
+      ],
+      "note": "tap = pen rocks on its nib and the status light pulses"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (leans the other way)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3D6FE0",
+    "anim": "tap"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

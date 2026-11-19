@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/bouquet",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bouquet",
+  "summary": "Hand bouquet of roses, tulips and daisies with green leaves, wrapped in kraft paper and tied with a ribbon. Anim sway.",
+  "tags": ["bouquet", "flowers", "roses", "wedding", "gift", "flower bouquet", "romance"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "x of the wrap point (where the stems are tied)"},
+    {"name": "y", "type": "number", "default": 1500, "note": "y of the wrap point; the flowers rise about 600 px above it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the bouquet is about 440 px wide and 620 px tall"},
+    {"name": "color", "type": "colour", "default": "#F27BA6", "note": "rose colour"},
+    {"name": "color2", "type": "colour", "default": "#E8503F", "note": "tulip colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "sway"], "note": "sway = the bouquet tilts gently about the wrap point"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1500, "s": 1, "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

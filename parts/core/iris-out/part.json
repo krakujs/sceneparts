@@ -1,0 +1,24 @@
+{
+  "id": "core/iris-out",
+  "type": "effect",
+  "style": "core",
+  "name": "Iris out",
+  "summary": "Classic cartoon iris: a black frame closes to a small circle at a point, holds, then goes fully black.",
+  "tags": ["iris out", "iris", "cartoon", "transition", "fade to black", "closing"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "point the iris closes on, x in px" },
+    { "name": "y", "type": "number", "default": 960, "note": "point the iris closes on, y in px" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "len", "type": "number", "default": 26, "note": "frames the iris takes to close" },
+    { "name": "hold", "type": "number", "default": 10, "note": "frames the small circle holds before going black" },
+    { "name": "color", "type": "colour", "default": "#000000", "note": "iris colour" }
+  ],
+  "example": { "x": 540, "y": 960, "len": 26, "hold": 10 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "core/calendar-date",
+  "type": "text",
+  "style": "core",
+  "name": "Calendar date",
+  "summary": "Tear-off calendar page with a coloured month header, big day number and weekday; can flip from another day.",
+  "tags": ["calendar", "date", "day", "month", "tear off", "page flip", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "header colour; default the style's accent" },
+    { "name": "month", "type": "string", "default": "NOVEMBER" },
+    { "name": "day", "type": "string", "default": "19", "note": "the big number" },
+    { "name": "weekday", "type": "string", "default": "Wednesday" },
+    { "name": "from", "type": "string", "note": "optional: the day the page flips from; the page collapses to reveal day" }
+  ],
+  "example": {
+    "month": "NOVEMBER",
+    "day": "19",
+    "weekday": "Wednesday",
+    "from": "18"
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

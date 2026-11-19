@@ -1,0 +1,82 @@
+{
+  "id": "flat-vector/spy",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Spy",
+  "summary": "Flat vector spy in a dark trench coat and sunglasses with a briefcase; for secret agent and thriller stories.",
+  "tags": [
+    "spy",
+    "secret agent",
+    "sunglasses",
+    "briefcase",
+    "thriller",
+    "sneaky",
+    "mystery",
+    "undercover"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "expression",
+      "type": "enum",
+      "default": "neutral",
+      "values": [
+        "smile",
+        "neutral",
+        "open",
+        "surprised",
+        "sad",
+        "angry",
+        "laugh"
+      ]
+    },
+    {
+      "name": "skin",
+      "type": "string",
+      "default": "fair",
+      "note": "light | fair | tan | medium | brown | dark, or a hex colour"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "expression": "neutral",
+    "skin": "fair"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

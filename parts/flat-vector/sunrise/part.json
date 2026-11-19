@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/sunrise",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Sunrise",
+  "summary": "Half sun rising over a horizon line with warm glow rings, for dawn and morning scenes. Anim: rise.",
+  "tags": ["sunrise", "dawn", "morning", "horizon", "sun", "glow", "sky"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1150, "note": "y of the horizon line; the sun sits above it"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 1040 px wide, sun top about 210 px above y"},
+    {"name": "color", "type": "colour", "default": "#FFC83D", "note": "sun colour"},
+    {"name": "color2", "type": "colour", "default": "#FF8A3D", "note": "glow and horizon colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "rise"], "note": "rise = the sun climbs up over the first 3 seconds"}
+  ],
+  "example": {"x": 540, "y": 1150, "s": 1, "anim": "rise"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

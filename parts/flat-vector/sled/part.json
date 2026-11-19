@@ -1,0 +1,24 @@
+{
+  "id": "flat-vector/sled",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Sled",
+  "summary": "Wooden toboggan sledge with a plank seat, a curled front and two runners, in side view; for snow and winter scenes.",
+  "tags": ["sled", "sledge", "toboggan", "snow", "winter", "runners", "sledding", "wood"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x at frame 0"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor line: the runners stand on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale: about 680 px wide and 220 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#8A5A3C", "note": "wood colour"},
+    {"name": "color2", "type": "colour", "default": "#5D6578", "note": "runner colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "drive", "bob", "pop"], "note": "drive = the sled bounces over the snow (also on when vx is not 0)"},
+    {"name": "vx", "type": "number", "default": 0, "note": "horizontal speed in px per frame (negative = left; set flip too)"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror so the curled front faces left"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "drive"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

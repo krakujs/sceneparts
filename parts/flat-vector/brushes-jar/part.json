@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/brushes-jar",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Brushes jar",
+  "summary": "Glass jar of water with several paintbrushes standing in it; for painting and art-room scenes.",
+  "tags": ["brushes", "paint brushes", "jar", "water jar", "art", "painting", "brush pot"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the jar rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 the jar is about 330 px wide and 620 px tall with the brushes"},
+    {"name": "water", "type": "colour", "default": "#8EC5E8", "note": "water colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "wobble = the brushes sway gently in the water"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "water": "#8EC5E8", "anim": "wobble"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

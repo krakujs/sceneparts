@@ -1,0 +1,51 @@
+{
+  "id": "india-90s/bricks",
+  "type": "prop",
+  "style": "india-90s",
+  "name": "Brick stumps",
+  "summary": "Pile of bricks used as cricket stumps; fall 0..1 knocks them over.",
+  "tags": [
+    "90s",
+    "bricks",
+    "cricket",
+    "india",
+    "nostalgia",
+    "stumps",
+    "wicket"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600
+    },
+    {
+      "name": "scale",
+      "type": "number",
+      "default": 1
+    },
+    {
+      "name": "fall",
+      "type": "number",
+      "default": 0,
+      "note": "0..1"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "scale": 1.5
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

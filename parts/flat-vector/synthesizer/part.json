@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/synthesizer",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Synthesizer",
+  "summary": "Tabletop synthesizer with knobs, sliders and a short keybed; for music production and studio scenes.",
+  "tags": ["synthesizer", "synth", "keyboard", "music", "studio", "knobs", "electronic music"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom edge: the synth sits on y (set y to a desk top)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 about 520 px wide and 300 px tall (hero size)"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "case colour"},
+    {"name": "accent", "type": "colour", "default": "#1FA39A", "note": "slider cap and display colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "tweak"], "note": "tweak = knobs turn, sliders move and the display blinks"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#FF8A3D", "accent": "#1FA39A", "anim": "tweak"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

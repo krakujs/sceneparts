@@ -1,0 +1,63 @@
+{
+  "id": "storybook/telegraph-machine",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Telegraph machine",
+  "summary": "Brass telegraph key and sounder on a wooden base with paper tape; the key taps. For office scenes.",
+  "tags": [
+    "telegraph",
+    "morse code",
+    "brass",
+    "office",
+    "communication",
+    "victorian",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1000,
+      "note": "desk level, bottom centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~600 px wide at 1"
+    },
+    {
+      "name": "tapping",
+      "type": "boolean",
+      "default": true,
+      "note": "key taps and tape moves"
+    },
+    {
+      "name": "brass",
+      "type": "colour",
+      "default": "#D9A441"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1100,
+    "s": 1.2
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

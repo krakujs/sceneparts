@@ -1,0 +1,44 @@
+{
+  "id": "india-90s/room",
+  "type": "background",
+  "style": "india-90s",
+  "name": "90s living room",
+  "summary": "Flat 90s Indian living room wall and floor, night mode dims it.",
+  "tags": [
+    "90s",
+    "home",
+    "house",
+    "india",
+    "interior",
+    "living room",
+    "nostalgia",
+    "room"
+  ],
+  "params": [
+    {
+      "name": "wall",
+      "type": "colour"
+    },
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1300
+    },
+    {
+      "name": "night",
+      "type": "boolean",
+      "default": false
+    }
+  ],
+  "example": {
+    "night": false
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

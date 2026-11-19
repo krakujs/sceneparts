@@ -1,0 +1,88 @@
+{
+  "id": "flat-vector/paint-tubes",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Paint tubes",
+  "summary": "Three artist's paint tubes, one squeezed with a paint blob; for art, painting and studio scenes.",
+  "tags": [
+    "paint tubes",
+    "paint",
+    "oil paint",
+    "acrylic",
+    "art supplies",
+    "painting",
+    "artist",
+    "colours"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the tubes rest on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; hero size: at s = 1 about 640 px wide and 300 px tall; use about 0.25 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "back tube paint colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "middle tube paint colour"
+    },
+    {
+      "name": "color3",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "squeezed front tube and blob colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "squeeze"
+      ],
+      "note": "squeeze = the paint blob swells and settles"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (nozzles point left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#3D6FE0",
+    "color2": "#E8503F",
+    "color3": "#FFC83D",
+    "anim": "squeeze"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

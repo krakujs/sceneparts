@@ -1,0 +1,50 @@
+{
+  "id": "india-90s/ball",
+  "type": "prop",
+  "style": "india-90s",
+  "name": "Ball",
+  "summary": "Small ball (tennis/cricket); spin rotates the seam.",
+  "tags": [
+    "90s",
+    "ball",
+    "cricket",
+    "india",
+    "nostalgia",
+    "sport",
+    "tennis ball"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900
+    },
+    {
+      "name": "r",
+      "type": "number",
+      "default": 26
+    },
+    {
+      "name": "spin",
+      "type": "number",
+      "default": 0
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "r": 60
+  },
+  "uses": [
+    "india-90s/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

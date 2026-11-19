@@ -1,0 +1,86 @@
+{
+  "id": "flat-vector/submarine",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Submarine",
+  "summary": "Rounded submarine with conning tower and periscope; underwater with y at its centre; drive spins the propeller.",
+  "tags": [
+    "submarine",
+    "sub",
+    "underwater",
+    "periscope",
+    "sea",
+    "ocean",
+    "propeller",
+    "diving"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x at frame 0"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 900,
+      "note": "centre height: it is underwater, so y is the middle of the hull"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: about 740 px wide and 330 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "hull colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "tower, fins and propeller"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "drive",
+        "bob",
+        "pop"
+      ],
+      "note": "drive = slow rocking, the propeller spins and bubbles rise"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "horizontal speed in px per frame (negative = left; set flip too)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror so it faces left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "s": 1,
+    "anim": "drive"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

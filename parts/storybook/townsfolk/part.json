@@ -1,0 +1,255 @@
+{
+  "id": "storybook/townsfolk",
+  "type": "character",
+  "style": "storybook",
+  "name": "Storybook townsfolk",
+  "summary": "Period person generator for history stories: hats, hair, beards, coats, dresses, aprons, arm poses, walk and work.",
+  "tags": [
+    "storybook",
+    "history",
+    "person",
+    "victorian",
+    "medieval",
+    "worker",
+    "townsperson",
+    "character",
+    "vintage",
+    "generator"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "hat",
+      "type": "enum",
+      "values": [
+        "none",
+        "cap",
+        "flat",
+        "bonnet",
+        "top",
+        "bowler",
+        "tricorn",
+        "peaked",
+        "custodian",
+        "wide",
+        "straw",
+        "hood",
+        "kerchief",
+        "mob",
+        "beret",
+        "pilot",
+        "helmet",
+        "turban",
+        "laurel",
+        "veil"
+      ],
+      "default": "cap"
+    },
+    {
+      "name": "hatColour",
+      "type": "colour",
+      "note": "defaults to dark grey (cream for bonnet / mob cap)"
+    },
+    {
+      "name": "hair",
+      "type": "enum",
+      "values": [
+        "short",
+        "bald",
+        "long",
+        "bun",
+        "ponytail",
+        "curly",
+        "tonsure"
+      ],
+      "default": "short"
+    },
+    {
+      "name": "hairColour",
+      "type": "colour",
+      "default": "#4A3324"
+    },
+    {
+      "name": "beard",
+      "type": "enum",
+      "values": [
+        "none",
+        "moustache",
+        "full",
+        "stubble",
+        "mutton"
+      ],
+      "default": "none"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#E8B990"
+    },
+    {
+      "name": "top",
+      "type": "enum",
+      "values": [
+        "coat",
+        "jacket",
+        "waistcoat",
+        "smock",
+        "tunic",
+        "uniform",
+        "armour",
+        "robe",
+        "dress",
+        "shirt"
+      ],
+      "default": "coat",
+      "note": "garment"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#2E7D7A",
+      "note": "main garment colour"
+    },
+    {
+      "name": "shirt",
+      "type": "colour",
+      "default": "#F4EAD5"
+    },
+    {
+      "name": "lower",
+      "type": "enum",
+      "values": [
+        "trousers",
+        "breeches",
+        "skirt",
+        "long",
+        "shorts"
+      ],
+      "default": "trousers",
+      "note": "long = floor-length skirt"
+    },
+    {
+      "name": "legs",
+      "type": "colour",
+      "default": "#3D3A44",
+      "note": "trousers / skirt colour"
+    },
+    {
+      "name": "boots",
+      "type": "colour",
+      "default": "#2B2420"
+    },
+    {
+      "name": "apron",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "apronColour",
+      "type": "colour",
+      "default": "#F4EAD5"
+    },
+    {
+      "name": "scarf",
+      "type": "colour",
+      "note": "neck scarf colour; omit for none"
+    },
+    {
+      "name": "belt",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "values": [
+        "down",
+        "forward",
+        "up",
+        "carry",
+        "hip",
+        "chest"
+      ],
+      "default": "down",
+      "note": "front arm"
+    },
+    {
+      "name": "backPose",
+      "type": "enum",
+      "values": [
+        "down",
+        "forward",
+        "up",
+        "carry",
+        "hip",
+        "chest"
+      ],
+      "default": "down",
+      "note": "back arm"
+    },
+    {
+      "name": "action",
+      "type": "enum",
+      "values": [
+        "idle",
+        "walk",
+        "wave",
+        "work"
+      ],
+      "default": "idle"
+    },
+    {
+      "name": "age",
+      "type": "enum",
+      "values": [
+        "adult",
+        "child",
+        "old"
+      ],
+      "default": "adult",
+      "note": "child = 72% size"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1,
+    "hat": "top",
+    "beard": "moustache",
+    "top": "coat",
+    "action": "walk"
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

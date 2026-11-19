@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/whale",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Whale",
+  "summary": "Flat vector big blue whale, side view, with pale throat pleats and a small fin; slow swimming fluke beat.",
+  "tags": [
+    "whale",
+    "blue whale",
+    "ocean",
+    "sea",
+    "mammal",
+    "huge",
+    "marine"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1100,
+      "note": "centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 900 px wide at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "swim",
+      "values": [
+        "swim",
+        "idle"
+      ],
+      "note": "swim = gentle body wave and fluke beat from p.f; idle = slow bob"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1100,
+    "pose": "swim"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/quadruped"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

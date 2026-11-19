@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/festival-ground",
+  "type": "background",
+  "style": "flat-vector",
+  "name": "Festival ground",
+  "summary": "Full-frame flat fairground background: striped tents, bunting, ferris wheel, food stalls and string lights.",
+  "tags": [
+    "festival",
+    "fairground",
+    "ferris wheel",
+    "tent",
+    "bunting",
+    "string lights",
+    "background"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "dusk",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light of the day; lamps and windows glow at dusk and night"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky and weather drawn over the scene"
+    },
+    {
+      "name": "tent",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "big tent colour"
+    },
+    {
+      "name": "wheel",
+      "type": "boolean",
+      "default": true,
+      "note": "ferris wheel at the back right, turning from p.f"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds, leaves, smoke and lights move from p.f"
+    }
+  ],
+  "example": {
+    "time": "dusk",
+    "weather": "clear"
+  },
+  "uses": [
+    "flat-vector/style",
+    "flat-vector/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

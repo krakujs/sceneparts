@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/share-arrow",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Share Arrow",
+  "summary": "Flat rounded box with a thick arrow leaving it, for share, send or forward actions.",
+  "tags": ["share", "send", "forward", "arrow", "export", "social", "sticker"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 480 px wide at s = 1" },
+    { "name": "color", "type": "colour", "default": "#3D6FE0", "note": "shape colour; one darker shade is added for depth" },
+    { "name": "anim", "type": "enum", "default": "nudge", "values": ["none", "nudge", "bob"], "note": "idle motion from p.f; nudge drifts up and right" },
+    { "name": "popIn", "type": "boolean", "default": true, "note": "springs in over the first 10 frames" },
+    { "name": "flip", "type": "boolean", "default": false, "note": "mirror left-right" }
+  ],
+  "example": { "x": 540, "y": 960, "anim": "nudge" },
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

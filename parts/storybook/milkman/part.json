@@ -1,0 +1,81 @@
+{
+  "id": "storybook/milkman",
+  "type": "character",
+  "style": "storybook",
+  "name": "Milkman",
+  "summary": "Milkman in a white coat and cap carrying a wire crate of glass milk bottles; for morning street or dairy scenes.",
+  "tags": [
+    "milkman",
+    "milk",
+    "bottles",
+    "dairy",
+    "morning",
+    "delivery",
+    "street",
+    "job"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#F4EAD5",
+      "note": "white coat colour"
+    },
+    {
+      "name": "walk",
+      "type": "boolean",
+      "default": false,
+      "note": "walk with the crate"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#8D5A3B"
+    },
+    {
+      "name": "hairColour",
+      "type": "colour",
+      "default": "#7A5C3E"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/greenhouse",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Greenhouse",
+  "summary": "Glass greenhouse with a white frame and plants visible inside. For garden, farm and growing scenes.",
+  "tags": ["greenhouse", "glasshouse", "garden", "plants", "glass", "growing", "allotment"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the greenhouse stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 680 px wide and 560 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#CFE6F5", "note": "glass colour"},
+    {"name": "color2", "type": "colour", "default": "#FFFFFF", "note": "frame colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "lights = the plants sway gently in the breeze"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

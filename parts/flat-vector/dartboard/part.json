@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/dartboard",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Dartboard",
+  "summary": "Wall dartboard with alternating segments and a bullseye, centred on x,y; for pub, game and sport scenes.",
+  "tags": [
+    "dartboard",
+    "darts",
+    "dart board",
+    "bullseye",
+    "pub game",
+    "target",
+    "wall"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the board"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 760,
+      "note": "centre y of the board (wall item)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the board is about 560 px across"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1F2433",
+      "note": "dark segment colour (the light segments are cream)"
+    },
+    {
+      "name": "accent",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "scoring ring colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "pop",
+        "wobble"
+      ],
+      "note": "wobble = the board sways gently on the wall"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 760,
+    "s": 1,
+    "anim": "none"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

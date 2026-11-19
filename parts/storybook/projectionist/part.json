@@ -1,0 +1,26 @@
+{
+  "id": "storybook/projectionist",
+  "type": "character",
+  "style": "storybook",
+  "name": "Projectionist",
+  "summary": "Cinema projectionist in waistcoat and rolled sleeves, threading a film reel with the strip unspooling.",
+  "tags": ["projectionist", "cinema", "film", "reel", "movie", "history", "1920s", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1580, "note": "feet" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~640 px tall at 1" },
+    { "name": "walk", "type": "boolean", "default": false, "note": "walk with the reel carried" },
+    { "name": "waistcoat", "type": "colour", "default": "#7E2E22" },
+    { "name": "hatColour", "type": "colour", "default": "#2C2F3B" },
+    { "name": "skin", "type": "colour", "default": "#E8B990" },
+    { "name": "hairColour", "type": "colour", "default": "#2C2F3B" },
+    { "name": "flip", "type": "boolean", "note": "face left" },
+    { "name": "vx", "type": "number", "note": "px per frame" }
+  ],
+  "example": { "x": 540, "y": 1580, "s": 1 },
+  "uses": ["storybook/style", "storybook/townsfolk"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

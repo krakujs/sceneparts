@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/baobab-tree",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Baobab tree",
+  "summary": "Huge bottle-shaped baobab trunk with a small flat crown of stubby branches; for savanna and African landscape scenes.",
+  "tags": ["baobab", "baobab tree", "bottle tree", "savanna", "africa", "fat trunk", "tree"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the trunk"},
+    {"name": "y", "type": "number", "default": 1600, "note": "ground line: the trunk stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 900 px wide and 960 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#4BB46A", "note": "leaf colour"},
+    {"name": "color2", "type": "colour", "default": "#B49A7C", "note": "trunk colour (grey-tan)"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "sway"], "note": "sway = the small crown moves gently"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

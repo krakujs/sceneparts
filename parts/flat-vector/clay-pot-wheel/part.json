@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/clay-pot-wheel",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Pottery wheel",
+  "summary": "Low potter's wheel with a wide splash pan and a wet clay pot on the head; anim spin turns the pot and head.",
+  "tags": ["pottery wheel", "potter wheel", "pottery", "clay", "ceramics", "pot", "craft"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the wheel's base rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale; hero size: at s = 1 the pan is about 600 px wide and the wheel about 450 px tall"},
+    {"name": "clay", "type": "colour", "default": "#C0703F", "note": "clay colour of the pot"},
+    {"name": "color", "type": "colour", "default": "#5E3B26", "note": "wheel body colour"},
+    {"name": "anim", "type": "enum", "default": "spin", "values": ["none", "spin", "bob", "wobble"], "note": "spin = the turntable and pot turn steadily"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "clay": "#C0703F", "color": "#5E3B26", "anim": "spin"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

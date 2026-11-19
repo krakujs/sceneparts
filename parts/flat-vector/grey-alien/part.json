@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/grey-alien",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Alien grey",
+  "summary": "Slim grey alien with a big head and large black eyes, standing calmly; cartoon-friendly, for UFO and space scenes.",
+  "tags": ["alien", "grey alien", "space", "big eyes", "calm", "extraterrestrial", "sci-fi", "cartoon"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540},
+    {"name": "y", "type": "number", "default": 1560, "note": "feet"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; ~950 px tall at 1"},
+    {"name": "color", "type": "colour", "default": "#A7B0BD", "note": "skin colour"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "face left"}
+  ],
+  "example": {"x": 540, "y": 1560, "color": "#A7B0BD"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

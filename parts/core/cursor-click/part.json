@@ -1,0 +1,25 @@
+{
+  "id": "core/cursor-click",
+  "type": "effect",
+  "style": "core",
+  "name": "Cursor click",
+  "summary": "Classic arrow cursor glides from a start point to a target, then clicks with a ripple ring.",
+  "tags": ["cursor", "pointer", "click", "mouse", "tap", "press", "ui"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "target: the cursor tip ends here" },
+    { "name": "y", "type": "number", "default": 960, "note": "target: the cursor tip ends here" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "ax", "type": "number", "default": 300, "note": "start x of the cursor tip" },
+    { "name": "ay", "type": "number", "default": 1300, "note": "start y of the cursor tip" },
+    { "name": "glide", "type": "number", "default": 24, "note": "glide length in frames" },
+    { "name": "color", "type": "colour", "note": "ripple colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "x": 540, "y": 960, "ax": 300, "ay": 1300, "glide": 24 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

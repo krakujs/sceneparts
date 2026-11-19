@@ -1,0 +1,20 @@
+{
+  "id": "pixel-art/game-over-screen",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Game over screen",
+  "summary": "Pixel-art game over screen: dark screen with big GAME OVER text, a CONTINUE countdown and falling specks.",
+  "tags": ["game over", "game over screen", "continue", "countdown", "screen", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "text", "type": "string", "default": "GAME OVER", "note": "the big message"},
+    {"name": "countFrom", "type": "number", "default": 9, "note": "continue countdown starts here; drops one per second (30 frames)"},
+    {"name": "anim", "type": "enum", "default": "fall", "values": ["fall", "none"], "note": "grey specks fall from p.f"}
+  ],
+  "example": {"countFrom": 9},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

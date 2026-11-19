@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/boxing-gloves",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Boxing gloves",
+  "summary": "Pair of red padded boxing gloves tied together by a lace; use for boxing, fight and training scenes.",
+  "tags": ["boxing gloves", "boxing", "gloves", "fight", "sport", "training", "prop"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the cuffs rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; hero size: at s = 1 about 520 px wide and 470 px tall"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "glove colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "bob = gentle up and down"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror the pair"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E8503F", "anim": "bob"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

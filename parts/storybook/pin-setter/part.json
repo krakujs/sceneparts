@@ -1,0 +1,26 @@
+{
+  "id": "storybook/pin-setter",
+  "type": "character",
+  "style": "storybook",
+  "name": "Pin setter",
+  "summary": "Boy in shirt and braces resetting bowling pins at a bowling alley, with a ball waiting at his feet.",
+  "tags": ["pin setter", "bowling", "bowling pins", "alley", "boy", "job", "history", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1580, "note": "feet" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~640 px tall at 1" },
+    { "name": "walk", "type": "boolean", "default": false, "note": "walk with the pins carried" },
+    { "name": "shirt", "type": "colour", "default": "#F4EAD5" },
+    { "name": "hatColour", "type": "colour", "default": "#8A6A45" },
+    { "name": "skin", "type": "colour", "default": "#E8B990" },
+    { "name": "hairColour", "type": "colour", "default": "#3B2A1E" },
+    { "name": "flip", "type": "boolean", "note": "face left" },
+    { "name": "vx", "type": "number", "note": "px per frame" }
+  ],
+  "example": { "x": 540, "y": 1580, "s": 1 },
+  "uses": ["storybook/style", "storybook/townsfolk"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/sheet-music",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Sheet music",
+  "summary": "Music stand holding a sheet with five-line staves, notes and a treble clef; for rehearsal and orchestra scenes.",
+  "tags": ["sheet music", "music stand", "score", "staff", "notes", "orchestra", "rehearsal", "music"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the stand foot"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the stand's foot rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "room scale; 1 m is about 560 px, so at s = 1 the stand and sheet are about 1.3 m (730 px) tall"},
+    {"name": "color", "type": "colour", "default": "#3A4157", "note": "stand colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop"], "note": "wobble = the sheet sways very slightly on the stand"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3A4157", "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

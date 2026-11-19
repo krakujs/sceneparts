@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/barcode-scanner",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Barcode Scanner",
+  "summary": "Handheld pistol-grip barcode scanner with a red laser beam; use for shop checkouts and warehouse scanning.",
+  "tags": ["barcode scanner", "barcode reader", "scanner", "laser scanner", "checkout", "shop", "warehouse"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom of the grip: the scanner stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the scanner is hero size, about 350 px tall with its beam about 500 px wide"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "body colour"},
+    {"name": "laser", "type": "colour", "default": "#E8503F", "note": "laser beam colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "wobble", "pop", "beam"], "note": "beam = laser flickers as if scanning"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#3D6FE0", "laser": "#E8503F", "anim": "beam"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

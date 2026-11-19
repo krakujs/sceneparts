@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/bar-chart-board",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Bar chart board",
+  "summary": "Presentation board on a tripod easel with coloured bars and axes; anim grow raises the bars in turn.",
+  "tags": ["bar chart", "chart", "presentation", "statistics", "data", "easel", "board", "graph"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor point under the easel centre (1 m ~ 560 px)"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the easel is about 500 px wide and 900 px tall"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "grow"], "note": "grow = the bars rise one after another; frame 0 bars are at least 30 % high"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "grow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

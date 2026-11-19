@@ -1,0 +1,81 @@
+{
+  "id": "ink-sketch/playground-scene",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Playground",
+  "summary": "Ink sketch playground background: slide, swings, sandpit and climbing frame at the sides, trees behind.",
+  "tags": [
+    "playground",
+    "park",
+    "slide",
+    "swings",
+    "children",
+    "sandpit",
+    "background",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light of the day; lamps and windows glow at dusk and night"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky and weather drawn over the scene"
+    },
+    {
+      "name": "slide",
+      "type": "colour",
+      "default": "#F27BA6",
+      "note": "slide colour"
+    },
+    {
+      "name": "swings",
+      "type": "boolean",
+      "default": true,
+      "note": "swing set at the back left, swinging from p.f"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds, leaves, smoke and lights move from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear"
+  },
+  "uses": [
+    "flat-vector/playground-scene",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

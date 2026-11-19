@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/toy-car",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Toy Car",
+  "summary": "Small rounded toy car with big wheels and a windscreen, side view; use for play, rolling toy and kids scenes.",
+  "tags": ["toy car", "toy", "car", "wheels", "kids toy", "play", "vehicle"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: the wheels rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the item is hero size; use about 0.2–0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "body colour"},
+    {"name": "anim", "type": "enum", "default": "roll", "values": ["none", "bob", "wobble", "pop", "roll"], "note": "roll = wheels turn and the car rocks along; the others are gentle motions"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror (faces left when true)"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E8503F", "anim": "roll"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

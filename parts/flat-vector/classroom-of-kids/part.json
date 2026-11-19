@@ -1,0 +1,54 @@
+{
+  "id": "flat-vector/classroom-of-kids",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Classroom of kids",
+  "summary": "Six children at small desks seen from the side, one raising a hand, with a blackboard behind; for school scenes.",
+  "tags": [
+    "classroom",
+    "kids",
+    "children",
+    "school",
+    "lesson",
+    "blackboard",
+    "desks",
+    "group"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "overall scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror the whole group"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

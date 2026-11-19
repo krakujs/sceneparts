@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/seal",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Seal",
+  "summary": "Flat vector spotted grey harbour seal lying on its belly with head raised; rests, breathes, wriggles.",
+  "tags": [
+    "seal",
+    "harbour seal",
+    "sea",
+    "lying",
+    "marine",
+    "mammal",
+    "spotted"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500,
+      "note": "bottom centre (ground)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 560 px long at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "rest",
+      "values": [
+        "rest",
+        "idle",
+        "swim"
+      ],
+      "note": "rest = breathing only; idle = head bob; swim = body sway and flipper paddle"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1500,
+    "pose": "rest"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

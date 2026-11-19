@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/bakery-shop",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Bakery Shop",
+  "summary": "Bakery front with a bread-loaf icon sign, a canopy and loaves on show in the window; anim lights warms the loaves.",
+  "tags": ["bakery", "bread", "bread shop", "baker", "shop front", "pastry", "town"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the building stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 640 px wide and 770 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#F27BA6", "note": "wall colour"},
+    {"name": "color2", "type": "colour", "default": "#8A5A3C", "note": "canopy and trim colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "pop", "lights"], "note": "pop = scales in; lights = the loaves in the window glow one after another"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "lights"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

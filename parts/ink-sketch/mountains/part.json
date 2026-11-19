@@ -1,0 +1,77 @@
+{
+  "id": "ink-sketch/mountains",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Mountains",
+  "summary": "Ink sketch mountain background: layered ranges with snow caps, a pine tree line and an alpine meadow.",
+  "tags": [
+    "mountains",
+    "peaks",
+    "alpine",
+    "pine",
+    "hiking",
+    "landscape",
+    "background",
+    "outdoor",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light on the peaks and meadow"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky tint and animated weather"
+    },
+    {
+      "name": "snowCaps",
+      "type": "boolean",
+      "default": true,
+      "note": "white snow caps on the peaks"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds and pine tops move from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear",
+    "snowCaps": true
+  },
+  "uses": [
+    "flat-vector/mountains",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
