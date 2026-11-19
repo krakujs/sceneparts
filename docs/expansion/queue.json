@@ -2791,7 +2791,7 @@
     "title": "Ink sketch: style + people",
     "style": "ink-sketch",
     "type": "character",
-    "status": "todo",
+    "status": "done",
     "generator": null,
     "brief": "Create parts/ink-sketch/style (hand-drawn black ink line on off-white paper, slight wobble from the engine boil, one accent colour wash) and a parts/ink-sketch/person generator (line-art figure with poses and expressions), then presets.",
     "names": [
@@ -2916,7 +2916,9 @@
       "witch costume",
       "ghost costume"
     ],
-    "count": 120
+    "count": 120,
+    "built": 122,
+    "date": "2026-11-19"
   },
   {
     "id": "24-ink-sketch-animals",
