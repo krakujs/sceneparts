@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/high-heels",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "High heels",
+  "summary": "One stiletto pump in side view with a pointed toe and a thin tall heel; for fashion, party and shopping scenes.",
+  "tags": ["high heels", "heels", "stiletto", "pump", "shoe", "fashion", "footwear", "party"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom centre: toe and heel tip rest on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; at s = 1 the shoe is about 560 px long; use about 0.3 next to a person"},
+    {"name": "color", "type": "colour", "default": "#E8503F", "note": "upper colour"},
+    {"name": "color2", "type": "colour", "default": "#1F2433", "note": "sole and heel colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "bob", "spin"], "note": "bob = lifts and settles; spin = turns slowly in place"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "toe points left"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "color": "#E8503F", "anim": "none"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

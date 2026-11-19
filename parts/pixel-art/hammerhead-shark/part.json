@@ -1,0 +1,116 @@
+{
+  "id": "pixel-art/hammerhead-shark",
+  "type": "character",
+  "style": "pixel-art",
+  "name": "Hammerhead shark",
+  "summary": "Pixel-art hammerhead shark with a T-shaped head, grey back and white belly; swims in place. For sea scenes.",
+  "tags": [
+    "hammerhead shark",
+    "shark",
+    "fish",
+    "sea animal",
+    "ocean",
+    "pixel",
+    "pixel art",
+    "retro"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y of the fish"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; one cell = 24 px at s = 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "centre",
+      "type": "boolean",
+      "default": true,
+      "note": "anchor on the middle of the fish (false = bottom centre)"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "swim",
+      "values": [
+        "swim",
+        "none",
+        "bob",
+        "float",
+        "shake",
+        "pulse"
+      ],
+      "note": "swim fans the tail; others move the whole fish"
+    },
+    {
+      "name": "fps",
+      "type": "number",
+      "default": 6,
+      "note": "video frames per tail cel"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame drift (pair with swim)"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#6f7c8a",
+      "note": "back and hammer head (char a)"
+    },
+    {
+      "name": "coat2",
+      "type": "colour",
+      "default": "#4a5563",
+      "note": "dorsal fin, fins and tail (char A)"
+    },
+    {
+      "name": "pal",
+      "type": "object",
+      "note": "replace colours by char, e.g. {\"w\": \"#f5f1e8\"}"
+    },
+    {
+      "name": "px",
+      "type": "number",
+      "default": 24,
+      "note": "cell size"
+    },
+    {
+      "name": "outline",
+      "type": "boolean",
+      "default": true,
+      "note": "dark one-cell outline"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "s": 1,
+    "anim": "swim"
+  },
+  "uses": [
+    "pixel-art/sprite"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

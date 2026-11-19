@@ -1,0 +1,112 @@
+{
+  "id": "pixel-art/parrot",
+  "type": "character",
+  "style": "pixel-art",
+  "name": "Parrot",
+  "summary": "Pixel-art green parrot with a red forehead and hooked beak, perched; feet walk and wing flap for jungle scenes.",
+  "tags": [
+    "parrot",
+    "bird",
+    "tropical bird",
+    "jungle",
+    "pixel",
+    "pixel art",
+    "retro"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "feet / ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 2.0,
+      "note": "scale; one cell = 24 px at s = 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "walk",
+      "values": [
+        "walk",
+        "fly",
+        "run",
+        "none",
+        "bob",
+        "bounce",
+        "float",
+        "shake",
+        "pulse"
+      ],
+      "note": "walk/run swap feet; fly swaps wing-up / wing-down cels; others move the whole sprite"
+    },
+    {
+      "name": "fps",
+      "type": "number",
+      "default": 6,
+      "note": "video frames per cel"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame drift (pair with walk or fly)"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#4caf50",
+      "note": "main plumage colour (char a)"
+    },
+    {
+      "name": "coat2",
+      "type": "colour",
+      "default": "#2e6b45",
+      "note": "shade colour (char A): wings, ears, legs, tail"
+    },
+    {
+      "name": "pal",
+      "type": "object",
+      "note": "replace colours by char, e.g. {\"k\": \"#000000\"}"
+    },
+    {
+      "name": "px",
+      "type": "number",
+      "default": 24,
+      "note": "cell size"
+    },
+    {
+      "name": "outline",
+      "type": "boolean",
+      "default": true,
+      "note": "dark one-cell outline"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 2.0,
+    "anim": "walk"
+  },
+  "uses": [
+    "pixel-art/sprite"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

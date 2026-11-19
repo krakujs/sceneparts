@@ -2157,7 +2157,7 @@
     "title": "Festivals, celebrations and clothing",
     "style": "flat-vector",
     "type": "prop",
-    "status": "partial",
+    "status": "done",
     "generator": null,
     "brief": "Celebrations from many cultures (generic, respectful) and clothing items.",
     "names": [
@@ -2263,13 +2263,9 @@
       "mask party"
     ],
     "count": 100,
-    "built": 88,
+    "built": 90,
     "date": "2026-11-19",
-    "remaining": [
-      "sandals",
-      "high heels"
-    ],
-    "notes": "Built 85 flat-vector parts: festival props (diya, rangoli, firecracker, sparkler, fireworks, sky lanterns, paper lantern, Christmas, Hanukkah, Eid/Ramadan, Easter, Holi, party, wedding, New Year, harvest), cultural garments (turban and hijab on faceless display forms; saree, kurta, sherwani, kimono, hanbok on hangers) and clothing/accessories. Convention: garments are front-view catalogue items on a coat or clip hanger, hem on y, anim sway. Skipped as covered: christmas tree decorated (=christmas-tree), christmas gift (=gift-box), halloween pumpkin (=jack-o-lantern), cake candles (=birthday-cake), confetti (=core/confetti-burst), sunglasses item (=sunglasses), watch item (=watch), backpack item (=backpack), handbag item (=handbag), mask party (=carnival-mask). Renamed: kimono item -> kimono, hanbok item -> hanbok, umbrella item -> umbrella, pinata-style donkey -> pinata-donkey. Failed/deleted, rebuild next run: sandals (sub-agent: straps read as sticks/worms), mooncake (cut wedge read as a separate blob - draw a whole round fluted cake with an embossed flower, no wedge), high heels (red wedge on black stilts, unreadable - draw one clear stiletto pump in side view: pointed toe, arched sole, thin tall heel), helmet bike (blue blob - show vents as clear slots, a visor peak and chin straps), chinese dragon dance head (read as a worm/snake - draw a big boxy festival lion-dance-style head with a wide mouth, large eyes with lids, a single horn, fur trim, and a short draped cloth body). Fixed in review: tie redrawn (stripes now clipped to a proper tapered blade with a knot), tiara scaled up and made gold, red-envelope example no longer invisible at f0, belt TS readonly tuple error; trademark tags dropped: levis, stetson. Run 19 (2026-11-19): mooncake (whole fluted cake with embossed flower, on a plate), bike-helmet (vents, visor peak, chin straps) and dragon-dance-head (boxy red-gold head, single horn, fur trim, short scaled cloth body) rebuilt and kept. Deleted again: sandals (straps still read as teal worms) and high heels (red wedge on a stick). Both failed twice with Haiku - next run the orchestrator should draw them itself, or drop them."
+    "notes": "Built 85 flat-vector parts: festival props (diya, rangoli, firecracker, sparkler, fireworks, sky lanterns, paper lantern, Christmas, Hanukkah, Eid/Ramadan, Easter, Holi, party, wedding, New Year, harvest), cultural garments (turban and hijab on faceless display forms; saree, kurta, sherwani, kimono, hanbok on hangers) and clothing/accessories. Convention: garments are front-view catalogue items on a coat or clip hanger, hem on y, anim sway. Skipped as covered: christmas tree decorated (=christmas-tree), christmas gift (=gift-box), halloween pumpkin (=jack-o-lantern), cake candles (=birthday-cake), confetti (=core/confetti-burst), sunglasses item (=sunglasses), watch item (=watch), backpack item (=backpack), handbag item (=handbag), mask party (=carnival-mask). Renamed: kimono item -> kimono, hanbok item -> hanbok, umbrella item -> umbrella, pinata-style donkey -> pinata-donkey. Failed/deleted, rebuild next run: sandals (sub-agent: straps read as sticks/worms), mooncake (cut wedge read as a separate blob - draw a whole round fluted cake with an embossed flower, no wedge), high heels (red wedge on black stilts, unreadable - draw one clear stiletto pump in side view: pointed toe, arched sole, thin tall heel), helmet bike (blue blob - show vents as clear slots, a visor peak and chin straps), chinese dragon dance head (read as a worm/snake - draw a big boxy festival lion-dance-style head with a wide mouth, large eyes with lids, a single horn, fur trim, and a short draped cloth body). Fixed in review: tie redrawn (stripes now clipped to a proper tapered blade with a knot), tiara scaled up and made gold, red-envelope example no longer invisible at f0, belt TS readonly tuple error; trademark tags dropped: levis, stetson. Run 19 (2026-11-19): mooncake (whole fluted cake with embossed flower, on a plate), bike-helmet (vents, visor peak, chin straps) and dragon-dance-head (boxy red-gold head, single horn, fur trim, short scaled cloth body) rebuilt and kept. Deleted again: sandals (straps still read as teal worms) and high heels (red wedge on a stick). Both failed twice with Haiku - next run the orchestrator should draw them itself, or drop them. Run 20 (2026-11-19): sandals (top-view pair, cork soles, two wide buckled straps, heel strap) and high heels (single red stiletto pump, side view) drawn by the orchestrator and kept. Batch done."
   },
   {
     "id": "19-pixel-art-people",
@@ -2412,7 +2408,7 @@
     "title": "Pixel art: animals",
     "style": "pixel-art",
     "type": "character",
-    "status": "todo",
+    "status": "partial",
     "generator": null,
     "brief": "Presets using parts/pixel-art/sprite.",
     "names": [
@@ -2527,7 +2523,19 @@
       "pufferfish",
       "swordfish"
     ],
-    "count": 110
+    "count": 110,
+    "built": 103,
+    "date": "2026-11-19",
+    "remaining": [
+      "kitten",
+      "chipmunk",
+      "toucan",
+      "hummingbird",
+      "bluejay",
+      "cardinal",
+      "magpie"
+    ],
+    "notes": "Built 103 pixel-art/sprite presets (side view facing right, role chars a/A/z with coat/coat2 params, pal override). Convention: legged animals stand on y with walk/run leg cels; birds add a fly anim (wing cels); fish anchor on the centre (centre=true, y 960) with a swim anim and example s 1. Template: pixel-art/dog drawn by the orchestrator. Rejected in review and redrawn the same run (kept): camel, llama, lamb, cheetah, leopard, jaguar, snow leopard, panda, yak, platypus, wombat, woodpecker (on a trunk segment), ostrich, emu, turkey, catfish, hammerhead shark, swordfish, pufferfish; shark stray belly cells fixed; all fish examples rescaled to s 1 (were cut off). Deleted after two tries, rebuild next run: kitten (came out as a huge upright orange figure - draw a small 4-legged kitten ~12 cells wide, big head), chipmunk (boxy - small squirrel shape with side stripes), toucan (black blob - needs a clearly separate head, white bib and a beak as long as the body), hummingbird (red throat drawn as a cross - draw the gorget as a small red patch under the beak), bluejay and cardinal (shapeless blobs - separate round head with crest, oval body, tail), magpie (black blob, tail never rendered). Small birds are the weak spot for Haiku: give them a written pixel map sketch or draw them yourself."
   },
   {
     "id": "21-pixel-art-items",

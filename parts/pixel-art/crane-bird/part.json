@@ -1,0 +1,28 @@
+{
+  "id": "pixel-art/crane-bird",
+  "type": "character",
+  "style": "pixel-art",
+  "name": "Crane (bird)",
+  "summary": "Pixel-art crane with a red crown patch and bushy tail; walks on tall legs or flaps. For wetland and nature scenes.",
+  "tags": ["crane", "bird", "wading bird", "wetland", "pixel", "pixel art", "retro"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x; [from,to] to move"},
+    {"name": "y", "type": "number", "default": 1600, "note": "feet / ground line"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; one cell = 24 px at s = 1"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "face left"},
+    {"name": "anim", "type": "enum", "default": "walk", "values": ["walk", "run", "fly", "none", "bob", "bounce", "float", "shake", "pulse"], "note": "walk/run swap leg cels; fly flaps the wings; others move the whole sprite"},
+    {"name": "fps", "type": "number", "default": 8, "note": "video frames per cel"},
+    {"name": "vx", "type": "number", "note": "px per frame drift (pair with walk or fly)"},
+    {"name": "coat", "type": "colour", "default": "#9aa3ad", "note": "feather colour (char a)"},
+    {"name": "coat2", "type": "colour", "default": "#5a6170", "note": "shade colour: tail, legs (char A)"},
+    {"name": "pal", "type": "object", "note": "replace colours by char, e.g. {\"z\": \"#d2403f\"} for the crown patch"},
+    {"name": "px", "type": "number", "default": 24, "note": "cell size"},
+    {"name": "outline", "type": "boolean", "default": true, "note": "dark one-cell outline"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1.5, "anim": "walk"},
+  "uses": ["pixel-art/sprite"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,112 @@
+{
+  "id": "pixel-art/squirrel",
+  "type": "character",
+  "style": "pixel-art",
+  "name": "Squirrel",
+  "summary": "Red-brown pixel squirrel with a huge bushy curled tail over its back; for parks, trees and woodland scenes.",
+  "tags": [
+    "squirrel",
+    "tree squirrel",
+    "wild animal",
+    "park",
+    "pixel",
+    "pixel art",
+    "8-bit",
+    "retro"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "feet / ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1.5,
+      "note": "scale; one cell = 24 px at s = 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "walk",
+      "values": [
+        "walk",
+        "run",
+        "none",
+        "bob",
+        "bounce",
+        "float",
+        "shake",
+        "pulse"
+      ],
+      "note": "walk/run swap leg cels; others move the whole sprite"
+    },
+    {
+      "name": "fps",
+      "type": "number",
+      "default": 8,
+      "note": "video frames per walk cel"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame drift (pair with walk)"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#b8582a",
+      "note": "main red-brown fur colour (char a)"
+    },
+    {
+      "name": "coat2",
+      "type": "colour",
+      "default": "#6e3118",
+      "note": "shade colour: tail edge, legs and shade (char A)"
+    },
+    {
+      "name": "pal",
+      "type": "object",
+      "note": "replace colours by char, e.g. {\"z\": \"#2f5fb8\"} to recolour the accent"
+    },
+    {
+      "name": "px",
+      "type": "number",
+      "default": 24,
+      "note": "cell size"
+    },
+    {
+      "name": "outline",
+      "type": "boolean",
+      "default": true,
+      "note": "dark one-cell outline"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1.5,
+    "anim": "walk"
+  },
+  "uses": [
+    "pixel-art/sprite"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
