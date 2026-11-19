@@ -1,0 +1,67 @@
+{
+  "id": "ink-sketch/bathroom",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Bathroom",
+  "summary": "Ink sketch bathroom background: tiled walls, bathtub with shower curtain, sink with mirror, toilet and towels.",
+  "tags": [
+    "bathroom",
+    "toilet",
+    "bathtub",
+    "shower",
+    "tiles",
+    "interior",
+    "background",
+    "washroom",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "tints the tiles and fittings for the time of day"
+    },
+    {
+      "name": "tile",
+      "type": "colour",
+      "default": "#D7F1EE",
+      "note": "wall tile colour"
+    },
+    {
+      "name": "curtain",
+      "type": "colour",
+      "default": "#8EC5E8",
+      "note": "shower curtain colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = the plant sways from p.f"
+    }
+  ],
+  "example": {
+    "time": "day"
+  },
+  "uses": [
+    "flat-vector/bathroom",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

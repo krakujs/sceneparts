@@ -1,0 +1,84 @@
+{
+  "id": "ink-sketch/lake-shore",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Lake shore",
+  "summary": "Ink sketch lake shore background: calm lake with reflections, far shore trees and hills, reeds and a wooden jetty.",
+  "tags": [
+    "lake",
+    "shore",
+    "water",
+    "reflection",
+    "jetty",
+    "reeds",
+    "calm",
+    "background",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light on the lake and shore"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky tint and animated weather"
+    },
+    {
+      "name": "water",
+      "type": "colour",
+      "default": "#4E9ED8",
+      "note": "lake colour"
+    },
+    {
+      "name": "jetty",
+      "type": "boolean",
+      "default": true,
+      "note": "show the small wooden jetty at the right"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = ripples, clouds and trees move from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear",
+    "water": "#4E9ED8",
+    "jetty": true
+  },
+  "uses": [
+    "flat-vector/lake-shore",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

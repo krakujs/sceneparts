@@ -216,3 +216,65 @@ function eachEl(n: any, ctx: InkCtx & { op?: number }, w: number, key: React.Key
 export function inkEach(n: any, w = 5): any {
   return eachEl(n, {}, w, "ie");
 }
+
+// ---- Scene inking (for full-frame backgrounds ported from flat geometry) -------------------------
+// inkScene(tree) works like inkEach, but frame-wide "surfaces" (sky bands, walls, floors, ground, sea:
+// rects at least 900 px wide or 1400 px tall, and paths spanning the whole width) are painted as a soft
+// flat wash with no contour, so banded skies stay smooth; path surfaces (hills, dunes, shorelines) get a
+// thin ink edge. Dark night colours keep their hue instead of turning into ink grey.
+const numsOf = (d: string) => (d.match(/-?\d*\.?\d+(?:e-?\d+)?/gi) || []).map(Number);
+const isSurface = (t: string, pr: any) => {
+  if (t === "rect") return +(pr.width ?? 0) >= 900 || +(pr.height ?? 0) >= 1400;
+  if (t === "path" && typeof pr.d === "string" && !/[aA]/.test(pr.d)) {
+    const n = numsOf(pr.d), xs = n.filter((_, i) => i % 2 === 0);
+    return xs.length > 2 && Math.min(...xs) <= 0 && Math.max(...xs) >= 1080;
+  }
+  if (t === "polygon" && typeof pr.points === "string") {
+    const xs = numsOf(pr.points).filter((_, i) => i % 2 === 0);
+    return xs.length > 2 && Math.min(...xs) <= 0 && Math.max(...xs) >= 1080;
+  }
+  return false;
+};
+const sceneCol = (c: string) => (lum(c) < 0.06 ? c : washOf(c));
+function sceneEl(n: any, ctx: InkCtx & { op?: number }, w: number, key: React.Key): any {
+  const el = expand(n);
+  if (el === null || el === undefined || typeof el === "boolean" || typeof el === "string" || typeof el === "number") return null;
+  if (Array.isArray(el)) return el.map((c, i) => sceneEl(c, ctx, w, i));
+  if (!React.isValidElement(el)) return null;
+  const t = el.type as any, pr: any = el.props;
+  if (t === React.Fragment || t === "g") {
+    const op = (ctx.op ?? 1) * (pr.opacity !== undefined ? +pr.opacity : 1);
+    const c2 = { fill: pr.fill ?? ctx.fill, stroke: pr.stroke ?? ctx.stroke, sw: pr.strokeWidth ?? ctx.sw, op };
+    return (
+      <g key={key} transform={pr.transform} opacity={pr.opacity} clipPath={pr.clipPath} mask={pr.mask}>
+        {kidsOf(pr.children).map((c, i) => sceneEl(c, c2, w, i))}
+      </g>
+    );
+  }
+  if (typeof t !== "string") return null;
+  if (SKIP_TAGS[t] || !SHAPES[t]) return React.cloneElement(el as React.ReactElement<any>, { key });
+  const fill: string = pr.fill ?? ctx.fill ?? "#000000";
+  if (isSurface(t, pr) && isOn(fill) && !isRgba(fill)) {
+    const edge = t !== "rect" && (ctx.op ?? 1) * (pr.opacity !== undefined ? +pr.opacity : 1) >= 0.9;
+    return React.cloneElement(el as React.ReactElement<any>, {
+      key, fill: sceneCol(fill), stroke: edge ? INK : "none", strokeWidth: edge ? Math.max(3, w * 0.7) : 0, strokeLinejoin: "round",
+    });
+  }
+  const op = (ctx.op ?? 1) * (pr.opacity !== undefined ? +pr.opacity : 1) * (pr.fillOpacity !== undefined ? +pr.fillOpacity : 1);
+  const leafCtx: InkCtx = { fill: ctx.fill, stroke: ctx.stroke, sw: ctx.sw };
+  if (op < 0.9) return React.cloneElement(el as React.ReactElement<any>, { key, fill: isOn(fill) && !isRgba(fill) ? sceneCol(fill) : pr.fill, stroke: pr.stroke && isOn(pr.stroke) && !isRgba(pr.stroke) ? sceneCol(pr.stroke) : pr.stroke });
+  if (isOn(fill) && !isRgba(fill) && lum(fill) < 0.35 && t !== "line" && t !== "polyline") {
+    // dark objects (night trees, silhouettes): solid ink-tinted body + contour, no paper show-through
+    return (
+      <g key={key}>
+        {passEl(el, "line", leafCtx, w, "l")}
+        {React.cloneElement(el as React.ReactElement<any>, { key: "b", fill: sceneCol(fill), opacity: undefined })}
+      </g>
+    );
+  }
+  return eachEl(el, ctx, w, key);
+}
+/** Redraw a flat full-frame background as ink: objects get one contour per shape, frame-wide surfaces a soft wash. */
+export function inkScene(n: any, w = 5): any {
+  return sceneEl(n, {}, w, "is");
+}

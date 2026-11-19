@@ -1,0 +1,84 @@
+{
+  "id": "ink-sketch/countryside",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Countryside",
+  "summary": "Ink sketch countryside background: rolling hills, patchwork fields, hedgerows, farmhouse, fence and dirt path.",
+  "tags": [
+    "countryside",
+    "rural",
+    "hills",
+    "fields",
+    "farm",
+    "landscape",
+    "background",
+    "outdoor",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "sky and landscape light"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky tint and animated weather"
+    },
+    {
+      "name": "grass",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "grass colour of the near field"
+    },
+    {
+      "name": "seed",
+      "type": "number",
+      "default": 3,
+      "note": "varies hill shape, clouds and tree placement"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds and trees move from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear",
+    "grass": "#4BB46A",
+    "seed": 3
+  },
+  "uses": [
+    "flat-vector/countryside",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

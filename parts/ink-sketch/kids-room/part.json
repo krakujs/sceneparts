@@ -1,0 +1,88 @@
+{
+  "id": "ink-sketch/kids-room",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Kids room",
+  "summary": "Ink sketch kids room background: bunk bed, toy shelves, building blocks, star stickers and a bright rug.",
+  "tags": [
+    "kids room",
+    "children",
+    "bedroom",
+    "bunk bed",
+    "toys",
+    "interior",
+    "background",
+    "playroom",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "outside light in the window and room tint; the lamp glows at dusk and night"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "seen through the window"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#CFE6F5",
+      "note": "wall colour"
+    },
+    {
+      "name": "bedColour",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "bunk bed quilt colour"
+    },
+    {
+      "name": "curtains",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "window curtains, or none"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = weather and wall stars twinkle from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear"
+  },
+  "uses": [
+    "flat-vector/kids-room",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

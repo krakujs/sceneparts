@@ -1,0 +1,83 @@
+{
+  "id": "ink-sketch/forest-path",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Forest path",
+  "summary": "Ink sketch forest path background: dense trunks on both sides, a winding dirt path, ferns and light shafts.",
+  "tags": [
+    "forest",
+    "woods",
+    "path",
+    "trees",
+    "nature",
+    "background",
+    "outdoor",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light under the canopy"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "animated weather over the scene"
+    },
+    {
+      "name": "leaf",
+      "type": "colour",
+      "default": "#3E8F5A",
+      "note": "leaf colour of the canopy and ferns"
+    },
+    {
+      "name": "shafts",
+      "type": "boolean",
+      "default": true,
+      "note": "show soft light shafts through the trees"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = light shafts and weather move from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear",
+    "leaf": "#3E8F5A",
+    "shafts": true
+  },
+  "uses": [
+    "flat-vector/forest-path",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

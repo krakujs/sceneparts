@@ -1,0 +1,52 @@
+{
+  "id": "ink-sketch/underwater",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Underwater",
+  "summary": "Ink sketch underwater background: blue water bands, surface light rays, sandy seabed, seaweed, coral and bubbles.",
+  "tags": [
+    "underwater",
+    "sea",
+    "ocean",
+    "coral",
+    "seaweed",
+    "bubbles",
+    "background",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "depth",
+      "type": "enum",
+      "default": "shallow",
+      "values": [
+        "shallow",
+        "deep"
+      ],
+      "note": "shallow = bright turquoise with many light rays; deep = dark blue, faint light and darker seabed"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = bubbles rise, weed sways and rays shift from p.f"
+    }
+  ],
+  "example": {
+    "depth": "shallow"
+  },
+  "uses": [
+    "flat-vector/underwater",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

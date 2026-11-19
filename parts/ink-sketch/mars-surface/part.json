@@ -1,0 +1,72 @@
+{
+  "id": "ink-sketch/mars-surface",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Mars surface",
+  "summary": "Ink sketch mars background: red desert with dunes, rocks, craters, distant hills, salmon sky and small sun.",
+  "tags": [
+    "mars",
+    "planet",
+    "space",
+    "desert",
+    "red planet",
+    "background",
+    "alien",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "sky colour and light; night is a dark violet sky with the sun as a pale disc"
+    },
+    {
+      "name": "sky",
+      "type": "colour",
+      "default": "#F2B8A2",
+      "note": "pale salmon sky colour"
+    },
+    {
+      "name": "ground",
+      "type": "colour",
+      "default": "#C65A3A",
+      "note": "red desert colour"
+    },
+    {
+      "name": "seed",
+      "type": "number",
+      "default": 4,
+      "note": "varies the hills and pebbles"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = sun drifts slightly and dust haze moves"
+    }
+  ],
+  "example": {
+    "time": "day"
+  },
+  "uses": [
+    "flat-vector/mars-surface",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "ink-sketch/outer-space",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Outer space",
+  "summary": "Ink sketch outer space background: deep starfield, nebula colour clouds, distant ringed planets and a small moon.",
+  "tags": [
+    "space",
+    "outer space",
+    "stars",
+    "nebula",
+    "planet",
+    "galaxy",
+    "background",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "palette",
+      "type": "enum",
+      "default": "violet",
+      "values": [
+        "violet",
+        "teal",
+        "ember"
+      ],
+      "note": "nebula colour scheme"
+    },
+    {
+      "name": "seed",
+      "type": "number",
+      "default": 9,
+      "note": "varies star placement"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = stars twinkle and nebula clouds slowly shift"
+    }
+  ],
+  "example": {
+    "palette": "violet"
+  },
+  "uses": [
+    "flat-vector/outer-space",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

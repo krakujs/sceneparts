@@ -1,0 +1,66 @@
+{
+  "id": "ink-sketch/cafe-interior",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Cafe interior",
+  "summary": "Ink sketch cafe background: counter with coffee machine, pastry case, menu board, small tables, pendant lamps.",
+  "tags": [
+    "cafe",
+    "coffee",
+    "coffee shop",
+    "bakery",
+    "interior",
+    "background",
+    "counter",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "room light; pendant lamps glow at dusk and night"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#F6E7D2",
+      "note": "wall colour"
+    },
+    {
+      "name": "wood",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "counter and table wood colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = coffee machine light blinks"
+    }
+  ],
+  "example": {
+    "time": "day"
+  },
+  "uses": [
+    "flat-vector/cafe-interior",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

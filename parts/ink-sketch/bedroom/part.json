@@ -1,0 +1,88 @@
+{
+  "id": "ink-sketch/bedroom",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Bedroom",
+  "summary": "Ink sketch bedroom background: bed with pillows, nightstand lamp, wardrobe, curtained window and rug.",
+  "tags": [
+    "bedroom",
+    "bed",
+    "home",
+    "interior",
+    "background",
+    "indoor",
+    "wardrobe",
+    "night",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "outside light in the window and room tint; lamps glow at dusk and night"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "seen through the window"
+    },
+    {
+      "name": "blanket",
+      "type": "colour",
+      "default": "#7B5CD6",
+      "note": "bed blanket colour"
+    },
+    {
+      "name": "curtains",
+      "type": "colour",
+      "default": "#F27BA6",
+      "note": "window curtains, or none"
+    },
+    {
+      "name": "lamp",
+      "type": "boolean",
+      "default": true,
+      "note": "ceiling lamp (glows at dusk and night)"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = weather and plant move from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear"
+  },
+  "uses": [
+    "flat-vector/bedroom",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -3215,7 +3215,7 @@
     "title": "Ink sketch: settings, faces and gestures",
     "style": "ink-sketch",
     "type": "background",
-    "status": "todo",
+    "status": "done",
     "generator": null,
     "brief": "Simple sketched settings plus expressive faces and hand gestures for explainers.",
     "names": [
@@ -3330,7 +3330,10 @@
       "high five",
       "raised hands"
     ],
-    "count": 110
+    "count": 110,
+    "built": 110,
+    "date": "2026-11-19",
+    "notes": "New inkScene helper in ink-sketch/style (frame-wide surfaces as soft wash, objects inked per shape, night colours kept); 50 backgrounds ported from flat-vector with inkScene, 60 faces/hands with ink() (ok hand with inkEach)."
   },
   {
     "id": "27-storybook-history",

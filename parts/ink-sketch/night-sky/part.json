@@ -1,0 +1,81 @@
+{
+  "id": "ink-sketch/night-sky",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Night sky",
+  "summary": "Ink sketch night sky background: big starry sky, moon, Milky Way band, silhouette hills and trees at the bottom.",
+  "tags": [
+    "night",
+    "night sky",
+    "stars",
+    "moon",
+    "milky way",
+    "silhouette",
+    "background",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "night",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "night is the default; dusk gives a violet sky with stars still showing"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "clear shows all the stars; cloudy and above cover the sky with grey cloud"
+    },
+    {
+      "name": "silhouette",
+      "type": "colour",
+      "default": "#1B2445",
+      "note": "colour of the distant hills and trees"
+    },
+    {
+      "name": "seed",
+      "type": "number",
+      "default": 12,
+      "note": "varies stars, clouds and tree placement"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = clouds move, stars twinkle, trees sway and fireflies blink"
+    }
+  ],
+  "example": {
+    "time": "night",
+    "weather": "clear"
+  },
+  "uses": [
+    "flat-vector/night-sky",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

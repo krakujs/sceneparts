@@ -1,0 +1,73 @@
+{
+  "id": "ink-sketch/garage-interior",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Garage interior",
+  "summary": "Ink sketch garage interior background: roller door, tool pegboard, tin shelves, workbench, bicycle and oil stain.",
+  "tags": [
+    "garage",
+    "workshop",
+    "roller door",
+    "tools",
+    "workbench",
+    "interior",
+    "background",
+    "bicycle",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "tints the room; the hanging light glows at dusk and night"
+    },
+    {
+      "name": "door",
+      "type": "colour",
+      "default": "#E9ECF2",
+      "note": "roller door colour"
+    },
+    {
+      "name": "bike",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "bicycle frame colour"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#CBD2DE",
+      "note": "wall colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = reserved; the garage is mostly still"
+    }
+  ],
+  "example": {
+    "time": "day"
+  },
+  "uses": [
+    "flat-vector/garage-interior",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

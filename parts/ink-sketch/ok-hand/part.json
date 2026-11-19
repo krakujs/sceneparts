@@ -1,0 +1,79 @@
+{
+  "id": "ink-sketch/ok-hand",
+  "type": "effect",
+  "style": "ink-sketch",
+  "name": "OK Hand",
+  "summary": "Ink sketch die-cut OK hand, thumb and finger in a circle, for okay, perfect, all good, fine.",
+  "tags": [
+    "ok",
+    "okay",
+    "perfect",
+    "fine",
+    "all good",
+    "hand sign",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about about 380 px wide at s = 1"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "hand colour; a SKIN name from the style (light, fair, tan, medium, brown, dark) or any hex"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "sleeve colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "bob",
+      "values": [
+        "none",
+        "bob",
+        "pulse"
+      ],
+      "note": "idle motion from p.f"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "anim": "bob"
+  },
+  "uses": [
+    "flat-vector/ok-hand",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

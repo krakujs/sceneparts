@@ -1,0 +1,77 @@
+{
+  "id": "ink-sketch/riverbank",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Riverbank",
+  "summary": "Ink sketch riverbank background: a river flowing across with moving ripples, grassy banks, stones, reeds and trees.",
+  "tags": [
+    "river",
+    "riverbank",
+    "water",
+    "stream",
+    "reeds",
+    "stones",
+    "background",
+    "outdoor",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light on the water and banks"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "sky tint and animated weather"
+    },
+    {
+      "name": "water",
+      "type": "colour",
+      "default": "#4E9ED8",
+      "note": "river colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = ripples flow and trees sway from p.f"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear",
+    "water": "#4E9ED8"
+  },
+  "uses": [
+    "flat-vector/riverbank",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

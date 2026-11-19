@@ -1,0 +1,83 @@
+{
+  "id": "ink-sketch/hospital-room",
+  "type": "background",
+  "style": "ink-sketch",
+  "name": "Hospital room",
+  "summary": "Ink sketch hospital room background: bed at the side, heartbeat monitor, IV stand, curtain rail and a window.",
+  "tags": [
+    "hospital",
+    "hospital room",
+    "patient ward",
+    "medical",
+    "bed",
+    "clinic",
+    "background",
+    "interior",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "morning",
+        "dusk",
+        "night"
+      ],
+      "note": "light through the Window and room tint"
+    },
+    {
+      "name": "weather",
+      "type": "enum",
+      "default": "clear",
+      "values": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "note": "seen through the Window"
+    },
+    {
+      "name": "wall",
+      "type": "colour",
+      "default": "#E4F3EE",
+      "note": "wall colour"
+    },
+    {
+      "name": "curtains",
+      "type": "colour",
+      "default": "#9ED8CF",
+      "note": "curtain colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "drift",
+      "values": [
+        "drift",
+        "none"
+      ],
+      "note": "drift = heartbeat trace scrolls, clouds drift and weather animates"
+    }
+  ],
+  "example": {
+    "time": "day",
+    "weather": "clear",
+    "curtains": "#9ED8CF"
+  },
+  "uses": [
+    "flat-vector/hospital-room",
+    "ink-sketch/style"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

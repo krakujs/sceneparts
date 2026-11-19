@@ -1,0 +1,174 @@
+{
+  "id": "ink-sketch/sweating-face",
+  "type": "effect",
+  "style": "ink-sketch",
+  "name": "Sweating Face",
+  "summary": "Ink sketch sticker awkward grinning face with a big sweat drop; reaction for videos and comments.",
+  "tags": [
+    "sweating",
+    "awkward",
+    "phew",
+    "oops",
+    "pressure",
+    "face",
+    "reaction",
+    "emotion",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; face is about 360 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "face colour (one darker crescent is added automatically)"
+    },
+    {
+      "name": "tears",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "drop",
+        "streams",
+        "fountain"
+      ],
+      "note": "drop = one rolling tear, streams = crying, fountain = tears of laughter"
+    },
+    {
+      "name": "extra",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "hearts",
+        "zzz",
+        "steam",
+        "sparkles",
+        "orbit",
+        "burst",
+        "snow",
+        "heat",
+        "confetti",
+        "question",
+        "bubble",
+        "kiss-heart"
+      ],
+      "note": "floating effect around the face, animated from p.f"
+    },
+    {
+      "name": "accessory",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "shades",
+        "nerd",
+        "party-hat",
+        "thermometer",
+        "mask",
+        "hand-chin",
+        "finger",
+        "ice-cap",
+        "napkin"
+      ],
+      "note": "thing worn or held"
+    },
+    {
+      "name": "blush",
+      "type": "boolean",
+      "default": false,
+      "note": "pink cheeks"
+    },
+    {
+      "name": "look",
+      "type": "enum",
+      "default": "center",
+      "values": [
+        "center",
+        "left",
+        "right",
+        "up",
+        "down"
+      ],
+      "note": "pupil direction for dot, open and wide eyes"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "bob",
+      "values": [
+        "none",
+        "bob",
+        "bounce",
+        "shake",
+        "wobble",
+        "pulse",
+        "tremble",
+        "spin",
+        "nod"
+      ],
+      "note": "idle motion from p.f"
+    },
+    {
+      "name": "popIn",
+      "type": "boolean",
+      "default": true,
+      "note": "springs in over the first 10 frames"
+    },
+    {
+      "name": "blink",
+      "type": "boolean",
+      "default": true,
+      "note": "blinks every 96 frames"
+    },
+    {
+      "name": "border",
+      "type": "boolean",
+      "default": true,
+      "note": "white die-cut sticker edge around the face"
+    },
+    {
+      "name": "rotate",
+      "type": "number",
+      "default": 0,
+      "note": "degrees; 180 = upside down"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror left-right"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960
+  },
+  "uses": [
+    "flat-vector/sweating-face",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
