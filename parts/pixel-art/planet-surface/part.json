@@ -1,0 +1,52 @@
+{
+  "id": "pixel-art/planet-surface",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Planet surface",
+  "summary": "Pixel-art alien planet: rocky ground with craters, a big planet in a dark star sky and glowing crystals.",
+  "tags": [
+    "alien",
+    "planet",
+    "rocks",
+    "sci-fi",
+    "background",
+    "pixel",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "groundY",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line; stand characters on it"
+    },
+    {
+      "name": "seed",
+      "type": "number",
+      "default": 6,
+      "note": "varies clouds, skyline and details"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "crystals",
+      "values": [
+        "crystals",
+        "none"
+      ],
+      "note": "crystals pulse and stars twinkle from p.f"
+    }
+  ],
+  "example": {
+    "anim": "crystals"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

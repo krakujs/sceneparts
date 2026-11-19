@@ -1,0 +1,63 @@
+{
+  "id": "pixel-art/arena",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Arena",
+  "summary": "Pixel-art fighting arena: tiered stands with a cheering crowd, stone wall with gates and banners, sand floor.",
+  "tags": [
+    "arena",
+    "colosseum",
+    "battle",
+    "fight",
+    "crowd",
+    "background",
+    "pixel",
+    "pixel art"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "dusk",
+        "night"
+      ],
+      "note": "sky colour and light"
+    },
+    {
+      "name": "groundY",
+      "type": "number",
+      "default": 1600,
+      "note": "top of the sand floor; stand fighters on it"
+    },
+    {
+      "name": "seed",
+      "type": "number",
+      "default": 7,
+      "note": "varies crowd colours"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "cheer",
+      "values": [
+        "cheer",
+        "none"
+      ],
+      "note": "crowd bobs and raises hands, banners flap"
+    }
+  ],
+  "example": {
+    "time": "day"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

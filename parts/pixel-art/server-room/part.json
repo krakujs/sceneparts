@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/server-room",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Server room",
+  "summary": "Pixel-art server room: rows of racks with blinking LEDs, cable trays and cold blue light; for tech and data scenes.",
+  "tags": [
+    "server",
+    "data center",
+    "server room",
+    "tech",
+    "racks",
+    "background",
+    "indoor",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "blink",
+      "values": [
+        "blink",
+        "none"
+      ],
+      "note": "the server LEDs blink from p.f"
+    }
+  ],
+  "example": {
+    "anim": "blink"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "pixel-art/level-complete-screen",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Level complete screen",
+  "summary": "Pixel-art level clear screen: bright sky, LEVEL COMPLETE banner, three stars popping in and a score tally.",
+  "tags": ["level complete", "level clear", "stage clear", "victory", "score", "screen", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "title", "type": "string", "default": "LEVEL COMPLETE!", "note": "the banner text"},
+    {"name": "score", "type": "number", "default": 12450, "note": "score the tally counts up to"},
+    {"name": "anim", "type": "enum", "default": "pop", "values": ["pop", "none"], "note": "stars pop in one by one and the score counts up from p.f"}
+  ],
+  "example": {"score": 12450},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

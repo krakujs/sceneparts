@@ -1,0 +1,20 @@
+{
+  "id": "pixel-art/title-screen",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Title screen",
+  "summary": "Pixel-art title screen: big stepped title text over a hero-free landscape with a blinking PRESS START.",
+  "tags": ["title screen", "title", "title art", "press start", "splash", "screen", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "title", "type": "string", "default": "PIXEL QUEST", "note": "the title text; two words stack on two lines"},
+    {"name": "time", "type": "enum", "default": "day", "values": ["day", "dusk", "night"], "note": "sky colours behind the logo"},
+    {"name": "anim", "type": "enum", "default": "blink", "values": ["blink", "none"], "note": "PRESS START blinks and clouds drift from p.f"}
+  ],
+  "example": {"time": "day"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

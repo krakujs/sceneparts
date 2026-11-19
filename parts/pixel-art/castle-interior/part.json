@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/castle-interior",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Castle interior",
+  "summary": "Pixel-art castle hall: stone walls, arched windows, banners, carpet runner and torches; for royal indoor scenes.",
+  "tags": [
+    "castle",
+    "hall",
+    "stone",
+    "medieval",
+    "background",
+    "indoor",
+    "pixel art",
+    "game",
+    "level"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "flicker",
+      "values": [
+        "flicker",
+        "none"
+      ],
+      "note": "torch flames and glow flicker from p.f"
+    }
+  ],
+  "example": {
+    "anim": "flicker"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "pixel-art/city-night",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "City night",
+  "summary": "Pixel-art night city: glowing skyline, tall lit towers with blinking windows and street lamps.",
+  "tags": [
+    "city",
+    "night",
+    "skyline",
+    "skyscrapers",
+    "background",
+    "pixel",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "groundY",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line; stand characters on it"
+    },
+    {
+      "name": "seed",
+      "type": "number",
+      "default": 4,
+      "note": "varies clouds, skyline and details"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "blink",
+      "values": [
+        "blink",
+        "none"
+      ],
+      "note": "windows blink on and off from p.f"
+    }
+  ],
+  "example": {
+    "anim": "blink"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

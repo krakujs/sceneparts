@@ -1,0 +1,21 @@
+{
+  "id": "pixel-art/forest",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Forest",
+  "summary": "Pixel-art forest background: layered tree lines, framing pines and oaks, bushes and grass tiles; for adventure scenes.",
+  "tags": ["forest", "woods", "trees", "nature", "background", "pixel", "pixel art", "game", "level"],
+  "params": [
+    {"name": "time", "type": "enum", "default": "day", "values": ["day", "dusk", "night"], "note": "sky colours and light"},
+    {"name": "groundY", "type": "number", "default": 1600, "note": "ground line; stand characters on it"},
+    {"name": "seed", "type": "number", "default": 2, "note": "varies clouds and tree lines"},
+    {"name": "anim", "type": "enum", "default": "sway", "values": ["sway", "none"], "note": "trees sway and clouds drift from p.f"}
+  ],
+  "example": {"time": "day"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

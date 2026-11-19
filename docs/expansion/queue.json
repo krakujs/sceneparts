@@ -2533,7 +2533,7 @@
     "title": "Pixel art: items and food",
     "style": "pixel-art",
     "type": "prop",
-    "status": "partial",
+    "status": "done",
     "generator": null,
     "brief": "Game-inventory style item sprites using parts/pixel-art/sprite.",
     "names": [
@@ -2689,25 +2689,17 @@
       "scoreboard"
     ],
     "count": 150,
-    "built": 143,
+    "built": 150,
     "date": "2026-11-19",
-    "remaining": [
-      "earbuds",
-      "fitness band",
-      "robot arm",
-      "snowboard",
-      "lettuce",
-      "video camera",
-      "skipping rope"
-    ],
-    "notes": "Built 143 pixel-art/sprite item presets (template pixel-art/apple drawn by the orchestrator: role chars a/A/z with colour/colour2/pal params, anim none/bob/bounce/float/shake/pulse, centre=true for HUD use; small items float centred at y 1000 in the example, furniture stands on y 1600). Slugs: 'mouse' -> computer-mouse (pixel-art/mouse is the animal), 'pepper' -> bell-pepper, 'polaroid camera' -> instant-camera (no brand, single-colour stripe). 39 redrawn in review (armchair, sofa, chair, stool, office chair, crib, bunk bed, barbell, baseball, baseball bat, baseball glove, cricket bat, hockey stick, golf club, usb stick, instant camera, bell pepper, blueberries, grapes, lime, mango, eggplant, onion, coconut, pumpkin, cauliflower, birthday cake, bread loaf, croissant, cupcake, muffin, pie; sofa, cricket bat and lime by the orchestrator). Deleted after two tries, rebuild next run (the orchestrator should draw these itself): earbuds (read as bunny ears - draw a flat wide pill case with two buds lying in front), fitness band (read as a box - draw a bracelet loop at an angle), robot arm (read as a tent - thick segments, big round joints, clear gripper), snowboard (read as a pencil - wider board), lettuce (read as fern/cabbage - frilly layered leaves), video camera (unreadable - boxy camcorder with lens barrel and flip screen), skipping rope (read as headphones - draw a loose figure-8/sagging rope with handles lying flat)."
+    "remaining": 0,
+    "notes": "Built 143 pixel-art/sprite item presets (template pixel-art/apple drawn by the orchestrator: role chars a/A/z with colour/colour2/pal params, anim none/bob/bounce/float/shake/pulse, centre=true for HUD use; small items float centred at y 1000 in the example, furniture stands on y 1600). Slugs: 'mouse' -> computer-mouse (pixel-art/mouse is the animal), 'pepper' -> bell-pepper, 'polaroid camera' -> instant-camera (no brand, single-colour stripe). 39 redrawn in review (armchair, sofa, chair, stool, office chair, crib, bunk bed, barbell, baseball, baseball bat, baseball glove, cricket bat, hockey stick, golf club, usb stick, instant camera, bell pepper, blueberries, grapes, lime, mango, eggplant, onion, coconut, pumpkin, cauliflower, birthday cake, bread loaf, croissant, cupcake, muffin, pie; sofa, cricket bat and lime by the orchestrator). Deleted after two tries, rebuild next run (the orchestrator should draw these itself): earbuds (read as bunny ears - draw a flat wide pill case with two buds lying in front), fitness band (read as a box - draw a bracelet loop at an angle), robot arm (read as a tent - thick segments, big round joints, clear gripper), snowboard (read as a pencil - wider board), lettuce (read as fern/cabbage - frilly layered leaves), video camera (unreadable - boxy camcorder with lens barrel and flip screen), skipping rope (read as headphones - draw a loose figure-8/sagging rope with handles lying flat). Run 22 (2026-11-19): earbuds, fitness band, robot arm, snowboard, lettuce, video camera, skipping rope drawn by the orchestrator and kept (earbuds = pill case with two buds; fitness band = angled strap loop with screen; skipping rope = handles lying flat with a crossed loop). Batch done."
   },
   {
     "id": "22-pixel-art-scenes",
     "title": "Pixel art: tiles and backgrounds",
     "style": "pixel-art",
     "type": "background",
-    "status": "todo",
+    "status": "done",
     "generator": null,
     "brief": "Tiled backgrounds and scenery (grass, water, brick, sky with clouds, dungeon, city, forest, space) built from tiles.",
     "names": [
@@ -2788,7 +2780,11 @@
       "bedroom",
       "kitchen"
     ],
-    "count": 76
+    "count": 76,
+    "built": 77,
+    "date": "2026-11-19",
+    "remaining": 0,
+    "notes": "Foundation (written by the orchestrator): pixel-art/backdrop (type background, layer bg) – generator with time day/dusk/night/space, far none/hills/mountains/city/trees/sea and 13 tiled grounds; also the tile kit every pixel scene imports: TILES (8x8 maps incl. animated water/lava), TP palette, TileRect (SVG pattern fill, one rect per area – keeps renders fast), Tile, TileMap, PixSky, Far, GroundBand, PixTree, Tint, Panel, PixText, Icon/ICONS, rnd, snap. Tile pixel = 12 px (sprites use 24 px cells). References by the orchestrator: forest (outdoor), dungeon (indoor), dialog-box (UI overlay). 73 presets by 4 Haiku sub-agents. Convention: outdoor backgrounds have time/groundY (1600)/seed/anim, indoor have floorY (1480)/anim; centre stage kept clear; UI overlays (dialog-box, inventory-panel, health-hearts, coin-counter, score-panel, minimap) are type text centred on x,y with s. Fixed in review: arena redrawn by the orchestrator (was a giant top-down oval – now tiered cheering crowd, stone wall with gates and banners, sand floor); desert cacti redrawn as saguaros (read as a face) and the skull rock removed; space nebula blobs (noisy pixel boxes) removed, small moon added; ship-deck sails redrawn as clean billowing sails; hospital beds enlarged and monitor moved to the wall; UI overlay examples rescaled so they are readable and inside the frame. Weak but kept: underwater (sparse; seabed sits under the preview ground strip), ice-level icicle row. Pipes level uses grey/teal industrial pipes (no green warp pipes) and platform level has no '?' blocks. All 76 names built."
   },
   {
     "id": "23-ink-sketch-people",

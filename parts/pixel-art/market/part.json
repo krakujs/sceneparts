@@ -1,0 +1,63 @@
+{
+  "id": "pixel-art/market",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Market",
+  "summary": "Pixel-art market: striped stall awnings, fruit crates, hanging lanterns and a cobbled square.",
+  "tags": [
+    "market",
+    "bazaar",
+    "stalls",
+    "shopping",
+    "town",
+    "background",
+    "pixel",
+    "pixel art"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "dusk",
+        "night"
+      ],
+      "note": "sky colours and light"
+    },
+    {
+      "name": "groundY",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line; stand characters on it"
+    },
+    {
+      "name": "seed",
+      "type": "number",
+      "default": 18,
+      "note": "varies clouds, skyline and details"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "lanterns",
+      "values": [
+        "lanterns",
+        "none"
+      ],
+      "note": "lanterns glow and flicker from p.f"
+    }
+  ],
+  "example": {
+    "time": "dusk"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

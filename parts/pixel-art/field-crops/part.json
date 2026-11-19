@@ -1,0 +1,21 @@
+{
+  "id": "pixel-art/field-crops",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Field crops",
+  "summary": "Pixel-art rows of wheat and corn running down the frame with a far-off farmhouse; for harvest and countryside scenes.",
+  "tags": ["crops", "field", "wheat", "corn", "harvest", "farm", "countryside", "background", "pixel", "pixel art"],
+  "params": [
+    {"name": "time", "type": "enum", "default": "day", "values": ["day", "dusk", "night"], "note": "sky colours and light"},
+    {"name": "horizonY", "type": "number", "default": 680, "note": "where the fields start below the sky"},
+    {"name": "seed", "type": "number", "default": 11, "note": "varies corn stalk spacing and clouds"},
+    {"name": "anim", "type": "enum", "default": "sway", "values": ["sway", "none"], "note": "corn stalks sway and clouds drift from p.f"}
+  ],
+  "example": {"time": "day"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

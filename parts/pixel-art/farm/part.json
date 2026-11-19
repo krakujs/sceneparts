@@ -1,0 +1,21 @@
+{
+  "id": "pixel-art/farm",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Farm",
+  "summary": "Pixel-art farm: red barn, grey silo, fences, crop rows at the field edges and a sun over grass; for country scenes.",
+  "tags": ["farm", "barn", "countryside", "silo", "fence", "rural", "background", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "time", "type": "enum", "default": "day", "values": ["day", "dusk", "night"], "note": "sky colours and light"},
+    {"name": "groundY", "type": "number", "default": 1600, "note": "grass ground line; stand characters on it"},
+    {"name": "seed", "type": "number", "default": 10, "note": "varies clouds and hills"},
+    {"name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "clouds drift across the sky from p.f"}
+  ],
+  "example": {"time": "day"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

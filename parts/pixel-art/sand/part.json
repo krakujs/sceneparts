@@ -1,0 +1,19 @@
+{
+  "id": "pixel-art/sand",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Sand",
+  "summary": "Pixel-art desert sand texture seen from above, with ripples, pebbles and a shell; for desert and beach-floor scenes.",
+  "tags": ["sand", "desert", "dunes", "beach", "ground", "texture", "background", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "seed", "type": "number", "default": 6, "note": "varies ripple and pebble spots"},
+    {"name": "anim", "type": "enum", "default": "shimmer", "values": ["shimmer", "none"], "note": "heat-haze bands drift up the frame from p.f"}
+  ],
+  "example": {"anim": "shimmer"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

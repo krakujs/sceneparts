@@ -1,0 +1,63 @@
+{
+  "id": "pixel-art/village",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Village",
+  "summary": "Pixel-art village: small houses with pitched roofs, chimney smoke, a well and a path. For town or adventure scenes.",
+  "tags": [
+    "village",
+    "houses",
+    "town",
+    "countryside",
+    "background",
+    "pixel",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "dusk",
+        "night"
+      ],
+      "note": "sky colours and light"
+    },
+    {
+      "name": "groundY",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line; stand characters on it"
+    },
+    {
+      "name": "seed",
+      "type": "number",
+      "default": 1,
+      "note": "varies clouds, skyline and details"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "smoke",
+      "values": [
+        "smoke",
+        "none"
+      ],
+      "note": "chimney smoke rises and clouds drift from p.f"
+    }
+  ],
+  "example": {
+    "time": "day"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

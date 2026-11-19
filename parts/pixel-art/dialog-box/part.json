@@ -1,0 +1,26 @@
+{
+  "id": "pixel-art/dialog-box",
+  "type": "text",
+  "style": "pixel-art",
+  "name": "Dialog box",
+  "summary": "Pixel-art RPG dialog box: text types on letter by letter with a speaker name tab and blinking next arrow.",
+  "tags": ["dialog", "dialogue", "text box", "speech", "rpg", "ui", "subtitle", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1500, "note": "centre y"},
+    {"name": "w", "type": "number", "default": 960, "note": "box width"},
+    {"name": "h", "type": "number", "default": 380, "note": "box height"},
+    {"name": "text", "type": "string", "default": "Welcome, traveller! The castle lies beyond the forest.", "note": "the line; wraps to the box"},
+    {"name": "speaker", "type": "string", "default": "SAGE", "note": "name tab; empty string hides it"},
+    {"name": "size", "type": "number", "default": 48, "note": "font size"},
+    {"name": "typing", "type": "boolean", "default": true, "note": "type the text on; false shows it all"},
+    {"name": "speed", "type": "number", "default": 1, "note": "letters per frame"},
+    {"name": "at", "type": "number", "default": 0, "note": "frame the typing starts"}
+  ],
+  "example": {"typing": false},
+  "uses": ["pixel-art/backdrop"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "pixel-art/stadium",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Stadium",
+  "summary": "Pixel-art sports stadium: crowd stands of coloured dots, floodlights and a green pitch with white lines.",
+  "tags": [
+    "stadium",
+    "football",
+    "soccer",
+    "crowd",
+    "sport",
+    "background",
+    "pixel",
+    "pixel art"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "dusk",
+        "night"
+      ],
+      "note": "sky colours and light"
+    },
+    {
+      "name": "groundY",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line; stand characters on it"
+    },
+    {
+      "name": "seed",
+      "type": "number",
+      "default": 17,
+      "note": "varies clouds, skyline and details"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "crowd",
+      "values": [
+        "crowd",
+        "none"
+      ],
+      "note": "crowd bobs and floodlights flicker from p.f"
+    }
+  ],
+  "example": {
+    "time": "day"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

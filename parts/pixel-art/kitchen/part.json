@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/kitchen",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Kitchen",
+  "summary": "Pixel-art kitchen: counters, cupboards, a stove with a steaming pot, fridge, sink and window; for cooking scenes.",
+  "tags": [
+    "kitchen",
+    "cooking",
+    "stove",
+    "home",
+    "counter",
+    "background",
+    "indoor",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "steam",
+      "values": [
+        "steam",
+        "none"
+      ],
+      "note": "the pot steam rises from p.f"
+    }
+  ],
+  "example": {
+    "anim": "steam"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "pixel-art/clouds-level",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Clouds level",
+  "summary": "Pixel-art sky level: fluffy cloud platforms at different heights, a sea of clouds below, sun and flying birds.",
+  "tags": ["clouds", "sky level", "sky", "platformer", "level", "background", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "time", "type": "enum", "default": "day", "values": ["day", "dusk", "night"], "note": "sky colours; day shows a sun, night a moon"},
+    {"name": "groundY", "type": "number", "default": 1600, "note": "top of the sea of clouds; stand characters on it"},
+    {"name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "clouds and birds drift, birds flap, from p.f"}
+  ],
+  "example": {"time": "day"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

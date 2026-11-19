@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/arcade",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Arcade",
+  "summary": "Pixel-art arcade: a row of generic cabinets with glowing abstract screens and neon strips; for game hall scenes.",
+  "tags": [
+    "arcade",
+    "game room",
+    "cabinet",
+    "neon",
+    "games",
+    "background",
+    "indoor",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "neon",
+      "values": [
+        "neon",
+        "none"
+      ],
+      "note": "the screens and neon strips glow and flicker from p.f"
+    }
+  ],
+  "example": {
+    "anim": "neon"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/hospital",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Hospital",
+  "summary": "Pixel-art hospital ward: beds with blankets, a curtain, drip stand, heart monitor and clean tiles; for clinic scenes.",
+  "tags": [
+    "hospital",
+    "ward",
+    "clinic",
+    "bed",
+    "medical",
+    "background",
+    "indoor",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "blink",
+      "values": [
+        "blink",
+        "none"
+      ],
+      "note": "the heart monitor blinks from p.f"
+    }
+  ],
+  "example": {
+    "anim": "blink"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

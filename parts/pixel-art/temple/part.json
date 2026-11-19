@@ -1,0 +1,63 @@
+{
+  "id": "pixel-art/temple",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Temple",
+  "summary": "Pixel-art jungle temple: stepped stone temple with columns, stairs and torches in a clearing. For adventure scenes.",
+  "tags": [
+    "temple",
+    "jungle",
+    "ruins",
+    "stone",
+    "adventure",
+    "background",
+    "pixel",
+    "pixel art"
+  ],
+  "params": [
+    {
+      "name": "time",
+      "type": "enum",
+      "default": "day",
+      "values": [
+        "day",
+        "dusk",
+        "night"
+      ],
+      "note": "sky colours and light"
+    },
+    {
+      "name": "groundY",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line; stand characters on it"
+    },
+    {
+      "name": "seed",
+      "type": "number",
+      "default": 10,
+      "note": "varies clouds, skyline and details"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "torches",
+      "values": [
+        "torches",
+        "none"
+      ],
+      "note": "torch flames flicker from p.f"
+    }
+  ],
+  "example": {
+    "time": "day"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

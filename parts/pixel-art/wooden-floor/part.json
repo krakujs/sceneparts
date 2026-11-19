@@ -1,0 +1,18 @@
+{
+  "id": "pixel-art/wooden-floor",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Wooden floor",
+  "summary": "Pixel-art wooden plank floor seen from above with knots and a sunlight patch; for indoor and cabin scenes.",
+  "tags": ["wood", "wooden floor", "planks", "floor", "indoor", "cabin", "background", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "anim", "type": "enum", "default": "shine", "values": ["shine", "none"], "note": "the light patch slides across the planks from p.f"}
+  ],
+  "example": {"anim": "shine"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

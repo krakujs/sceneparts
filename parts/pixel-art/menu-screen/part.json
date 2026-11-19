@@ -1,0 +1,21 @@
+{
+  "id": "pixel-art/menu-screen",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Menu screen",
+  "summary": "Pixel-art game main menu: title plate, START / OPTIONS / QUIT options with a blinking selector over scenery.",
+  "tags": ["main menu", "menu screen", "title menu", "start menu", "game menu", "screen", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "name", "type": "string", "default": "PIXEL QUEST", "note": "game name on the title plate; a generic name"},
+    {"name": "selected", "type": "enum", "default": "START", "values": ["START", "OPTIONS", "QUIT"], "note": "which option the selector arrow points at"},
+    {"name": "time", "type": "enum", "default": "day", "values": ["day", "dusk", "night"], "note": "sky colours behind the menu"},
+    {"name": "anim", "type": "enum", "default": "blink", "values": ["blink", "none"], "note": "selector arrow blinks and clouds drift from p.f"}
+  ],
+  "example": {"selected": "START"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

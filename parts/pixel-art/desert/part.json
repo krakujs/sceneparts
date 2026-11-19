@@ -1,0 +1,21 @@
+{
+  "id": "pixel-art/desert",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Desert",
+  "summary": "Pixel-art hot desert: a sun over sand dunes, tall cacti, rocks and a bleached bone; for western and desert scenes.",
+  "tags": ["desert", "sand", "dunes", "cactus", "hot", "western", "background", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "time", "type": "enum", "default": "day", "values": ["day", "dusk"], "note": "hot midday or a sunset sky"},
+    {"name": "groundY", "type": "number", "default": 1600, "note": "sand ground line; stand characters on it"},
+    {"name": "seed", "type": "number", "default": 4, "note": "varies dune shapes and heat bars"},
+    {"name": "anim", "type": "enum", "default": "heat", "values": ["heat", "none"], "note": "heat-haze bars drift across the dunes from p.f"}
+  ],
+  "example": {"time": "day"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

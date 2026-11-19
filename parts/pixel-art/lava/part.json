@@ -1,0 +1,19 @@
+{
+  "id": "pixel-art/lava",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Lava",
+  "summary": "Pixel-art full-frame lava field with dark rock islands, bubbling pools and rising embers; for fire and volcano scenes.",
+  "tags": ["lava", "fire", "volcano", "magma", "hell", "inferno", "background", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "seed", "type": "number", "default": 8, "note": "varies ember and bubble spots"},
+    {"name": "anim", "type": "enum", "default": "bubble", "values": ["bubble", "none"], "note": "lava frames swap, bubbles pop and embers rise from p.f"}
+  ],
+  "example": {"anim": "bubble"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

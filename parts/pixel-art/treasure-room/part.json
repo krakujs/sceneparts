@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/treasure-room",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Treasure room",
+  "summary": "Pixel-art treasure vault: gold coin piles, open chests, gems and sparkles on stone walls; for loot and reward scenes.",
+  "tags": [
+    "treasure",
+    "gold",
+    "coins",
+    "vault",
+    "loot",
+    "background",
+    "indoor",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "sparkle",
+      "values": [
+        "sparkle",
+        "none"
+      ],
+      "note": "gems and coins sparkle from p.f"
+    }
+  ],
+  "example": {
+    "anim": "sparkle"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

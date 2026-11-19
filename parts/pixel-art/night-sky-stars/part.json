@@ -1,0 +1,20 @@
+{
+  "id": "pixel-art/night-sky-stars",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Night sky stars",
+  "summary": "Pixel-art starry night sky with a moon, twinkling stars and a shooting star; no ground, for night and space scenes.",
+  "tags": ["night sky", "stars", "moon", "space", "night", "shooting star", "background", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "time", "type": "enum", "default": "night", "values": ["night", "space"], "note": "space adds more stars on a deeper sky"},
+    {"name": "seed", "type": "number", "default": 10, "note": "varies star positions"},
+    {"name": "anim", "type": "enum", "default": "shoot", "values": ["shoot", "none"], "note": "stars twinkle and a shooting star streaks across from p.f"}
+  ],
+  "example": {"time": "night"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

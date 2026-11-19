@@ -1,0 +1,86 @@
+{
+  "id": "pixel-art/coin-counter",
+  "type": "text",
+  "style": "pixel-art",
+  "name": "Coin counter",
+  "summary": "Pixel-art coin counter: a spinning coin beside an x 042 number that counts up from one value to another.",
+  "tags": [
+    "coin counter",
+    "coins",
+    "money",
+    "score",
+    "hud",
+    "ui",
+    "pixel",
+    "pixel art",
+    "game"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 330 px wide at s = 1"
+    },
+    {
+      "name": "at",
+      "type": "number",
+      "default": 0,
+      "note": "frame the counting starts"
+    },
+    {
+      "name": "from",
+      "type": "number",
+      "default": 0,
+      "note": "number the counter starts at"
+    },
+    {
+      "name": "to",
+      "type": "number",
+      "default": 42,
+      "note": "number the counter counts up to"
+    },
+    {
+      "name": "speed",
+      "type": "number",
+      "default": 0.5,
+      "note": "coins added per frame while counting"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "spin",
+      "values": [
+        "spin",
+        "none"
+      ],
+      "note": "the coin spins between full and narrow frames from p.f"
+    }
+  ],
+  "example": {
+    "x": 480,
+    "y": 200,
+    "s": 2,
+    "from": 0,
+    "to": 42
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

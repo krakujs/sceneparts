@@ -1,0 +1,19 @@
+{
+  "id": "pixel-art/boss-room",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Boss room",
+  "summary": "Pixel-art boss arena: red-lit stone chamber with skull plaques, pillars, glowing runes and an open floor.",
+  "tags": ["boss room", "boss arena", "dungeon", "arena", "background", "pixel", "pixel art", "game", "level"],
+  "params": [
+    {"name": "floorY", "type": "number", "default": 1480, "note": "where wall meets the arena floor; stand the boss a little below it"},
+    {"name": "anim", "type": "enum", "default": "pulse", "values": ["pulse", "none"], "note": "red glow and runes pulse from p.f"}
+  ],
+  "example": {"anim": "pulse"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

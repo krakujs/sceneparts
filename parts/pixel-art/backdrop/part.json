@@ -1,0 +1,24 @@
+{
+  "id": "pixel-art/backdrop",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Pixel backdrop",
+  "summary": "Pixel-art background generator: blocky sky, far hills, mountains, city or sea, tiled ground; tile kit for pixel scenes.",
+  "tags": ["background", "backdrop", "generator", "pixel", "pixel art", "8-bit", "tiles", "game", "level", "sky"],
+  "params": [
+    {"name": "time", "type": "enum", "default": "day", "values": ["day", "dusk", "night", "space"], "note": "sky colours; night and space add twinkling stars, day a sun, night a moon"},
+    {"name": "far", "type": "enum", "default": "hills", "values": ["none", "hills", "mountains", "city", "trees", "sea"], "note": "pixel silhouette standing on the ground line"},
+    {"name": "ground", "type": "enum", "default": "grass", "values": ["none", "grass", "dirt", "sand", "snow", "stone", "brick", "wood", "water", "lava", "ice", "road", "metal", "blocks"], "note": "tiled ground from groundY down (water and lava animate)"},
+    {"name": "groundY", "type": "number", "default": 1600, "note": "y of the ground line; stand characters on it"},
+    {"name": "clouds", "type": "number", "default": 3, "note": "number of pixel clouds"},
+    {"name": "seed", "type": "number", "default": 1, "note": "varies clouds, stars and silhouettes"},
+    {"name": "anim", "type": "enum", "default": "drift", "values": ["drift", "none"], "note": "drift = clouds move from p.f; water, lava and stars always animate"}
+  ],
+  "example": {"time": "day", "far": "hills", "ground": "grass"},
+  "uses": ["pixel-art/style"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "pixel-art/cave",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Cave",
+  "summary": "Pixel-art cave: rock walls, stalactites, glowing crystals, a puddle and a light opening; for underground scenes.",
+  "tags": [
+    "cave",
+    "underground",
+    "rock",
+    "crystal",
+    "background",
+    "indoor",
+    "pixel art",
+    "game",
+    "level"
+  ],
+  "params": [
+    {
+      "name": "floorY",
+      "type": "number",
+      "default": 1480,
+      "note": "where wall meets floor; stand characters a little below it"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "glow",
+      "values": [
+        "glow",
+        "none"
+      ],
+      "note": "crystals pulse, the light shimmers and the puddle sparkles from p.f"
+    }
+  ],
+  "example": {
+    "anim": "glow"
+  },
+  "uses": [
+    "pixel-art/backdrop"
+  ],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

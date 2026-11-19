@@ -1,0 +1,20 @@
+{
+  "id": "pixel-art/fire-level",
+  "type": "background",
+  "style": "pixel-art",
+  "name": "Fire level",
+  "summary": "Pixel-art volcano level: red sky, a volcano with a lava pool, rock platforms, fire jets and rising embers.",
+  "tags": ["fire level", "volcano", "lava", "fire", "red sky", "level", "background", "pixel", "pixel art", "game"],
+  "params": [
+    {"name": "time", "type": "enum", "default": "day", "values": ["day", "dusk", "night"], "note": "day is the bright red sky; dusk and night are darker"},
+    {"name": "groundY", "type": "number", "default": 1600, "note": "rock ground line; stand characters on it"},
+    {"name": "anim", "type": "enum", "default": "flow", "values": ["flow", "none"], "note": "lava flows, fire jets flicker and embers rise from p.f"}
+  ],
+  "example": {"time": "day"},
+  "uses": ["pixel-art/backdrop"],
+  "layer": "bg",
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
