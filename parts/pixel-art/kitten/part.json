@@ -1,0 +1,112 @@
+{
+  "id": "pixel-art/kitten",
+  "type": "character",
+  "style": "pixel-art",
+  "name": "Kitten",
+  "summary": "Small pixel-art ginger tabby kitten with a big head and upright tail, two-cel walk; for pets, homes and cute scenes.",
+  "tags": [
+    "kitten",
+    "cat",
+    "pet",
+    "cute",
+    "baby animal",
+    "pixel",
+    "pixel art",
+    "8-bit"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "feet / ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; one cell = 24 px at s = 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "walk",
+      "values": [
+        "walk",
+        "run",
+        "none",
+        "bob",
+        "bounce",
+        "float",
+        "shake",
+        "pulse"
+      ],
+      "note": "walk/run swap leg cels; others move the whole sprite"
+    },
+    {
+      "name": "fps",
+      "type": "number",
+      "default": 8,
+      "note": "video frames per walk cel"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame drift (pair with walk)"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#f0a050",
+      "note": "main coat colour (char a)"
+    },
+    {
+      "name": "coat2",
+      "type": "colour",
+      "default": "#b8652a",
+      "note": "stripe colour (char A)"
+    },
+    {
+      "name": "pal",
+      "type": "object",
+      "note": "replace colours by char, e.g. {\"z\": \"#2f5fb8\"} for a blue collar"
+    },
+    {
+      "name": "px",
+      "type": "number",
+      "default": 24,
+      "note": "cell size"
+    },
+    {
+      "name": "outline",
+      "type": "boolean",
+      "default": true,
+      "note": "dark one-cell outline"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 2,
+    "anim": "walk"
+  },
+  "uses": [
+    "pixel-art/sprite"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

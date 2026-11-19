@@ -2408,7 +2408,7 @@
     "title": "Pixel art: animals",
     "style": "pixel-art",
     "type": "character",
-    "status": "partial",
+    "status": "done",
     "generator": null,
     "brief": "Presets using parts/pixel-art/sprite.",
     "names": [
@@ -2524,25 +2524,16 @@
       "swordfish"
     ],
     "count": 110,
-    "built": 103,
+    "built": 110,
     "date": "2026-11-19",
-    "remaining": [
-      "kitten",
-      "chipmunk",
-      "toucan",
-      "hummingbird",
-      "bluejay",
-      "cardinal",
-      "magpie"
-    ],
-    "notes": "Built 103 pixel-art/sprite presets (side view facing right, role chars a/A/z with coat/coat2 params, pal override). Convention: legged animals stand on y with walk/run leg cels; birds add a fly anim (wing cels); fish anchor on the centre (centre=true, y 960) with a swim anim and example s 1. Template: pixel-art/dog drawn by the orchestrator. Rejected in review and redrawn the same run (kept): camel, llama, lamb, cheetah, leopard, jaguar, snow leopard, panda, yak, platypus, wombat, woodpecker (on a trunk segment), ostrich, emu, turkey, catfish, hammerhead shark, swordfish, pufferfish; shark stray belly cells fixed; all fish examples rescaled to s 1 (were cut off). Deleted after two tries, rebuild next run: kitten (came out as a huge upright orange figure - draw a small 4-legged kitten ~12 cells wide, big head), chipmunk (boxy - small squirrel shape with side stripes), toucan (black blob - needs a clearly separate head, white bib and a beak as long as the body), hummingbird (red throat drawn as a cross - draw the gorget as a small red patch under the beak), bluejay and cardinal (shapeless blobs - separate round head with crest, oval body, tail), magpie (black blob, tail never rendered). Small birds are the weak spot for Haiku: give them a written pixel map sketch or draw them yourself."
+    "notes": "Built 103 pixel-art/sprite presets (side view facing right, role chars a/A/z with coat/coat2 params, pal override). Convention: legged animals stand on y with walk/run leg cels; birds add a fly anim (wing cels); fish anchor on the centre (centre=true, y 960) with a swim anim and example s 1. Template: pixel-art/dog drawn by the orchestrator. Rejected in review and redrawn the same run (kept): camel, llama, lamb, cheetah, leopard, jaguar, snow leopard, panda, yak, platypus, wombat, woodpecker (on a trunk segment), ostrich, emu, turkey, catfish, hammerhead shark, swordfish, pufferfish; shark stray belly cells fixed; all fish examples rescaled to s 1 (were cut off). Deleted after two tries, rebuild next run: kitten (came out as a huge upright orange figure - draw a small 4-legged kitten ~12 cells wide, big head), chipmunk (boxy - small squirrel shape with side stripes), toucan (black blob - needs a clearly separate head, white bib and a beak as long as the body), hummingbird (red throat drawn as a cross - draw the gorget as a small red patch under the beak), bluejay and cardinal (shapeless blobs - separate round head with crest, oval body, tail), magpie (black blob, tail never rendered). Small birds are the weak spot for Haiku: give them a written pixel map sketch or draw them yourself. Run 21: kitten, chipmunk, toucan, hummingbird, bluejay, cardinal, magpie drawn by the orchestrator (birds reuse the robin walk/fly cel layout; hummingbird defaults to anim fly) - batch done."
   },
   {
     "id": "21-pixel-art-items",
     "title": "Pixel art: items and food",
     "style": "pixel-art",
     "type": "prop",
-    "status": "todo",
+    "status": "partial",
     "generator": null,
     "brief": "Game-inventory style item sprites using parts/pixel-art/sprite.",
     "names": [
@@ -2697,7 +2688,19 @@
       "whistle",
       "scoreboard"
     ],
-    "count": 150
+    "count": 150,
+    "built": 143,
+    "date": "2026-11-19",
+    "remaining": [
+      "earbuds",
+      "fitness band",
+      "robot arm",
+      "snowboard",
+      "lettuce",
+      "video camera",
+      "skipping rope"
+    ],
+    "notes": "Built 143 pixel-art/sprite item presets (template pixel-art/apple drawn by the orchestrator: role chars a/A/z with colour/colour2/pal params, anim none/bob/bounce/float/shake/pulse, centre=true for HUD use; small items float centred at y 1000 in the example, furniture stands on y 1600). Slugs: 'mouse' -> computer-mouse (pixel-art/mouse is the animal), 'pepper' -> bell-pepper, 'polaroid camera' -> instant-camera (no brand, single-colour stripe). 39 redrawn in review (armchair, sofa, chair, stool, office chair, crib, bunk bed, barbell, baseball, baseball bat, baseball glove, cricket bat, hockey stick, golf club, usb stick, instant camera, bell pepper, blueberries, grapes, lime, mango, eggplant, onion, coconut, pumpkin, cauliflower, birthday cake, bread loaf, croissant, cupcake, muffin, pie; sofa, cricket bat and lime by the orchestrator). Deleted after two tries, rebuild next run (the orchestrator should draw these itself): earbuds (read as bunny ears - draw a flat wide pill case with two buds lying in front), fitness band (read as a box - draw a bracelet loop at an angle), robot arm (read as a tent - thick segments, big round joints, clear gripper), snowboard (read as a pencil - wider board), lettuce (read as fern/cabbage - frilly layered leaves), video camera (unreadable - boxy camcorder with lens barrel and flip screen), skipping rope (read as headphones - draw a loose figure-8/sagging rope with handles lying flat)."
   },
   {
     "id": "22-pixel-art-scenes",

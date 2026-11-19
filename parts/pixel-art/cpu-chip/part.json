@@ -1,0 +1,28 @@
+{
+  "id": "pixel-art/cpu-chip",
+  "type": "prop",
+  "style": "pixel-art",
+  "name": "CPU chip",
+  "summary": "Pixel-art square CPU chip with pins around the edges; for computer, processor and tech scenes.",
+  "tags": ["cpu","processor","chip","computer","tech","pixel","pixel art","8-bit"],
+  "params": [
+    {"name":"x","type":"number","default":540,"note":"centre x; [from,to] to move"},
+    {"name":"y","type":"number","default":1600,"note":"bottom of the item (centre when centre = true)"},
+    {"name":"s","type":"number","default":1,"note":"scale; one cell = 24 px at s = 1"},
+    {"name":"flip","type":"boolean","default":false,"note":"mirror horizontally"},
+    {"name":"anim","type":"enum","default":"none","values":["none","bob","bounce","float","shake","pulse"],"note":"whole-sprite motion; float/bob suit pickups"},
+    {"name":"centre","type":"boolean","default":false,"note":"anchor on the centre instead of the bottom"},
+    {"name":"vx","type":"number","note":"px per frame drift"},
+    {"name":"colour","type":"colour","default":"#3a3f4b","note":"main colour (char a), e.g. #2e6b45 for a green chip"},
+    {"name":"colour2","type":"colour","default":"#1b1d26","note":"shade colour (char A)"},
+    {"name":"pal","type":"object","note":"replace colours by char, e.g. {\"z\": \"#2e6b45\"}"},
+    {"name":"px","type":"number","default":24,"note":"cell size"},
+    {"name":"outline","type":"boolean","default":true,"note":"dark one-cell outline"}
+  ],
+  "example": {"x":540,"y":1000,"s":1.5,"anim":"float","centre":true},
+  "uses": ["pixel-art/sprite"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

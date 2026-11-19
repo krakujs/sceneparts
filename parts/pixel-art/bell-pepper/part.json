@@ -1,0 +1,110 @@
+{
+  "id": "pixel-art/bell-pepper",
+  "type": "prop",
+  "style": "pixel-art",
+  "name": "Bell pepper",
+  "summary": "Pixel-art red bell pepper with lobes and a green stem, game-inventory style; for food, salad and cooking scenes.",
+  "tags": [
+    "bell pepper",
+    "pepper",
+    "vegetable",
+    "food",
+    "pixel",
+    "pixel art",
+    "item"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the item (centre when centre = true)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; one cell = 24 px at s = 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror horizontally"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "bounce",
+        "float",
+        "shake",
+        "pulse"
+      ],
+      "note": "whole-sprite motion; float/bob suit pickups"
+    },
+    {
+      "name": "centre",
+      "type": "boolean",
+      "default": false,
+      "note": "anchor on the centre instead of the bottom"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame drift"
+    },
+    {
+      "name": "colour",
+      "type": "colour",
+      "default": "#d2403f",
+      "note": "main colour (char a), e.g. #f7d154 for a yellow pepper"
+    },
+    {
+      "name": "colour2",
+      "type": "colour",
+      "default": "#9c2a2f",
+      "note": "shade colour (char A)"
+    },
+    {
+      "name": "pal",
+      "type": "object",
+      "note": "replace colours by char, e.g. {\"z\": \"#4caf50\"}"
+    },
+    {
+      "name": "px",
+      "type": "number",
+      "default": 24,
+      "note": "cell size"
+    },
+    {
+      "name": "outline",
+      "type": "boolean",
+      "default": true,
+      "note": "dark one-cell outline"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1000,
+    "s": 1.5,
+    "anim": "float",
+    "centre": true
+  },
+  "uses": [
+    "pixel-art/sprite"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

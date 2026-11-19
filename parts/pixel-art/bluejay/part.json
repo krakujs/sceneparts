@@ -1,0 +1,113 @@
+{
+  "id": "pixel-art/bluejay",
+  "type": "character",
+  "style": "pixel-art",
+  "name": "Blue jay",
+  "summary": "Pixel-art blue jay with a blue crest, white face and belly, black necklace and barred wings; perches, hops or flaps.",
+  "tags": [
+    "blue jay",
+    "bluejay",
+    "jay",
+    "bird",
+    "songbird",
+    "garden bird",
+    "pixel",
+    "pixel art"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "perch / ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; one cell = 24 px at s = 1"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "walk",
+      "values": [
+        "walk",
+        "run",
+        "fly",
+        "none",
+        "bob",
+        "bounce",
+        "float",
+        "shake",
+        "pulse"
+      ],
+      "note": "walk/run swap foot cels; fly flaps the wings; others move the whole sprite"
+    },
+    {
+      "name": "fps",
+      "type": "number",
+      "default": 8,
+      "note": "video frames per cel"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame drift (pair with walk or fly)"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#3f7fd6",
+      "note": "blue colour (char a)"
+    },
+    {
+      "name": "coat2",
+      "type": "colour",
+      "default": "#23305e",
+      "note": "wing bar colour (char A)"
+    },
+    {
+      "name": "pal",
+      "type": "object",
+      "note": "replace colours by char, e.g. {\"z\": \"#4a443c\"} for the wing"
+    },
+    {
+      "name": "px",
+      "type": "number",
+      "default": 24,
+      "note": "cell size"
+    },
+    {
+      "name": "outline",
+      "type": "boolean",
+      "default": true,
+      "note": "dark one-cell outline"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1.6,
+    "anim": "walk"
+  },
+  "uses": [
+    "pixel-art/sprite"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
