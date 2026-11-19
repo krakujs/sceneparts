@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/witch-cat",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Witch cat",
+  "summary": "Black cat sitting in a tiny pointed witch hat, green eyes and a curling tail. For witchy and Halloween scenes.",
+  "tags": [
+    "witch cat",
+    "black cat",
+    "witch",
+    "hat",
+    "halloween",
+    "cat",
+    "magic",
+    "green eyes"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#22201F",
+      "note": "fur colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "curl",
+      "values": [
+        "curl",
+        "none"
+      ],
+      "note": "curl = tail tip curls and sways; none = still"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "anim": "curl"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

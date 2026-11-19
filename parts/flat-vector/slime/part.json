@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/slime",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Slime",
+  "summary": "Translucent teal dripping slime with two eyes and a smile that bounces. For goo and playful monster scenes.",
+  "tags": [
+    "slime",
+    "goo",
+    "jelly",
+    "teal",
+    "bounce",
+    "monster",
+    "drip",
+    "cute"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#1FA39A",
+      "note": "slime colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "bounce",
+      "values": [
+        "bounce",
+        "none"
+      ],
+      "note": "bounce = hops with a squash on landing; none = still"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "anim": "bounce"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/magic-wand",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Magic wand",
+  "summary": "Slim dark magic wand with a glowing white tip and a sparkle burst; for spells, wizards and fairy scenes.",
+  "tags": ["magic wand", "wand", "wizard", "spell", "sparkle", "magic", "fairy", "fantasy"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "the handle end rests on y"},
+    {"name": "s", "type": "number", "default": 2, "note": "scale; about 380 px long at s = 1 (default 2 shows it well alone); use about 0.5 in a hand"},
+    {"name": "color", "type": "colour", "default": "#3A2A4A", "note": "wand colour"},
+    {"name": "anim", "type": "enum", "default": "none", "values": ["none", "sparkle"], "note": "sparkle = a burst of stars pulses from the tip"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 2, "anim": "sparkle"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

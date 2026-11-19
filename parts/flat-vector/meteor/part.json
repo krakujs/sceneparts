@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/meteor",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Meteor",
+  "summary": "Burning rock streaking across the sky with a fiery trail behind it. Fly animation loops across the frame.",
+  "tags": ["meteor", "meteorite", "fireball", "burning rock", "space", "fire", "trail", "shooting"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the rock"},
+    {"name": "y", "type": "number", "default": 500, "note": "centre y of the rock"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; the trail is about 500 px long at s = 1"},
+    {"name": "anim", "type": "enum", "default": "fly", "values": ["none", "fly"], "note": "fly = crosses the sky diagonally in a fading loop, flames flicker"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 500, "s": 1, "anim": "fly"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/portal",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Portal",
+  "summary": "Swirling purple and pink vortex oval with sparkles spinning on its rim; opens up from nothing.",
+  "tags": ["portal", "vortex", "swirl", "magic", "sparkles", "gateway", "fantasy", "sci-fi"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 960, "note": "centre y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 600 x 960 px at 1"},
+    {"name": "color", "type": "colour", "default": "#7B5CD6", "note": "first swirl colour (purple)"},
+    {"name": "color2", "type": "colour", "default": "#F27BA6", "note": "second swirl colour (pink)"},
+    {"name": "anim", "type": "enum", "default": "open", "values": ["open", "none"], "note": "open = grows open over about a second, then swirls"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 960, "anim": "open"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/cyberpunk-street-prop",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Cyberpunk street prop",
+  "summary": "Neon-lit futuristic vending kiosk with a screen, keypad, cables and glowing panels; no brand text.",
+  "tags": ["cyberpunk", "neon", "kiosk", "vending machine", "street", "futuristic", "sci-fi", "night city"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor centre at the base"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; ~950 px tall at 1"},
+    {"name": "accent", "type": "colour", "default": "#FF4FA3", "note": "main neon colour"},
+    {"name": "accent2", "type": "colour", "default": "#3DE0FF", "note": "second neon colour"},
+    {"name": "anim", "type": "enum", "default": "pulse", "values": ["pulse", "none"], "note": "pulse = screen bars move, keys light up, neon breathes"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "accent": "#FF4FA3", "accent2": "#3DE0FF", "anim": "pulse"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

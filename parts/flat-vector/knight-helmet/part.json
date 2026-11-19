@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/knight-helmet",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Helmet knight",
+  "summary": "Closed great-helm with visor slits and a feathered plume; for medieval knight and armour scenes.",
+  "tags": ["knight helmet", "great helm", "helmet", "armor", "knight", "medieval", "plume", "visor"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom of the helmet rests on y"},
+    {"name": "s", "type": "number", "default": 1.2, "note": "scale; about 420 px wide and 560 px tall with plume at s = 1"},
+    {"name": "color", "type": "colour", "default": "#B8C2D3", "note": "steel colour"},
+    {"name": "plume", "type": "colour", "default": "#E8503F", "note": "plume colour"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1.2},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

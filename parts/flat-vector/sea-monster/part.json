@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/sea-monster",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Sea monster",
+  "summary": "Deep-sea monster with a big soft-toothed mouth and a glowing lure, swimming. For ocean mystery and night sea scenes.",
+  "tags": [
+    "sea monster",
+    "deep sea",
+    "anglerfish",
+    "monster",
+    "glowing",
+    "ocean",
+    "teeth",
+    "underwater"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the deep-water band"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#2B3A67",
+      "note": "body colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "swim",
+      "values": [
+        "swim",
+        "none"
+      ],
+      "note": "swim = tail beats, lure glows; none = still"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "anim": "swim"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/teleporter",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Teleporter",
+  "summary": "Round floor pad with glowing rings, a light column and rising particles; beam anim for teleport scenes.",
+  "tags": ["teleporter", "teleport", "transporter", "beam", "pad", "sci-fi", "light column", "space"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "floor centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor point under the pad"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; column ~1000 px tall at 1"},
+    {"name": "color", "type": "colour", "default": "#6EF2E0", "note": "beam and ring colour"},
+    {"name": "anim", "type": "enum", "default": "beam", "values": ["beam", "none"], "note": "beam = the column pulses and particles rise"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "color": "#6EF2E0", "anim": "beam"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

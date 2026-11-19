@@ -1,0 +1,65 @@
+{
+  "id": "flat-vector/griffin",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Griffin",
+  "summary": "Mythical griffin with an eagle head, feathered wings and talons on a lion body. For fantasy and legend scenes.",
+  "tags": [
+    "griffin",
+    "gryphon",
+    "eagle",
+    "lion",
+    "wings",
+    "myth",
+    "fantasy",
+    "creature"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "idle",
+      "values": [
+        "idle",
+        "none"
+      ],
+      "note": "idle = tail tuft sways; none = still"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "anim": "idle"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

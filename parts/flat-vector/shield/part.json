@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/shield",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Shield",
+  "summary": "Heater-shaped knight shield with a simple star emblem and metal rim; for medieval and fantasy scenes.",
+  "tags": ["shield", "knight shield", "heater shield", "medieval", "armour", "defense", "fantasy", "star"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom point of the shield rests on y"},
+    {"name": "s", "type": "number", "default": 1.2, "note": "scale; about 380 px wide and 480 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "field colour; the emblem is gold"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1.2, "color": "#3D6FE0"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

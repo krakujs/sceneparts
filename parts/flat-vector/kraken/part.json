@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/kraken",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Kraken",
+  "summary": "Friendly cartoon kraken: a giant purple octopus with big eyes and curling tentacles rising from the waves.",
+  "tags": [
+    "kraken",
+    "octopus",
+    "sea monster",
+    "tentacles",
+    "ocean",
+    "squid",
+    "cartoon",
+    "sea"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the water strip"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#7B5CD6",
+      "note": "body colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "wave",
+      "values": [
+        "wave",
+        "none"
+      ],
+      "note": "wave = tentacles sway; none = still"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "anim": "wave"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

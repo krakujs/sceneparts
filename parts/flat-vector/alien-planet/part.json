@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/alien-planet",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Alien planet",
+  "summary": "Strange two-tone planet with swirling bands, glowing craters and two small orbiting moons. For sci-fi and space scenes.",
+  "tags": ["alien planet", "planet", "exoplanet", "alien", "moons", "space", "sci-fi", "swirl"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the planet"},
+    {"name": "y", "type": "number", "default": 960, "note": "centre y of the planet"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 520 px across at s = 1"},
+    {"name": "anim", "type": "enum", "default": "orbit", "values": ["none", "orbit"], "note": "orbit = surface swirls and both moons travel round"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 960, "s": 1, "anim": "orbit"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

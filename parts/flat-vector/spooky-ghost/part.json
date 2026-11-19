@@ -1,0 +1,71 @@
+{
+  "id": "flat-vector/spooky-ghost",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Ghost spooky",
+  "summary": "Floating semi-transparent sheet ghost with arms raised in a boo pose and a wavy hem. For Halloween and spooky scenes.",
+  "tags": [
+    "ghost",
+    "spooky ghost",
+    "boo",
+    "halloween",
+    "floating",
+    "sheet ghost",
+    "spooky",
+    "phantom"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1420,
+      "note": "hem line (ghost floats above it)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F4F7FF",
+      "note": "sheet colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "float",
+      "values": [
+        "float",
+        "none"
+      ],
+      "note": "float = bobs up and down; none = still"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1420,
+    "anim": "float"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

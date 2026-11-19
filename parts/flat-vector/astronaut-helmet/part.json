@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/astronaut-helmet",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Astronaut helmet",
+  "summary": "Round white space helmet with a gold reflective visor and plain shell; for space and astronaut scenes.",
+  "tags": ["astronaut", "space helmet", "helmet", "visor", "space", "spacesuit", "gold visor", "prop"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom of the neck ring"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 560 px wide at 1"},
+    {"name": "visor", "type": "colour", "default": "#FFC83D", "note": "visor colour"},
+    {"name": "shell", "type": "colour", "default": "#F4F7FB", "note": "helmet colour"},
+    {"name": "anim", "type": "enum", "default": "glint", "values": ["glint", "none"], "note": "glint = light sweeps across the visor"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "visor": "#FFC83D", "anim": "glint"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "flat-vector/goblin",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Goblin",
+  "summary": "Flat vector small mischievous goblin with big pointy ears, yellow eyes and a sack over one shoulder.",
+  "tags": [
+    "goblin",
+    "mischief",
+    "pointy ears",
+    "sack",
+    "small",
+    "fantasy",
+    "sneaky",
+    "creature"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#5E9482",
+      "note": "Skin colour (olive-teal)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

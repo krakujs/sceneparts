@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/haunted-tree",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Haunted tree",
+  "summary": "Bare twisted dark tree with a spooky face in the bark and crooked branches; anim sway. For Halloween and haunted scenes.",
+  "tags": ["haunted tree", "spooky tree", "dead tree", "bare tree", "halloween", "creepy", "forest", "face"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the trunk"},
+    {"name": "y", "type": "number", "default": 1600, "note": "floor line: the tree stands on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "about 620 px wide and 1100 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#4A3B55", "note": "bark colour"},
+    {"name": "anim", "type": "enum", "default": "sway", "values": ["none", "sway"], "note": "sway = branches and the top rock slowly in the wind"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1600, "s": 1, "anim": "sway"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

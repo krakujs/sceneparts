@@ -1,0 +1,83 @@
+{
+  "id": "flat-vector/space-soldier",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Space soldier",
+  "summary": "Flat vector armoured sci-fi soldier in a teal and grey suit with a rounded visor helmet and blocky blaster.",
+  "tags": [
+    "space",
+    "soldier",
+    "sci-fi",
+    "armour",
+    "blaster",
+    "astronaut",
+    "helmet",
+    "future"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~1000 px tall at 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "hold",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "wave",
+        "point",
+        "think",
+        "cheer",
+        "talk",
+        "hold"
+      ]
+    },
+    {
+      "name": "skin",
+      "type": "string",
+      "default": "light",
+      "note": "hidden under the helmet"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "hold"
+  },
+  "uses": [
+    "flat-vector/person",
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

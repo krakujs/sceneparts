@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/jack-o-lantern",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Jack o lantern",
+  "summary": "Carved orange pumpkin with friendly triangle eyes and a toothy grin, glowing with a flickering candle; for Halloween.",
+  "tags": ["jack o lantern", "jack-o-lantern", "pumpkin", "halloween", "carved pumpkin", "candle", "spooky", "lantern"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom of the pumpkin rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 400 px wide and 380 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "pumpkin skin colour"},
+    {"name": "anim", "type": "enum", "default": "flicker", "values": ["none", "flicker"], "note": "flicker = the candle glow inside flickers"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "flicker"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

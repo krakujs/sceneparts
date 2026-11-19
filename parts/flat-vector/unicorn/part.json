@@ -1,0 +1,65 @@
+{
+  "id": "flat-vector/unicorn",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Unicorn",
+  "summary": "White unicorn with a spiral golden horn and pastel mane and tail, side view. For magic and dream scenes.",
+  "tags": [
+    "unicorn",
+    "horse",
+    "horn",
+    "magic",
+    "pastel",
+    "fantasy",
+    "mane",
+    "rainbow"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "sway",
+      "values": [
+        "sway",
+        "none"
+      ],
+      "note": "sway = mane and tail float"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

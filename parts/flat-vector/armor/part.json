@@ -1,0 +1,21 @@
+{
+  "id": "flat-vector/armor",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Armor",
+  "summary": "Empty suit of plate armour on a wooden stand, turned slightly to the side; for castle, knight and museum scenes.",
+  "tags": ["armor", "armour", "plate armor", "knight", "suit of armour", "medieval", "castle", "museum"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom of the stand rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 400 px wide and 1000 px tall at s = 1, about a person's height"},
+    {"name": "color", "type": "colour", "default": "#B8C2D3", "note": "steel colour"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror: turn the suit to face left"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

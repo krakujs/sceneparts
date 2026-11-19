@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/asteroid",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Asteroid",
+  "summary": "Lumpy grey space rock with craters, lit from the top left. Slow tumble. For space and asteroid-belt scenes.",
+  "tags": ["asteroid", "space rock", "rock", "crater", "space", "meteoroid", "tumble", "planetoid"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the rock"},
+    {"name": "y", "type": "number", "default": 960, "note": "centre y of the rock"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 420 px across at s = 1"},
+    {"name": "color", "type": "colour", "default": "#9AA3B5", "note": "rock colour"},
+    {"name": "anim", "type": "enum", "default": "tumble", "values": ["none", "tumble"], "note": "tumble = the rock turns slowly"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 960, "s": 1, "anim": "tumble"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

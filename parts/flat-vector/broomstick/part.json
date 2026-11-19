@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/broomstick",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Broomstick",
+  "summary": "Witch's broom with a twig bundle and a wrapped handle, lying on a diagonal; anim hover floats it in the air.",
+  "tags": ["broom", "broomstick", "witch", "broom stick", "flying", "halloween", "magic", "twigs"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "the lowest point of the twigs rests on y (when not hovering)"},
+    {"name": "s", "type": "number", "default": 1.2, "note": "scale; about 640 px long at s = 1"},
+    {"name": "color", "type": "colour", "default": "#C9A46A", "note": "handle wood colour"},
+    {"name": "anim", "type": "enum", "default": "hover", "values": ["none", "hover"], "note": "hover = gentle up and down bob with a slight tilt"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror: the bristles point left"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1.2, "anim": "hover"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

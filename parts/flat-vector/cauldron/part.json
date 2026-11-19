@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/cauldron",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Cauldron",
+  "summary": "Black iron witch's cauldron on short legs over a small fire, with bubbling green brew and rising steam.",
+  "tags": ["cauldron", "witch", "pot", "brew", "bubbling", "fire", "steam", "magic"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "floor point under the legs"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 460 px wide and 560 px tall at s = 1 (steam adds height above)"},
+    {"name": "color", "type": "colour", "default": "#5BD18A", "note": "brew colour"},
+    {"name": "anim", "type": "enum", "default": "bubble", "values": ["none", "bubble"], "note": "bubble = brew bubbles and steam curls up; fire flickers"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "bubble"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

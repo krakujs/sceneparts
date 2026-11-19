@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/treasure-chest",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Treasure chest",
+  "summary": "Wooden treasure chest with iron bands; open shows gold coins and glowing gems. For pirate, quest and treasure scenes.",
+  "tags": ["treasure chest", "treasure", "chest", "gold", "pirate", "loot", "gems", "coins"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom of the chest rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 440 px wide and 340 px tall at s = 1"},
+    {"name": "state", "type": "enum", "default": "open", "values": ["open", "closed"], "note": "open = lid up, gold and gems inside"},
+    {"name": "anim", "type": "enum", "default": "glow", "values": ["none", "glow"], "note": "glow = the gems and gold shine and twinkle (open only)"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "state": "open", "anim": "glow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

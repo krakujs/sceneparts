@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/potion-bottle",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Potion bottle",
+  "summary": "Round-bottomed glass flask with a cork and bubbling coloured potion; for witch, alchemy and magic scenes.",
+  "tags": ["potion", "potion bottle", "flask", "magic potion", "witch", "alchemy", "bubbles", "elixir"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom of the flask rests on y"},
+    {"name": "s", "type": "number", "default": 1.2, "note": "scale; about 260 px wide and 480 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#3DD68C", "note": "potion colour"},
+    {"name": "anim", "type": "enum", "default": "bubble", "values": ["none", "bubble"], "note": "bubble = bubbles rise through the liquid in a loop"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1.2, "color": "#3DD68C", "anim": "bubble"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

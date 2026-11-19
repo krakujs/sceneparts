@@ -2036,14 +2036,14 @@
     ],
     "built": 103,
     "date": "2026-11-19",
-    "notes": "Foundation (written by the orchestrator): core/stat-card is both a part and the shared kit for every core infographic (ui(style) palette from p.style: ink/accent/font + card, muted, soft, good, bad, warn, series[8]; startFrame(p) from `at`; enter/popIn/count/fmt/fitSize; Card, Txt; pathLen/drawDash/DrawPath for draw-on strokes). IMPORTANT: never use pathLength – resvg (previews, gallery, server SVG) ignores it; use DrawPath or drawDash(len, k). Built 103 core parts (charts, counters, lists, diagrams, maps, arrows, marks, frames, social UI, broadcast cards, badges, game HUD, particles and overlays). Fixed in review: 11 parts used pathLength (dotted/pale lines in previews) -> DrawPath/drawDash; loading-spinner arc; ticker-tape text sat on the band edge; box-frame interior was grey; unique clipPath ids for ticker/breaking-news. Deleted in review, rebuild next run: pointer hand (upright single finger with no thumb could read as a rude gesture – draw a clear index finger + visible thumb + curled fingers, default dir right), swipe gesture (hand unreadable), thumbs rating (blocky thumbs, down one unreadable – reuse simple icon shapes with a clear thumb), brush stroke (fringe tail looked like a comb). Also from 15: flat-vector/handshake deleted again (one paddle hand poking the other) – rebuild in flat-vector with clasped hands seen from the side, the top hand's fingers wrapping down over the back of the other."
+    "notes": "Foundation (written by the orchestrator): core/stat-card is both a part and the shared kit for every core infographic (ui(style) palette from p.style: ink/accent/font + card, muted, soft, good, bad, warn, series[8]; startFrame(p) from `at`; enter/popIn/count/fmt/fitSize; Card, Txt; pathLen/drawDash/DrawPath for draw-on strokes). IMPORTANT: never use pathLength – resvg (previews, gallery, server SVG) ignores it; use DrawPath or drawDash(len, k). Built 103 core parts (charts, counters, lists, diagrams, maps, arrows, marks, frames, social UI, broadcast cards, badges, game HUD, particles and overlays). Fixed in review: 11 parts used pathLength (dotted/pale lines in previews) -> DrawPath/drawDash; loading-spinner arc; ticker-tape text sat on the band edge; box-frame interior was grey; unique clipPath ids for ticker/breaking-news. Deleted in review, rebuild next run: pointer hand (upright single finger with no thumb could read as a rude gesture – draw a clear index finger + visible thumb + curled fingers, default dir right), swipe gesture (hand unreadable), thumbs rating (blocky thumbs, down one unreadable – reuse simple icon shapes with a clear thumb), brush stroke (fringe tail looked like a comb). Also from 15: flat-vector/handshake deleted again (one paddle hand poking the other) – rebuild in flat-vector with clasped hands seen from the side, the top hand's fingers wrapping down over the back of the other. Run 17 (2026-11-19): flat-vector/handshake rebuilt (clasped from the side) and kept. pointer hand, swipe gesture, thumbs rating, brush stroke redrawn by a sub-agent and deleted again in review: pointer hand read as a 'finger gun' (thumb straight up) and dir up showed three raised fingers; swipe reused it; thumbs icons were blobs (down one read like a '9'); brush stroke tail was still a row of even spikes. Suggest the orchestrator draws these four itself next time."
   },
   {
     "id": "17-flat-vector-fantasy-scifi",
     "title": "Fantasy, myth and sci-fi (original designs)",
     "style": "flat-vector",
     "type": "character",
-    "status": "todo",
+    "status": "partial",
     "generator": null,
     "brief": "Original creatures and sci-fi elements; nothing from existing franchises.",
     "names": [
@@ -2151,7 +2151,20 @@
       "water spirit",
       "wind spirit"
     ],
-    "count": 103
+    "count": 103,
+    "built": 90,
+    "date": "2026-11-19",
+    "remaining": [
+      "centaur",
+      "skeleton warrior",
+      "ogre",
+      "kaiju-style monster",
+      "dragon egg",
+      "escape pod",
+      "jet bike",
+      "wind spirit"
+    ],
+    "notes": "Built 90 original fantasy/sci-fi parts (humanoids on the person generator, beasts on quadruped/bird looks, magic props, sci-fi tech, vehicles, space effects, spirits). Skipped as covered: flying saucer (=ufo), ringed planet (=planet), gold coins pile (=coins), vampire bat (=bat + vampire), fairy creature (flat-vector/fairy exists; a sub-agent overwrote it and it was restored). Renamed for IP safety: lightsaber-style beam sword -> beam-sword (crossguard hilt), kaiju-style monster -> giant-monster (not kept), space marine -> space-soldier, loch monster -> lake-monster. Deleted in review, rebuild next run: centaur (horse kept its own head with the torso mid-back - torso must replace the head/neck), skeleton warrior (white blob, no readable bones), ogre (shapeless body), giant-monster (jaw floated off the head), dragon egg (read as a cactus), escape pod (orange bean with a visor on legs read like a famous game crewmate - make it a cone/capsule with fins), jet bike (sled on stilts), wind spirit (looked like a stacked cake). Fixed in review: aliens no longer blink at f0; tree-spirit TS type error."
   },
   {
     "id": "18-flat-vector-festivals-clothes",

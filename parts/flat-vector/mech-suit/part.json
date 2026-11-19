@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/mech-suit",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Mech suit",
+  "summary": "Big piloted walking mech with a glass cockpit, chunky legs and arms in orange and grey armour.",
+  "tags": ["mech", "mech suit", "robot suit", "pilot", "cockpit", "walker", "sci-fi", "armour"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540},
+    {"name": "y", "type": "number", "default": 1560, "note": "feet"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; ~1000 px tall at 1"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "main armour colour; the rest is grey"},
+    {"name": "anim", "type": "enum", "default": "walk", "values": ["walk", "idle", "none"], "note": "walk = legs and arms swing; idle = lights only; none = static"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "face left"}
+  ],
+  "example": {"x": 540, "y": 1560, "anim": "walk"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

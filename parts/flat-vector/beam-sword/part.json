@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/beam-sword",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Beam sword",
+  "summary": "Glowing energy blade on a chunky crossguard hilt with a wrapped grip; colour and hum options.",
+  "tags": ["beam sword", "energy sword", "light sword", "blade", "glow", "weapon", "sci-fi", "hilt"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom of the pommel"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; ~900 px tall at 1"},
+    {"name": "color", "type": "colour", "default": "#3DD6F5", "note": "blade glow colour"},
+    {"name": "anim", "type": "enum", "default": "hum", "values": ["hum", "none"], "note": "hum = the glow pulses"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "color": "#3DD6F5", "anim": "hum"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

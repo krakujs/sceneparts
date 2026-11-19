@@ -1,0 +1,73 @@
+{
+  "id": "flat-vector/baby-dragon",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Baby dragon",
+  "summary": "Small chubby sitting baby dragon with stubby wings and big eyes. For cute fantasy and bedtime scenes.",
+  "tags": [
+    "baby dragon",
+    "dragon",
+    "cute",
+    "chubby",
+    "fantasy",
+    "pet",
+    "wings",
+    "creature"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "body colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "idle",
+      "values": [
+        "idle",
+        "flap",
+        "none"
+      ],
+      "note": "idle = blinks and breathes; flap = wings flutter"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "color": "#4BB46A",
+    "anim": "idle"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

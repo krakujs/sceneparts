@@ -1,0 +1,84 @@
+{
+  "id": "flat-vector/dragon",
+  "type": "character",
+  "style": "flat-vector",
+  "name": "Dragon",
+  "summary": "Big winged dragon with horns and a spiky back, side view; optional fire breath. For fantasy scenes.",
+  "tags": [
+    "dragon",
+    "fantasy",
+    "monster",
+    "wings",
+    "fire",
+    "beast",
+    "creature",
+    "horns"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E0502F",
+      "note": "body colour"
+    },
+    {
+      "name": "wings",
+      "type": "enum",
+      "default": "open",
+      "values": [
+        "open",
+        "folded"
+      ],
+      "note": "open or folded"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "breathe",
+        "fire"
+      ],
+      "note": "breathe = chest rises; fire = flame burst from the snout"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "color": "#E0502F",
+    "wings": "open",
+    "anim": "breathe"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

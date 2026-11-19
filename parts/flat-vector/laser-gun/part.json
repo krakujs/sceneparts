@@ -1,0 +1,23 @@
+{
+  "id": "flat-vector/laser-gun",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Laser gun",
+  "summary": "Chunky retro ray gun with brass rings and a glowing tip; anim fire shoots a bolt with a muzzle flash.",
+  "tags": ["laser gun", "ray gun", "blaster", "retro", "weapon", "sci-fi", "space", "fire"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the body"},
+    {"name": "y", "type": "number", "default": 1400, "note": "centre y of the body"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 480 px long at 1"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "body colour"},
+    {"name": "beam", "type": "colour", "default": "#FFE066", "note": "glow and bolt colour"},
+    {"name": "anim", "type": "enum", "default": "fire", "values": ["fire", "none"], "note": "fire = a bolt every 90 frames"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "point the barrel left"}
+  ],
+  "example": {"x": 540, "y": 1400, "anim": "fire"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

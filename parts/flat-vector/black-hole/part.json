@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/black-hole",
+  "type": "effect",
+  "style": "flat-vector",
+  "name": "Black hole",
+  "summary": "Black hole with a bright orange-white accretion disk and a glowing lensing ring. Swirl animation. For space scenes.",
+  "tags": ["black hole", "accretion disk", "space", "event horizon", "sci-fi", "galaxy", "swirl", "gravity"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x of the hole"},
+    {"name": "y", "type": "number", "default": 960, "note": "centre y of the hole"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 760 px wide at s = 1"},
+    {"name": "color", "type": "colour", "default": "#FF8A3D", "note": "accretion disk glow colour"},
+    {"name": "anim", "type": "enum", "default": "swirl", "values": ["none", "swirl"], "note": "swirl = bright streaks race round the disk"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 960, "s": 1, "anim": "swirl"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

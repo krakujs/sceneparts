@@ -1,0 +1,22 @@
+{
+  "id": "flat-vector/magic-sword",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Magic sword",
+  "summary": "Fantasy longsword with ornate guard and glowing blue runes, stuck upright in a rock; for quest scenes.",
+  "tags": ["magic sword", "sword", "longsword", "excalibur", "fantasy", "rune", "blade", "quest"],
+  "params": [
+    {"name": "x", "type": "number", "default": 540, "note": "centre x"},
+    {"name": "y", "type": "number", "default": 1560, "note": "bottom of the rock rests on y"},
+    {"name": "s", "type": "number", "default": 1, "note": "scale; about 330 px wide and 900 px tall at s = 1"},
+    {"name": "color", "type": "colour", "default": "#3D6FE0", "note": "rune glow colour"},
+    {"name": "anim", "type": "enum", "default": "glow", "values": ["none", "glow"], "note": "glow = the runes pulse and a light shimmers along the blade"},
+    {"name": "flip", "type": "boolean", "default": false, "note": "mirror"}
+  ],
+  "example": {"x": 540, "y": 1560, "s": 1, "anim": "glow"},
+  "uses": ["flat-vector/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

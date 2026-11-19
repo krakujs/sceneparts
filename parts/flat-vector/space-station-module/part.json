@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/space-station-module",
+  "type": "scenery",
+  "style": "flat-vector",
+  "name": "Space station module",
+  "summary": "Cylindrical space station module with a docking port and two solar panel wings, side view. Slow spin or drift.",
+  "tags": [
+    "space station",
+    "station",
+    "module",
+    "satellite",
+    "solar panel",
+    "docking",
+    "space",
+    "orbit"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the cylinder"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 800,
+      "note": "centre y of the cylinder"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; about 600 px wide at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F4F1EA",
+      "note": "hull colour"
+    },
+    {
+      "name": "accent",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "stripe colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "spin",
+      "values": [
+        "none",
+        "spin",
+        "drift"
+      ],
+      "note": "spin = wings turn slowly; drift = rocks and floats gently"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 800,
+    "s": 1,
+    "anim": "spin"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
