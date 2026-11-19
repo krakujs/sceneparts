@@ -2263,23 +2263,20 @@
       "mask party"
     ],
     "count": 100,
-    "built": 85,
+    "built": 88,
     "date": "2026-11-19",
     "remaining": [
       "sandals",
-      "mooncake",
-      "high heels",
-      "helmet bike",
-      "chinese dragon dance head"
+      "high heels"
     ],
-    "notes": "Built 85 flat-vector parts: festival props (diya, rangoli, firecracker, sparkler, fireworks, sky lanterns, paper lantern, Christmas, Hanukkah, Eid/Ramadan, Easter, Holi, party, wedding, New Year, harvest), cultural garments (turban and hijab on faceless display forms; saree, kurta, sherwani, kimono, hanbok on hangers) and clothing/accessories. Convention: garments are front-view catalogue items on a coat or clip hanger, hem on y, anim sway. Skipped as covered: christmas tree decorated (=christmas-tree), christmas gift (=gift-box), halloween pumpkin (=jack-o-lantern), cake candles (=birthday-cake), confetti (=core/confetti-burst), sunglasses item (=sunglasses), watch item (=watch), backpack item (=backpack), handbag item (=handbag), mask party (=carnival-mask). Renamed: kimono item -> kimono, hanbok item -> hanbok, umbrella item -> umbrella, pinata-style donkey -> pinata-donkey. Failed/deleted, rebuild next run: sandals (sub-agent: straps read as sticks/worms), mooncake (cut wedge read as a separate blob - draw a whole round fluted cake with an embossed flower, no wedge), high heels (red wedge on black stilts, unreadable - draw one clear stiletto pump in side view: pointed toe, arched sole, thin tall heel), helmet bike (blue blob - show vents as clear slots, a visor peak and chin straps), chinese dragon dance head (read as a worm/snake - draw a big boxy festival lion-dance-style head with a wide mouth, large eyes with lids, a single horn, fur trim, and a short draped cloth body). Fixed in review: tie redrawn (stripes now clipped to a proper tapered blade with a knot), tiara scaled up and made gold, red-envelope example no longer invisible at f0, belt TS readonly tuple error; trademark tags dropped: levis, stetson."
+    "notes": "Built 85 flat-vector parts: festival props (diya, rangoli, firecracker, sparkler, fireworks, sky lanterns, paper lantern, Christmas, Hanukkah, Eid/Ramadan, Easter, Holi, party, wedding, New Year, harvest), cultural garments (turban and hijab on faceless display forms; saree, kurta, sherwani, kimono, hanbok on hangers) and clothing/accessories. Convention: garments are front-view catalogue items on a coat or clip hanger, hem on y, anim sway. Skipped as covered: christmas tree decorated (=christmas-tree), christmas gift (=gift-box), halloween pumpkin (=jack-o-lantern), cake candles (=birthday-cake), confetti (=core/confetti-burst), sunglasses item (=sunglasses), watch item (=watch), backpack item (=backpack), handbag item (=handbag), mask party (=carnival-mask). Renamed: kimono item -> kimono, hanbok item -> hanbok, umbrella item -> umbrella, pinata-style donkey -> pinata-donkey. Failed/deleted, rebuild next run: sandals (sub-agent: straps read as sticks/worms), mooncake (cut wedge read as a separate blob - draw a whole round fluted cake with an embossed flower, no wedge), high heels (red wedge on black stilts, unreadable - draw one clear stiletto pump in side view: pointed toe, arched sole, thin tall heel), helmet bike (blue blob - show vents as clear slots, a visor peak and chin straps), chinese dragon dance head (read as a worm/snake - draw a big boxy festival lion-dance-style head with a wide mouth, large eyes with lids, a single horn, fur trim, and a short draped cloth body). Fixed in review: tie redrawn (stripes now clipped to a proper tapered blade with a knot), tiara scaled up and made gold, red-envelope example no longer invisible at f0, belt TS readonly tuple error; trademark tags dropped: levis, stetson. Run 19 (2026-11-19): mooncake (whole fluted cake with embossed flower, on a plate), bike-helmet (vents, visor peak, chin straps) and dragon-dance-head (boxy red-gold head, single horn, fur trim, short scaled cloth body) rebuilt and kept. Deleted again: sandals (straps still read as teal worms) and high heels (red wedge on a stick). Both failed twice with Haiku - next run the orchestrator should draw them itself, or drop them."
   },
   {
     "id": "19-pixel-art-people",
     "title": "Pixel art: style + people",
     "style": "pixel-art",
     "type": "character",
-    "status": "todo",
+    "status": "done",
     "generator": null,
     "brief": "Create parts/pixel-art/style (16-colour palette, crisp square pixels drawn as SVG rects on a 4–8 px grid, shapeRendering crispEdges) and a parts/pixel-art/sprite generator (pixel map strings + palette, 2–4 frame animation), then people presets as small game-style sprites scaled up.",
     "names": [
@@ -2404,7 +2401,11 @@
       "witch costume",
       "ghost costume"
     ],
-    "count": 120
+    "count": 120,
+    "built": 123,
+    "date": "2026-11-19",
+    "remaining": [],
+    "notes": "New style pixel-art: parts/pixel-art/style (16-colour palette PAL, role chars s/h/t/i/l/z/a/j/q filled per part, Pixels renderer merging runs into crispEdges rects, auto one-cell outline, gridOf/stamp/fill/outlined helpers, blocky sky/ground decor, pixel title plate), pixel-art/sprite (generic pixel-map sprite generator, 1-4 frames, bob/bounce/float/shake/pulse) and pixel-art/person (layered front-facing game sprite, adult ~41 cells x 24 px: builds adult/teen/child/toddler, 14 hair styles, 28 hats, 14 tops, overlays, neckwear, 45 held items incl. chest items and ground poles, back gear, belly, chair/wheelchair seat, idle/walk/run/wave/cheer/jump/talk, free pixel `extra` overlays). Foundation drawn and reviewed by the orchestrator. All 120 people names built as person presets (LOOK spread under p, so every param can still override); doctor written by the orchestrator, the rest by 6 Haiku sub-agents via a preset helper. Fixed in review: librarian floating book stack removed, surveyor tripod moved to the ground, welder given a real welding mask, delivery rider given a cube bag on the back, musician given a trumpet (was an unreadable disc), firefighter recoloured to tan turnout coat + hi-vis bands, superhero kid recoloured to green suit + purple cape (avoid famous red/blue scheme). Next pixel-art batches can reuse pixel-art/sprite for animals, items and tiles."
   },
   {
     "id": "20-pixel-art-animals",

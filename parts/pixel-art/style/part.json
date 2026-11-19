@@ -1,0 +1,14 @@
+{
+  "id": "pixel-art/style",
+  "type": "style",
+  "style": "pixel-art",
+  "name": "Pixel art",
+  "summary": "Retro game look: 16-colour palette, crisp square pixels with a dark outline, blocky sky and ground, chunky title plate.",
+  "tags": ["pixel", "pixel art", "8-bit", "16-bit", "retro", "game", "sprite", "arcade", "style"],
+  "params": [],
+  "example": {},
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

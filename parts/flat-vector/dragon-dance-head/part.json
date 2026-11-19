@@ -1,0 +1,79 @@
+{
+  "id": "flat-vector/dragon-dance-head",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Dragon dance head",
+  "summary": "Boxy red and gold festival dance head with open mouth, big eyes, horn and draped scale cloth; for parades.",
+  "tags": [
+    "dragon dance",
+    "dragon head",
+    "dance head",
+    "festival",
+    "lunar new year",
+    "parade",
+    "costume"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the cloth hem sits on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the head is about 600 px wide and 560 px tall; use about 0.5 for a head beside a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "main red"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "gold trim, horn, brows and scales"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob"
+      ],
+      "note": "bob = the head nods up and down"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (head faces left, cloth trails right)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#E8503F",
+    "color2": "#FFC83D",
+    "anim": "bob"
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,326 @@
+{
+  "id": "pixel-art/bus-driver",
+  "type": "character",
+  "style": "pixel-art",
+  "name": "Bus driver",
+  "summary": "Pixel-art bus driver in a uniform shirt with a tie and a peaked cap; for public transport scenes.",
+  "tags": [
+    "bus",
+    "driver",
+    "transport",
+    "commute",
+    "city",
+    "pixel",
+    "people"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x; [from,to] to move"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "feet / ground line"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; adult ≈ 980 px tall at s = 1 (24 px cells)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "values": [
+        "idle",
+        "walk",
+        "run",
+        "wave",
+        "cheer",
+        "jump",
+        "talk",
+        "none"
+      ],
+      "default": "idle",
+      "note": "idle blinks; walk/run swing legs and arms; wave raises the front hand"
+    },
+    {
+      "name": "arms",
+      "type": "enum",
+      "values": [
+        "down",
+        "up",
+        "one-up"
+      ],
+      "default": "down",
+      "note": "arm pose when anim does not set one"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "values": [
+        "stand",
+        "sit"
+      ],
+      "default": "stand",
+      "note": "sit bends the legs forward (seat sets it too)"
+    },
+    {
+      "name": "seat",
+      "type": "enum",
+      "values": [
+        "none",
+        "chair",
+        "wheelchair"
+      ],
+      "default": "none",
+      "note": "draw a seat under a sitting person"
+    },
+    {
+      "name": "beard",
+      "type": "enum",
+      "values": [
+        "none",
+        "beard",
+        "moustache",
+        "goatee",
+        "stubble"
+      ],
+      "default": "none",
+      "note": "facial hair"
+    },
+    {
+      "name": "glasses",
+      "type": "enum",
+      "values": [
+        "none",
+        "glasses",
+        "shades",
+        "goggles",
+        "eyepatch"
+      ],
+      "default": "none",
+      "note": "eyewear"
+    },
+    {
+      "name": "eyes",
+      "type": "enum",
+      "values": [
+        "open",
+        "happy",
+        "closed"
+      ],
+      "default": "open",
+      "note": "eyes look right"
+    },
+    {
+      "name": "mouth",
+      "type": "enum",
+      "values": [
+        "smile",
+        "flat",
+        "open",
+        "frown",
+        "mask"
+      ],
+      "default": "smile",
+      "note": "mouth; mask = face mask"
+    },
+    {
+      "name": "blush",
+      "type": "boolean",
+      "default": false,
+      "note": "pink cheeks"
+    },
+    {
+      "name": "inner",
+      "type": "colour",
+      "default": "#f5f1e8",
+      "note": "shirt under a jacket/coat, collar, overall shirt, sweater stripe"
+    },
+    {
+      "name": "shoeStyle",
+      "type": "enum",
+      "values": [
+        "shoes",
+        "boots",
+        "sneakers",
+        "bare"
+      ],
+      "default": "shoes",
+      "note": "footwear"
+    },
+    {
+      "name": "shoes",
+      "type": "colour",
+      "default": "#3a2a22",
+      "note": "shoe colour"
+    },
+    {
+      "name": "over",
+      "type": "enum",
+      "values": [
+        "none",
+        "apron",
+        "hivis",
+        "vest",
+        "sash",
+        "lifejacket"
+      ],
+      "default": "none",
+      "note": "garment over the top"
+    },
+    {
+      "name": "overColour",
+      "type": "colour",
+      "default": "#f5f1e8",
+      "note": "overlay colour"
+    },
+    {
+      "name": "belt",
+      "type": "boolean",
+      "default": false,
+      "note": "black belt with gold buckle"
+    },
+    {
+      "name": "badge",
+      "type": "colour",
+      "default": "none",
+      "note": "chest badge colour (palette char or colour)"
+    },
+    {
+      "name": "hold",
+      "type": "enum",
+      "values": [
+        "none",
+        "clipboard",
+        "wrench",
+        "book",
+        "phone",
+        "mic",
+        "cup",
+        "tray",
+        "briefcase",
+        "bag",
+        "camera",
+        "spatula",
+        "hammer",
+        "magnifier",
+        "paintbrush",
+        "palette",
+        "envelope",
+        "syringe",
+        "bottle",
+        "torch",
+        "sword",
+        "wand",
+        "ball",
+        "baton",
+        "gavel",
+        "guitar",
+        "baby",
+        "openbook",
+        "parcel",
+        "controller",
+        "laptop",
+        "bouquet",
+        "tablet",
+        "bowl",
+        "cane",
+        "whitecane",
+        "broom",
+        "crutch",
+        "shovel",
+        "rake",
+        "pitchfork",
+        "mop",
+        "staff",
+        "flag",
+        "fishingrod"
+      ],
+      "default": "none",
+      "note": "item in the front hand; guitar … bowl are held at the chest with both hands; cane … fishingrod are long poles"
+    },
+    {
+      "name": "itemColour",
+      "type": "colour",
+      "default": "#d2403f",
+      "note": "colour of book, bag, bottle, flag, baby blanket, brush tip (q)"
+    },
+    {
+      "name": "back",
+      "type": "enum",
+      "values": [
+        "none",
+        "backpack",
+        "cape",
+        "wings",
+        "tank",
+        "guitar",
+        "quiver"
+      ],
+      "default": "none",
+      "note": "gear behind the body"
+    },
+    {
+      "name": "backColour",
+      "type": "colour",
+      "default": "#d2403f",
+      "note": "backpack / cape colour (uses itemColour if not set)"
+    },
+    {
+      "name": "belly",
+      "type": "boolean",
+      "default": false,
+      "note": "rounded pregnant belly"
+    },
+    {
+      "name": "extra",
+      "type": "object",
+      "note": "array of pixel overlays {map, at:[col,row], ref: grid|head|torso|hand|legs|feet, back?}; head/torso boxes are 10 cells wide"
+    },
+    {
+      "name": "pal",
+      "type": "object",
+      "note": "replace colours by char, e.g. {\"q\": \"#ffffff\"}"
+    },
+    {
+      "name": "px",
+      "type": "number",
+      "default": 24,
+      "note": "cell size"
+    },
+    {
+      "name": "outline",
+      "type": "boolean",
+      "default": true,
+      "note": "dark one-cell outline"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame drift (pair with walk)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600
+  },
+  "uses": [
+    "pixel-art/person"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

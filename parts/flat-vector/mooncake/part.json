@@ -1,0 +1,69 @@
+{
+  "id": "flat-vector/mooncake",
+  "type": "prop",
+  "style": "flat-vector",
+  "name": "Mooncake",
+  "summary": "Whole round mooncake with a fluted golden rim and embossed flower top, optionally on a plate; for mid-autumn scenes.",
+  "tags": [
+    "mooncake",
+    "moon cake",
+    "mid-autumn",
+    "festival",
+    "pastry",
+    "lunar festival",
+    "sweet"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the cake (or plate front edge) rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the mooncake is about 510 px wide; use about 0.3 on a table next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#D99A4E",
+      "note": "golden-brown crust colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "plate colour (only when plate is true)"
+    },
+    {
+      "name": "plate",
+      "type": "boolean",
+      "default": true,
+      "note": "a small plate under the cake"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#D99A4E",
+    "color2": "#FFFFFF",
+    "plate": true
+  },
+  "uses": [
+    "flat-vector/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
