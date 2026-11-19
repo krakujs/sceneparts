@@ -1,0 +1,342 @@
+{
+  "id": "ink-sketch/bird",
+  "type": "character",
+  "style": "ink-sketch",
+  "name": "Ink sketch bird",
+  "summary": "Ink sketch bird generator: line art with loose wash; beaks, crests, tails, patterns; stand, walk, perch, fly, swim.",
+  "tags": [
+    "bird",
+    "animal",
+    "avian",
+    "songbird",
+    "wings",
+    "flying",
+    "ink",
+    "sketch",
+    "line art",
+    "generator"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet on the ground (perch line / water line for perch and swim)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; sizes below are px at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "hop",
+        "peck",
+        "perch",
+        "fly",
+        "glide",
+        "swim",
+        "idle"
+      ],
+      "note": "perch = sitting, legs tucked; fly = wings flap, lifted by alt; swim = floating, no legs; idle = breathing + head turn"
+    },
+    {
+      "name": "body",
+      "type": "number",
+      "default": 62,
+      "note": "body length px"
+    },
+    {
+      "name": "bodyH",
+      "type": "number",
+      "default": 46,
+      "note": "body height px"
+    },
+    {
+      "name": "neck",
+      "type": "number",
+      "default": 0,
+      "note": "neck length px, 0 = none"
+    },
+    {
+      "name": "neckAngle",
+      "type": "number",
+      "default": 40,
+      "note": "deg above horizontal"
+    },
+    {
+      "name": "neckW",
+      "type": "number",
+      "note": "neck thickness (default from head)"
+    },
+    {
+      "name": "neckBend",
+      "type": "number",
+      "default": 0,
+      "note": "S-curve amount, 0 = straight, about 0.3 = flamingo"
+    },
+    {
+      "name": "upright",
+      "type": "number",
+      "default": 0,
+      "note": "body tilt deg: 0 = horizontal, 70 = owl or penguin upright"
+    },
+    {
+      "name": "head",
+      "type": "number",
+      "default": 22,
+      "note": "head radius px"
+    },
+    {
+      "name": "beak",
+      "type": "enum",
+      "default": "cone",
+      "values": [
+        "cone",
+        "short",
+        "hook",
+        "long",
+        "spear",
+        "flat",
+        "pouch",
+        "big",
+        "needle",
+        "curved"
+      ],
+      "note": "cone seed-eater, hook raptor/owl, long/spear wader, flat duck, pouch pelican, big toucan, needle hummingbird, curved flamingo"
+    },
+    {
+      "name": "beakLen",
+      "type": "number",
+      "note": "beak length px (default by shape)"
+    },
+    {
+      "name": "beakColor",
+      "type": "colour",
+      "default": "#FFC83D"
+    },
+    {
+      "name": "beakTip",
+      "type": "string",
+      "default": "none",
+      "note": "tip colour or none"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "body and head colour"
+    },
+    {
+      "name": "belly",
+      "type": "string",
+      "default": "none",
+      "note": "belly colour or none"
+    },
+    {
+      "name": "wingColor",
+      "type": "colour",
+      "note": "default = a shade of color"
+    },
+    {
+      "name": "wingTip",
+      "type": "string",
+      "default": "none",
+      "note": "wing tip colour or none"
+    },
+    {
+      "name": "wingspan",
+      "type": "number",
+      "default": 160,
+      "note": "wing span px (fly and glide)"
+    },
+    {
+      "name": "alt",
+      "type": "number",
+      "default": 120,
+      "note": "fly height px above y"
+    },
+    {
+      "name": "flightless",
+      "type": "boolean",
+      "default": false,
+      "note": "tiny wings that never open"
+    },
+    {
+      "name": "headColor",
+      "type": "colour",
+      "note": "default = color"
+    },
+    {
+      "name": "cap",
+      "type": "string",
+      "default": "none",
+      "note": "top-of-head colour or none"
+    },
+    {
+      "name": "eyeRing",
+      "type": "string",
+      "default": "none",
+      "note": "iris colour around the eye or none"
+    },
+    {
+      "name": "eyeSize",
+      "type": "number",
+      "default": 1,
+      "note": "eye size factor"
+    },
+    {
+      "name": "facialDisc",
+      "type": "boolean",
+      "default": false,
+      "note": "owl face disc with two forward eyes"
+    },
+    {
+      "name": "discColor",
+      "type": "colour",
+      "default": "#E9D3A9",
+      "note": "facial disc colour"
+    },
+    {
+      "name": "crest",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "tuft",
+        "spiky",
+        "crown",
+        "earTufts"
+      ]
+    },
+    {
+      "name": "crestColor",
+      "type": "colour",
+      "note": "default = color"
+    },
+    {
+      "name": "comb",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "rooster",
+        "turkey"
+      ],
+      "note": "red comb and wattle"
+    },
+    {
+      "name": "tail",
+      "type": "enum",
+      "default": "short",
+      "values": [
+        "short",
+        "long",
+        "forked",
+        "fan",
+        "train",
+        "wedge",
+        "up"
+      ],
+      "note": "fan = peacock display, train = long trailing feathers, up = wren"
+    },
+    {
+      "name": "tailLen",
+      "type": "number",
+      "note": "tail length px (default from body)"
+    },
+    {
+      "name": "tailColor",
+      "type": "colour",
+      "note": "default = a shade of wingColor"
+    },
+    {
+      "name": "tailDrop",
+      "type": "number",
+      "default": 15,
+      "note": "deg the tail hangs below the back line"
+    },
+    {
+      "name": "tailEye",
+      "type": "string",
+      "default": "#1FA39A",
+      "note": "eye spot colour for fan and train"
+    },
+    {
+      "name": "leg",
+      "type": "number",
+      "default": 30,
+      "note": "visible leg length px"
+    },
+    {
+      "name": "legColor",
+      "type": "colour",
+      "default": "#5E3B26"
+    },
+    {
+      "name": "webbed",
+      "type": "boolean",
+      "default": false,
+      "note": "webbed feet (ducks, geese)"
+    },
+    {
+      "name": "pattern",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "streaks",
+        "spots",
+        "bars",
+        "scales"
+      ]
+    },
+    {
+      "name": "patternColor",
+      "type": "colour",
+      "default": "#1F2433"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame drift"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 900,
+    "pose": "fly",
+    "s": 1,
+    "body": 62,
+    "bodyH": 46,
+    "color": "#8A5A3C",
+    "wingspan": 150,
+    "alt": 200
+  },
+  "uses": [
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

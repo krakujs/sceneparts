@@ -1,0 +1,97 @@
+{
+  "id": "ink-sketch/macaw",
+  "type": "character",
+  "style": "ink-sketch",
+  "name": "Macaw",
+  "summary": "Ink sketch scarlet macaw with blue and yellow wings, a very long tail and a big hook beak; for tropical scenes.",
+  "tags": [
+    "macaw",
+    "parrot",
+    "scarlet bird",
+    "tropical bird",
+    "long tail",
+    "bird",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet on the ground (perch line / water line for perch and swim)"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; sizes below are px at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "perch",
+      "values": [
+        "stand",
+        "walk",
+        "hop",
+        "peck",
+        "perch",
+        "fly",
+        "glide",
+        "swim",
+        "idle"
+      ],
+      "note": "perch = sitting, legs tucked; fly = wings flap, lifted by alt; swim = floating, no legs; idle = breathing + head turn"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "body and head colour"
+    },
+    {
+      "name": "wingspan",
+      "type": "number",
+      "default": 280,
+      "note": "wing span px (fly and glide)"
+    },
+    {
+      "name": "alt",
+      "type": "number",
+      "default": 180,
+      "note": "fly height px above y"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame drift"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "perch"
+  },
+  "uses": [
+    "ink-sketch/bird",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -81,3 +81,96 @@ const style: Style = {
   title: (p) => <Title {...p} />,
 };
 export default style;
+
+// ---- Inking helper -------------------------------------------------------------------------------
+// ink(tree) redraws a flat-filled SVG element tree in this style. Each "unit" gets four passes:
+// 1 ink outline (shapes fattened by 2 × w in INK), 2 PAPER body (hides what is behind), 3 loose colour
+// wash (opacity 0.6, nudged by 4,3 like a mis-registered watercolour), 4 small dark/white details (eyes,
+// nostrils, dark lines) drawn crisp on top. A <g data-split> makes each of its children its own unit
+// (so legs, body, head and ears each get their own contour); any other element is one unit.
+/* eslint-disable @typescript-eslint/no-explicit-any */
+type InkCtx = { fill?: string; stroke?: string; sw?: number };
+const SHAPES: Record<string, 1> = { path: 1, circle: 1, ellipse: 1, rect: 1, polygon: 1, polyline: 1, line: 1 };
+const rgbOf = (c?: string): [number, number, number] | null => {
+  if (!c) return null;
+  const m = /^#([0-9a-f]{3}|[0-9a-f]{6})$/i.exec(c);
+  if (m) {
+    let h = m[1];
+    if (h.length === 3) h = h.split("").map((q) => q + q).join("");
+    const n = parseInt(h, 16);
+    return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+  }
+  const r = /^rgba?\(([^)]+)\)/i.exec(c);
+  return r ? (r[1].split(",").map((v) => parseFloat(v)).slice(0, 3) as [number, number, number]) : null;
+};
+const lum = (c?: string) => { const v = rgbOf(c); return v ? (0.299 * v[0] + 0.587 * v[1] + 0.114 * v[2]) / 255 : 0.5; };
+const isOn = (c?: string) => !!c && c !== "none" && c !== "transparent";
+const isDark = (c?: string) => lum(c) < 0.2;
+const isLight = (c?: string) => c === PAPER || lum(c) > 0.98;
+const isRgba = (c?: string) => !!c && /^rgba/i.test(c);
+const smallDot = (t: string, pr: any) => (t === "circle" && +pr.r < 15) || (t === "ellipse" && Math.max(+pr.rx, +pr.ry) < 15);
+/** Soften a flat colour into a wash colour (pull 15% towards paper). */
+export const washOf = (c: string) => {
+  const v = rgbOf(c), pv = rgbOf(PAPER)!;
+  if (!v || isRgba(c)) return c;
+  if (lum(c) > 0.95) return PAPER;
+  const h = (i: number) => Math.round(v[i] + (pv[i] - v[i]) * 0.15).toString(16).padStart(2, "0");
+  return `#${h(0)}${h(1)}${h(2)}`;
+};
+type Pass = "line" | "paper" | "wash" | "detail";
+const kidsOf = (c: any): any[] => {
+  const out: any[] = [];
+  React.Children.forEach(c, (k: any) => { if (k !== null && k !== undefined && typeof k !== "boolean") out.push(k); });
+  return out;
+};
+const expand = (n: any): any => {
+  let el = n, guard = 0;
+  while (React.isValidElement(el) && typeof el.type === "function" && guard++ < 20) el = (el.type as any)(el.props);
+  return el;
+};
+const washCol = (c: string) => (isDark(c) ? INK : washOf(c));
+function passEl(n: any, pass: Pass, ctx: InkCtx, w: number, key: React.Key): any {
+  const el = expand(n);
+  if (el === null || el === undefined || typeof el === "boolean" || typeof el === "string" || typeof el === "number") return null;
+  if (Array.isArray(el)) return el.map((c, i) => passEl(c, pass, ctx, w, i));
+  if (!React.isValidElement(el)) return null;
+  const t = el.type as any, pr: any = el.props;
+  if (t === React.Fragment || t === "g") {
+    const c2: InkCtx = { fill: pr.fill ?? ctx.fill, stroke: pr.stroke ?? ctx.stroke, sw: pr.strokeWidth ?? ctx.sw };
+    const op = pass === "detail" || pass === "wash" ? pr.opacity : undefined;
+    return <g key={key} transform={pr.transform} opacity={op}>{kidsOf(pr.children).map((c, i) => passEl(c, pass, c2, w, i))}</g>;
+  }
+  if (typeof t !== "string") return null;
+  if (!SHAPES[t]) return pass === "detail" ? React.cloneElement(el as React.ReactElement<any>, { key }) : null;
+  const fill: string = pr.fill ?? ctx.fill ?? "#000000", stroke: string | undefined = pr.stroke ?? ctx.stroke;
+  const sw = +(pr.strokeWidth ?? ctx.sw ?? 1);
+  const hasF = isOn(fill) && t !== "line" && t !== "polyline", hasS = isOn(stroke);
+  if (hasF && isRgba(fill) && !hasS) return null; // flat drop shadows are not inked
+  const detail = hasF ? smallDot(t, pr) : !hasS || isDark(stroke) || sw < 5;
+  if ((pass === "detail") !== detail) return null;
+  const base = { key, opacity: undefined as any, strokeLinejoin: "round" as const, strokeLinecap: (pr.strokeLinecap ?? "round") as any };
+  if (pass === "line") return React.cloneElement(el as React.ReactElement<any>, { ...base, fill: hasF ? INK : "none", stroke: INK, strokeWidth: (hasS ? sw : 0) + 2 * w });
+  if (pass === "paper") return React.cloneElement(el as React.ReactElement<any>, { ...base, fill: hasF ? PAPER : "none", stroke: hasS ? PAPER : "none", strokeWidth: sw });
+  if (pass === "wash") return React.cloneElement(el as React.ReactElement<any>, { ...base, opacity: pr.opacity, fill: hasF ? washCol(fill) : "none", stroke: hasS ? washCol(stroke!) : "none" });
+  const dc = (c: string) => (isDark(c) ? INK : isLight(c) ? PAPER : washOf(c));
+  return React.cloneElement(el as React.ReactElement<any>, { key, fill: hasF ? dc(fill) : "none", stroke: hasS ? dc(stroke!) : undefined });
+}
+/** Redraw a flat SVG tree as ink line + paper + loose wash (see above). w = visible line width. */
+export function ink(n: any, w = 6, key?: React.Key): any {
+  const el = expand(n);
+  if (el === null || el === undefined || typeof el === "boolean") return null;
+  if (Array.isArray(el)) return el.map((c, i) => ink(c, w, i));
+  if (!React.isValidElement(el)) return null;
+  const pr: any = el.props;
+  if ((el.type === "g" || el.type === React.Fragment) && pr["data-split"]) {
+    return <g key={key} transform={pr.transform}>{kidsOf(pr.children).map((c, i) => ink(c, w, i))}</g>;
+  }
+  return (
+    <g key={key}>
+      {passEl(el, "line", {}, w, "l")}
+      {passEl(el, "paper", {}, w, "p")}
+      <g opacity={0.6} transform={`translate(${(w * 0.67).toFixed(1)} ${(w * 0.5).toFixed(1)})`}>{passEl(el, "wash", {}, w, "w")}</g>
+      {passEl(el, "detail", {}, w, "d")}
+    </g>
+  );
+}

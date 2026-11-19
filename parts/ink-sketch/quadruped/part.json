@@ -1,0 +1,392 @@
+{
+  "id": "ink-sketch/quadruped",
+  "type": "character",
+  "style": "ink-sketch",
+  "name": "Ink sketch four-legged animal",
+  "summary": "Ink sketch four-legged animal generator: line art with a loose wash; proportions, ears, tails, horns, manes, poses.",
+  "tags": [
+    "animal",
+    "mammal",
+    "quadruped",
+    "pet",
+    "wildlife",
+    "farm",
+    "ink",
+    "sketch",
+    "line art",
+    "generator"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; sizes below are px at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "stand",
+      "values": [
+        "stand",
+        "walk",
+        "run",
+        "idle",
+        "sit",
+        "lie",
+        "graze"
+      ],
+      "note": "idle = breathing + tail wag; graze = head down"
+    },
+    {
+      "name": "len",
+      "type": "number",
+      "default": 300,
+      "note": "body length px"
+    },
+    {
+      "name": "girth",
+      "type": "number",
+      "default": 140,
+      "note": "body height px"
+    },
+    {
+      "name": "leg",
+      "type": "number",
+      "default": 120,
+      "note": "visible leg length px"
+    },
+    {
+      "name": "legW",
+      "type": "number",
+      "default": 34,
+      "note": "leg thickness"
+    },
+    {
+      "name": "neck",
+      "type": "number",
+      "default": 30,
+      "note": "neck length (0 = head on body)"
+    },
+    {
+      "name": "neckW",
+      "type": "number",
+      "note": "neck thickness (default from girth)"
+    },
+    {
+      "name": "neckAngle",
+      "type": "number",
+      "default": 55,
+      "note": "deg above horizontal"
+    },
+    {
+      "name": "head",
+      "type": "number",
+      "default": 66,
+      "note": "head radius"
+    },
+    {
+      "name": "snout",
+      "type": "number",
+      "default": 46,
+      "note": "snout length"
+    },
+    {
+      "name": "snoutH",
+      "type": "number",
+      "note": "snout height"
+    },
+    {
+      "name": "headTilt",
+      "type": "number",
+      "default": 0,
+      "note": "deg, + = nose down"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#C99A62",
+      "note": "coat"
+    },
+    {
+      "name": "belly",
+      "type": "string",
+      "default": "none",
+      "note": "belly/chest colour or none"
+    },
+    {
+      "name": "muzzle",
+      "type": "string",
+      "note": "snout colour (default belly or coat)"
+    },
+    {
+      "name": "headColor",
+      "type": "colour",
+      "note": "head colour (default coat)"
+    },
+    {
+      "name": "legColor",
+      "type": "colour",
+      "note": "default = coat"
+    },
+    {
+      "name": "feet",
+      "type": "string",
+      "default": "none",
+      "note": "socks/paw colour or none"
+    },
+    {
+      "name": "hooves",
+      "type": "boolean",
+      "default": false,
+      "note": "dark hoof tips"
+    },
+    {
+      "name": "nose",
+      "type": "colour",
+      "default": "#1F2433"
+    },
+    {
+      "name": "ear",
+      "type": "enum",
+      "default": "pointy",
+      "values": [
+        "pointy",
+        "round",
+        "floppy",
+        "long",
+        "side",
+        "tiny",
+        "fan",
+        "none"
+      ]
+    },
+    {
+      "name": "earSize",
+      "type": "number",
+      "default": 1
+    },
+    {
+      "name": "earColor",
+      "type": "colour"
+    },
+    {
+      "name": "innerEar",
+      "type": "string",
+      "default": "#F2A7B8",
+      "note": "or none"
+    },
+    {
+      "name": "tail",
+      "type": "enum",
+      "default": "thin",
+      "values": [
+        "thin",
+        "bushy",
+        "tuft",
+        "flowing",
+        "curly",
+        "stub",
+        "flat",
+        "none"
+      ]
+    },
+    {
+      "name": "tailLen",
+      "type": "number",
+      "default": 110
+    },
+    {
+      "name": "tailAngle",
+      "type": "number",
+      "default": 35,
+      "note": "deg above horizontal, pointing back"
+    },
+    {
+      "name": "tailColor",
+      "type": "colour"
+    },
+    {
+      "name": "tailTip",
+      "type": "string",
+      "default": "none",
+      "note": "bushy tail tip colour or none"
+    },
+    {
+      "name": "pattern",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "spots",
+        "rosettes",
+        "patches",
+        "stripes",
+        "saddle",
+        "blaze",
+        "wool"
+      ],
+      "note": "wool = fluffy edge (sheep)"
+    },
+    {
+      "name": "patternColor",
+      "type": "colour",
+      "default": "#1F2433"
+    },
+    {
+      "name": "horns",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "cow",
+        "bull",
+        "buffalo",
+        "goat",
+        "ram",
+        "straight",
+        "antlers",
+        "moose",
+        "rhino",
+        "ossicones"
+      ]
+    },
+    {
+      "name": "hornSize",
+      "type": "number",
+      "default": 1
+    },
+    {
+      "name": "hornColor",
+      "type": "colour",
+      "default": "#EFE6D2"
+    },
+    {
+      "name": "tusks",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "small",
+        "large"
+      ]
+    },
+    {
+      "name": "trunk",
+      "type": "boolean",
+      "default": false,
+      "note": "elephant trunk instead of a nose"
+    },
+    {
+      "name": "hump",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "one",
+        "two",
+        "shoulder"
+      ]
+    },
+    {
+      "name": "mane",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "horse",
+        "neck",
+        "lion",
+        "ridge",
+        "beard",
+        "shag"
+      ]
+    },
+    {
+      "name": "maneColor",
+      "type": "colour",
+      "note": "also tail tuft/flowing tail"
+    },
+    {
+      "name": "mask",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "patches",
+        "band",
+        "face"
+      ],
+      "note": "eye patches (panda), band (raccoon), face (dark face)"
+    },
+    {
+      "name": "maskColor",
+      "type": "colour",
+      "default": "#1F2433"
+    },
+    {
+      "name": "eye",
+      "type": "number",
+      "default": 1,
+      "note": "eye size factor"
+    },
+    {
+      "name": "mouth",
+      "type": "enum",
+      "default": "smile",
+      "values": [
+        "none",
+        "smile",
+        "open",
+        "tongue"
+      ]
+    },
+    {
+      "name": "fluff",
+      "type": "boolean",
+      "default": false,
+      "note": "fluffy feet"
+    },
+    {
+      "name": "back",
+      "type": "number",
+      "default": 0,
+      "note": "+ raises shoulders, - raises hips"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "pose": "walk"
+  },
+  "uses": [
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

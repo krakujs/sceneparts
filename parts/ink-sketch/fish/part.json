@@ -1,0 +1,247 @@
+{
+  "id": "ink-sketch/fish",
+  "type": "character",
+  "style": "ink-sketch",
+  "name": "Ink sketch fish",
+  "summary": "Ink sketch fish generator: line art with a loose wash; body shapes, fins, tails, patterns; swim, dart, idle, puffed.",
+  "tags": [
+    "fish",
+    "sea",
+    "aquatic",
+    "swimming",
+    "marine",
+    "pet fish",
+    "ink",
+    "sketch",
+    "line art",
+    "generator"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "body centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1000,
+      "note": "body centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; sizes below are px at s = 1"
+    },
+    {
+      "name": "pose",
+      "type": "enum",
+      "default": "swim",
+      "values": [
+        "swim",
+        "idle",
+        "dart",
+        "puffed"
+      ],
+      "note": "swim = body wave and tail beat from p.f; idle = slow hover, fins flutter; dart = fast beat; puffed = inflated pufferfish, no wave"
+    },
+    {
+      "name": "len",
+      "type": "number",
+      "default": 120,
+      "note": "body length nose to tail base, px; overall length is about len + 0.6 x tailSize"
+    },
+    {
+      "name": "bodyH",
+      "type": "number",
+      "default": 66,
+      "note": "body height px (default 0.55 x len; 0.9 x len when puffed)"
+    },
+    {
+      "name": "shape",
+      "type": "enum",
+      "default": "torpedo",
+      "values": [
+        "torpedo",
+        "oval",
+        "round",
+        "tall",
+        "long",
+        "flat-top"
+      ],
+      "note": "torpedo = fast swimmer; oval; round = goldfish; tall = angelfish disc; long = eel-ish slim; flat-top = catfish"
+    },
+    {
+      "name": "head",
+      "type": "enum",
+      "default": "normal",
+      "values": [
+        "normal",
+        "hammer",
+        "bill",
+        "whiskers"
+      ],
+      "note": "hammer = hammerhead bar; bill = swordfish sword; whiskers = catfish barbels"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#F2A33A",
+      "note": "body colour"
+    },
+    {
+      "name": "belly",
+      "type": "colour",
+      "default": "none",
+      "note": "lower colour, or none"
+    },
+    {
+      "name": "back",
+      "type": "colour",
+      "default": "none",
+      "note": "darker top colour, or none"
+    },
+    {
+      "name": "finColor",
+      "type": "colour",
+      "default": "#F0A030",
+      "note": "fins and tail; far fins get one darker shade"
+    },
+    {
+      "name": "tail",
+      "type": "enum",
+      "default": "fan",
+      "values": [
+        "fan",
+        "fork",
+        "crescent",
+        "round",
+        "double",
+        "point"
+      ],
+      "note": "double = flowing goldfish tail; crescent = shark tail"
+    },
+    {
+      "name": "tailSize",
+      "type": "number",
+      "default": 60,
+      "note": "tail height px; tail length is 0.6 x tailSize"
+    },
+    {
+      "name": "dorsal",
+      "type": "enum",
+      "default": "small",
+      "values": [
+        "none",
+        "small",
+        "tall",
+        "long",
+        "sail"
+      ],
+      "note": "tall = shark triangle; long = runs along the back; sail = rounded sail"
+    },
+    {
+      "name": "pattern",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bands",
+        "stripes",
+        "spots",
+        "speckles",
+        "scales"
+      ],
+      "note": "bands = vertical bands (bandColor, bandEdge)"
+    },
+    {
+      "name": "patternColor",
+      "type": "colour",
+      "default": "#B07A3C",
+      "note": "colour of stripes, spots, speckles and scales"
+    },
+    {
+      "name": "bandColor",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "fill of vertical bands"
+    },
+    {
+      "name": "bandEdge",
+      "type": "colour",
+      "default": "#1F2433",
+      "note": "dark edge on each side of a band"
+    },
+    {
+      "name": "spikes",
+      "type": "boolean",
+      "default": false,
+      "note": "spines around the body (pufferfish)"
+    },
+    {
+      "name": "eyeSize",
+      "type": "number",
+      "default": 1,
+      "note": "eye size multiplier"
+    },
+    {
+      "name": "eyeType",
+      "type": "enum",
+      "default": "eye",
+      "values": [
+        "eye",
+        "dot"
+      ],
+      "note": "eye = white with pupil and highlight; dot = plain dark dot"
+    },
+    {
+      "name": "mouth",
+      "type": "enum",
+      "default": "closed",
+      "values": [
+        "closed",
+        "open",
+        "smile"
+      ],
+      "note": "open = round bubble mouth"
+    },
+    {
+      "name": "gills",
+      "type": "boolean",
+      "default": false,
+      "note": "gill slits behind the eye"
+    },
+    {
+      "name": "bubbles",
+      "type": "boolean",
+      "default": false,
+      "note": "bubbles rising from the mouth, from p.f"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1000,
+    "pose": "swim"
+  },
+  "uses": [
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -2925,7 +2925,7 @@
     "title": "Ink sketch: animals",
     "style": "ink-sketch",
     "type": "character",
-    "status": "todo",
+    "status": "done",
     "generator": null,
     "brief": "Line-art animals with a light colour wash.",
     "names": [
@@ -3040,7 +3040,9 @@
       "pufferfish",
       "swordfish"
     ],
-    "count": 110
+    "count": 110,
+    "built": 113,
+    "date": "2026-11-19"
   },
   {
     "id": "25-ink-sketch-objects",
