@@ -1,0 +1,76 @@
+{
+  "id": "storybook/aviator-1920s",
+  "type": "character",
+  "style": "storybook",
+  "name": "1920s aviator",
+  "summary": "1920s aviator in leather helmet, goggles and jacket, with a scarf that flutters in the wind.",
+  "tags": [
+    "aviator",
+    "pilot",
+    "1920s",
+    "flying",
+    "goggles",
+    "scarf",
+    "plane",
+    "leather"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "jacket",
+      "type": "colour",
+      "default": "#6B4B2E",
+      "note": "leather jacket and helmet colour"
+    },
+    {
+      "name": "scarf",
+      "type": "colour",
+      "default": "#F2B544",
+      "note": "scarf colour"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#C98E64"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

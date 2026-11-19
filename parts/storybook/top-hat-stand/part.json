@@ -1,0 +1,23 @@
+{
+  "id": "storybook/top-hat-stand",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Top hat stand",
+  "summary": "Wooden coat and hat stand with two top hats on its pegs and a scarf hanging; for hallway or gentleman's club scenes.",
+  "tags": ["hat stand", "top hat", "coat stand", "hallway", "victorian", "wooden", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "floor, bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~460 px wide, ~850 px tall at 1" },
+    { "name": "wood", "type": "colour", "default": "#8A6A45" },
+    { "name": "scarf", "type": "colour", "default": "#B5452F" },
+    { "name": "hat", "type": "colour", "default": "#121A2C" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1500, "s": 1 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

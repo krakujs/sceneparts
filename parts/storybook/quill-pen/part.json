@@ -1,0 +1,22 @@
+{
+  "id": "storybook/quill-pen",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Quill pen",
+  "summary": "White feather quill with a brass nib writing an ink curl; for letter-writing, diary or old-manuscript scenes.",
+  "tags": ["quill", "feather", "pen", "writing", "ink", "letter", "history", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1000, "note": "nib tip" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~480 px tall at 1" },
+    { "name": "ink", "type": "colour", "default": "#1E2A47" },
+    { "name": "writing", "type": "boolean", "default": true, "note": "the ink curl is drawn in a loop" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 420, "y": 1100, "s": 1.1 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

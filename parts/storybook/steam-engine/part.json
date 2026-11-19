@@ -1,0 +1,22 @@
+{
+  "id": "storybook/steam-engine",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Steam engine",
+  "summary": "Small early steam locomotive in red and black with a tall chimney and puffing steam; for railway or station scenes.",
+  "tags": ["steam engine", "locomotive", "train", "railway", "steam", "victorian", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "rail level, bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~650 px wide, ~650 px tall at 1" },
+    { "name": "puffing", "type": "boolean", "default": true, "note": "steam puffs and wheels turn" },
+    { "name": "red", "type": "colour", "default": "#B5452F" },
+    { "name": "flip", "type": "boolean", "note": "face left" }
+  ],
+  "example": { "x": 540, "y": 1450, "s": 1.2 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

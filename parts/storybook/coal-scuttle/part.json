@@ -1,0 +1,22 @@
+{
+  "id": "storybook/coal-scuttle",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Coal scuttle",
+  "summary": "Black metal coal scuttle full of coal with a shovel leaning on it; a hearth or cellar prop for cosy winter scenes.",
+  "tags": ["coal", "coal scuttle", "scuttle", "fireplace", "winter", "victorian", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "floor, bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~520 px wide at 1" },
+    { "name": "sparkle", "type": "boolean", "default": true, "note": "coal glints" },
+    { "name": "metal", "type": "colour", "default": "#2C2F3B" },
+    { "name": "flip", "type": "boolean", "note": "shovel to the left" }
+  ],
+  "example": { "x": 540, "y": 1500, "s": 1.1 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

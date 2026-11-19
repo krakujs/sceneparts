@@ -1,0 +1,22 @@
+{
+  "id": "storybook/flat-iron",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Flat iron",
+  "summary": "Black cast-iron sad iron with a looped handle and heat shimmer. Use for ironing, laundry or hearth scenes.",
+  "tags": ["flat iron", "sad iron", "ironing", "laundry", "cast iron", "heat", "household", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~400 px across at 1" },
+    { "name": "iron", "type": "colour", "default": "#2A2D36", "note": "iron colour" },
+    { "name": "hot", "type": "boolean", "default": true, "note": "heat shimmer rising" },
+    { "name": "flip", "type": "boolean", "note": "nose points left" }
+  ],
+  "example": { "x": 540, "y": 1300, "s": 1.4 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

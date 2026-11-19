@@ -1,0 +1,22 @@
+{
+  "id": "storybook/well-bucket",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Well bucket",
+  "summary": "Round stone village well with a wooden roof, winch and rope; a bucket bobs on the rope. For village or farm scenes.",
+  "tags": ["well", "bucket", "stone well", "village", "water", "winch", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "ground, bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~540 px wide, ~700 px tall at 1" },
+    { "name": "bobbing", "type": "boolean", "default": true, "note": "bucket bobs on the rope" },
+    { "name": "roof", "type": "colour", "default": "#B5452F" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1500, "s": 1 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

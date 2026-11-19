@@ -1,0 +1,22 @@
+{
+  "id": "storybook/scroll",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Scroll",
+  "summary": "Parchment scroll on wooden rollers, partly unrolled with faint lines and no text; for maps, decrees or old records.",
+  "tags": ["scroll", "parchment", "map", "decree", "paper", "history", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1000, "note": "bottom roller, bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~450 px wide at 1" },
+    { "name": "open", "type": "number", "default": 0.6, "min": 0, "max": 1, "note": "0 rolled up, 1 fully unrolled" },
+    { "name": "parchment", "type": "colour", "default": "#F4EAD5" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1100, "s": 1, "open": 0.8 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

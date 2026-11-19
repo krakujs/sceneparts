@@ -1,0 +1,26 @@
+{
+  "id": "storybook/leech-collector",
+  "type": "character",
+  "style": "storybook",
+  "name": "Leech collector",
+  "summary": "Woman wading into a pond with her skirt hitched up, collecting leeches into a glass jar for medicine.",
+  "tags": ["leech", "leech collector", "pond", "wading", "medicine", "victorian", "history", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1580, "note": "feet" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~640 px tall at 1" },
+    { "name": "walk", "type": "boolean", "default": false, "note": "wade with the jar held out" },
+    { "name": "smock", "type": "colour", "default": "#D9C49C" },
+    { "name": "bonnet", "type": "colour", "default": "#8A6A45" },
+    { "name": "skin", "type": "colour", "default": "#E8B990" },
+    { "name": "hairColour", "type": "colour", "default": "#4A3324" },
+    { "name": "flip", "type": "boolean", "note": "face left" },
+    { "name": "vx", "type": "number", "note": "px per frame" }
+  ],
+  "example": { "x": 540, "y": 1580, "s": 1 },
+  "uses": ["storybook/style", "storybook/townsfolk"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

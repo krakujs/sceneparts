@@ -1,0 +1,24 @@
+{
+  "id": "storybook/mangle",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Clothes mangle",
+  "summary": "Cast-iron clothes mangle with wooden rollers, a turning crank and a wet sheet dripping. For laundry day scenes.",
+  "tags": ["mangle", "laundry", "washing", "clothes", "victorian", "cast iron", "household", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~430 px tall, 800 px wide at 1" },
+    { "name": "iron", "type": "colour", "default": "#4A4E5E", "note": "cast iron colour" },
+    { "name": "wood", "type": "colour", "default": "#B88A58", "note": "roller colour" },
+    { "name": "sheet", "type": "colour", "default": "#F4EAD5", "note": "sheet colour" },
+    { "name": "turn", "type": "boolean", "default": true, "note": "crank turns" },
+    { "name": "flip", "type": "boolean", "note": "crank on the left" }
+  ],
+  "example": { "x": 500, "y": 1500, "s": 1 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

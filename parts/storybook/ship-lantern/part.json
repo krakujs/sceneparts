@@ -1,0 +1,65 @@
+{
+  "id": "storybook/ship-lantern",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Ship lantern",
+  "summary": "Red and green glass ship lantern on a hook, swinging and glowing. For harbour or night-at-sea scenes.",
+  "tags": [
+    "ship lantern",
+    "lantern",
+    "nautical",
+    "ship",
+    "harbour",
+    "night",
+    "glow",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500,
+      "note": "bottom centre of the post"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~600 px tall at 1"
+    },
+    {
+      "name": "lit",
+      "type": "boolean",
+      "default": true,
+      "note": "lit flame and glow"
+    },
+    {
+      "name": "swing",
+      "type": "boolean",
+      "default": true,
+      "note": "lantern sways on its hook"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 480,
+    "y": 1500,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

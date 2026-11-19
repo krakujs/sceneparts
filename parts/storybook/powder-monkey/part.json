@@ -1,0 +1,25 @@
+{
+  "id": "storybook/powder-monkey",
+  "type": "character",
+  "style": "storybook",
+  "name": "Powder monkey",
+  "summary": "Barefoot ship's boy in a striped shirt carrying a box of gunpowder cartridges to the guns of a sailing ship.",
+  "tags": ["powder monkey", "ship", "sailor", "boy", "navy", "history", "pirate", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1580, "note": "feet" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~640 px tall at 1" },
+    { "name": "walk", "type": "boolean", "default": false, "note": "run with the box carried" },
+    { "name": "hatColour", "type": "colour", "default": "#B5452F" },
+    { "name": "skin", "type": "colour", "default": "#C98E64" },
+    { "name": "hairColour", "type": "colour", "default": "#3B2A1E" },
+    { "name": "flip", "type": "boolean", "note": "face left" },
+    { "name": "vx", "type": "number", "note": "px per frame" }
+  ],
+  "example": { "x": 540, "y": 1580, "s": 1 },
+  "uses": ["storybook/style", "storybook/townsfolk"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

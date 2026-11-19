@@ -1,0 +1,81 @@
+{
+  "id": "storybook/highwayman",
+  "type": "character",
+  "style": "storybook",
+  "name": "Highwayman",
+  "summary": "Highwayman in tricorn, black eye mask and long cape, holding a flintlock pistol pointed upward.",
+  "tags": [
+    "highwayman",
+    "tricorn",
+    "pistol",
+    "cape",
+    "robber",
+    "18th century",
+    "history",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#2C2F3B",
+      "note": "coat colour"
+    },
+    {
+      "name": "cape",
+      "type": "colour",
+      "default": "#1E2A47",
+      "note": "cape colour"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#E8B990"
+    },
+    {
+      "name": "hairColour",
+      "type": "colour",
+      "default": "#4A3324"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

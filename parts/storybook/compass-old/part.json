@@ -1,0 +1,22 @@
+{
+  "id": "storybook/compass-old",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Old compass",
+  "summary": "Old brass mariner's compass with a star compass rose and a wobbling needle. For navigation, sailing or voyage scenes.",
+  "tags": ["compass", "navigation", "sailing", "brass", "mariner", "ship", "direction", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~540 px tall at 1" },
+    { "name": "brass", "type": "colour", "default": "#C99A4A", "note": "brass colour" },
+    { "name": "wobble", "type": "boolean", "default": true, "note": "needle wobbles" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1500, "s": 0.9 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

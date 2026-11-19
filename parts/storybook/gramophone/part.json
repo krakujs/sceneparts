@@ -1,0 +1,63 @@
+{
+  "id": "storybook/gramophone",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Gramophone",
+  "summary": "Wooden box gramophone with a big flared brass horn, a spinning record and music notes; for parlour scenes.",
+  "tags": [
+    "gramophone",
+    "record player",
+    "phonograph",
+    "music",
+    "horn",
+    "1920s",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500,
+      "note": "floor, bottom centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~520 px wide, ~740 px tall at 1"
+    },
+    {
+      "name": "playing",
+      "type": "boolean",
+      "default": true,
+      "note": "record spins and notes drift up"
+    },
+    {
+      "name": "wood",
+      "type": "colour",
+      "default": "#8A6A45"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "horn to the left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1500,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

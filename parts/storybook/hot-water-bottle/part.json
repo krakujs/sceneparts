@@ -1,0 +1,22 @@
+{
+  "id": "storybook/hot-water-bottle",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Hot water bottle",
+  "summary": "Glazed stoneware hot water bottle with a cork stopper and little wisps of steam. Use for cosy bedtime or winter scenes.",
+  "tags": ["hot water bottle", "stone bottle", "ceramic", "warm", "bed", "cosy", "winter", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~480 px tall at 1" },
+    { "name": "glaze", "type": "colour", "default": "#2E7D7A", "note": "glaze colour" },
+    { "name": "steam", "type": "boolean", "default": true, "note": "little steam wisps" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1400, "s": 1 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

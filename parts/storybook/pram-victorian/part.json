@@ -1,0 +1,71 @@
+{
+  "id": "storybook/pram-victorian",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Victorian pram",
+  "summary": "Big-wheeled Victorian pram with folding hood and long handle, gently rocking. For nursery or street scenes.",
+  "tags": [
+    "pram",
+    "baby carriage",
+    "stroller",
+    "victorian",
+    "nursery",
+    "history",
+    "vehicle",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500,
+      "note": "bottom centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~530 px tall at 1"
+    },
+    {
+      "name": "body",
+      "type": "colour",
+      "default": "#1E2A47",
+      "note": "basket colour"
+    },
+    {
+      "name": "hood",
+      "type": "colour",
+      "default": "#F4EAD5",
+      "note": "hood colour"
+    },
+    {
+      "name": "rock",
+      "type": "boolean",
+      "default": true,
+      "note": "gentle rocking"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1400,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

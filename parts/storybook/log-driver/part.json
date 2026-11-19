@@ -1,0 +1,26 @@
+{
+  "id": "storybook/log-driver",
+  "type": "character",
+  "style": "storybook",
+  "name": "Log driver",
+  "summary": "Lumberjack in plaid shirt and cap balancing on a floating log with a pike pole, guiding timber down a river.",
+  "tags": ["log driver", "lumberjack", "river", "timber", "logging", "history", "pike pole", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1580, "note": "feet (on the log top)" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~640 px tall at 1" },
+    { "name": "walk", "type": "boolean", "default": false, "note": "work the pole as if walking the log" },
+    { "name": "plaid", "type": "colour", "default": "#B5452F" },
+    { "name": "hatColour", "type": "colour", "default": "#2E7D7A" },
+    { "name": "skin", "type": "colour", "default": "#C98E64" },
+    { "name": "hairColour", "type": "colour", "default": "#5C3A26" },
+    { "name": "flip", "type": "boolean", "note": "face left" },
+    { "name": "vx", "type": "number", "note": "px per frame" }
+  ],
+  "example": { "x": 540, "y": 1580, "s": 1 },
+  "uses": ["storybook/style", "storybook/townsfolk"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

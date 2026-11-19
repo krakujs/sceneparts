@@ -1,0 +1,65 @@
+{
+  "id": "storybook/treasure-map",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Treasure map",
+  "summary": "Old parchment treasure map with a palm island, dotted route and red X; no writing. For quest scenes.",
+  "tags": [
+    "treasure map",
+    "map",
+    "parchment",
+    "island",
+    "pirate",
+    "adventure",
+    "quest",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500,
+      "note": "bottom centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~420 px tall at 1"
+    },
+    {
+      "name": "paper",
+      "type": "colour",
+      "default": "#EADBBE",
+      "note": "parchment colour"
+    },
+    {
+      "name": "route",
+      "type": "boolean",
+      "default": true,
+      "note": "dotted route flows"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1400,
+    "s": 1.2
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

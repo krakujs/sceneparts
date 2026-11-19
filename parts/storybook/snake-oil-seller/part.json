@@ -1,0 +1,85 @@
+{
+  "id": "storybook/snake-oil-seller",
+  "type": "character",
+  "style": "storybook",
+  "name": "Snake oil seller",
+  "summary": "Snake oil seller in top hat and checked waistcoat, holding up an unlabelled tonic bottle for market scenes.",
+  "tags": [
+    "snake oil",
+    "tonic",
+    "top hat",
+    "medicine show",
+    "salesman",
+    "history",
+    "storybook",
+    "character"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#F2B544"
+    },
+    {
+      "name": "hatColour",
+      "type": "colour",
+      "default": "#1B1712"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#8D5A3B"
+    },
+    {
+      "name": "hairColour",
+      "type": "colour",
+      "default": "#2B2420"
+    },
+    {
+      "name": "walk",
+      "type": "boolean",
+      "default": false,
+      "note": "walk instead of waving"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

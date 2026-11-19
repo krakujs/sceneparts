@@ -1,0 +1,71 @@
+{
+  "id": "storybook/sextant",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Sextant",
+  "summary": "Brass navigational sextant with graduated arc, mirror and eyepiece, index arm swinging. For captains or star scenes.",
+  "tags": [
+    "sextant",
+    "navigation",
+    "sea",
+    "ship",
+    "brass",
+    "stars",
+    "captain",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500,
+      "note": "bottom centre, grip on the ground"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~540 px tall at 1"
+    },
+    {
+      "name": "brass",
+      "type": "colour",
+      "default": "#C99A4A",
+      "note": "brass colour"
+    },
+    {
+      "name": "wood",
+      "type": "colour",
+      "default": "#8A6A45",
+      "note": "grip colour"
+    },
+    {
+      "name": "swing",
+      "type": "boolean",
+      "default": true,
+      "note": "index arm swings along the arc"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1500,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

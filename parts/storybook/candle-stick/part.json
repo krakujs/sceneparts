@@ -1,0 +1,68 @@
+{
+  "id": "storybook/candle-stick",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Candle stick",
+  "summary": "Brass chamberstick with a finger ring and a dripping candle with a flickering flame; for night scenes.",
+  "tags": [
+    "candle",
+    "candlestick",
+    "chamberstick",
+    "brass",
+    "flame",
+    "night",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1000,
+      "note": "base, bottom centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~470 px tall at 1"
+    },
+    {
+      "name": "lit",
+      "type": "boolean",
+      "default": true,
+      "note": "flame and glow"
+    },
+    {
+      "name": "brass",
+      "type": "colour",
+      "default": "#D9A441"
+    },
+    {
+      "name": "candle",
+      "type": "colour",
+      "default": "#F4EAD5"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "ring to the left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1100,
+    "s": 1.1
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

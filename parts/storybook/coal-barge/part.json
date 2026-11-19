@@ -1,0 +1,22 @@
+{
+  "id": "storybook/coal-barge",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Coal barge",
+  "summary": "Long low wooden canal barge heaped with coal, with a small cabin and smoking chimney; for canal or industrial scenes.",
+  "tags": ["barge", "canal", "coal", "boat", "victorian", "industry", "river", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "waterline, bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~900 px wide at 1" },
+    { "name": "smoke", "type": "boolean", "default": true, "note": "puffs from the chimney" },
+    { "name": "hull", "type": "colour", "default": "#8A6A45" },
+    { "name": "flip", "type": "boolean", "note": "face left" }
+  ],
+  "example": { "x": 540, "y": 1450, "s": 1 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

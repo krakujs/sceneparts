@@ -1,0 +1,23 @@
+{
+  "id": "storybook/bellows",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Bellows",
+  "summary": "Leather fireside bellows with wooden boards and a brass nozzle that puffs air. For hearth, forge or cottage fire scenes.",
+  "tags": ["bellows", "fire", "hearth", "fireplace", "leather", "brass", "forge", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~360 px tall at 1" },
+    { "name": "puff", "type": "boolean", "default": true, "note": "puffs of air from the nozzle" },
+    { "name": "wood", "type": "colour", "default": "#8A6A45", "note": "board colour" },
+    { "name": "leather", "type": "colour", "default": "#7E2E22", "note": "leather colour" },
+    { "name": "flip", "type": "boolean", "note": "nozzle points left" }
+  ],
+  "example": { "x": 540, "y": 1400, "s": 1.2 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

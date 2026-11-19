@@ -1,0 +1,80 @@
+{
+  "id": "storybook/searcher",
+  "type": "character",
+  "style": "storybook",
+  "name": "Searcher",
+  "summary": "Plague-era searcher of the dead in hood and shawl, carrying a long red wand and a lantern.",
+  "tags": [
+    "searcher",
+    "plague",
+    "history",
+    "medieval",
+    "lantern",
+    "old woman",
+    "storybook",
+    "character"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#4A3B2E"
+    },
+    {
+      "name": "hatColour",
+      "type": "colour",
+      "default": "#4A3B2E"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#D9A77C"
+    },
+    {
+      "name": "walk",
+      "type": "boolean",
+      "default": false,
+      "note": "walk with the wand"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

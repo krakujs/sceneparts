@@ -1,0 +1,70 @@
+{
+  "id": "storybook/knight",
+  "type": "character",
+  "style": "storybook",
+  "name": "Knight",
+  "summary": "Knight in full grey armour and visored helm, sword raised, with a chevron shield.",
+  "tags": [
+    "knight",
+    "medieval",
+    "armour",
+    "castle",
+    "shield",
+    "sword",
+    "chivalry",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "metal",
+      "type": "colour",
+      "default": "#8E99A6",
+      "note": "armour colour"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#E8B990"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

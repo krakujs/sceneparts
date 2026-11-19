@@ -1,0 +1,21 @@
+{
+  "id": "storybook/stocks-pillory",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Stocks and pillory",
+  "summary": "Empty wooden village stocks with leg holes beside a pillory frame on a post; for old-town or punishment-history scenes.",
+  "tags": ["stocks", "pillory", "village", "history", "wooden", "medieval", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "ground, bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~750 px wide, ~740 px tall at 1" },
+    { "name": "wood", "type": "colour", "default": "#8A6A45" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1500, "s": 1 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

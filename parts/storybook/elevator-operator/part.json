@@ -1,0 +1,24 @@
+{
+  "id": "storybook/elevator-operator",
+  "type": "character",
+  "style": "storybook",
+  "name": "Elevator operator",
+  "summary": "Uniformed lift operator in a pillbox cap, working the brass lever of a hotel or department-store elevator.",
+  "tags": ["elevator", "lift", "operator", "uniform", "hotel", "history", "1900s", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1580, "note": "feet" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~640 px tall at 1" },
+    { "name": "uniform", "type": "colour", "default": "#2E3F5C" },
+    { "name": "skin", "type": "colour", "default": "#E8B990" },
+    { "name": "hairColour", "type": "colour", "default": "#2C2F3B" },
+    { "name": "flip", "type": "boolean", "note": "face left" },
+    { "name": "vx", "type": "number", "note": "px per frame" }
+  ],
+  "example": { "x": 540, "y": 1580, "s": 1 },
+  "uses": ["storybook/style", "storybook/townsfolk"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "storybook/chamber-pot",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Chamber pot",
+  "summary": "Cute enamel chamber pot with a blue-teal rim and loop handle. Use for bedroom or Victorian household scenes.",
+  "tags": ["chamber pot", "enamel", "bedroom", "victorian", "household", "vintage", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~290 px tall at 1" },
+    { "name": "glaze", "type": "colour", "default": "#F4EAD5", "note": "enamel colour" },
+    { "name": "rim", "type": "colour", "default": "#2E7D7A", "note": "rim and dot colour" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1500, "s": 1.4 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "storybook/sundial",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Sundial",
+  "summary": "Stone pedestal sundial with a brass dial and a shadow that moves across the hours. For garden or time-passing scenes.",
+  "tags": ["sundial", "garden", "time", "stone", "brass", "shadow", "old", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~520 px tall at 1" },
+    { "name": "stone", "type": "colour", "default": "#A9A7A0", "note": "stone colour" },
+    { "name": "brass", "type": "colour", "default": "#C99A4A", "note": "dial colour" },
+    { "name": "move", "type": "boolean", "default": true, "note": "shadow sweeps across the dial" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1500, "s": 1 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

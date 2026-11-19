@@ -1,0 +1,67 @@
+{
+  "id": "storybook/carriage-clock",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Carriage clock",
+  "summary": "Brass carriage clock with glass sides, carrying handle and moving hands. For study, bedroom or time-passing scenes.",
+  "tags": [
+    "carriage clock",
+    "clock",
+    "brass",
+    "time",
+    "victorian",
+    "antique",
+    "hands",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1500,
+      "note": "bottom centre"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~440 px tall at 1"
+    },
+    {
+      "name": "metal",
+      "type": "colour",
+      "default": "#B98B52",
+      "note": "brass colour"
+    },
+    {
+      "name": "speed",
+      "type": "number",
+      "default": 1,
+      "min": 0,
+      "max": 10,
+      "note": "hand speed multiplier, 0 stops the hands"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1300,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

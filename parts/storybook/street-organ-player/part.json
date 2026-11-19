@@ -1,0 +1,79 @@
+{
+  "id": "storybook/street-organ-player",
+  "type": "character",
+  "style": "storybook",
+  "name": "Street organ player",
+  "summary": "Street organ player turning a barrel organ on a strap, with tiny music notes drifting up, for busy street scenes.",
+  "tags": [
+    "street organ",
+    "barrel organ",
+    "organ grinder",
+    "music",
+    "busker",
+    "victorian",
+    "street",
+    "storybook"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1580,
+      "note": "feet"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; ~640 px tall at 1"
+    },
+    {
+      "name": "coat",
+      "type": "colour",
+      "default": "#8A6A45"
+    },
+    {
+      "name": "hatColour",
+      "type": "colour",
+      "default": "#4A3B2E"
+    },
+    {
+      "name": "skin",
+      "type": "colour",
+      "default": "#E8B990"
+    },
+    {
+      "name": "hairColour",
+      "type": "colour",
+      "default": "#4A3324"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "note": "face left"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "note": "px per frame"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1580,
+    "s": 1
+  },
+  "uses": [
+    "storybook/style",
+    "storybook/townsfolk"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

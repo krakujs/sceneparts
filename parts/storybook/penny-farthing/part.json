@@ -1,0 +1,22 @@
+{
+  "id": "storybook/penny-farthing",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Penny farthing",
+  "summary": "High-wheel Victorian bicycle with a huge front wheel and tiny rear wheel; the spokes turn when rolling.",
+  "tags": ["penny farthing", "bicycle", "high wheel", "victorian", "vehicle", "history", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1500, "note": "ground, bottom centre" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~730 px wide, ~580 px tall at 1" },
+    { "name": "rolling", "type": "boolean", "default": true, "note": "wheels spin" },
+    { "name": "frame", "type": "colour", "default": "#2E3F5C" },
+    { "name": "flip", "type": "boolean", "note": "face left" }
+  ],
+  "example": { "x": 540, "y": 1450, "s": 1.2 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "storybook/pocket-watch",
+  "type": "prop",
+  "style": "storybook",
+  "name": "Pocket watch",
+  "summary": "Gold pocket watch on a chain with an open lid and a ticking second hand; a close-up prop for time or clue moments.",
+  "tags": ["pocket watch", "watch", "clock", "gold", "chain", "time", "victorian", "storybook"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540 },
+    { "name": "y", "type": "number", "default": 1000, "note": "centre of the watch's bottom edge" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; ~340 px across the case at 1" },
+    { "name": "gold", "type": "colour", "default": "#F2B544" },
+    { "name": "open", "type": "boolean", "default": true, "note": "lid swung open at the side" },
+    { "name": "flip", "type": "boolean", "note": "mirror" }
+  ],
+  "example": { "x": 540, "y": 1100, "s": 1.2 },
+  "uses": ["storybook/style"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

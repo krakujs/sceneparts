@@ -3340,7 +3340,7 @@
     "title": "Storybook: more history people and props",
     "style": "storybook",
     "type": "character",
-    "status": "todo",
+    "status": "done",
     "generator": null,
     "brief": "Extend the existing storybook style (reuse storybook/figure where possible; add new figures if needed) with history archetypes and period props.",
     "names": [
@@ -3458,7 +3458,10 @@
       "treasure map",
       "message bottle"
     ],
-    "count": 113
+    "count": 113,
+    "built": 114,
+    "date": "2026-11-19",
+    "note": "new storybook/townsfolk generator; \"printer press\" built as a press operator (printer-press) next to the printing-press prop"
   },
   {
     "id": "28-core-motion-text",
