@@ -1,0 +1,88 @@
+{
+  "id": "ink-sketch/steam-train",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Steam Train",
+  "summary": "Ink sketch old steam locomotive with chimney, boiler, cab and coal tender.",
+  "tags": [
+    "steam train",
+    "steam engine",
+    "locomotive",
+    "train",
+    "railway",
+    "vintage",
+    "chimney",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x at frame 0"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "rail line: the wheels stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: about 900 px wide and 470 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "boiler and cab colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "chassis, tender and wheel colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "drive",
+        "bob",
+        "pop"
+      ],
+      "note": "drive = wheels turn, body bounces and smoke circles puff from the chimney"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "horizontal speed in px per frame (negative = left; set flip too)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror so the engine faces left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "drive"
+  },
+  "uses": [
+    "flat-vector/steam-train",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

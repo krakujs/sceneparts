@@ -1,0 +1,75 @@
+{
+  "id": "ink-sketch/bamboo",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Bamboo",
+  "summary": "Ink sketch cluster of tall segmented green bamboo canes with leaf sprays at the top; for Asian gardens and forests.",
+  "tags": [
+    "bamboo",
+    "bamboo cane",
+    "bamboo grove",
+    "green canes",
+    "plant",
+    "asia",
+    "garden",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the cluster"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the canes stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 420 px wide and 1300 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "cane colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = canes sway in the wind"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/bamboo",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

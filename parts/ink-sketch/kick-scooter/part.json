@@ -1,0 +1,79 @@
+{
+  "id": "ink-sketch/kick-scooter",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Kick scooter",
+  "summary": "Human-powered push scooter in side view facing right, with a long deck and T handlebar; for kids and commute scenes.",
+  "tags": [
+    "kick scooter",
+    "scooter",
+    "push scooter",
+    "kids",
+    "ride",
+    "commute",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x at frame 0"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the wheels stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale: about 570 px wide and 560 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#5B86C4",
+      "note": "deck and stem colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "roll",
+        "pop"
+      ],
+      "note": "roll = wheel spokes turn; pop = scales in over the first 20 frames"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "horizontal speed in px per frame (negative = left; set flip too)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror so the scooter faces left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "roll"
+  },
+  "uses": [
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

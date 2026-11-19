@@ -1,0 +1,96 @@
+{
+  "id": "ink-sketch/bullock-cart",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Bullock Cart",
+  "summary": "Ink sketch indian-style wooden bullock cart with spoked wheels and a curved canopy, pulled by an ox by default.",
+  "tags": [
+    "bullock cart",
+    "ox cart",
+    "cart",
+    "wagon",
+    "india",
+    "village",
+    "farm",
+    "wooden",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the whole cart and ox at frame 0"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the wheels and the hooves stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: about 1000 px wide and 620 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "wood colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "canopy colour"
+    },
+    {
+      "name": "animal",
+      "type": "boolean",
+      "default": true,
+      "note": "draw the ink-sketch/ox pulling the cart; false = the cart alone"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "drive",
+        "bob",
+        "pop"
+      ],
+      "note": "drive = spokes turn, cart bounces and the ox walks (also on when vx is not 0)"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "horizontal speed in px per frame (negative = left; set flip too)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror so the ox and tongue face left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "drive",
+    "animal": true
+  },
+  "uses": [
+    "flat-vector/bullock-cart",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

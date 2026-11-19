@@ -1,0 +1,89 @@
+{
+  "id": "ink-sketch/garden-hose",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Garden hose",
+  "summary": "Ink sketch coiled garden hose with a spray nozzle, optionally spraying water; for gardens.",
+  "tags": [
+    "garden hose",
+    "hose",
+    "spray",
+    "water",
+    "nozzle",
+    "garden",
+    "watering",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line under the coil"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 560 px wide (hero size); use about 0.25 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "hose colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "nozzle handle colour"
+    },
+    {
+      "name": "spray",
+      "type": "boolean",
+      "default": true,
+      "note": "true = water drops come out of the nozzle"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "spray"
+      ],
+      "note": "spray = the water drops flow out of the nozzle (needs spray true)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the nozzle then points left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "spray": true,
+    "anim": "spray"
+  },
+  "uses": [
+    "flat-vector/garden-hose",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,82 @@
+{
+  "id": "ink-sketch/spade",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Garden spade",
+  "summary": "Ink sketch square-ended garden spade with a D-grip, standing upright as if pushed into soil.",
+  "tags": [
+    "spade",
+    "garden spade",
+    "shovel",
+    "gardening",
+    "dig",
+    "flat spade",
+    "allotment",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line under the blade heel"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 470 px long (hero size); use about 0.25 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#9AA3B5",
+      "note": "blade colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "wooden shaft and grip colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "dig"
+      ],
+      "note": "dig = the handle lifts and drops while the blade stays on the ground"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the blade then points left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "dig"
+  },
+  "uses": [
+    "flat-vector/spade",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

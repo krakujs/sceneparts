@@ -1,0 +1,88 @@
+{
+  "id": "ink-sketch/unicycle",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Unicycle",
+  "summary": "Ink sketch one big wheel with a fork post and a saddle on top, in side view facing right; wheel spins when driving.",
+  "tags": [
+    "unicycle",
+    "one wheel",
+    "circus",
+    "balance",
+    "wheel",
+    "vehicle",
+    "cycle",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x at frame 0"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the wheel touches y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: about 320 px wide and 400 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#7B5CD6",
+      "note": "post and saddle colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#DDE2EA",
+      "note": "wheel rim colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "drive",
+        "bob",
+        "pop"
+      ],
+      "note": "drive = wheel spins (also on when vx is not 0)"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "horizontal speed in px per frame (negative = left; set flip too)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror so the unicycle faces left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "drive"
+  },
+  "uses": [
+    "flat-vector/unicycle",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

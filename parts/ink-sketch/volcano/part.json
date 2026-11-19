@@ -1,0 +1,81 @@
+{
+  "id": "ink-sketch/volcano",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Volcano",
+  "summary": "Ink sketch brown volcano cone with a glowing crater, orange lava streams and optional rising smoke.",
+  "tags": [
+    "volcano",
+    "lava",
+    "crater",
+    "smoke",
+    "cone",
+    "eruption",
+    "fire mountain",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the part stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 840 px wide and 730 px tall at s = 1 (smoke rises above it)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "cone colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#FF8A3D",
+      "note": "lava colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "smoke"
+      ],
+      "note": "smoke = puffs rise from the crater and fade"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "smoke"
+  },
+  "uses": [
+    "flat-vector/volcano",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

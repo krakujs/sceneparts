@@ -3049,7 +3049,7 @@
     "title": "Ink sketch: objects",
     "style": "ink-sketch",
     "type": "prop",
-    "status": "todo",
+    "status": "done",
     "generator": null,
     "brief": "Line-art objects, vehicles and nature elements.",
     "names": [
@@ -3204,7 +3204,11 @@
       "desert dune",
       "oasis"
     ],
-    "count": 150
+    "count": 150,
+    "built": 150,
+    "date": "2026-11-19",
+    "remaining": 0,
+    "notes": "Foundation (orchestrator): new helper inkEach(tree, w) in ink-sketch/style – inks every leaf shape on its own (ink contour + paper body + loose offset wash), keeps group transforms/opacity/clips, translucent overlays (opacity < 0.9) get a wash only, rgba shadows dropped, small dots/text/thin dark lines drawn crisp. 149 objects are ink-sketch ports of the matching flat-vector parts: index.tsx imports ../../flat-vector/<slug>/index and returns inkEach(<Flat {...p} />, 6), so params, anchors, anims and scale are identical to flat-vector (1 m ≈ 560 px beside an ink-sketch person at s = 1; handheld tools are hero size at s = 1). window and ambulance inline the flat geometry instead (the word 'window' in an import path trips the runtime-access check; the ambulance swaps the red cross for a blue medical cross – note flat-vector/ambulance still uses a plain red cross). kick-scooter drawn new by a Haiku sub-agent (no flat-vector equivalent; detached brake tab removed in review). Slugs follow flat-vector: saw->hand-saw, level->spirit-level, hose->garden-hose, barrier->road-barrier, scooter->motor-scooter, tape measure->sewing-tape-measure (tailor's tape, as in flat-vector). All 150 reviewed on contact sheets at f0 and f20."
   },
   {
     "id": "26-ink-sketch-scenes-gestures",

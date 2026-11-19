@@ -1,0 +1,75 @@
+{
+  "id": "ink-sketch/tv-stand",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "TV Stand",
+  "summary": "Ink sketch low media cabinet with two doors and an open shelf, front view, with no TV on it. For living room scenes.",
+  "tags": [
+    "tv stand",
+    "media cabinet",
+    "tv unit",
+    "living room",
+    "cabinet",
+    "furniture",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 matches a ink-sketch person at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E9D3A9",
+      "note": "cabinet colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#E9D3A9"
+  },
+  "uses": [
+    "flat-vector/tv-stand",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

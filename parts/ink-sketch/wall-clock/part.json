@@ -1,0 +1,78 @@
+{
+  "id": "ink-sketch/wall-clock",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Wall Clock",
+  "summary": "Ink sketch round wall clock with twelve tick marks and a red second hand; anim tick counts the seconds.",
+  "tags": [
+    "wall clock",
+    "clock",
+    "round clock",
+    "time",
+    "office clock",
+    "kitchen clock",
+    "tick",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 760,
+      "note": "wall item: centred on (x, y); default y = 760 is about eye height on the wall"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the clock is about 340 px across"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "rim colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "tick"
+      ],
+      "note": "tick = second hand jumps once a second and the hands turn"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 760,
+    "s": 1,
+    "color": "#3D6FE0",
+    "anim": "tick"
+  },
+  "uses": [
+    "flat-vector/wall-clock",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

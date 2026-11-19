@@ -1,0 +1,86 @@
+{
+  "id": "ink-sketch/door",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Door",
+  "summary": "Ink sketch interior panelled door in a frame with a knob; closed or open to show a dark room. anim open swings it wide.",
+  "tags": [
+    "door",
+    "interior door",
+    "panelled door",
+    "house",
+    "room",
+    "entrance",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the door rests on the floor at y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the door is about 1150 px tall"
+    },
+    {
+      "name": "variant",
+      "type": "enum",
+      "default": "closed",
+      "values": [
+        "closed",
+        "open"
+      ],
+      "note": "closed = door in its frame; open = door swung back, dark room visible"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#A8703F",
+      "note": "door colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "open",
+        "bob",
+        "pop"
+      ],
+      "note": "open = the door swings from closed to open over about 30 frames, then stays open"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (hinge on the right)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "variant": "closed",
+    "color": "#A8703F"
+  },
+  "uses": [
+    "flat-vector/door",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

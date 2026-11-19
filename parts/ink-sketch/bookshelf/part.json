@@ -1,0 +1,76 @@
+{
+  "id": "ink-sketch/bookshelf",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Bookshelf",
+  "summary": "Ink sketch tall open shelf unit filled with coloured book spines and a small potted plant. For libraries.",
+  "tags": [
+    "bookshelf",
+    "bookcase",
+    "shelf",
+    "books",
+    "library",
+    "study",
+    "furniture",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the item rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 matches a ink-sketch person at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#A8703F",
+      "note": "shelf frame colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop"
+      ],
+      "note": "motion only; driven by the frame"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "color": "#A8703F"
+  },
+  "uses": [
+    "flat-vector/bookshelf",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

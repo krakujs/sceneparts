@@ -1,0 +1,85 @@
+{
+  "id": "ink-sketch/log",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Fallen log",
+  "summary": "Ink sketch single long mossy log lying on the ground with its cut ring end showing; for forest floors.",
+  "tags": [
+    "fallen log",
+    "log",
+    "fallen tree",
+    "mossy log",
+    "forest floor",
+    "trunk",
+    "woodland",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the log lies on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 850 px wide and 190 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E9D3A9",
+      "note": "cut-end wood colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "bark colour"
+    },
+    {
+      "name": "color3",
+      "type": "colour",
+      "default": "#4BB46A",
+      "note": "moss colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop"
+      ],
+      "note": "pop = grows in"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the ring end then faces left)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1
+  },
+  "uses": [
+    "flat-vector/log",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

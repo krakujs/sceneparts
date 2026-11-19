@@ -1,0 +1,81 @@
+{
+  "id": "ink-sketch/dead-tree",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Dead tree",
+  "summary": "Ink sketch bare grey-brown tree with leafless branches; for wasteland, winter and eerie or post-apocalyptic scenes.",
+  "tags": [
+    "dead tree",
+    "bare tree",
+    "leafless",
+    "dry tree",
+    "winter tree",
+    "wasteland",
+    "dead",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the trunk"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the trunk stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 900 px wide and 1000 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#7D6A58",
+      "note": "trunk and main limb colour (grey-brown)"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#A08C78",
+      "note": "twig colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = upper branches move slightly in the wind"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/dead-tree",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

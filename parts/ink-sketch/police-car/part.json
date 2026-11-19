@@ -1,0 +1,90 @@
+{
+  "id": "ink-sketch/police-car",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Police Car",
+  "summary": "Ink sketch white and blue police car with a flashing roof light bar, side view facing right; for emergency scenes.",
+  "tags": [
+    "police car",
+    "police",
+    "patrol car",
+    "siren",
+    "emergency",
+    "cop car",
+    "vehicle",
+    "flashing lights",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x at frame 0"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line: the tyres stand on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: about 760 px wide and 340 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFFFFF",
+      "note": "body colour (white by default); the blue stripe is fixed"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#DDE2EA",
+      "note": "wheel rim colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "drive",
+        "bob",
+        "pop",
+        "siren"
+      ],
+      "note": "siren = the roof light bar flashes red and blue; wheels still roll when vx is not 0"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "horizontal speed in px per frame (negative = left; set flip too)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror so the car faces left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "siren"
+  },
+  "uses": [
+    "flat-vector/police-car",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

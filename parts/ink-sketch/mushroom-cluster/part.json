@@ -1,0 +1,76 @@
+{
+  "id": "ink-sketch/mushroom-cluster",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Mushroom cluster",
+  "summary": "Ink sketch group of five forest mushrooms of different sizes on a small mound.",
+  "tags": [
+    "mushroom",
+    "fungi",
+    "forest",
+    "cluster",
+    "toadstool",
+    "woodland",
+    "ground",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the mound rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 760 px wide and 300 px tall, use about 0.4 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "cap colour of the two brown mushrooms"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = caps bob gently"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "color": "#8A5A3C",
+    "anim": "none"
+  },
+  "uses": [
+    "flat-vector/mushroom-cluster",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

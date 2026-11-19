@@ -1,0 +1,81 @@
+{
+  "id": "ink-sketch/pine-tree",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Pine tree",
+  "summary": "Ink sketch tall pine conifer of stacked dark-green triangular tiers on a short trunk; for forests.",
+  "tags": [
+    "pine tree",
+    "pine",
+    "conifer",
+    "evergreen",
+    "fir tree",
+    "forest",
+    "tree",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the trunk"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the trunk stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 680 px wide and 1260 px tall at s = 1; use about 0.5 for a distant tree"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#348A4F",
+      "note": "needle colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5E3B26",
+      "note": "trunk colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = tiers rock gently in the wind"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/pine-tree",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

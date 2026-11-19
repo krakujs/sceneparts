@@ -1,0 +1,78 @@
+{
+  "id": "ink-sketch/mirror",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Mirror",
+  "summary": "Ink sketch oval wall mirror with a wooden or gold frame and a light reflection streak.",
+  "tags": [
+    "mirror",
+    "wall mirror",
+    "oval mirror",
+    "reflection",
+    "bathroom",
+    "bedroom",
+    "frame",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 760,
+      "note": "wall item: centred on (x, y); default y = 760 is about eye height on the wall"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the mirror is about 480 px tall"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#8A5A3C",
+      "note": "frame colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "shine"
+      ],
+      "note": "shine = a glint slides across the glass"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 760,
+    "s": 1,
+    "color": "#8A5A3C",
+    "anim": "shine"
+  },
+  "uses": [
+    "flat-vector/mirror",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

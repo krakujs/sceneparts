@@ -174,3 +174,45 @@ export function ink(n: any, w = 6, key?: React.Key): any {
     </g>
   );
 }
+
+// ---- Per-shape inking (for objects ported from flat geometry) -----------------------------------
+// inkEach(tree) inks every leaf shape on its own, in painter's order: each shape gets its own ink
+// contour, paper body and loose wash, so internal edges (cushions, windows, wheels, petals) stay drawn.
+// Translucent overlays (opacity < 0.9: shading, highlights) only get a wash; rgba drop shadows are dropped;
+// small dots, text and thin dark lines are drawn crisp. Group transforms, opacity and clip/mask are kept.
+const SKIP_TAGS: Record<string, 1> = { defs: 1, clipPath: 1, mask: 1, linearGradient: 1, radialGradient: 1, pattern: 1, filter: 1 };
+function eachEl(n: any, ctx: InkCtx & { op?: number }, w: number, key: React.Key): any {
+  const el = expand(n);
+  if (el === null || el === undefined || typeof el === "boolean" || typeof el === "string" || typeof el === "number") return null;
+  if (Array.isArray(el)) return el.map((c, i) => eachEl(c, ctx, w, i));
+  if (!React.isValidElement(el)) return null;
+  const t = el.type as any, pr: any = el.props;
+  if (t === React.Fragment || t === "g") {
+    const op = (ctx.op ?? 1) * (pr.opacity !== undefined ? +pr.opacity : 1);
+    const c2 = { fill: pr.fill ?? ctx.fill, stroke: pr.stroke ?? ctx.stroke, sw: pr.strokeWidth ?? ctx.sw, op };
+    return (
+      <g key={key} transform={pr.transform} opacity={pr.opacity} clipPath={pr.clipPath} mask={pr.mask}>
+        {kidsOf(pr.children).map((c, i) => eachEl(c, { ...c2, op }, w, i))}
+      </g>
+    );
+  }
+  if (typeof t !== "string") return null;
+  if (SKIP_TAGS[t] || !SHAPES[t]) return React.cloneElement(el as React.ReactElement<any>, { key });
+  const op = (ctx.op ?? 1) * (pr.opacity !== undefined ? +pr.opacity : 1) * (pr.fillOpacity !== undefined ? +pr.fillOpacity : 1);
+  const leafCtx: InkCtx = { fill: ctx.fill, stroke: ctx.stroke, sw: ctx.sw };
+  if (op < 0.9) {
+    return <g key={key} transform={`translate(${(w * 0.67).toFixed(1)} ${(w * 0.5).toFixed(1)})`}>{passEl(el, "wash", leafCtx, w, "w")}</g>;
+  }
+  return (
+    <g key={key}>
+      {passEl(el, "line", leafCtx, w, "l")}
+      {passEl(el, "paper", leafCtx, w, "p")}
+      <g opacity={0.6} transform={`translate(${(w * 0.67).toFixed(1)} ${(w * 0.5).toFixed(1)})`}>{passEl(el, "wash", leafCtx, w, "w")}</g>
+      {passEl(el, "detail", leafCtx, w, "d")}
+    </g>
+  );
+}
+/** Redraw a flat SVG tree as ink, one contour per shape (see above). w = visible line width. */
+export function inkEach(n: any, w = 5): any {
+  return eachEl(n, {}, w, "ie");
+}

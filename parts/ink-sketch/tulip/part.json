@@ -1,0 +1,76 @@
+{
+  "id": "ink-sketch/tulip",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Tulip",
+  "summary": "Ink sketch cup-shaped tulip bloom on a straight stem with two long leaves; use for spring gardens and fields.",
+  "tags": [
+    "tulip",
+    "flower",
+    "bloom",
+    "spring",
+    "garden",
+    "cup",
+    "yellow",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom of the stem rests on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 450 px tall, use about 0.4 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#FFC83D",
+      "note": "cup colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = leaves and bloom move gently"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "color": "#FFC83D",
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/tulip",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

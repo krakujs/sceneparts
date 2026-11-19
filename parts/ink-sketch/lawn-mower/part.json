@@ -1,0 +1,83 @@
+{
+  "id": "ink-sketch/lawn-mower",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Lawn mower",
+  "summary": "Ink sketch push lawn mower with a deck, engine and handle, room scale; for gardens, summer and yard-work scenes.",
+  "tags": [
+    "lawn mower",
+    "mower",
+    "grass",
+    "garden",
+    "yard",
+    "summer",
+    "push mower",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "floor line under the wheels"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: at s = 1 about 630 px wide and 570 px tall; use about 0.5 for a smaller scene"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E8503F",
+      "note": "deck colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5D6578",
+      "note": "engine and handle colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "roll",
+        "vibrate"
+      ],
+      "note": "roll = the wheels turn; vibrate = the engine shakes"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror (the handle then points right)"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "roll"
+  },
+  "uses": [
+    "flat-vector/lawn-mower",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

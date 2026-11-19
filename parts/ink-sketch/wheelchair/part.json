@@ -1,0 +1,88 @@
+{
+  "id": "ink-sketch/wheelchair",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Wheelchair",
+  "summary": "Ink sketch empty manual wheelchair in side view facing right, with a big rear wheel, push rim and small front castor.",
+  "tags": [
+    "wheelchair",
+    "mobility",
+    "accessibility",
+    "chair",
+    "wheels",
+    "medical",
+    "prop",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "ground line: the wheels touch y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 about 450 px wide (hero size)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#3D6FE0",
+      "note": "frame and seat colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#253058",
+      "note": "tyre and push-rim colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "drive",
+        "bob",
+        "pop"
+      ],
+      "note": "drive = wheels spin (also on when vx is not 0)"
+    },
+    {
+      "name": "vx",
+      "type": "number",
+      "default": 0,
+      "note": "horizontal speed in px per frame (negative = left; set flip too)"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror so the chair faces left"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "drive"
+  },
+  "uses": [
+    "flat-vector/wheelchair",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

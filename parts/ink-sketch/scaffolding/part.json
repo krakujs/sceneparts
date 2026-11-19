@@ -1,0 +1,83 @@
+{
+  "id": "ink-sketch/scaffolding",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Scaffolding",
+  "summary": "Ink sketch metal tube scaffold tower with plank decks and cross braces, room scale.",
+  "tags": [
+    "scaffolding",
+    "scaffold",
+    "tower",
+    "construction",
+    "building site",
+    "planks",
+    "builder",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "bottom centre: the tower stands on the floor at y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "room scale: at s = 1 about 700 px wide and 940 px tall; use about 0.5 for a smaller scene"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#9AA3B5",
+      "note": "metal tube colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#C98E55",
+      "note": "plank colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "sway"
+      ],
+      "note": "sway = the tower rocks gently from side to side"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "sway"
+  },
+  "uses": [
+    "flat-vector/scaffolding",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

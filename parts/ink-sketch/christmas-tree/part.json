@@ -1,0 +1,81 @@
+{
+  "id": "ink-sketch/christmas-tree",
+  "type": "scenery",
+  "style": "ink-sketch",
+  "name": "Christmas tree",
+  "summary": "Ink sketch decorated Christmas fir with baubles, garland and a star; lights makes the baubles twinkle.",
+  "tags": [
+    "christmas tree",
+    "xmas tree",
+    "fir tree",
+    "holiday",
+    "baubles",
+    "winter",
+    "decorated tree",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x of the trunk"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1600,
+      "note": "ground line: the trunk stands on y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "about 700 px wide and 1180 px tall at s = 1"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#348A4F",
+      "note": "fir colour"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#5E3B26",
+      "note": "trunk colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "pop",
+        "lights"
+      ],
+      "note": "lights = the baubles twinkle one after another"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1600,
+    "s": 1,
+    "anim": "lights"
+  },
+  "uses": [
+    "flat-vector/christmas-tree",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

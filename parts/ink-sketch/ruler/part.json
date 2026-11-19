@@ -1,0 +1,83 @@
+{
+  "id": "ink-sketch/ruler",
+  "type": "prop",
+  "style": "ink-sketch",
+  "name": "Ruler",
+  "summary": "Ink sketch flat wooden or plastic ruler with chunky tick marks and no numbers; for school, drawing and measuring scenes.",
+  "tags": [
+    "ruler",
+    "measure",
+    "measuring",
+    "school",
+    "drawing",
+    "wood",
+    "straightedge",
+    "ink",
+    "sketch"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1560,
+      "note": "bottom centre: the ruler lies on the floor at y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; at s = 1 the item is hero size (about 480 px long); use about 0.3 next to a person"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "default": "#E9D3A9",
+      "note": "ruler body colour (sand = wood)"
+    },
+    {
+      "name": "color2",
+      "type": "colour",
+      "default": "#3A4157",
+      "note": "tick mark colour"
+    },
+    {
+      "name": "anim",
+      "type": "enum",
+      "default": "none",
+      "values": [
+        "none",
+        "bob",
+        "wobble",
+        "pop",
+        "slide"
+      ],
+      "note": "slide = the ruler drifts gently from side to side"
+    },
+    {
+      "name": "flip",
+      "type": "boolean",
+      "default": false,
+      "note": "mirror"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 1560,
+    "s": 1,
+    "anim": "slide"
+  },
+  "uses": [
+    "flat-vector/ruler",
+    "ink-sketch/style"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
