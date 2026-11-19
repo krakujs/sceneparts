@@ -1,0 +1,27 @@
+{
+  "id": "core/electric-arc",
+  "type": "effect",
+  "style": "core",
+  "name": "Electric arc",
+  "summary": "Jagged lightning bolt with glow between two points, re-rolled every two frames; for zaps, power-ups and tension.",
+  "tags": ["lightning", "electric", "arc", "bolt", "zap", "glow"],
+  "params": [
+    { "name": "x1", "type": "number", "default": 200, "note": "start x" },
+    { "name": "y1", "type": "number", "default": 900, "note": "start y" },
+    { "name": "x2", "type": "number", "default": 880, "note": "end x" },
+    { "name": "y2", "type": "number", "default": 1000, "note": "end y" },
+    { "name": "jag", "type": "number", "default": 70, "note": "zigzag amplitude in px" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale about the middle of the bolt" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "seed", "type": "string", "default": "arc", "note": "change for a different bolt" },
+    { "name": "color", "type": "colour", "note": "glow colour; default electric blue" }
+  ],
+  "example": { "x1": 180, "y1": 900, "x2": 900, "y2": 1000, "jag": 70 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

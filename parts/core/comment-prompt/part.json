@@ -1,0 +1,25 @@
+{
+  "id": "core/comment-prompt",
+  "type": "text",
+  "style": "core",
+  "name": "Comment prompt",
+  "summary": "Speech-bubble icon with typing dots, then a short comment bubble pops out; for comment calls to action.",
+  "tags": ["comment", "speech bubble", "typing", "reply", "call to action", "chat", "prompt"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "text", "type": "string", "default": "So true!", "note": "the comment shown in the bubble; keep it short" },
+    { "name": "popAt", "type": "number", "default": 30, "note": "frames after at when the comment pops out" },
+    { "name": "color", "type": "colour", "note": "icon colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "text": "So true!", "popAt": 30 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

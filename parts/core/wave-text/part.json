@@ -1,0 +1,27 @@
+{
+  "id": "core/wave-text",
+  "type": "text",
+  "style": "core",
+  "name": "Wave text",
+  "summary": "Letters that ride a continuous sine wave, for friendly, bouncy or summery titles and greetings.",
+  "tags": ["wave", "wavy", "sine", "letters", "friendly", "title", "text"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame; overrides at when set" },
+    { "name": "text", "type": "string", "default": "Hello there", "note": "the words to wave" },
+    { "name": "size", "type": "number", "default": 120, "note": "font size; shrinks to fit 980 px" },
+    { "name": "amp", "type": "number", "default": 28, "note": "wave height in px at size 120" },
+    { "name": "speed", "type": "number", "default": 0.12, "note": "wave speed (radians per frame)" },
+    { "name": "color", "type": "colour", "note": "letter colour; default style accent" }
+  ],
+  "example": { "text": "Hello there", "size": 120, "amp": 34 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

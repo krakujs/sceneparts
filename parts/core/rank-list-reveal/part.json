@@ -1,0 +1,25 @@
+{
+  "id": "core/rank-list-reveal",
+  "type": "text",
+  "style": "core",
+  "name": "Rank list reveal",
+  "summary": "Up to five ranked rows that reveal one by one from the bottom rank up to #1, with numbered circles.",
+  "tags": ["ranking", "list", "top 5", "reveal", "numbered list", "countdown", "text"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y; the list grows with the items" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "title", "type": "string", "default": "Top 5 weirdest animals", "note": "heading above the list" },
+    { "name": "items", "type": "string", "default": "Hummingbirds|Sloths|Octopuses|Mantis shrimp|Axolotls", "note": "items separated by | ; first item is rank 1, up to 5" },
+    { "name": "step", "type": "number", "default": 14, "note": "frames between each reveal" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "title": "Top 5 weirdest animals", "items": "Hummingbirds|Sloths|Octopuses|Mantis shrimp|Axolotls", "step": 14 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

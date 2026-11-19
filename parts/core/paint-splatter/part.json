@@ -1,0 +1,25 @@
+{
+  "id": "core/paint-splatter",
+  "type": "effect",
+  "style": "core",
+  "name": "Paint splatter",
+  "summary": "Colourful paint splat with dripping paint and flying spatter dots; for art, colour and messy reveals.",
+  "tags": ["paint", "splatter", "splat", "drip", "colour", "art"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "splat centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "splat centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "size", "type": "number", "default": 220, "note": "splat radius in px" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "seed", "type": "string", "default": "paint", "note": "change for a different splat shape" },
+    { "name": "color", "type": "colour", "note": "main paint colour; default the style accent" }
+  ],
+  "example": { "x": 540, "y": 900, "size": 220 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

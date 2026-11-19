@@ -1,0 +1,22 @@
+{
+  "id": "core/film-burn",
+  "type": "effect",
+  "style": "core",
+  "name": "Film burn",
+  "summary": "Glowing orange and white film-burn blob that burns in from an edge, blows out to white and fades.",
+  "tags": ["film burn", "light leak", "burn", "glow", "retro", "film"],
+  "params": [
+    { "name": "edge", "type": "enum", "default": "left", "values": ["left", "right", "top", "bottom"], "note": "edge the burn enters from" },
+    { "name": "opacity", "type": "number", "default": 0.95, "note": "peak opacity, 0 to 1" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "len", "type": "number", "default": 40, "note": "frames the burn lasts" }
+  ],
+  "example": { "edge": "left", "len": 40 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

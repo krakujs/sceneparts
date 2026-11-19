@@ -1,0 +1,28 @@
+{
+  "id": "core/karaoke-highlight",
+  "type": "text",
+  "style": "core",
+  "name": "Karaoke highlight",
+  "summary": "A full sentence on screen with an accent colour sweeping through it, for sing-along lyrics and read-along captions.",
+  "tags": ["karaoke", "lyrics", "sweep", "highlight", "sing along", "caption", "text"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame; overrides at when set" },
+    { "name": "text", "type": "string", "default": "Sing it with me now", "note": "the sentence to sweep" },
+    { "name": "size", "type": "number", "default": 90, "note": "font size; shrinks if the sentence runs long" },
+    { "name": "delay", "type": "number", "default": 6, "note": "frames before the sweep starts" },
+    { "name": "dur", "type": "number", "default": 60, "note": "frames for the sweep to finish" },
+    { "name": "seed", "type": "string", "default": "karaoke", "note": "unique id prefix; change if two copies share a screen" },
+    { "name": "color", "type": "colour", "note": "sweep colour; default style accent" }
+  ],
+  "example": { "text": "Sing it with me now", "size": 100, "dur": 50 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

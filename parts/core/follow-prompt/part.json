@@ -1,0 +1,25 @@
+{
+  "id": "core/follow-prompt",
+  "type": "text",
+  "style": "core",
+  "name": "Follow prompt",
+  "summary": "Follow pill with a person-plus icon that gets tapped, ripples and turns into Following with a tick.",
+  "tags": ["follow", "button", "call to action", "pill", "tap", "social", "prompt"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1000, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "w", "type": "number", "default": 520, "note": "button width" },
+    { "name": "clickAt", "type": "number", "default": 24, "note": "frame of the tap, after at" },
+    { "name": "color", "type": "colour", "note": "button colour before the tap; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "w": 520, "clickAt": 24 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

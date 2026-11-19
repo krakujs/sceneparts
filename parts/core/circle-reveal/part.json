@@ -1,0 +1,24 @@
+{
+  "id": "core/circle-reveal",
+  "type": "effect",
+  "style": "core",
+  "name": "Circle reveal",
+  "summary": "Frame covered in colour with a circular hole that grows to reveal the scene, or shrinks to close it.",
+  "tags": ["circle reveal", "iris", "transition", "circle wipe", "reveal", "scene change"],
+  "params": [
+    { "name": "mode", "type": "enum", "default": "out", "values": ["in", "out"], "note": "out grows the hole to reveal, in shrinks it to cover" },
+    { "name": "x", "type": "number", "default": 540, "note": "centre of the hole, x in px (0..1080)" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre of the hole, y in px (0..1920)" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "len", "type": "number", "default": 24, "note": "frames the reveal takes" },
+    { "name": "color", "type": "colour", "default": "#1a1410", "note": "cover colour" }
+  ],
+  "example": { "mode": "out", "x": 540, "y": 960, "len": 24 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

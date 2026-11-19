@@ -1,0 +1,22 @@
+{
+  "id": "core/crt-curvature",
+  "type": "effect",
+  "style": "core",
+  "name": "CRT curvature",
+  "summary": "Old-TV screen frame: dark bezel with rounded, bulging screen corners, inner vignette and faint scanlines.",
+  "tags": ["crt", "old tv", "retro", "curved screen", "bezel", "vignette"],
+  "params": [
+    { "name": "scan", "type": "number", "default": 0.14, "note": "scanline strength inside the screen, 0 to 1" },
+    { "name": "vignette", "type": "number", "default": 0.6, "note": "darkening toward the screen edges, 0 to 1" },
+    { "name": "seed", "type": "string", "default": "crt", "note": "change to give a separate instance its own ids" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "scan": 0.14, "vignette": 0.6 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

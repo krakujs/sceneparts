@@ -1,0 +1,21 @@
+{
+  "id": "core/vhs-lines",
+  "type": "effect",
+  "style": "core",
+  "name": "VHS lines",
+  "summary": "Retro VHS tape overlay: rolling tracking band, noise lines, colour fringes and a PLAY label in the corner.",
+  "tags": ["vhs", "retro", "tape", "noise", "glitch", "80s"],
+  "params": [
+    { "name": "intensity", "type": "number", "default": 0.6, "note": "strength of the whole effect, 0 to 1" },
+    { "name": "seed", "type": "string", "default": "vhs", "note": "change for a different noise pattern" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "intensity": 0.6 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

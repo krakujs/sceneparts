@@ -1,0 +1,26 @@
+{
+  "id": "core/top-five-countdown",
+  "type": "text",
+  "style": "core",
+  "name": "Top five countdown",
+  "summary": "Huge #5 to #1 countdown card; each number punches in with its title, for top-list videos.",
+  "tags": ["countdown", "top 5", "top five", "ranking", "list", "numbers", "text"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; card is 900×760 at s = 1" },
+    { "name": "from", "type": "number", "default": 5, "note": "top N, from 5 to 10; counts down from this number to 1" },
+    { "name": "items", "type": "string", "default": "Weirdest|Strangest|Scariest|Funniest|Best", "note": "titles separated by |, in countdown order (first is the highest number)" },
+    { "name": "step", "type": "number", "default": 40, "note": "frames each number stays on screen" },
+    { "name": "color", "type": "colour", "note": "card colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "from": 5, "items": "Weirdest|Strangest|Scariest|Funniest|Best", "step": 40 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

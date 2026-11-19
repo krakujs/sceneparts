@@ -1,0 +1,23 @@
+{
+  "id": "core/scroll-hint",
+  "type": "effect",
+  "style": "core",
+  "name": "Scroll hint",
+  "summary": "Mouse outline with a dot sliding down, fading chevrons and a scroll label; for prompting viewers to scroll.",
+  "tags": ["scroll", "mouse", "hint", "swipe down", "arrow", "icon", "animation"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 900, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; about 280 px tall at s = 1" },
+    { "name": "color", "type": "colour", "note": "scroll dot colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "x": 540, "y": 900, "s": 1 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

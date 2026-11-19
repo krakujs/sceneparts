@@ -1,0 +1,23 @@
+{
+  "id": "core/flash-white",
+  "type": "effect",
+  "style": "core",
+  "name": "Flash white",
+  "summary": "Quick full-frame white flash with adjustable attack and decay; for hits, camera pops and beat accents.",
+  "tags": ["flash", "white flash", "flash cut", "impact", "transition", "beat"],
+  "params": [
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "attack", "type": "number", "default": 2, "note": "frames to reach full brightness" },
+    { "name": "decay", "type": "number", "default": 10, "note": "frames to fade back out after the peak" },
+    { "name": "peak", "type": "number", "default": 1, "note": "peak opacity, 0 to 1" },
+    { "name": "color", "type": "colour", "default": "#ffffff", "note": "flash colour" }
+  ],
+  "example": { "attack": 2, "decay": 10, "peak": 1 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

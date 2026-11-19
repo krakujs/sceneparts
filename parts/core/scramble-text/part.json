@@ -1,0 +1,27 @@
+{
+  "id": "core/scramble-text",
+  "type": "text",
+  "style": "core",
+  "name": "Scramble text",
+  "summary": "Random characters that flicker and settle into the real word left to right, for hacker reveals and data-style titles.",
+  "tags": ["scramble", "decode", "hacker", "reveal", "random letters", "tech", "text"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame; overrides at when set" },
+    { "name": "text", "type": "string", "default": "ACCESS GRANTED", "note": "the word the characters settle into" },
+    { "name": "size", "type": "number", "default": 120, "note": "font size; shrinks to fit 980 px" },
+    { "name": "stagger", "type": "number", "default": 3, "note": "frames between characters settling" },
+    { "name": "seed", "type": "string", "default": "scramble", "note": "change to get a different scramble" },
+    { "name": "color", "type": "colour", "note": "final text colour; default style accent" }
+  ],
+  "example": { "text": "ACCESS GRANTED", "size": 120, "stagger": 2 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

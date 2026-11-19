@@ -1,0 +1,24 @@
+{
+  "id": "core/true-false-stamp",
+  "type": "text",
+  "style": "core",
+  "name": "True false stamp",
+  "summary": "Big rotated TRUE (green) or FALSE (red) stamp that slams down; for myth-busting and quiz verdicts.",
+  "tags": ["true", "false", "stamp", "verdict", "myth", "quiz", "text"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; stamp is 780×300 at s = 1" },
+    { "name": "verdict", "type": "enum", "values": ["TRUE", "FALSE"], "default": "TRUE", "note": "stamp word and default colour" },
+    { "name": "color", "type": "colour", "note": "stamp colour; default green for TRUE, red for FALSE" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "verdict": "TRUE" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "core/like-prompt",
+  "type": "text",
+  "style": "core",
+  "name": "Like prompt",
+  "summary": "Outline heart that gets tapped, fills red, bursts small hearts and ticks its count up; for like calls to action.",
+  "tags": ["like", "heart", "button", "call to action", "reaction", "count", "prompt"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "likes", "type": "number", "default": 1200, "note": "count shown before the tap; ticks up by one on the tap" },
+    { "name": "clickAt", "type": "number", "default": 24, "note": "frame of the tap, after at" },
+    { "name": "color", "type": "colour", "note": "heart colour when filled; default red" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "likes": 1200, "clickAt": 24 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

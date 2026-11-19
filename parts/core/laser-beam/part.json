@@ -1,0 +1,26 @@
+{
+  "id": "core/laser-beam",
+  "type": "effect",
+  "style": "core",
+  "name": "Laser beam",
+  "summary": "Glowing straight laser that fires between two points with a white core and impact sparks; for shots and zaps.",
+  "tags": ["laser", "beam", "shot", "glow", "zap", "sci-fi"],
+  "params": [
+    { "name": "x1", "type": "number", "default": 160, "note": "muzzle x" },
+    { "name": "y1", "type": "number", "default": 1000, "note": "muzzle y" },
+    { "name": "x2", "type": "number", "default": 920, "note": "impact x" },
+    { "name": "y2", "type": "number", "default": 760, "note": "impact y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale about the middle of the beam" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "seed", "type": "string", "default": "laser", "note": "change for different sparks" },
+    { "name": "color", "type": "colour", "note": "beam colour; default the style accent" }
+  ],
+  "example": { "x1": 160, "y1": 1000, "x2": 920, "y2": 760 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

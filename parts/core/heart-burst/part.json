@@ -1,0 +1,27 @@
+{
+  "id": "core/heart-burst",
+  "type": "effect",
+  "style": "core",
+  "name": "Heart burst",
+  "summary": "A big heart pops in and bursts into many small hearts that drift outward and fade; for love, likes and thanks.",
+  "tags": ["heart", "burst", "love", "like", "hearts", "pop"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "size", "type": "number", "default": 260, "note": "width of the big heart in px" },
+    { "name": "burstAt", "type": "number", "default": 12, "note": "frame inside the shot when the heart bursts" },
+    { "name": "count", "type": "number", "default": 20, "note": "small hearts, 4 to 40" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "seed", "type": "string", "default": "heart", "note": "change for a different spray" },
+    { "name": "color", "type": "colour", "note": "big heart colour; default the style accent" }
+  ],
+  "example": { "x": 540, "y": 900, "size": 260, "count": 20 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

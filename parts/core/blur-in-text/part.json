@@ -1,0 +1,27 @@
+{
+  "id": "core/blur-in-text",
+  "type": "text",
+  "style": "core",
+  "name": "Blur in text",
+  "summary": "Text that fades from a heavy blur to sharp focus, for soft, dreamy or rack-focus style title entrances.",
+  "tags": ["blur", "focus", "fade in", "soft", "dreamy", "title", "text"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame; overrides at when set" },
+    { "name": "text", "type": "string", "default": "Into focus", "note": "the words that sharpen" },
+    { "name": "size", "type": "number", "default": 130, "note": "font size; shrinks to fit 980 px" },
+    { "name": "len", "type": "number", "default": 26, "note": "frames to reach full focus" },
+    { "name": "seed", "type": "string", "default": "blur", "note": "unique id prefix for the filter" },
+    { "name": "color", "type": "colour", "note": "text colour; default style accent" }
+  ],
+  "example": { "text": "Into focus", "size": 140, "len": 30 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

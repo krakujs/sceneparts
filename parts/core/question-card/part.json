@@ -1,0 +1,25 @@
+{
+  "id": "core/question-card",
+  "type": "text",
+  "style": "core",
+  "name": "Question card",
+  "summary": "Card with a big question-mark badge and a question text that pops in; for quiz and hook frames.",
+  "tags": ["question", "quiz", "card", "hook", "question mark", "trivia", "text"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1400, "note": "centre y; the card grows with the question" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "w", "type": "number", "default": 820, "note": "card width" },
+    { "name": "question", "type": "string", "default": "Which animal has three hearts?", "note": "question text; wraps to up to four lines" },
+    { "name": "color", "type": "colour", "note": "badge colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "question": "Which animal has three hearts?" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

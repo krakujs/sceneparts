@@ -1,0 +1,23 @@
+{
+  "id": "core/scanlines",
+  "type": "effect",
+  "style": "core",
+  "name": "Scanlines",
+  "summary": "Thin dark horizontal lines across the frame with a slow rolling brighter band; for CRT and retro looks.",
+  "tags": ["scanlines", "crt", "retro", "lines", "overlay", "screen"],
+  "params": [
+    { "name": "opacity", "type": "number", "default": 0.35, "note": "strength of the lines, 0 to 1" },
+    { "name": "gap", "type": "number", "default": 8, "note": "spacing between lines in px, 4 to 40" },
+    { "name": "color", "type": "colour", "default": "#000000", "note": "line colour" },
+    { "name": "seed", "type": "string", "default": "scan", "note": "change to give a separate instance its own id" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "opacity": 0.35, "gap": 8 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

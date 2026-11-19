@@ -1,0 +1,26 @@
+{
+  "id": "core/pop-words",
+  "type": "text",
+  "style": "core",
+  "name": "Pop words",
+  "summary": "A line of words that each pop in with overshoot and a slight tilt, one after another, for punchy captions.",
+  "tags": ["pop", "words", "bounce in", "caption", "headline", "stagger", "text"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame; overrides at when set" },
+    { "name": "text", "type": "string", "default": "Big ideas pop", "note": "words separated by spaces" },
+    { "name": "size", "type": "number", "default": 110, "note": "font size; shrinks to fit 980 px" },
+    { "name": "stagger", "type": "number", "default": 7, "note": "frames between words" },
+    { "name": "color", "type": "colour", "note": "word colour; default style accent" }
+  ],
+  "example": { "text": "Pop goes the word", "size": 120, "stagger": 8 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

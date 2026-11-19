@@ -1,0 +1,25 @@
+{
+  "id": "core/ink-drop",
+  "type": "effect",
+  "style": "core",
+  "name": "Ink drop",
+  "summary": "Ink drop falls in, hits and blooms into a soft ink cloud with ripples; for opening reveals and title drops.",
+  "tags": ["ink", "drop", "bloom", "ripple", "reveal", "splash"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "impact x" },
+    { "name": "y", "type": "number", "default": 960, "note": "impact y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "drop", "type": "number", "default": 620, "note": "fall height in px above the impact" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "seed", "type": "string", "default": "ink", "note": "change for a different cloud" },
+    { "name": "color", "type": "colour", "note": "ink colour; default the style ink" }
+  ],
+  "example": { "x": 540, "y": 960, "drop": 620 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

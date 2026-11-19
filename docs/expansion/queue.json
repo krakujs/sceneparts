@@ -3468,7 +3468,7 @@
     "title": "Core: motion text, transitions and effects",
     "style": "core",
     "type": "effect",
-    "status": "todo",
+    "status": "done",
     "generator": null,
     "brief": "Style-free animated text treatments and screen effects (all SVG): kinetic typography, wipes, reveals, overlays.",
     "names": [
@@ -3562,6 +3562,9 @@
       "save prompt",
       "share prompt"
     ],
-    "count": 89
+    "count": 89,
+    "built": 77,
+    "date": "2026-11-19",
+    "notes": "77 parts. 12 names skipped as covered by existing core parts or not drawable as an overlay: focus lines and motion blur streak (core/speed-lines), pointer tap (core/pointer-hand), swipe up hint (core/swipe-gesture), counting text (core/number-counter), big number reveal (core/big-stat), old film scratches (core/film-grain-overlay), url bar (core/browser-frame, core/search-bar); shake screen, zoom punch, slide push and heat haze need camera/layer transforms that a part cannot do (engine feature, not built). rotate spin built as a clock-wedge wipe."
   }
 ]

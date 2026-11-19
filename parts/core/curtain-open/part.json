@@ -1,0 +1,21 @@
+{
+  "id": "core/curtain-open",
+  "type": "effect",
+  "style": "core",
+  "name": "Curtain open",
+  "summary": "Red velvet theatre curtains with gold trim and a scalloped valance that part to reveal the scene, or close to cover it.",
+  "tags": ["curtain", "theatre", "stage", "velvet", "transition", "reveal"],
+  "params": [
+    { "name": "mode", "type": "enum", "default": "out", "values": ["in", "out"], "note": "out parts the curtains to reveal, in closes them" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "len", "type": "number", "default": 40, "note": "frames the curtains take to part or close" }
+  ],
+  "example": { "mode": "out", "len": 40 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

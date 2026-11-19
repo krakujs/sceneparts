@@ -1,0 +1,23 @@
+{
+  "id": "core/cross-animation",
+  "type": "effect",
+  "style": "core",
+  "name": "Cross animation",
+  "summary": "Red circle that draws in, then an X draws inside it with a little shake; for wrong answers and fails.",
+  "tags": ["cross", "x", "wrong", "fail", "error", "icon", "animation"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; circle is 300 px across at s = 1" },
+    { "name": "color", "type": "colour", "note": "circle colour; default red" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "x": 540, "y": 960, "s": 1 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

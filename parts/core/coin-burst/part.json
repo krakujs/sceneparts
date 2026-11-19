@@ -1,0 +1,26 @@
+{
+  "id": "core/coin-burst",
+  "type": "effect",
+  "style": "core",
+  "name": "Coin burst",
+  "summary": "Gold coins fountain up out of a point, flipping as they fall back under gravity; for money, wins and rewards.",
+  "tags": ["coin", "gold", "burst", "money", "reward", "fountain"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "fountain x" },
+    { "name": "y", "type": "number", "default": 960, "note": "fountain y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "count", "type": "number", "default": 18, "note": "coins, 6 to 40" },
+    { "name": "speed", "type": "number", "default": 1, "note": "launch speed multiplier" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "seed", "type": "string", "default": "coins", "note": "change for a different fountain" },
+    { "name": "color", "type": "colour", "note": "accent colour, unused by the gold coins" }
+  ],
+  "example": { "x": 540, "y": 1100, "count": 18 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

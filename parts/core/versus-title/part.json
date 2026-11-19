@@ -1,0 +1,27 @@
+{
+  "id": "core/versus-title",
+  "type": "text",
+  "style": "core",
+  "name": "Versus title",
+  "summary": "Two names slide in from opposite sides of a diagonal split with a VS badge between, for battles and comparisons.",
+  "tags": ["versus", "vs", "battle", "comparison", "split", "duel", "text"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; band is 1200 x 360 at s = 1" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame; overrides at when set" },
+    { "name": "left", "type": "string", "default": "Cats", "note": "name on the accent side, kept short" },
+    { "name": "right", "type": "string", "default": "Dogs", "note": "name on the dark side, kept short" },
+    { "name": "text", "type": "string", "default": "VS", "note": "the badge word between the names" },
+    { "name": "size", "type": "number", "default": 120, "note": "name font size; shrinks to fit" },
+    { "name": "color", "type": "colour", "note": "left side colour; default style accent" }
+  ],
+  "example": { "left": "Cats", "right": "Dogs", "size": 130 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

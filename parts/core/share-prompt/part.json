@@ -1,0 +1,25 @@
+{
+  "id": "core/share-prompt",
+  "type": "text",
+  "style": "core",
+  "name": "Share prompt",
+  "summary": "Share pill with a paper-plane icon that gets tapped; the plane flies off leaving a dotted trail.",
+  "tags": ["share", "paper plane", "send", "button", "call to action", "tap", "prompt"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1000, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "w", "type": "number", "default": 460, "note": "pill width" },
+    { "name": "clickAt", "type": "number", "default": 24, "note": "frame of the tap, after at" },
+    { "name": "color", "type": "colour", "note": "pill colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" }
+  ],
+  "example": { "clickAt": 24 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
