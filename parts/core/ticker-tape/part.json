@@ -1,0 +1,23 @@
+{
+  "id": "core/ticker-tape",
+  "type": "text",
+  "style": "core",
+  "name": "Ticker tape",
+  "summary": "Full-width thin strip with items scrolling right to left continuously, separated by dots.",
+  "tags": ["ticker", "ticker tape", "scrolling text", "news ticker", "marquee", "headlines", "strip"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x; keep 540 for full width" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "items", "type": "string[]", "default": ["Top story", "Market update", "Weather ahead"], "note": "scrolled in order, separated by dots" },
+    { "name": "color", "type": "colour", "note": "separator dot colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "items": ["Breaking: the bridge reopens today", "Weather: sunshine all week", "Markets close higher"] },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

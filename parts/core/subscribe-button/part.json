@@ -1,0 +1,24 @@
+{
+  "id": "core/subscribe-button",
+  "type": "text",
+  "style": "core",
+  "name": "Subscribe button",
+  "summary": "Generic red pill button with a bell; it gets pressed, rippled and turns grey as SUBSCRIBED with a tick.",
+  "tags": ["subscribe", "button", "follow", "bell", "click", "pill", "call to action"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1000, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "w", "type": "number", "default": 640, "note": "button width" },
+    { "name": "clickAt", "type": "number", "default": 24, "note": "frame of the click, after at" },
+    { "name": "color", "type": "colour", "note": "button colour before the click; default red" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "w": 640, "clickAt": 24 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

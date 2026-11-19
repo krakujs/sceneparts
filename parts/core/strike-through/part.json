@@ -1,0 +1,78 @@
+{
+  "id": "core/strike-through",
+  "type": "effect",
+  "style": "core",
+  "name": "Strike through",
+  "summary": "Thick marker slash across a word region, as a line, a double line or a cross; draws itself.",
+  "tags": [
+    "strike",
+    "strikethrough",
+    "cross out",
+    "wrong",
+    "delete",
+    "slash",
+    "marker"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "w",
+      "type": "number",
+      "default": 420,
+      "note": "width of the word being struck"
+    },
+    {
+      "name": "kind",
+      "type": "enum",
+      "default": "line",
+      "values": [
+        "line",
+        "double",
+        "cross"
+      ],
+      "note": "line, double line or cross"
+    },
+    {
+      "name": "at",
+      "type": "number",
+      "default": 0,
+      "note": "start as a fraction of the shot (0..1)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "note": "override the style accent"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "w": 420,
+    "kind": "line"
+  },
+  "layer": "screen",
+  "uses": [
+    "core/stat-card"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

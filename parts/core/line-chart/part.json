@@ -1,0 +1,31 @@
+{
+  "id": "core/line-chart",
+  "type": "text",
+  "style": "core",
+  "name": "Line chart",
+  "summary": "Line chart with axes and gridlines; the line draws itself left to right, dots pop in and the last value is labelled.",
+  "tags": ["line chart", "trend", "graph", "chart", "time series", "growth", "statistics", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; card is 940×1040 at s = 1" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "line colour; default the style's accent" },
+    { "name": "title", "type": "string", "default": "Signups per month" },
+    { "name": "values", "type": "object", "default": [12, 18, 15, 24, 22, 31], "note": "array of numbers, one per point" },
+    { "name": "labels", "type": "string[]", "default": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"], "note": "x-axis name per point" },
+    { "name": "unit", "type": "string", "default": "k", "note": "suffix on the last value label" }
+  ],
+  "example": {
+    "title": "Signups per month",
+    "values": [12, 18, 15, 24, 22, 31],
+    "labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+    "unit": "k"
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

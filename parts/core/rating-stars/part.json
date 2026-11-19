@@ -1,0 +1,25 @@
+{
+  "id": "core/rating-stars",
+  "type": "text",
+  "style": "core",
+  "name": "Rating stars",
+  "summary": "Five stars that fill in turn up to a rating (halves allowed), with a '4.5 / 5' label and optional review count.",
+  "tags": ["rating", "stars", "review", "score", "stars rating", "feedback", "reviews", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; card is 960×520 at s = 1" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "star colour; default the style's accent" },
+    { "name": "value", "type": "number", "default": 4.5, "note": "0..5, halves allowed" },
+    { "name": "reviews", "type": "number", "default": 1284, "note": "review count; leave empty to hide" },
+    { "name": "reviewsLabel", "type": "string", "default": "reviews" }
+  ],
+  "example": { "value": 4.5, "reviews": 1284, "reviewsLabel": "reviews" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

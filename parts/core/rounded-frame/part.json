@@ -1,0 +1,25 @@
+{
+  "id": "core/rounded-frame",
+  "type": "text",
+  "style": "core",
+  "name": "Rounded frame",
+  "summary": "Rounded-rectangle frame with an accent border and soft shadow that pops in; optional title chip on the top edge.",
+  "tags": ["frame", "card", "rounded", "border", "window", "panel", "title"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "w", "type": "number", "default": 900, "note": "frame width" },
+    { "name": "h", "type": "number", "default": 1000, "note": "frame height" },
+    { "name": "title", "type": "string", "default": "", "note": "optional chip on the top edge" },
+    { "name": "color", "type": "colour", "note": "border colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "w": 900, "h": 1000, "title": "Today" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

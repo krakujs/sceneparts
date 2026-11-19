@@ -1,0 +1,31 @@
+{
+  "id": "core/comparison-versus",
+  "type": "text",
+  "style": "core",
+  "name": "Comparison versus",
+  "summary": "Two side-by-side cards, left against right, each with a title and three stats, joined by a popping VS badge.",
+  "tags": ["versus", "vs", "comparison", "compare", "before after", "pros and cons", "contrast", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; the pair is 900 wide and 680 tall at s = 1" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "right card colour; default the style's accent" },
+    { "name": "leftTitle", "type": "string", "default": "Old way" },
+    { "name": "rightTitle", "type": "string", "default": "New way" },
+    { "name": "leftStats", "type": "string[]", "default": ["Takes three hours", "Errors on every batch", "Hard to share"], "note": "up to three stats" },
+    { "name": "rightStats", "type": "string[]", "default": ["Done in ten minutes", "Checks itself", "Shared in one click"], "note": "up to three stats" }
+  ],
+  "example": {
+    "leftTitle": "Old way",
+    "rightTitle": "New way",
+    "leftStats": ["Takes three hours", "Errors on every batch", "Hard to share"],
+    "rightStats": ["Done in ten minutes", "Checks itself", "Shared in one click"]
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

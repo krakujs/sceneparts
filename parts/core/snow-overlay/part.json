@@ -1,0 +1,22 @@
+{
+  "id": "core/snow-overlay",
+  "type": "effect",
+  "style": "core",
+  "name": "Snow overlay",
+  "summary": "Full-frame drifting snow in three depth layers at different speeds, looping; for winter and calm moods.",
+  "tags": ["snow", "snowfall", "winter", "flakes", "weather", "ambient"],
+  "params": [
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "density", "type": "number", "default": 1, "note": "flakes multiplier, 0 to 2" },
+    { "name": "speed", "type": "number", "default": 1, "note": "fall speed multiplier" },
+    { "name": "seed", "type": "string", "default": "snow", "note": "change for a different pattern" }
+  ],
+  "example": { "density": 1, "speed": 1 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

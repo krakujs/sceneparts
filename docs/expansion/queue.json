@@ -852,7 +852,7 @@
     "count": 129,
     "built": 128,
     "date": "2026-11-17",
-    "notes": "128 standalone flat-vector home props (no generator). Two size classes: room-scale furniture/appliances/fixtures match a flat-vector person at s = 1 (1 m \u2248 560 px); small handheld items are hero size at s = 1 (use s 0.2-0.3 beside a person). Wall items centre on (x, y) (default y 760); ceiling lights hang from (x, y) (default y 0). Item-specific anims (tick, ring, flicker, glow, on, swing, spin, roll, blow, steam, bubbles, water, sway, open...). 'bowl' not built: covered by flat-vector/dish (vessel bowl, fill none). No brands, logos or text (calendar shows day numbers only)."
+    "notes": "128 standalone flat-vector home props (no generator). Two size classes: room-scale furniture/appliances/fixtures match a flat-vector person at s = 1 (1 m ≈ 560 px); small handheld items are hero size at s = 1 (use s 0.2-0.3 beside a person). Wall items centre on (x, y) (default y 760); ceiling lights hang from (x, y) (default y 0). Item-specific anims (tick, ring, flicker, glow, on, swing, spin, roll, blow, steam, bubbles, water, sway, open...). 'bowl' not built: covered by flat-vector/dish (vessel bowl, fill none). No brands, logos or text (calendar shows day numbers only)."
   },
   {
     "id": "07-flat-vector-tech",
@@ -1081,7 +1081,7 @@
     "count": 101,
     "built": 97,
     "date": "2026-11-17",
-    "notes": "ladder and toolbox already existed (06); key covered by flat-vector/keys; iron tool covered by flat-vector/iron. Slugs: saw->hand-saw, level->spirit-level, hose->garden-hose, barrier->road-barrier, gloves->work-gloves, goggles->safety-goggles, file tool->metal-file, crane->construction-crane, generator->power-generator, torch flame->flaming-torch, bucket of water->water-bucket, sand bag->sand-bag, cog wheel->gear-pair (interlocking gears), measuring tape->sewing-tape-measure (tailor's tape). Deleted in review, rebuild next run: hand drill (unreadable crank drill), fishing net (looked like a racket), vise (two slabs, unrecognisable), harvester (did not read as a combine). Run 2026-11-17 (with 09): rebuilt hand-drill, fishing-net, vise. combine-harvester failed review twice more (read as a tractor with a fan / tall box with a pinwheel) \u2013 orchestrator should draw it directly next time. Run 2026-11-17 (with 10): combine-harvester drawn directly by the orchestrator (header with reel, feeder, cab, grain tank, unloading pipe)."
+    "notes": "ladder and toolbox already existed (06); key covered by flat-vector/keys; iron tool covered by flat-vector/iron. Slugs: saw->hand-saw, level->spirit-level, hose->garden-hose, barrier->road-barrier, gloves->work-gloves, goggles->safety-goggles, file tool->metal-file, crane->construction-crane, generator->power-generator, torch flame->flaming-torch, bucket of water->water-bucket, sand bag->sand-bag, cog wheel->gear-pair (interlocking gears), measuring tape->sewing-tape-measure (tailor's tape). Deleted in review, rebuild next run: hand drill (unreadable crank drill), fishing net (looked like a racket), vise (two slabs, unrecognisable), harvester (did not read as a combine). Run 2026-11-17 (with 09): rebuilt hand-drill, fishing-net, vise. combine-harvester failed review twice more (read as a tractor with a fan / tall box with a pinwheel) – orchestrator should draw it directly next time. Run 2026-11-17 (with 10): combine-harvester drawn directly by the orchestrator (header with reel, feeder, cab, grain tank, unloading pipe)."
   },
   {
     "id": "09-flat-vector-vehicles",
@@ -1319,7 +1319,7 @@
     "built": 104,
     "date": "2026-11-18",
     "remaining": [],
-    "notes": "Building convention: front elevation standing on y (default 1600), params x,y,s,color,color2,anim(none/pop/lights),flip; \u22641000 px wide, \u22641450 px tall; no words (only 'H'/'P' where named), no red-cross emblem, generic not real landmarks. Skipped as covered: 'lighthouse building' (flat-vector/lighthouse), 'bus shelter' (flat-vector/bus-stop), 'radio tower' (flat-vector/antenna-tower), 'bridge arch' (flat-vector/bridge is an arched bridge). Slugs: tower->watchtower, park bench area->park-corner, monument obelisk->obelisk, colosseum-style arena->ancient-arena, billboard blank->billboard. Deleted in review, rebuild next run: hospital (garbled sign and ambulance bay), stadium (read as a top-down oval with a door), swimming pool (floating diving board, weak), playground (floating bars, sparse), oil rig (read as scaffolding), dam (read as a building next to water), temple (read as a tiered cake, no shikhara), diner (read as a train carriage). Fixed in review: nuclear-plant cooling towers given a real waist. Rebuilt 2026-11-18 (batch 11 run): hospital, stadium, swimming-pool, playground, oil-rig, dam, temple, diner."
+    "notes": "Building convention: front elevation standing on y (default 1600), params x,y,s,color,color2,anim(none/pop/lights),flip; ≤1000 px wide, ≤1450 px tall; no words (only 'H'/'P' where named), no red-cross emblem, generic not real landmarks. Skipped as covered: 'lighthouse building' (flat-vector/lighthouse), 'bus shelter' (flat-vector/bus-stop), 'radio tower' (flat-vector/antenna-tower), 'bridge arch' (flat-vector/bridge is an arched bridge). Slugs: tower->watchtower, park bench area->park-corner, monument obelisk->obelisk, colosseum-style arena->ancient-arena, billboard blank->billboard. Deleted in review, rebuild next run: hospital (garbled sign and ambulance bay), stadium (read as a top-down oval with a door), swimming pool (floating diving board, weak), playground (floating bars, sparse), oil rig (read as scaffolding), dam (read as a building next to water), temple (read as a tiered cake, no shikhara), diner (read as a train carriage). Fixed in review: nuclear-plant cooling towers given a real waist. Rebuilt 2026-11-18 (batch 11 run): hospital, stadium, swimming-pool, playground, oil-rig, dam, temple, diner."
   },
   {
     "id": "11-flat-vector-nature",
@@ -1438,7 +1438,7 @@
     "count": 104,
     "built": 102,
     "date": "2026-11-18",
-    "notes": "Nature convention: grounded scenery/props stand on y (1600 scenery, 1560 small props), anim none/pop/sway for plants, flow for water; sky and weather objects are type effect centred on x,y (default y 500); landscape pieces are ~1000 px wide vignettes on y, not full backgrounds. Skipped as covered: 'campfire' (flat-vector/fire-pit), 'egg' (nest has eggs; boiled-egg/fried-egg exist). 'log' is a single fallen log (logs = stack). Deleted in review, rebuild next run: rice paddy (read as a tiered cake), cliff (read as a grey striped building), waterfall (rock was a rounded grey box, read as a water tank). Fixed in review: dead-tree, jungle and playground scaled so nothing touches the frame edge; jungle lianas no longer hang below the ground; playground anim renamed lights -> swing. Run 2026-11-18 (with batch 12): cliff and waterfall rebuilt and kept; rice paddy deleted again (terraces read as a striped rug) \u2013 needs a clearer design, e.g. a hillside with stepped curved terraces and planted rows seen at an angle. Run 2026-11-18 (with batch 13): rice paddy rebuilt as a hillside with five curved stepped terraces, water, rice tufts and palms \u2013 kept."
+    "notes": "Nature convention: grounded scenery/props stand on y (1600 scenery, 1560 small props), anim none/pop/sway for plants, flow for water; sky and weather objects are type effect centred on x,y (default y 500); landscape pieces are ~1000 px wide vignettes on y, not full backgrounds. Skipped as covered: 'campfire' (flat-vector/fire-pit), 'egg' (nest has eggs; boiled-egg/fried-egg exist). 'log' is a single fallen log (logs = stack). Deleted in review, rebuild next run: rice paddy (read as a tiered cake), cliff (read as a grey striped building), waterfall (rock was a rounded grey box, read as a water tank). Fixed in review: dead-tree, jungle and playground scaled so nothing touches the frame edge; jungle lianas no longer hang below the ground; playground anim renamed lights -> swing. Run 2026-11-18 (with batch 12): cliff and waterfall rebuilt and kept; rice paddy deleted again (terraces read as a striped rug) – needs a clearer design, e.g. a hillside with stepped curved terraces and planted rows seen at an angle. Run 2026-11-18 (with batch 13): rice paddy rebuilt as a hillside with five curved stepped terraces, water, rice tufts and palms – kept."
   },
   {
     "id": "12-flat-vector-backgrounds",
@@ -1548,7 +1548,7 @@
     "count": 95,
     "built": 96,
     "date": "2026-11-18",
-    "notes": "Foundation: flat-vector/backdrop (type background, layer bg) \u2013 outdoor sky/land or indoor room generator with time (day/morning/dusk/night) and weather (clear/cloudy/rain/snow/fog/storm); exports Sky, Hills, Mountains, Skyline, TreeLine, Ground, WeatherFx, Window, Room, Lamp, Cloud, Stars, lit, mix, rnd. Every background preset imports it and has time/weather/anim params (weather shows through Window for interiors); centre stage x 220-860, y 1300-1750 kept clear. Note: the check preview draws the style's ground strip over the bottom of backgrounds; in stories use ground:false on shots with a full-frame background. Slugs renamed where a building/scenery part already existed: mall-interior, gym-interior, indoor-pool (swimming pool), police-station-interior, fire-station-interior, cave-interior; playground scene = playground-scene. Deleted in review, rebuild next run: airplane cabin (seat rows tiny at the edges, aisle dominated), car interior (road strip drawn inside the cabin), throne room (throne read as a yellow trophy/cake), podcast studio (too dark, mics too small to read). Fixed in review: moon-surface planet continents were floating in the sky; bus-interior/car-interior passed height instead of h to WeatherFx (rain covered the whole frame). Run 2026-11-18 (with batch 13): airplane-cabin, car-interior, throne-room and podcast-studio rebuilt and kept (airplane-cabin WeatherFx props fixed to numbers for tsc)."
+    "notes": "Foundation: flat-vector/backdrop (type background, layer bg) – outdoor sky/land or indoor room generator with time (day/morning/dusk/night) and weather (clear/cloudy/rain/snow/fog/storm); exports Sky, Hills, Mountains, Skyline, TreeLine, Ground, WeatherFx, Window, Room, Lamp, Cloud, Stars, lit, mix, rnd. Every background preset imports it and has time/weather/anim params (weather shows through Window for interiors); centre stage x 220-860, y 1300-1750 kept clear. Note: the check preview draws the style's ground strip over the bottom of backgrounds; in stories use ground:false on shots with a full-frame background. Slugs renamed where a building/scenery part already existed: mall-interior, gym-interior, indoor-pool (swimming pool), police-station-interior, fire-station-interior, cave-interior; playground scene = playground-scene. Deleted in review, rebuild next run: airplane cabin (seat rows tiny at the edges, aisle dominated), car interior (road strip drawn inside the cabin), throne room (throne read as a yellow trophy/cake), podcast studio (too dark, mics too small to read). Fixed in review: moon-surface planet continents were floating in the sky; bus-interior/car-interior passed height instead of h to WeatherFx (rain covered the whole frame). Run 2026-11-18 (with batch 13): airplane-cabin, car-interior, throne-room and podcast-studio rebuilt and kept (airplane-cabin WeatherFx props fixed to numbers for tsc)."
   },
   {
     "id": "13-flat-vector-sport-music-art",
@@ -1668,7 +1668,7 @@
     "count": 105,
     "built": 101,
     "date": "2026-11-18",
-    "notes": "Prop convention as 06/07: handheld items hero size at s = 1 (~300-600 px), floor/room items 1 m \u2248 560 px; wall items centre on x,y; kite is a sky item on x,y; music-note is type effect on x,y. Skipped as covered: 'guitar' (= acoustic-guitar), 'camera art' (camera, dslr-camera, film-camera exist), 'vinyl' (vinyl-record), 'headphones music' (headphones). Trademark-free slugs: rubik cube -> puzzle-cube, frisbee -> flying-disc. clay pot wheel slug kept as clay-pot-wheel (name 'Pottery wheel'). Redrawn in review: electric-guitar and bass-guitar (body horns were floating wings), sitar (read as a banjo), clay-pot-wheel (read as a coffee grinder), whistle (body detached from lanyard), yo-yo (tiny disc with a spike), yoga-mat (thin line). Examples switched off intro anims so frame 0 is not empty: podium, chess-king, jigsaw-piece, soccer-goal, music-note. Deleted in review, rebuild next run: tuba (read as a coiled target, then as a bin with ring handles \u2013 draw an upright tuba with a big upturned bell, valve cluster and looped tubing), paint tubes (read as markers/sticks twice \u2013 draw large crimped-end tubes with caps, one squeezed). Note: bass-guitar is close to electric-guitar in silhouette (4 strings, longer neck). Run 2026-11-18 (with 14): tuba and paint-tubes drawn by the orchestrator and passed review."
+    "notes": "Prop convention as 06/07: handheld items hero size at s = 1 (~300-600 px), floor/room items 1 m ≈ 560 px; wall items centre on x,y; kite is a sky item on x,y; music-note is type effect on x,y. Skipped as covered: 'guitar' (= acoustic-guitar), 'camera art' (camera, dslr-camera, film-camera exist), 'vinyl' (vinyl-record), 'headphones music' (headphones). Trademark-free slugs: rubik cube -> puzzle-cube, frisbee -> flying-disc. clay pot wheel slug kept as clay-pot-wheel (name 'Pottery wheel'). Redrawn in review: electric-guitar and bass-guitar (body horns were floating wings), sitar (read as a banjo), clay-pot-wheel (read as a coffee grinder), whistle (body detached from lanyard), yo-yo (tiny disc with a spike), yoga-mat (thin line). Examples switched off intro anims so frame 0 is not empty: podium, chess-king, jigsaw-piece, soccer-goal, music-note. Deleted in review, rebuild next run: tuba (read as a coiled target, then as a bin with ring handles – draw an upright tuba with a big upturned bell, valve cluster and looped tubing), paint tubes (read as markers/sticks twice – draw large crimped-end tubes with caps, one squeezed). Note: bass-guitar is close to electric-guitar in silhouette (4 strings, longer neck). Run 2026-11-18 (with 14): tuba and paint-tubes drawn by the orchestrator and passed review."
   },
   {
     "id": "14-flat-vector-science-health-school",
@@ -1790,7 +1790,7 @@
     "count": 107,
     "built": 86,
     "date": "2026-11-18",
-    "notes": "Prop convention as 06/07: handheld items hero size at s = 1, floor items 1 m \u2248 560 px, wall items (x-ray, chalkboard, certificate, school-bell) centre on x,y; organs (heart-organ, brain, lungs, stomach, tooth, ear) are props centred on x,y; dna-helix, atom, molecule, compass-rose, eye, virus, bacteria, germ, blood-drop, heartbeat-line, percentage-sign are type effect on x,y. Skipped as covered (21): microscope science (microscope), magnet science (magnet), telescope science (telescope), wheelchair medical (wheelchair), soap bar (soap), first aid box (first-aid-kit), pencil/ruler/calculator/backpack/lunchbox school (pencil, ruler, calculator, backpack, lunchbox), calendar office (calendar), laptop office (laptop), trophy office (trophy), stopwatch office (stopwatch), rocket startup (rocket), lightbulb idea (light-bulb, anim on), gears idea (gear, gear-pair), puzzle idea (jigsaw-piece), coffee office (coffee-cup), target (arrow-target). Slugs: globe -> desk-globe (earth-globe is the planet effect), eraser board -> board-eraser, school bell -> wall gong (bell is the hand bell). Fixed in review: stomach, stethoscope (read as a slingshot) and crutch (single pole) redrawn by the orchestrator; desk-globe ring (looked like Saturn) replaced by a meridian arc; id-badge lanyard made a V strap; hospital-bed scaled to fit the frame. Trademark tags dropped: band-aid, post-it."
+    "notes": "Prop convention as 06/07: handheld items hero size at s = 1, floor items 1 m ≈ 560 px, wall items (x-ray, chalkboard, certificate, school-bell) centre on x,y; organs (heart-organ, brain, lungs, stomach, tooth, ear) are props centred on x,y; dna-helix, atom, molecule, compass-rose, eye, virus, bacteria, germ, blood-drop, heartbeat-line, percentage-sign are type effect on x,y. Skipped as covered (21): microscope science (microscope), magnet science (magnet), telescope science (telescope), wheelchair medical (wheelchair), soap bar (soap), first aid box (first-aid-kit), pencil/ruler/calculator/backpack/lunchbox school (pencil, ruler, calculator, backpack, lunchbox), calendar office (calendar), laptop office (laptop), trophy office (trophy), stopwatch office (stopwatch), rocket startup (rocket), lightbulb idea (light-bulb, anim on), gears idea (gear, gear-pair), puzzle idea (jigsaw-piece), coffee office (coffee-cup), target (arrow-target). Slugs: globe -> desk-globe (earth-globe is the planet effect), eraser board -> board-eraser, school bell -> wall gong (bell is the hand bell). Fixed in review: stomach, stethoscope (read as a slingshot) and crutch (single pole) redrawn by the orchestrator; desk-globe ring (looked like Saturn) replaced by a meridian arc; id-badge lanyard made a V strap; hospital-bed scaled to fit the frame. Trademark tags dropped: band-aid, post-it."
   },
   {
     "id": "15-flat-vector-faces-reactions",
@@ -1908,15 +1908,15 @@
     "count": 103,
     "built": 102,
     "date": "2026-11-18",
-    "notes": "Foundation (written by the orchestrator): flat-vector/reaction-face (type effect; round flat face with white die-cut sticker edge; eyes x16, mouth x20, brows, tears, extra effects, accessories, anim; exports ReactionFace) and flat-vector/text-sticker (word on a die-cut burst/star/circle/pill/cloud/speech/badge/tag shape, auto-fit text; exports TextSticker, shapePath). 48 face presets + 10 word presets (boom, pow, zap, 100/lol/wow/omg/new/sale/follow-sticker) import them. Batch look: every effect here is a die-cut sticker (white edge, soft shadow, one shade, pop-in from p.f, anim enum), centred on x,y (default 540,960). Hands take a skin param (default #FFC83D, or a SKIN name). thumbs-down reuses thumbs-up turned over. Deleted in review, rebuild next run: fist bump (fists tiny, burst dominated), praying hands (read as two bread rolls), handshake (hands merged into one blob) \u2013 draw them bigger, as two clearly separate hands with visible fingers and different sleeve colours. Fixed in review: anger-mark redrawn as four curved strokes (was a flower-like blob); pointing-hand and muscle-arm scaled up; shh-face finger redesigned so it cannot read as a rude gesture; tags frozen/goofy replaced."
+    "notes": "Foundation (written by the orchestrator): flat-vector/reaction-face (type effect; round flat face with white die-cut sticker edge; eyes x16, mouth x20, brows, tears, extra effects, accessories, anim; exports ReactionFace) and flat-vector/text-sticker (word on a die-cut burst/star/circle/pill/cloud/speech/badge/tag shape, auto-fit text; exports TextSticker, shapePath). 48 face presets + 10 word presets (boom, pow, zap, 100/lol/wow/omg/new/sale/follow-sticker) import them. Batch look: every effect here is a die-cut sticker (white edge, soft shadow, one shade, pop-in from p.f, anim enum), centred on x,y (default 540,960). Hands take a skin param (default #FFC83D, or a SKIN name). thumbs-down reuses thumbs-up turned over. Deleted in review, rebuild next run: fist bump (fists tiny, burst dominated), praying hands (read as two bread rolls), handshake (hands merged into one blob) – draw them bigger, as two clearly separate hands with visible fingers and different sleeve colours. Fixed in review: anger-mark redrawn as four curved strokes (was a flower-like blob); pointing-hand and muscle-arm scaled up; shh-face finger redesigned so it cannot read as a rude gesture; tags frozen/goofy replaced. Run 16: fist-bump and praying-hands rebuilt; handshake still missing (see 16 notes)."
   },
   {
     "id": "16-core-infographics",
     "title": "Infographics, UI and motion text",
     "style": "core",
     "type": "text",
-    "status": "todo",
-    "generator": null,
+    "status": "partial",
+    "generator": "core/stat-card (kit)",
     "brief": "Style-free parts in parts/core/: charts with animated values, arrows, callouts, lower thirds, badges, counters, timelines, progress, maps pins. Use the style palette via p.style.",
     "names": [
       "bar chart",
@@ -2027,7 +2027,16 @@
       "snow overlay",
       "rain overlay"
     ],
-    "count": 107
+    "count": 107,
+    "remaining": [
+      "pointer hand",
+      "swipe gesture",
+      "thumbs rating",
+      "brush stroke"
+    ],
+    "built": 103,
+    "date": "2026-11-19",
+    "notes": "Foundation (written by the orchestrator): core/stat-card is both a part and the shared kit for every core infographic (ui(style) palette from p.style: ink/accent/font + card, muted, soft, good, bad, warn, series[8]; startFrame(p) from `at`; enter/popIn/count/fmt/fitSize; Card, Txt; pathLen/drawDash/DrawPath for draw-on strokes). IMPORTANT: never use pathLength – resvg (previews, gallery, server SVG) ignores it; use DrawPath or drawDash(len, k). Built 103 core parts (charts, counters, lists, diagrams, maps, arrows, marks, frames, social UI, broadcast cards, badges, game HUD, particles and overlays). Fixed in review: 11 parts used pathLength (dotted/pale lines in previews) -> DrawPath/drawDash; loading-spinner arc; ticker-tape text sat on the band edge; box-frame interior was grey; unique clipPath ids for ticker/breaking-news. Deleted in review, rebuild next run: pointer hand (upright single finger with no thumb could read as a rude gesture – draw a clear index finger + visible thumb + curled fingers, default dir right), swipe gesture (hand unreadable), thumbs rating (blocky thumbs, down one unreadable – reuse simple icon shapes with a clear thumb), brush stroke (fringe tail looked like a comb). Also from 15: flat-vector/handshake deleted again (one paddle hand poking the other) – rebuild in flat-vector with clasped hands seen from the side, the top hand's fingers wrapping down over the back of the other."
   },
   {
     "id": "17-flat-vector-fantasy-scifi",
@@ -2187,7 +2196,7 @@
       "streamers",
       "garland",
       "cake candles",
-      "pi\u00f1ata-style donkey",
+      "piñata-style donkey",
       "wedding rings",
       "bouquet",
       "champagne glasses toast",
@@ -2263,7 +2272,7 @@
     "type": "character",
     "status": "todo",
     "generator": null,
-    "brief": "Create parts/pixel-art/style (16-colour palette, crisp square pixels drawn as SVG rects on a 4\u20138 px grid, shapeRendering crispEdges) and a parts/pixel-art/sprite generator (pixel map strings + palette, 2\u20134 frame animation), then people presets as small game-style sprites scaled up.",
+    "brief": "Create parts/pixel-art/style (16-colour palette, crisp square pixels drawn as SVG rects on a 4–8 px grid, shapeRendering crispEdges) and a parts/pixel-art/sprite generator (pixel map strings + palette, 2–4 frame animation), then people presets as small game-style sprites scaled up.",
     "names": [
       "doctor",
       "nurse",

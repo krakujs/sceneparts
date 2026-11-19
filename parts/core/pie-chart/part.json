@@ -1,0 +1,29 @@
+{
+  "id": "core/pie-chart",
+  "type": "text",
+  "style": "core",
+  "name": "Pie chart",
+  "summary": "Pie chart whose slices sweep in clockwise with percentage labels and a legend below; for shares of a whole.",
+  "tags": ["pie chart", "pie", "share", "percentage", "breakdown", "chart", "statistics", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; card is 940×1040 at s = 1" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "first slice colour; default the style's accent" },
+    { "name": "title", "type": "string", "default": "Visits by device" },
+    { "name": "values", "type": "object", "default": [46, 38, 11, 5], "note": "numbers; shares are computed from them" },
+    { "name": "labels", "type": "string[]", "default": ["Desktop", "Mobile", "Tablet", "Other"], "note": "slice names for the legend" }
+  ],
+  "example": {
+    "title": "Visits by device",
+    "values": [46, 38, 11, 5],
+    "labels": ["Desktop", "Mobile", "Tablet", "Other"]
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "core/map-pin",
+  "type": "text",
+  "style": "core",
+  "name": "Map pin",
+  "summary": "Teardrop map pin that drops in with a bounce and a ground shadow; optional label bubble above it.",
+  "tags": [
+    "map",
+    "pin",
+    "location",
+    "marker",
+    "place",
+    "address"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "tip x (the spot on the map)"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "tip y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "default": "",
+      "note": "optional bubble text"
+    },
+    {
+      "name": "at",
+      "type": "number",
+      "default": 0,
+      "note": "start as a fraction of the shot"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "note": "pin colour; default the style accent"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "label": "Our office"
+  },
+  "layer": "screen",
+  "uses": [
+    "core/stat-card"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "core/scoreboard-ui",
+  "type": "text",
+  "style": "core",
+  "name": "Scoreboard UI",
+  "summary": "Sports-style score bug with two team names, two scores that can tick up, and a period and clock box.",
+  "tags": ["scoreboard", "score", "sports", "match", "game", "clock", "live", "score bug"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; the bug is 918×150 at s = 1" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "home score colour; default the style's accent" },
+    { "name": "home", "type": "string", "default": "RED", "note": "home team name, keep it short" },
+    { "name": "away", "type": "string", "default": "BLUE", "note": "away team name, keep it short" },
+    { "name": "homeScore", "type": "number", "default": 2, "note": "pass [from, to] to tick up" },
+    { "name": "awayScore", "type": "number", "default": 1, "note": "pass [from, to] to tick up" },
+    { "name": "clock", "type": "string", "default": "07:42" },
+    { "name": "period", "type": "string", "default": "Q3" }
+  ],
+  "example": { "home": "RED", "away": "BLUE", "homeScore": [0, 3], "awayScore": [0, 1], "clock": "07:42", "period": "Q3" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

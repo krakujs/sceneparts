@@ -1,0 +1,29 @@
+{
+  "id": "core/checklist",
+  "type": "text",
+  "style": "core",
+  "name": "Checklist",
+  "summary": "Card of 3-6 boxes that get ticked one after another with an animated check; done items dim.",
+  "tags": ["checklist", "tick", "steps done", "list", "progress", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "accent override for the title bar; ticks stay green" },
+    { "name": "title", "type": "string", "default": "Launch checklist" },
+    { "name": "items", "type": "string[]", "default": ["Write the brief", "Design the layout", "Review with the team", "Publish"], "note": "3 to 6 items" },
+    { "name": "done", "type": "number", "default": 2, "note": "how many of the items get ticked (the first N)" }
+  ],
+  "example": {
+    "title": "Launch checklist",
+    "items": ["Write the brief", "Design the layout", "Review with the team", "Publish"],
+    "done": 3
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "core/quote-card",
+  "type": "text",
+  "style": "core",
+  "name": "Quote card",
+  "summary": "Card with a big decorative quotation mark, the quote word-wrapped over several lines and an author line.",
+  "tags": ["quote", "quote card", "quotation", "testimonial", "pull quote", "saying", "card"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y; the card grows with the quote" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "quote", "type": "string", "default": "Small steps still move you forward.", "note": "word-wrapped; up to about six lines" },
+    { "name": "author", "type": "string", "default": "Jordan Lee", "note": "shown as an em dash then the name" },
+    { "name": "color", "type": "colour", "note": "quotation mark and author colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "quote": "Small steps still move you forward.", "author": "Jordan Lee" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "core/polaroid-frame",
+  "type": "text",
+  "style": "core",
+  "name": "Polaroid frame",
+  "summary": "White instant-photo card with thick bottom margin and caption, tilted and dropped in; photo area left empty.",
+  "tags": ["polaroid", "photo", "frame", "instant", "picture", "memory", "caption"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 900, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "w", "type": "number", "default": 760, "note": "card width; the photo area is square" },
+    { "name": "rot", "type": "number", "default": -4, "note": "tilt in degrees" },
+    { "name": "caption", "type": "string", "default": "Summer 2019", "note": "handwritten-style caption in the bottom margin" },
+    { "name": "color", "type": "colour", "note": "photo area tint; default the style's soft colour" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "w": 760, "rot": -4, "caption": "Summer 2019" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

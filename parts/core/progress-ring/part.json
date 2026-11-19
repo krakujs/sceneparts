@@ -1,0 +1,26 @@
+{
+  "id": "core/progress-ring",
+  "type": "text",
+  "style": "core",
+  "name": "Progress ring",
+  "summary": "Circular progress ring that fills to a percentage, with the number in the centre and a label below.",
+  "tags": ["progress ring", "progress", "percentage", "ring", "goal", "completion", "gauge", "statistic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; card is 800×780 at s = 1" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "ring colour; default the style's accent" },
+    { "name": "value", "type": "number", "default": 72, "note": "0..100" },
+    { "name": "from", "type": "number", "default": 0, "note": "percentage the ring fills from" },
+    { "name": "label", "type": "string", "default": "Completed" },
+    { "name": "decimals", "type": "number", "default": 0 }
+  ],
+  "example": { "value": 72, "label": "Of the course completed" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

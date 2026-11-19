@@ -1,0 +1,24 @@
+{
+  "id": "core/cta-button",
+  "type": "text",
+  "style": "core",
+  "name": "CTA button",
+  "summary": "Big rounded call-to-action button with text and an arrow; pulsing glow while idle and a shine sweep.",
+  "tags": ["cta", "button", "call to action", "learn more", "click", "pill", "arrow"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1000, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "text", "type": "string", "default": "Learn more", "note": "button label" },
+    { "name": "w", "type": "number", "default": 760, "note": "button width" },
+    { "name": "color", "type": "colour", "note": "button colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "text": "Learn more", "w": 760 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

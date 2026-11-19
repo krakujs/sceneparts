@@ -1,0 +1,24 @@
+{
+  "id": "core/tap-ripple",
+  "type": "effect",
+  "style": "core",
+  "name": "Tap ripple",
+  "summary": "Expanding concentric touch ripples with a fingertip dot at a point, repeating every few frames.",
+  "tags": ["tap", "touch", "ripple", "press", "fingertip", "pulse", "mobile"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "tap point" },
+    { "name": "y", "type": "number", "default": 960, "note": "tap point" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "every", "type": "number", "default": 40, "note": "frames between taps" },
+    { "name": "rings", "type": "number", "default": 3, "note": "concentric ripples per tap" },
+    { "name": "color", "type": "colour", "note": "ripple colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "every": 40, "rings": 3 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

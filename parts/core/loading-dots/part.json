@@ -1,0 +1,24 @@
+{
+  "id": "core/loading-dots",
+  "type": "text",
+  "style": "core",
+  "name": "Loading dots",
+  "summary": "Row of dots that pop in and bounce one after another, with an optional label; for loading or thinking moments.",
+  "tags": ["loading", "loading dots", "spinner", "typing", "wait", "thinking", "progress"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x of the dot row" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y of the dot row" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "n", "type": "number", "default": 3, "min": 1, "max": 8, "note": "number of dots" },
+    { "name": "label", "type": "string", "default": "Loading", "note": "text under the dots; leave empty for none" },
+    { "name": "color", "type": "colour", "note": "dot colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "n": 3, "label": "Loading" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

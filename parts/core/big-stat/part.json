@@ -1,0 +1,24 @@
+{
+  "id": "core/big-stat",
+  "type": "text",
+  "style": "core",
+  "name": "Big stat",
+  "summary": "Very large headline number such as '1 in 3' that pops in, followed by a short line of context that fades in.",
+  "tags": ["big stat", "statistic", "headline", "fact", "number", "callout", "infographic", "one in"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; card is 920×480 at s = 1" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "number colour; default the style's accent" },
+    { "name": "stat", "type": "string", "default": "1 in 3", "note": "the headline, kept short" },
+    { "name": "context", "type": "string", "default": "of visitors leave before the first scene loads.", "note": "one or two short lines" }
+  ],
+  "example": { "stat": "1 in 3", "context": "of visitors leave before the first scene loads." },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

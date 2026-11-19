@@ -1,0 +1,22 @@
+{
+  "id": "core/coin-rain",
+  "type": "effect",
+  "style": "core",
+  "name": "Coin rain",
+  "summary": "Full-frame gold coins that fall, sway and flip over; for money, rewards and sale moments.",
+  "tags": ["coins", "gold", "money", "reward", "rain", "wealth"],
+  "params": [
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "count", "type": "number", "default": 34, "note": "coins on screen, 4 to 80" },
+    { "name": "speed", "type": "number", "default": 1, "note": "fall speed multiplier" },
+    { "name": "seed", "type": "string", "default": "coin", "note": "change for a different spread" }
+  ],
+  "example": { "count": 34 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

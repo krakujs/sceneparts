@@ -1,0 +1,25 @@
+{
+  "id": "core/breaking-news-bar",
+  "type": "text",
+  "style": "core",
+  "name": "Breaking news bar",
+  "summary": "Full-width bottom news band: flashing BREAKING block, headline band sliding in and a scrolling ticker under it.",
+  "tags": ["breaking news", "news bar", "news ticker", "lower band", "headline", "alert", "news"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x; keep 540 for a full-width band" },
+    { "name": "y", "type": "number", "default": 1560, "note": "top edge of the band" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "label", "type": "string", "default": "BREAKING", "note": "text in the flashing block; keep it short" },
+    { "name": "headline", "type": "string", "default": "Officials confirm the new plan starts next week", "note": "up to two lines" },
+    { "name": "ticker", "type": "string", "default": "More details to follow  •  Stay with us  •  ", "note": "scrolls under the headline" },
+    { "name": "color", "type": "colour", "note": "label block colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "label": "BREAKING", "headline": "Officials confirm the new plan starts next week" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

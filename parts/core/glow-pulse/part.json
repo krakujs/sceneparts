@@ -1,0 +1,27 @@
+{
+  "id": "core/glow-pulse",
+  "type": "effect",
+  "style": "core",
+  "name": "Glow pulse",
+  "summary": "Soft warm radial glow behind a subject at (x, y) that breathes in size and brightness; for halos and focus.",
+  "tags": ["glow", "halo", "pulse", "aura", "light", "focus"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "glow centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "glow centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale of the glow" },
+    { "name": "r", "type": "number", "default": 380, "note": "glow radius in px" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "period", "type": "number", "default": 96, "note": "frames for one breath" },
+    { "name": "strength", "type": "number", "default": 0.9, "note": "peak opacity, 0 to 1" },
+    { "name": "seed", "type": "string", "default": "a", "note": "change when placing two glows at the same x, y" },
+    { "name": "color", "type": "colour", "default": "#FFD36B", "note": "glow colour" }
+  ],
+  "example": { "x": 540, "y": 880, "r": 360 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

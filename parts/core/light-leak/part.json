@@ -1,0 +1,22 @@
+{
+  "id": "core/light-leak",
+  "type": "effect",
+  "style": "core",
+  "name": "Light leak",
+  "summary": "Warm orange and pink light blobs drifting along one edge of the frame, for a film-camera look.",
+  "tags": ["light leak", "film", "warm", "glow", "vintage", "analog"],
+  "params": [
+    { "name": "edge", "type": "enum", "default": "left", "values": ["left", "right", "top", "bottom"], "note": "which edge the light bleeds in from" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "strength", "type": "number", "default": 0.6, "note": "overall opacity, 0 to 1" },
+    { "name": "seed", "type": "string", "default": "leak", "note": "change for a different set of blobs" }
+  ],
+  "example": { "edge": "left", "strength": 0.6 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "core/name-plate",
+  "type": "text",
+  "style": "core",
+  "name": "Name plate",
+  "summary": "Compact centred name plate with an accent left edge and a small subtitle; pops in above a character.",
+  "tags": ["name plate", "nameplate", "character name", "name tag", "caption", "label", "subtitle"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 1250, "note": "centre y; put it just above the character's head" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "name", "type": "string", "default": "Alex Morgan", "note": "main line" },
+    { "name": "subtitle", "type": "string", "default": "Head of Operations", "note": "small line under the name" },
+    { "name": "color", "type": "colour", "note": "accent edge; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "name": "Jordan Lee", "subtitle": "Senior Reporter" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

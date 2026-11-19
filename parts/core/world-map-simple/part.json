@@ -1,0 +1,73 @@
+{
+  "id": "core/world-map-simple",
+  "type": "text",
+  "style": "core",
+  "name": "World map simple",
+  "summary": "Simplified world map of blobby hand-made continents on an ocean card, with highlighted dots that pop in.",
+  "tags": [
+    "world map",
+    "map",
+    "global",
+    "countries",
+    "regions",
+    "international"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale; card is 960x560 at s = 1"
+    },
+    {
+      "name": "dots",
+      "type": "object",
+      "note": "[{x:0..1, y:0..1, label}] highlighted places"
+    },
+    {
+      "name": "at",
+      "type": "number",
+      "default": 0,
+      "note": "start as a fraction of the shot"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "note": "dot colour; default the style accent"
+    }
+  ],
+  "example": {
+    "dots": [
+      {
+        "x": 0.47,
+        "y": 0.33,
+        "label": "Lisbon"
+      },
+      {
+        "x": 0.87,
+        "y": 0.72,
+        "label": "Sydney"
+      }
+    ]
+  },
+  "layer": "screen",
+  "uses": [
+    "core/stat-card"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

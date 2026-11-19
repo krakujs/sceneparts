@@ -1,0 +1,26 @@
+{
+  "id": "core/notification-card",
+  "type": "text",
+  "style": "core",
+  "name": "Notification card",
+  "summary": "Lock-screen style notification that slides down from the top, with a generic bell app icon, title and body.",
+  "tags": ["notification", "alert", "push", "lock screen", "banner", "reminder", "toast"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 420, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "app", "type": "string", "default": "Alerts", "note": "app name, generic" },
+    { "name": "time", "type": "string", "default": "now" },
+    { "name": "title", "type": "string", "default": "Reminder", "note": "bold first line" },
+    { "name": "body", "type": "string", "default": "Your meeting starts in 5 minutes", "note": "second line" },
+    { "name": "color", "type": "colour", "note": "icon colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "app": "Alerts", "time": "now", "title": "Reminder", "body": "Your meeting starts in 5 minutes" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

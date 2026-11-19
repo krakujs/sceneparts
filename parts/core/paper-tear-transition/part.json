@@ -1,0 +1,22 @@
+{
+  "id": "core/paper-tear-transition",
+  "type": "effect",
+  "style": "core",
+  "name": "Paper tear transition",
+  "summary": "Full-frame torn-paper wipe that slides in to cover the frame or slides off to reveal the next scene.",
+  "tags": ["paper tear", "transition", "wipe", "torn", "cut", "scene change"],
+  "params": [
+    { "name": "mode", "type": "enum", "default": "in", "values": ["in", "out"], "note": "in covers the frame, out reveals it" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "len", "type": "number", "default": 24, "note": "frames the tear takes to cross" },
+    { "name": "seed", "type": "string", "default": "tear", "note": "change for a different torn edge" }
+  ],
+  "example": { "mode": "in", "len": 24 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "core/underline-scribble",
+  "type": "effect",
+  "style": "core",
+  "name": "Underline scribble",
+  "summary": "Marker-style wavy underline of a given width that draws itself left to right.",
+  "tags": [
+    "underline",
+    "scribble",
+    "marker",
+    "emphasis",
+    "wavy",
+    "highlight",
+    "draw"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 240,
+      "note": "left end x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 1000,
+      "note": "left end y"
+    },
+    {
+      "name": "w",
+      "type": "number",
+      "default": 600,
+      "note": "width"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "at",
+      "type": "number",
+      "default": 0,
+      "note": "start as a fraction of the shot"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "note": "colour; default the style accent"
+    }
+  ],
+  "example": {
+    "x": 240,
+    "y": 1000,
+    "w": 600
+  },
+  "layer": "screen",
+  "uses": [
+    "core/stat-card"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

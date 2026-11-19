@@ -1,0 +1,23 @@
+{
+  "id": "core/vignette-overlay",
+  "type": "effect",
+  "style": "core",
+  "name": "Vignette overlay",
+  "summary": "Full-frame dark radial vignette that pulls the eye to the centre, with an optional slow breathe.",
+  "tags": ["vignette", "dark edges", "frame", "focus", "cinematic", "shadow"],
+  "params": [
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "strength", "type": "number", "default": 0.6, "note": "darkness at the corners, 0 to 1" },
+    { "name": "breathe", "type": "boolean", "default": false, "note": "slowly swells and eases the darkness" },
+    { "name": "seed", "type": "string", "default": "a", "note": "change when two vignettes are in one shot" },
+    { "name": "color", "type": "colour", "note": "shadow colour; default the style ink" }
+  ],
+  "example": { "strength": 0.6, "breathe": true },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

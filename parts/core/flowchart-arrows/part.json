@@ -1,0 +1,31 @@
+{
+  "id": "core/flowchart-arrows",
+  "type": "text",
+  "style": "core",
+  "name": "Flowchart arrows",
+  "summary": "Start oval, decision diamond, then Yes and No branches to two boxes, with arrows drawing between them.",
+  "tags": ["flowchart", "decision", "yes no", "branch", "process", "diagram", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "start oval colour; default the style's accent" },
+    { "name": "start", "type": "string", "default": "Start", "note": "text in the oval" },
+    { "name": "question", "type": "string", "default": "Ready to ship?", "note": "decision text in the diamond" },
+    { "name": "yes", "type": "string", "default": "Publish the update", "note": "box reached on Yes" },
+    { "name": "no", "type": "string", "default": "Fix the bugs first", "note": "box reached on No" }
+  ],
+  "example": {
+    "start": "Start",
+    "question": "Ready to ship?",
+    "yes": "Publish the update",
+    "no": "Fix the bugs first"
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

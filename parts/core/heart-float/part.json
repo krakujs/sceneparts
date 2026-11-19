@@ -1,0 +1,28 @@
+{
+  "id": "core/heart-float",
+  "type": "effect",
+  "style": "core",
+  "name": "Heart float",
+  "summary": "Stream of hearts rising from a point, swaying and fading out, like live-stream reactions; for love and thanks.",
+  "tags": ["hearts", "love", "reaction", "live stream", "like", "float"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "where the hearts start, x" },
+    { "name": "y", "type": "number", "default": 960, "note": "where the hearts start, y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "count", "type": "number", "default": 14, "note": "hearts in the stream, 1 to 40" },
+    { "name": "life", "type": "number", "default": 96, "note": "frames one heart lives" },
+    { "name": "spread", "type": "number", "default": 46, "note": "sideways spread in px" },
+    { "name": "rise", "type": "number", "default": 4.2, "note": "px per frame upwards" },
+    { "name": "seed", "type": "string", "default": "heart", "note": "change for a different sway" },
+    { "name": "color", "type": "colour", "note": "one colour for all hearts; default pink and the style accent" }
+  ],
+  "example": { "x": 540, "y": 1300, "count": 14 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

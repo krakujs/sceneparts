@@ -1,0 +1,25 @@
+{
+  "id": "core/loading-spinner",
+  "type": "text",
+  "style": "core",
+  "name": "Loading spinner",
+  "summary": "Circular loading spinner that rotates smoothly, as an arc, dots or bars, with an optional Loading label.",
+  "tags": ["loading", "spinner", "loader", "wait", "progress", "buffering", "busy"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 900, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "shape", "type": "enum", "default": "arc", "values": ["arc", "dots", "bars"], "note": "spinner look" },
+    { "name": "spin", "type": "number", "default": 8, "note": "degrees per frame" },
+    { "name": "label", "type": "string", "default": "Loading…", "note": "empty hides it" },
+    { "name": "color", "type": "colour", "note": "spinner colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "shape": "arc", "label": "Loading…" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

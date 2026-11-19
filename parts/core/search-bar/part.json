@@ -1,0 +1,27 @@
+{
+  "id": "core/search-bar",
+  "type": "text",
+  "style": "core",
+  "name": "Search bar",
+  "summary": "Rounded search pill with a magnifier; the query types itself letter by letter with a blinking caret, plus suggestions.",
+  "tags": ["search", "search bar", "input", "query", "typing", "suggestions", "find"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 800, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "w", "type": "number", "default": 860, "note": "pill width" },
+    { "name": "query", "type": "string", "default": "best pasta recipes", "note": "text typed into the pill" },
+    { "name": "placeholder", "type": "string", "default": "Search", "note": "shown before typing starts" },
+    { "name": "suggestions", "type": "string[]", "default": ["pasta at home", "quick dinner ideas", "pasta sauce basics"], "note": "0 to 3 rows under the pill" },
+    { "name": "color", "type": "colour", "note": "caret and icon colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "len", "type": "number", "default": 24, "note": "typing length in frames" }
+  ],
+  "example": { "query": "best pasta recipes", "suggestions": ["pasta at home", "quick dinner ideas", "pasta sauce basics"] },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "core/arrow-circular",
+  "type": "effect",
+  "style": "core",
+  "name": "Arrow circular",
+  "summary": "Circular 300 degree arrow that rotates in, for refresh, repeat or cycle.",
+  "tags": [
+    "arrow",
+    "circular",
+    "refresh",
+    "repeat",
+    "cycle",
+    "loop",
+    "rotate"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "radius",
+      "type": "number",
+      "default": 180,
+      "note": "arc radius"
+    },
+    {
+      "name": "at",
+      "type": "number",
+      "default": 0,
+      "note": "start as a fraction of the shot (0..1)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "note": "override the style accent"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "radius": 180
+  },
+  "layer": "screen",
+  "uses": [
+    "core/stat-card"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

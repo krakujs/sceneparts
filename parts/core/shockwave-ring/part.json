@@ -1,0 +1,27 @@
+{
+  "id": "core/shockwave-ring",
+  "type": "effect",
+  "style": "core",
+  "name": "Shockwave ring",
+  "summary": "Rings that expand out from an impact point with a fading stroke; for hits, landings and punchlines.",
+  "tags": ["shockwave", "impact", "ring", "boom", "hit", "ripple"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "impact centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "impact centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "r", "type": "number", "default": 420, "note": "final ring radius in px" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "atFrame", "type": "number", "note": "start frame inside the shot; overrides at" },
+    { "name": "count", "type": "number", "default": 2, "note": "rings, 1 to 6" },
+    { "name": "len", "type": "number", "default": 80, "note": "frames for one ring to finish" },
+    { "name": "gap", "type": "number", "default": 8, "note": "frames between rings" },
+    { "name": "color", "type": "colour", "note": "ring colour; default the style accent" }
+  ],
+  "example": { "x": 540, "y": 900, "count": 2, "r": 420 },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

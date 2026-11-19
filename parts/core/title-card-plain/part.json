@@ -1,0 +1,25 @@
+{
+  "id": "core/title-card-plain",
+  "type": "text",
+  "style": "core",
+  "name": "Title card plain",
+  "summary": "Full-frame plain title card on a solid background: big centred title that rises in, subtitle and accent rule.",
+  "tags": ["title card", "title", "opener", "full screen", "intro", "headline", "plain"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "title", "type": "string", "default": "The Long Road Home", "note": "wraps to up to three lines" },
+    { "name": "subtitle", "type": "string", "default": "A short film", "note": "small line under the rule" },
+    { "name": "bg", "type": "colour", "note": "background colour; default the style's card colour" },
+    { "name": "color", "type": "colour", "note": "accent rule colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "title": "The Long Road Home", "subtitle": "A short film" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

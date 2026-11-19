@@ -1,0 +1,24 @@
+{
+  "id": "core/health-bar",
+  "type": "text",
+  "style": "core",
+  "name": "Health bar",
+  "summary": "Game health bar with a heart icon, a red to green fill and a flash and ghost when health drops.",
+  "tags": ["health", "health bar", "hp", "life", "game", "hud", "damage"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "value", "type": "number", "default": 0.7, "min": 0, "max": 1, "note": "health 0..1; animate with [1, 0.3] to take damage" },
+    { "name": "from", "type": "number", "min": 0, "max": 1, "note": "health before this shot; shows the ghost and the damage flash" },
+    { "name": "label", "type": "string", "note": "optional small text above the bar" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "value": [1, 0.3], "from": 1, "label": "HEALTH" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

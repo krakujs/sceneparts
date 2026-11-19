@@ -1,0 +1,24 @@
+{
+  "id": "core/lower-third",
+  "type": "text",
+  "style": "core",
+  "name": "Lower third",
+  "summary": "Broadcast name strap at the lower left: an accent bar wipes in, then a card with name and role slides out.",
+  "tags": ["lower third", "name strap", "caption", "name", "broadcast", "title", "interview"],
+  "params": [
+    { "name": "x", "type": "number", "default": 60, "note": "left edge of the strap" },
+    { "name": "y", "type": "number", "default": 1500, "note": "top edge of the strap" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale" },
+    { "name": "name", "type": "string", "default": "Alex Morgan", "note": "big line" },
+    { "name": "role", "type": "string", "default": "Correspondent", "note": "smaller line under the name" },
+    { "name": "color", "type": "colour", "note": "accent bar and role colour; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" }
+  ],
+  "example": { "name": "Jordan Lee", "role": "Senior Reporter" },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

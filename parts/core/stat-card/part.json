@@ -1,0 +1,32 @@
+{
+  "id": "core/stat-card",
+  "type": "text",
+  "style": "core",
+  "name": "Stat card",
+  "summary": "Card with a label, a big number that counts up and an up/down change pill; also the shared kit for core infographics.",
+  "tags": ["stat", "statistic", "number", "kpi", "card", "infographic", "counter", "data"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; card is 640×400 at s = 1" },
+    { "name": "label", "type": "string", "default": "Monthly users" },
+    { "name": "value", "type": "number", "default": 12400, "note": "final number" },
+    { "name": "from", "type": "number", "default": 0, "note": "number the count starts from" },
+    { "name": "prefix", "type": "string", "default": "", "note": "e.g. $" },
+    { "name": "suffix", "type": "string", "default": "", "note": "e.g. %" },
+    { "name": "decimals", "type": "number", "default": 0 },
+    { "name": "short", "type": "boolean", "default": false, "note": "1.2K / 3.4M" },
+    { "name": "delta", "type": "string", "default": "+18%", "note": "change pill; starts with - for a red down pill; empty hides it" },
+    { "name": "note", "type": "string", "default": "vs last year", "note": "small text after the pill" },
+    { "name": "color", "type": "colour", "note": "accent; default the style's accent" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "len", "type": "number", "default": 40, "note": "count-up length in frames" }
+  ],
+  "example": { "label": "Monthly users", "value": 12400, "delta": "+18%", "note": "vs last year" },
+  "layer": "screen",
+  "uses": [],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

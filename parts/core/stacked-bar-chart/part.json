@@ -1,0 +1,33 @@
+{
+  "id": "core/stacked-bar-chart",
+  "type": "text",
+  "style": "core",
+  "name": "Stacked bar chart",
+  "summary": "Stacked columns of 2-4 coloured segments that grow up one after another, with a small legend for the segments.",
+  "tags": ["stacked bar", "stacked chart", "chart", "breakdown", "composition", "column chart", "statistics", "infographic"],
+  "params": [
+    { "name": "x", "type": "number", "default": 540, "note": "centre x" },
+    { "name": "y", "type": "number", "default": 960, "note": "centre y" },
+    { "name": "s", "type": "number", "default": 1, "note": "scale; card is 940×1040 at s = 1" },
+    { "name": "at", "type": "number", "default": 0, "note": "start as a fraction of the shot (0..1)" },
+    { "name": "color", "type": "colour", "note": "colour of the first segment; default the style's accent" },
+    { "name": "title", "type": "string", "default": "Traffic by source" },
+    { "name": "values", "type": "object", "default": [[30, 20, 12], [38, 22, 15], [26, 30, 18], [44, 25, 20]], "note": "one array per column, segments bottom to top, 2-4 each" },
+    { "name": "labels", "type": "string[]", "default": ["Jan", "Feb", "Mar", "Apr"], "note": "column names" },
+    { "name": "legend", "type": "string[]", "default": ["Organic", "Paid", "Referral"], "note": "segment names, bottom to top" },
+    { "name": "unit", "type": "string", "default": "k", "note": "suffix on the column totals" }
+  ],
+  "example": {
+    "title": "Traffic by source",
+    "values": [[30, 20, 12], [38, 22, 15], [26, 30, 18], [44, 25, 20]],
+    "labels": ["Jan", "Feb", "Mar", "Apr"],
+    "legend": ["Organic", "Paid", "Referral"],
+    "unit": "k"
+  },
+  "layer": "screen",
+  "uses": ["core/stat-card"],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}

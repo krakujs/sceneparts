@@ -1,0 +1,73 @@
+{
+  "id": "core/highlight-circle",
+  "type": "effect",
+  "style": "core",
+  "name": "Highlight circle",
+  "summary": "Hand-drawn red-pen ellipse that draws itself around a point, with a slight overshoot.",
+  "tags": [
+    "circle",
+    "highlight",
+    "ring",
+    "pen",
+    "mark",
+    "emphasis",
+    "draw"
+  ],
+  "params": [
+    {
+      "name": "x",
+      "type": "number",
+      "default": 540,
+      "note": "centre x"
+    },
+    {
+      "name": "y",
+      "type": "number",
+      "default": 960,
+      "note": "centre y"
+    },
+    {
+      "name": "s",
+      "type": "number",
+      "default": 1,
+      "note": "scale"
+    },
+    {
+      "name": "rx",
+      "type": "number",
+      "default": 220,
+      "note": "horizontal radius"
+    },
+    {
+      "name": "ry",
+      "type": "number",
+      "default": 130,
+      "note": "vertical radius"
+    },
+    {
+      "name": "at",
+      "type": "number",
+      "default": 0,
+      "note": "start as a fraction of the shot (0..1)"
+    },
+    {
+      "name": "color",
+      "type": "colour",
+      "note": "override the style accent"
+    }
+  ],
+  "example": {
+    "x": 540,
+    "y": 960,
+    "rx": 220,
+    "ry": 130
+  },
+  "layer": "screen",
+  "uses": [
+    "core/stat-card"
+  ],
+  "author": "krakujs",
+  "license": "MIT",
+  "origin": "original",
+  "version": "1.0.0"
+}
